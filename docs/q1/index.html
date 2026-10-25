@@ -16,7 +16,7 @@
         <div class="brand-mark">Q1</div>
         <div>
           <h1>英文 Q1</h1>
-          <p>Discussion paper · phrase bank + mini-drill</p>
+          <p>Discussion paper · Data File · phrase bank</p>
         </div>
       </div>
     </div>
@@ -24,25 +24,81 @@
       <button type="button" data-panel="frame" class="active">框架</button>
       <button type="button" data-panel="phrases">句式庫</button>
       <button type="button" data-panel="drill">Mini-drill</button>
+      <button type="button" data-panel="case">Data File 練習</button>
     </nav>
   </header>
 
   <main>
     <section class="panel active" id="panel-frame">
       <div class="card">
+        <h2>Exam role</h2>
+        <ul class="bullet-list">
+          <li>Paper 型式是 <strong>internal discussion paper / memo</strong>（虛構近香港城市，常見設定：<strong>City of Jade</strong>）。</li>
+          <li><strong>Data File</strong> 是答題物料，<strong>不是</strong>一篇要你「讀完再寫作文」的 essay。</li>
+          <li>官方 sample 大致兩大塊：① 指出 <strong>two major problems + implications</strong>；② <strong>Recommend feasible measures</strong> — 全文用 English 起草。</li>
+        </ul>
+      </div>
+
+      <div class="card">
         <h2>Answer frame（內部討論文件）</h2>
         <p class="lede">Data File 係物料，唔係作文。分析問題 → 影響 → 可行措施（who / when / resources）。</p>
         <ol class="frame-steps">
-          <li><strong>1. Opening</strong>一句問題 + 政府目標／criteria</li>
-          <li><strong>2. Problems + implications</strong>兩大問題；每條：現象 → 影響（users / fiscal / social）</li>
-          <li><strong>3. Option comparison</strong>2–3 options，同一套 criteria；回應 Data File objections</li>
-          <li><strong>4. Recommendation</strong>揀一個／組合；phased / pilot / KPI</li>
-          <li><strong>5. Optional close</strong>residual risks／跟進（短）</li>
+          <li>
+            <strong>1. Opening（1–2 sentences）</strong>
+            一句點出問題 + 政府目標（criteria），方便後面 weighing。<br>
+            <span class="step-ex">例：問題是 X；目標係 improve Y while containing fiscal / social cost。</span>
+          </li>
+          <li>
+            <strong>2. Problem analysis</strong>
+            2 main problems + implications（users / fiscal / social）。證據來自 Data File：<strong>analyse，唔好 paraphrase</strong>。<br>
+            每條：現象 → 影響邊啲人／錢／社會 → 點解 urgent。
+          </li>
+          <li>
+            <strong>3. Option comparison（score core）</strong>
+            比較 2–3 options，用同一套 criteria：effectiveness · cost / resources · stakeholder impact · feasibility / risk。<br>
+            <strong>主動回應</strong> Data File 入面嘅 objections（唔好裝睇唔到）。
+          </li>
+          <li>
+            <strong>4. Recommendation</strong>
+            揀 one option 或 mix；說明點解係最好平衡。<br>
+            <strong>Concrete delivery</strong>：phased rollout / pilot / KPIs。
+          </li>
+          <li>
+            <strong>5. Optional close</strong>
+            Residual risks / follow-up evaluation（短）。
+          </li>
         </ol>
       </div>
+
       <div class="card">
-        <h3>Timed Data File tip</h3>
-        <p class="muted">全卷 Data File 工作理想 under ~15 min。Sort → highlight quotable numbers → outline only。Never copy 長段 background。</p>
+        <h2>Timed Data File drill（15–20 min）</h2>
+        <div class="table-wrap">
+          <table class="mini-table">
+            <thead>
+              <tr><th>時段</th><th>做咩</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>3–5 min</td><td><strong>Sort</strong>：support / oppose / neutral data / risk</td></tr>
+              <tr><td>3–5 min</td><td><strong>Highlight</strong>：只標 quotable numbers + 一句 stakeholder view</td></tr>
+              <tr><td>—</td><td>Check 每條資料係 support problem1、problem2，定 recommendation；用唔到就 drop</td></tr>
+              <tr><td>8–10 min</td><td><strong>Drill</strong>：sort + highlight → outline only（唔寫全文）</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Hard rules</h3>
+        <ul class="bullet-list warn-list">
+          <li><strong>唔好</strong>逐份 document 由頭讀到尾。</li>
+          <li>全卷 Data File 工作理想 <strong>under ~15 min</strong>。</li>
+          <li><strong>Never copy</strong> 長段 background（官方警告：paraphrase of background <strong>scores nothing</strong>）。</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Time budget reminder</h3>
+        <p class="muted" style="margin:0">全卷 <strong>3 hours · both languages</strong>。English reading 理想 <strong>under ~1/3</strong> of total time，留時間寫中文卷。</p>
       </div>
     </section>
 
@@ -70,9 +126,16 @@
         <pre class="drill-box" id="drillPrompt">載入中…</pre>
       </div>
     </section>
+
+    <section class="panel" id="panel-case">
+      <div id="caseRoot">
+        <div class="empty">載入 Data File 練習中…</div>
+      </div>
+    </section>
   </main>
 
   <div class="toast" id="toast" role="status"></div>
+  <script src="data/heat-island.js"></script>
   <script src="app.js"></script>
   <script src="../shell/tabbar.js"></script>
 </body>
