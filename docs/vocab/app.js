@@ -18,6 +18,21 @@
     drillSeed: Date.now(),
   };
 
+  /** Quizlet-style study round */
+  const study = {
+    active: false,
+    source: "filtered",
+    shuffle: true,
+    deck: [],
+    queue: [],
+    known: [],
+    learning: [],
+    everLearning: [],
+    total: 0,
+    flipped: false,
+    touch: null,
+  };
+
   const $ = (sel, el = document) => el.querySelector(sel);
   const $$ = (sel, el = document) => [...el.querySelectorAll(sel)];
 
@@ -705,6 +720,381 @@ AFTERWARDS
     }
   }
 
+
+  function shuffleInPlace(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  function filteredVocabList() {
+    const q = ($("#vocabSearch")?.value || "").trim().toLowerCase();
+    let list = vocabBankList();
+    if (q) list = list.filter((c) => lexiconBlob(c).includes(q));
+    return list;
+  }
+
+  function savedVocabList() {
+    return Object.values(state.saved)
+      .filter((c) => c && c.term && !c.phraseId && (c.pos || "") !== "Q1 phrase")
+      .sort((a, b) => (a.term || "").localeCompare(b.term || ""));
+  }
+
+  function getStudyDeck(source) {
+    let list;
+    switch (source) {
+      case "all":
+        list = vocabBankList();
+        break;
+      case "today":
+        list = (state.feed?.todaysPicks || []).map(enrichFromLexicon);
+        break;
+      case "saved":
+        list = savedVocabList();
+        break;
+      case "filtered":
+      default:
+        list = filteredVocabList();
+        break;
+    }
+    // de-dupe by term
+    const seen = new Set();
+    return list.filter((c) => {
+      const key = (c.term || "").toLowerCase();
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
+  function studyBackExtraHTML(card) {
+    const synonyms = (card.synonyms || card.related || []).filter(Boolean).slice(0, 6);
+    const antonyms = (card.antonyms || []).filter(Boolean).slice(0, 4);
+    let examples = Array.isArray(card.examples) && card.examples.length
+      ? card.examples
+      : card.example
+        ? [{ en: card.example, zh: "" }]
+        : [];
+    examples = examples.slice(0, 2);
+    const parts = [];
+    if (synonyms.length) {
+      parts.push(
+        `<div class="lex-block"><div class="lex-label">同義詞</div><div class="related">${synonyms
+          .map((r) => `<span class="chip chip-syn">${escapeHtml(r)}</span>`)
+          .join("")}</div></div>`
+      );
+    }
+    if (antonyms.length) {
+      parts.push(
+        `<div class="lex-block"><div class="lex-label">反義詞</div><div class="related">${antonyms
+          .map((r) => `<span class="chip chip-ant">${escapeHtml(r)}</span>`)
+          .join("")}</div></div>`
+      );
+    }
+    if (examples.length) {
+      const items = examples
+        .map((ex) => {
+          const en = typeof ex === "string" ? ex : ex.en || "";
+          const zh = typeof ex === "string" ? "" : ex.zh || "";
+          return `<li class="example-item">
+  <p class="example">${highlightExample(en, card.matchedSpan)}</p>
+  ${zh ? `<p class="example-zh">${escapeHtml(zh)}</p>` : ""}
+</li>`;
+        })
+        .join("");
+      parts.push(
+        `<div class="lex-block"><div class="lex-label">例句</div><ol class="example-list">${items}</ol></div>`
+      );
+    }
+    return parts.join("");
+  }
+
+  function updateStudyProgress() {
+    const known = study.known.length;
+    const total = study.total || 1;
+    const remaining = study.queue.length;
+    // Quizlet-ish: show known progress; label is position among remaining+known
+    const pos = remaining ? known + 1 : total;
+    const el = $("#studyProgressLabel");
+    if (el) el.textContent = `${Math.min(pos, total)} / ${total}`;
+    const bar = $("#studyProgressBar");
+    if (bar) bar.style.width = `${Math.min(100, (known / total) * 100)}%`;
+    const pill = $("#studyKnownPill");
+    if (pill) pill.textContent = `識 ${known}`;
+  }
+
+  function renderStudyCard() {
+    const card = study.queue[0];
+    const flip = $("#flipCard");
+    const stage = $("#studyStage");
+    const summary = $("#studySummary");
+    if (!card) {
+      showStudySummary();
+      return;
+    }
+    if (stage) stage.hidden = false;
+    if (summary) summary.hidden = true;
+    study.flipped = false;
+    if (flip) {
+      flip.classList.remove("is-flipped", "is-swipe-left", "is-swipe-right");
+      flip.style.transform = "";
+      flip.style.opacity = "";
+    }
+    $("#flipTerm").textContent = card.term || "";
+    $("#flipPos").textContent = card.pos || "";
+    $("#flipZh").textContent = card.zh || "（暫無中文）";
+    $("#flipExtra").innerHTML = studyBackExtraHTML(card);
+    updateStudyProgress();
+  }
+
+  function showStudySummary() {
+    const stage = $("#studyStage");
+    const summary = $("#studySummary");
+    if (stage) stage.hidden = true;
+    if (summary) summary.hidden = false;
+    const known = study.known.length;
+    const learning = study.everLearning.length;
+    const stats = $("#studySummaryStats");
+    if (stats) {
+      stats.innerHTML = `本輪<strong>${known}</strong> 個已識<br>其中曾標記未懂：<strong>${learning}</strong> 個`;
+    }
+    const retry = $("#btnRetryLearning");
+    if (retry) retry.disabled = learning === 0;
+    updateStudyProgress();
+  }
+
+  function openStudyOverlay() {
+    const overlay = $("#studyOverlay");
+    if (!overlay) return;
+    overlay.hidden = false;
+    overlay.setAttribute("aria-hidden", "false");
+    document.body.classList.add("study-active");
+    study.active = true;
+  }
+
+  function closeStudyOverlay() {
+    const overlay = $("#studyOverlay");
+    if (overlay) {
+      overlay.hidden = true;
+      overlay.setAttribute("aria-hidden", "true");
+    }
+    document.body.classList.remove("study-active");
+    study.active = false;
+    study.queue = [];
+    study.deck = [];
+    study.known = [];
+    study.learning = [];
+    study.everLearning = [];
+    study.flipped = false;
+    study.touch = null;
+  }
+
+  function startStudy(sourceOverride) {
+    const source =
+      sourceOverride ||
+      $("#studyDeckSource")?.value ||
+      study.source ||
+      "filtered";
+    const shuffle = $("#studyShuffle") ? $("#studyShuffle").checked : study.shuffle;
+    study.source = source;
+    study.shuffle = shuffle;
+    if ($("#studyDeckSource") && sourceOverride) {
+      $("#studyDeckSource").value = source;
+    }
+    let deck = getStudyDeck(source);
+    if (!deck.length) {
+      toast("這個詞庫暫時沒有詞卡可學");
+      return;
+    }
+    if (shuffle) deck = shuffleInPlace([...deck]);
+    else deck = [...deck];
+    study.deck = deck;
+    study.queue = [...deck];
+    study.known = [];
+    study.learning = [];
+    study.everLearning = [];
+    study.total = deck.length;
+    study.flipped = false;
+    openStudyOverlay();
+    renderStudyCard();
+  }
+
+  function flipStudyCard() {
+    if (!study.active || !study.queue.length) return;
+    study.flipped = !study.flipped;
+    $("#flipCard")?.classList.toggle("is-flipped", study.flipped);
+  }
+
+  function trackEverLearning(card) {
+    const key = (card.term || "").toLowerCase();
+    if (!study.everLearning.some((c) => (c.term || "").toLowerCase() === key)) {
+      study.everLearning.push(card);
+    }
+  }
+
+  function markStillLearning() {
+    if (!study.active || !study.queue.length) return;
+    const card = study.queue.shift();
+    trackEverLearning(card);
+    // Recycle to end of remaining queue (Quizlet-style)
+    study.queue.push(card);
+    study.learning = [...study.queue]; // currently remaining = still learning
+    study.flipped = false;
+    // If only 1 left, stay on it (re-render) until Know
+    renderStudyCard();
+  }
+
+  function markKnow() {
+    if (!study.active || !study.queue.length) return;
+    const card = study.queue.shift();
+    study.known.push(card);
+    study.learning = [...study.queue];
+    study.flipped = false;
+    if (!study.queue.length) showStudySummary();
+    else renderStudyCard();
+  }
+
+  function retryLearning() {
+    if (!study.everLearning.length) {
+      toast("沒有曾標記未懂的詞");
+      return;
+    }
+    let deck = [...study.everLearning];
+    if (study.shuffle) deck = shuffleInPlace(deck);
+    study.deck = deck;
+    study.queue = [...deck];
+    study.known = [];
+    study.learning = [];
+    study.everLearning = [];
+    study.total = deck.length;
+    study.flipped = false;
+    renderStudyCard();
+  }
+
+  function restartAll() {
+    let deck = getStudyDeck(study.source);
+    if (!deck.length) {
+      toast("詞庫是空的");
+      return;
+    }
+    if (study.shuffle) deck = shuffleInPlace([...deck]);
+    else deck = [...deck];
+    study.deck = deck;
+    study.queue = [...deck];
+    study.known = [];
+    study.learning = [];
+    study.everLearning = [];
+    study.total = deck.length;
+    study.flipped = false;
+    renderStudyCard();
+  }
+
+  function onStudyKeydown(e) {
+    if (!study.active) return;
+    const tag = (e.target && e.target.tagName) || "";
+    if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+    if (e.code === "Space" || e.key === "Enter") {
+      e.preventDefault();
+      if ($("#studySummary") && !$("#studySummary").hidden) return;
+      flipStudyCard();
+    } else if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      if ($("#studySummary") && !$("#studySummary").hidden) return;
+      markStillLearning();
+    } else if (e.key === "ArrowRight") {
+      e.preventDefault();
+      if ($("#studySummary") && !$("#studySummary").hidden) return;
+      markKnow();
+    } else if (e.key === "Escape") {
+      e.preventDefault();
+      closeStudyOverlay();
+    }
+  }
+
+  function initStudyGestures() {
+    const card = $("#flipCard");
+    if (!card) return;
+    const THRESH = 72;
+
+    card.addEventListener("click", (e) => {
+      // ignore if this was a swipe
+      if (study.touch && study.touch.swiped) return;
+      flipStudyCard();
+    });
+
+    card.addEventListener(
+      "touchstart",
+      (e) => {
+        if (!study.active || !study.queue.length) return;
+        const t = e.changedTouches[0];
+        study.touch = { x: t.clientX, y: t.clientY, swiped: false };
+        card.classList.remove("is-swipe-left", "is-swipe-right");
+      },
+      { passive: true }
+    );
+
+    card.addEventListener(
+      "touchmove",
+      (e) => {
+        if (!study.touch) return;
+        const t = e.changedTouches[0];
+        const dx = t.clientX - study.touch.x;
+        const dy = t.clientY - study.touch.y;
+        if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 12) {
+          e.preventDefault();
+          card.style.transform = `translateX(${dx * 0.35}px) rotate(${dx * 0.03}deg)`;
+          card.style.opacity = String(Math.max(0.55, 1 - Math.abs(dx) / 420));
+          card.classList.toggle("is-swipe-left", dx < -24);
+          card.classList.toggle("is-swipe-right", dx > 24);
+        }
+      },
+      { passive: false }
+    );
+
+    const endTouch = (e) => {
+      if (!study.touch) return;
+      const t = e.changedTouches[0];
+      const dx = t.clientX - study.touch.x;
+      const dy = t.clientY - study.touch.y;
+      card.style.transform = "";
+      card.style.opacity = "";
+      card.classList.remove("is-swipe-left", "is-swipe-right");
+      if (Math.abs(dx) > THRESH && Math.abs(dx) > Math.abs(dy)) {
+        study.touch.swiped = true;
+        if (dx < 0) markStillLearning();
+        else markKnow();
+      }
+      // clear after click handler may run
+      setTimeout(() => {
+        study.touch = null;
+      }, 50);
+    };
+
+    card.addEventListener("touchend", endTouch, { passive: true });
+    card.addEventListener("touchcancel", () => {
+      card.style.transform = "";
+      card.style.opacity = "";
+      card.classList.remove("is-swipe-left", "is-swipe-right");
+      study.touch = null;
+    });
+  }
+
+  function initStudy() {
+    $("#btnStartStudy")?.addEventListener("click", () => startStudy());
+    $("#btnStartStudyToday")?.addEventListener("click", () => startStudy("today"));
+    $("#btnStartStudySaved")?.addEventListener("click", () => startStudy("saved"));
+    $("#btnStudyClose")?.addEventListener("click", closeStudyOverlay);
+    $("#btnStillLearning")?.addEventListener("click", markStillLearning);
+    $("#btnKnow")?.addEventListener("click", markKnow);
+    $("#btnRetryLearning")?.addEventListener("click", retryLearning);
+    $("#btnRestartAll")?.addEventListener("click", restartAll);
+    $("#btnExitStudy")?.addEventListener("click", closeStudyOverlay);
+    document.addEventListener("keydown", onStudyKeydown);
+    initStudyGestures();
+  }
+
   function initNav() {
     $$("#nav button").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -782,6 +1172,7 @@ AFTERWARDS
     initNav();
     initTheme();
     initEvents();
+    initStudy();
     persistSaved();
     await loadLexicon();
     await loadFeed(false);

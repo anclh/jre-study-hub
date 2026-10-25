@@ -8,9 +8,9 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="description" content="JRE English — HKSAR press-release vocabulary bank for exam prep" />
   <title>JRE 英文時事詞彙庫 · Vocab Bank</title>
-  <link rel="stylesheet" href="styles.css?v=20261025j" />
+  <link rel="stylesheet" href="styles.css?v=20261025k" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect rx='8' width='32' height='32' fill='%233d9cf0'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='14' font-family='sans-serif' font-weight='700' fill='%230a1220'%3EJRE%3C/text%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261025j" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261025k" />
 </head>
 <body>
   <header class="app-header">
@@ -65,20 +65,50 @@
         <h3>今日精選 Today's picks</h3>
         <span>從近期政府英文新聞配對出的詞彙卡</span>
       </div>
+      <div class="toolbar">
+        <button type="button" class="btn primary" id="btnStartStudyToday" title="Study today's picks">開始學習今日精選</button>
+      </div>
       <div class="card-grid three" id="picksGrid"></div>
     </section>
 
     <section class="panel" id="panel-vocab">
-      <div class="toolbar">
-        <div class="search">
-          <input type="search" id="vocabSearch" placeholder="搜尋英文／中文／同義詞／反義詞…" autocomplete="off" />
+      <div class="study-launcher" id="studyLauncher">
+        <div class="study-launcher-row">
+          <div class="study-launcher-copy">
+            <h3>翻卡學習</h3>
+            <p>Quizlet 風格：單卡翻面 · 識／未懂 · 進度追蹤</p>
+          </div>
+          <button type="button" class="btn primary btn-lg" id="btnStartStudy" title="Start study">開始學習</button>
+        </div>
+        <div class="study-opts">
+          <label class="study-opt">
+            <span>詞庫來源</span>
+            <select id="studyDeckSource" aria-label="Deck source">
+              <option value="filtered">目前列表（搜尋／全部）</option>
+              <option value="all">全部詞庫</option>
+              <option value="today">今日精選</option>
+              <option value="saved">我的生字</option>
+            </select>
+          </label>
+          <label class="study-opt study-check">
+            <input type="checkbox" id="studyShuffle" checked />
+            <span>打亂順序</span>
+          </label>
         </div>
       </div>
-      <div class="section-title">
-        <h3>詞彙卡 Vocabulary cards</h3>
-        <span id="vocabCount"></span>
+
+      <div id="browseMode">
+        <div class="toolbar">
+          <div class="search">
+            <input type="search" id="vocabSearch" placeholder="搜尋英文／中文／同義詞／反義詞…" autocomplete="off" />
+          </div>
+        </div>
+        <div class="section-title">
+          <h3>瀏覽詞彙卡</h3>
+          <span id="vocabCount"></span>
+        </div>
+        <div class="card-grid" id="vocabGrid"></div>
       </div>
-      <div class="card-grid" id="vocabGrid"></div>
     </section>
 
     <section class="panel" id="panel-saved">
@@ -87,6 +117,7 @@
         <span>保存在本瀏覽器 localStorage</span>
       </div>
       <div class="toolbar">
+        <button type="button" class="btn primary" id="btnStartStudySaved" title="Study saved words">開始學習生字</button>
         <button type="button" class="btn" id="btnExport">匯出 JSON</button>
         <button type="button" class="btn" id="btnClearSaved">清空收藏</button>
       </div>
@@ -102,8 +133,57 @@
     </p>
   </footer>
 
+  <div class="study-overlay" id="studyOverlay" hidden aria-hidden="true">
+    <div class="study-shell">
+      <header class="study-top">
+        <button type="button" class="icon-btn" id="btnStudyClose" title="返回詞庫 / Exit study" aria-label="Exit study">✕</button>
+        <div class="study-progress-wrap">
+          <div class="study-progress-label" id="studyProgressLabel">0 / 0</div>
+          <div class="study-progress-track" aria-hidden="true">
+            <div class="study-progress-bar" id="studyProgressBar"></div>
+          </div>
+        </div>
+        <div class="study-known-pill" id="studyKnownPill" title="Known this round">識 0</div>
+      </header>
+
+      <div class="study-stage" id="studyStage">
+        <div class="flip-scene" id="flipScene">
+          <button type="button" class="flip-card" id="flipCard" aria-label="Flip card">
+            <div class="flip-inner" id="flipInner">
+              <div class="flip-face flip-front">
+                <div class="flip-hint">點擊翻面 · Tap to flip</div>
+                <div class="flip-term" id="flipTerm"></div>
+                <div class="flip-pos" id="flipPos"></div>
+              </div>
+              <div class="flip-face flip-back">
+                <div class="flip-zh" id="flipZh"></div>
+                <div class="flip-extra" id="flipExtra"></div>
+              </div>
+            </div>
+          </button>
+        </div>
+
+        <div class="study-actions" id="studyActions">
+          <button type="button" class="btn study-btn study-btn-learn" id="btnStillLearning" title="Still learning (←)">還未懂</button>
+          <button type="button" class="btn primary study-btn study-btn-know" id="btnKnow" title="Know (→)">識</button>
+        </div>
+        <p class="study-swipe-hint">左滑＝未懂 · 右滑＝識 · 空白鍵翻面</p>
+      </div>
+
+      <div class="study-summary" id="studySummary" hidden>
+        <h2>本輪完成</h2>
+        <p class="study-summary-stats" id="studySummaryStats"></p>
+        <div class="study-summary-actions">
+          <button type="button" class="btn primary btn-lg" id="btnRetryLearning">再練未懂的</button>
+          <button type="button" class="btn btn-lg" id="btnRestartAll">全部重來</button>
+          <button type="button" class="btn btn-lg" id="btnExitStudy">返回詞庫</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261025j"></script>
-  <script src="../shell/tabbar.js?v=20261025j"></script>
+  <script src="app.js?v=20261025k"></script>
+  <script src="../shell/tabbar.js?v=20261025k"></script>
 </body>
 </html>
