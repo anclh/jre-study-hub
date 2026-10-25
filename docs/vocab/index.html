@@ -8,9 +8,9 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="description" content="JRE English — HKSAR press-release vocabulary bank for exam prep" />
   <title>JRE 英文時事詞彙庫 · Vocab Bank</title>
-  <link rel="stylesheet" href="styles.css?v=20261025k" />
+  <link rel="stylesheet" href="styles.css?v=20261025m" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect rx='8' width='32' height='32' fill='%233d9cf0'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='14' font-family='sans-serif' font-weight='700' fill='%230a1220'%3EJRE%3C/text%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261025k" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261025m" />
 </head>
 <body>
   <header class="app-header">
@@ -23,13 +23,12 @@
         </div>
       </div>
       <nav class="nav-tabs" id="nav" aria-label="Sections">
-        <button type="button" data-panel="today" class="active">今日精選</button>
-        <button type="button" data-panel="vocab">詞彙卡</button>
+        <button type="button" data-panel="vocab" class="active">詞彙卡</button>
         <button type="button" data-panel="saved">我的生字</button>
       </nav>
       <div class="header-actions">
         <button type="button" class="icon-btn" id="btnTheme" title="切換深淺色 / Toggle theme" aria-label="Toggle theme">◐</button>
-        <button type="button" class="icon-btn" id="btnRefresh" title="重新整理今日精選 / Refresh" aria-label="Refresh">↻</button>
+        <button type="button" class="icon-btn" id="btnRefresh" title="重新整理詞庫 / Refresh" aria-label="Refresh">↻</button>
       </div>
     </div>
   </header>
@@ -44,15 +43,14 @@
         </p>
         <div class="badge-row">
           <span class="badge">詞 · 解釋 · 同義 · 反義 · 例句</span>
-          <span class="badge">今日精選</span>
           <span class="badge">全詞庫搜尋</span>
+          <span class="badge">翻卡學習</span>
           <span class="badge muted">本地收藏 · localStorage</span>
         </div>
       </div>
       <div class="stat-card">
         <div class="stats" id="stats">
           <div class="stat"><div class="n" id="statLexicon">—</div><div class="l">詞庫詞條</div></div>
-          <div class="stat"><div class="n" id="statMatches">—</div><div class="l">今日新聞配對</div></div>
           <div class="stat"><div class="n" id="statSaved">—</div><div class="l">已收藏</div></div>
           <div class="stat" hidden><div class="n" id="statItems">—</div><div class="l">RSS</div></div>
         </div>
@@ -60,18 +58,7 @@
       </div>
     </section>
 
-    <section class="panel active" id="panel-today">
-      <div class="section-title">
-        <h3>今日精選 Today's picks</h3>
-        <span>從近期政府英文新聞配對出的詞彙卡</span>
-      </div>
-      <div class="toolbar">
-        <button type="button" class="btn primary" id="btnStartStudyToday" title="Study today's picks">開始學習今日精選</button>
-      </div>
-      <div class="card-grid three" id="picksGrid"></div>
-    </section>
-
-    <section class="panel" id="panel-vocab">
+    <section class="panel active" id="panel-vocab">
       <div class="study-launcher" id="studyLauncher">
         <div class="study-launcher-row">
           <div class="study-launcher-copy">
@@ -86,7 +73,6 @@
             <select id="studyDeckSource" aria-label="Deck source">
               <option value="filtered">目前列表（搜尋／全部）</option>
               <option value="all">全部詞庫</option>
-              <option value="today">今日精選</option>
               <option value="saved">我的生字</option>
             </select>
           </label>
@@ -127,9 +113,8 @@
 
   <footer class="footer">
     <p>
-      Vocabulary study aid for JRE English. Press-release matching uses
-      <a href="https://www.info.gov.hk/gia/rss/general_en.xml" target="_blank" rel="noopener">HKSAR GIA English RSS</a>
-      in the background — this app is for learning words, not browsing news.
+      Vocabulary study aid for JRE English — flip cards, synonyms, antonyms, and examples drawn from
+      HKSAR government English usage. Learning tool, not official exam material.
     </p>
   </footer>
 
@@ -183,7 +168,7 @@
   </div>
 
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261025k"></script>
-  <script src="../shell/tabbar.js?v=20261025k"></script>
+  <script src="app.js?v=20261025m"></script>
+  <script src="../shell/tabbar.js?v=20261025m"></script>
 </body>
 </html>

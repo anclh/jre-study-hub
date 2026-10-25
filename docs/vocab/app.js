@@ -441,16 +441,6 @@ AFTERWARDS
     };
   }
 
-  function renderPicks() {
-    const grid = $("#picksGrid");
-    const picks = state.feed?.todaysPicks || [];
-    if (!picks.length) {
-      grid.innerHTML = `<div class="empty">暫無今日精選 — 請稍後重新擷取，或查看「詞彙卡」全部詞庫。</div>`;
-      return;
-    }
-    grid.innerHTML = picks.map((c) => vocabCardHTML(enrichFromLexicon(c))).join("");
-    bindCardActions(grid);
-  }
 
   function lexiconBlob(c) {
     return `${c.term} ${c.zh} ${c.pos} ${(c.synonyms || c.related || []).join(" ")} ${(c.antonyms || []).join(" ")} ${c.note || ""} ${(c.examples || []).map((x) => (typeof x === "string" ? x : `${x.en || ""} ${x.zh || ""}`)).join(" ")} ${c.example || ""}`.toLowerCase();
@@ -587,16 +577,19 @@ AFTERWARDS
   }
 
   function renderAllCards() {
-    renderPicks();
     renderVocab();
     renderSaved();
   }
 
   function updateStats() {
     const f = state.feed;
-    $("#statItems").textContent = f ? String(f.itemCount ?? 0) : "—";
-    $("#statMatches").textContent = f ? String(f.matchCount ?? 0) : "—";
-    $("#statLexicon").textContent = f ? String(f.lexiconSize ?? 0) : "—";
+    const itemsEl = $("#statItems");
+    if (itemsEl) itemsEl.textContent = f ? String(f.itemCount ?? 0) : "—";
+    const lexEl = $("#statLexicon");
+    if (lexEl) {
+      const n = state.lexicon?.length || f?.lexiconSize;
+      lexEl.textContent = n ? String(n) : "—";
+    }
     $("#statSaved").textContent = String(Object.keys(state.saved).length);
     const bar = $("#statusBar");
     if (!f) {
@@ -747,9 +740,6 @@ AFTERWARDS
     switch (source) {
       case "all":
         list = vocabBankList();
-        break;
-      case "today":
-        list = (state.feed?.todaysPicks || []).map(enrichFromLexicon);
         break;
       case "saved":
         list = savedVocabList();
@@ -1083,7 +1073,6 @@ AFTERWARDS
 
   function initStudy() {
     $("#btnStartStudy")?.addEventListener("click", () => startStudy());
-    $("#btnStartStudyToday")?.addEventListener("click", () => startStudy("today"));
     $("#btnStartStudySaved")?.addEventListener("click", () => startStudy("saved"));
     $("#btnStudyClose")?.addEventListener("click", closeStudyOverlay);
     $("#btnStillLearning")?.addEventListener("click", markStillLearning);
@@ -1119,7 +1108,7 @@ AFTERWARDS
   }
 
   function initEvents() {
-    $("#btnRefresh").addEventListener("click", () => loadFeed(true));
+    $("#btnRefresh")?.addEventListener("click", () => loadFeed(true));
     $("#vocabSearch").addEventListener("input", renderVocab);
     const feedSearch = $("#feedSearch");
     if (feedSearch) feedSearch.addEventListener("input", renderFeed);
