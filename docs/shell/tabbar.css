@@ -1,4 +1,4 @@
-/* JRE Study Hub — shared iPhone bottom tab bar */
+/* JRE Study Hub — shared iPhone bottom tab bar (4 tabs) */
 :root {
   --hub-tab-h: 56px;
   --hub-safe-bottom: env(safe-area-inset-bottom, 0px);
@@ -19,7 +19,7 @@ body.hub-has-tabs {
   align-items: stretch;
   justify-content: space-around;
   min-height: calc(var(--hub-tab-h) + var(--hub-safe-bottom));
-  padding: 4px 4px var(--hub-safe-bottom);
+  padding: 2px 2px var(--hub-safe-bottom);
   background: rgba(12, 16, 22, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -36,16 +36,17 @@ body.hub-has-tabs {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
+  gap: 1px;
   min-height: 48px;
-  padding: 6px 4px;
-  margin: 0 2px;
-  border-radius: 12px;
+  min-width: 0;
+  padding: 4px 2px;
+  margin: 0 1px;
+  border-radius: 10px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.55);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   transition: background 0.15s ease, color 0.15s ease;
 }
 
@@ -59,25 +60,27 @@ body.hub-has-tabs {
 }
 
 #jre-hub-tabbar .hub-ico {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1;
 }
 
 #jre-hub-tabbar .hub-zh {
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.1;
+  white-space: nowrap;
 }
 
 #jre-hub-tabbar .hub-en {
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 500;
   opacity: 0.75;
   line-height: 1;
+  white-space: nowrap;
 }
 
 @media (min-width: 768px) {
   #jre-hub-tabbar {
-    max-width: 480px;
+    max-width: 520px;
     left: 50%;
     right: auto;
     transform: translateX(-50%);

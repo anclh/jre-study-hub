@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c1016" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>JRE English Q1 · Study Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../shell/tabbar.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-mark">Q1</div>
+        <div>
+          <h1>英文 Q1</h1>
+          <p>Discussion paper · phrase bank + mini-drill</p>
+        </div>
+      </div>
+    </div>
+    <nav class="subnav" id="subnav" aria-label="Q1 sections">
+      <button type="button" data-panel="frame" class="active">框架</button>
+      <button type="button" data-panel="phrases">句式庫</button>
+      <button type="button" data-panel="drill">Mini-drill</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="panel active" id="panel-frame">
+      <div class="card">
+        <h2>Answer frame（內部討論文件）</h2>
+        <p class="lede">Data File 係物料，唔係作文。分析問題 → 影響 → 可行措施（who / when / resources）。</p>
+        <ol class="frame-steps">
+          <li><strong>1. Opening</strong>一句問題 + 政府目標／criteria</li>
+          <li><strong>2. Problems + implications</strong>兩大問題；每條：現象 → 影響（users / fiscal / social）</li>
+          <li><strong>3. Option comparison</strong>2–3 options，同一套 criteria；回應 Data File objections</li>
+          <li><strong>4. Recommendation</strong>揀一個／組合；phased / pilot / KPI</li>
+          <li><strong>5. Optional close</strong>residual risks／跟進（短）</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Timed Data File tip</h3>
+        <p class="muted">全卷 Data File 工作理想 under ~15 min。Sort → highlight quotable numbers → outline only。Never copy 長段 background。</p>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-phrases">
+      <div class="toolbar">
+        <div class="search">
+          <input type="search" id="q1Search" placeholder="搜尋句式 EN／中…" autocomplete="off" />
+        </div>
+        <span class="count" id="q1Count">—</span>
+      </div>
+      <div class="filters" id="q1Filters"></div>
+      <p class="muted" id="q1Disclaimer" style="margin-top:10px"></p>
+      <div class="phrase-grid" id="q1Grid"></div>
+    </section>
+
+    <section class="panel" id="panel-drill">
+      <div class="card">
+        <h2>Mini-drill（20–25 min）</h2>
+        <p class="lede">problems → implications → measures。用句式庫至少 3 條。</p>
+        <div class="chip-row" id="drillMeta"></div>
+        <div class="toolbar">
+          <button type="button" class="btn primary" id="btnNewDrill">換一題</button>
+          <button type="button" class="btn" id="btnCopyDrill">複製提示</button>
+        </div>
+        <pre class="drill-box" id="drillPrompt">載入中…</pre>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+  <script src="../shell/tabbar.js"></script>
+</body>
+</html>

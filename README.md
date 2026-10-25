@@ -1,47 +1,39 @@
 # JRE Study Hub
 
-One mobile-first GitHub Pages site that combines two study apps behind a shared iPhone bottom tab bar:
+One mobile-first GitHub Pages site behind a shared iPhone bottom tab bar:
 
-| Tab | Module | Upstream (source of truth) |
-|-----|--------|----------------------------|
-| 政策 Policy | `/docs/policy/` | [`anclh/jre-policy-bank`](https://github.com/anclh/jre-policy-bank) → `docs/` |
-| 詞彙 Vocab | `/docs/vocab/` | [`anclh/jre-vocab-bank`](https://github.com/anclh/jre-vocab-bank) → `docs/` |
+| Tab | Module | Notes |
+|-----|--------|--------|
+| 政策 Policy | `/docs/policy/` | Policy Bank (canonical in this hub) |
+| 英文Q1 English | `/docs/q1/` | Owned by **JRE English** — Data File / memo framework stub |
+| 中文Q2 Chinese | `/docs/q2/` | Owned by **JRE Chinese** — 議題思維框架 stub；links to Policy briefs |
+| 詞彙 Vocab | `/docs/vocab/` | Upstream [`anclh/jre-vocab-bank`](https://github.com/anclh/jre-vocab-bank) → `docs/` |
 
 **Live:** https://anclh.github.io/jre-study-hub/
 
-The standalone Policy Bank and Vocab Bank sites keep working independently. This hub is a published snapshot plus a shared shell (`docs/shell/tabbar.*`). Collocation Bank is **not** included.
+Collocation Bank is **not** included. Shared shell: `docs/shell/tabbar.*`.
 
 ## Layout
 
 ```
 docs/
   index.html          # redirects to policy/
-  shell/tabbar.css    # bottom tab bar only
+  shell/tabbar.css    # bottom tab bar (4 tabs)
   shell/tabbar.js
-  policy/             # copy of jre-policy-bank/docs
-  vocab/              # copy of jre-vocab-bank/docs
+  policy/             # Policy Bank
+  q1/                 # English Q1 stub (JRE English)
+  q2/                 # Chinese Q2 stub (JRE Chinese)
+  vocab/              # Vocab Bank snapshot
 ```
 
 GitHub Pages is served from `/docs` on branch `main`. Project base path: `/jre-study-hub/`.
 
 ## How to update content
 
-Individual repos remain the sources of truth. After updating an upstream `docs/` tree:
+- **Policy / Q1 / Q2**: edit under this hub (`docs/policy/`, `docs/q1/`, `docs/q2/`).
+- **Vocab**: sync from upstream with `./scripts/sync-from-upstream.sh` (policy rsync path may be empty if standalone repo gone — script still re-injects shell tags on policy + vocab).
 
-```bash
-./scripts/sync-from-upstream.sh
-# or manually:
-rsync -a --delete ../jre-policy-bank/docs/ docs/policy/
-rsync -a --delete --exclude README.md ../jre-vocab-bank/docs/ docs/vocab/
-
-# ensure each module HTML still includes:
-#   <link rel="stylesheet" href="../shell/tabbar.css" />
-#   <script src="../shell/tabbar.js"></script>
-
-git add docs && git commit -m "Sync modules from upstream docs" && git push
-```
-
-Do **not** delete `docs/shell/` when syncing.
+Do **not** delete `docs/shell/`, `docs/q1/`, or `docs/q2/` when syncing.
 
 ## Local preview
 
@@ -52,5 +44,5 @@ cd docs && python3 -m http.server 8080
 
 ## Notes
 
-- localStorage keys are unchanged (`jre-lang`, `jre-filters-open`, `jre-vocab-saved-v1`, `jre-vocab-theme`, …) so progress carries over when browsing the same origin path family; standalone sites use different origins and keep their own storage.
-- Root `/` meta-refreshes to `/policy/`; bottom tabs switch between Policy and Vocab without leaving the hub origin.
+- localStorage keys for policy/vocab are unchanged.
+- Root `/` meta-refreshes to `/policy/`; bottom tabs switch modules on the same origin.
