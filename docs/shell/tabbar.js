@@ -20,7 +20,7 @@
     if (path.indexOf("/q2") >= 0) return "q2";
     if (path.indexOf("/vocab") >= 0) return "vocab";
     if (path.indexOf("/policy") >= 0) return "policy";
-    return "policy";
+    return ""; // homepage — no tab highlighted
   }
 
   function mount() {

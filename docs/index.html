@@ -3,26 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#0c1016" />
+  <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta http-equiv="refresh" content="0; url=policy/" />
-  <title>JRE Study Hub</title>
-  <link rel="stylesheet" href="shell/tabbar.css?v=20261025h" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>JRE Study Hub · 主頁</title>
+  <link rel="stylesheet" href="shell/tabbar.css?v=20261025i" />
   <style>
-    body {
-      margin: 0;
-      min-height: 100dvh;
-      display: grid;
-      place-items: center;
-      background: #0c1016;
-      color: #e8eef6;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+    :root {
+      --bg: #f4f6f9;
+      --surface: #ffffff;
+      --ink: #1a2332;
+      --muted: #5a6a7a;
+      --border: #e2e8f0;
+      --accent: #0b6e4f;
+      --accent-soft: #e6f4ef;
+      --accent-2: #1d4ed8;
+      --chip-on-bg: #d8f3e7;
+      --radius: 14px;
+      --shadow: 0 8px 24px rgba(26, 35, 50, 0.06);
+      --font: "Segoe UI", "PingFang HK", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
     }
-    a { color: #7ec8ff; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--font);
+      color: var(--ink);
+      min-height: 100dvh;
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #d9f2e8 0%, transparent 55%),
+        radial-gradient(900px 400px at 100% 0%, #dce7ff 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.55;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 20px 16px 32px;
+    }
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px 18px;
+      margin-bottom: 16px;
+    }
+    .hero-logo {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), #14967a);
+      color: #fff; font-weight: 800; font-size: 13px;
+      display: grid; place-items: center; margin-bottom: 12px;
+    }
+    .hero h1 { margin: 0 0 6px; font-size: 1.35rem; }
+    .hero p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 560px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    a.card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px 16px 14px;
+      min-height: 112px;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    a.card:active, a.card:hover {
+      border-color: #b7e0cf;
+      background: #fbfefc;
+    }
+    .card .ico {
+      width: 36px; height: 36px; border-radius: 10px;
+      display: grid; place-items: center;
+      background: var(--accent-soft);
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .card h2 {
+      margin: 0 0 4px;
+      font-size: 1.05rem;
+      color: var(--accent);
+    }
+    .card .en {
+      margin: 0 0 8px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .card .desc {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--ink);
+    }
+    .foot {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body class="hub-has-tabs">
-  <p>載入中… <a href="policy/">進入政策 Policy</a></p>
-  <script src="shell/tabbar.js?v=20261025h"></script>
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-logo" aria-hidden="true">JRE</div>
+      <h1>JRE Study Hub</h1>
+      <p>聯合招聘考試溫習入口 — 政策 · 英文 Q1 · 中文 Q2 · 詞彙</p>
+    </section>
+
+    <div class="grid" role="navigation" aria-label="Study modules">
+      <a class="card" href="policy/?v=20261025i">
+        <div class="ico" aria-hidden="true">🏛</div>
+        <h2>政策</h2>
+        <p class="en">Policy Bank</p>
+        <p class="desc">時事／政策卡、每周摘要，面試取向資料庫。</p>
+      </a>
+      <a class="card" href="q1/?v=20261025i">
+        <div class="ico" aria-hidden="true">✍️</div>
+        <h2>英文 Q1</h2>
+        <p class="en">English discussion paper</p>
+        <p class="desc">答題框架、句式庫、Mini-drill、Data File 練習。</p>
+      </a>
+      <a class="card" href="q2/?v=20261025i">
+        <div class="ico" aria-hidden="true">🖋</div>
+        <h2>中文 Q2</h2>
+        <p class="en">Chinese writing</p>
+        <p class="desc">框架、題庫、計時練習、自評清單。</p>
+      </a>
+      <a class="card" href="vocab/?v=20261025i">
+        <div class="ico" aria-hidden="true">📘</div>
+        <h2>詞彙</h2>
+        <p class="en">Vocab Bank</p>
+        <p class="desc">今日精選、詞彙卡、我的生字。</p>
+      </a>
+    </div>
+
+    <p class="foot">底部／頂部四個 tap 亦可直達 · 建議加入主畫面</p>
+  </main>
+  <script src="shell/tabbar.js?v=20261025i"></script>
 </body>
 </html>
