@@ -1,7 +1,7 @@
 /* JRE Vocab Bank — frontend (API + static GitHub Pages) */
 (() => {
   const STORAGE_KEY = "jre-vocab-saved-v1";
-  const THEME_KEY = "jre-vocab-theme";
+  const THEME_KEY = "jre-vocab-theme-v2";
 
   /** @type {{ mode: 'auto' | 'api' | 'static' }} */
   const CONFIG = { mode: "auto" };
