@@ -183,11 +183,11 @@ textarea {
 .brief-section h4 {
   margin: 0 0 6px; font-size: 12px; color: var(--accent); letter-spacing: 0.02em;
 }
-.brief-section.pros h4 { color: #5ecf9a; }
+.brief-section.pros h4 { color: #047857; }
 .brief-section.cons h4 { color: var(--warn); }
-.brief-section.stance h4 { color: #7db4ff; }
+.brief-section.stance h4 { color: #1d4ed8; }
 .brief-prompt {
-  margin: 0; padding: 10px 12px; background: #0a0e14;
+  margin: 0; padding: 10px 12px; background: #f8fafc;
   border: 1px solid var(--line); border-radius: 10px; font-size: 13px;
   white-space: pre-wrap;
 }
