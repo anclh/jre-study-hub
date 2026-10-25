@@ -1,4 +1,4 @@
-/* JRE Study Hub — shared top tab bar (4 tabs) — Policy Bank light palette */
+/* JRE Study Hub — shared top tab bar (5 tabs) — Policy Bank light palette */
 :root {
   --hub-tab-h: 56px;
   --hub-safe-top: env(safe-area-inset-top, 0px);
@@ -27,7 +27,7 @@ body.hub-has-tabs {
   align-items: stretch;
   justify-content: space-around;
   min-height: calc(var(--hub-tab-h) + var(--hub-safe-top));
-  padding: var(--hub-safe-top) 2px 2px;
+  padding: var(--hub-safe-top) 1px 2px;
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -43,15 +43,15 @@ body.hub-has-tabs {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1px;
+  gap: 0;
   min-height: 48px;
   min-width: 0;
-  padding: 4px 2px;
-  margin: 0 1px;
+  padding: 3px 1px;
+  margin: 0;
   border-radius: 10px;
   text-decoration: none;
   color: var(--hub-muted);
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
   letter-spacing: 0;
   transition: background 0.15s ease, color 0.15s ease;
@@ -67,18 +67,18 @@ body.hub-has-tabs {
 }
 
 #jre-hub-tabbar .hub-ico {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1;
 }
 
 #jre-hub-tabbar .hub-zh {
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1.1;
   white-space: nowrap;
 }
 
 #jre-hub-tabbar .hub-en {
-  font-size: 8px;
+  font-size: 7.5px;
   font-weight: 500;
   opacity: 0.75;
   line-height: 1;
@@ -87,10 +87,18 @@ body.hub-has-tabs {
 
 @media (min-width: 768px) {
   #jre-hub-tabbar {
-    max-width: 520px;
+    max-width: 560px;
     left: 50%;
     right: auto;
     transform: translateX(-50%);
     border-radius: 0 0 16px 16px;
   }
+  #jre-hub-tabbar a {
+    font-size: 10px;
+    padding: 4px 2px;
+    margin: 0 1px;
+  }
+  #jre-hub-tabbar .hub-zh { font-size: 11px; }
+  #jre-hub-tabbar .hub-en { font-size: 8px; }
+  #jre-hub-tabbar .hub-ico { font-size: 16px; }
 }

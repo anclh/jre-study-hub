@@ -10,6 +10,8 @@
     }
     var bare = path.match(/^(.*\/)(policy|q1|q2|vocab)\/?$/);
     if (bare) return bare[1];
+    // Home: /jre-study-hub/ or /jre-study-hub/index.html → directory base
+    if (/\/index\.html$/i.test(path)) return path.replace(/index\.html$/i, "");
     if (path.endsWith("/")) return path;
     return path.replace(/\/[^/]*$/, "/");
   }
@@ -20,7 +22,8 @@
     if (path.indexOf("/q2") >= 0) return "q2";
     if (path.indexOf("/vocab") >= 0) return "vocab";
     if (path.indexOf("/policy") >= 0) return "policy";
-    return ""; // homepage — no tab highlighted
+    // Hub root / index.html → home
+    return "home";
   }
 
   function mount() {
@@ -28,6 +31,7 @@
     var base = hubBase();
     var active = activeKey();
     var tabs = [
+      { key: "home", href: base, zh: "主頁", en: "Home", ico: "🏠" },
       { key: "policy", href: base + "policy/", zh: "政策", en: "Policy", ico: "🏛" },
       { key: "q1", href: base + "q1/", zh: "英文Q1", en: "English", ico: "✍️" },
       { key: "q2", href: base + "q2/", zh: "中文Q2", en: "Chinese", ico: "🖋" },

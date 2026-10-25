@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="description" content="JRE Study Hub — 聯合招聘考試備試（中英）" />
   <title>JRE Study Hub · 主頁</title>
   <link rel="stylesheet" href="shell/tabbar.css?v=20261025i" />
   <style>
@@ -18,136 +19,184 @@
       --accent: #0b6e4f;
       --accent-soft: #e6f4ef;
       --accent-2: #1d4ed8;
-      --chip-on-bg: #d8f3e7;
-      --radius: 14px;
       --shadow: 0 8px 24px rgba(26, 35, 50, 0.06);
+      --radius: 14px;
       --font: "Segoe UI", "PingFang HK", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      --safe-left: env(safe-area-inset-left, 0px);
+      --safe-right: env(safe-area-inset-right, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
     }
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
     body {
+      margin: 0;
       font-family: var(--font);
       color: var(--ink);
-      min-height: 100dvh;
       background:
         radial-gradient(1200px 500px at 10% -10%, #d9f2e8 0%, transparent 55%),
         radial-gradient(900px 400px at 100% 0%, #dce7ff 0%, transparent 50%),
         var(--bg);
       line-height: 1.55;
-      -webkit-tap-highlight-color: transparent;
+      min-height: 100vh;
+      min-height: 100dvh;
+      padding-left: var(--safe-left);
+      padding-right: var(--safe-right);
+      padding-bottom: calc(24px + var(--safe-bottom));
     }
+    a { color: var(--accent-2); }
     .wrap {
-      max-width: 720px;
+      max-width: 560px;
       margin: 0 auto;
-      padding: 20px 16px 32px;
+      padding: 8px 16px 0;
     }
-    .hero {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 20px 18px;
-      margin-bottom: 16px;
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin: 8px 0 20px;
     }
-    .hero-logo {
-      width: 44px; height: 44px; border-radius: 12px;
+    .logo {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      border-radius: 14px;
       background: linear-gradient(135deg, var(--accent), #14967a);
-      color: #fff; font-weight: 800; font-size: 13px;
-      display: grid; place-items: center; margin-bottom: 12px;
-    }
-    .hero h1 { margin: 0 0 6px; font-size: 1.35rem; }
-    .hero p { margin: 0; color: var(--muted); font-size: 0.95rem; }
-    .grid {
+      color: white;
       display: grid;
-      grid-template-columns: 1fr;
+      place-items: center;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      box-shadow: var(--shadow);
+      font-size: 0.9rem;
+    }
+    .brand-text h1 {
+      margin: 0;
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+    .brand-text p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
       gap: 12px;
     }
-    @media (min-width: 560px) {
-      .grid { grid-template-columns: 1fr 1fr; }
-    }
-    a.card {
-      display: block;
-      text-decoration: none;
-      color: inherit;
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 14px;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 16px 16px 14px;
-      min-height: 112px;
-      transition: border-color 0.15s ease, background 0.15s ease;
+      text-decoration: none;
+      color: inherit;
+      -webkit-tap-highlight-color: transparent;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
     }
-    a.card:active, a.card:hover {
-      border-color: #b7e0cf;
-      background: #fbfefc;
+    .card:active {
+      transform: scale(0.985);
+      border-color: #b7e0d0;
+      box-shadow: 0 4px 14px rgba(11, 110, 79, 0.12);
     }
-    .card .ico {
-      width: 36px; height: 36px; border-radius: 10px;
-      display: grid; place-items: center;
+    .card-ico {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: 12px;
       background: var(--accent-soft);
-      margin-bottom: 10px;
-      font-size: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 1.35rem;
+      line-height: 1;
     }
-    .card h2 {
-      margin: 0 0 4px;
-      font-size: 1.05rem;
-      color: var(--accent);
-    }
-    .card .en {
-      margin: 0 0 8px;
-      font-size: 0.75rem;
-      color: var(--muted);
-      font-weight: 600;
-    }
-    .card .desc {
+    .card-body { flex: 1; min-width: 0; }
+    .card-body .zh {
       margin: 0;
-      font-size: 0.9rem;
+      font-size: 1.05rem;
+      font-weight: 700;
       color: var(--ink);
     }
-    .foot {
-      margin-top: 18px;
-      text-align: center;
+    .card-body .en {
+      margin: 3px 0 0;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .chev {
+      flex-shrink: 0;
+      color: var(--accent);
+      font-size: 1.25rem;
+      font-weight: 600;
+      opacity: 0.7;
+    }
+    .note {
+      margin: 22px 4px 0;
       font-size: 0.8rem;
       color: var(--muted);
+      line-height: 1.45;
+    }
+    .note a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid #b7e0d0;
     }
   </style>
 </head>
 <body class="hub-has-tabs">
   <main class="wrap">
-    <section class="hero">
-      <div class="hero-logo" aria-hidden="true">JRE</div>
-      <h1>JRE Study Hub</h1>
-      <p>聯合招聘考試溫習入口 — 政策 · 英文 Q1 · 中文 Q2 · 詞彙</p>
-    </section>
+    <header class="brand">
+      <div class="logo" aria-hidden="true">JRE</div>
+      <div class="brand-text">
+        <h1>JRE Study Hub</h1>
+        <p>聯合招聘考試備試（中英）</p>
+      </div>
+    </header>
 
-    <div class="grid" role="navigation" aria-label="Study modules">
-      <a class="card" href="policy/?v=20261025i">
-        <div class="ico" aria-hidden="true">🏛</div>
-        <h2>政策</h2>
-        <p class="en">Policy Bank</p>
-        <p class="desc">時事／政策卡、每周摘要，面試取向資料庫。</p>
+    <nav class="cards" aria-label="Study modules">
+      <a class="card" href="policy/">
+        <span class="card-ico" aria-hidden="true">🏛</span>
+        <span class="card-body">
+          <p class="zh">政策</p>
+          <p class="en">時事／政策卡</p>
+        </span>
+        <span class="chev" aria-hidden="true">›</span>
       </a>
-      <a class="card" href="q1/?v=20261025i">
-        <div class="ico" aria-hidden="true">✍️</div>
-        <h2>英文 Q1</h2>
-        <p class="en">English discussion paper</p>
-        <p class="desc">答題框架、句式庫、Mini-drill、Data File 練習。</p>
+      <a class="card" href="q1/">
+        <span class="card-ico" aria-hidden="true">✍️</span>
+        <span class="card-body">
+          <p class="zh">英文 Q1</p>
+          <p class="en">Data File／框架</p>
+        </span>
+        <span class="chev" aria-hidden="true">›</span>
       </a>
-      <a class="card" href="q2/?v=20261025i">
-        <div class="ico" aria-hidden="true">🖋</div>
-        <h2>中文 Q2</h2>
-        <p class="en">Chinese writing</p>
-        <p class="desc">框架、題庫、計時練習、自評清單。</p>
+      <a class="card" href="q2/">
+        <span class="card-ico" aria-hidden="true">🖋</span>
+        <span class="card-body">
+          <p class="zh">中文 Q2</p>
+          <p class="en">立場→理據→反駁→建議，計時寫作 + 政策題庫</p>
+        </span>
+        <span class="chev" aria-hidden="true">›</span>
       </a>
-      <a class="card" href="vocab/?v=20261025i">
-        <div class="ico" aria-hidden="true">📘</div>
-        <h2>詞彙</h2>
-        <p class="en">Vocab Bank</p>
-        <p class="desc">今日精選、詞彙卡、我的生字。</p>
+      <a class="card" href="vocab/">
+        <span class="card-ico" aria-hidden="true">📘</span>
+        <span class="card-body">
+          <p class="zh">詞彙</p>
+          <p class="en">詞彙卡／精選</p>
+        </span>
+        <span class="chev" aria-hidden="true">›</span>
       </a>
-    </div>
+    </nav>
 
-    <p class="foot">底部／頂部四個 tap 亦可直達 · 建議加入主畫面</p>
+    <p class="note">
+      Collocation Bank 另開：
+      <a href="https://anclh.github.io/collocation-bank/" rel="noopener">anclh.github.io/collocation-bank</a>
+    </p>
   </main>
   <script src="shell/tabbar.js?v=20261025i"></script>
 </body>
