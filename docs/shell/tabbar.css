@@ -1,7 +1,14 @@
-/* JRE Study Hub — shared top tab bar (4 tabs) */
+/* JRE Study Hub — shared top tab bar (4 tabs) — Policy Bank light palette */
 :root {
   --hub-tab-h: 56px;
   --hub-safe-top: env(safe-area-inset-top, 0px);
+  --hub-bg: #ffffff;
+  --hub-border: #e2e8f0;
+  --hub-muted: #5a6a7a;
+  --hub-accent: #0b6e4f;
+  --hub-accent-soft: #e6f4ef;
+  --hub-chip-on-bg: #d8f3e7;
+  --hub-ink: #1a2332;
 }
 
 body.hub-has-tabs {
@@ -21,13 +28,12 @@ body.hub-has-tabs {
   justify-content: space-around;
   min-height: calc(var(--hub-tab-h) + var(--hub-safe-top));
   padding: var(--hub-safe-top) 2px 2px;
-  background: rgba(12, 16, 22, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC",
-    "PingFang TC", "Microsoft JhengHei", sans-serif;
+  border-bottom: 1px solid var(--hub-border);
+  box-shadow: 0 8px 24px rgba(26, 35, 50, 0.06);
+  font-family: "Segoe UI", "PingFang HK", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -44,7 +50,7 @@ body.hub-has-tabs {
   margin: 0 1px;
   border-radius: 10px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--hub-muted);
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0;
@@ -52,12 +58,12 @@ body.hub-has-tabs {
 }
 
 #jre-hub-tabbar a:active {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--hub-accent-soft);
 }
 
 #jre-hub-tabbar a.is-active {
-  color: #fff;
-  background: rgba(61, 156, 240, 0.22);
+  color: var(--hub-accent);
+  background: var(--hub-chip-on-bg);
 }
 
 #jre-hub-tabbar .hub-ico {

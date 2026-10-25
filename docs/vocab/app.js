@@ -718,17 +718,11 @@ AFTERWARDS
 
   function initTheme() {
     const saved = localStorage.getItem(THEME_KEY);
-    if (saved) document.documentElement.setAttribute("data-theme", saved);
+    // Default: Policy light green (not system dark / blue)
+    document.documentElement.setAttribute("data-theme", saved || "light");
     $("#btnTheme").addEventListener("click", () => {
       const cur = document.documentElement.getAttribute("data-theme");
-      const next =
-        cur === "light"
-          ? "dark"
-          : cur === "dark"
-            ? "light"
-            : matchMedia("(prefers-color-scheme: light)").matches
-              ? "dark"
-              : "light";
+      const next = cur === "dark" ? "light" : "dark";
       document.documentElement.setAttribute("data-theme", next);
       localStorage.setItem(THEME_KEY, next);
     });
