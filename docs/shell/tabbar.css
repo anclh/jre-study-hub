@@ -25,7 +25,7 @@ body.hub-has-tabs {
   z-index: 99999;
   display: flex;
   align-items: stretch;
-  justify-content: space-around;
+  justify-content: space-evenly;
   min-height: calc(var(--hub-tab-h) + var(--hub-safe-top));
   padding: var(--hub-safe-top) 1px 2px;
   background: rgba(255, 255, 255, 0.94);
@@ -95,8 +95,8 @@ body.hub-has-tabs {
   }
   #jre-hub-tabbar a {
     font-size: 10px;
-    padding: 4px 2px;
-    margin: 0 1px;
+    padding: 6px 4px;
+    margin: 0 4px;
   }
   #jre-hub-tabbar .hub-zh { font-size: 11px; }
   #jre-hub-tabbar .hub-en { font-size: 8px; }
