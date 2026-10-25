@@ -26,8 +26,9 @@ body.hub-has-tabs {
   display: flex;
   align-items: stretch;
   justify-content: space-evenly;
+  gap: 6px;
   min-height: calc(var(--hub-tab-h) + var(--hub-safe-top));
-  padding: var(--hub-safe-top) 1px 2px;
+  padding: var(--hub-safe-top) 8px 4px;
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -43,12 +44,12 @@ body.hub-has-tabs {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0;
+  gap: 1px;
   min-height: 48px;
   min-width: 0;
-  padding: 3px 1px;
-  margin: 0;
-  border-radius: 10px;
+  padding: 4px 4px;
+  margin: 0 2px;
+  border-radius: 12px;
   text-decoration: none;
   color: var(--hub-muted);
   font-size: 9px;
@@ -93,9 +94,14 @@ body.hub-has-tabs {
     transform: translateX(-50%);
     border-radius: 0 0 16px 16px;
   }
+  #jre-hub-tabbar {
+    gap: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   #jre-hub-tabbar a {
     font-size: 10px;
-    padding: 6px 4px;
+    padding: 6px 8px;
     margin: 0 4px;
   }
   #jre-hub-tabbar .hub-zh { font-size: 11px; }
