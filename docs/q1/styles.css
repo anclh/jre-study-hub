@@ -21,7 +21,7 @@ body {
   line-height: 1.45;
   min-height: 100dvh;
   -webkit-tap-highlight-color: transparent;
-  padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px));
+  padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
 }
 a { color: var(--accent); }
 .app-header {
@@ -139,7 +139,7 @@ main { max-width: 720px; margin: 0 auto; padding: 14px 16px 24px; }
 }
 .empty { color: var(--muted); padding: 24px 8px; text-align: center; font-size: 13px; }
 .toast {
-  position: fixed; left: 50%; bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px));
   transform: translateX(-50%) translateY(20px); opacity: 0; pointer-events: none;
   background: #1f2a3a; color: #fff; padding: 8px 14px; border-radius: 999px;
   font-size: 12px; transition: .2s ease; z-index: 100000;
