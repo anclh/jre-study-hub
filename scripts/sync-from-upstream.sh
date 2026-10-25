@@ -4,11 +4,9 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 UP_POLICY="${UP_POLICY:-$ROOT/../jre-policy-bank/docs}"
 UP_VOCAB="${UP_VOCAB:-$ROOT/../jre-vocab-bank/docs}"
-UP_COLLOC="${UP_COLLOC:-$ROOT/../collocation-bank/docs}"
 
 rsync -a --delete "$UP_POLICY/" "$ROOT/docs/policy/"
 rsync -a --delete --exclude README.md "$UP_VOCAB/" "$ROOT/docs/vocab/"
-rsync -a --delete "$UP_COLLOC/" "$ROOT/docs/collocation/"
 
 export ROOT
 python3 <<'PY'
@@ -20,8 +18,6 @@ SCRIPT = '  <script src="../shell/tabbar.js"></script>\n'
 for p in [
     root/"docs/policy/index.html",
     root/"docs/vocab/index.html",
-    root/"docs/collocation/index.html",
-    root/"docs/collocation/study.html",
 ]:
     text = p.read_text(encoding="utf-8")
     if "shell/tabbar.css" not in text:

@@ -3,15 +3,13 @@
 
   function hubBase() {
     var path = location.pathname || "/";
-    var markers = ["/policy/", "/vocab/", "/collocation/"];
+    var markers = ["/policy/", "/vocab/"];
     for (var i = 0; i < markers.length; i++) {
       var idx = path.indexOf(markers[i]);
       if (idx >= 0) return path.slice(0, idx + 1);
     }
-    // bare .../policy or .../vocab or .../collocation
-    var bare = path.match(/^(.*\/)(policy|vocab|collocation)\/?$/);
+    var bare = path.match(/^(.*\/)(policy|vocab)\/?$/);
     if (bare) return bare[1];
-    // hub root index
     if (path.endsWith("/")) return path;
     return path.replace(/\/[^/]*$/, "/");
   }
@@ -19,7 +17,6 @@
   function activeKey() {
     var path = location.pathname || "";
     if (path.indexOf("/vocab") >= 0) return "vocab";
-    if (path.indexOf("/collocation") >= 0) return "collocation";
     if (path.indexOf("/policy") >= 0) return "policy";
     return "policy";
   }
@@ -30,8 +27,7 @@
     var active = activeKey();
     var tabs = [
       { key: "policy", href: base + "policy/", zh: "政策", en: "Policy", ico: "🏛" },
-      { key: "vocab", href: base + "vocab/", zh: "詞彙", en: "Vocab", ico: "📘" },
-      { key: "collocation", href: base + "collocation/", zh: "搭配", en: "Colloc", ico: "🃏" }
+      { key: "vocab", href: base + "vocab/", zh: "詞彙", en: "Vocab", ico: "📘" }
     ];
 
     document.body.classList.add("hub-has-tabs");
