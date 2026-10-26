@@ -347,3 +347,15 @@ body:has(#panel-case.active) #panel-case > .card:nth-child(2) p { font-size: 12p
   border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px;
   min-width: min(100%, 280px); max-width: 100%;
 }
+
+.must-use { margin-bottom: 14px; border-color: color-mix(in srgb, var(--accent, #2563eb) 35%, var(--line)); }
+.must-use h2 { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 6px; font-size: 16px; }
+.must-list { margin: 0; padding-left: 1.2em; display: grid; gap: 8px; }
+.must-list li { font-size: 13px; line-height: 1.45; }
+.must-list code {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-weight: 650; font-size: 13px;
+  background: #f1f5f9; padding: 1px 6px; border-radius: 6px;
+  white-space: normal;
+}
+.must-list .zh { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
