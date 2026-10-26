@@ -111,6 +111,8 @@
       ...(brief.measures || []),
       factText,
       ...(brief.theme_ids || []).map(themeLabel),
+      brief.sample_answer || "",
+      brief.sample_note || "",
     ]
       .join(" ")
       .toLowerCase();
@@ -156,7 +158,9 @@
 
       const tags = (brief.theme_ids || [])
         .map((th) => `<span class="chip">${escapeHtml(themeLabel(th))}</span>`)
-        .join("");
+        .join("") + (brief.sample_answer
+          ? `<span class="chip chip-sample">有範文</span>`
+          : "");
 
       const facts = (brief.facts || [])
         .map((f) => {
@@ -204,6 +208,12 @@
             <h4>必記事實</h4>
             <ul class="facts-list">${facts}</ul>
           </div>
+          ${brief.sample_answer ? `<div class="brief-section sample">
+            <h4>範文</h4>
+            ${brief.sample_note ? `<p class="muted brief-sample-note">${escapeHtml(brief.sample_note)}</p>` : ""}
+            <pre class="brief-sample">${escapeHtml(brief.sample_answer)}</pre>
+            <button type="button" class="btn btn-copy-sample" data-id="${escapeAttr(brief.id)}">複製範文</button>
+          </div>` : ""}
           <div class="brief-actions">
             <button type="button" class="btn primary btn-use-drill" data-id="${escapeAttr(brief.id)}">用呢題計時</button>
           </div>
@@ -214,6 +224,13 @@
         else openBriefs.add(brief.id);
         renderBriefs();
       });
+      const copyBtn = card.querySelector(".btn-copy-sample");
+      if (copyBtn) {
+        copyBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          copyText(brief.sample_answer || "", "已複製範文");
+        });
+      }
       card.querySelector(".btn-use-drill").addEventListener("click", (e) => {
         e.stopPropagation();
         const d = drills.find((x) => x.id === brief.id);
