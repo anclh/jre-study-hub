@@ -227,35 +227,42 @@
         <div class="chip-row" style="margin-top:10px">
           <span class="chip">500–800 words</span>
           <span class="chip">Docs A–G</span>
-          <span class="chip">計時寫作</span>
+          <span class="chip">左 DF · 右作答</span>
         </div>
       </div>
       ${taskHtml}
-      <div class="card" style="padding-bottom:8px">
-        <h2>DATA FILE</h2>
-        <p class="muted" style="margin:0">Sort → highlight quotable numbers → outline。唔好抄長段 background。</p>
-      </div>
-      ${docsHtml}
-      <div class="card">
-        <h2>計時寫作</h2>
-        <p class="lede">跟框架寫 memo。預設 ~70′ 寫作（非官方）；答卷存呢部裝置。</p>
-        <div class="timer-row">
-          <div class="timer" id="timerDisplay">70:00</div>
-          <div class="toolbar">
-            <button type="button" class="btn primary" id="btnStart70">開始 70 分</button>
-            <button type="button" class="btn" id="btnStart90">90 分</button>
-            <button type="button" class="btn" id="btnPause">暫停</button>
-            <button type="button" class="btn" id="btnReset">重設</button>
+      <div class="practice-split">
+        <div class="practice-pane practice-pane-df">
+          <div class="card practice-pane-head" style="padding-bottom:8px">
+            <h2>DATA FILE</h2>
+            <p class="muted" style="margin:0">Sort → highlight → outline。唔好抄長段 background。</p>
+          </div>
+          <div class="practice-pane-scroll">
+            ${docsHtml}
           </div>
         </div>
-        <label class="sr-only" for="answer">答卷</label>
-        <textarea id="answer" rows="14" placeholder="Opening → P1／P2 + implications → Options + objections → Recommend (who／when／KPI)"></textarea>
-        <div class="toolbar">
-          <button type="button" class="btn" id="btnCopyAnswer">複製答卷</button>
-          <button type="button" class="btn" id="btnGoMark">去自評清單</button>
-          <span class="count" id="wordCount">0 words</span>
+        <div class="practice-pane practice-pane-write">
+          <div class="card practice-write-card">
+            <h2>作答</h2>
+            <p class="lede">空白格寫 memo。答卷存呢部裝置；寫完先睇下面範例。</p>
+            <div class="timer-row">
+              <div class="timer" id="timerDisplay">70:00</div>
+              <div class="toolbar">
+                <button type="button" class="btn primary" id="btnStart70">70 分</button>
+                <button type="button" class="btn" id="btnStart90">90 分</button>
+                <button type="button" class="btn" id="btnPause">暫停</button>
+                <button type="button" class="btn" id="btnReset">重設</button>
+              </div>
+            </div>
+            <label class="sr-only" for="answer">答卷</label>
+            <textarea id="answer" placeholder="Opening → P1／P2 + implications → Options + objections → Recommend (who／when／KPI)"></textarea>
+            <div class="toolbar">
+              <button type="button" class="btn" id="btnCopyAnswer">複製答卷</button>
+              <button type="button" class="btn" id="btnGoMark">去自評</button>
+              <span class="count" id="wordCount">0 words</span>
+            </div>
+          </div>
         </div>
-        <p class="muted">寫完去「自評清單」打勾。範例 memo 喺下面，自己寫完先開。</p>
       </div>
       ${learnHtml}
       ${modelHtml}
