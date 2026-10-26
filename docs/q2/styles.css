@@ -227,3 +227,10 @@ textarea {
 .frame-domains { margin: 8px 0 10px; }
 .frame-template { margin-top: 8px; }
 .frame-template-box { max-height: 280px; font-size: 12px; }
+
+.bullet-list {
+  margin: 0; padding-left: 1.15em; font-size: 13px;
+  display: grid; gap: 6px;
+}
+.bullet-list li::marker { color: var(--accent); }
+.card h3 { margin: 12px 0 6px; font-size: 14px; color: var(--accent); }
