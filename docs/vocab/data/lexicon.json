@@ -764,7 +764,7 @@
       "sustainability",
       "sustain"
     ],
-    "note": "",
+    "note": "長遠評估",
     "synonyms": [
       "viable long-term",
       "enduring",
@@ -1048,7 +1048,7 @@
     "related": [
       "transparent"
     ],
-    "note": "",
+    "note": "管治準則",
     "synonyms": [
       "openness",
       "clarity",
@@ -1083,7 +1083,7 @@
     "related": [
       "accountable"
     ],
-    "note": "",
+    "note": "管治準則",
     "synonyms": [
       "answerability",
       "responsibility",
@@ -2011,7 +2011,7 @@
       "comply",
       "compliant"
     ],
-    "note": "",
+    "note": "規管與執法",
     "synonyms": [
       "adherence",
       "conformity",
@@ -2047,7 +2047,7 @@
       "enforce",
       "enforcing"
     ],
-    "note": "",
+    "note": "措施落地",
     "synonyms": [
       "implementation of the law",
       "policing",
@@ -5920,7 +5920,7 @@
       "cost-effective",
       "value for money"
     ],
-    "note": "",
+    "note": "方案比較準則",
     "synonyms": [
       "value for money",
       "efficiency of spend",
@@ -6529,7 +6529,7 @@
       "benchmarking",
       "benchmarked"
     ],
-    "note": "",
+    "note": "比較與目標設定",
     "synonyms": [
       "reference standard",
       "yardstick",
@@ -9137,5 +9137,451 @@
     ],
     "example": "A flat levy can be regressive for low-income households.",
     "topic": "fiscal-regulation"
+  },
+  {
+    "term": "but must / provided that",
+    "zh": "惟須；惟以…為前提",
+    "pos": "phrase",
+    "note": "平衡句核心",
+    "synonyms": [
+      "subject to",
+      "contingent on"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The proposal helps to ease congestion but must be accompanied by better public transport.",
+        "zh": "有關建議有助紓緩擠塞，惟須配合更完善的公共交通。"
+      }
+    ],
+    "topic": "common",
+    "example": "The proposal helps to ease congestion but must be accompanied by better public transport."
+  },
+  {
+    "term": "pilot",
+    "zh": "試點；先導",
+    "pos": "n./v.",
+    "note": "推薦時顯示可執行性",
+    "synonyms": [
+      "trial scheme",
+      "pilot project"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "A pilot scheme should be launched in selected districts before territory-wide rollout.",
+        "zh": "宜先在選定地區推行試點，再考慮全港推廣。"
+      }
+    ],
+    "topic": "common",
+    "example": "A pilot scheme should be launched in selected districts before territory-wide rollout."
+  },
+  {
+    "term": "phased / in stages",
+    "zh": "分階段",
+    "pos": "adj./phrase",
+    "note": "管理風險與資源",
+    "synonyms": [
+      "staged",
+      "step-by-step"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Implementation should be phased to manage fiscal and operational risks.",
+        "zh": "推行宜分階段進行，以管理財政及營運風險。"
+      }
+    ],
+    "topic": "common",
+    "example": "Implementation should be phased to manage fiscal and operational risks."
+  },
+  {
+    "term": "effectiveness",
+    "zh": "成效",
+    "pos": "n.",
+    "note": "評估與檢討必用",
+    "synonyms": [
+      "outcome",
+      "impact"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "KPIs should be set to measure the effectiveness of the measures.",
+        "zh": "應設定關鍵績效指標以量度措施成效。"
+      }
+    ],
+    "topic": "common",
+    "example": "KPIs should be set to measure the effectiveness of the measures."
+  },
+  {
+    "term": "stakeholders",
+    "zh": "持份者",
+    "pos": "n.",
+    "note": "分析影響與平衡利益",
+    "synonyms": [
+      "interested parties",
+      "affected groups"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The proposal must balance the interests of different stakeholders.",
+        "zh": "建議須平衡不同持份者的利益。"
+      }
+    ],
+    "topic": "common",
+    "example": "The proposal must balance the interests of different stakeholders."
+  },
+  {
+    "term": "weigh / balance",
+    "zh": "權衡",
+    "pos": "v.",
+    "note": "結構核心：權衡利弊",
+    "synonyms": [
+      "consider",
+      "assess trade-offs"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "After weighing the pros and cons, the recommended option is…",
+        "zh": "權衡利弊後，建議採用…"
+      }
+    ],
+    "topic": "common",
+    "example": "After weighing the pros and cons, the recommended option is…"
+  },
+  {
+    "term": "recommend / propose",
+    "zh": "建議",
+    "pos": "v.",
+    "note": "結尾必用；語氣宜中性",
+    "synonyms": [
+      "suggest",
+      "put forward"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "It is recommended that a pilot be launched with clear KPIs.",
+        "zh": "建議先推行試點並設定清晰指標。"
+      }
+    ],
+    "topic": "common",
+    "example": "It is recommended that a pilot be launched with clear KPIs."
+  },
+  {
+    "term": "in the short term / long term",
+    "zh": "短期／長遠",
+    "pos": "phrase",
+    "note": "時間視野分析",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The measure may bring short-term relief but requires long-term structural changes.",
+        "zh": "措施或可帶來短期紓緩，惟長遠仍須結構性改變。"
+      }
+    ],
+    "topic": "common",
+    "example": "The measure may bring short-term relief but requires long-term structural changes."
+  },
+  {
+    "term": "address / tackle",
+    "zh": "應對；解決",
+    "pos": "v.",
+    "note": "問題導向",
+    "synonyms": [
+      "deal with",
+      "respond to"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The proposal addresses the root causes rather than symptoms.",
+        "zh": "建議針對問題成因而非表面徵狀。"
+      }
+    ],
+    "topic": "common",
+    "example": "The proposal addresses the root causes rather than symptoms."
+  },
+  {
+    "term": "enhance / strengthen",
+    "zh": "加強；提升",
+    "pos": "v.",
+    "note": "措施描述高頻",
+    "synonyms": [
+      "improve",
+      "bolster"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Additional resources will strengthen monitoring capacity.",
+        "zh": "額外資源將加強監察能力。"
+      }
+    ],
+    "topic": "common",
+    "example": "Additional resources will strengthen monitoring capacity."
+  },
+  {
+    "term": "review / evaluate",
+    "zh": "檢討；評估",
+    "pos": "v.",
+    "note": "後續跟進",
+    "synonyms": [
+      "assess",
+      "examine"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "A review should be conducted after 12 months.",
+        "zh": "宜於十二個月後進行檢討。"
+      }
+    ],
+    "topic": "common",
+    "example": "A review should be conducted after 12 months."
+  },
+  {
+    "term": "resources / funding",
+    "zh": "資源；撥款",
+    "pos": "n.",
+    "note": "限制條件",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Implementation is subject to available resources.",
+        "zh": "推行須視乎可用資源。"
+      }
+    ],
+    "topic": "common",
+    "example": "Implementation is subject to available resources."
+  },
+  {
+    "term": "public interest",
+    "zh": "公眾利益",
+    "pos": "n.",
+    "note": "判斷準則",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The decision should be guided by the public interest.",
+        "zh": "決定應以公眾利益為依歸。"
+      }
+    ],
+    "topic": "common",
+    "example": "The decision should be guided by the public interest."
+  },
+  {
+    "term": "residual risks",
+    "zh": "剩餘風險",
+    "pos": "n.",
+    "note": "結尾顯示周全",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Residual risks remain and should be monitored.",
+        "zh": "仍有剩餘風險，應持續監察。"
+      }
+    ],
+    "topic": "common",
+    "example": "Residual risks remain and should be monitored."
+  },
+  {
+    "term": "knock-on effects",
+    "zh": "連鎖影響",
+    "pos": "n.",
+    "note": "影響分析",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "There could be knock-on effects on frontline manpower.",
+        "zh": "或對前線人手產生連鎖影響。"
+      }
+    ],
+    "topic": "common",
+    "example": "There could be knock-on effects on frontline manpower."
+  },
+  {
+    "term": "trade-offs",
+    "zh": "取捨",
+    "pos": "n.",
+    "note": "權衡時明確表達",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "There are clear trade-offs between speed and quality.",
+        "zh": "速度與質素之間存在明顯取捨。"
+      }
+    ],
+    "topic": "common",
+    "example": "There are clear trade-offs between speed and quality."
+  },
+  {
+    "term": "measurable",
+    "zh": "可量度",
+    "pos": "adj.",
+    "note": "建議具體化",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Targets should be measurable and time-bound.",
+        "zh": "目標應可量度並設時限。"
+      }
+    ],
+    "topic": "common",
+    "example": "Targets should be measurable and time-bound."
+  },
+  {
+    "term": "subject to",
+    "zh": "視乎；受…規限",
+    "pos": "phrase",
+    "note": "條件限制",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Rollout is subject to the outcome of the pilot.",
+        "zh": "全面推行須視乎試點結果。"
+      }
+    ],
+    "topic": "common",
+    "example": "Rollout is subject to the outcome of the pilot."
+  },
+  {
+    "term": "in view of",
+    "zh": "鑒於",
+    "pos": "phrase",
+    "note": "開頭或理據",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "In view of rising demand, additional capacity is needed.",
+        "zh": "鑒於需求上升，須增加服務容量。"
+      }
+    ],
+    "topic": "common",
+    "example": "In view of rising demand, additional capacity is needed."
+  },
+  {
+    "term": "coordination",
+    "zh": "協調",
+    "pos": "n.",
+    "note": "跨部門措施常用",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Better coordination among bureaux is required.",
+        "zh": "政策局之間須加強協調。"
+      }
+    ],
+    "topic": "common",
+    "example": "Better coordination among bureaux is required."
+  },
+  {
+    "term": "implications",
+    "zh": "影響；後果",
+    "pos": "n.",
+    "note": "分析核心",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The fiscal implications warrant careful consideration.",
+        "zh": "財政影響值得審慎考慮。"
+      }
+    ],
+    "topic": "common",
+    "example": "The fiscal implications warrant careful consideration."
+  },
+  {
+    "term": "root causes",
+    "zh": "成因；根源",
+    "pos": "n.",
+    "note": "問題分析深度",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The proposal addresses the root causes rather than symptoms.",
+        "zh": "建議針對問題成因而非表面徵狀。"
+      }
+    ],
+    "topic": "common",
+    "example": "The proposal addresses the root causes rather than symptoms."
+  },
+  {
+    "term": "capacity",
+    "zh": "能力；容量",
+    "pos": "n.",
+    "note": "行政或服務容量",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Existing administrative capacity may limit the pace of rollout.",
+        "zh": "現有行政能力或限制推行速度。"
+      }
+    ],
+    "topic": "common",
+    "example": "Existing administrative capacity may limit the pace of rollout."
+  },
+  {
+    "term": "outcome-based",
+    "zh": "成效為本",
+    "pos": "adj.",
+    "note": "評估取向",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "An outcome-based approach is preferred over process-based monitoring.",
+        "zh": "宜採用成效為本而非程序為本的監察方式。"
+      }
+    ],
+    "topic": "common",
+    "example": "An outcome-based approach is preferred over process-based monitoring."
+  },
+  {
+    "term": "in the interim",
+    "zh": "過渡期間",
+    "pos": "phrase",
+    "note": "時間安排",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "In the interim, interim measures can be introduced.",
+        "zh": "過渡期間可先引入臨時措施。"
+      }
+    ],
+    "topic": "common",
+    "example": "In the interim, interim measures can be introduced."
+  },
+  {
+    "term": "notwithstanding",
+    "zh": "儘管；縱使",
+    "pos": "prep.",
+    "note": "承認反對後仍堅持",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Notwithstanding the concerns raised, the benefits outweigh the risks.",
+        "zh": "儘管有人提出關注，利仍大於弊。"
+      }
+    ],
+    "topic": "common",
+    "example": "Notwithstanding the concerns raised, the benefits outweigh the risks."
   }
 ]

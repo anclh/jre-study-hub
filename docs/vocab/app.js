@@ -154,10 +154,12 @@ function chipRow(label, items, cls) {
     "fiscal-regulation": "財政規管",
     "innovation-digital": "創科數碼",
     governance: "管治用語",
+    common: "常用",
   };
 
   const TOPIC_ORDER = [
     "all",
+    "common",
     "housing-land",
     "welfare-population",
     "transport-infra",
