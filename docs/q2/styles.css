@@ -1,4 +1,5 @@
 :root {
+  --content-w: 100%;
   --bg: #f4f6f9;
   --card: #ffffff;
   --card2: #eef2f7;
@@ -66,8 +67,14 @@ main {
   max-width: var(--content-w, 720px); margin: 0 auto;
   padding: 14px max(16px, env(safe-area-inset-right)) calc(88px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left));
 }
+/* Use full viewport width; only side padding from safe-area / main padding */
 @media (min-width: 900px) {
-  :root { --content-w: 820px; }
+  body:has(#panel-drill.active) main {
+    max-width: 100%;
+  }
+  #panel-drill textarea#answer {
+    min-height: min(55dvh, 560px);
+  }
 }
 @media (max-width: 420px) {
   .brand p { display: none; }
