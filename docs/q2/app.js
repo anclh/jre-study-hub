@@ -288,13 +288,38 @@
     current = d;
     localStorage.setItem(STORAGE_DRILL, d.id);
     $("#drillSelect").value = d.id;
-    $("#drillMeta").innerHTML = `<span class="chip">${escapeHtml(d.title_zh)}</span>`;
+    const chips = [`<span class="chip">${escapeHtml(d.title_zh)}</span>`];
+    if (d.sample_answer) chips.push('<span class="chip chip-sample">有範文</span>');
+    $("#drillMeta").innerHTML = chips.join("");
     $("#drillPrompt").textContent = d.prompt;
     const lines = [];
     if (d.pros?.length) lines.push("利：\n- " + d.pros.join("\n- "));
     if (d.cons?.length) lines.push("弊：\n- " + d.cons.join("\n- "));
     if (d.measures?.length) lines.push("措施提示：\n- " + d.measures.join("\n- "));
     $("#drillHints").textContent = lines.join("\n\n") || "（呢題未有提示卡）";
+
+    const sampleCard = $("#drillSampleCard");
+    const sampleWrap = $("#drillSampleWrap");
+    const sampleText = $("#drillSampleText");
+    const sampleNote = $("#drillSampleNote");
+    const btnToggle = $("#btnToggleSample");
+    if (sampleCard && sampleText) {
+      if (d.sample_answer) {
+        sampleCard.hidden = false;
+        sampleText.textContent = d.sample_answer;
+        if (sampleNote) {
+          sampleNote.textContent = d.sample_note
+            ? d.sample_note
+            : "寫完先開。範文只係參考結構同語氣，唔好背。";
+        }
+        if (sampleWrap) sampleWrap.hidden = true;
+        if (btnToggle) btnToggle.textContent = "顯示範文";
+      } else {
+        sampleCard.hidden = true;
+        sampleText.textContent = "";
+        if (sampleWrap) sampleWrap.hidden = true;
+      }
+    }
   }
 
   function fillSelect() {
@@ -320,6 +345,8 @@
         pros: b.pros || [],
         cons: b.cons || [],
         measures: b.measures || [],
+        sample_answer: b.sample_answer || "",
+        sample_note: b.sample_note || "",
       }));
       drills = [DAI_PAI_DONG, ...extras.filter((b) => b.prompt)];
     } catch (e) {
@@ -343,6 +370,25 @@
     bankQuery = "";
     renderBriefs();
   });
+
+
+  // Sample below answer (Q1-style)
+  const btnToggleSample = $("#btnToggleSample");
+  if (btnToggleSample) {
+    btnToggleSample.addEventListener("click", () => {
+      const wrap = $("#drillSampleWrap");
+      if (!wrap || !current.sample_answer) return;
+      wrap.hidden = !wrap.hidden;
+      btnToggleSample.textContent = wrap.hidden ? "顯示範文" : "隱藏範文";
+    });
+  }
+  const btnCopySampleDrill = $("#btnCopySampleDrill");
+  if (btnCopySampleDrill) {
+    btnCopySampleDrill.addEventListener("click", () => {
+      if (!current.sample_answer) return toast("呢題未有範文");
+      copyText(current.sample_answer, "已複製範文");
+    });
+  }
 
   $("#btnShuffle").addEventListener("click", () => {
     if (drills.length < 2) return renderDrill(drills[0]);

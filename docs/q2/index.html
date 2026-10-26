@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="JRE 中文 Q2 — 議題思維、題庫、計時練習與自評" />
   <title>中文 Q2 · JRE Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261026v" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261026v" />
+  <link rel="stylesheet" href="styles.css?v=20261027a" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261027a" />
 </head>
 <body>
   <header class="app-header">
@@ -238,7 +238,18 @@
           <button type="button" class="btn" id="btnCopyAnswer">複製答卷</button>
           <span class="count" id="wordCount">0 字</span>
         </div>
-        <p class="muted">答卷只存在呢部裝置（localStorage）；交卷後可去「自評清單」打勾。</p>
+        <p class="muted">答卷只存在呢部裝置（localStorage）。範文喺下面——<strong>自己寫完先開</strong>；交卷後可去「自評清單」打勾。</p>
+      </div>
+      <div class="card" id="drillSampleCard" hidden>
+        <h2>範文</h2>
+        <p class="lede muted" id="drillSampleNote">對齊 Q1：寫完先睇。有範文嘅題先顯示呢卡。</p>
+        <div class="toolbar">
+          <button type="button" class="btn primary" id="btnToggleSample">顯示範文</button>
+          <button type="button" class="btn" id="btnCopySampleDrill">複製範文</button>
+        </div>
+        <div class="model-wrap" id="drillSampleWrap" hidden>
+          <pre class="brief-sample" id="drillSampleText"></pre>
+        </div>
       </div>
     </section>
 
@@ -262,7 +273,7 @@
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261026v"></script>
-  <script src="../shell/tabbar.js?v=20261026v"></script>
+  <script src="app.js?v=20261027a"></script>
+  <script src="../shell/tabbar.js?v=20261027a"></script>
 </body>
 </html>

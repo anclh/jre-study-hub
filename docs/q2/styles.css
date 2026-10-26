@@ -234,3 +234,8 @@ textarea {
 }
 .bullet-list li::marker { color: var(--accent); }
 .card h3 { margin: 12px 0 6px; font-size: 14px; color: var(--accent); }
+
+/* Drill sample (below answer), aligned with Q1 */
+.model-wrap { margin-top: 8px; }
+.model-wrap[hidden] { display: none !important; }
+#drillSampleCard[hidden] { display: none !important; }
