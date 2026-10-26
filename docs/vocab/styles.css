@@ -777,7 +777,7 @@ table.prog tr:hover td {
 }
 
 
-/* Q1 phrase cards + mini-drill */
+/* Q1 phrase cards */
 .phrase-card .card-top {
   display: flex;
   flex-wrap: wrap;
@@ -793,13 +793,6 @@ table.prog tr:hover td {
 }
 .phrase-card .pos { display: none; }
 
-.mini-drill .drill-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.15rem 1.25rem;
-  box-shadow: var(--shadow);
-}
 .drill-hint {
   margin: 0 0 0.85rem;
   font-size: 0.88rem;
