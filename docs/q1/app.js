@@ -2,6 +2,7 @@
   "use strict";
 
   const STORAGE_MARKS = "jre-q1-marks-v1";
+  const STORAGE_ANSWER = "jre-q1-answer-v1";
 
   const CAT_LABELS = {
     all: "全部",
@@ -225,8 +226,8 @@
         <p class="lede" style="margin:0">${escapeHtml(pack.tip || "")}</p>
         <div class="chip-row" style="margin-top:10px">
           <span class="chip">500–800 words</span>
-          <span class="chip">≤15 min Data File</span>
           <span class="chip">Docs A–G</span>
+          <span class="chip">計時寫作</span>
         </div>
       </div>
       ${taskHtml}
@@ -235,6 +236,27 @@
         <p class="muted" style="margin:0">Sort → highlight quotable numbers → outline。唔好抄長段 background。</p>
       </div>
       ${docsHtml}
+      <div class="card">
+        <h2>計時寫作</h2>
+        <p class="lede">跟框架寫 memo。預設 ~70′ 寫作（非官方）；答卷存呢部裝置。</p>
+        <div class="timer-row">
+          <div class="timer" id="timerDisplay">70:00</div>
+          <div class="toolbar">
+            <button type="button" class="btn primary" id="btnStart70">開始 70 分</button>
+            <button type="button" class="btn" id="btnStart90">90 分</button>
+            <button type="button" class="btn" id="btnPause">暫停</button>
+            <button type="button" class="btn" id="btnReset">重設</button>
+          </div>
+        </div>
+        <label class="sr-only" for="answer">答卷</label>
+        <textarea id="answer" rows="14" placeholder="Opening → P1／P2 + implications → Options + objections → Recommend (who／when／KPI)"></textarea>
+        <div class="toolbar">
+          <button type="button" class="btn" id="btnCopyAnswer">複製答卷</button>
+          <button type="button" class="btn" id="btnGoMark">去自評清單</button>
+          <span class="count" id="wordCount">0 words</span>
+        </div>
+        <p class="muted">寫完去「自評清單」打勾。範例 memo 喺下面，自己寫完先開。</p>
+      </div>
       ${learnHtml}
       ${modelHtml}
     `;
@@ -249,6 +271,7 @@
         btn.textContent = state.modelOpen ? "隱藏範例" : "顯示範例";
       });
     }
+    initPractice();
   }
 
   async function loadPhrases() {
@@ -270,6 +293,98 @@
     }
   }
 
+
+
+  let practiceRemain = 70 * 60;
+  let practiceTick = null;
+
+  function paintPracticeTimer() {
+    const display = $("#timerDisplay");
+    if (!display) return;
+    const m = Math.floor(Math.max(0, practiceRemain) / 60);
+    const s = Math.max(0, practiceRemain) % 60;
+    display.textContent = `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+    display.classList.toggle("warn", practiceRemain <= 10 * 60 && practiceRemain > 5 * 60);
+    display.classList.toggle("danger", practiceRemain <= 5 * 60);
+  }
+
+  function stopPracticeTick() {
+    if (practiceTick) clearInterval(practiceTick);
+    practiceTick = null;
+  }
+
+  function startPracticeTimer(mins) {
+    stopPracticeTick();
+    practiceRemain = mins * 60;
+    paintPracticeTimer();
+    practiceTick = setInterval(() => {
+      practiceRemain -= 1;
+      paintPracticeTimer();
+      if (practiceRemain <= 0) {
+        stopPracticeTick();
+        toast("時間到 — 去自評清單打勾");
+      }
+    }, 1000);
+  }
+
+  function countWords(t) {
+    const s = (t || "").trim();
+    if (!s) return 0;
+    return s.split(/\s+/).filter(Boolean).length;
+  }
+
+  function initPractice() {
+    const answer = $("#answer");
+    const countEl = $("#wordCount");
+    if (!answer || !countEl) return;
+
+    answer.value = localStorage.getItem(STORAGE_ANSWER) || "";
+    function syncCount() {
+      countEl.textContent = `${countWords(answer.value)} words`;
+    }
+    answer.oninput = () => {
+      localStorage.setItem(STORAGE_ANSWER, answer.value);
+      syncCount();
+    };
+    syncCount();
+
+    paintPracticeTimer();
+    $("#btnStart70")?.addEventListener("click", () => startPracticeTimer(70));
+    $("#btnStart90")?.addEventListener("click", () => startPracticeTimer(90));
+    $("#btnPause")?.addEventListener("click", () => {
+      if (practiceTick) {
+        stopPracticeTick();
+        toast("已暫停");
+      } else if (practiceRemain > 0) {
+        practiceTick = setInterval(() => {
+          practiceRemain -= 1;
+          paintPracticeTimer();
+          if (practiceRemain <= 0) {
+            stopPracticeTick();
+            toast("時間到");
+          }
+        }, 1000);
+        toast("繼續");
+      }
+    });
+    $("#btnReset")?.addEventListener("click", () => {
+      stopPracticeTick();
+      practiceRemain = 70 * 60;
+      paintPracticeTimer();
+    });
+    $("#btnCopyAnswer")?.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(answer.value);
+        toast("已複製答卷");
+      } catch {
+        toast("複製失敗");
+      }
+    });
+    $("#btnGoMark")?.addEventListener("click", () => {
+      const markBtn = $$("#subnav button").find((b) => b.dataset.panel === "mark");
+      markBtn?.click();
+    });
+  }
 
   function initMarks() {
     const checks = [...document.querySelectorAll("#checklist input")];

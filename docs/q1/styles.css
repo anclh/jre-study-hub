@@ -10,6 +10,7 @@
   --accent-2: #1d4ed8;
   --ok: #0b6e4f;
   --warn: #b45309;
+  --danger: #b91c1c;
   --radius: 14px;
   --shadow: 0 8px 24px rgba(26, 35, 50, 0.06);
   --font: "Segoe UI", "PingFang HK", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
@@ -222,4 +223,22 @@ main { max-width: 720px; margin: 0 auto; padding: 14px 16px 24px; }
 .checklist input { margin-top: 3px; accent-color: var(--accent); flex-shrink: 0; }
 .score {
   margin: 12px 0 8px; font-size: 18px; font-weight: 700; color: var(--accent);
+}
+
+.timer-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 8px 0; }
+.timer {
+  font-variant-numeric: tabular-nums; font-size: 28px; font-weight: 700;
+  letter-spacing: 0.02em; min-width: 5.5rem;
+}
+.timer.warn { color: var(--warn); }
+.timer.danger { color: var(--danger); }
+#answer {
+  width: 100%; resize: vertical; min-height: 220px;
+  font: inherit; font-size: 14px; line-height: 1.55;
+  color: var(--text); background: #fff;
+  border: 1px solid var(--line); border-radius: 12px; padding: 12px;
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
 }
