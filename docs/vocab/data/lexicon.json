@@ -32,7 +32,8 @@
         "zh": "更佳的交通管理有助紓緩繁忙時段擠塞。"
       }
     ],
-    "example": "The new housing measures aim to alleviate the shortage of affordable flats."
+    "example": "The new housing measures aim to alleviate the shortage of affordable flats.",
+    "topic": "governance"
   },
   {
     "term": "streamline",
@@ -67,7 +68,8 @@
         "zh": "精簡審批可縮短由規劃至施工的時間。"
       }
     ],
-    "example": "The Government will streamline licensing procedures for small businesses."
+    "example": "The Government will streamline licensing procedures for small businesses.",
+    "topic": "governance"
   },
   {
     "term": "bolster",
@@ -102,7 +104,8 @@
         "zh": "技能培訓鞏固青年就業能力。"
       }
     ],
-    "example": "Additional funding will bolster the city's competitiveness in fintech."
+    "example": "Additional funding will bolster the city's competitiveness in fintech.",
+    "topic": "governance"
   },
   {
     "term": "earmark",
@@ -137,7 +140,8 @@
         "zh": "區議會可預留資助予社區項目。"
       }
     ],
-    "example": "The Budget earmarks $2 billion for elderly care services."
+    "example": "The Budget earmarks $2 billion for elderly care services.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "facilitate",
@@ -172,7 +176,8 @@
         "zh": "跨境交通連接促進大灣區人流。"
       }
     ],
-    "example": "One-stop centres facilitate access to government services."
+    "example": "One-stop centres facilitate access to government services.",
+    "topic": "governance"
   },
   {
     "term": "embark upon",
@@ -207,7 +212,8 @@
         "zh": "本港去年展開大型基建計劃。"
       }
     ],
-    "example": "The Administration will embark upon a comprehensive review of the scheme."
+    "example": "The Administration will embark upon a comprehensive review of the scheme.",
+    "topic": "governance"
   },
   {
     "term": "intensify",
@@ -242,7 +248,8 @@
         "zh": "跨境合作將在金融罪案方面加強。"
       }
     ],
-    "example": "The department will intensify enforcement against illegal dumping."
+    "example": "The department will intensify enforcement against illegal dumping.",
+    "topic": "governance"
   },
   {
     "term": "contingency",
@@ -277,7 +284,8 @@
         "zh": "演習測試了部門之間的應變協調。"
       }
     ],
-    "example": "Each bureau must maintain an up-to-date contingency plan."
+    "example": "Each bureau must maintain an up-to-date contingency plan.",
+    "topic": "governance"
   },
   {
     "term": "livelihood",
@@ -311,7 +319,8 @@
         "zh": "措施組合支援基層家庭民生。"
       }
     ],
-    "example": "Livelihood measures remain a priority in the Policy Address."
+    "example": "Livelihood measures remain a priority in the Policy Address.",
+    "topic": "welfare-population"
   },
   {
     "term": "subsidise",
@@ -347,7 +356,8 @@
         "zh": "研發可透過配對資助獲得補貼。"
       }
     ],
-    "example": "The Government will continue to subsidise public transport fares."
+    "example": "The Government will continue to subsidise public transport fares.",
+    "topic": "welfare-population"
   },
   {
     "term": "means-tested",
@@ -382,7 +392,8 @@
         "zh": "申請人須為經審查計劃提交證明文件。"
       }
     ],
-    "example": "The allowance is means-tested to target those most in need."
+    "example": "The allowance is means-tested to target those most in need.",
+    "topic": "welfare-population"
   },
   {
     "term": "enhance",
@@ -417,7 +428,8 @@
         "zh": "培訓計劃加強前線人員技能。"
       }
     ],
-    "example": "Digital tools enhance the efficiency of public service delivery."
+    "example": "Digital tools enhance the efficiency of public service delivery.",
+    "topic": "governance"
   },
   {
     "term": "safeguard",
@@ -452,7 +464,8 @@
         "zh": "該條例保障少數股東權益。"
       }
     ],
-    "example": "Strict controls safeguard national security and public order."
+    "example": "Strict controls safeguard national security and public order.",
+    "topic": "governance"
   },
   {
     "term": "strengthen",
@@ -487,7 +500,8 @@
         "zh": "能力建設強化制度韌性。"
       }
     ],
-    "example": "The Government seeks to strengthen the rule of law."
+    "example": "The Government seeks to strengthen the rule of law.",
+    "topic": "governance"
   },
   {
     "term": "foster",
@@ -522,7 +536,8 @@
         "zh": "開放對話促進政府與持份者之間的信任。"
       }
     ],
-    "example": "Policies foster innovation and entrepreneurship among youth."
+    "example": "Policies foster innovation and entrepreneurship among youth.",
+    "topic": "education-manpower"
   },
   {
     "term": "uphold",
@@ -557,7 +572,8 @@
         "zh": "本港繼續維護「一國兩制」。"
       }
     ],
-    "example": "Courts uphold the Basic Law and judicial independence."
+    "example": "Courts uphold the Basic Law and judicial independence.",
+    "topic": "governance"
   },
   {
     "term": "consolidate",
@@ -592,7 +608,8 @@
         "zh": "先導成果應在擴展前先予鞏固。"
       }
     ],
-    "example": "The merger consolidates overlapping regulatory functions."
+    "example": "The merger consolidates overlapping regulatory functions.",
+    "topic": "governance"
   },
   {
     "term": "expedite",
@@ -627,7 +644,8 @@
         "zh": "持份者促請政府從速辦理法例修訂。"
       }
     ],
-    "example": "The bureau will expedite land disposal for public housing."
+    "example": "The bureau will expedite land disposal for public housing.",
+    "topic": "governance"
   },
   {
     "term": "optimise",
@@ -663,7 +681,8 @@
         "zh": "交通路線應予優化以減排。"
       }
     ],
-    "example": "The plan seeks to optimise land use in the urban core."
+    "example": "The plan seeks to optimise land use in the urban core.",
+    "topic": "governance"
   },
   {
     "term": "mitigate",
@@ -698,7 +717,8 @@
         "zh": "保險計劃減輕極端天氣造成的財務損失。"
       }
     ],
-    "example": "Green buffers mitigate the impact of new highways on residents."
+    "example": "Green buffers mitigate the impact of new highways on residents.",
+    "topic": "governance"
   },
   {
     "term": "prudent",
@@ -733,7 +753,8 @@
         "zh": "監管機構促請銀行在放貸上保持審慎。"
       }
     ],
-    "example": "Prudent fiscal management underpins long-term stability."
+    "example": "Prudent fiscal management underpins long-term stability.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "sustainable",
@@ -768,7 +789,8 @@
         "zh": "綠色債券為可持續基建項目融資。"
       }
     ],
-    "example": "Sustainable development balances growth with conservation."
+    "example": "Sustainable development balances growth with conservation.",
+    "topic": "environment-climate"
   },
   {
     "term": "inclusive",
@@ -803,7 +825,8 @@
         "zh": "增長應具包容性，讓基層分享成果。"
       }
     ],
-    "example": "An inclusive society ensures equal access to public services."
+    "example": "An inclusive society ensures equal access to public services.",
+    "topic": "welfare-population"
   },
   {
     "term": "resilient",
@@ -837,7 +860,8 @@
         "zh": "社區網絡使地區在危機中更抗逆。"
       }
     ],
-    "example": "A resilient economy can absorb external shocks."
+    "example": "A resilient economy can absorb external shocks.",
+    "topic": "environment-climate"
   },
   {
     "term": "proactive",
@@ -871,7 +895,8 @@
         "zh": "主動維修減少昂貴的緊急修理。"
       }
     ],
-    "example": "A proactive stance on cyber security prevents major breaches."
+    "example": "A proactive stance on cyber security prevents major breaches.",
+    "topic": "governance"
   },
   {
     "term": "holistic",
@@ -905,7 +930,8 @@
         "zh": "政策應以整體視野看待大灣區連繫。"
       }
     ],
-    "example": "A holistic strategy addresses housing, transport and jobs together."
+    "example": "A holistic strategy addresses housing, transport and jobs together.",
+    "topic": "governance"
   },
   {
     "term": "synergy",
@@ -940,7 +966,8 @@
         "zh": "缺乏協調，機構會失去潛在協同。"
       }
     ],
-    "example": "GBA cooperation seeks synergy between Hong Kong and Mainland cities."
+    "example": "GBA cooperation seeks synergy between Hong Kong and Mainland cities.",
+    "topic": "governance"
   },
   {
     "term": "liaison",
@@ -976,7 +1003,8 @@
         "en": "The liaison officer will coordinate all communications.",
         "zh": "聯絡官將協調所有通訊。"
       }
-    ]
+    ],
+    "topic": "governance"
   },
   {
     "term": "stakeholder",
@@ -1010,7 +1038,8 @@
         "zh": "病人是醫療改革的重要持份者。"
       }
     ],
-    "example": "The bureau consulted key stakeholders before gazetting the bill."
+    "example": "The bureau consulted key stakeholders before gazetting the bill.",
+    "topic": "governance"
   },
   {
     "term": "transparency",
@@ -1044,7 +1073,8 @@
         "zh": "欠缺透明度會引發揣測與不信任。"
       }
     ],
-    "example": "Greater transparency in tendering builds public trust."
+    "example": "Greater transparency in tendering builds public trust.",
+    "topic": "governance"
   },
   {
     "term": "accountability",
@@ -1078,7 +1108,8 @@
         "zh": "獨立審計加強非政府機構的問責。"
       }
     ],
-    "example": "Clear lines of accountability improve governance."
+    "example": "Clear lines of accountability improve governance.",
+    "topic": "governance"
   },
   {
     "term": "governance",
@@ -1112,7 +1143,8 @@
         "zh": "管治薄弱會削弱公共服務提供。"
       }
     ],
-    "example": "Good governance requires transparency and the rule of law."
+    "example": "Good governance requires transparency and the rule of law.",
+    "topic": "governance"
   },
   {
     "term": "procurement",
@@ -1147,7 +1179,8 @@
         "zh": "集中採購可降低單位成本。"
       }
     ],
-    "example": "Government procurement must follow fair and open procedures."
+    "example": "Government procurement must follow fair and open procedures.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "infrastructure",
@@ -1181,7 +1214,8 @@
         "zh": "老化基建需要適時維修。"
       }
     ],
-    "example": "Major infrastructure supports the Northern Metropolis plan."
+    "example": "Major infrastructure supports the Northern Metropolis plan.",
+    "topic": "transport-infra"
   },
   {
     "term": "revitalise",
@@ -1216,7 +1250,8 @@
         "zh": "空置工廈可活化為共用工作空間。"
       }
     ],
-    "example": "Heritage schemes revitalise historic districts for cultural use."
+    "example": "Heritage schemes revitalise historic districts for cultural use.",
+    "topic": "housing-land"
   },
   {
     "term": "rehabilitate",
@@ -1251,7 +1286,8 @@
         "zh": "斜坡工程修復山泥傾瀉損毀的地點。"
       }
     ],
-    "example": "Urban renewal projects rehabilitate old residential blocks."
+    "example": "Urban renewal projects rehabilitate old residential blocks.",
+    "topic": "housing-land"
   },
   {
     "term": "conservation",
@@ -1286,7 +1322,8 @@
         "zh": "海洋保育區限制具破壞性的捕魚活動。"
       }
     ],
-    "example": "Nature conservation protects country-park biodiversity."
+    "example": "Nature conservation protects country-park biodiversity.",
+    "topic": "environment-climate"
   },
   {
     "term": "biodiversity",
@@ -1318,7 +1355,8 @@
         "zh": "入侵物種威脅本地生物多樣性。"
       }
     ],
-    "example": "Wetland parks help maintain regional biodiversity."
+    "example": "Wetland parks help maintain regional biodiversity.",
+    "topic": "environment-climate"
   },
   {
     "term": "carbon neutrality",
@@ -1353,7 +1391,8 @@
         "zh": "碳中和需要各行業大幅減排。"
       }
     ],
-    "example": "Hong Kong targets carbon neutrality before 2050."
+    "example": "Hong Kong targets carbon neutrality before 2050.",
+    "topic": "environment-climate"
   },
   {
     "term": "decarbonisation",
@@ -1388,7 +1427,8 @@
         "zh": "業界路線圖訂定減碳時間表。"
       }
     ],
-    "example": "Power-sector decarbonisation is central to climate policy."
+    "example": "Power-sector decarbonisation is central to climate policy.",
+    "topic": "environment-climate"
   },
   {
     "term": "affordable",
@@ -1423,7 +1463,8 @@
         "zh": "公共交通須對基層使用者保持可負擔。"
       }
     ],
-    "example": "More affordable housing is needed for young families."
+    "example": "More affordable housing is needed for young families.",
+    "topic": "housing-land"
   },
   {
     "term": "eligibility",
@@ -1458,7 +1499,8 @@
         "zh": "申請人在登記前須符合資格規定。"
       }
     ],
-    "example": "Eligibility for the allowance is based on age and residence."
+    "example": "Eligibility for the allowance is based on age and residence.",
+    "topic": "welfare-population"
   },
   {
     "term": "disbursement",
@@ -1493,7 +1535,8 @@
         "zh": "為提高透明度公布發放時間表。"
       }
     ],
-    "example": "Prompt disbursement of relief grants eases cash-flow stress."
+    "example": "Prompt disbursement of relief grants eases cash-flow stress.",
+    "topic": "welfare-population"
   },
   {
     "term": "allocation",
@@ -1528,7 +1571,8 @@
         "zh": "公營房屋土地分配正在加快。"
       }
     ],
-    "example": "Budget allocation to education rose this financial year."
+    "example": "Budget allocation to education rose this financial year.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "quota",
@@ -1562,7 +1606,8 @@
         "zh": "提高配額或可紓緩人手短缺。"
       }
     ],
-    "example": "Talent schemes operate under an annual quota."
+    "example": "Talent schemes operate under an annual quota.",
+    "topic": "housing-land"
   },
   {
     "term": "levy",
@@ -1597,7 +1642,8 @@
         "zh": "物業交易須繳付印花稅。"
       }
     ],
-    "example": "A plastic-bag levy encourages reusable bags."
+    "example": "A plastic-bag levy encourages reusable bags.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "rebate",
@@ -1632,7 +1678,8 @@
         "zh": "合資格企業可申請培訓費用回贈。"
       }
     ],
-    "example": "Rates rebates give short-term relief to households."
+    "example": "Rates rebates give short-term relief to households.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "concession",
@@ -1667,7 +1714,8 @@
         "zh": "學費寬免幫助清貧學生。"
       }
     ],
-    "example": "Fare concessions support elderly and disabled passengers."
+    "example": "Fare concessions support elderly and disabled passengers.",
+    "topic": "welfare-population"
   },
   {
     "term": "waiver",
@@ -1702,7 +1750,8 @@
         "zh": "簽證費豁免吸引特定人才。"
       }
     ],
-    "example": "A fee waiver applies to low-income applicants."
+    "example": "A fee waiver applies to low-income applicants.",
+    "topic": "welfare-population"
   },
   {
     "term": "amendment",
@@ -1737,7 +1786,8 @@
         "zh": "公眾諮詢後或需再作修訂。"
       }
     ],
-    "example": "The Legislative Council scrutinised the bill and its amendments."
+    "example": "The Legislative Council scrutinised the bill and its amendments.",
+    "topic": "governance"
   },
   {
     "term": "ordinance",
@@ -1771,7 +1821,8 @@
         "zh": "附屬法例補充主體條例。"
       }
     ],
-    "example": "The Personal Data (Privacy) Ordinance protects data subjects."
+    "example": "The Personal Data (Privacy) Ordinance protects data subjects.",
+    "topic": "governance"
   },
   {
     "term": "gazette",
@@ -1806,7 +1857,8 @@
         "zh": "收地公告必須在憲報刊登。"
       }
     ],
-    "example": "The amended regulation was gazetted and took effect immediately."
+    "example": "The amended regulation was gazetted and took effect immediately.",
+    "topic": "governance"
   },
   {
     "term": "enactment",
@@ -1841,7 +1893,8 @@
         "zh": "持份者歡迎盡早制定消費者保障。"
       }
     ],
-    "example": "Enactment of the bill followed lengthy committee scrutiny."
+    "example": "Enactment of the bill followed lengthy committee scrutiny.",
+    "topic": "governance"
   },
   {
     "term": "jurisdiction",
@@ -1875,7 +1928,8 @@
         "zh": "虛擬資產的規管管轄範圍已獲釐清。"
       }
     ],
-    "example": "The High Court has jurisdiction over the dispute."
+    "example": "The High Court has jurisdiction over the dispute.",
+    "topic": "governance"
   },
   {
     "term": "prosecution",
@@ -1910,7 +1964,8 @@
         "zh": "檢控政策強調公平及公眾利益。"
       }
     ],
-    "example": "The Department of Justice decides independently on prosecution."
+    "example": "The Department of Justice decides independently on prosecution.",
+    "topic": "governance"
   },
   {
     "term": "conviction",
@@ -1945,7 +2000,8 @@
         "zh": "已失時效的定罪受更生條文規限。"
       }
     ],
-    "example": "A prior conviction may affect sentencing."
+    "example": "A prior conviction may affect sentencing.",
+    "topic": "governance"
   },
   {
     "term": "compliance",
@@ -1980,7 +2036,8 @@
         "zh": "自願遵從減少罰則需要。"
       }
     ],
-    "example": "Firms must demonstrate compliance with listing rules."
+    "example": "Firms must demonstrate compliance with listing rules.",
+    "topic": "governance"
   },
   {
     "term": "enforcement",
@@ -2015,7 +2072,8 @@
         "zh": "跨機構執法提高偵查率。"
       }
     ],
-    "example": "Stepped-up enforcement targets illegal parking hotspots."
+    "example": "Stepped-up enforcement targets illegal parking hotspots.",
+    "topic": "governance"
   },
   {
     "term": "surveillance",
@@ -2049,7 +2107,8 @@
         "zh": "閉路電視監察支援繁忙地區公共安全。"
       }
     ],
-    "example": "Disease surveillance detects outbreaks at an early stage."
+    "example": "Disease surveillance detects outbreaks at an early stage.",
+    "topic": "welfare-population"
   },
   {
     "term": "quarantine",
@@ -2083,7 +2142,8 @@
         "zh": "在特定條件下容許家居隔離。"
       }
     ],
-    "example": "Inbound travellers were subject to compulsory quarantine."
+    "example": "Inbound travellers were subject to compulsory quarantine.",
+    "topic": "welfare-population"
   },
   {
     "term": "epidemic",
@@ -2118,7 +2178,8 @@
         "zh": "疫症經驗為日後衛生政策提供參考。"
       }
     ],
-    "example": "The epidemic strained public hospital capacity."
+    "example": "The epidemic strained public hospital capacity.",
+    "topic": "welfare-population"
   },
   {
     "term": "vaccination",
@@ -2153,7 +2214,8 @@
         "zh": "流動隊伍為安老院舍提供接種。"
       }
     ],
-    "example": "High vaccination coverage reduces severe disease."
+    "example": "High vaccination coverage reduces severe disease.",
+    "topic": "welfare-population"
   },
   {
     "term": "outpatient",
@@ -2187,7 +2249,8 @@
         "zh": "遠程醫療擴大偏遠地區門診服務。"
       }
     ],
-    "example": "Specialist outpatient waiting times remain a concern."
+    "example": "Specialist outpatient waiting times remain a concern.",
+    "topic": "welfare-population"
   },
   {
     "term": "inpatient",
@@ -2221,7 +2284,8 @@
         "zh": "精神健康住院服務需要專門人手。"
       }
     ],
-    "example": "Inpatient beds were reserved for severe COVID cases."
+    "example": "Inpatient beds were reserved for severe COVID cases.",
+    "topic": "welfare-population"
   },
   {
     "term": "telemedicine",
@@ -2255,7 +2319,8 @@
         "zh": "保險公司日益承保認可遠程診症。"
       }
     ],
-    "example": "Telemedicine improves access for mobility-impaired patients."
+    "example": "Telemedicine improves access for mobility-impaired patients.",
+    "topic": "innovation-digital"
   },
   {
     "term": "vocational",
@@ -2289,7 +2354,8 @@
         "zh": "僱主重視技術員的職業資歷。"
       }
     ],
-    "example": "Vocational training aligns skills with industry demand."
+    "example": "Vocational training aligns skills with industry demand.",
+    "topic": "education-manpower"
   },
   {
     "term": "internship",
@@ -2324,7 +2390,8 @@
         "zh": "有薪實習改善弱勢青年的公平性。"
       }
     ],
-    "example": "Government departments offer summer internships for students."
+    "example": "Government departments offer summer internships for students.",
+    "topic": "education-manpower"
   },
   {
     "term": "scholarship",
@@ -2358,7 +2425,8 @@
         "zh": "經審查獎學金支援清貧優異生。"
       }
     ],
-    "example": "Merit scholarships attract top STEM talent."
+    "example": "Merit scholarships attract top STEM talent.",
+    "topic": "education-manpower"
   },
   {
     "term": "bursary",
@@ -2392,7 +2460,8 @@
         "zh": "助學金涵蓋書本及交通但不包括學費。"
       }
     ],
-    "example": "Bursaries reduce dropout among low-income students."
+    "example": "Bursaries reduce dropout among low-income students.",
+    "topic": "education-manpower"
   },
   {
     "term": "matriculation",
@@ -2428,7 +2497,8 @@
         "zh": "小學入學人數預計進一步縮減。"
       }
     ],
-    "example": "Falling matriculation reflects demographic change."
+    "example": "Falling matriculation reflects demographic change.",
+    "topic": "education-manpower"
   },
   {
     "term": "enrolment",
@@ -2464,7 +2534,8 @@
         "zh": "提早報名有助學校規劃人手。"
       }
     ],
-    "example": "Online enrolment simplifies course registration."
+    "example": "Online enrolment simplifies course registration.",
+    "topic": "education-manpower"
   },
   {
     "term": "curriculum",
@@ -2499,7 +2570,8 @@
         "zh": "課程改革需要教師專業發展。"
       }
     ],
-    "example": "The curriculum emphasises national education and values."
+    "example": "The curriculum emphasises national education and values.",
+    "topic": "education-manpower"
   },
   {
     "term": "redevelopment",
@@ -2534,7 +2606,8 @@
         "zh": "受影響租戶在重建期間獲安置。"
       }
     ],
-    "example": "Aged estates are earmarked for redevelopment."
+    "example": "Aged estates are earmarked for redevelopment.",
+    "topic": "housing-land"
   },
   {
     "term": "urban renewal",
@@ -2568,7 +2641,8 @@
         "zh": "社區參與對市區重建至關重要。"
       }
     ],
-    "example": "Urban renewal balances development with heritage."
+    "example": "Urban renewal balances development with heritage.",
+    "topic": "housing-land"
   },
   {
     "term": "land supply",
@@ -2600,7 +2674,8 @@
         "zh": "土地供應短缺延長公屋輪候時間。"
       }
     ],
-    "example": "Increasing land supply is key to easing home prices."
+    "example": "Increasing land supply is key to easing home prices.",
+    "topic": "housing-land"
   },
   {
     "term": "public rental housing",
@@ -2634,7 +2709,8 @@
         "zh": "新公屋大廈將於明年落成。"
       }
     ],
-    "example": "Public rental housing remains the main safety net for housing."
+    "example": "Public rental housing remains the main safety net for housing.",
+    "topic": "housing-land"
   },
   {
     "term": "transitional housing",
@@ -2666,7 +2742,8 @@
         "zh": "單位以固定年期作為過渡性房屋提供。"
       }
     ],
-    "example": "Transitional housing eases pressure on the waiting list."
+    "example": "Transitional housing eases pressure on the waiting list.",
+    "topic": "housing-land"
   },
   {
     "term": "interim housing",
@@ -2698,7 +2775,8 @@
         "zh": "大型清拆後中轉房屋需求上升。"
       }
     ],
-    "example": "Clearees may be placed in interim housing pending PRH."
+    "example": "Clearees may be placed in interim housing pending PRH.",
+    "topic": "housing-land"
   },
   {
     "term": "tenancy",
@@ -2733,7 +2811,8 @@
         "zh": "定期租約為雙方提供確定性。"
       }
     ],
-    "example": "Security of tenancy protects sitting tenants from abrupt eviction."
+    "example": "Security of tenancy protects sitting tenants from abrupt eviction.",
+    "topic": "housing-land"
   },
   {
     "term": "comprehensive social security assistance",
@@ -2767,7 +2846,8 @@
         "zh": "資產限額決定綜援資格。"
       }
     ],
-    "example": "CSSA provides a safety net for those in financial hardship."
+    "example": "CSSA provides a safety net for those in financial hardship.",
+    "topic": "welfare-population"
   },
   {
     "term": "old age living allowance",
@@ -2801,7 +2881,8 @@
         "zh": "可於社會保障辦事處申請長者生活津貼。"
       }
     ],
-    "example": "OALA supplements the income of eligible elderly persons."
+    "example": "OALA supplements the income of eligible elderly persons.",
+    "topic": "welfare-population"
   },
   {
     "term": "disability allowance",
@@ -2835,7 +2916,8 @@
         "zh": "高額傷殘津貼涵蓋較嚴重個案。"
       }
     ],
-    "example": "Disability allowance is non-means-tested for eligible persons."
+    "example": "Disability allowance is non-means-tested for eligible persons.",
+    "topic": "welfare-population"
   },
   {
     "term": "carer",
@@ -2870,7 +2952,8 @@
         "zh": "照顧者津貼肯定無薪照顧工作。"
       }
     ],
-    "example": "Respite services give carers temporary relief."
+    "example": "Respite services give carers temporary relief.",
+    "topic": "welfare-population"
   },
   {
     "term": "ethnic minority",
@@ -2904,7 +2987,8 @@
         "zh": "少數族裔就業措施促進共融。"
       }
     ],
-    "example": "Ethnic minority students receive Chinese-language support."
+    "example": "Ethnic minority students receive Chinese-language support.",
+    "topic": "welfare-population"
   },
   {
     "term": "integration",
@@ -2939,7 +3023,8 @@
         "zh": "學校促進不同背景學生共融。"
       }
     ],
-    "example": "Language programmes aid the integration of new arrivals."
+    "example": "Language programmes aid the integration of new arrivals.",
+    "topic": "welfare-population"
   },
   {
     "term": "national security",
@@ -2973,7 +3058,8 @@
         "zh": "國家安全教育由學校層面開始。"
       }
     ],
-    "example": "Safeguarding national security is a constitutional duty."
+    "example": "Safeguarding national security is a constitutional duty.",
+    "topic": "governance"
   },
   {
     "term": "one country, two systems",
@@ -3007,7 +3093,8 @@
         "zh": "投資者重視「一國兩制」的可預期性。"
       }
     ],
-    "example": "'One country, two systems' underpins Hong Kong's unique status."
+    "example": "'One country, two systems' underpins Hong Kong's unique status.",
+    "topic": "governance"
   },
   {
     "term": "patriotism",
@@ -3042,7 +3129,8 @@
         "zh": "愛國與尊重法治相輔相成。"
       }
     ],
-    "example": "Patriotism is cultivated through national education."
+    "example": "Patriotism is cultivated through national education.",
+    "topic": "governance"
   },
   {
     "term": "national education",
@@ -3074,7 +3162,8 @@
         "zh": "國民教育跨科目融入。"
       }
     ],
-    "example": "National education strengthens students' sense of belonging."
+    "example": "National education strengthens students' sense of belonging.",
+    "topic": "education-manpower"
   },
   {
     "term": "Greater Bay Area",
@@ -3108,7 +3197,8 @@
         "zh": "初創企業進軍大灣區以擴大規模。"
       }
     ],
-    "example": "The Greater Bay Area offers vast opportunities for professionals."
+    "example": "The Greater Bay Area offers vast opportunities for professionals.",
+    "topic": "governance"
   },
   {
     "term": "Belt and Road",
@@ -3142,7 +3232,8 @@
         "zh": "「一帶一路」論壇吸引國際投資者。"
       }
     ],
-    "example": "Hong Kong serves as a hub for Belt and Road financing."
+    "example": "Hong Kong serves as a hub for Belt and Road financing.",
+    "topic": "governance"
   },
   {
     "term": "fintech",
@@ -3176,7 +3267,8 @@
         "zh": "人才計劃吸引金融科技專才來港。"
       }
     ],
-    "example": "Hong Kong promotes fintech through a regulatory sandbox."
+    "example": "Hong Kong promotes fintech through a regulatory sandbox.",
+    "topic": "innovation-digital"
   },
   {
     "term": "virtual asset",
@@ -3211,7 +3303,8 @@
         "zh": "反洗錢規則全面適用於虛擬資產服務提供者。"
       }
     ],
-    "example": "Licensing regimes cover virtual asset trading platforms."
+    "example": "Licensing regimes cover virtual asset trading platforms.",
+    "topic": "innovation-digital"
   },
   {
     "term": "stablecoin",
@@ -3245,7 +3338,8 @@
         "zh": "穩定幣儲備須為優質及具流動性。"
       }
     ],
-    "example": "Proposed rules will regulate fiat-referenced stablecoin issuers."
+    "example": "Proposed rules will regulate fiat-referenced stablecoin issuers.",
+    "topic": "innovation-digital"
   },
   {
     "term": "tokenisation",
@@ -3280,7 +3374,8 @@
         "zh": "房地產代幣化或擴大投資者參與。"
       }
     ],
-    "example": "Tokenisation of bonds can shorten settlement cycles."
+    "example": "Tokenisation of bonds can shorten settlement cycles.",
+    "topic": "innovation-digital"
   },
   {
     "term": "green finance",
@@ -3312,7 +3407,8 @@
         "zh": "香港致力成為亞洲綠色金融樞紐。"
       }
     ],
-    "example": "Green finance channels capital to low-carbon projects."
+    "example": "Green finance channels capital to low-carbon projects.",
+    "topic": "environment-climate"
   },
   {
     "term": "sustainable finance",
@@ -3344,7 +3440,8 @@
         "zh": "銀行擴展可持續金融產品系列。"
       }
     ],
-    "example": "Sustainable finance integrates environmental and social factors."
+    "example": "Sustainable finance integrates environmental and social factors.",
+    "topic": "environment-climate"
   },
   {
     "term": "talent admission",
@@ -3378,7 +3475,8 @@
         "zh": "人才入境配額每年檢討。"
       }
     ],
-    "example": "Talent admission schemes target shortage occupations."
+    "example": "Talent admission schemes target shortage occupations.",
+    "topic": "education-manpower"
   },
   {
     "term": "promote",
@@ -3413,7 +3511,8 @@
         "zh": "經貿辦在海外推廣香港。"
       }
     ],
-    "example": "The bureau will promote innovation and technology."
+    "example": "The bureau will promote innovation and technology.",
+    "topic": "governance"
   },
   {
     "term": "implement",
@@ -3448,7 +3547,8 @@
         "zh": "先導結果為全面推行提供依據。"
       }
     ],
-    "example": "Departments will implement the recommendations within a year."
+    "example": "Departments will implement the recommendations within a year.",
+    "topic": "governance"
   },
   {
     "term": "consultation",
@@ -3483,7 +3583,8 @@
         "zh": "諮詢意見塑造最終方案。"
       }
     ],
-    "example": "A three-month consultation sought views on the bill."
+    "example": "A three-month consultation sought views on the bill.",
+    "topic": "governance"
   },
   {
     "term": "public consultation",
@@ -3515,7 +3616,8 @@
         "zh": "有意義的公眾諮詢建立認受性。"
       }
     ],
-    "example": "Public consultation on land use ran for eight weeks."
+    "example": "Public consultation on land use ran for eight weeks.",
+    "topic": "governance"
   },
   {
     "term": "blueprint",
@@ -3549,7 +3651,8 @@
         "zh": "持份者原則上支持政策藍圖。"
       }
     ],
-    "example": "The blueprint sets a 10-year vision for the industry."
+    "example": "The blueprint sets a 10-year vision for the industry.",
+    "topic": "governance"
   },
   {
     "term": "roadmap",
@@ -3583,7 +3686,8 @@
         "zh": "路線圖將於中期檢討後更新。"
       }
     ],
-    "example": "The decarbonisation roadmap sets sectoral milestones."
+    "example": "The decarbonisation roadmap sets sectoral milestones.",
+    "topic": "governance"
   },
   {
     "term": "pilot scheme",
@@ -3617,7 +3721,8 @@
         "zh": "先導計劃開始前已訂評估準則。"
       }
     ],
-    "example": "A pilot scheme will test the new subsidy model."
+    "example": "A pilot scheme will test the new subsidy model.",
+    "topic": "governance"
   },
   {
     "term": "reimbursement",
@@ -3652,7 +3757,8 @@
         "zh": "延遲發還損害小型服務提供者。"
       }
     ],
-    "example": "Employees claim reimbursement of approved travel costs."
+    "example": "Employees claim reimbursement of approved travel costs.",
+    "topic": "welfare-population"
   },
   {
     "term": "stipulate",
@@ -3687,7 +3793,8 @@
         "zh": "指引訂明申請所需文件。"
       }
     ],
-    "example": "The ordinance stipulates maximum working hours for drivers."
+    "example": "The ordinance stipulates maximum working hours for drivers.",
+    "topic": "governance"
   },
   {
     "term": "pursuant to",
@@ -3719,7 +3826,8 @@
         "zh": "任命依據相關規例作出。"
       }
     ],
-    "example": "Action was taken pursuant to section 5 of the ordinance."
+    "example": "Action was taken pursuant to section 5 of the ordinance.",
+    "topic": "governance"
   },
   {
     "term": "in accordance with",
@@ -3751,7 +3859,8 @@
         "zh": "預算按財政指引編製。"
       }
     ],
-    "example": "Procedures were followed in accordance with the manual."
+    "example": "Procedures were followed in accordance with the manual.",
+    "topic": "governance"
   },
   {
     "term": "liaise with",
@@ -3785,7 +3894,8 @@
         "zh": "民政處就外展與非政府機構協調。"
       }
     ],
-    "example": "The bureau will liaise with industry on technical standards."
+    "example": "The bureau will liaise with industry on technical standards.",
+    "topic": "governance"
   },
   {
     "term": "roll out",
@@ -3820,7 +3930,8 @@
         "zh": "全港推展緊隨成功先導之後。"
       }
     ],
-    "example": "The Government will roll out the scheme in three phases."
+    "example": "The Government will roll out the scheme in three phases.",
+    "topic": "governance"
   },
   {
     "term": "phase out",
@@ -3854,7 +3965,8 @@
         "zh": "舊系統在遷移後將逐步停用。"
       }
     ],
-    "example": "Coal-fired generation will be phased out under the climate plan."
+    "example": "Coal-fired generation will be phased out under the climate plan.",
+    "topic": "governance"
   },
   {
     "term": "ramp up",
@@ -3888,7 +4000,8 @@
         "zh": "本港將於五年內加大土地供應。"
       }
     ],
-    "example": "Hospitals ramped up ICU capacity during the surge."
+    "example": "Hospitals ramped up ICU capacity during the surge.",
+    "topic": "governance"
   },
   {
     "term": "underscoring",
@@ -3923,7 +4036,8 @@
         "zh": "報告結尾強調監察的需要。"
       }
     ],
-    "example": "The Secretary spoke, underscoring the urgency of housing supply."
+    "example": "The Secretary spoke, underscoring the urgency of housing supply.",
+    "topic": "governance"
   },
   {
     "term": "reiterate",
@@ -3958,7 +4072,8 @@
         "zh": "通告重申現行安全規定。"
       }
     ],
-    "example": "The Chief Executive reiterated the commitment to the rule of law."
+    "example": "The Chief Executive reiterated the commitment to the rule of law.",
+    "topic": "governance"
   },
   {
     "term": "commend",
@@ -3993,7 +4108,8 @@
         "zh": "我們嘉許業界自願合規的努力。"
       }
     ],
-    "example": "Members commend frontline staff for their dedication."
+    "example": "Members commend frontline staff for their dedication.",
+    "topic": "governance"
   },
   {
     "term": "deploy",
@@ -4028,7 +4144,8 @@
         "zh": "颱風後迅速調配資源。"
       }
     ],
-    "example": "Additional officers will be deployed to crowded districts."
+    "example": "Additional officers will be deployed to crowded districts.",
+    "topic": "governance"
   },
   {
     "term": "capacity building",
@@ -4060,7 +4177,8 @@
         "zh": "公務員隊伍需要數碼能力建設。"
       }
     ],
-    "example": "Capacity building helps NGOs deliver quality services."
+    "example": "Capacity building helps NGOs deliver quality services.",
+    "topic": "education-manpower"
   },
   {
     "term": "manpower",
@@ -4094,7 +4212,8 @@
         "zh": "輸入勞工或可紓緩急切人手缺口。"
       }
     ],
-    "example": "Healthcare manpower remains under strain."
+    "example": "Healthcare manpower remains under strain.",
+    "topic": "education-manpower"
   },
   {
     "term": "shortage",
@@ -4128,7 +4247,8 @@
         "zh": "針對性入境可處理技能短缺。"
       }
     ],
-    "example": "A nursing shortage lengthens ward waiting times."
+    "example": "A nursing shortage lengthens ward waiting times.",
+    "topic": "education-manpower"
   },
   {
     "term": "influx",
@@ -4160,7 +4280,8 @@
         "zh": "資金流入支持股市。"
       }
     ],
-    "example": "An influx of visitors boosted retail sales."
+    "example": "An influx of visitors boosted retail sales.",
+    "topic": "education-manpower"
   },
   {
     "term": "outbound",
@@ -4194,7 +4315,8 @@
         "zh": "學生外流流動擴闊國際視野。"
       }
     ],
-    "example": "Outbound tourism rebounded after border reopening."
+    "example": "Outbound tourism rebounded after border reopening.",
+    "topic": "governance"
   },
   {
     "term": "inbound",
@@ -4228,7 +4350,8 @@
         "zh": "來自風險地區的入境旅客須接受健康檢查。"
       }
     ],
-    "example": "Inbound tourism is a pillar of the local economy."
+    "example": "Inbound tourism is a pillar of the local economy.",
+    "topic": "governance"
   },
   {
     "term": "fiscal",
@@ -4263,7 +4386,8 @@
         "zh": "財政前景取決於地價收入。"
       }
     ],
-    "example": "Fiscal discipline keeps deficits under control."
+    "example": "Fiscal discipline keeps deficits under control.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "fiscal reserves",
@@ -4295,7 +4419,8 @@
         "zh": "雄厚財政儲備支撐信贷評級。"
       }
     ],
-    "example": "Fiscal reserves provide a buffer in economic downturns."
+    "example": "Fiscal reserves provide a buffer in economic downturns.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "recurrent expenditure",
@@ -4329,7 +4454,8 @@
         "zh": "不少部門經常開支以員工成本為主。"
       }
     ],
-    "example": "Recurrent expenditure on welfare has risen steadily."
+    "example": "Recurrent expenditure on welfare has risen steadily.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "capital works",
@@ -4361,7 +4487,8 @@
         "zh": "基本工程延誤推高項目成本。"
       }
     ],
-    "example": "Capital works spending supports long-term growth."
+    "example": "Capital works spending supports long-term growth.",
+    "topic": "transport-infra"
   },
   {
     "term": "tender",
@@ -4396,7 +4523,8 @@
         "zh": "未中標者可要求簡報。"
       }
     ],
-    "example": "The contract will be awarded through open tender."
+    "example": "The contract will be awarded through open tender.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "gazettal",
@@ -4430,7 +4558,8 @@
         "zh": "持份者留意憲報刊憲日期。"
       }
     ],
-    "example": "Gazettal of the order completes the legal process."
+    "example": "Gazettal of the order completes the legal process.",
+    "topic": "governance"
   },
   {
     "term": "statutory",
@@ -4465,7 +4594,8 @@
         "zh": "法定時限約束審批當局。"
       }
     ],
-    "example": "Statutory bodies must comply with disclosure duties."
+    "example": "Statutory bodies must comply with disclosure duties.",
+    "topic": "governance"
   },
   {
     "term": "non-statutory",
@@ -4499,7 +4629,8 @@
         "zh": "非法定守則其後或獲賦予法律效力。"
       }
     ],
-    "example": "A non-statutory guideline offers flexibility to industry."
+    "example": "A non-statutory guideline offers flexibility to industry.",
+    "topic": "governance"
   },
   {
     "term": "advisory",
@@ -4534,7 +4665,8 @@
         "zh": "小組只擔當諮詢角色。"
       }
     ],
-    "example": "An advisory committee reviews technical standards."
+    "example": "An advisory committee reviews technical standards.",
+    "topic": "governance"
   },
   {
     "term": "task force",
@@ -4568,7 +4700,8 @@
         "zh": "業界專家加入反詐騙專責小組。"
       }
     ],
-    "example": "A cross-bureau task force coordinates the response."
+    "example": "A cross-bureau task force coordinates the response.",
+    "topic": "governance"
   },
   {
     "term": "steering committee",
@@ -4600,7 +4733,8 @@
         "zh": "進度每季向督導委員會匯報。"
       }
     ],
-    "example": "A steering committee oversees megaproject delivery."
+    "example": "A steering committee oversees megaproject delivery.",
+    "topic": "governance"
   },
   {
     "term": "memorandum of understanding",
@@ -4635,7 +4769,8 @@
         "zh": "諒解備忘錄通常不具約束力但顯示承諾。"
       }
     ],
-    "example": "The MoU sets out areas of bilateral cooperation."
+    "example": "The MoU sets out areas of bilateral cooperation.",
+    "topic": "governance"
   },
   {
     "term": "bilateral",
@@ -4670,7 +4805,8 @@
         "zh": "爭議經雙邊談判解決。"
       }
     ],
-    "example": "Bilateral talks produced a customs cooperation deal."
+    "example": "Bilateral talks produced a customs cooperation deal.",
+    "topic": "governance"
   },
   {
     "term": "multilateral",
@@ -4704,7 +4840,8 @@
         "zh": "氣候目標有賴多邊合作。"
       }
     ],
-    "example": "Hong Kong takes part in multilateral trade forums."
+    "example": "Hong Kong takes part in multilateral trade forums.",
+    "topic": "governance"
   },
   {
     "term": "prosperity",
@@ -4739,7 +4876,8 @@
         "zh": "共享繁榮需要包容性增長。"
       }
     ],
-    "example": "Stability and prosperity remain twin policy goals."
+    "example": "Stability and prosperity remain twin policy goals.",
+    "topic": "governance"
   },
   {
     "term": "stability",
@@ -4774,7 +4912,8 @@
         "zh": "政策一致性支持市場穩定。"
       }
     ],
-    "example": "Social stability is a prerequisite for investment."
+    "example": "Social stability is a prerequisite for investment.",
+    "topic": "governance"
   },
   {
     "term": "rule of law",
@@ -4806,7 +4945,8 @@
         "zh": "投資者視法治為主要優勢。"
       }
     ],
-    "example": "The rule of law underpins Hong Kong's success."
+    "example": "The rule of law underpins Hong Kong's success.",
+    "topic": "governance"
   },
   {
     "term": "judicial independence",
@@ -4838,7 +4978,8 @@
         "zh": "任命程序保障司法獨立。"
       }
     ],
-    "example": "Judicial independence is guaranteed by the Basic Law."
+    "example": "Judicial independence is guaranteed by the Basic Law.",
+    "topic": "governance"
   },
   {
     "term": "implication",
@@ -4873,7 +5014,8 @@
         "zh": "推出前必須評估法律後果。"
       }
     ],
-    "example": "The policy has wide fiscal implications for future budgets."
+    "example": "The policy has wide fiscal implications for future budgets.",
+    "topic": "governance"
   },
   {
     "term": "knock-on effect",
@@ -4908,7 +5050,8 @@
         "zh": "港口延誤可沿供應鏈引發連鎖效應。"
       }
     ],
-    "example": "Higher fuel prices have a knock-on effect on transport fares."
+    "example": "Higher fuel prices have a knock-on effect on transport fares.",
+    "topic": "governance"
   },
   {
     "term": "cascade",
@@ -4943,7 +5086,8 @@
         "zh": "及早介入防止問題連鎖蔓延。"
       }
     ],
-    "example": "System failures can cascade across interconnected networks."
+    "example": "System failures can cascade across interconnected networks.",
+    "topic": "governance"
   },
   {
     "term": "bottleneck",
@@ -4977,7 +5121,8 @@
         "zh": "消除樽頸加快處理。"
       }
     ],
-    "example": "Land approval remains a bottleneck for housing supply."
+    "example": "Land approval remains a bottleneck for housing supply.",
+    "topic": "transport-infra"
   },
   {
     "term": "shortfall",
@@ -5011,7 +5156,8 @@
         "zh": "房屋產量不足，出現大幅差額。"
       }
     ],
-    "example": "A revenue shortfall forced spending cuts."
+    "example": "A revenue shortfall forced spending cuts.",
+    "topic": "governance"
   },
   {
     "term": "uptake",
@@ -5045,7 +5191,8 @@
         "zh": "在培訓支援下長者數碼使用率上升。"
       }
     ],
-    "example": "Uptake of the subsidy exceeded expectations in the first month."
+    "example": "Uptake of the subsidy exceeded expectations in the first month.",
+    "topic": "governance"
   },
   {
     "term": "uptake rate",
@@ -5079,7 +5226,8 @@
         "zh": "加強宣傳大幅提高使用率。"
       }
     ],
-    "example": "The uptake rate reached 70% within six months."
+    "example": "The uptake rate reached 70% within six months.",
+    "topic": "governance"
   },
   {
     "term": "assess",
@@ -5114,7 +5262,8 @@
         "zh": "投入資金前必須評估風險。"
       }
     ],
-    "example": "Officials will assess the environmental impact of the project."
+    "example": "Officials will assess the environmental impact of the project.",
+    "topic": "governance"
   },
   {
     "term": "assessment",
@@ -5149,7 +5298,8 @@
         "zh": "大型工程須進行影響評估。"
       }
     ],
-    "example": "An independent assessment confirmed the cost overrun."
+    "example": "An independent assessment confirmed the cost overrun.",
+    "topic": "governance"
   },
   {
     "term": "evaluate",
@@ -5184,7 +5334,8 @@
         "zh": "持份者要求評估是否物有所值。"
       }
     ],
-    "example": "The bureau will evaluate the pilot after 12 months."
+    "example": "The bureau will evaluate the pilot after 12 months.",
+    "topic": "governance"
   },
   {
     "term": "evaluation",
@@ -5219,7 +5370,8 @@
         "zh": "推行前已議定評估準則。"
       }
     ],
-    "example": "Mid-term evaluation will inform whether to scale up."
+    "example": "Mid-term evaluation will inform whether to scale up.",
+    "topic": "governance"
   },
   {
     "term": "prioritise",
@@ -5255,7 +5407,8 @@
         "zh": "預算案把民生與房屋置於優先。"
       }
     ],
-    "example": "Departments must prioritise projects with clear public benefit."
+    "example": "Departments must prioritise projects with clear public benefit.",
+    "topic": "governance"
   },
   {
     "term": "phase in",
@@ -5290,7 +5443,8 @@
         "zh": "隨着資格擴大，福利將逐步實施。"
       }
     ],
-    "example": "The levy will be phased in over three years."
+    "example": "The levy will be phased in over three years.",
+    "topic": "governance"
   },
   {
     "term": "scale up",
@@ -5325,7 +5479,8 @@
         "zh": "數碼平台使擴大服務更容易。"
       }
     ],
-    "example": "Successful pilots will be scaled up territory-wide."
+    "example": "Successful pilots will be scaled up territory-wide.",
+    "topic": "governance"
   },
   {
     "term": "oversight",
@@ -5360,7 +5515,8 @@
         "zh": "監察薄弱令不當行為持續。"
       }
     ],
-    "example": "Legislative oversight keeps the executive accountable."
+    "example": "Legislative oversight keeps the executive accountable.",
+    "topic": "governance"
   },
   {
     "term": "enforcement gap",
@@ -5394,7 +5550,8 @@
         "zh": "業界指出各區之間存在執法缺口。"
       }
     ],
-    "example": "An enforcement gap undermines the deterrent effect of the law."
+    "example": "An enforcement gap undermines the deterrent effect of the law.",
+    "topic": "governance"
   },
   {
     "term": "service gap",
@@ -5428,7 +5585,8 @@
         "zh": "新中心旨在填補認知障礙護理服務缺口。"
       }
     ],
-    "example": "A service gap in childcare affects working parents."
+    "example": "A service gap in childcare affects working parents.",
+    "topic": "welfare-population"
   },
   {
     "term": "waiting time",
@@ -5463,7 +5621,8 @@
         "zh": "公屋輪候時間仍是重要民生指標。"
       }
     ],
-    "example": "Specialist waiting times exceed two years in some specialties."
+    "example": "Specialist waiting times exceed two years in some specialties.",
+    "topic": "welfare-population"
   },
   {
     "term": "fiscal implication",
@@ -5498,7 +5657,8 @@
         "zh": "一次性紓困的財政影響輕於經常性資助。"
       }
     ],
-    "example": "Members asked about the fiscal implications of free transport."
+    "example": "Members asked about the fiscal implications of free transport.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "timeframe",
@@ -5533,7 +5693,8 @@
         "zh": "持份者要求更清晰的補償時限。"
       }
     ],
-    "example": "The review will be completed within a six-month timeframe."
+    "example": "The review will be completed within a six-month timeframe.",
+    "topic": "governance"
   },
   {
     "term": "timeline",
@@ -5568,7 +5729,8 @@
         "zh": "法例修訂依循緊湊日程。"
       }
     ],
-    "example": "The project timeline slipped by nine months."
+    "example": "The project timeline slipped by nine months.",
+    "topic": "governance"
   },
   {
     "term": "accountable",
@@ -5603,7 +5765,8 @@
         "zh": "公共機構必須向立法機關問責。"
       }
     ],
-    "example": "Controlling officers are accountable for proper use of funds."
+    "example": "Controlling officers are accountable for proper use of funds.",
+    "topic": "governance"
   },
   {
     "term": "means test",
@@ -5638,7 +5801,8 @@
         "zh": "簡化審查可提高參與率。"
       }
     ],
-    "example": "A means test targets aid at low-income households."
+    "example": "A means test targets aid at low-income households.",
+    "topic": "welfare-population"
   },
   {
     "term": "resource constraint",
@@ -5673,7 +5837,8 @@
         "zh": "人手是安老服務的關鍵資源限制。"
       }
     ],
-    "example": "Resource constraints force difficult trade-offs."
+    "example": "Resource constraints force difficult trade-offs.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "trade-off",
@@ -5708,7 +5873,8 @@
         "zh": "忽視取捨會導致不切實際的建議。"
       }
     ],
-    "example": "There is a trade-off between speed of delivery and consultation depth."
+    "example": "There is a trade-off between speed of delivery and consultation depth.",
+    "topic": "governance"
   },
   {
     "term": "feasibility",
@@ -5743,7 +5909,8 @@
         "zh": "成本超支令持續可行性成疑。"
       }
     ],
-    "example": "A feasibility study precedes major capital commitment."
+    "example": "A feasibility study precedes major capital commitment.",
+    "topic": "governance"
   },
   {
     "term": "cost-effectiveness",
@@ -5778,7 +5945,8 @@
         "zh": "評估比較不同方案的成本效益。"
       }
     ],
-    "example": "Prevention often offers higher cost-effectiveness than cure."
+    "example": "Prevention often offers higher cost-effectiveness than cure.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "interim measure",
@@ -5813,7 +5981,8 @@
         "zh": "租金紓緩作為臨時措施推出。"
       }
     ],
-    "example": "Interim measures bridge the gap until legislation is ready."
+    "example": "Interim measures bridge the gap until legislation is ready.",
+    "topic": "governance"
   },
   {
     "term": "stopgap",
@@ -5847,7 +6016,8 @@
         "zh": "批評者警告勿依賴權宜應對。"
       }
     ],
-    "example": "Hiring contract staff is only a stopgap for the shortage."
+    "example": "Hiring contract staff is only a stopgap for the shortage.",
+    "topic": "governance"
   },
   {
     "term": "root cause",
@@ -5881,7 +6051,8 @@
         "zh": "只治標不治本會令問題復發。"
       }
     ],
-    "example": "Addressing the root cause of congestion requires land-use reform."
+    "example": "Addressing the root cause of congestion requires land-use reform.",
+    "topic": "governance"
   },
   {
     "term": "exacerbate",
@@ -5916,7 +6087,8 @@
         "zh": "拖延維修加重長遠修理成本。"
       }
     ],
-    "example": "Poor ventilation can exacerbate indoor air problems."
+    "example": "Poor ventilation can exacerbate indoor air problems.",
+    "topic": "governance"
   },
   {
     "term": "compound",
@@ -5951,7 +6123,8 @@
         "zh": "錯誤資訊會加重危機中的公眾焦慮。"
       }
     ],
-    "example": "Staff shortages compound existing service delays."
+    "example": "Staff shortages compound existing service delays.",
+    "topic": "governance"
   },
   {
     "term": "give rise to",
@@ -5986,7 +6159,8 @@
         "zh": "透明準則帶來更大公眾信任。"
       }
     ],
-    "example": "Ambiguous rules give rise to inconsistent enforcement."
+    "example": "Ambiguous rules give rise to inconsistent enforcement.",
+    "topic": "governance"
   },
   {
     "term": "entail",
@@ -6021,7 +6195,8 @@
         "zh": "擴大資格牽涉更高經常開支。"
       }
     ],
-    "example": "The reform will entail significant upfront investment."
+    "example": "The reform will entail significant upfront investment.",
+    "topic": "governance"
   },
   {
     "term": "necessitate",
@@ -6056,7 +6231,8 @@
         "zh": "氣候風險需要具韌性的基建設計。"
       }
     ],
-    "example": "Ageing demographics necessitate more elderly care places."
+    "example": "Ageing demographics necessitate more elderly care places.",
+    "topic": "governance"
   },
   {
     "term": "warrant",
@@ -6091,7 +6267,8 @@
         "zh": "持續延誤有充分理由檢討項目管治。"
       }
     ],
-    "example": "Rising complaints warrant a dedicated investigation."
+    "example": "Rising complaints warrant a dedicated investigation.",
+    "topic": "governance"
   },
   {
     "term": "tackle",
@@ -6126,7 +6303,8 @@
         "zh": "學校以針對性補習處理學習損失。"
       }
     ],
-    "example": "A multi-pronged strategy is needed to tackle housing supply."
+    "example": "A multi-pronged strategy is needed to tackle housing supply.",
+    "topic": "governance"
   },
   {
     "term": "curb",
@@ -6161,7 +6339,8 @@
         "zh": "票價優惠經調整以遏抑濫用。"
       }
     ],
-    "example": "Macroprudential tools curb excessive property speculation."
+    "example": "Macroprudential tools curb excessive property speculation.",
+    "topic": "governance"
   },
   {
     "term": "plug the gap",
@@ -6196,7 +6375,8 @@
         "zh": "額外撥款填補社區護理缺口。"
       }
     ],
-    "example": "Imported talent helps plug the gap in STEM skills."
+    "example": "Imported talent helps plug the gap in STEM skills.",
+    "topic": "governance"
   },
   {
     "term": "ring-fence",
@@ -6231,7 +6411,8 @@
         "zh": "議會要求把維修預算圈定專用。"
       }
     ],
-    "example": "The grant is ring-fenced for mental health services only."
+    "example": "The grant is ring-fenced for mental health services only.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "contingent on",
@@ -6266,7 +6447,8 @@
         "zh": "擴展仍取決於先導評估結果。"
       }
     ],
-    "example": "Further funding is contingent on satisfactory progress."
+    "example": "Further funding is contingent on satisfactory progress.",
+    "topic": "governance"
   },
   {
     "term": "milestone",
@@ -6300,7 +6482,8 @@
         "zh": "條例草案通過標誌立法里程碑。"
       }
     ],
-    "example": "Completion of foundation works is the next milestone."
+    "example": "Completion of foundation works is the next milestone.",
+    "topic": "governance"
   },
   {
     "term": "key performance indicator",
@@ -6335,7 +6518,8 @@
         "zh": "部門每季按議定關鍵績效指標匯報。"
       }
     ],
-    "example": "Waiting time is a key performance indicator for clinics."
+    "example": "Waiting time is a key performance indicator for clinics.",
+    "topic": "governance"
   },
   {
     "term": "benchmark",
@@ -6370,7 +6554,8 @@
         "zh": "招標前已對成本作出基準比較。"
       }
     ],
-    "example": "Service standards are benchmarked against international peers."
+    "example": "Service standards are benchmarked against international peers.",
+    "topic": "governance"
   },
   {
     "term": "baseline",
@@ -6405,7 +6590,8 @@
         "zh": "沒有基線，聲稱的改善無法核實。"
       }
     ],
-    "example": "Baseline data are essential for before-and-after evaluation."
+    "example": "Baseline data are essential for before-and-after evaluation.",
+    "topic": "governance"
   },
   {
     "term": "lead department",
@@ -6440,7 +6626,8 @@
         "zh": "牽頭部門向督導委員會匯報進度。"
       }
     ],
-    "example": "The Housing Bureau is the lead department for the initiative."
+    "example": "The Housing Bureau is the lead department for the initiative.",
+    "topic": "governance"
   },
   {
     "term": "interdepartmental",
@@ -6475,7 +6662,8 @@
         "zh": "跨部門審批拖慢核准流程。"
       }
     ],
-    "example": "An interdepartmental working group coordinates the response."
+    "example": "An interdepartmental working group coordinates the response.",
+    "topic": "governance"
   },
   {
     "term": "phased approach",
@@ -6510,7 +6698,8 @@
         "zh": "第一階段經驗指導其後階段。"
       }
     ],
-    "example": "A phased approach reduces implementation risk."
+    "example": "A phased approach reduces implementation risk.",
+    "topic": "governance"
   },
   {
     "term": "rollout",
@@ -6545,7 +6734,8 @@
         "zh": "公眾意見塑造最終推展計劃。"
       }
     ],
-    "example": "The territory-wide rollout begins next quarter."
+    "example": "The territory-wide rollout begins next quarter.",
+    "topic": "governance"
   },
   {
     "term": "coverage",
@@ -6580,7 +6770,8 @@
         "zh": "擴大偏遠地區覆蓋是優先事項。"
       }
     ],
-    "example": "Vaccination coverage exceeded 90% among the elderly."
+    "example": "Vaccination coverage exceeded 90% among the elderly.",
+    "topic": "governance"
   },
   {
     "term": "underutilisation",
@@ -6615,7 +6806,8 @@
         "zh": "更佳配對可減少培訓名額使用不足。"
       }
     ],
-    "example": "Underutilisation of community halls suggests a redesign of booking rules."
+    "example": "Underutilisation of community halls suggests a redesign of booking rules.",
+    "topic": "governance"
   },
   {
     "term": "malfunction",
@@ -6651,7 +6843,8 @@
         "en": "The printer malfunction delayed our report submission.",
         "zh": "打印機故障延遲了我們的報告提交。"
       }
-    ]
+    ],
+    "topic": "innovation-digital"
   },
   {
     "term": "contravention",
@@ -6687,7 +6880,8 @@
         "en": "Any contravention of the agreement will result in penalties.",
         "zh": "任何違反協議的行為都將導致處罰。"
       }
-    ]
+    ],
+    "topic": "governance"
   },
   {
     "term": "allegation",
@@ -6723,7 +6917,8 @@
         "en": "These are serious allegations that require immediate attention.",
         "zh": "這些是需要立即關注的嚴重指控。"
       }
-    ]
+    ],
+    "topic": "governance"
   },
   {
     "term": "litigation",
@@ -6759,7 +6954,8 @@
         "en": "Both parties agreed to settle without litigation.",
         "zh": "雙方同意在不進行訴訟的情況下和解。"
       }
-    ]
+    ],
+    "topic": "governance"
   },
   {
     "term": "impartiality",
@@ -6795,7 +6991,8 @@
         "en": "The report was praised for its impartiality and accuracy.",
         "zh": "該報告因其公正性和準確性而受到讚揚。"
       }
-    ]
+    ],
+    "topic": "governance"
   },
   {
     "term": "ascertain",
@@ -6831,7 +7028,8 @@
         "en": "Please ascertain whether the information is accurate.",
         "zh": "請確定信息是否準確。"
       }
-    ]
+    ],
+    "topic": "governance"
   },
   {
     "term": "regime",
@@ -6867,7 +7065,8 @@
         "en": "The regime has been criticized for its human rights record.",
         "zh": "該政權因其人權記錄而受到批評。"
       }
-    ]
+    ],
+    "topic": "governance"
   },
   {
     "term": "attested",
@@ -6903,7 +7102,8 @@
         "en": "The attested copy of the certificate is required for submission.",
         "zh": "提交時需要經過證實的證書副本。"
       }
-    ]
+    ],
+    "topic": "governance"
   },
   {
     "term": "paramount",
@@ -6939,7 +7139,8 @@
         "en": "The paramount concern is protecting public health.",
         "zh": "首要關注的是保護公眾健康。"
       }
-    ]
+    ],
+    "topic": "governance"
   },
   {
     "term": "infuse",
@@ -6975,7 +7176,8 @@
         "en": "The training program will infuse new skills into the workforce.",
         "zh": "培訓計劃將為員工隊伍注入新技能。"
       }
-    ]
+    ],
+    "topic": "governance"
   },
   {
     "term": "deterrence",
@@ -7011,7 +7213,8 @@
         "en": "The harsh penalties act as a deterrence to violations.",
         "zh": "嚴厲的懲罰對違規行為起到威懾作用。"
       }
-    ]
+    ],
+    "topic": "governance"
   },
   {
     "term": "disparity",
@@ -7047,7 +7250,8 @@
         "zh": "政策措施力求處理長期存在的健康差距。"
       }
     ],
-    "example": "The Government aims to narrow the income disparity between districts."
+    "example": "The Government aims to narrow the income disparity between districts.",
+    "topic": "governance"
   },
   {
     "term": "equity",
@@ -7083,7 +7287,8 @@
         "zh": "持份者要求學位分配更為公平。"
       }
     ],
-    "example": "Resource allocation should uphold equity across districts."
+    "example": "Resource allocation should uphold equity across districts.",
+    "topic": "governance"
   },
   {
     "term": "remit",
@@ -7119,7 +7324,8 @@
         "zh": "是次檢討維持在委員會議定的職權範圍內。"
       }
     ],
-    "example": "Housing supply falls within the bureau's remit."
+    "example": "Housing supply falls within the bureau's remit.",
+    "topic": "governance"
   },
   {
     "term": "purview",
@@ -7154,7 +7360,8 @@
         "zh": "條例把虛擬資產納入規管機構的管轄範圍。"
       }
     ],
-    "example": "Personal data privacy falls within the Commissioner's purview."
+    "example": "Personal data privacy falls within the Commissioner's purview.",
+    "topic": "governance"
   },
   {
     "term": "mandate",
@@ -7190,7 +7397,8 @@
         "zh": "專責小組將在有時限的授權下運作。"
       }
     ],
-    "example": "The agency has a clear mandate to protect consumer interests."
+    "example": "The agency has a clear mandate to protect consumer interests.",
+    "topic": "governance"
   },
   {
     "term": "redress",
@@ -7226,7 +7434,8 @@
         "zh": "清晰的申訴渠道有助重建公眾信心。"
       }
     ],
-    "example": "Affected tenants may seek redress through the tribunal."
+    "example": "Affected tenants may seek redress through the tribunal.",
+    "topic": "governance"
   },
   {
     "term": "grievance",
@@ -7262,7 +7471,8 @@
         "zh": "透明渠道可及早化解職場申訴。"
       }
     ],
-    "example": "Staff may lodge a grievance under the departmental procedure."
+    "example": "Staff may lodge a grievance under the departmental procedure.",
+    "topic": "governance"
   },
   {
     "term": "incentivise",
@@ -7298,7 +7508,8 @@
         "zh": "泊車收費可誘使轉向公共交通。"
       }
     ],
-    "example": "Tax concessions incentivise firms to adopt green technology."
+    "example": "Tax concessions incentivise firms to adopt green technology.",
+    "topic": "governance"
   },
   {
     "term": "disincentive",
@@ -7334,7 +7545,8 @@
         "zh": "決策者消除私人投資的抑制因素。"
       }
     ],
-    "example": "High stamp duty may act as a disincentive to speculation."
+    "example": "High stamp duty may act as a disincentive to speculation.",
+    "topic": "governance"
   },
   {
     "term": "escalate",
@@ -7370,7 +7582,8 @@
         "zh": "成本上升或會加劇對預算的財政壓力。"
       }
     ],
-    "example": "Unresolved disputes may escalate into formal litigation."
+    "example": "Unresolved disputes may escalate into formal litigation.",
+    "topic": "governance"
   },
   {
     "term": "de-escalate",
@@ -7405,7 +7618,8 @@
         "zh": "專責小組力求緩和持份者之間的緊張。"
       }
     ],
-    "example": "Mediation helps de-escalate conflicts before they reach court."
+    "example": "Mediation helps de-escalate conflicts before they reach court.",
+    "topic": "governance"
   },
   {
     "term": "stringent",
@@ -7441,7 +7655,8 @@
         "zh": "高風險採購將適用更嚴格的查核。"
       }
     ],
-    "example": "The ordinance imposes stringent emission standards on vehicles."
+    "example": "The ordinance imposes stringent emission standards on vehicles.",
+    "topic": "governance"
   },
   {
     "term": "lax",
@@ -7477,7 +7692,8 @@
         "zh": "檢討發現監管變得過於寬鬆。"
       }
     ],
-    "example": "Critics argued that lax enforcement undermined the regime."
+    "example": "Critics argued that lax enforcement undermined the regime.",
+    "topic": "governance"
   },
   {
     "term": "envisage",
@@ -7513,7 +7729,8 @@
         "zh": "按構想，計劃將涵蓋約五萬個住戶。"
       }
     ],
-    "example": "The blueprint envisages completion of the corridor by 2030."
+    "example": "The blueprint envisages completion of the corridor by 2030.",
+    "topic": "governance"
   },
   {
     "term": "protracted",
@@ -7549,7 +7766,8 @@
         "zh": "長期爭議或會阻嚇私人投資。"
       }
     ],
-    "example": "Protracted negotiations delayed the land exchange."
+    "example": "Protracted negotiations delayed the land exchange.",
+    "topic": "governance"
   },
   {
     "term": "imminent",
@@ -7585,7 +7803,8 @@
         "zh": "因應即將襲港的颱風已啟動應變計劃。"
       }
     ],
-    "example": "The alert warns of an imminent risk of severe flooding."
+    "example": "The alert warns of an imminent risk of severe flooding.",
+    "topic": "governance"
   },
   {
     "term": "consensus",
@@ -7621,7 +7840,8 @@
         "zh": "若無共識，條例草案難以順利推進。"
       }
     ],
-    "example": "A broad consensus emerged on the need for tighter regulation."
+    "example": "A broad consensus emerged on the need for tighter regulation.",
+    "topic": "governance"
   },
   {
     "term": "cornerstone",
@@ -7657,7 +7877,8 @@
         "zh": "資料私隱是對數碼服務信任的基石。"
       }
     ],
-    "example": "The rule of law remains a cornerstone of Hong Kong's success."
+    "example": "The rule of law remains a cornerstone of Hong Kong's success.",
+    "topic": "governance"
   },
   {
     "term": "catalyst",
@@ -7693,7 +7914,8 @@
         "zh": "跨境合作促成人才流入。"
       }
     ],
-    "example": "The new rail line could act as a catalyst for urban renewal."
+    "example": "The new rail line could act as a catalyst for urban renewal.",
+    "topic": "governance"
   },
   {
     "term": "precarious",
@@ -7729,7 +7951,8 @@
         "zh": "臨時庇護使住戶處於朝不保夕的處境。"
       }
     ],
-    "example": "Many gig workers face precarious employment conditions."
+    "example": "Many gig workers face precarious employment conditions.",
+    "topic": "governance"
   },
   {
     "term": "vulnerable",
@@ -7765,7 +7988,8 @@
         "zh": "未成年人的個人資料特別易遭濫用。"
       }
     ],
-    "example": "Targeted support will be provided to vulnerable households."
+    "example": "Targeted support will be provided to vulnerable households.",
+    "topic": "welfare-population"
   },
   {
     "term": "discrepancy",
@@ -7801,7 +8025,8 @@
         "zh": "人口普查檢討解釋了較早的人口數字差異。"
       }
     ],
-    "example": "Auditors found a discrepancy between the accounts and inventories."
+    "example": "Auditors found a discrepancy between the accounts and inventories.",
+    "topic": "governance"
   },
   {
     "term": "anomaly",
@@ -7837,7 +8062,8 @@
         "zh": "改革消除一項長期存在的稅務異例。"
       }
     ],
-    "example": "The surge in claims was treated as a statistical anomaly."
+    "example": "The surge in claims was treated as a statistical anomaly.",
+    "topic": "governance"
   },
   {
     "term": "austerity",
@@ -7873,7 +8099,8 @@
         "zh": "部門獲要求在不削減核心服務下推行節約。"
       }
     ],
-    "example": "Austerity measures were introduced to restore fiscal balance."
+    "example": "Austerity measures were introduced to restore fiscal balance.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "surplus",
@@ -7909,7 +8136,8 @@
         "zh": "貿易顺差在最近一季收窄。"
       }
     ],
-    "example": "A budget surplus allows the Government to rebuild fiscal reserves."
+    "example": "A budget surplus allows the Government to rebuild fiscal reserves.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "deficit",
@@ -7945,7 +8173,8 @@
         "zh": "結構性赤字不能單靠一次性收入填補。"
       }
     ],
-    "example": "The Government recorded a deficit for the second consecutive year."
+    "example": "The Government recorded a deficit for the second consecutive year.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "decentralise",
@@ -7981,7 +8210,8 @@
         "zh": "決策者討論是否下放發牌權力。"
       }
     ],
-    "example": "The reform will decentralise decision-making to district offices."
+    "example": "The reform will decentralise decision-making to district offices.",
+    "topic": "governance"
   },
   {
     "term": "vacancy",
@@ -8017,7 +8247,8 @@
         "zh": "公眾街市高空置或觸發租金檢討。"
       }
     ],
-    "example": "Office vacancy rates edged up in the central business district."
+    "example": "Office vacancy rates edged up in the central business district.",
+    "topic": "housing-land"
   },
   {
     "term": "gentrification",
@@ -8053,7 +8284,8 @@
         "zh": "包容設計旨在遏止與紳士化相關的迫遷。"
       }
     ],
-    "example": "Residents fear gentrification will push up rents after renewal."
+    "example": "Residents fear gentrification will push up rents after renewal.",
+    "topic": "housing-land"
   },
   {
     "term": "landfill",
@@ -8089,7 +8321,8 @@
         "zh": "廚餘分流可減輕堆填區壓力。"
       }
     ],
-    "example": "Hong Kong's landfills are approaching full capacity."
+    "example": "Hong Kong's landfills are approaching full capacity.",
+    "topic": "environment-climate"
   },
   {
     "term": "recycling",
@@ -8125,7 +8358,8 @@
         "zh": "強制回收計劃涵蓋選定包裝物料。"
       }
     ],
-    "example": "The city aims to raise its recycling rate to 55 per cent."
+    "example": "The city aims to raise its recycling rate to 55 per cent.",
+    "topic": "environment-climate"
   },
   {
     "term": "demographic ageing",
@@ -8161,7 +8395,8 @@
         "zh": "勞工短缺部分由人口老化驅動。"
       }
     ],
-    "example": "Demographic ageing will raise demand for long-term care."
+    "example": "Demographic ageing will raise demand for long-term care.",
+    "topic": "welfare-population"
   },
   {
     "term": "digitalisation",
@@ -8197,7 +8432,8 @@
         "zh": "路線圖訂定政府數碼化的里程碑。"
       }
     ],
-    "example": "Digitalisation of public services can shorten waiting times."
+    "example": "Digitalisation of public services can shorten waiting times.",
+    "topic": "innovation-digital"
   },
   {
     "term": "personal data privacy",
@@ -8233,7 +8469,8 @@
         "zh": "跨境數據流動引起個人資料私隱關注。"
       }
     ],
-    "example": "Personal data privacy must be safeguarded in smart city projects."
+    "example": "Personal data privacy must be safeguarded in smart city projects.",
+    "topic": "innovation-digital"
   },
   {
     "term": "integrity",
@@ -8269,7 +8506,8 @@
         "zh": "審計指出合約批出中的誠信風險。"
       }
     ],
-    "example": "Procurement integrity is essential to public confidence."
+    "example": "Procurement integrity is essential to public confidence.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "whistle-blowing",
@@ -8305,7 +8543,8 @@
         "zh": "鼓勵職員真誠使用舉報途徑。"
       }
     ],
-    "example": "A confidential whistle-blowing channel has been set up."
+    "example": "A confidential whistle-blowing channel has been set up.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "conflict of interest",
@@ -8341,7 +8580,8 @@
         "zh": "採購人員必須避免與供應商有利益衝突。"
       }
     ],
-    "example": "Members must declare any conflict of interest before voting."
+    "example": "Members must declare any conflict of interest before voting.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "due diligence",
@@ -8377,7 +8617,8 @@
         "zh": "未盡盡職審查責任或招致規管制裁。"
       }
     ],
-    "example": "Enhanced due diligence applies to high-risk counterparties."
+    "example": "Enhanced due diligence applies to high-risk counterparties.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "proportionality",
@@ -8413,7 +8654,8 @@
         "zh": "法院常審視措施是否符合相稱性。"
       }
     ],
-    "example": "Restrictions must satisfy the principle of proportionality."
+    "example": "Restrictions must satisfy the principle of proportionality.",
+    "topic": "governance"
   },
   {
     "term": "contingency planning",
@@ -8449,7 +8691,8 @@
         "zh": "跨部門應變規劃改善事故應對。"
       }
     ],
-    "example": "Contingency planning for typhoons is reviewed every season."
+    "example": "Contingency planning for typhoons is reviewed every season.",
+    "topic": "governance"
   },
   {
     "term": "surge capacity",
@@ -8485,7 +8728,8 @@
         "zh": "公共交通在節日需要峰值承載力。"
       }
     ],
-    "example": "Hospitals activated surge capacity during the winter peak."
+    "example": "Hospitals activated surge capacity during the winter peak.",
+    "topic": "welfare-population"
   },
   {
     "term": "bed occupancy",
@@ -8521,7 +8765,8 @@
         "zh": "儀表板按聯網追蹤每日病床佔用率。"
       }
     ],
-    "example": "Bed occupancy exceeded 100 per cent in medical wards."
+    "example": "Bed occupancy exceeded 100 per cent in medical wards.",
+    "topic": "welfare-population"
   },
   {
     "term": "modal shift",
@@ -8557,7 +8802,8 @@
         "zh": "策略訂定二零三五年前的出行模式轉移目標。"
       }
     ],
-    "example": "Better rail links encourage a modal shift from private cars."
+    "example": "Better rail links encourage a modal shift from private cars.",
+    "topic": "transport-infra"
   },
   {
     "term": "last-mile",
@@ -8593,7 +8839,8 @@
         "zh": "行人通道與單車泊位支援最後一里接達。"
       }
     ],
-    "example": "Feeder buses improve last-mile connectivity to the MTR."
+    "example": "Feeder buses improve last-mile connectivity to the MTR.",
+    "topic": "transport-infra"
   },
   {
     "term": "heat island",
@@ -8629,7 +8876,8 @@
         "zh": "建議採用清涼物料以緩解熱島影響。"
       }
     ],
-    "example": "Tree canopy can reduce the urban heat island effect."
+    "example": "Tree canopy can reduce the urban heat island effect.",
+    "topic": "environment-climate"
   },
   {
     "term": "sponge city",
@@ -8665,7 +8913,8 @@
         "zh": "渠務策略採納海綿城市原則。"
       }
     ],
-    "example": "Sponge city measures reduce flood risk after heavy rain."
+    "example": "Sponge city measures reduce flood risk after heavy rain.",
+    "topic": "environment-climate"
   },
   {
     "term": "food waste",
@@ -8701,7 +8950,8 @@
         "zh": "鼓勵酒店從源頭減少廚餘。"
       }
     ],
-    "example": "Food waste accounts for a large share of municipal solid waste."
+    "example": "Food waste accounts for a large share of municipal solid waste.",
+    "topic": "environment-climate"
   },
   {
     "term": "producer responsibility",
@@ -8737,7 +8987,8 @@
         "zh": "業界團體支持分階段推行包裝生產者責任。"
       }
     ],
-    "example": "A producer responsibility scheme covers regulated electrical equipment."
+    "example": "A producer responsibility scheme covers regulated electrical equipment.",
+    "topic": "environment-climate"
   },
   {
     "term": "moral hazard",
@@ -8773,7 +9024,8 @@
         "zh": "救助必須設計成限制道德風險。"
       }
     ],
-    "example": "Unlimited guarantees may create moral hazard for lenders."
+    "example": "Unlimited guarantees may create moral hazard for lenders.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "crowding out",
@@ -8809,7 +9061,8 @@
         "zh": "設計妥善的共同投資可避免排擠市場。"
       }
     ],
-    "example": "Heavy public borrowing may risk crowding out private investment."
+    "example": "Heavy public borrowing may risk crowding out private investment.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "progressive",
@@ -8845,7 +9098,8 @@
         "zh": "分析員討論回贈計劃實際累進程度。"
       }
     ],
-    "example": "A progressive tax system places a higher burden on high earners."
+    "example": "A progressive tax system places a higher burden on high earners.",
+    "topic": "fiscal-regulation"
   },
   {
     "term": "regressive",
@@ -8881,6 +9135,7 @@
         "zh": "推出回贈以抵銷累退效應。"
       }
     ],
-    "example": "A flat levy can be regressive for low-income households."
+    "example": "A flat levy can be regressive for low-income households.",
+    "topic": "fiscal-regulation"
   }
 ]

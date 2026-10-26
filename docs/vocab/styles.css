@@ -583,6 +583,42 @@ main {
   color: var(--text-muted);
 }
 
+
+.topic-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 0.85rem;
+}
+
+.topic-filters button {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.topic-filters button.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
+.topic-pill {
+  flex-shrink: 0;
+}
+
+.flip-topic {
+  margin-bottom: 0.35rem;
+}
+
 .prog-filters {
   display: flex;
   flex-wrap: wrap;

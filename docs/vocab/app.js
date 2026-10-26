@@ -14,6 +14,7 @@
     lexicon: [],
     progCategory: "all",
     q1Category: "all",
+    topicFilter: "all",
     dataMode: null, // 'api' | 'static' once resolved
     drillSeed: Date.now(),
   };
@@ -143,15 +144,42 @@ function chipRow(label, items, cls) {
     return `<div class="lex-block"><div class="lex-label">例句</div><ol class="example-list">${items}</ol></div>`;
   }
 
+
+  const TOPIC_LABELS = {
+    all: "全部",
+    "housing-land": "房屋土地",
+    "welfare-population": "福利人口",
+    "transport-infra": "交通基建",
+    "environment-climate": "環境氣候",
+    "education-manpower": "教育人力",
+    "fiscal-regulation": "財政規管",
+    "innovation-digital": "創科數碼",
+    governance: "管治用語",
+  };
+
+  const TOPIC_ORDER = [
+    "all",
+    "housing-land",
+    "welfare-population",
+    "transport-infra",
+    "environment-climate",
+    "education-manpower",
+    "fiscal-regulation",
+    "innovation-digital",
+    "governance",
+  ];
+
   function vocabCardHTML(card) {
     const saved = isSaved(card.term);
     const synonyms = card.synonyms || card.related || [];
     const antonyms = card.antonyms || [];
     const src = card.source || {};
+    const topicLabel = TOPIC_LABELS[card.topic] || "";
     return `
 <article class="vocab-card ${saved ? "saved" : ""}" data-term="${escapeHtml(card.term)}">
   <div class="card-top">
     <h4 class="term">${escapeHtml(card.term)}<span class="pos">${escapeHtml(card.pos || "")}</span></h4>
+    ${topicLabel ? `<span class="cat-pill topic-pill">${escapeHtml(topicLabel)}</span>` : ""}
   </div>
   <div class="zh">${escapeHtml(card.zh || "")}</div>
   ${card.note ? `<div class="meta-line">${escapeHtml(card.note)}</div>` : ""}
@@ -462,9 +490,30 @@ AFTERWARDS
     });
   }
 
+
+  function renderTopicFilters() {
+    const wrap = $("#topicFilters");
+    if (!wrap) return;
+    wrap.innerHTML = TOPIC_ORDER.map((key) => {
+      const label = TOPIC_LABELS[key] || key;
+      const active = state.topicFilter === key ? "active" : "";
+      return `<button type="button" data-topic="${key}" class="${active}">${label}</button>`;
+    }).join("");
+    wrap.querySelectorAll("button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.topicFilter = btn.dataset.topic;
+        renderTopicFilters();
+        renderVocab();
+      });
+    });
+  }
+
   function renderVocab() {
     const q = ($("#vocabSearch").value || "").trim().toLowerCase();
     let list = vocabBankList();
+    if (state.topicFilter && state.topicFilter !== "all") {
+      list = list.filter((c) => c.topic === state.topicFilter);
+    }
     if (q) {
       list = list.filter((c) => lexiconBlob(c).includes(q));
     }
@@ -725,6 +774,9 @@ AFTERWARDS
   function filteredVocabList() {
     const q = ($("#vocabSearch")?.value || "").trim().toLowerCase();
     let list = vocabBankList();
+    if (state.topicFilter && state.topicFilter !== "all") {
+      list = list.filter((c) => c.topic === state.topicFilter);
+    }
     if (q) list = list.filter((c) => lexiconBlob(c).includes(q));
     return list;
   }
@@ -762,6 +814,7 @@ AFTERWARDS
   function studyBackExtraHTML(card) {
     const synonyms = (card.synonyms || card.related || []).filter(Boolean).slice(0, 6);
     const antonyms = (card.antonyms || []).filter(Boolean).slice(0, 4);
+    const topicLabel = TOPIC_LABELS[card.topic] || "";
     let examples = Array.isArray(card.examples) && card.examples.length
       ? card.examples
       : card.example
@@ -769,6 +822,9 @@ AFTERWARDS
         : [];
     examples = examples.slice(0, 2);
     const parts = [];
+    if (topicLabel) {
+      parts.push(`<div class="flip-topic"><span class="cat-pill topic-pill">${escapeHtml(topicLabel)}</span></div>`);
+    }
     if (synonyms.length) {
       parts.push(
         `<div class="lex-block"><div class="lex-label">同義詞</div><div class="related">${synonyms
@@ -1164,6 +1220,7 @@ AFTERWARDS
     initStudy();
     persistSaved();
     await loadLexicon();
+    renderTopicFilters();
     await loadFeed(false);
   }
 
