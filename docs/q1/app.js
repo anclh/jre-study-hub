@@ -19,6 +19,7 @@
     q1: { disclaimer: "", categories: [], items: [] },
     category: "all",
     modelOpen: false,
+    caseId: null,
   };
 
   const $ = (s, el = document) => el.querySelector(s);
@@ -157,12 +158,26 @@
     </article>`;
   }
 
+  function getCasePacks() {
+    return Array.isArray(window.Q1_CASE_PACKS) ? window.Q1_CASE_PACKS : [];
+  }
+
+  function getActivePack() {
+    const packs = getCasePacks();
+    if (!packs.length) return null;
+    if (!state.caseId || !packs.some((p) => p.id === state.caseId)) {
+      state.caseId = packs[0].id;
+    }
+    return packs.find((p) => p.id === state.caseId) || packs[0];
+  }
+
   function renderCase() {
     const root = $("#caseRoot");
-    const pack = window.Q1_CASE_PACK;
+    const packs = getCasePacks();
+    const pack = getActivePack();
     if (!root) return;
     if (!pack) {
-      root.innerHTML = `<div class="empty">未能載入 Data File 練習（data/heat-island.js）。</div>`;
+      root.innerHTML = `<div class="empty">未能載入 Data File 練習（data/*.js）。</div>`;
       return;
     }
 
@@ -221,12 +236,17 @@
 
     root.innerHTML = `
       <div class="card case-hero">
+        <div class="toolbar" style="margin-bottom:8px">
+          <label class="select-wrap">題目
+            <select id="caseSelect">${packs.map((p) => `<option value="${escapeHtml(p.id)}" ${p.id === pack.id ? "selected" : ""}>${escapeHtml(p.titleZh || p.title)}</option>`).join("")}</select>
+          </label>
+        </div>
         <h2>${escapeHtml(pack.title)}</h2>
         <p class="sub">${escapeHtml(pack.titleZh || "")}</p>
         <p class="lede" style="margin:0">${escapeHtml(pack.tip || "")}</p>
         <div class="chip-row" style="margin-top:10px">
           <span class="chip">500–800 words</span>
-          <span class="chip">Docs A–G</span>
+          <span class="chip">${(pack.docs || []).length} docs</span>
           <span class="chip">左 DF · 右作答</span>
         </div>
       </div>
@@ -277,6 +297,16 @@
         wrap.hidden = !state.modelOpen;
         btn.textContent = state.modelOpen ? "隱藏範例" : "顯示範例";
       });
+    }
+    const sel = $("#caseSelect");
+    if (sel) {
+      sel.onchange = () => {
+        state.caseId = sel.value;
+        stopPracticeTick();
+        practiceRemain = 70 * 60;
+        renderCase();
+        toast("已換題");
+      };
     }
     initPractice();
   }

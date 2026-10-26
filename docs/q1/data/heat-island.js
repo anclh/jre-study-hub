@@ -1,5 +1,6 @@
 /* Heat-island Q1 practice pack — loaded by ../app.js */
-window.Q1_CASE_PACK = {
+window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
+window.Q1_CASE_PACKS.push({
   id: "heat-island-2026-10-25",
   title: "Urban Heat Island · City of Jade",
   titleZh: "城市熱島／極端酷熱",
@@ -160,4 +161,4 @@ window.Q1_CASE_PACK = {
       },
     ],
   },
-};
+});
