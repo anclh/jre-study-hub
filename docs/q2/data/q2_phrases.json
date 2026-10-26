@@ -1,0 +1,141 @@
+{
+  "disclaimer": "JRE 中文 Q2 句式庫。可按需要擴充。",
+  "categories": [
+    {
+      "id": "position",
+      "en": "Position",
+      "zh": "立場"
+    },
+    {
+      "id": "arguments",
+      "en": "Arguments / evidence",
+      "zh": "理據"
+    },
+    {
+      "id": "rebuttal",
+      "en": "Rebuttal",
+      "zh": "反駁"
+    },
+    {
+      "id": "recommend",
+      "en": "Recommendations",
+      "zh": "建議"
+    },
+    {
+      "id": "balance",
+      "en": "Balance / conditions",
+      "zh": "平衡／條件"
+    },
+    {
+      "id": "close",
+      "en": "Conclusion",
+      "zh": "短結"
+    }
+  ],
+  "items": [
+    {
+      "id": "pos-01",
+      "category": "position",
+      "en": "I support… subject to…",
+      "zh": "本人贊成……，惟以……為前提。",
+      "note": "開首釘立場",
+      "example": "本人贊成擴大公屋供應，惟以加快熟地供應為前提。"
+    },
+    {
+      "id": "pos-02",
+      "category": "position",
+      "en": "After weighing the pros and cons, I lean towards…",
+      "zh": "有關建議利弊並存；權衡後，本人傾向……",
+      "note": "",
+      "example": ""
+    },
+    {
+      "id": "arg-01",
+      "category": "arguments",
+      "en": "First, … helps to… but must…",
+      "zh": "首先，……有助……，惟須……",
+      "note": "理據骨架",
+      "example": "首先，增加公屋供應有助紓緩輪候時間，惟須加快熟地供應。"
+    },
+    {
+      "id": "arg-02",
+      "category": "arguments",
+      "en": "Taking… as an example, this reflects… and implies…",
+      "zh": "以……為例，……反映……，意味住……",
+      "note": "例子落地",
+      "example": ""
+    },
+    {
+      "id": "arg-03",
+      "category": "arguments",
+      "en": "In the short term… but in the long term…",
+      "zh": "短期……惟長遠……",
+      "note": "時間視野",
+      "example": ""
+    },
+    {
+      "id": "reb-01",
+      "category": "rebuttal",
+      "en": "Some argue that…; however…, so it remains preferable to…",
+      "zh": "有意見認為……；惟……，故仍宜……",
+      "note": "最強反方",
+      "example": "有意見認為增加供應會推高樓價；惟若配合增加私樓供應，仍宜優先公屋。"
+    },
+    {
+      "id": "rec-01",
+      "category": "recommend",
+      "en": "It is recommended that: (1) … (pilot); (2) … (KPIs); (3) …",
+      "zh": "建議：一、……（試點／分階段）；二、……（KPI）；三、……",
+      "note": "可掃讀建議",
+      "example": ""
+    },
+    {
+      "id": "rec-02",
+      "category": "recommend",
+      "en": "[Bureau] should lead, with monitoring of outcomes.",
+      "zh": "宜由……主導，並設……監察成效。",
+      "note": "",
+      "example": ""
+    },
+    {
+      "id": "bal-01",
+      "category": "balance",
+      "en": "helps to… but must…",
+      "zh": "有助……惟須……",
+      "note": "中英通用核心",
+      "example": ""
+    },
+    {
+      "id": "bal-02",
+      "category": "balance",
+      "en": "Subject to available resources…",
+      "zh": "視乎可用資源……",
+      "note": "",
+      "example": ""
+    },
+    {
+      "id": "bal-03",
+      "category": "balance",
+      "en": "Notwithstanding the concerns, the benefits outweigh the costs.",
+      "zh": "儘管有人提出關注，利仍大於弊。",
+      "note": "",
+      "example": ""
+    },
+    {
+      "id": "clo-01",
+      "category": "close",
+      "en": "In summary, … can achieve a balance between… and…",
+      "zh": "總括而言，……方能在……與……之間取得平衡。",
+      "note": "短結",
+      "example": ""
+    },
+    {
+      "id": "clo-02",
+      "category": "close",
+      "en": "Residual risks remain and should be monitored.",
+      "zh": "仍有剩餘風險，應持續監察。",
+      "note": "",
+      "example": ""
+    }
+  ]
+}

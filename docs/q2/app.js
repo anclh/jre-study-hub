@@ -513,5 +513,95 @@
   };
   loadMarks();
 
+
+  /* —— 句式庫 (Anson bank) —— */
+  const phraseState = { data: { disclaimer: "", categories: [], items: [] }, category: "all" };
+
+  function phraseCatLabel(id) {
+    if (id === "all") return "全部";
+    const cat = (phraseState.data.categories || []).find((c) => c.id === id);
+    return (cat && cat.zh) || id;
+  }
+
+  function renderPhraseFilters() {
+    const cats = ["all", ...(phraseState.data.categories || []).map((c) => c.id)];
+    const wrap = $("#q2PhraseFilters");
+    if (!wrap) return;
+    wrap.innerHTML = cats
+      .map(
+        (c) =>
+          `<button type="button" data-cat="${c}" class="${phraseState.category === c ? "active" : ""}">${phraseCatLabel(c)}</button>`
+      )
+      .join("");
+    wrap.querySelectorAll("button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        phraseState.category = btn.dataset.cat;
+        renderPhraseFilters();
+        renderQ2Phrases();
+      });
+    });
+  }
+
+  function phraseCardHTML(item) {
+    return `<article class="phrase-card">
+      <div class="meta"><span class="cat-pill">${escapeHtml(phraseCatLabel(item.category))}</span></div>
+      <p class="zh">${escapeHtml(item.zh || "")}</p>
+      <p class="en">${escapeHtml(item.en || "")}</p>
+      ${item.note ? `<div class="meta">${escapeHtml(item.note)}</div>` : ""}
+      ${item.example ? `<p class="ex">${escapeHtml(item.example)}</p>` : ""}
+      <button type="button" class="btn btn-copy" data-zh="${escapeAttr(item.zh || "")}" data-en="${escapeAttr(item.en || "")}">複製句式</button>
+    </article>`;
+  }
+
+  function renderQ2Phrases() {
+    const q = ($("#q2PhraseSearch")?.value || "").trim().toLowerCase();
+    let list = phraseState.data.items || [];
+    if (phraseState.category !== "all") list = list.filter((i) => i.category === phraseState.category);
+    if (q) {
+      list = list.filter((i) =>
+        `${i.zh} ${i.en} ${i.category} ${i.note || ""} ${i.example || ""}`.toLowerCase().includes(q)
+      );
+    }
+    const count = $("#q2PhraseCount");
+    if (count) count.textContent = `${list.length} 句`;
+    const disc = $("#q2PhraseDisclaimer");
+    if (disc) disc.textContent = phraseState.data.disclaimer || "";
+    const grid = $("#q2PhraseGrid");
+    if (!grid) return;
+    if (!list.length) {
+      grid.innerHTML = `<div class="empty">沒有符合的句式。</div>`;
+      return;
+    }
+    grid.innerHTML = list.map(phraseCardHTML).join("");
+    grid.querySelectorAll(".btn-copy").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const text = `${btn.dataset.zh || ""}\n${btn.dataset.en || ""}`.trim();
+        try {
+          await navigator.clipboard.writeText(text);
+          toast("已複製句式");
+        } catch {
+          toast("複製失敗 — 請手動選取");
+        }
+      });
+    });
+  }
+
+  async function loadQ2Phrases() {
+    const grid = $("#q2PhraseGrid");
+    try {
+      const res = await fetch("data/q2_phrases.json?v=20261027j", { cache: "no-store" });
+      if (!res.ok) throw new Error(String(res.status));
+      phraseState.data = await res.json();
+      renderPhraseFilters();
+      renderQ2Phrases();
+      const search = $("#q2PhraseSearch");
+      if (search) search.addEventListener("input", renderQ2Phrases);
+    } catch (e) {
+      if (grid) grid.innerHTML = `<div class="empty">未能載入句式庫（data/q2_phrases.json）。</div>`;
+      console.error(e);
+    }
+  }
+
   loadBriefs();
+  loadQ2Phrases();
 })();

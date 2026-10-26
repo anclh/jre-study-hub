@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="JRE 中文 Q2 — 議題思維、題庫、計時練習與自評" />
   <title>中文 Q2 · JRE Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261027i" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261027i" />
+  <link rel="stylesheet" href="styles.css?v=20261027j" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261027j" />
 </head>
 <body>
   <header class="app-header">
@@ -223,38 +223,15 @@
           <li><code>宜／應／可考慮……</code>（少用「我覺得」「毫無疑問」「一定」）</li>
         </ol>
       </div>
-      <div class="card">
-        <h2>開首 · 立場</h2>
-        <ul class="bullet-list">
-          <li>本文件旨在分析……，並表明本人是否支持……。</li>
-          <li>本人有條件贊成……，前提是……。</li>
-          <li>本人不贊成即時全面推行……；較宜先……。</li>
-        </ul>
+      <div class="toolbar">
+        <div class="search">
+          <input type="search" id="q2PhraseSearch" placeholder="搜尋句式 中／EN…" autocomplete="off" />
+        </div>
+        <span class="count" id="q2PhraseCount">—</span>
       </div>
-      <div class="card">
-        <h2>理據 · 例子</h2>
-        <ul class="bullet-list">
-          <li>此舉可減輕……壓力，並有助……。</li>
-          <li>從……（局／署）近年……可見，……。</li>
-          <li>若欠缺……配套，成效難望持續。</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>反駁 · 平衡</h2>
-        <ul class="bullet-list">
-          <li>或有人擔心……；此說忽視……。</li>
-          <li>承認……風險屬實，惟可透過……紓緩。</li>
-          <li>「有助……，但須……」——立場前後一致。</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>建議 · 短結</h2>
-        <ul class="bullet-list">
-          <li>短期宜……；中長期再……，並以……作檢討指標。</li>
-          <li>建議由……牽頭，跨部門協調……。</li>
-          <li>如此方能兼顧……與……，避免一刀切。</li>
-        </ul>
-      </div>
+      <div class="filters" id="q2PhraseFilters"></div>
+      <p class="muted" id="q2PhraseDisclaimer" style="margin-top:10px"></p>
+      <div class="phrase-grid" id="q2PhraseGrid"></div>
     </section>
 
 <section class="panel" id="panel-bank">
@@ -339,7 +316,7 @@
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261027i"></script>
-  <script src="../shell/tabbar.js?v=20261027i"></script>
+  <script src="app.js?v=20261027j"></script>
+  <script src="../shell/tabbar.js?v=20261027j"></script>
 </body>
 </html>
