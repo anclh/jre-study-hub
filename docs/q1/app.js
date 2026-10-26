@@ -8,10 +8,12 @@
     all: "全部",
     implications: "影響／後果",
     assessment: "評估／分析",
+    comparison: "方案比較",
     recommend: "建議措施",
     monitor: "監察／檢討",
     specificity: "負責方／時限／資源",
     discourse: "論述銜接",
+    balance: "平衡／條件",
   };
 
 

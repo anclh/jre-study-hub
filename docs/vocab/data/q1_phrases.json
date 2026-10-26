@@ -12,6 +12,11 @@
       "zh": "評估／分析"
     },
     {
+      "id": "comparison",
+      "en": "Option comparison",
+      "zh": "方案比較"
+    },
+    {
       "id": "recommend",
       "en": "Recommend / propose",
       "zh": "建議措施"
@@ -30,6 +35,11 @@
       "id": "discourse",
       "en": "Discourse markers",
       "zh": "論述銜接"
+    },
+    {
+      "id": "balance",
+      "en": "Balance / conditions",
+      "zh": "平衡／條件"
     }
   ],
   "items": [
@@ -135,7 +145,7 @@
       "en": "The root cause appears to lie in…",
       "zh": "根源似乎在於…",
       "note": "",
-      "example": ""
+      "example": "A key constraint is limited administrative capacity."
     },
     {
       "id": "ass-04",
@@ -294,7 +304,7 @@
       "category": "monitor",
       "en": "An evaluation framework should be put in place from day one.",
       "zh": "應由計劃開始便建立評估框架",
-      "note": "",
+      "note": "結尾常用",
       "example": ""
     },
     {
@@ -407,7 +417,7 @@
       "en": "Firstly,… / Secondly,… / Finally,…",
       "zh": "首先…／其次…／最後…",
       "note": "分點",
-      "example": ""
+      "example": "In view of rising demand, additional capacity is needed."
     },
     {
       "id": "dis-02",
@@ -479,6 +489,46 @@
       "en": "For Members’ consideration.",
       "zh": "供委員考慮",
       "note": "結語／呈文語氣",
+      "example": ""
+    },
+    {
+      "id": "cmp-01",
+      "category": "comparison",
+      "en": "Option A scores higher on feasibility but lower on cost-effectiveness.",
+      "zh": "方案甲在可行性上較高，惟成本效益較低。",
+      "note": "比較核心",
+      "example": ""
+    },
+    {
+      "id": "cmp-02",
+      "category": "comparison",
+      "en": "While Option B may deliver quicker results, it carries greater residual risks.",
+      "zh": "方案乙或可較快見效，惟剩餘風險較大。",
+      "note": "",
+      "example": ""
+    },
+    {
+      "id": "cmp-03",
+      "category": "comparison",
+      "en": "After weighing the trade-offs, a mix of… is preferred.",
+      "zh": "權衡取捨後，宜採用混合方案。",
+      "note": "",
+      "example": ""
+    },
+    {
+      "id": "bal-01",
+      "category": "balance",
+      "en": "This helps to… but must be accompanied by…",
+      "zh": "此舉有助…惟須配合…",
+      "note": "核心平衡句",
+      "example": "This helps to ease congestion but must be accompanied by better public transport."
+    },
+    {
+      "id": "bal-02",
+      "category": "balance",
+      "en": "Notwithstanding the concerns raised, the benefits outweigh the risks.",
+      "zh": "儘管有人提出關注，利仍大於弊。",
+      "note": "",
       "example": ""
     }
   ]
