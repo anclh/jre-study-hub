@@ -56,6 +56,12 @@
       items: "項",
       all: "全部",
       filtersToggle: "篩選部門／主題",
+      examTipTitle: "開考草稿紙 · Q2 事實 dump",
+      examTip1: "主題相關 2–3 個實數／年份",
+      examTip2: "主責局／署（唔好背錯主體）",
+      examTip3: "最近一項具體措施",
+      examTip4: "一句利＋一句弊",
+      examTipNote: "冇把握嘅數寧願寫「近年／當局正推進」；寫正文時由紙抄落，框架步驟跟 Q2。",
     },
     en: {
       subtitle: "Interview-oriented HK policy bank (public sources)",
@@ -81,6 +87,12 @@
       items: "items",
       all: "All",
       filtersToggle: "Filter bureaux / themes",
+      examTipTitle: "Exam scratch · Q2 facts dump",
+      examTip1: "2–3 hard numbers / years on the topic",
+      examTip2: "Lead bureau / department (don't mix up the owner)",
+      examTip3: "One recent concrete measure",
+      examTip4: "One pro + one con line",
+      examTipNote: "If unsure, write “in recent years / authorities advancing…”; copy from paper into the essay; follow the Q2 frame for steps.",
     },
   };
 
