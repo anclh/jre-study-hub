@@ -310,3 +310,19 @@ textarea {
 .model-wrap { margin-top: 8px; }
 .model-wrap[hidden] { display: none !important; }
 #drillSampleCard[hidden] { display: none !important; }
+
+.must-use { margin-bottom: 14px; border-color: color-mix(in srgb, var(--accent, #2563eb) 35%, var(--line)); }
+.must-use h2 { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 6px; font-size: 16px; }
+.must-list { margin: 0; padding-left: 1.2em; display: grid; gap: 8px; }
+.must-list li { font-size: 13px; line-height: 1.45; }
+.must-list code {
+  display: block; font-family: inherit; font-size: 13px; line-height: 1.45;
+  background: var(--card2, #f4f4f5); padding: 8px 10px; border-radius: 8px;
+  white-space: normal; color: var(--text);
+}
+.chip {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  padding: 2px 8px; border-radius: 999px;
+  background: color-mix(in srgb, var(--accent, #2563eb) 18%, transparent);
+  color: var(--accent, #2563eb);
+}

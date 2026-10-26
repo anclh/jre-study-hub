@@ -81,6 +81,12 @@
   document.querySelectorAll("#subnav button").forEach((btn) => {
     btn.addEventListener("click", () => showPanel(btn.dataset.panel));
   });
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("[data-goto]");
+    if (!a) return;
+    e.preventDefault();
+    showPanel(a.dataset.goto);
+  });
   const linkToBank = $("#linkToBank");
   if (linkToBank) {
     linkToBank.addEventListener("click", (e) => {

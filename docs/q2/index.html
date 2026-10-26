@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="JRE 中文 Q2 — 議題思維、題庫、計時練習與自評" />
   <title>中文 Q2 · JRE Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261027h" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261027h" />
+  <link rel="stylesheet" href="styles.css?v=20261027i" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261027i" />
 </head>
 <body>
   <header class="app-header">
@@ -23,6 +23,7 @@
     </div>
     <nav class="subnav" id="subnav" aria-label="Q2 sections">
       <button type="button" data-panel="frame" class="active">框架</button>
+      <button type="button" data-panel="phrases">句式庫</button>
       <button type="button" data-panel="bank">題庫</button>
       <button type="button" data-panel="drill">計時練習</button>
       <button type="button" data-panel="mark">自評清單</button>
@@ -38,7 +39,7 @@
 
       <div class="card" id="must-phrases">
         <h2>必用句（8–10）</h2>
-        <p class="lede">文筆一般都夠——背呢啲骨架句，套入五步就得。唔使華麗。</p>
+        <p class="lede">文筆一般都夠——背呢啲骨架句，套入五步就得。完整清單見 <a href="#phrases" data-goto="phrases">句式庫</a>。</p>
         <ol class="frame-steps">
           <li><strong>立場</strong>：本人贊成／反對……，惟以……為前提。</li>
           <li><strong>權衡</strong>：有關建議利弊並存；權衡後，本人傾向……</li>
@@ -206,6 +207,56 @@
       </div>
     </section>
 
+    <section class="panel" id="panel-phrases">
+      <div class="card must-use" id="must-phrases-tab">
+        <h2>必用 9 句 <span class="chip">文筆一般都夠</span></h2>
+        <p class="lede">考試靠骨架，唔靠文采。每段套入本地例子／一個數。</p>
+        <ol class="must-list">
+          <li><code>本人贊成／反對……，惟以……為前提。</code></li>
+          <li><code>有關建議利弊並存；權衡後，本人傾向……</code></li>
+          <li><code>首先／其次，……有助……，惟須……</code></li>
+          <li><code>以……為例，……反映……，意味住……</code></li>
+          <li><code>有意見認為……；惟……，故仍宜……</code></li>
+          <li><code>建議：一、……（試點／分階段）；二、……（KPI）；三、……</code></li>
+          <li><code>宜由……主導，並設……監察成效。</code></li>
+          <li><code>總括而言，……方能在……與……之間取得平衡。</code></li>
+          <li><code>宜／應／可考慮……</code>（少用「我覺得」「毫無疑問」「一定」）</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2>開首 · 立場</h2>
+        <ul class="bullet-list">
+          <li>本文件旨在分析……，並表明本人是否支持……。</li>
+          <li>本人有條件贊成……，前提是……。</li>
+          <li>本人不贊成即時全面推行……；較宜先……。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>理據 · 例子</h2>
+        <ul class="bullet-list">
+          <li>此舉可減輕……壓力，並有助……。</li>
+          <li>從……（局／署）近年……可見，……。</li>
+          <li>若欠缺……配套，成效難望持續。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>反駁 · 平衡</h2>
+        <ul class="bullet-list">
+          <li>或有人擔心……；此說忽視……。</li>
+          <li>承認……風險屬實，惟可透過……紓緩。</li>
+          <li>「有助……，但須……」——立場前後一致。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>建議 · 短結</h2>
+        <ul class="bullet-list">
+          <li>短期宜……；中長期再……，並以……作檢討指標。</li>
+          <li>建議由……牽頭，跨部門協調……。</li>
+          <li>如此方能兼顧……與……，避免一刀切。</li>
+        </ul>
+      </div>
+    </section>
+
 <section class="panel" id="panel-bank">
       <div class="card">
         <h2>中文 Q2 政策題庫</h2>
@@ -288,7 +339,7 @@
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261027h"></script>
-  <script src="../shell/tabbar.js?v=20261027h"></script>
+  <script src="app.js?v=20261027i"></script>
+  <script src="../shell/tabbar.js?v=20261027i"></script>
 </body>
 </html>
