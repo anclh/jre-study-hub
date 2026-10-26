@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="JRE 中文 Q2 — 議題思維、題庫、計時練習與自評" />
   <title>中文 Q2 · JRE Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261026a" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261026a" />
+  <link rel="stylesheet" href="styles.css?v=20261026b" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261026b" />
 </head>
 <body>
   <header class="app-header">
@@ -32,13 +32,15 @@
   <main>
     <section class="panel active" id="panel-frame">
       <div class="card">
-        <h2>考咩</h2>
-        <p class="lede">考<strong>議題思維</strong>，唔係閱讀速度。物料通常 sparse。要：清晰立場 + 理據 + 措施／替代。</p>
-        <h3>官方 sample shape（大牌檔型）</h3>
+        <h2>答題框架 · Q2 中文</h2>
+        <p class="lede">來源：<code>06-Chinese-Drills/Q2-Chinese-prep.md</code>。考<strong>議題思維</strong>，唔係閱讀速度；物料通常 sparse。要：清晰立場 + 理據 + 措施／替代。</p>
+      </div>
+      <div class="card">
+        <h2>官方 sample shape（大牌檔型）</h2>
         <ol class="frame-steps">
-          <li><strong>1. 利弊</strong>分析正反</li>
+          <li><strong>1. 利弊</strong>分析正反（pros / cons）</li>
           <li><strong>2. 立場</strong>明確支持或反對（唔好兩邊擺）</li>
-          <li><strong>3. 跟進</strong>支持 → 措施確保目標可達；反對 → 替代方法繼續推目標</li>
+          <li><strong>3. 跟進</strong>支持 → 措施確保目標可達；反對 → 替代方法繼續推目標（如「美食天堂」）</li>
         </ol>
       </div>
       <div class="card">
@@ -50,7 +52,54 @@
           <li><strong>建議／替代</strong>phased／pilot／KPI，唔好空喊加資源</li>
           <li><strong>短結</strong>重申立場 + 一句可交付結果</li>
         </ol>
-        <p class="muted">Timed target：約 70–80 分鐘／篇（留時間畀英文卷）。</p>
+        <p class="muted frame-flow">開首立場 → 2 理據（HK）→ 反駁 → 建議 → 短結</p>
+        <p class="muted">Timed target：約 <strong>70–80 分鐘</strong>／篇（留時間畀英文卷）。</p>
+      </div>
+      <div class="card">
+        <h2>練習節奏</h2>
+        <ol class="frame-steps">
+          <li><strong>First drill</strong>＝官方「大牌檔」sample（跟上面框架寫一版）</li>
+          <li>之後每週 <strong>1–2</strong> 個時事議題，同一格式</li>
+          <li>計時練目標 70–80 分鐘；素材用本頁題庫／政策 tab</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2>Issue bank domains</h2>
+        <p class="lede">每個領域準備：支持 ×2、反對 ×2、可行建議或替代 ×1–2。</p>
+        <div class="chip-row frame-domains">
+          <span class="chip">房屋與土地</span>
+          <span class="chip">人口老化與福利</span>
+          <span class="chip">經濟與產業</span>
+          <span class="chip">教育與青年</span>
+          <span class="chip">科技與私隱</span>
+          <span class="chip">環境與廢物</span>
+          <span class="chip">交通與城市規劃</span>
+          <span class="chip">公共服務（醫療、長者）</span>
+        </div>
+        <details class="hints frame-template">
+          <summary>Domain card 空白模板（點開）</summary>
+          <pre class="prompt-box frame-template-box">## Domain：________
+
+### 支持（×2）
+1. 理據：
+   - 香港例子：
+2. 理據：
+   - 香港例子：
+
+### 反對（×2）
+1. 理據：
+   - 香港例子：
+2. 理據：
+   - 香港例子：
+
+### 可行建議／替代（×1–2）
+1.
+2.
+
+### 最強反方（預演回應）
+- 反方會講：
+- 我方仍較可取因為：</pre>
+        </details>
       </div>
       <div class="card">
         <h2>常見扣分</h2>
@@ -67,10 +116,10 @@
       <div class="card">
         <h2>素材</h2>
         <ul class="link-list">
-          <li><a href="#bank" id="linkToBank">本頁題庫</a> — 中文 Q2 政策練筆包（考試式題目 → 利弊 → 立場 → 措施）</li>
+          <li><a href="#bank" id="linkToBank">本頁題庫</a> — 考試式題目 → 利弊 → 立場 → 措施（有範文會標「有範文」）</li>
           <li><a href="../policy/">政策 Policy</a> — 公報瀏覽／每周摘要</li>
-          <li><a href="../q1/">英文 Q1</a></li>
-          <li><a href="../vocab/">詞彙 Vocab</a></li>
+          <li><a href="../">Study Hub 主頁</a></li>
+          <li><a href="../q1/">英文 Q1</a> · <a href="../vocab/">詞彙 Vocab</a></li>
         </ul>
       </div>
     </section>
@@ -146,7 +195,7 @@
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261026a"></script>
-  <script src="../shell/tabbar.js?v=20261026a"></script>
+  <script src="app.js?v=20261026b"></script>
+  <script src="../shell/tabbar.js?v=20261026b"></script>
 </body>
 </html>

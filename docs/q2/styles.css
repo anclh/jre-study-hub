@@ -217,3 +217,13 @@ textarea {
   color: var(--text); max-height: 420px; overflow: auto;
 }
 .brief-section.sample .btn { margin-bottom: 4px; }
+
+.frame-flow {
+  margin: 10px 0 6px; padding: 10px 12px;
+  background: var(--accent-soft); border-radius: 10px;
+  font-size: 13px; font-weight: 600; color: var(--accent);
+  text-align: center;
+}
+.frame-domains { margin: 8px 0 10px; }
+.frame-template { margin-top: 8px; }
+.frame-template-box { max-height: 280px; font-size: 12px; }
