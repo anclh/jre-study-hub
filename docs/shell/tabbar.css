@@ -108,3 +108,9 @@ body.hub-has-tabs {
   #jre-hub-tabbar .hub-en { font-size: 8px; }
   #jre-hub-tabbar .hub-ico { font-size: 16px; }
 }
+
+@media (max-width: 380px) {
+  #jre-hub-tabbar .hub-en { display: none; }
+  #jre-hub-tabbar a { padding: 4px 2px; margin: 0 1px; }
+  #jre-hub-tabbar .hub-zh { font-size: 9px; }
+}
