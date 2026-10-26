@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>JRE English Q1 · Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261026w" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261026w" />
+  <link rel="stylesheet" href="styles.css?v=20261026x" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261026x" />
 </head>
 <body>
   <header class="app-header">
@@ -24,6 +24,7 @@
       <button type="button" data-panel="frame" class="active">框架</button>
       <button type="button" data-panel="phrases">句式庫</button>
       <button type="button" data-panel="case">Data File 練習</button>
+      <button type="button" data-panel="mark">自評清單</button>
     </nav>
   </header>
 
@@ -127,11 +128,29 @@
         <div class="empty">載入 Data File 練習中…</div>
       </div>
     </section>
+
+    <section class="panel" id="panel-mark">
+      <div class="card">
+        <h2>自評清單</h2>
+        <p class="lede">批改重點：分析深度、措施對應問題、who／when／resources、公務員語氣。</p>
+        <ul class="checklist" id="checklist">
+          <li><label><input type="checkbox" data-k="opening" /> Opening <strong>1–2 句</strong>點出問題＋目標（唔堆背景／多個實數）</label></li>
+          <li><label><input type="checkbox" data-k="problems" /> 兩個問題＋implications；證據<strong>analyse</strong>唔 paraphrase Data File</label></li>
+          <li><label><input type="checkbox" data-k="options" /> Options 用同一套 criteria 比較，並<strong>主動回</strong> objections</label></li>
+          <li><label><input type="checkbox" data-k="recommend" /> 清晰 recommendation（唔「利弊各半」）＋who／when／resources／KPI</label></li>
+          <li><label><input type="checkbox" data-k="dfcite" /> Data File 引用：每段最多 <strong>1</strong> 個＋implies／points to…</label></li>
+          <li><label><input type="checkbox" data-k="tone" /> 公務員語氣：建議導向；少 Unlike／I think／批評舊政策</label></li>
+          <li><label><input type="checkbox" data-k="concise" /> 每句有功能；唔為填頁灌水</label></li>
+        </ul>
+        <p class="score" id="markScore">0 / 7</p>
+        <button type="button" class="btn" id="btnClearMarks">清自評</button>
+      </div>
+    </section>
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-  <script src="data/heat-island.js?v=20261026w"></script>
-  <script src="app.js?v=20261026w"></script>
-  <script src="../shell/tabbar.js?v=20261026w"></script>
+  <script src="data/heat-island.js?v=20261026x"></script>
+  <script src="app.js?v=20261026x"></script>
+  <script src="../shell/tabbar.js?v=20261026x"></script>
 </body>
 </html>

@@ -1,6 +1,8 @@
 (function () {
   "use strict";
 
+  const STORAGE_MARKS = "jre-q1-marks-v1";
+
   const CAT_LABELS = {
     all: "全部",
     implications: "影響／後果",
@@ -268,6 +270,39 @@
     }
   }
 
+
+  function initMarks() {
+    const checks = [...document.querySelectorAll("#checklist input")];
+    const scoreEl = $("#markScore");
+    if (!checks.length || !scoreEl) return;
+    function loadMarks() {
+      let saved = {};
+      try {
+        saved = JSON.parse(localStorage.getItem(STORAGE_MARKS) || "{}");
+      } catch {}
+      checks.forEach((c) => {
+        c.checked = !!saved[c.dataset.k];
+      });
+      scoreEl.textContent = `${checks.filter((c) => c.checked).length} / ${checks.length}`;
+    }
+    function saveMarks() {
+      const o = {};
+      checks.forEach((c) => {
+        o[c.dataset.k] = c.checked;
+      });
+      localStorage.setItem(STORAGE_MARKS, JSON.stringify(o));
+      scoreEl.textContent = `${checks.filter((c) => c.checked).length} / ${checks.length}`;
+    }
+    checks.forEach((c) => c.addEventListener("change", saveMarks));
+    $("#btnClearMarks")?.addEventListener("click", () => {
+      checks.forEach((c) => {
+        c.checked = false;
+      });
+      saveMarks();
+    });
+    loadMarks();
+  }
+
   function initNav() {
     $$("#subnav button").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -282,6 +317,7 @@
 
   function init() {
     initNav();
+    initMarks();
     renderCase();
     const search = $("#q1Search");
     if (search) search.addEventListener("input", renderPhrases);

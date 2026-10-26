@@ -212,3 +212,14 @@ main { max-width: 720px; margin: 0 auto; padding: 14px 16px 24px; }
   margin: 8px 0; padding-left: 1.15em; font-size: 13px; color: var(--text);
   display: grid; gap: 4px;
 }
+
+.checklist { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.checklist label {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 10px 12px; background: var(--card2); border-radius: 10px;
+  font-size: 13px; line-height: 1.4; cursor: pointer;
+}
+.checklist input { margin-top: 3px; accent-color: var(--accent); flex-shrink: 0; }
+.score {
+  margin: 12px 0 8px; font-size: 18px; font-weight: 700; color: var(--accent);
+}
