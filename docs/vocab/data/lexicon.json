@@ -7012,5 +7012,1875 @@
         "zh": "嚴厲的懲罰對違規行為起到威懾作用。"
       }
     ]
+  },
+  {
+    "term": "disparity",
+    "zh": "差距；懸殊；不均",
+    "pos": "n.",
+    "related": [
+      "disparities",
+      "income disparity",
+      "disparate"
+    ],
+    "note": "常寫 income / regional / digital disparity；反義：parity、equality",
+    "synonyms": [
+      "inequality",
+      "gap",
+      "imbalance"
+    ],
+    "antonyms": [
+      "parity",
+      "equality",
+      "equity"
+    ],
+    "examples": [
+      {
+        "en": "The Government aims to narrow the income disparity between districts.",
+        "zh": "政府旨在縮窄地區之間的收入差距。"
+      },
+      {
+        "en": "Digital disparity remains a concern for elderly residents.",
+        "zh": "數碼差距仍是長者居民的關注。"
+      },
+      {
+        "en": "Policy measures seek to address long-standing health disparities.",
+        "zh": "政策措施力求處理長期存在的健康差距。"
+      }
+    ],
+    "example": "The Government aims to narrow the income disparity between districts."
+  },
+  {
+    "term": "equity",
+    "zh": "公平；衡平；公正",
+    "pos": "n.",
+    "related": [
+      "equitable",
+      "inequity",
+      "horizontal equity"
+    ],
+    "note": "政策語境多指公平分配，非股市 equity；反義：inequity",
+    "synonyms": [
+      "fairness",
+      "justice",
+      "impartiality"
+    ],
+    "antonyms": [
+      "inequity",
+      "bias",
+      "unfairness"
+    ],
+    "examples": [
+      {
+        "en": "Resource allocation should uphold equity across districts.",
+        "zh": "資源調配應在各區維護公平。"
+      },
+      {
+        "en": "Means-tested schemes seek to promote equity in welfare spending.",
+        "zh": "資產入息審查計劃力求促進福利開支的公平。"
+      },
+      {
+        "en": "Stakeholders called for greater equity in school place allocation.",
+        "zh": "持份者要求學位分配更為公平。"
+      }
+    ],
+    "example": "Resource allocation should uphold equity across districts."
+  },
+  {
+    "term": "remit",
+    "zh": "職權範圍；權責；管轄範圍",
+    "pos": "n.",
+    "related": [
+      "within the remit",
+      "outside the remit",
+      "remits"
+    ],
+    "note": "部門／委員會職權常用；近義：purview、mandate",
+    "synonyms": [
+      "purview",
+      "mandate",
+      "jurisdiction"
+    ],
+    "antonyms": [
+      "ultra vires",
+      "outside the scope",
+      "beyond authority"
+    ],
+    "examples": [
+      {
+        "en": "Housing supply falls within the bureau's remit.",
+        "zh": "房屋供應屬於該局的職權範圍。"
+      },
+      {
+        "en": "The advisory body clarified that enforcement is outside its remit.",
+        "zh": "諮詢組織澄清執法不在其職權範圍內。"
+      },
+      {
+        "en": "The review stays within the committee's agreed remit.",
+        "zh": "是次檢討維持在委員會議定的職權範圍內。"
+      }
+    ],
+    "example": "Housing supply falls within the bureau's remit."
+  },
+  {
+    "term": "purview",
+    "zh": "管轄範圍；職權範圍；權限",
+    "pos": "n.",
+    "related": [
+      "within the purview",
+      "outside the purview"
+    ],
+    "note": "正式公文常見；與 remit 近義，略偏「涵蓋範圍」",
+    "synonyms": [
+      "remit",
+      "scope",
+      "jurisdiction"
+    ],
+    "antonyms": [
+      "outside the scope",
+      "beyond authority",
+      "ultra vires"
+    ],
+    "examples": [
+      {
+        "en": "Personal data privacy falls within the Commissioner's purview.",
+        "zh": "個人資料私隱屬專員的管轄範圍。"
+      },
+      {
+        "en": "Matters of national security are outside the department's purview.",
+        "zh": "國家安全事宜不在該部門管轄範圍內。"
+      },
+      {
+        "en": "The ordinance brings virtual assets into the regulator's purview.",
+        "zh": "條例把虛擬資產納入規管機構的管轄範圍。"
+      }
+    ],
+    "example": "Personal data privacy falls within the Commissioner's purview."
+  },
+  {
+    "term": "mandate",
+    "zh": "授權；使命；法定職責",
+    "pos": "n.|v.",
+    "related": [
+      "mandated",
+      "statutory mandate",
+      "clear mandate"
+    ],
+    "note": "可作名詞（授權／使命）或動詞（強制規定）；反義：discretionary",
+    "synonyms": [
+      "authority",
+      "remit",
+      "directive"
+    ],
+    "antonyms": [
+      "discretion",
+      "optional power",
+      "voluntary arrangement"
+    ],
+    "examples": [
+      {
+        "en": "The agency has a clear mandate to protect consumer interests.",
+        "zh": "該機構獲明確授權保障消費者權益。"
+      },
+      {
+        "en": "New rules mandate disclosure of beneficial ownership.",
+        "zh": "新規定強制披露實益擁有權。"
+      },
+      {
+        "en": "The task force will operate under a time-limited mandate.",
+        "zh": "專責小組將在有時限的授權下運作。"
+      }
+    ],
+    "example": "The agency has a clear mandate to protect consumer interests."
+  },
+  {
+    "term": "redress",
+    "zh": "補救；申訴；糾正",
+    "pos": "n.|v.",
+    "related": [
+      "redress mechanism",
+      "seek redress",
+      "redressed"
+    ],
+    "note": "申訴／補償機制常用；與 grievance 常連用",
+    "synonyms": [
+      "remedy",
+      "reparation",
+      "compensation"
+    ],
+    "antonyms": [
+      "injustice",
+      "grievance unresolved",
+      "harm"
+    ],
+    "examples": [
+      {
+        "en": "Affected tenants may seek redress through the tribunal.",
+        "zh": "受影響租戶可向審裁處尋求補救。"
+      },
+      {
+        "en": "The ordinance provides for redress of consumer complaints.",
+        "zh": "條例就消費者投訴訂明補救途徑。"
+      },
+      {
+        "en": "Clear redress channels help rebuild public confidence.",
+        "zh": "清晰的申訴渠道有助重建公眾信心。"
+      }
+    ],
+    "example": "Affected tenants may seek redress through the tribunal."
+  },
+  {
+    "term": "grievance",
+    "zh": "申訴；不滿；冤情",
+    "pos": "n.",
+    "related": [
+      "grievances",
+      "grievance procedure",
+      "lodge a grievance"
+    ],
+    "note": "勞工／服務使用者申訴程序常見",
+    "synonyms": [
+      "complaint",
+      "objection",
+      "dispute"
+    ],
+    "antonyms": [
+      "satisfaction",
+      "resolution",
+      "settlement"
+    ],
+    "examples": [
+      {
+        "en": "Staff may lodge a grievance under the departmental procedure.",
+        "zh": "員工可按部門程序提出申訴。"
+      },
+      {
+        "en": "The ombudsman investigates unresolved public grievances.",
+        "zh": "申訴專員調查未解決的公眾不滿。"
+      },
+      {
+        "en": "A transparent channel can defuse workplace grievances early.",
+        "zh": "透明渠道可及早化解職場申訴。"
+      }
+    ],
+    "example": "Staff may lodge a grievance under the departmental procedure."
+  },
+  {
+    "term": "incentivise",
+    "zh": "激勵；誘使；提供誘因",
+    "pos": "v.",
+    "related": [
+      "incentive",
+      "incentivising",
+      "disincentive"
+    ],
+    "note": "政策誘因寫作常用；英式拼寫 -ise",
+    "synonyms": [
+      "encourage",
+      "motivate",
+      "stimulate"
+    ],
+    "antonyms": [
+      "discourage",
+      "deter",
+      "disincentivise"
+    ],
+    "examples": [
+      {
+        "en": "Tax concessions incentivise firms to adopt green technology.",
+        "zh": "稅務寬減激勵企業採用綠色科技。"
+      },
+      {
+        "en": "The scheme incentivises early repayment of student loans.",
+        "zh": "計劃激勵提早償還學生貸款。"
+      },
+      {
+        "en": "Parking charges can incentivise a shift to public transport.",
+        "zh": "泊車收費可誘使轉向公共交通。"
+      }
+    ],
+    "example": "Tax concessions incentivise firms to adopt green technology."
+  },
+  {
+    "term": "disincentive",
+    "zh": "抑制因素；阻嚇因素；反誘因",
+    "pos": "n.",
+    "related": [
+      "disincentives",
+      "disincentivise",
+      "create a disincentive"
+    ],
+    "note": "與 incentive 對照；常用於稅制、收費、罰則",
+    "synonyms": [
+      "deterrent",
+      "obstacle",
+      "brake"
+    ],
+    "antonyms": [
+      "incentive",
+      "inducement",
+      "stimulus"
+    ],
+    "examples": [
+      {
+        "en": "High stamp duty may act as a disincentive to speculation.",
+        "zh": "高額印花稅可成為投機的抑制因素。"
+      },
+      {
+        "en": "Complex application procedures create a disincentive for SMEs.",
+        "zh": "繁複申請程序對中小企構成抑制因素。"
+      },
+      {
+        "en": "Policymakers removed disincentives to private investment.",
+        "zh": "決策者消除私人投資的抑制因素。"
+      }
+    ],
+    "example": "High stamp duty may act as a disincentive to speculation."
+  },
+  {
+    "term": "escalate",
+    "zh": "升級；升高；加劇",
+    "pos": "v.",
+    "related": [
+      "escalation",
+      "escalate to",
+      "de-escalate"
+    ],
+    "note": "可指問題升級或上報上級；反義：de-escalate",
+    "synonyms": [
+      "intensify",
+      "heighten",
+      "aggravate"
+    ],
+    "antonyms": [
+      "de-escalate",
+      "ease",
+      "defuse"
+    ],
+    "examples": [
+      {
+        "en": "Unresolved disputes may escalate into formal litigation.",
+        "zh": "未解決的爭議或會升級為正式訴訟。"
+      },
+      {
+        "en": "Frontline staff should escalate serious incidents promptly.",
+        "zh": "前線人員應及時把嚴重事故上報。"
+      },
+      {
+        "en": "Rising costs could escalate fiscal pressure on the budget.",
+        "zh": "成本上升或會加劇對預算的財政壓力。"
+      }
+    ],
+    "example": "Unresolved disputes may escalate into formal litigation."
+  },
+  {
+    "term": "de-escalate",
+    "zh": "降級；緩和；降溫",
+    "pos": "v.",
+    "related": [
+      "de-escalation",
+      "de-escalating"
+    ],
+    "note": "危機／糾紛管理常用；寫作可連字號",
+    "synonyms": [
+      "defuse",
+      "calm",
+      "ease"
+    ],
+    "antonyms": [
+      "escalate",
+      "intensify",
+      "aggravate"
+    ],
+    "examples": [
+      {
+        "en": "Mediation helps de-escalate conflicts before they reach court.",
+        "zh": "調解有助在上庭前緩和衝突。"
+      },
+      {
+        "en": "Clear communication can de-escalate public anxiety during outbreaks.",
+        "zh": "清晰溝通可在疫情期間緩和公眾焦慮。"
+      },
+      {
+        "en": "The task force sought to de-escalate tensions among stakeholders.",
+        "zh": "專責小組力求緩和持份者之間的緊張。"
+      }
+    ],
+    "example": "Mediation helps de-escalate conflicts before they reach court."
+  },
+  {
+    "term": "stringent",
+    "zh": "嚴格的；嚴苛的；嚴厲的",
+    "pos": "adj.",
+    "related": [
+      "stringency",
+      "more stringent",
+      "stringently"
+    ],
+    "note": "規管、排放、資格標準常用；反義：lax、lenient",
+    "synonyms": [
+      "strict",
+      "rigorous",
+      "tight"
+    ],
+    "antonyms": [
+      "lax",
+      "lenient",
+      "relaxed"
+    ],
+    "examples": [
+      {
+        "en": "The ordinance imposes stringent emission standards on vehicles.",
+        "zh": "條例對車輛施加嚴格的排放標準。"
+      },
+      {
+        "en": "Banks must meet stringent capital requirements.",
+        "zh": "銀行須符合嚴格的資本要求。"
+      },
+      {
+        "en": "More stringent checks will apply to high-risk procurement.",
+        "zh": "高風險採購將適用更嚴格的查核。"
+      }
+    ],
+    "example": "The ordinance imposes stringent emission standards on vehicles."
+  },
+  {
+    "term": "lax",
+    "zh": "鬆懈的；寬鬆的；不嚴格的",
+    "pos": "adj.",
+    "related": [
+      "laxity",
+      "lax enforcement",
+      "lax controls"
+    ],
+    "note": "批評執法／監管不力時常用",
+    "synonyms": [
+      "lenient",
+      "loose",
+      "slack"
+    ],
+    "antonyms": [
+      "stringent",
+      "strict",
+      "rigorous"
+    ],
+    "examples": [
+      {
+        "en": "Critics argued that lax enforcement undermined the regime.",
+        "zh": "批評者指鬆懈執法削弱了該制度。"
+      },
+      {
+        "en": "Lax verification procedures raise integrity risks.",
+        "zh": "寬鬆的核實程序提高誠信風險。"
+      },
+      {
+        "en": "The review found that oversight had become too lax.",
+        "zh": "檢討發現監管變得過於寬鬆。"
+      }
+    ],
+    "example": "Critics argued that lax enforcement undermined the regime."
+  },
+  {
+    "term": "envisage",
+    "zh": "設想；預期；構思",
+    "pos": "v.",
+    "related": [
+      "envisaged",
+      "envisaging",
+      "as envisaged"
+    ],
+    "note": "政策藍圖、時間表寫作常見；近義：foresee、contemplate",
+    "synonyms": [
+      "foresee",
+      "contemplate",
+      "anticipate"
+    ],
+    "antonyms": [
+      "rule out",
+      "dismiss",
+      "overlook"
+    ],
+    "examples": [
+      {
+        "en": "The blueprint envisages completion of the corridor by 2030.",
+        "zh": "藍圖設想走廊於二零三零年前竣工。"
+      },
+      {
+        "en": "Officials do not envisage further fee increases this year.",
+        "zh": "官員預期本年不會再調高收費。"
+      },
+      {
+        "en": "The scheme as envisaged will cover about 50 000 households.",
+        "zh": "按構想，計劃將涵蓋約五萬個住戶。"
+      }
+    ],
+    "example": "The blueprint envisages completion of the corridor by 2030."
+  },
+  {
+    "term": "protracted",
+    "zh": "曠日持久的；拖延的；長期的",
+    "pos": "adj.",
+    "related": [
+      "protract",
+      "protracted negotiations",
+      "protraction"
+    ],
+    "note": "談判、工程延誤、訴訟常用",
+    "synonyms": [
+      "lengthy",
+      "prolonged",
+      "drawn-out"
+    ],
+    "antonyms": [
+      "brief",
+      "swift",
+      "short-lived"
+    ],
+    "examples": [
+      {
+        "en": "Protracted negotiations delayed the land exchange.",
+        "zh": "曠日持久的談判延誤了換地。"
+      },
+      {
+        "en": "Residents are weary of the protracted waiting time for flats.",
+        "zh": "居民對漫長的輪候公屋時間感到厭倦。"
+      },
+      {
+        "en": "A protracted dispute could deter private investment.",
+        "zh": "長期爭議或會阻嚇私人投資。"
+      }
+    ],
+    "example": "Protracted negotiations delayed the land exchange."
+  },
+  {
+    "term": "imminent",
+    "zh": "即將發生的；迫在眉睫的；臨近的",
+    "pos": "adj.",
+    "related": [
+      "imminence",
+      "imminently",
+      "imminent risk"
+    ],
+    "note": "危機／風險通報常用；勿與 eminent 混淆",
+    "synonyms": [
+      "impending",
+      "approaching",
+      "forthcoming"
+    ],
+    "antonyms": [
+      "remote",
+      "distant",
+      "unlikely"
+    ],
+    "examples": [
+      {
+        "en": "The alert warns of an imminent risk of severe flooding.",
+        "zh": "警報警告有嚴重水浸的迫在眉睫風險。"
+      },
+      {
+        "en": "No imminent shortage of hospital beds is envisaged.",
+        "zh": "預期不會即將出現醫院病床短缺。"
+      },
+      {
+        "en": "Contingency plans were activated in view of the imminent typhoon.",
+        "zh": "因應即將襲港的颱風已啟動應變計劃。"
+      }
+    ],
+    "example": "The alert warns of an imminent risk of severe flooding."
+  },
+  {
+    "term": "consensus",
+    "zh": "共識；一致意見；協商一致",
+    "pos": "n.",
+    "related": [
+      "build consensus",
+      "broad consensus",
+      "consensual"
+    ],
+    "note": "諮詢、立法、跨部門協調常用",
+    "synonyms": [
+      "agreement",
+      "accord",
+      "common ground"
+    ],
+    "antonyms": [
+      "discord",
+      "disagreement",
+      "deadlock"
+    ],
+    "examples": [
+      {
+        "en": "A broad consensus emerged on the need for tighter regulation.",
+        "zh": "就收緊規管的需要形成了廣泛共識。"
+      },
+      {
+        "en": "The bureau sought to build consensus before gazettal.",
+        "zh": "該局在刊憲前力求凝聚共識。"
+      },
+      {
+        "en": "Without consensus, the bill is unlikely to proceed smoothly.",
+        "zh": "若無共識，條例草案難以順利推進。"
+      }
+    ],
+    "example": "A broad consensus emerged on the need for tighter regulation."
+  },
+  {
+    "term": "cornerstone",
+    "zh": "基石；支柱；根本要素",
+    "pos": "n.",
+    "related": [
+      "cornerstones",
+      "as a cornerstone",
+      "policy cornerstone"
+    ],
+    "note": "政策論述常用比喻；近義：pillar、foundation",
+    "synonyms": [
+      "foundation",
+      "pillar",
+      "bedrock"
+    ],
+    "antonyms": [
+      "peripheral element",
+      "afterthought",
+      "optional extra"
+    ],
+    "examples": [
+      {
+        "en": "The rule of law remains a cornerstone of Hong Kong's success.",
+        "zh": "法治仍是香港成功的基石。"
+      },
+      {
+        "en": "Public rental housing is a cornerstone of the welfare system.",
+        "zh": "公營租住房屋是福利制度的支柱。"
+      },
+      {
+        "en": "Data privacy is a cornerstone of trust in digital services.",
+        "zh": "資料私隱是對數碼服務信任的基石。"
+      }
+    ],
+    "example": "The rule of law remains a cornerstone of Hong Kong's success."
+  },
+  {
+    "term": "catalyst",
+    "zh": "催化劑；推動因素；促成因素",
+    "pos": "n.",
+    "related": [
+      "catalyse",
+      "catalytic",
+      "act as a catalyst"
+    ],
+    "note": "創新、再發展論述常用",
+    "synonyms": [
+      "stimulus",
+      "driver",
+      "spark"
+    ],
+    "antonyms": [
+      "obstacle",
+      "brake",
+      "deterrent"
+    ],
+    "examples": [
+      {
+        "en": "The new rail line could act as a catalyst for urban renewal.",
+        "zh": "新鐵路線可成為市區更新的催化劑。"
+      },
+      {
+        "en": "Seed funding served as a catalyst for local start-ups.",
+        "zh": "種子資金成為本地初創的推動因素。"
+      },
+      {
+        "en": "Cross-boundary collaboration was a catalyst for talent inflow.",
+        "zh": "跨境合作促成人才流入。"
+      }
+    ],
+    "example": "The new rail line could act as a catalyst for urban renewal."
+  },
+  {
+    "term": "precarious",
+    "zh": "不穩的；岌岌可危的；朝不保夕的",
+    "pos": "adj.",
+    "related": [
+      "precariously",
+      "precariousness",
+      "precarious employment"
+    ],
+    "note": "就業、財政、住屋狀況常用",
+    "synonyms": [
+      "unstable",
+      "insecure",
+      "fragile"
+    ],
+    "antonyms": [
+      "secure",
+      "stable",
+      "solid"
+    ],
+    "examples": [
+      {
+        "en": "Many gig workers face precarious employment conditions.",
+        "zh": "不少零工經濟從業員面對不穩的就業狀況。"
+      },
+      {
+        "en": "The firm's finances remain precarious after consecutive losses.",
+        "zh": "連續虧損後該公司財政仍岌岌可危。"
+      },
+      {
+        "en": "Temporary shelters leave households in a precarious position.",
+        "zh": "臨時庇護使住戶處於朝不保夕的處境。"
+      }
+    ],
+    "example": "Many gig workers face precarious employment conditions."
+  },
+  {
+    "term": "vulnerable",
+    "zh": "脆弱的；易受影響的；弱勢的",
+    "pos": "adj.",
+    "related": [
+      "vulnerability",
+      "vulnerable groups",
+      "most vulnerable"
+    ],
+    "note": "福利、長者、氣候風險常用；vulnerable groups 固定搭配",
+    "synonyms": [
+      "at risk",
+      "exposed",
+      "susceptible"
+    ],
+    "antonyms": [
+      "resilient",
+      "protected",
+      "secure"
+    ],
+    "examples": [
+      {
+        "en": "Targeted support will be provided to vulnerable households.",
+        "zh": "將向弱勢住戶提供針對性支援。"
+      },
+      {
+        "en": "Coastal communities are vulnerable to storm surges.",
+        "zh": "沿海社區易受風暴潮影響。"
+      },
+      {
+        "en": "Personal data of minors is especially vulnerable to misuse.",
+        "zh": "未成年人的個人資料特別易遭濫用。"
+      }
+    ],
+    "example": "Targeted support will be provided to vulnerable households."
+  },
+  {
+    "term": "discrepancy",
+    "zh": "差異；不符；出入",
+    "pos": "n.",
+    "related": [
+      "discrepancies",
+      "account discrepancy",
+      "material discrepancy"
+    ],
+    "note": "審計、數據核對常用；與 anomaly 近但偏「兩方不一致」",
+    "synonyms": [
+      "inconsistency",
+      "variance",
+      "mismatch"
+    ],
+    "antonyms": [
+      "consistency",
+      "alignment",
+      "correspondence"
+    ],
+    "examples": [
+      {
+        "en": "Auditors found a discrepancy between the accounts and inventories.",
+        "zh": "核數師發現帳目與存貨之間有出入。"
+      },
+      {
+        "en": "Any material discrepancy must be reported to the board.",
+        "zh": "任何重大差異必須向董事會報告。"
+      },
+      {
+        "en": "The census review explained earlier population discrepancies.",
+        "zh": "人口普查檢討解釋了較早的人口數字差異。"
+      }
+    ],
+    "example": "Auditors found a discrepancy between the accounts and inventories."
+  },
+  {
+    "term": "anomaly",
+    "zh": "異常；異例；反常情況",
+    "pos": "n.",
+    "related": [
+      "anomalies",
+      "anomalous",
+      "statistical anomaly"
+    ],
+    "note": "數據、執法、制度例外常用",
+    "synonyms": [
+      "irregularity",
+      "outlier",
+      "aberration"
+    ],
+    "antonyms": [
+      "norm",
+      "regularity",
+      "standard pattern"
+    ],
+    "examples": [
+      {
+        "en": "The surge in claims was treated as a statistical anomaly.",
+        "zh": "申索急升被視為統計異常。"
+      },
+      {
+        "en": "Regulators will probe anomalies in trading patterns.",
+        "zh": "規管機構將查究交易模式中的異常。"
+      },
+      {
+        "en": "The reform removes a long-standing tax anomaly.",
+        "zh": "改革消除一項長期存在的稅務異例。"
+      }
+    ],
+    "example": "The surge in claims was treated as a statistical anomaly."
+  },
+  {
+    "term": "austerity",
+    "zh": "緊縮；節約；財政緊縮",
+    "pos": "n.",
+    "related": [
+      "austerity measures",
+      "fiscal austerity",
+      "austere"
+    ],
+    "note": "公共財政辯論常用；與 surplus／deficit 對照",
+    "synonyms": [
+      "retrenchment",
+      "belt-tightening",
+      "cutback"
+    ],
+    "antonyms": [
+      "expansion",
+      "stimulus",
+      "spending surge"
+    ],
+    "examples": [
+      {
+        "en": "Austerity measures were introduced to restore fiscal balance.",
+        "zh": "推出緊縮措施以恢復財政平衡。"
+      },
+      {
+        "en": "Critics warned that austerity could hurt vulnerable groups.",
+        "zh": "批評者警告緊縮或損害弱勢群體。"
+      },
+      {
+        "en": "Departments were asked to pursue austerity without cutting core services.",
+        "zh": "部門獲要求在不削減核心服務下推行節約。"
+      }
+    ],
+    "example": "Austerity measures were introduced to restore fiscal balance."
+  },
+  {
+    "term": "surplus",
+    "zh": "盈餘；剩餘；顺差",
+    "pos": "n.|adj.",
+    "related": [
+      "budget surplus",
+      "fiscal surplus",
+      "surplus funds"
+    ],
+    "note": "財政預算常用；反義：deficit",
+    "synonyms": [
+      "excess",
+      "remainder",
+      "credit balance"
+    ],
+    "antonyms": [
+      "deficit",
+      "shortfall",
+      "shortage"
+    ],
+    "examples": [
+      {
+        "en": "A budget surplus allows the Government to rebuild fiscal reserves.",
+        "zh": "預算盈餘讓政府得以重建財政儲備。"
+      },
+      {
+        "en": "Surplus land may be released for public housing.",
+        "zh": "剩餘土地或會撥作公營房屋。"
+      },
+      {
+        "en": "The trade surplus narrowed in the latest quarter.",
+        "zh": "貿易顺差在最近一季收窄。"
+      }
+    ],
+    "example": "A budget surplus allows the Government to rebuild fiscal reserves."
+  },
+  {
+    "term": "deficit",
+    "zh": "赤字；虧損；逆差",
+    "pos": "n.",
+    "related": [
+      "budget deficit",
+      "fiscal deficit",
+      "deficit financing"
+    ],
+    "note": "與 surplus 對照；fiscal／budget deficit 固定搭配",
+    "synonyms": [
+      "shortfall",
+      "gap",
+      "imbalance"
+    ],
+    "antonyms": [
+      "surplus",
+      "excess",
+      "credit balance"
+    ],
+    "examples": [
+      {
+        "en": "The Government recorded a deficit for the second consecutive year.",
+        "zh": "政府連續第二年錄得赤字。"
+      },
+      {
+        "en": "Containing the fiscal deficit remains a policy priority.",
+        "zh": "控制財政赤字仍是政策優次。"
+      },
+      {
+        "en": "A structural deficit cannot be closed by one-off revenue alone.",
+        "zh": "結構性赤字不能單靠一次性收入填補。"
+      }
+    ],
+    "example": "The Government recorded a deficit for the second consecutive year."
+  },
+  {
+    "term": "decentralise",
+    "zh": "下放；分散；去中心化",
+    "pos": "v.",
+    "related": [
+      "decentralisation",
+      "decentralised",
+      "decentralising"
+    ],
+    "note": "管治、服務、數據架構常用；英式 -ise",
+    "synonyms": [
+      "devolve",
+      "distribute",
+      "disperse"
+    ],
+    "antonyms": [
+      "centralise",
+      "concentrate",
+      "consolidate"
+    ],
+    "examples": [
+      {
+        "en": "The reform will decentralise decision-making to district offices.",
+        "zh": "改革將把決策權下放至地區辦事處。"
+      },
+      {
+        "en": "Decentralised data centres improve resilience against outages.",
+        "zh": "分散式數據中心提升對中斷的韌性。"
+      },
+      {
+        "en": "Policymakers debated whether to decentralise licensing powers.",
+        "zh": "決策者討論是否下放發牌權力。"
+      }
+    ],
+    "example": "The reform will decentralise decision-making to district offices."
+  },
+  {
+    "term": "vacancy",
+    "zh": "空缺；空置；職位空缺",
+    "pos": "n.",
+    "related": [
+      "vacancies",
+      "vacancy rate",
+      "fill a vacancy"
+    ],
+    "note": "房屋空置率／職位空缺皆常用",
+    "synonyms": [
+      "opening",
+      "unfilled post",
+      "empty unit"
+    ],
+    "antonyms": [
+      "occupancy",
+      "filled post",
+      "full occupancy"
+    ],
+    "examples": [
+      {
+        "en": "Office vacancy rates edged up in the central business district.",
+        "zh": "中環商業區寫字樓空置率略升。"
+      },
+      {
+        "en": "The department will fill the vacancy through open recruitment.",
+        "zh": "部門將以公開招聘填補空缺。"
+      },
+      {
+        "en": "High vacancy in public markets may trigger rent reviews.",
+        "zh": "公眾街市高空置或觸發租金檢討。"
+      }
+    ],
+    "example": "Office vacancy rates edged up in the central business district."
+  },
+  {
+    "term": "gentrification",
+    "zh": "紳士化；中產化；社區士紳化",
+    "pos": "n.",
+    "related": [
+      "gentrify",
+      "gentrified",
+      "anti-gentrification"
+    ],
+    "note": "市區更新辯論常用；關注租金上升與原居民遷離",
+    "synonyms": [
+      "upgrading",
+      "revalorisation",
+      "neighbourhood uplift"
+    ],
+    "antonyms": [
+      "decline",
+      "disinvestment",
+      "blight"
+    ],
+    "examples": [
+      {
+        "en": "Residents fear gentrification will push up rents after renewal.",
+        "zh": "居民擔心更新後紳士化推高租金。"
+      },
+      {
+        "en": "The study examines gentrification pressures in old urban areas.",
+        "zh": "研究檢視舊區的紳士化壓力。"
+      },
+      {
+        "en": "Inclusive design aims to curb displacement linked to gentrification.",
+        "zh": "包容設計旨在遏止與紳士化相關的迫遷。"
+      }
+    ],
+    "example": "Residents fear gentrification will push up rents after renewal."
+  },
+  {
+    "term": "landfill",
+    "zh": "堆填區；垃圾堆填；填埋場",
+    "pos": "n.",
+    "related": [
+      "landfills",
+      "landfill capacity",
+      "landfill charge"
+    ],
+    "note": "廢物管理、都市固體廢物收費常用",
+    "synonyms": [
+      "dump site",
+      "waste tip",
+      "disposal site"
+    ],
+    "antonyms": [
+      "recycling facility",
+      "recovery plant",
+      "composting site"
+    ],
+    "examples": [
+      {
+        "en": "Hong Kong's landfills are approaching full capacity.",
+        "zh": "香港堆填區正接近飽和。"
+      },
+      {
+        "en": "The landfill charge seeks to reduce waste at source.",
+        "zh": "堆填費力求從源頭減少廢物。"
+      },
+      {
+        "en": "Food waste diversion can ease pressure on landfills.",
+        "zh": "廚餘分流可減輕堆填區壓力。"
+      }
+    ],
+    "example": "Hong Kong's landfills are approaching full capacity."
+  },
+  {
+    "term": "recycling",
+    "zh": "回收；循環再造；資源回收",
+    "pos": "n.",
+    "related": [
+      "recycle",
+      "recyclable",
+      "recycling rate"
+    ],
+    "note": "環保政策核心詞；常與 landfill、producer responsibility 連用",
+    "synonyms": [
+      "recovery",
+      "reprocessing",
+      "reuse"
+    ],
+    "antonyms": [
+      "disposal",
+      "landfilling",
+      "incineration only"
+    ],
+    "examples": [
+      {
+        "en": "The city aims to raise its recycling rate to 55 per cent.",
+        "zh": "本市旨在把回收率提高至百分之五十五。"
+      },
+      {
+        "en": "Community recycling stations improve source separation.",
+        "zh": "社區回收站改善源頭分類。"
+      },
+      {
+        "en": "Mandatory recycling schemes cover selected packaging materials.",
+        "zh": "強制回收計劃涵蓋選定包裝物料。"
+      }
+    ],
+    "example": "The city aims to raise its recycling rate to 55 per cent."
+  },
+  {
+    "term": "demographic ageing",
+    "zh": "人口老化；人口高齡化",
+    "pos": "n.|phr.",
+    "related": [
+      "ageing population",
+      "demographic shift",
+      "population ageing"
+    ],
+    "note": "安老、醫療、勞動力政策常用；亦作 population ageing",
+    "synonyms": [
+      "population ageing",
+      "ageing society",
+      "grey wave"
+    ],
+    "antonyms": [
+      "youthful population",
+      "demographic dividend",
+      "young workforce"
+    ],
+    "examples": [
+      {
+        "en": "Demographic ageing will raise demand for long-term care.",
+        "zh": "人口老化將提高長期護理需求。"
+      },
+      {
+        "en": "Fiscal planning must account for demographic ageing.",
+        "zh": "財政規劃必須計及人口高齡化。"
+      },
+      {
+        "en": "Labour shortages are partly driven by demographic ageing.",
+        "zh": "勞工短缺部分由人口老化驅動。"
+      }
+    ],
+    "example": "Demographic ageing will raise demand for long-term care."
+  },
+  {
+    "term": "digitalisation",
+    "zh": "數碼化；數位轉型；電子化",
+    "pos": "n.",
+    "related": [
+      "digitalise",
+      "digital transformation",
+      "digitisation"
+    ],
+    "note": "政府服務、金融、醫療常用；英式 -isation",
+    "synonyms": [
+      "digitisation",
+      "e-transformation",
+      "tech upgrade"
+    ],
+    "antonyms": [
+      "paper-based process",
+      "analogue system",
+      "manual workflow"
+    ],
+    "examples": [
+      {
+        "en": "Digitalisation of public services can shorten waiting times.",
+        "zh": "公共服務數碼化可縮短輪候時間。"
+      },
+      {
+        "en": "SMEs need support to accelerate digitalisation.",
+        "zh": "中小企需要支援以加快數碼化。"
+      },
+      {
+        "en": "The roadmap sets milestones for government digitalisation.",
+        "zh": "路線圖訂定政府數碼化的里程碑。"
+      }
+    ],
+    "example": "Digitalisation of public services can shorten waiting times."
+  },
+  {
+    "term": "personal data privacy",
+    "zh": "個人資料私隱；個人資料保護",
+    "pos": "n.|phr.",
+    "related": [
+      "data privacy",
+      "PDPO",
+      "privacy impact assessment"
+    ],
+    "note": "《個人資料（私隱）條例》語境；常連 Privacy Commissioner",
+    "synonyms": [
+      "data protection",
+      "information privacy",
+      "data confidentiality"
+    ],
+    "antonyms": [
+      "data misuse",
+      "unauthorised disclosure",
+      "privacy breach"
+    ],
+    "examples": [
+      {
+        "en": "Personal data privacy must be safeguarded in smart city projects.",
+        "zh": "智慧城市項目必須保障個人資料私隱。"
+      },
+      {
+        "en": "The circular reminds staff of personal data privacy obligations.",
+        "zh": "通告提醒職員個人資料私隱責任。"
+      },
+      {
+        "en": "Cross-boundary data flows raise personal data privacy concerns.",
+        "zh": "跨境數據流動引起個人資料私隱關注。"
+      }
+    ],
+    "example": "Personal data privacy must be safeguarded in smart city projects."
+  },
+  {
+    "term": "integrity",
+    "zh": "誠信；廉潔；正直",
+    "pos": "n.",
+    "related": [
+      "procurement integrity",
+      "integrity risk",
+      "integrity management"
+    ],
+    "note": "採購、公職人員操守常用；與 conflict of interest 連用",
+    "synonyms": [
+      "probity",
+      "honesty",
+      "uprightness"
+    ],
+    "antonyms": [
+      "corruption",
+      "dishonesty",
+      "malpractice"
+    ],
+    "examples": [
+      {
+        "en": "Procurement integrity is essential to public confidence.",
+        "zh": "採購誠信對公眾信心至關重要。"
+      },
+      {
+        "en": "Staff must declare interests to uphold integrity.",
+        "zh": "職員必須申報利益以維護誠信。"
+      },
+      {
+        "en": "The audit highlighted integrity risks in contract awards.",
+        "zh": "審計指出合約批出中的誠信風險。"
+      }
+    ],
+    "example": "Procurement integrity is essential to public confidence."
+  },
+  {
+    "term": "whistle-blowing",
+    "zh": "舉報；吹哨；揭發不當行為",
+    "pos": "n.",
+    "related": [
+      "whistle-blower",
+      "whistleblowing channel",
+      "protected disclosure"
+    ],
+    "note": "誠信／反貪機制常用；可連字號或合成",
+    "synonyms": [
+      "reporting of misconduct",
+      "protected disclosure",
+      "tip-off"
+    ],
+    "antonyms": [
+      "cover-up",
+      "silence",
+      "concealment"
+    ],
+    "examples": [
+      {
+        "en": "A confidential whistle-blowing channel has been set up.",
+        "zh": "已設立保密舉報渠道。"
+      },
+      {
+        "en": "The ordinance strengthens protection for whistle-blowing.",
+        "zh": "條例加強對舉報的保障。"
+      },
+      {
+        "en": "Staff are encouraged to use whistle-blowing routes in good faith.",
+        "zh": "鼓勵職員真誠使用舉報途徑。"
+      }
+    ],
+    "example": "A confidential whistle-blowing channel has been set up."
+  },
+  {
+    "term": "conflict of interest",
+    "zh": "利益衝突；利害衝突",
+    "pos": "n.|phr.",
+    "related": [
+      "declare a conflict",
+      "actual conflict",
+      "perceived conflict"
+    ],
+    "note": "公職／採購操守核心；須 declare／recuse",
+    "synonyms": [
+      "competing interest",
+      "vested interest clash",
+      "bias risk"
+    ],
+    "antonyms": [
+      "impartiality",
+      "independence",
+      "clean slate"
+    ],
+    "examples": [
+      {
+        "en": "Members must declare any conflict of interest before voting.",
+        "zh": "委員表決前必須申報任何利益衝突。"
+      },
+      {
+        "en": "A perceived conflict of interest can still damage public trust.",
+        "zh": "即使是觀感上的利益衝突亦可損害公眾信任。"
+      },
+      {
+        "en": "Procurement officers must avoid conflicts of interest with suppliers.",
+        "zh": "採購人員必須避免與供應商有利益衝突。"
+      }
+    ],
+    "example": "Members must declare any conflict of interest before voting."
+  },
+  {
+    "term": "due diligence",
+    "zh": "盡職審查；盡職調查；審慎查核",
+    "pos": "n.|phr.",
+    "related": [
+      "conduct due diligence",
+      "due-diligence checks",
+      "enhanced due diligence"
+    ],
+    "note": "採購、投資、反洗錢（AML）常用",
+    "synonyms": [
+      "background check",
+      "vetting",
+      "scrutiny"
+    ],
+    "antonyms": [
+      "negligence",
+      "blind trust",
+      "rubber-stamp approval"
+    ],
+    "examples": [
+      {
+        "en": "Enhanced due diligence applies to high-risk counterparties.",
+        "zh": "高風險交易對手適用加強盡職審查。"
+      },
+      {
+        "en": "Investors conducted due diligence before the land acquisition.",
+        "zh": "投資者在收地前進行盡職調查。"
+      },
+      {
+        "en": "Failure to exercise due diligence may attract regulatory sanctions.",
+        "zh": "未盡盡職審查責任或招致規管制裁。"
+      }
+    ],
+    "example": "Enhanced due diligence applies to high-risk counterparties."
+  },
+  {
+    "term": "proportionality",
+    "zh": "相稱性；比例原則；適度性",
+    "pos": "n.",
+    "related": [
+      "proportionate",
+      "principle of proportionality",
+      "disproportionate"
+    ],
+    "note": "人權、執法、規管干預常用法律概念",
+    "synonyms": [
+      "balance",
+      "reasonableness",
+      "commensurateness"
+    ],
+    "antonyms": [
+      "disproportionality",
+      "excess",
+      "overreach"
+    ],
+    "examples": [
+      {
+        "en": "Restrictions must satisfy the principle of proportionality.",
+        "zh": "限制措施必須符合比例原則。"
+      },
+      {
+        "en": "The penalty was reviewed for proportionality to the offence.",
+        "zh": "已就罰則與罪行的相稱性作出檢視。"
+      },
+      {
+        "en": "Courts often test whether measures meet proportionality.",
+        "zh": "法院常審視措施是否符合相稱性。"
+      }
+    ],
+    "example": "Restrictions must satisfy the principle of proportionality."
+  },
+  {
+    "term": "contingency planning",
+    "zh": "應變規劃；應急計劃；緊急應變籌備",
+    "pos": "n.|phr.",
+    "related": [
+      "contingency plan",
+      "contingency arrangements",
+      "business continuity"
+    ],
+    "note": "與已有 contingency 互補；偏規劃過程／安排",
+    "synonyms": [
+      "emergency planning",
+      "preparedness",
+      "business continuity planning"
+    ],
+    "antonyms": [
+      "ad hoc response",
+      "unpreparedness",
+      "improvisation only"
+    ],
+    "examples": [
+      {
+        "en": "Contingency planning for typhoons is reviewed every season.",
+        "zh": "颱風應變規劃每季檢討。"
+      },
+      {
+        "en": "Hospitals strengthened contingency planning for surge capacity.",
+        "zh": "醫院加強了應對容量激增的應變規劃。"
+      },
+      {
+        "en": "Cross-department contingency planning improves incident response.",
+        "zh": "跨部門應變規劃改善事故應對。"
+      }
+    ],
+    "example": "Contingency planning for typhoons is reviewed every season."
+  },
+  {
+    "term": "surge capacity",
+    "zh": "應急擴容；峰值承載力；突增應對能力",
+    "pos": "n.|phr.",
+    "related": [
+      "surge beds",
+      "capacity surge",
+      "build surge capacity"
+    ],
+    "note": "醫療、應急、公共交通高峰常用",
+    "synonyms": [
+      "extra capacity",
+      "peak capacity",
+      "overflow capacity"
+    ],
+    "antonyms": [
+      "capacity shortfall",
+      "full occupancy only",
+      "no buffer"
+    ],
+    "examples": [
+      {
+        "en": "Hospitals activated surge capacity during the winter peak.",
+        "zh": "醫院在冬季高峰啟動應急擴容。"
+      },
+      {
+        "en": "The plan builds surge capacity for mass casualty incidents.",
+        "zh": "計劃為大型傷亡事故建立突增應對能力。"
+      },
+      {
+        "en": "Public transport needs surge capacity on festival days.",
+        "zh": "公共交通在節日需要峰值承載力。"
+      }
+    ],
+    "example": "Hospitals activated surge capacity during the winter peak."
+  },
+  {
+    "term": "bed occupancy",
+    "zh": "病床佔用率；床位使用率",
+    "pos": "n.|phr.",
+    "related": [
+      "occupancy rate",
+      "acute bed occupancy",
+      "high bed occupancy"
+    ],
+    "note": "醫院管理局統計常用",
+    "synonyms": [
+      "occupancy rate",
+      "bed utilisation",
+      "inpatient load"
+    ],
+    "antonyms": [
+      "spare capacity",
+      "low utilisation",
+      "empty beds"
+    ],
+    "examples": [
+      {
+        "en": "Bed occupancy exceeded 100 per cent in medical wards.",
+        "zh": "內科病房病床佔用率超過百分之一百。"
+      },
+      {
+        "en": "High bed occupancy strains nursing manpower.",
+        "zh": "高病床佔用率令護理人手吃緊。"
+      },
+      {
+        "en": "The dashboard tracks daily bed occupancy by cluster.",
+        "zh": "儀表板按聯網追蹤每日病床佔用率。"
+      }
+    ],
+    "example": "Bed occupancy exceeded 100 per cent in medical wards."
+  },
+  {
+    "term": "modal shift",
+    "zh": "出行模式轉移；交通模式轉換",
+    "pos": "n.|phr.",
+    "related": [
+      "shift in mode",
+      "modal split",
+      "encourage modal shift"
+    ],
+    "note": "運輸政策核心；鼓勵由私家車轉公共交通",
+    "synonyms": [
+      "mode switch",
+      "travel behaviour change",
+      "transport shift"
+    ],
+    "antonyms": [
+      "car dependence",
+      "status quo travel",
+      "modal inertia"
+    ],
+    "examples": [
+      {
+        "en": "Better rail links encourage a modal shift from private cars.",
+        "zh": "更佳鐵路連接鼓勵由私家車轉向其他出行模式。"
+      },
+      {
+        "en": "Parking restraint supports modal shift to public transport.",
+        "zh": "泊車限制支援轉向公共交通。"
+      },
+      {
+        "en": "The strategy sets targets for modal shift by 2035.",
+        "zh": "策略訂定二零三五年前的出行模式轉移目標。"
+      }
+    ],
+    "example": "Better rail links encourage a modal shift from private cars."
+  },
+  {
+    "term": "last-mile",
+    "zh": "最後一里；末端配送；接駁最後一段",
+    "pos": "adj.|n.",
+    "related": [
+      "last-mile connectivity",
+      "last-mile delivery",
+      "first-and-last-mile"
+    ],
+    "note": "交通接駁與物流末端常用；常連字號",
+    "synonyms": [
+      "final-leg",
+      "end-mile",
+      "terminal connection"
+    ],
+    "antonyms": [
+      "trunk route",
+      "long-haul",
+      "mainline only"
+    ],
+    "examples": [
+      {
+        "en": "Feeder buses improve last-mile connectivity to the MTR.",
+        "zh": "接駁巴士改善往返港鐵的最後一里連接。"
+      },
+      {
+        "en": "E-commerce growth intensifies last-mile delivery demand.",
+        "zh": "電子商務增長加劇末端配送需求。"
+      },
+      {
+        "en": "Walkways and bike parking support last-mile access.",
+        "zh": "行人通道與單車泊位支援最後一里接達。"
+      }
+    ],
+    "example": "Feeder buses improve last-mile connectivity to the MTR."
+  },
+  {
+    "term": "heat island",
+    "zh": "熱島；城市熱島效應",
+    "pos": "n.|phr.",
+    "related": [
+      "urban heat island",
+      "heat island effect",
+      "UHI"
+    ],
+    "note": "氣候適應、綠化、清涼屋頂常用",
+    "synonyms": [
+      "urban heat island",
+      "UHI effect",
+      "heat build-up"
+    ],
+    "antonyms": [
+      "urban cooling",
+      "heat mitigation",
+      "cool corridor"
+    ],
+    "examples": [
+      {
+        "en": "Tree canopy can reduce the urban heat island effect.",
+        "zh": "樹冠可減緩城市熱島效應。"
+      },
+      {
+        "en": "Dense development intensifies the heat island in old districts.",
+        "zh": "高密度發展加劇舊區熱島。"
+      },
+      {
+        "en": "Cool materials are proposed to mitigate heat island impacts.",
+        "zh": "建議採用清涼物料以緩解熱島影響。"
+      }
+    ],
+    "example": "Tree canopy can reduce the urban heat island effect."
+  },
+  {
+    "term": "sponge city",
+    "zh": "海綿城市；吸水城市；雨水滯蓄城市",
+    "pos": "n.|phr.",
+    "related": [
+      "sponge-city measures",
+      "absorbent city",
+      "blue-green infrastructure"
+    ],
+    "note": "防洪、雨水管理、綠藍基建常用",
+    "synonyms": [
+      "absorbent city",
+      "water-sensitive city",
+      "blue-green city"
+    ],
+    "antonyms": [
+      "impervious city",
+      "drain-and-discharge only",
+      "hard-surface city"
+    ],
+    "examples": [
+      {
+        "en": "Sponge city measures reduce flood risk after heavy rain.",
+        "zh": "海綿城市措施減低暴雨後水浸風險。"
+      },
+      {
+        "en": "Parks and wetlands form part of the sponge city network.",
+        "zh": "公園與濕地構成海綿城市網絡的一部分。"
+      },
+      {
+        "en": "The drainage strategy adopts sponge city principles.",
+        "zh": "渠務策略採納海綿城市原則。"
+      }
+    ],
+    "example": "Sponge city measures reduce flood risk after heavy rain."
+  },
+  {
+    "term": "food waste",
+    "zh": "廚餘；食物浪費；食物殘渣",
+    "pos": "n.|phr.",
+    "related": [
+      "food-waste recycling",
+      "food waste reduction",
+      "food waste levy"
+    ],
+    "note": "減廢、堆肥、堆填壓力常用",
+    "synonyms": [
+      "kitchen waste",
+      "organic waste",
+      "food leftovers"
+    ],
+    "antonyms": [
+      "food recovery",
+      "edible surplus reuse",
+      "zero food waste"
+    ],
+    "examples": [
+      {
+        "en": "Food waste accounts for a large share of municipal solid waste.",
+        "zh": "廚餘佔都市固體廢物的一大部分。"
+      },
+      {
+        "en": "Schools joined a food waste recycling pilot scheme.",
+        "zh": "學校參與廚餘回收先導計劃。"
+      },
+      {
+        "en": "Hotels are encouraged to cut food waste at source.",
+        "zh": "鼓勵酒店從源頭減少廚餘。"
+      }
+    ],
+    "example": "Food waste accounts for a large share of municipal solid waste."
+  },
+  {
+    "term": "producer responsibility",
+    "zh": "生產者責任；生產者責任制",
+    "pos": "n.|phr.",
+    "related": [
+      "producer responsibility scheme",
+      "extended producer responsibility",
+      "PRS"
+    ],
+    "note": "廢電器、包裝、膠樽等 PRS 常用",
+    "synonyms": [
+      "extended producer responsibility",
+      "product stewardship",
+      "take-back duty"
+    ],
+    "antonyms": [
+      "end-user-only burden",
+      "open dumping",
+      "no take-back"
+    ],
+    "examples": [
+      {
+        "en": "A producer responsibility scheme covers regulated electrical equipment.",
+        "zh": "生產者責任計劃涵蓋受規管電器。"
+      },
+      {
+        "en": "Extended producer responsibility shifts costs upstream to manufacturers.",
+        "zh": "擴大生產者責任把成本上移至製造商。"
+      },
+      {
+        "en": "Industry groups support phased producer responsibility for packaging.",
+        "zh": "業界團體支持分階段推行包裝生產者責任。"
+      }
+    ],
+    "example": "A producer responsibility scheme covers regulated electrical equipment."
+  },
+  {
+    "term": "moral hazard",
+    "zh": "道德風險；道德危機",
+    "pos": "n.|phr.",
+    "related": [
+      "create moral hazard",
+      "moral-hazard risk",
+      "moral hazards"
+    ],
+    "note": "保險、救援、補貼政策辯論常用",
+    "synonyms": [
+      "perverse incentive",
+      "risk shifting",
+      "carelessness incentive"
+    ],
+    "antonyms": [
+      "aligned incentives",
+      "skin in the game",
+      "prudent behaviour"
+    ],
+    "examples": [
+      {
+        "en": "Unlimited guarantees may create moral hazard for lenders.",
+        "zh": "無限擔保或對貸款人造成道德風險。"
+      },
+      {
+        "en": "Means tests help reduce moral hazard in welfare schemes.",
+        "zh": "資產入息審查有助減低福利計劃的道德風險。"
+      },
+      {
+        "en": "Bailouts must be designed to limit moral hazard.",
+        "zh": "救助必須設計成限制道德風險。"
+      }
+    ],
+    "example": "Unlimited guarantees may create moral hazard for lenders."
+  },
+  {
+    "term": "crowding out",
+    "zh": "擠出效應；排擠； crowding out",
+    "pos": "n.|phr.",
+    "related": [
+      "crowd out",
+      "crowding-out effect",
+      "fiscal crowding out"
+    ],
+    "note": "公共開支／私人投資辯論常用",
+    "synonyms": [
+      "displacement",
+      "displacement effect",
+      "squeezing out"
+    ],
+    "antonyms": [
+      "crowding in",
+      "complementarity",
+      "catalysing private investment"
+    ],
+    "examples": [
+      {
+        "en": "Heavy public borrowing may risk crowding out private investment.",
+        "zh": "大量公共借貸或有排擠私人投資之虞。"
+      },
+      {
+        "en": "The study found limited crowding out of voluntary donations.",
+        "zh": "研究發現對自願捐款的擠出效應有限。"
+      },
+      {
+        "en": "Well-designed co-investment can avoid crowding out markets.",
+        "zh": "設計妥善的共同投資可避免排擠市場。"
+      }
+    ],
+    "example": "Heavy public borrowing may risk crowding out private investment."
+  },
+  {
+    "term": "progressive",
+    "zh": "累進的；累進式的；進步的",
+    "pos": "adj.",
+    "related": [
+      "progressive tax",
+      "progressivity",
+      "progressive rates"
+    ],
+    "note": "稅制／收費常用「累進」義；與 regressive 對照",
+    "synonyms": [
+      "graduated",
+      "sliding-scale",
+      "tiered upward"
+    ],
+    "antonyms": [
+      "regressive",
+      "flat",
+      "lump-sum"
+    ],
+    "examples": [
+      {
+        "en": "A progressive tax system places a higher burden on high earners.",
+        "zh": "累進稅制對高收入者施加較高負擔。"
+      },
+      {
+        "en": "Fees were redesigned on a more progressive basis.",
+        "zh": "收費按更累進的基礎重新設計。"
+      },
+      {
+        "en": "Analysts debated how progressive the rebate scheme truly is.",
+        "zh": "分析員討論回贈計劃實際累進程度。"
+      }
+    ],
+    "example": "A progressive tax system places a higher burden on high earners."
+  },
+  {
+    "term": "regressive",
+    "zh": "累退的；累退式的；倒退的",
+    "pos": "adj.",
+    "related": [
+      "regressivity",
+      "regressive tax",
+      "regressive impact"
+    ],
+    "note": "批評劃一收費／銷售稅對低收入負擔較重時常用",
+    "synonyms": [
+      "disproportionate on the poor",
+      "anti-progressive",
+      "burden-shifting downward"
+    ],
+    "antonyms": [
+      "progressive",
+      "pro-poor",
+      "equitable"
+    ],
+    "examples": [
+      {
+        "en": "A flat levy can be regressive for low-income households.",
+        "zh": "劃一徵費對低收入住戶可以是累退的。"
+      },
+      {
+        "en": "Critics argued the charge has a regressive impact.",
+        "zh": "批評者指該收費具累退影響。"
+      },
+      {
+        "en": "Rebates were introduced to offset regressive effects.",
+        "zh": "推出回贈以抵銷累退效應。"
+      }
+    ],
+    "example": "A flat levy can be regressive for low-income households."
   }
 ]
