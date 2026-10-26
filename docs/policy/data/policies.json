@@ -1713,6 +1713,27 @@
       "source_name": "info.gov.hk 新聞公報"
     },
     {
+      "id": "20260929-hoi-fan-road-park",
+      "date": "2026-09-29",
+      "title": "油尖旺海帆道公園啓用　約1.6公頃康樂與綠色休憩空間",
+      "title_en": "Hoi Fan Road Park opens in Yau Tsim Mong — ~1.6 ha recreation and green open space",
+      "departments": [
+        "cstb"
+      ],
+      "themes": [
+        "culture-tourism",
+        "sports"
+      ],
+      "summary": "康文署宣布油尖旺區海帆道公園（海帆道18號）由2026年9月30日起開放，佔地約16 000平方公尺。設施包括七人人造草足球場、籃球場暨排球場、健體設施、社區園圃、共融兒童遊樂場，並為寵物共享公園，屬區內新增公共休憩／康樂空間。",
+      "interview_angles": [
+        "新公園如何平衡體育設施、兒童遊樂、寵物共享與寧靜休憩需求？",
+        "高密度市區新增約1.6公頃休憩用地，對區內休憩空間標準有何意義？",
+        "啓用後管理（開放時間、寵物規管、場地預訂）如何減少鄰里衝突？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202609/29/P2026092800303.htm",
+      "source_name": "info.gov.hk / Leisure and Cultural Services Department"
+    },
+    {
       "id": "20260921-eeb-green-transition",
       "date": "2026-09-21",
       "title": "環境及生態局闡述五年規劃綠色轉型：零碳電力、減廢與生態紅線",
@@ -2230,6 +2251,27 @@
       "source_name": "info.gov.hk 新聞公報"
     },
     {
+      "id": "20260711-platform-workers-comp-details",
+      "date": "2026-07-11",
+      "title": "勞福局闡述數碼平台工作者工傷補償：多層次計算　年底冀交條例草案",
+      "title_en": "LWB outlines multi-tier platform workers' injury compensation; bill targeted by year-end",
+      "departments": [
+        "lwb"
+      ],
+      "themes": [
+        "labour",
+        "legislation"
+      ],
+      "summary": "勞福局局長孫玉菡表示，政府已向立法會提交完善數碼平台工作者工傷補償機制文件，正草擬新法例，目標2026年底前交條例草案。因外送工作形態有別傳統僱傭，擬採多層次計算：視工作年期調整津貼與領取期；多平台收入可納入考量，但意外時所屬平台為主體；保障範圍涵蓋接單至送達及取消訂單期間，惡劣天氣送達後回家路程亦擬參考《僱員補償條例》延伸保障。死亡補償約51萬餘元參考現行條例；罰則亦擬參照該條例。",
+      "interview_angles": [
+        "多層次補償會否令短期／兼職外送員保障明顯弱於長工時者？",
+        "成本上升後平台會否轉嫁消費者，政府如何衡量「可負擔」？",
+        "只立法工傷、不釐清僱傭關係，其他勞工權益缺口如何處理？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202607/11/P2026071100610.htm",
+      "source_name": "info.gov.hk / Labour and Welfare Bureau"
+    },
+    {
       "id": "20260703-nm-bill",
       "date": "2026-07-03",
       "title": "《北部都會區發展條例草案》刊憲",
@@ -2337,6 +2379,27 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202603/24/P2026032400383.htm",
       "source_name": "info.gov.hk 新聞公報"
+    },
+    {
+      "id": "20260223-hung-hom-harbourfront",
+      "date": "2026-02-23",
+      "title": "紅磡前貨運碼頭批出短期海濱活動空間　逾半面積作公眾休憩",
+      "title_en": "Hung Hom ex-freight pier short-term harbourfront: over half as public open space",
+      "departments": [
+        "devb"
+      ],
+      "themes": [
+        "culture-tourism",
+        "housing-land"
+      ],
+      "summary": "發展局公布將前紅磡鐵路貨運碼頭約1.8公頃用地，以約三年短期租約批予灣區傳媒有限公司作海濱活動空間；公開招標採雙信封制（技術70%／價格30%），中標租金約133萬元。碼頭部分超過一半面積劃為沿海公眾休憩空間；其餘設餐飲娛樂、演展、文創及寵物友善公園，並安排展覽、市集、夜間表演等。政府基本改善工程大致完成，目標分階段開放，長遠發展前先活化公共空間。",
+      "interview_angles": [
+        "短期私營營運公眾休憩空間，如何確保暢達、免費使用與管理透明度？",
+        "技術標重於價格是否有助公共空間質素，還是偏向商業活動？",
+        "長遠碼頭／海濱規劃未定前，三年租約如何避免「臨時變永久」爭議？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202602/23/P2026022300541.htm",
+      "source_name": "info.gov.hk / Development Bureau"
     },
     {
       "id": "20260121-platform-workers-comp",
