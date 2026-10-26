@@ -11,33 +11,10 @@
     discourse: "論述銜接",
   };
 
-  const DRILL_SCENARIOS = [
-    {
-      title: "Specialist outpatient waiting times",
-      para: "Waiting times for certain specialist outpatient clinics have lengthened. Some patients report delayed follow-up, while NGOs highlight uneven district capacity. The Hospital Authority notes manpower strain; LegCo members have asked whether a short-term package is feasible without crowding out other services.",
-    },
-    {
-      title: "Uptake of a means-tested living subsidy",
-      para: "A recently enhanced means-tested living subsidy shows subdued uptake among eligible households. Frontline staff cite complex forms and stigma; the bureau cites fiscal prudence. Media coverage has focused on the gap between announced coverage and actual applications.",
-    },
-    {
-      title: "Pilot transitional housing sites",
-      para: "Two pilot transitional housing sites are near capacity, while three planned sites face local objection and utility delays. Demand from families on the PRH waiting list remains high. The department must advise on whether to scale up, redesign eligibility, or pause further sites.",
-    },
-    {
-      title: "Cross-bureau digital service bottleneck",
-      para: "A one-stop digital portal for licence renewals has uneven uptake. Some departments still require paper originals; SMEs report duplicated uploads. An interdepartmental working group exists but lacks a clear lead and timeline for closing the enforcement and process gaps.",
-    },
-    {
-      title: "Elderly community care shortfall",
-      para: "District-based community care places fall short of projected need. Carers report long waiting lists; operators cite recruitment difficulties. A stopgap purchase-of-service arrangement is under discussion, with concern over recurrent cost and quality oversight.",
-    },
-  ];
 
   const state = {
     q1: { disclaimer: "", categories: [], items: [] },
     category: "all",
-    drillSeed: Date.now() >>> 0,
     modelOpen: false,
   };
 
@@ -61,31 +38,6 @@
       .replace(/"/g, "&quot;");
   }
 
-  function mulberry32(a) {
-    return function () {
-      let t = (a += 0x6d2b79f5);
-      t = Math.imul(t ^ (t >>> 15), t | 1);
-      t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-    };
-  }
-
-  function pickN(arr, n, rand) {
-    const copy = [...arr];
-    const out = [];
-    while (copy.length && out.length < n) {
-      const i = Math.floor(rand() * copy.length);
-      out.push(copy.splice(i, 1)[0]);
-    }
-    return out;
-  }
-
-  function weekKey(d = new Date()) {
-    const hk = new Date(d.toLocaleString("en-US", { timeZone: "Asia/Hong_Kong" }));
-    const onejan = new Date(hk.getFullYear(), 0, 1);
-    const week = Math.ceil(((hk - onejan) / 86400000 + onejan.getDay() + 1) / 7);
-    return `${hk.getFullYear()}-W${String(week).padStart(2, "0")}`;
-  }
 
   function renderFilters() {
     const cats = ["all", ...(state.q1.categories || []).map((c) => c.id)];
@@ -150,45 +102,6 @@
     });
   }
 
-  function buildDrill() {
-    const rand = mulberry32(state.drillSeed);
-    const scenario = DRILL_SCENARIOS[Math.floor(rand() * DRILL_SCENARIOS.length)];
-    const phrases = pickN(state.q1.items || [], 3, rand);
-    const phraseLines = phrases.map((p) => `• ${p.en}`).join("\n");
-    const text = `JRE English Q1 — MINI-DRILL (20–25 minutes)
-Week: ${weekKey()} · NOT a full case pack
-
-SCENARIO — ${scenario.title}
-${scenario.para}
-
-TASK (internal discussion paper style)
-1. Identify TWO problems.
-2. State TWO implications (knock-on / fiscal / public confidence / service capacity, etc.).
-3. Propose TWO feasible measures — each with WHO (lead dept/officer), WHEN (timeframe), and RESOURCES where possible.
-4. Use at least THREE bank phrases below.
-
-BANK PHRASES (Q1句式)
-${phraseLines || "• (phrase bank loading…)"}
-
-LENGTH GUIDE: ~350–500 words. Formal civil-service tone.
-
-AFTERWARDS
-• Self-check: problems → implications → measures; specificity of who/when/resources.
-• Full timed drills: Data File 練習 tab, or deepen with JRE English.`;
-    return { text, scenario: scenario.title, phraseCount: phrases.length };
-  }
-
-  function renderDrill() {
-    const d = buildDrill();
-    const pre = $("#drillPrompt");
-    const meta = $("#drillMeta");
-    if (pre) pre.textContent = d.text;
-    if (meta) {
-      meta.innerHTML = `<span class="chip">${escapeHtml(weekKey())}</span>
-        <span class="chip">${escapeHtml(d.scenario)}</span>
-        <span class="chip">${d.phraseCount} phrases</span>`;
-    }
-  }
 
   function renderDoc(doc) {
     let body = "";
@@ -348,13 +261,10 @@ AFTERWARDS
       };
       renderFilters();
       renderPhrases();
-      renderDrill();
     } catch (e) {
       console.warn(e);
       const grid = $("#q1Grid");
       if (grid) grid.innerHTML = `<div class="empty">未能載入 Q1 句式庫（../vocab/data/q1_phrases.json）。</div>`;
-      const pre = $("#drillPrompt");
-      if (pre) pre.textContent = "Phrase bank failed to load.";
     }
   }
 
@@ -375,20 +285,6 @@ AFTERWARDS
     renderCase();
     const search = $("#q1Search");
     if (search) search.addEventListener("input", renderPhrases);
-    $("#btnNewDrill")?.addEventListener("click", () => {
-      state.drillSeed = (state.drillSeed + 0x9e3779b9) >>> 0;
-      renderDrill();
-      toast("已換題");
-    });
-    $("#btnCopyDrill")?.addEventListener("click", async () => {
-      const text = $("#drillPrompt")?.textContent || "";
-      try {
-        await navigator.clipboard.writeText(text);
-        toast("已複製 drill 提示");
-      } catch {
-        toast("複製失敗");
-      }
-    });
     loadPhrases();
   }
 
