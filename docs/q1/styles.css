@@ -73,11 +73,34 @@ main {
   padding: 14px max(16px, env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left));
 }
 /* Wider when practising Data File split */
-body:has(#panel-case.active) { --content-w: 1100px; }
 @media (min-width: 900px) {
   :root { --content-w: 820px; }
-  body:has(#panel-case.active) { --content-w: 1100px; }
 }
+/* 計時練習：用盡畫面寬＋高 */
+body:has(#panel-case.active) {
+  --content-w: 100%;
+}
+body:has(#panel-case.active) .header-inner,
+body:has(#panel-case.active) .subnav,
+body:has(#panel-case.active) main {
+  max-width: none;
+  width: 100%;
+}
+body:has(#panel-case.active) main {
+  padding-top: 8px;
+  padding-left: max(8px, env(safe-area-inset-left, 0px));
+  padding-right: max(8px, env(safe-area-inset-right, 0px));
+  padding-bottom: max(8px, env(safe-area-inset-bottom, 0px));
+}
+body:has(#panel-case.active) .case-hero,
+body:has(#panel-case.active) #panel-case > .card:first-of-type {
+  margin-bottom: 8px;
+}
+body:has(#panel-case.active) .case-hero .lede,
+body:has(#panel-case.active) .case-hero .chip-row {
+  display: none;
+}
+
 .panel { display: none; }
 .panel.active { display: block; }
 .card {
@@ -258,14 +281,17 @@ body:has(#panel-case.active) { --content-w: 1100px; }
 .practice-split {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 12px;
+  gap: 10px;
   align-items: stretch;
   margin: 0 0 12px;
-  min-height: min(72dvh, 760px);
+  /* chrome ≈ hub tab + header + subnav + task + padding */
+  height: calc(100dvh - var(--hub-tab-h, 56px) - env(safe-area-inset-top, 0px) - 168px);
+  min-height: 320px;
 }
 .practice-pane-df {
   display: flex; flex-direction: column; min-height: 0; min-width: 0;
-  max-height: min(72dvh, 760px);
+  max-height: 100%;
+  height: 100%;
 }
 .practice-pane-head { margin-bottom: 0; border-radius: var(--radius) var(--radius) 0 0; }
 .practice-pane-scroll {
@@ -278,8 +304,8 @@ body:has(#panel-case.active) { --content-w: 1100px; }
 .practice-pane-write { min-height: 0; min-width: 0; display: flex; flex-direction: column; }
 .practice-write-card {
   flex: 1; display: flex; flex-direction: column; min-height: 0;
-  margin: 0; max-height: min(72dvh, 760px);
-  position: sticky; top: calc(56px + env(safe-area-inset-top, 0px) + 8px);
+  margin: 0; max-height: 100%; height: 100%;
+  position: sticky; top: calc(var(--hub-tab-h, 56px) + env(safe-area-inset-top, 0px) + 8px);
 }
 .practice-write-card .timer-row { margin-top: 0; }
 .practice-write-card .toolbar { gap: 6px; }
@@ -291,17 +317,25 @@ body:has(#panel-case.active) { --content-w: 1100px; }
 @media (max-width: 900px) {
   .practice-split {
     grid-template-columns: 1fr;
+    height: auto;
     min-height: 0;
   }
-  .practice-pane-df { max-height: 42dvh; }
-  .practice-write-card {
-    position: static; max-height: none;
+  .practice-pane-df {
+    max-height: 45dvh;
+    height: 45dvh;
   }
-  .practice-write-card #answer { min-height: 40dvh; resize: vertical; }
+  .practice-write-card {
+    position: static; max-height: none; height: auto;
+  }
+  .practice-write-card #answer { min-height: 48dvh; resize: vertical; }
   .timer { font-size: 22px; min-width: 4.5rem; }
 }
 @media (max-width: 420px) {
   .brand p { display: none; }
   .card { padding: 12px; }
-  .practice-pane-df { max-height: 38dvh; }
+  .practice-pane-df { max-height: 40dvh; height: 40dvh; }
+  .practice-write-card #answer { min-height: 50dvh; }
 }
+
+body:has(#panel-case.active) #panel-case .card h2 { font-size: 14px; margin-bottom: 6px; }
+body:has(#panel-case.active) #panel-case > .card:nth-child(2) p { font-size: 12px; margin: 0 0 6px; }
