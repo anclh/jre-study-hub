@@ -403,6 +403,75 @@ main {
   border-color: color-mix(in srgb, var(--success) 50%, var(--border));
 }
 
+.vocab-card[data-expandable="true"] {
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.card-summary[role="button"]:focus {
+  outline: none;
+}
+
+.card-summary[role="button"]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+.card-top-aside {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.expand-chevron {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid var(--text-muted);
+  border-bottom: 2px solid var(--text-muted);
+  transform: rotate(45deg) translateY(-0.1rem);
+  flex-shrink: 0;
+}
+
+.vocab-card.is-expanded {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+  background: var(--bg-card-hover);
+}
+
+.vocab-card.is-expanded .expand-chevron {
+  transform: rotate(225deg) translateY(-0.1rem);
+}
+
+.vocab-card .card-details {
+  display: none;
+}
+
+.vocab-card.is-expanded .card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--border);
+}
+
+.vocab-card .card-details[hidden] {
+  display: none !important;
+}
+
+.vocab-card .btn-collapse {
+  align-self: stretch;
+  min-height: 44px;
+}
+
 .card-top {
   display: flex;
   justify-content: space-between;
@@ -1017,6 +1086,7 @@ textarea {
     flex: 1 1 auto;
     text-align: center;
     justify-content: center;
+    min-height: 44px;
   }
 
   .toolbar {

@@ -17,6 +17,8 @@
     q1Paper: "hub",
     topicFilter: "all",
     dataMode: null, // 'api' | 'static' once resolved
+    /** Lowercased term of the browse card open in the list, or null. */
+    expandedTerm: null,
   };
 
   /** Quizlet-style study round */
@@ -171,36 +173,94 @@ function chipRow(label, items, cls) {
     "governance",
   ];
 
+  function termKey(term) {
+    return String(term || "").toLowerCase();
+  }
+
+  function sourceBlockHTML(src) {
+    if (!src || !src.link) return "";
+    return `<div class="source-link">
+          <a href="${escapeHtml(src.link)}" target="_blank" rel="noopener">${escapeHtml(src.title || "來源新聞稿")}</a>
+          <span class="date">${escapeHtml(formatDate(src.pubDate, src.pubDateIso))}</span>
+        </div>
+        <a class="btn btn-source" href="${escapeHtml(src.link)}" target="_blank" rel="noopener">原文</a>`;
+  }
+
   function vocabCardHTML(card) {
     const saved = isSaved(card.term);
     const synonyms = card.synonyms || card.related || [];
     const antonyms = card.antonyms || [];
     const src = card.source || {};
     const topicLabel = TOPIC_LABELS[card.topic] || "";
+    const open = state.expandedTerm === termKey(card.term);
+    const detailsInner = [
+      card.note ? `<div class="meta-line">${escapeHtml(card.note)}</div>` : "",
+      chipRow("同義詞", synonyms, "chip-syn"),
+      chipRow("反義詞", antonyms, "chip-ant"),
+      examplesHTML(card),
+      sourceBlockHTML(src),
+    ].join("");
+    const expandable = detailsInner.trim().length > 0;
+    const summaryLabel = `${open ? "收起" : "展開"} ${card.term || ""}`;
     return `
-<article class="vocab-card ${saved ? "saved" : ""}" data-term="${escapeHtml(card.term)}">
-  <div class="card-top">
-    <h4 class="term">${escapeHtml(card.term)}<span class="pos">${escapeHtml(card.pos || "")}</span></h4>
-    ${topicLabel ? `<span class="cat-pill topic-pill">${escapeHtml(topicLabel)}</span>` : ""}
+<article class="vocab-card${saved ? " saved" : ""}${open ? " is-expanded" : ""}" data-term="${escapeHtml(card.term)}"${expandable ? ' data-expandable="true"' : ""}>
+  <div class="card-summary"${expandable ? ` role="button" tabindex="0" aria-expanded="${open ? "true" : "false"}" aria-label="${escapeHtml(summaryLabel)}"` : ""}>
+    <div class="card-top">
+      <h4 class="term">${escapeHtml(card.term)}<span class="pos">${escapeHtml(card.pos || "")}</span></h4>
+      <span class="card-top-aside">
+        ${topicLabel ? `<span class="cat-pill topic-pill">${escapeHtml(topicLabel)}</span>` : ""}
+        ${expandable ? `<span class="expand-chevron" aria-hidden="true"></span>` : ""}
+      </span>
+    </div>
+    <div class="zh">${escapeHtml(card.zh || "")}</div>
   </div>
-  <div class="zh">${escapeHtml(card.zh || "")}</div>
-  ${card.note ? `<div class="meta-line">${escapeHtml(card.note)}</div>` : ""}
-  ${chipRow("同義詞", synonyms, "chip-syn")}
-  ${chipRow("反義詞", antonyms, "chip-ant")}
-  ${examplesHTML(card)}
   ${
-    src.link
-      ? `<div class="source-link">
-          <a href="${escapeHtml(src.link)}" target="_blank" rel="noopener">${escapeHtml(src.title || "來源新聞稿")}</a>
-          <span class="date">${escapeHtml(formatDate(src.pubDate, src.pubDateIso))}</span>
-        </div>`
+    expandable
+      ? `<div class="card-details"${open ? "" : " hidden"}>
+    ${detailsInner}
+    <button type="button" class="btn btn-collapse">收起</button>
+  </div>`
       : ""
   }
   <div class="card-actions">
     <button type="button" class="btn ${saved ? "" : "primary"} btn-save">${saved ? "★ 已收藏" : "☆ 收藏"}</button>
-    ${src.link ? `<a class="btn" href="${escapeHtml(src.link)}" target="_blank" rel="noopener">原文</a>` : ""}
   </div>
 </article>`;
+  }
+
+  function syncExpandedCards() {
+    const key = state.expandedTerm || "";
+    $$(".vocab-card[data-term]").forEach((el) => {
+      const open = Boolean(key) && termKey(el.dataset.term) === key;
+      el.classList.toggle("is-expanded", open);
+      const details = el.querySelector(".card-details");
+      if (details) details.hidden = !open;
+      const summary = el.querySelector(".card-summary");
+      if (summary && el.hasAttribute("data-expandable")) {
+        summary.setAttribute("aria-expanded", open ? "true" : "false");
+        summary.setAttribute("aria-label", `${open ? "收起" : "展開"} ${el.dataset.term}`);
+      }
+    });
+  }
+
+  function toggleCardExpand(term) {
+    const key = termKey(term);
+    if (!key) return;
+    const closing = state.expandedTerm === key;
+    state.expandedTerm = closing ? null : key;
+    syncExpandedCards();
+    if (!closing) return;
+    $$(".vocab-card[data-term]").forEach((el) => {
+      if (termKey(el.dataset.term) !== key) return;
+      const details = el.querySelector(".card-details");
+      const summary = el.querySelector(".card-summary");
+      if (!summary || !details || !document.activeElement || !details.contains(document.activeElement)) return;
+      try {
+        summary.focus({ preventScroll: true });
+      } catch {
+        summary.focus();
+      }
+    });
   }
 
   function bindCardActions(container) {
@@ -209,7 +269,30 @@ function chipRow(label, items, cls) {
       const card = findCard(term) || state.saved[term.toLowerCase()];
       const btn = el.querySelector(".btn-save");
       if (btn && card) {
-        btn.addEventListener("click", () => toggleSave(card));
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          toggleSave(card);
+        });
+      }
+      el.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", (e) => e.stopPropagation());
+      });
+      if (!el.querySelector(".card-details")) return;
+      el.addEventListener("click", (e) => {
+        if (e.target.closest(".btn-save, a")) return;
+        if (!e.target.closest(".btn-collapse")) {
+          const sel = window.getSelection ? window.getSelection() : null;
+          if (sel && String(sel).trim() && el.contains(sel.anchorNode)) return;
+        }
+        toggleCardExpand(term);
+      });
+      const summary = el.querySelector(".card-summary");
+      if (summary) {
+        summary.addEventListener("keydown", (e) => {
+          if (e.key !== "Enter" && e.key !== " ") return;
+          e.preventDefault();
+          toggleCardExpand(term);
+        });
       }
     });
   }
@@ -1175,5 +1258,13 @@ function chipRow(label, items, cls) {
     await loadFeed(false);
   }
 
-  boot();
+  if (typeof JRE_VOCAB_TEST !== "undefined" && JRE_VOCAB_TEST) {
+    globalThis.JRE_VOCAB_TEST_API = {
+      vocabCardHTML,
+      toggleCardExpand,
+      state,
+    };
+  } else {
+    boot();
+  }
 })();
