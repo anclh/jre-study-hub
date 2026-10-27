@@ -764,6 +764,26 @@ function chipRow(label, items, cls) {
     if (pill) pill.textContent = `識 ${known}`;
   }
 
+
+  function updateStudySaveBtn() {
+    const btn = $("#btnStudySave");
+    const card = study.queue && study.queue[0];
+    if (!btn) return;
+    if (!study.active || !card || !card.term || ($("#studySummary") && !$("#studySummary").hidden)) {
+      btn.disabled = true;
+      btn.textContent = "☆";
+      btn.setAttribute("aria-pressed", "false");
+      btn.classList.remove("is-saved");
+      return;
+    }
+    btn.disabled = false;
+    const saved = isSaved(card.term);
+    btn.textContent = saved ? "★" : "☆";
+    btn.setAttribute("aria-pressed", saved ? "true" : "false");
+    btn.classList.toggle("is-saved", saved);
+    btn.title = saved ? "取消收藏" : "收藏到我的生字";
+  }
+
   function renderStudyCard() {
     const card = study.queue[0];
     const flip = $("#flipCard");
@@ -786,6 +806,7 @@ function chipRow(label, items, cls) {
     $("#flipZh").textContent = card.zh || "（暫無中文）";
     $("#flipExtra").innerHTML = studyBackExtraHTML(card);
     updateStudyProgress();
+    updateStudySaveBtn();
   }
 
   function showStudySummary() {
@@ -793,6 +814,7 @@ function chipRow(label, items, cls) {
     const summary = $("#studySummary");
     if (stage) stage.hidden = true;
     if (summary) summary.hidden = false;
+    updateStudySaveBtn();
     const known = study.known.length;
     const learning = study.everLearning.length;
     const stats = $("#studySummaryStats");
@@ -934,6 +956,12 @@ function chipRow(label, items, cls) {
     if (!study.active) return;
     const tag = (e.target && e.target.tagName) || "";
     if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+    if (e.key === "s" || e.key === "S") {
+      e.preventDefault();
+      if ($("#studySummary") && !$("#studySummary").hidden) return;
+      toggleStudySave();
+      return;
+    }
     if (e.code === "Space" || e.key === "Enter") {
       e.preventDefault();
       if ($("#studySummary") && !$("#studySummary").hidden) return;
@@ -1018,6 +1046,15 @@ function chipRow(label, items, cls) {
       card.classList.remove("is-swipe-left", "is-swipe-right");
       study.touch = null;
     });
+  }
+
+
+  function toggleStudySave() {
+    const card = study.queue && study.queue[0];
+    if (!card || !card.term) return;
+    if ($("#studySummary") && !$("#studySummary").hidden) return;
+    toggleSave(card);
+    updateStudySaveBtn();
   }
 
   function initStudy() {

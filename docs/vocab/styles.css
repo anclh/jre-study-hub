@@ -1477,3 +1477,16 @@ body.study-active #jre-hub-tabbar {
     font-size: 0.7rem;
   }
 }
+
+.study-save-btn {
+  font-size: 22px;
+  line-height: 1;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.study-save-btn.is-saved {
+  color: #eab308;
+}
+.study-save-btn:disabled {
+  opacity: 0.35;
+}
