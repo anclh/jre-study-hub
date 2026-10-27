@@ -515,12 +515,43 @@
 
 
   /* —— 句式庫 (Anson bank) —— */
-  const phraseState = { data: { disclaimer: "", categories: [], items: [] }, category: "all" };
+  const phraseState = { data: { disclaimer: "", categories: [], items: [] }, category: "all", paper: "hub" };
 
   function phraseCatLabel(id) {
     if (id === "all") return "全部";
     const cat = (phraseState.data.categories || []).find((c) => c.id === id);
     return (cat && cat.zh) || id;
+  }
+
+  const PAPER_CHIPS = [
+    { id: "all", label: "全部" },
+    { id: "q2", label: "Q2" },
+    { id: "common", label: "常用" },
+  ];
+
+  function matchesPaper(item, filter) {
+    const p = item.paper || "";
+    if (filter === "all") return true;
+    if (filter === "q2") return p === "q2" || p === "";
+    if (filter === "common") return p === "common";
+    return p === "q2" || p === "common" || p === "";
+  }
+
+  function renderPaperFilters() {
+    const wrap = $("#q2PaperFilters");
+    if (!wrap) return;
+    wrap.innerHTML = PAPER_CHIPS.map(
+      (c) =>
+        `<button type="button" data-paper="${c.id}" class="${phraseState.paper === c.id ? "active" : ""}">${c.label}</button>`
+    ).join("");
+    wrap.querySelectorAll("button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const next = btn.dataset.paper;
+        phraseState.paper = phraseState.paper === next ? "hub" : next;
+        renderPaperFilters();
+        renderQ2Phrases();
+      });
+    });
   }
 
   function renderPhraseFilters() {
@@ -545,7 +576,7 @@
   function paperLabel(p) {
     if (p === "q2") return "Q2";
     if (p === "q1") return "Q1";
-    if (p === "common") return "共通";
+    if (p === "common") return "常用";
     return p || "";
   }
 
@@ -563,7 +594,7 @@
 
   function renderQ2Phrases() {
     const q = ($("#q2PhraseSearch")?.value || "").trim().toLowerCase();
-    let list = phraseState.data.items || [];
+    let list = (phraseState.data.items || []).filter((i) => matchesPaper(i, phraseState.paper));
     if (phraseState.category !== "all") list = list.filter((i) => i.category === phraseState.category);
     if (q) {
       list = list.filter((i) =>
@@ -597,9 +628,10 @@
   async function loadQ2Phrases() {
     const grid = $("#q2PhraseGrid");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261027k", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261027n", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
+      renderPaperFilters();
       renderPhraseFilters();
       renderQ2Phrases();
       const search = $("#q2PhraseSearch");
