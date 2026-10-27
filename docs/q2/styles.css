@@ -356,3 +356,5 @@ textarea {
 }
 .btn-copy { font: inherit; font-size: 12px; padding: 5px 10px; border-radius: 8px;
   border: 1px solid var(--line); background: var(--card2, #f4f4f5); cursor: pointer; }
+
+.cat-pill.paper { background: color-mix(in srgb, #64748b 16%, transparent); color: #64748b; }

@@ -542,9 +542,17 @@
     });
   }
 
+  function paperLabel(p) {
+    if (p === "q2") return "Q2";
+    if (p === "q1") return "Q1";
+    if (p === "common") return "共通";
+    return p || "";
+  }
+
   function phraseCardHTML(item) {
+    const paper = paperLabel(item.paper);
     return `<article class="phrase-card">
-      <div class="meta"><span class="cat-pill">${escapeHtml(phraseCatLabel(item.category))}</span></div>
+      <div class="meta"><span class="cat-pill">${escapeHtml(phraseCatLabel(item.category))}</span>${paper ? ` <span class="cat-pill paper">${escapeHtml(paper)}</span>` : ""}</div>
       <p class="zh">${escapeHtml(item.zh || "")}</p>
       <p class="en">${escapeHtml(item.en || "")}</p>
       ${item.note ? `<div class="meta">${escapeHtml(item.note)}</div>` : ""}
@@ -589,7 +597,7 @@
   async function loadQ2Phrases() {
     const grid = $("#q2PhraseGrid");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261027j", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261027k", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
       renderPhraseFilters();
