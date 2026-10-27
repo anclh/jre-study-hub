@@ -369,6 +369,7 @@ main {
   display: grid;
   gap: 0.85rem;
   grid-template-columns: 1fr;
+  align-items: start;
 }
 
 @media (min-width: 640px) {
@@ -392,6 +393,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
+  align-self: start;
+  height: auto;
 }
 
 .vocab-card:hover {

@@ -146,10 +146,10 @@ test("phrase paper chips stay in vocab app beside browse expand", () => {
   assert.match(src, /function toggleCardExpand/);
 });
 
-test("cache-bust stamp on vocab stylesheet and script is 20261027n", () => {
+test("cache-bust stamp on vocab stylesheet and script is 20261027o", () => {
   const html = readFileSync(htmlPath, "utf8");
-  assert.match(html, /href="styles\.css\?v=20261027n"/);
-  assert.match(html, /src="app\.js\?v=20261027n"/);
+  assert.match(html, /href="styles\.css\?v=20261027o"/);
+  assert.match(html, /src="app\.js\?v=20261027o"/);
   assert.doesNotMatch(html, /styles\.css\?v=20261027[klm]/);
   assert.doesNotMatch(html, /app\.js\?v=20261027[klm]/);
 });
