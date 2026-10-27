@@ -1,5 +1,5 @@
 {
-  "disclaimer": "Starter Q1 discussion-paper phrase bank for JRE English case writing. Expand as you revise.",
+  "disclaimer": "JRE English Q1 discussion-paper phrase bank. Items may be tagged q1, q2, or common; untagged phrases stay in the Q1 set. Expand as you revise.",
   "categories": [
     {
       "id": "implications",
@@ -46,14 +46,16 @@
     {
       "id": "imp-01",
       "category": "implications",
+      "paper": "q1",
       "en": "This may give rise to…",
       "zh": "此舉可能導致…",
-      "note": "開後果段常用",
+      "note": "開後果段",
       "example": "This may give rise to longer waiting times at specialist outpatient clinics."
     },
     {
       "id": "imp-02",
       "category": "implications",
+      "paper": "q1",
       "en": "There could be knock-on effects on…",
       "zh": "可能對…產生連鎖影響",
       "note": "",
@@ -62,6 +64,7 @@
     {
       "id": "imp-03",
       "category": "implications",
+      "paper": "q1",
       "en": "This risks exacerbating…",
       "zh": "恐會加劇…",
       "note": "",
@@ -70,6 +73,7 @@
     {
       "id": "imp-04",
       "category": "implications",
+      "paper": "q1",
       "en": "Left unaddressed, the problem may cascade into…",
       "zh": "若不處理，問題或會蔓延至…",
       "note": "",
@@ -78,6 +82,7 @@
     {
       "id": "imp-05",
       "category": "implications",
+      "paper": "q1",
       "en": "The fiscal implications warrant careful consideration.",
       "zh": "財政影響值得審慎考慮",
       "note": "資源鏈",
@@ -126,24 +131,27 @@
     {
       "id": "ass-01",
       "category": "assessment",
-      "en": "On balance,…",
-      "zh": "權衡之下…",
-      "note": "收束分析",
-      "example": "On balance, a phased pilot appears more feasible than a territory-wide rollout."
+      "paper": "q1",
+      "en": "The data points to…",
+      "zh": "數據顯示…",
+      "note": "引用 Data File",
+      "example": "The data points to a widening gap between supply and demand."
     },
     {
       "id": "ass-02",
       "category": "assessment",
-      "en": "A key bottleneck is…",
-      "zh": "關鍵樽頸在於…",
-      "note": "問題診斷",
-      "example": "A key bottleneck is the shortage of specialised manpower."
+      "paper": "q1",
+      "en": "This suggests that…",
+      "zh": "這意味著…",
+      "note": "",
+      "example": "This suggests that current measures are insufficient."
     },
     {
       "id": "ass-03",
       "category": "assessment",
-      "en": "The root cause appears to lie in…",
-      "zh": "根源似乎在於…",
+      "paper": "q1",
+      "en": "A key constraint is…",
+      "zh": "主要限制在於…",
       "note": "",
       "example": "A key constraint is limited administrative capacity."
     },
@@ -206,24 +214,27 @@
     {
       "id": "rec-01",
       "category": "recommend",
-      "en": "It is recommended that [Dept] … within [timeframe].",
-      "zh": "建議〔部門〕於〔時限〕內…",
-      "note": "標準建議句",
-      "example": "It is recommended that HD launch a six-month pilot within this financial year."
+      "paper": "common",
+      "en": "It is recommended that a pilot be launched in…",
+      "zh": "建議先在…推行試點。",
+      "note": "",
+      "example": "It is recommended that a pilot be launched in two districts."
     },
     {
       "id": "rec-02",
       "category": "recommend",
-      "en": "We propose a phased approach, beginning with…",
-      "zh": "建議分階段推行，先由…着手",
+      "paper": "q2",
+      "en": "Implementation should be phased, starting with…",
+      "zh": "推行宜分階段，先由…開始。",
       "note": "",
       "example": ""
     },
     {
       "id": "rec-03",
       "category": "recommend",
-      "en": "A targeted pilot should be rolled out in…",
-      "zh": "應先在…推出針對性先導計劃",
+      "paper": "common",
+      "en": "A combination of short-term relief and longer-term structural measures is preferred.",
+      "zh": "宜結合短期紓緩與長遠結構性措施。",
       "note": "",
       "example": ""
     },
@@ -286,24 +297,27 @@
     {
       "id": "mon-01",
       "category": "monitor",
-      "en": "Progress should be monitored against clear KPIs.",
-      "zh": "應按清晰關鍵績效指標監察進度",
+      "paper": "common",
+      "en": "KPIs should be set to measure effectiveness.",
+      "zh": "應設定關鍵績效指標以量度成效。",
       "note": "",
       "example": ""
     },
     {
       "id": "mon-02",
       "category": "monitor",
-      "en": "A mid-term review should be conducted within… months.",
-      "zh": "應於…個月內進行中期檢討",
+      "paper": "common",
+      "en": "A review should be conducted after 12 months.",
+      "zh": "宜於十二個月後進行檢討。",
       "note": "",
       "example": ""
     },
     {
       "id": "mon-03",
       "category": "monitor",
-      "en": "An evaluation framework should be put in place from day one.",
-      "zh": "應由計劃開始便建立評估框架",
+      "paper": "q1",
+      "en": "Residual risks remain and should be monitored.",
+      "zh": "仍有剩餘風險，應持續監察。",
       "note": "結尾常用",
       "example": ""
     },
@@ -350,17 +364,19 @@
     {
       "id": "spc-01",
       "category": "specificity",
-      "en": "[Bureau/Dept] should be designated as the lead department.",
-      "zh": "應指定〔決策局／部門〕為牽頭部門",
-      "note": "who",
+      "paper": "common",
+      "en": "The [bureau/department] should lead, with support from…",
+      "zh": "應由[政策局／部門]主導，並由…支援。",
+      "note": "",
       "example": ""
     },
     {
       "id": "spc-02",
       "category": "specificity",
-      "en": "Implementation should commence in Q[n] of [year].",
-      "zh": "應於〔年〕第〔n〕季開始實施",
-      "note": "when",
+      "paper": "common",
+      "en": "Subject to available resources, rollout can begin in…",
+      "zh": "視乎可用資源，可於…開始推行。",
+      "note": "",
       "example": ""
     },
     {
@@ -414,17 +430,19 @@
     {
       "id": "dis-01",
       "category": "discourse",
-      "en": "Firstly,… / Secondly,… / Finally,…",
-      "zh": "首先…／其次…／最後…",
-      "note": "分點",
+      "paper": "common",
+      "en": "In view of…",
+      "zh": "鑒於…",
+      "note": "開頭",
       "example": "In view of rising demand, additional capacity is needed."
     },
     {
       "id": "dis-02",
       "category": "discourse",
-      "en": "Turning to the implications,…",
-      "zh": "轉談影響方面…",
-      "note": "段轉",
+      "paper": "common",
+      "en": "After weighing the pros and cons…",
+      "zh": "權衡利弊後…",
+      "note": "過渡",
       "example": ""
     },
     {
@@ -494,6 +512,7 @@
     {
       "id": "cmp-01",
       "category": "comparison",
+      "paper": "q1",
       "en": "Option A scores higher on feasibility but lower on cost-effectiveness.",
       "zh": "方案甲在可行性上較高，惟成本效益較低。",
       "note": "比較核心",
@@ -502,6 +521,7 @@
     {
       "id": "cmp-02",
       "category": "comparison",
+      "paper": "q1",
       "en": "While Option B may deliver quicker results, it carries greater residual risks.",
       "zh": "方案乙或可較快見效，惟剩餘風險較大。",
       "note": "",
@@ -510,6 +530,7 @@
     {
       "id": "cmp-03",
       "category": "comparison",
+      "paper": "q1",
       "en": "After weighing the trade-offs, a mix of… is preferred.",
       "zh": "權衡取捨後，宜採用混合方案。",
       "note": "",
@@ -518,6 +539,7 @@
     {
       "id": "bal-01",
       "category": "balance",
+      "paper": "common",
       "en": "This helps to… but must be accompanied by…",
       "zh": "此舉有助…惟須配合…",
       "note": "核心平衡句",
@@ -526,6 +548,7 @@
     {
       "id": "bal-02",
       "category": "balance",
+      "paper": "q2",
       "en": "Notwithstanding the concerns raised, the benefits outweigh the risks.",
       "zh": "儘管有人提出關注，利仍大於弊。",
       "note": "",
