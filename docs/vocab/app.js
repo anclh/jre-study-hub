@@ -14,6 +14,7 @@
     lexicon: [],
     progCategory: "all",
     q1Category: "all",
+    q1Paper: "hub",
     topicFilter: "all",
     dataMode: null, // 'api' | 'static' once resolved
   };
@@ -236,15 +237,37 @@ function chipRow(label, items, cls) {
     balance: "平衡／條件",
   };
 
+  const Q1_PAPER_CHIPS = [
+    { id: "all", label: "全部" },
+    { id: "q1", label: "Q1" },
+    { id: "common", label: "常用" },
+  ];
+
+  function matchesQ1Paper(item, filter) {
+    const p = item.paper || "";
+    if (filter === "all") return true;
+    if (filter === "q1") return p === "q1" || p === "";
+    if (filter === "common") return p === "common";
+    return p === "q1" || p === "common" || p === "";
+  }
+
+  function q1PaperLabel(p) {
+    if (p === "q1") return "Q1";
+    if (p === "common") return "常用";
+    if (p === "q2") return "Q2";
+    return "";
+  }
+
   function phraseCardHTML(item) {
     const key = `q1:${item.id}`;
     const saved = Boolean(state.saved[key.toLowerCase()]);
     const cat = Q1_CAT_LABELS[item.category] || item.category;
+    const paper = q1PaperLabel(item.paper);
     return `
 <article class="vocab-card phrase-card ${saved ? "saved" : ""}" data-phrase-id="${escapeHtml(item.id)}">
   <div class="card-top">
     <h4 class="term">${escapeHtml(item.en)}</h4>
-    <span class="cat-pill">${escapeHtml(cat)}</span>
+    <span class="cat-pill">${escapeHtml(cat)}</span>${paper ? ` <span class="cat-pill">${escapeHtml(paper)}</span>` : ""}
   </div>
   <div class="zh">${escapeHtml(item.zh || "")}</div>
   ${item.note ? `<div class="meta-line">${escapeHtml(item.note)}</div>` : ""}
@@ -301,6 +324,23 @@ function chipRow(label, items, cls) {
     });
   }
 
+  function renderQ1PaperFilters() {
+    const wrap = $("#q1PaperFilters");
+    if (!wrap) return;
+    wrap.innerHTML = Q1_PAPER_CHIPS.map(
+      (c) =>
+        `<button type="button" data-paper="${c.id}" class="${state.q1Paper === c.id ? "active" : ""}">${c.label}</button>`
+    ).join("");
+    wrap.querySelectorAll("button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const next = btn.dataset.paper;
+        state.q1Paper = state.q1Paper === next ? "hub" : next;
+        renderQ1PaperFilters();
+        renderQ1();
+      });
+    });
+  }
+
   function renderQ1Filters() {
     const cats = ["all", ...((state.q1?.categories || []).map((c) => c.id))];
     const wrap = $("#q1Filters");
@@ -323,7 +363,7 @@ function chipRow(label, items, cls) {
   function renderQ1() {
     if (!$("#q1Grid")) return;
     const q = ($("#q1Search")?.value || "").trim().toLowerCase();
-    let list = state.q1?.items || [];
+    let list = (state.q1?.items || []).filter((i) => matchesQ1Paper(i, state.q1Paper));
     if (state.q1Category !== "all") {
       list = list.filter((i) => i.category === state.q1Category);
     }
@@ -640,12 +680,13 @@ function chipRow(label, items, cls) {
 
   async function loadQ1() {
     try {
-      const data = await loadJson("/api/q1-phrases", "data/q1_phrases.json");
+      const data = await loadJson("/api/q1-phrases", "data/q1_phrases.json?v=20261027m");
       state.q1 = {
         disclaimer: data.disclaimer || "",
         categories: data.categories || [],
         items: data.items || [],
       };
+      renderQ1PaperFilters();
       renderQ1Filters();
       renderQ1();
     } catch (e) {

@@ -20,6 +20,8 @@
   const state = {
     q1: { disclaimer: "", categories: [], items: [] },
     category: "all",
+    // hub = q1 + common + untagged; pure q2 only under「全部」
+    paper: "hub",
     modelOpen: false,
     caseId: null,
   };
@@ -64,9 +66,48 @@
     });
   }
 
+  const PAPER_CHIPS = [
+    { id: "all", label: "全部" },
+    { id: "q1", label: "Q1" },
+    { id: "common", label: "常用" },
+  ];
+
+  function matchesPaper(item, filter) {
+    const p = item.paper || "";
+    if (filter === "all") return true;
+    if (filter === "q1") return p === "q1" || p === "";
+    if (filter === "common") return p === "common";
+    return p === "q1" || p === "common" || p === "";
+  }
+
+  function paperLabel(p) {
+    if (p === "q1") return "Q1";
+    if (p === "common") return "常用";
+    if (p === "q2") return "Q2";
+    return "";
+  }
+
+  function renderPaperFilters() {
+    const wrap = $("#q1PaperFilters");
+    if (!wrap) return;
+    wrap.innerHTML = PAPER_CHIPS.map(
+      (c) =>
+        `<button type="button" data-paper="${c.id}" class="${state.paper === c.id ? "active" : ""}">${c.label}</button>`
+    ).join("");
+    $$("button", wrap).forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const next = btn.dataset.paper;
+        state.paper = state.paper === next ? "hub" : next;
+        renderPaperFilters();
+        renderPhrases();
+      });
+    });
+  }
+
   function phraseHTML(item) {
+    const paper = paperLabel(item.paper);
     return `<article class="phrase-card">
-      <div class="meta"><span class="cat-pill">${escapeHtml(CAT_LABELS[item.category] || item.category)}</span></div>
+      <div class="meta"><span class="cat-pill">${escapeHtml(CAT_LABELS[item.category] || item.category)}</span>${paper ? ` <span class="cat-pill">${escapeHtml(paper)}</span>` : ""}</div>
       <p class="en">${escapeHtml(item.en)}</p>
       <p class="zh">${escapeHtml(item.zh || "")}</p>
       ${item.note ? `<div class="meta">${escapeHtml(item.note)}</div>` : ""}
@@ -77,7 +118,7 @@
 
   function renderPhrases() {
     const q = ($("#q1Search")?.value || "").trim().toLowerCase();
-    let list = state.q1.items || [];
+    let list = (state.q1.items || []).filter((i) => matchesPaper(i, state.paper));
     if (state.category !== "all") list = list.filter((i) => i.category === state.category);
     if (q) {
       list = list.filter((i) =>
@@ -315,7 +356,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261027m", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {
@@ -323,6 +364,7 @@
         categories: data.categories || [],
         items: data.items || [],
       };
+      renderPaperFilters();
       renderFilters();
       renderPhrases();
     } catch (e) {
