@@ -9583,5 +9583,420 @@
     ],
     "topic": "common",
     "example": "Notwithstanding the concerns raised, the benefits outweigh the risks."
+  },
+  {
+    "term": "ageing in place",
+    "zh": "居家安老；原居安老",
+    "pos": "n. phr.",
+    "related": [
+      "community care",
+      "home care"
+    ],
+    "note": "Q1 長者照顧常用政策目標",
+    "synonyms": [
+      "aging in place",
+      "age in place"
+    ],
+    "antonyms": [
+      "institutionalisation",
+      "residential placement"
+    ],
+    "examples": [
+      {
+        "en": "Ageing in place requires reliable home care and carer respite, not slogans alone.",
+        "zh": "居家安老需要可靠嘅家居照顧同照顧者暫托，唔係淨靠口號。"
+      },
+      {
+        "en": "The package supports ageing in place for frail elders assessed as moderate dependency.",
+        "zh": "措施組合支援被評為中度依賴嘅體弱長者居家安老。"
+      },
+      {
+        "en": "Without evening coverage, ageing in place collapses onto hospital admissions.",
+        "zh": "若無晚間服務，居家安老會倒向醫院入院。"
+      }
+    ],
+    "example": "Ageing in place requires reliable home care and carer respite, not slogans alone.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "frail elderly",
+    "zh": "體弱長者",
+    "pos": "n. phr.",
+    "related": [
+      "frailty",
+      "long-term care"
+    ],
+    "note": "指需長期照顧嘅高依賴長者",
+    "synonyms": [
+      "frail elders",
+      "frail older persons"
+    ],
+    "antonyms": [
+      "robust elderly",
+      "independent seniors"
+    ],
+    "examples": [
+      {
+        "en": "Frail elderly living alone face higher risk when home-care slots are full.",
+        "zh": "獨居體弱長者在家居照顧名額已滿時風險更高。"
+      },
+      {
+        "en": "The brief focuses on frail elderly with moderate-to-severe dependency.",
+        "zh": "簡報聚焦中度至嚴重依賴嘅體弱長者。"
+      },
+      {
+        "en": "Hospital tags show rising care-breakdown cases among the frail elderly.",
+        "zh": "醫院標籤顯示體弱長者照顧崩潰個案上升。"
+      }
+    ],
+    "example": "Frail elderly living alone face higher risk when home-care slots are full.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "long-term care",
+    "zh": "長期護理；長期照顧",
+    "pos": "n.",
+    "related": [
+      "residential care",
+      "community care"
+    ],
+    "note": "LTC；含社區同院舍",
+    "synonyms": [
+      "LTC",
+      "continuing care"
+    ],
+    "antonyms": [
+      "acute care",
+      "short-term treatment"
+    ],
+    "examples": [
+      {
+        "en": "Long-term care planning must balance community support and residential places.",
+        "zh": "長期護理規劃須平衡社區支援同院舍宿位。"
+      },
+      {
+        "en": "Unit costs in long-term care should be published with quality scores.",
+        "zh": "長期照顧嘅單位成本應連同質素評分一併公開。"
+      },
+      {
+        "en": "Workforce shortages constrain long-term care expansion.",
+        "zh": "人手短缺制約長期護理擴容。"
+      }
+    ],
+    "example": "Long-term care planning must balance community support and residential places.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "home care",
+    "zh": "家居照顧；到戶照顧",
+    "pos": "n.",
+    "related": [
+      "community care",
+      "integrated home care"
+    ],
+    "note": "含家務、護理、護送等到戶服務",
+    "synonyms": [
+      "domiciliary care",
+      "in-home care"
+    ],
+    "antonyms": [
+      "residential care",
+      "institutional care"
+    ],
+    "examples": [
+      {
+        "en": "Home care teams need evening and weekend sessions in high-wait districts.",
+        "zh": "高輪候地區嘅家居照顧隊需要晚間同週末時段。"
+      },
+      {
+        "en": "Expanding home care is faster than building new residential homes.",
+        "zh": "擴大家居照顧比興建新院舍更快見效。"
+      },
+      {
+        "en": "Vacancy rates among home care workers remain in double digits.",
+        "zh": "家居照顧員空缺率仍達雙位數。"
+      }
+    ],
+    "example": "Home care teams need evening and weekend sessions in high-wait districts.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "day care centre",
+    "zh": "日間護理中心；日間中心",
+    "pos": "n.",
+    "related": [
+      "day care",
+      "respite"
+    ],
+    "note": "日間託管／復康；亦可紓緩照顧者",
+    "synonyms": [
+      "day care center",
+      "day centre"
+    ],
+    "antonyms": [
+      "residential care home",
+      "overnight ward"
+    ],
+    "examples": [
+      {
+        "en": "Day care centre utilisation already exceeds 90% in several urban districts.",
+        "zh": "部分市區日間護理中心使用率已超九成。"
+      },
+      {
+        "en": "New day care centre places can defer premature residential admission.",
+        "zh": "新增日間中心名額可延遲過早入院舍。"
+      },
+      {
+        "en": "Families value day care centres that offer transport and basic nursing.",
+        "zh": "家庭重視提供接送同基本護理嘅日間中心。"
+      }
+    ],
+    "example": "Day care centre utilisation already exceeds 90% in several urban districts.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "community care",
+    "zh": "社區照顧",
+    "pos": "n.",
+    "related": [
+      "ageing in place",
+      "home care",
+      "CCS"
+    ],
+    "note": "對比院舍照顧嘅社區方案",
+    "synonyms": [
+      "community-based care",
+      "community support"
+    ],
+    "antonyms": [
+      "institutional care",
+      "residential care"
+    ],
+    "examples": [
+      {
+        "en": "Community care capacity has not kept pace with population ageing.",
+        "zh": "社區照顧容量未追上人口老化。"
+      },
+      {
+        "en": "A voucher can purchase community care from accredited providers.",
+        "zh": "資助券可向認可服務機構購買社區照顧。"
+      },
+      {
+        "en": "Policy should treat community care as core infrastructure, not a residual.",
+        "zh": "政策應視社區照顧為核心基建，而非剩餘選項。"
+      }
+    ],
+    "example": "Community care capacity has not kept pace with population ageing.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "residential care home",
+    "zh": "安老院舍；住宿照顧院舍",
+    "pos": "n.",
+    "related": [
+      "RCHE",
+      "nursing home",
+      "care-and-attention home"
+    ],
+    "note": "RCHE；含護養院／護理安老院等",
+    "synonyms": [
+      "RCHE",
+      "elderly home",
+      "care home"
+    ],
+    "antonyms": [
+      "home care",
+      "community care"
+    ],
+    "examples": [
+      {
+        "en": "Median waits for subsidised residential care home places have lengthened to four years.",
+        "zh": "資助安老院舍宿位中位輪候已拉長至四年。"
+      },
+      {
+        "en": "Private residential care home fees strain middle-income savings.",
+        "zh": "私營安老院舍費用消耗中產儲蓄。"
+      },
+      {
+        "en": "Residential care homes remain necessary for high-dependency elders.",
+        "zh": "高依賴長者仍需要安老院舍。"
+      }
+    ],
+    "example": "Median waits for subsidised residential care home places have lengthened to four years.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "respite",
+    "zh": "暫托；喘息服務",
+    "pos": "n.",
+    "related": [
+      "respite care",
+      "carer support"
+    ],
+    "note": "畀照顧者短暫休息嘅服務",
+    "synonyms": [
+      "respite care",
+      "short-break care"
+    ],
+    "antonyms": [
+      "continuous unpaid care",
+      "unrelieved caregiving"
+    ],
+    "examples": [
+      {
+        "en": "Ring-fenced respite beds are needed when primary carers are hospitalised.",
+        "zh": "主要照顧者入院時需要預留暫托宿位。"
+      },
+      {
+        "en": "Respite supply remains below half a night per carer-month in many districts.",
+        "zh": "不少地區暫托供應仍低於每照顧者每月半晚。"
+      },
+      {
+        "en": "A 14-day emergency respite pathway should be written into district protocols.",
+        "zh": "應將14日緊急暫托路徑寫入地區程序。"
+      }
+    ],
+    "example": "Ring-fenced respite beds are needed when primary carers are hospitalised.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "carer allowance",
+    "zh": "照顧者津貼",
+    "pos": "n.",
+    "related": [
+      "carer support",
+      "means-tested"
+    ],
+    "note": "通常建議试点＋資產審查",
+    "synonyms": [
+      "caregiver allowance",
+      "carer stipend"
+    ],
+    "antonyms": [
+      "unpaid care only",
+      "no carer transfer"
+    ],
+    "examples": [
+      {
+        "en": "A means-tested carer allowance pilot can reduce income loss from cut work hours.",
+        "zh": "經審查嘅照顧者津貼試點可減輕因減工時造成嘅收入損失。"
+      },
+      {
+        "en": "Treasury insists any carer allowance uplift include fraud controls and exit rules.",
+        "zh": "財科堅持照顧者津貼上調須含防欺詐同退出機制。"
+      },
+      {
+        "en": "The carer allowance complements, but does not replace, formal home care hours.",
+        "zh": "照顧者津貼係補充，唔能取代正規家居照顧時數。"
+      }
+    ],
+    "example": "A means-tested carer allowance pilot can reduce income loss from cut work hours.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "purchase of service",
+    "zh": "購買服務；外判服務合約",
+    "pos": "n.",
+    "related": [
+      "POS",
+      "voucher",
+      "NGO"
+    ],
+    "note": "POS；Q1 常對比增加編制",
+    "synonyms": [
+      "POS",
+      "contracted-out service",
+      "outsourced provision"
+    ],
+    "antonyms": [
+      "direct provision",
+      "in-house staffing"
+    ],
+    "examples": [
+      {
+        "en": "Purchase of service can lift community care capacity faster than permanent headcount.",
+        "zh": "購買服務可比增加常額人手更快提升社區照顧容量。"
+      },
+      {
+        "en": "Quality audits must accompany any purchase of service expansion.",
+        "zh": "任何購買服務擴容都要配對質素審核。"
+      },
+      {
+        "en": "Treasury prefers purchase of service within a published unit-cost envelope.",
+        "zh": "財科傾向在已公布單位成本框架內購買服務。"
+      }
+    ],
+    "example": "Purchase of service can lift community care capacity faster than permanent headcount.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "stepped care",
+    "zh": "分級照顧；階梯式服務",
+    "pos": "n.",
+    "related": [
+      "triage",
+      "escalation pathway"
+    ],
+    "note": "由低強度至高強度按需要升級",
+    "synonyms": [
+      "tiered care",
+      "matched care"
+    ],
+    "antonyms": [
+      "one-size-fits-all care",
+      "undifferentiated care"
+    ],
+    "examples": [
+      {
+        "en": "Stepped care routes mild cases to community support and reserves specialists for high risk.",
+        "zh": "分級照顧將輕症導向社區支援，並為高風險預留專科。"
+      },
+      {
+        "en": "Without escalation rules, stepped care becomes a dumping ground for complex cases.",
+        "zh": "若無升級規則，分級照顧會變成複雜個案嘅卸責場。"
+      },
+      {
+        "en": "A stepped care model should publish clear criteria between voucher, day care and residential tracks.",
+        "zh": "分級照顧模式應公布資助券、日間同院舍軌道之間嘅清晰準則。"
+      }
+    ],
+    "example": "Stepped care routes mild cases to community support and reserves specialists for high risk.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "attrition",
+    "zh": "流失；損耗",
+    "pos": "n.",
+    "related": [
+      "turnover",
+      "vacancy rate"
+    ],
+    "note": "人手／服務使用者流失都可用",
+    "synonyms": [
+      "turnover",
+      "drop-out",
+      "wastage"
+    ],
+    "antonyms": [
+      "retention",
+      "stability",
+      "inflow"
+    ],
+    "examples": [
+      {
+        "en": "High attrition among home-care workers lengthens client waiting lists.",
+        "zh": "家居照顧員高流失會拉長服務使用者輪候。"
+      },
+      {
+        "en": "The pilot should track carer attrition from paid work as an outcome indicator.",
+        "zh": "試點應追蹤照顧者退出受薪工作作為成效指標。"
+      },
+      {
+        "en": "Reducing attrition may cost less than constantly recruiting replacements.",
+        "zh": "降低流失可能比不斷招聘替補更划算。"
+      }
+    ],
+    "example": "High attrition among home-care workers lengthens client waiting lists.",
+    "topic": "governance"
   }
 ]
