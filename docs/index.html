@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="description" content="JRE Study Hub — 聯合招聘考試備試（中英）" />
   <title>JRE Study Hub · 主頁</title>
-  <link rel="stylesheet" href="shell/tabbar.css?v=20261028e" />
+  <link rel="stylesheet" href="shell/tabbar.css?v=20261028f" />
   <style>
     :root {
       --bg: #f4f6f9;
@@ -86,17 +86,24 @@
     }
     .card {
       display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 16px 14px;
+      flex-direction: column;
+      gap: 0;
+      padding: 14px 14px 12px;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      text-decoration: none;
       color: inherit;
       -webkit-tap-highlight-color: transparent;
       transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+    }
+    .card-hit {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+      -webkit-tap-highlight-color: transparent;
     }
     .card:active {
       transform: scale(0.985);
@@ -200,56 +207,59 @@
     </header>
 
     <nav class="cards" aria-label="Study modules">
-      <a class="card" href="policy/">
-        <span class="card-ico" aria-hidden="true">🏛</span>
-        <span class="card-body">
-          <p class="zh">政策</p>
-          <p class="en">政策卡</p>
-        </span>
-        <span class="chev" aria-hidden="true">›</span>
-      </a>
-      <a class="card" href="q1/">
-        <span class="card-ico" aria-hidden="true">✍️</span>
-        <span class="card-body">
-          <p class="zh">英文 Q1</p>
-          <p class="en">結構 · Tips · 句式庫 · 計時練習 · 自評清單 · Data File</p>
-        </span>
-        <span class="chev" aria-hidden="true">›</span>
-      </a>
-      <a class="card" href="q2/">
-        <span class="card-ico" aria-hidden="true">🖋</span>
-        <span class="card-body">
-          <p class="zh">中文 Q2</p>
-          <p class="en">結構 · 貼士 · 句式庫 · 題庫 · 計時練習 · 自評清單</p>
-        </span>
-        <span class="chev" aria-hidden="true">›</span>
-      </a>
-      <a class="card" href="vocab/">
-        <span class="card-ico" aria-hidden="true">📘</span>
-        <span class="card-body">
-          <p class="zh">詞彙</p>
-          <p class="en">詞彙卡 · 我的生字</p>
-        </span>
-        <span class="chev" aria-hidden="true">›</span>
-      </a>
-    </nav>
-
-    <section class="bookmarks" aria-label="Official bookmarks">
-      <p class="bookmarks-label">書籤 · Official</p>
-      <div class="bookmarks-grid">
-        <a class="bookmark" href="https://www.csb.gov.hk/tc_chi/recruit/exammat/353.html" rel="noopener" target="_blank">CSB · JRE</a>
-        <a class="bookmark" href="https://www.policyaddress.gov.hk/" rel="noopener" target="_blank">施政報告</a>
-        <a class="bookmark" href="https://www.info.gov.hk/" rel="noopener" target="_blank">info.gov.hk</a>
-        <a class="bookmark" href="https://www.csb.gov.hk/tc_chi/admin/grade/ao/425.html" rel="noopener" target="_blank">AO 職責</a>
-        <a class="bookmark" href="https://www.csb.gov.hk/tc_chi/admin/grade/eo/431.html" rel="noopener" target="_blank">EO 職責</a>
+      <div class="card">
+        <a class="card-hit" href="policy/">
+          <span class="card-ico" aria-hidden="true">🏛</span>
+          <span class="card-body">
+            <p class="zh">政策</p>
+            <p class="en">政策卡</p>
+          </span>
+          <span class="chev" aria-hidden="true">›</span>
+        </a>
       </div>
-    </section>
-
-    <p class="note">
-      Collocation Bank 另開：
-      <a href="https://anclh.github.io/collocation-bank/" rel="noopener">anclh.github.io/collocation-bank</a>
-    </p>
-  </main>
-  <script src="shell/tabbar.js?v=20261027c"></script>
-</body>
-</html>
+      <div class="card">
+        <a class="card-hit" href="q1/">
+          <span class="card-ico" aria-hidden="true">✍️</span>
+          <span class="card-body">
+            <p class="zh">英文 Q1</p>
+            <p class="en">Data File · discussion paper</p>
+          </span>
+          <span class="chev" aria-hidden="true">›</span>
+        </a>
+        <span class="card-subs">
+          <a href="q1/#structure">結構</a>
+          <a href="q1/#tips">Tips</a>
+          <a href="q1/#phrases">句式庫</a>
+          <a href="q1/#case">計時</a>
+          <a href="q1/#mark">自評</a>
+        </span>
+      </div>
+      <div class="card">
+        <a class="card-hit" href="q2/">
+          <span class="card-ico" aria-hidden="true">🖋</span>
+          <span class="card-body">
+            <p class="zh">中文 Q2</p>
+            <p class="en">議題思維 · 計時寫作</p>
+          </span>
+          <span class="chev" aria-hidden="true">›</span>
+        </a>
+        <span class="card-subs">
+          <a href="q2/#structure">結構</a>
+          <a href="q2/#tips">貼士</a>
+          <a href="q2/#phrases">句式庫</a>
+          <a href="q2/#bank">題庫</a>
+          <a href="q2/#drill">計時</a>
+          <a href="q2/#mark">自評</a>
+        </span>
+      </div>
+      <div class="card">
+        <a class="card-hit" href="vocab/">
+          <span class="card-ico" aria-hidden="true">📘</span>
+          <span class="card-body">
+            <p class="zh">詞彙</p>
+            <p class="en">詞彙卡 · 我的生字</p>
+          </span>
+          <span class="chev" aria-hidden="true">›</span>
+        </a>
+      </div>
+    </nav>
