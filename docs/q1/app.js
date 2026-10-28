@@ -6,6 +6,7 @@
 
   const CAT_LABELS = {
     all: "全部",
+    opening: "開場",
     implications: "影響／後果",
     assessment: "評估／分析",
     comparison: "方案比較",
@@ -356,7 +357,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261027m", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261028b", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {

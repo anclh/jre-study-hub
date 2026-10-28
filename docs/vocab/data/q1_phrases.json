@@ -2,6 +2,11 @@
   "disclaimer": "JRE English Q1 discussion-paper phrase bank. Items may be tagged q1, q2, or common; untagged phrases stay in the Q1 set. Expand as you revise.",
   "categories": [
     {
+      "id": "opening",
+      "en": "Opening",
+      "zh": "開場"
+    },
+    {
       "id": "implications",
       "en": "Implications",
       "zh": "影響／後果"
@@ -580,6 +585,60 @@
       "zh": "先在院舍輪候最長的兩個地區試點，再按 KPI 檢討後擴展。",
       "note": "試點＋KPI 擴展",
       "example": "Pilot in two districts with the longest residential-care waiting lists, then scale subject to KPI review."
+    },
+    {
+      "id": "opn-01",
+      "category": "opening",
+      "paper": "q1",
+      "en": "The main challenge is…",
+      "zh": "主要挑戰在於…",
+      "note": "Opening 一句定問題",
+      "example": "The main challenge is the persistently long waiting time for subsidised community care places."
+    },
+    {
+      "id": "opn-02",
+      "category": "opening",
+      "paper": "q1",
+      "en": "The key issue facing the administration is…",
+      "zh": "當局面對的關鍵問題是…",
+      "note": "Opening 定問題＋政府視角",
+      "example": "The key issue facing the administration is how to expand elderly community care within tight recurrent limits."
+    },
+    {
+      "id": "opn-03",
+      "category": "opening",
+      "paper": "q1",
+      "en": "The government’s objective is to… while…",
+      "zh": "政府目標是在…的同時…",
+      "note": "Opening 問題後加目標",
+      "example": "The government’s objective is to shorten waiting times while managing fiscal and manpower constraints."
+    },
+    {
+      "id": "spc-10",
+      "category": "specificity",
+      "paper": "common",
+      "en": "Contingent on…",
+      "zh": "視乎／取決於…",
+      "note": "條件句",
+      "example": "Contingent on NGO workforce capacity, the voucher scheme can expand to two more districts."
+    },
+    {
+      "id": "spc-11",
+      "category": "specificity",
+      "paper": "common",
+      "en": "In the interim…",
+      "zh": "過渡期間／短期內…",
+      "note": "過渡安排",
+      "example": "In the interim, existing day-care centres can extend evening slots for high-need carers."
+    },
+    {
+      "id": "mon-09",
+      "category": "monitor",
+      "paper": "q1",
+      "en": "A review should be conducted after 12–18 months.",
+      "zh": "應於12至18個月後進行檢討。",
+      "note": "Close／監察",
+      "example": "A review should be conducted after 12–18 months against the waiting-time and uptake KPIs."
     }
   ]
 }

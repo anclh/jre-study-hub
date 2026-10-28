@@ -310,6 +310,7 @@ function chipRow(label, items, cls) {
 
   const Q1_CAT_LABELS = {
     all: "全部",
+    opening: "開場",
     implications: "影響／後果",
     assessment: "評估／分析",
     comparison: "方案比較",
@@ -763,7 +764,7 @@ function chipRow(label, items, cls) {
 
   async function loadQ1() {
     try {
-      const data = await loadJson("/api/q1-phrases", "data/q1_phrases.json?v=20261028a");
+      const data = await loadJson("/api/q1-phrases", "data/q1_phrases.json?v=20261028b");
       state.q1 = {
         disclaimer: data.disclaimer || "",
         categories: data.categories || [],
