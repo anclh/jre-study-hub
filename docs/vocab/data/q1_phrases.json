@@ -553,6 +553,33 @@
       "zh": "儘管有人提出關注，利仍大於弊。",
       "note": "",
       "example": ""
+    },
+    {
+      "id": "cmp-04",
+      "category": "comparison",
+      "paper": "q1",
+      "en": "On balance, Option … better meets the criteria of effectiveness, cost and stakeholder acceptability.",
+      "zh": "權衡之下，方案…較能同時符合成效、成本與持份者接受度等準則。",
+      "note": "比較收束句；填入方案代號",
+      "example": "On balance, Option 1 better meets the criteria of effectiveness, cost and stakeholder acceptability."
+    },
+    {
+      "id": "bal-03",
+      "category": "balance",
+      "paper": "q1",
+      "en": "Any expansion of residential places must be matched by stronger community care, or hospital discharge will remain blocked.",
+      "zh": "任何院舍宿位擴張都必須配以更強的社區照顧，否則醫院出院將繼續受阻。",
+      "note": "院舍／社區平衡；長者題常用",
+      "example": "Any expansion of residential places must be matched by stronger community care, or hospital discharge will remain blocked."
+    },
+    {
+      "id": "spc-09",
+      "category": "specificity",
+      "paper": "q1",
+      "en": "Pilot in two districts with the longest residential-care waiting lists, then scale subject to KPI review.",
+      "zh": "先在院舍輪候最長的兩個地區試點，再按 KPI 檢討後擴展。",
+      "note": "試點＋KPI 擴展",
+      "example": "Pilot in two districts with the longest residential-care waiting lists, then scale subject to KPI review."
     }
   ]
 }

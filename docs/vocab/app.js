@@ -763,7 +763,7 @@ function chipRow(label, items, cls) {
 
   async function loadQ1() {
     try {
-      const data = await loadJson("/api/q1-phrases", "data/q1_phrases.json?v=20261027m");
+      const data = await loadJson("/api/q1-phrases", "data/q1_phrases.json?v=20261028a");
       state.q1 = {
         disclaimer: data.disclaimer || "",
         categories: data.categories || [],

@@ -9998,5 +9998,358 @@
     ],
     "example": "High attrition among home-care workers lengthens client waiting lists.",
     "topic": "governance"
+  },
+  {
+    "term": "community care services",
+    "zh": "社區照顧服務",
+    "pos": "n. phr.",
+    "related": [
+      "day care",
+      "home care"
+    ],
+    "note": "日間／家居照顧等，支撐居家安老；常與院舍互補",
+    "synonyms": [
+      "community support services",
+      "home and day care",
+      "community-based care"
+    ],
+    "antonyms": [
+      "institutional care",
+      "residential-only provision"
+    ],
+    "examples": [
+      {
+        "en": "Community care services help delay unnecessary residential placement.",
+        "zh": "社區照顧服務有助延遲不必要的院舍安置。"
+      },
+      {
+        "en": "Utilisation of community care services is near capacity in several districts.",
+        "zh": "若干地區的社區照顧服務使用率已接近飽和。"
+      },
+      {
+        "en": "Expanding community care services can ease pressure on hospital discharge.",
+        "zh": "擴展社區照顧服務可紓緩醫院出院壓力。"
+      }
+    ],
+    "example": "Community care services help delay unnecessary residential placement.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "respite care",
+    "zh": "暫託照顧",
+    "pos": "n.",
+    "related": [
+      "carer support",
+      "short-term care"
+    ],
+    "note": "為照顧者提供短暫休息；日間或住宿暫託",
+    "synonyms": [
+      "short-break care",
+      "temporary relief care",
+      "carer relief"
+    ],
+    "antonyms": [
+      "continuous unpaid caregiving",
+      "unsupported caring"
+    ],
+    "examples": [
+      {
+        "en": "Respite care reduces carer burnout and supports ageing in place.",
+        "zh": "暫託照顧可減輕照顧者倦怠並支援居家安老。"
+      },
+      {
+        "en": "Districts with long residential waits need more flexible respite care slots.",
+        "zh": "院舍輪候長的地區需要更靈活的暫託照顧名額。"
+      },
+      {
+        "en": "A pilot of overnight respite care will be evaluated after 18 months.",
+        "zh": "夜間暫託照顧試點將於十八個月後檢討。"
+      }
+    ],
+    "example": "Respite care reduces carer burnout and supports ageing in place.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "continuum of care",
+    "zh": "照顧連續體／連貫照顧",
+    "pos": "n. phr.",
+    "related": [
+      "care pathway",
+      "stepped care"
+    ],
+    "note": "由家居、社區至院舍的連貫服務鏈，減少斷層",
+    "synonyms": [
+      "care continuum",
+      "integrated care pathway",
+      "seamless care chain"
+    ],
+    "antonyms": [
+      "fragmented care",
+      "service silos",
+      "care gaps"
+    ],
+    "examples": [
+      {
+        "en": "A continuum of care links hospital discharge to community and residential support.",
+        "zh": "照顧連續體把出院銜接至社區與院舍支援。"
+      },
+      {
+        "en": "Gaps in the continuum of care leave carers without interim options.",
+        "zh": "照顧連續體出現缺口，令照顧者欠缺過渡選擇。"
+      },
+      {
+        "en": "Policy should strengthen the continuum of care rather than expand one setting alone.",
+        "zh": "政策應強化照顧連續體，而非只擴張單一環境。"
+      }
+    ],
+    "example": "A continuum of care links hospital discharge to community and residential support.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "co-payment",
+    "zh": "共同付款；部分費用自付",
+    "pos": "n.",
+    "related": [
+      "user fee",
+      "means-tested"
+    ],
+    "note": "服務使用者分擔部分費用；常與資助／買位並用",
+    "synonyms": [
+      "user contribution",
+      "partial cost recovery",
+      "shared payment"
+    ],
+    "antonyms": [
+      "full subsidy",
+      "fee waiver",
+      "free-at-point-of-use"
+    ],
+    "examples": [
+      {
+        "en": "A modest co-payment can stretch limited places without deterring the needy.",
+        "zh": "適度共同付款可延伸有限名額，同時避免嚇退有需要者。"
+      },
+      {
+        "en": "Co-payment levels should be means-sensitive and regularly reviewed.",
+        "zh": "共同付款水平應顧及經濟能力並定期檢討。"
+      },
+      {
+        "en": "Stakeholders worry that higher co-payment may shift demand back to hospitals.",
+        "zh": "持份者擔心提高共同付款或會把需求推回醫院。"
+      }
+    ],
+    "example": "A modest co-payment can stretch limited places without deterring the needy.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "purchase of places",
+    "zh": "買位計劃",
+    "pos": "n. phr.",
+    "related": [
+      "EPS",
+      "bought place"
+    ],
+    "note": "政府向私營／NGO院舍購買資助宿位以縮短輪候",
+    "synonyms": [
+      "bought-place scheme",
+      "purchased places",
+      "place-purchase programme"
+    ],
+    "antonyms": [
+      "direct public provision only",
+      "self-financing places only"
+    ],
+    "examples": [
+      {
+        "en": "Purchase of places can expand supply faster than building new homes.",
+        "zh": "買位計劃可比興建新院舍更快擴大供應。"
+      },
+      {
+        "en": "Quality safeguards must accompany any large purchase of places.",
+        "zh": "任何大規模買位都必須輔以質素把關。"
+      },
+      {
+        "en": "Treasury prefers purchase of places where unit costs are transparent.",
+        "zh": "若單位成本透明，庫房較傾向買位計劃。"
+      }
+    ],
+    "example": "Purchase of places can expand supply faster than building new homes.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "light public housing",
+    "zh": "簡約公屋",
+    "pos": "n.",
+    "related": [
+      "transitional housing",
+      "public rental"
+    ],
+    "note": "較快捷落成的簡約公營房屋；可暫緩輪候壓力",
+    "synonyms": [
+      "simple public housing",
+      "light-duty PRH",
+      "streamlined public flats"
+    ],
+    "antonyms": [
+      "conventional PRH only",
+      "private rental only"
+    ],
+    "examples": [
+      {
+        "en": "Light public housing can offer faster relief while conventional estates are built.",
+        "zh": "簡約公屋可在傳統屋邨興建期間提供較快紓緩。"
+      },
+      {
+        "en": "Some carers prefer light public housing near day-care centres.",
+        "zh": "部分照顧者希望簡約公屋鄰近日間護理中心。"
+      },
+      {
+        "en": "Light public housing is a bridging option, not a substitute for long-term supply.",
+        "zh": "簡約公屋是過渡選擇，不能取代長遠供應。"
+      }
+    ],
+    "example": "Light public housing can offer faster relief while conventional estates are built.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "discharge planning",
+    "zh": "出院計劃",
+    "pos": "n.",
+    "related": [
+      "care transition",
+      "hospital discharge"
+    ],
+    "note": "出院前安排社區／院舍支援，減少滯留病床",
+    "synonyms": [
+      "care transition planning",
+      "exit planning",
+      "post-discharge arrangement"
+    ],
+    "antonyms": [
+      "unplanned discharge",
+      "bed blocking without pathway"
+    ],
+    "examples": [
+      {
+        "en": "Early discharge planning reduces avoidable hospital bed occupancy.",
+        "zh": "及早出院計劃可減少可避免的醫院病床佔用。"
+      },
+      {
+        "en": "Weak discharge planning leaves frail elderly without interim community support.",
+        "zh": "薄弱的出院計劃令體弱長者欠缺過渡社區支援。"
+      },
+      {
+        "en": "Hospitals and NGOs should co-own discharge planning timelines.",
+        "zh": "醫院與NGO應共同負責出院計劃時限。"
+      }
+    ],
+    "example": "Early discharge planning reduces avoidable hospital bed occupancy.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "multidisciplinary team",
+    "zh": "跨專業團隊",
+    "pos": "n.",
+    "related": [
+      "MDT",
+      "integrated care"
+    ],
+    "note": "醫生、護士、社工、職業治療等協作評估與跟進",
+    "synonyms": [
+      "MDT",
+      "interdisciplinary team",
+      "cross-professional team"
+    ],
+    "antonyms": [
+      "single-discipline silo",
+      "fragmented staffing"
+    ],
+    "examples": [
+      {
+        "en": "A multidisciplinary team assesses care needs before recommending placement.",
+        "zh": "跨專業團隊在建議安置前評估照顧需要。"
+      },
+      {
+        "en": "Community hubs should be backed by a visiting multidisciplinary team.",
+        "zh": "社區樞紐應有巡迴跨專業團隊支援。"
+      },
+      {
+        "en": "Without a multidisciplinary team, complex cases risk falling between services.",
+        "zh": "若無跨專業團隊，複雜個案或會落在服務縫隙。"
+      }
+    ],
+    "example": "A multidisciplinary team assesses care needs before recommending placement.",
+    "topic": "common"
+  },
+  {
+    "term": "case management",
+    "zh": "個案管理",
+    "pos": "n.",
+    "related": [
+      "care coordination",
+      "key worker"
+    ],
+    "note": "指定個案經理統籌服務與跟進，避免多頭無主",
+    "synonyms": [
+      "care coordination",
+      "case coordination",
+      "key-worker model"
+    ],
+    "antonyms": [
+      "ad hoc referral",
+      "uncoordinated follow-up"
+    ],
+    "examples": [
+      {
+        "en": "Case management can stitch together fragmented elderly services.",
+        "zh": "個案管理可把零散的安老服務串連起來。"
+      },
+      {
+        "en": "Each high-need household should have a named case management lead.",
+        "zh": "每個高需要住戶應有指定個案管理負責人。"
+      },
+      {
+        "en": "Effective case management depends on shared data across agencies.",
+        "zh": "有效個案管理有賴跨機構共享數據。"
+      }
+    ],
+    "example": "Case management can stitch together fragmented elderly services.",
+    "topic": "common"
+  },
+  {
+    "term": "under-provision",
+    "zh": "供應不足；服務短缺",
+    "pos": "n.",
+    "related": [
+      "service gap",
+      "shortfall"
+    ],
+    "note": "服務／宿位相對需求不足；答題常用於問題段",
+    "synonyms": [
+      "service shortfall",
+      "inadequate supply",
+      "capacity gap"
+    ],
+    "antonyms": [
+      "adequate provision",
+      "surplus capacity",
+      "oversupply"
+    ],
+    "examples": [
+      {
+        "en": "Under-provision of community care prolongs residential waiting lists.",
+        "zh": "社區照顧供應不足會拉長院舍輪候名單。"
+      },
+      {
+        "en": "Chronic under-provision shifts pressure onto informal carers.",
+        "zh": "長期服務短缺把壓力轉嫁予非正式照顧者。"
+      },
+      {
+        "en": "The paper should quantify under-provision by district, not only city-wide.",
+        "zh": "文件應按區量化供應不足，而非只計全市。"
+      }
+    ],
+    "example": "Under-provision of community care prolongs residential waiting lists.",
+    "topic": "welfare-population"
   }
 ]

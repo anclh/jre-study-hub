@@ -2,8 +2,8 @@
 window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "elderly-care-2026-10-28",
-  title: "Elderly Community Care Capacity · City of Jade",
-  titleZh: "長者社區照顧／輪候",
+  title: "Elderly Community Care & Residential Waiting Lists · City of Jade",
+  titleZh: "長者社區照顧／院舍輪候",
   tip: "先只睇 Data File，15 分鐘內 sort／highlight，自己寫完先睇範例。",
   task: {
     role: "You are an Administrative Officer in the Labour and Welfare Bureau of the City of Jade. The Permanent Secretary has asked you to prepare an internal discussion paper (about 500–800 words) for senior management.",
@@ -85,8 +85,8 @@ window.Q1_CASE_PACKS.push({
           text: "Bring forward ~2,400 additional subsidised RCHE places via purchase and new contract homes. Strong public brand and eases 48-month waits. High recurrent cost (~HK$720–850 million when fully open) and 4–6 year delivery lag for purpose-built homes.",
         },
         {
-          name: "Option 3 — Carer support + respite hybrid (allowance pilot + emergency beds)",
-          text: "Means-tested carer allowance pilot for ~8,000 high-burden carers (~HK$110 million) plus 400 ring-fenced respite beds/places and a 14-day emergency pathway (~HK$90 million recurrent). Directly answers carer burnout; alone does not create enough daily care hours for frail elders.",
+          name: "Option 3 — Discharge planning + respite hybrid (limited new RCHE)",
+          text: "Joint HA–SWD discharge planning for frail elders, means-tested carer allowance pilot (~8,000 carers, ~HK$110 million), 400 ring-fenced respite places with a 14-day emergency pathway (~HK$90 million), plus a limited tranche of new/contract RCHE places for high-dependency overflow. Cuts bed-blocking and carer burnout; alone does not create enough daily community-care hours.",
         },
       ],
       closing:
@@ -130,13 +130,13 @@ window.Q1_CASE_PACKS.push({
         html:
           "<p><strong>Option 1 (CCS vouchers + POS home/day care)</strong> scores highest on near-term capacity and cost fit: ~HK$320 million recurrent sits inside Treasury’s preference for voucher/POS over large RCHE headcount (Docs E, F). It answers the Alliance call for ageing in place with evening/weekend cover, but needs workforce training and quality audits so ‘paper providers’ do not dilute standards (Docs D, G).</p>" +
           "<p><strong>Option 2 (accelerate subsidised RCHE)</strong> eases the 48-month brand-name wait and suits high-dependency cases, yet ~HK$720–850 million recurrent and multi-year works lag clash with Doc E. It should be a parallel pipeline for the most dependent, not the Year-1 centrepiece for community shortfalls.</p>" +
-          "<p><strong>Option 3 (carer allowance + respite hybrid)</strong> directly cuts burnout risk (~HK$200 million combined) and supplies the 14-day emergency pathway Doc C demands, but alone does not create daily care hours. It is a necessary complement to Option 1, not a substitute.</p>",
+          "<p><strong>Option 3 (discharge planning + respite + limited RCHE)</strong> eases hospital bed-blocking and carer burnout (~HK$200 million for allowance/respite, plus a thin residential overflow) and supplies the 14-day emergency pathway Doc C demands, but alone does not create enough daily community-care hours. It is a necessary complement to Option 1, not a substitute.</p>",
       },
       {
         h: "4. Recommendation",
         html:
-          "<p>Adopt a <strong>hybrid, sequenced package</strong> weighted to Option 1, with a firm Option 3 respite/carer track and a limited Option 2 residential pipeline for high-dependency cases.</p>" +
-          "<p><strong>Phase 1 (Years 1–2):</strong> Expand CCS vouchers and POS home/day care in the 10 highest-wait districts, mandating evening/weekend sessions; publish unit costs and quality scores. Launch the means-tested carer-allowance pilot (~8,000 carers) and ring-fence emergency respite with a 14-day pathway when carers are hospitalised. Require every district cluster to adopt a written emergency respite protocol.</p>" +
+          "<p>Adopt a <strong>hybrid, sequenced package</strong> weighted to Option 1, with a firm Option 3 discharge/respite track and a limited Option 2 residential pipeline for high-dependency cases.</p>" +
+          "<p><strong>Phase 1 (Years 1–2):</strong> Expand CCS vouchers and POS home/day care in the 10 highest-wait districts, mandating evening/weekend sessions; publish unit costs and quality scores. Stand up joint HA–SWD discharge planning for frail elders; launch the means-tested carer-allowance pilot (~8,000 carers) and ring-fence emergency respite with a 14-day pathway when carers are hospitalised. Require every district cluster to adopt a written emergency respite protocol.</p>" +
           "<p><strong>Phase 2 (Years 3–5):</strong> Add targeted subsidised RCHE / contract-home places where community data show persistent high-dependency overflow — not a territory-wide residential surge up front. Grow accredited voucher providers at least in line with voucher uptake.</p>" +
           "<p><strong>KPIs:</strong> (i) median wait from assessment to first appropriate CCS/day-care session; (ii) share of carer-hospitalisation cases accessing emergency respite within 14 days; (iii) voucher/POS spend vs quality scores, vacancy rates and care-breakdown admissions.</p>",
       },
