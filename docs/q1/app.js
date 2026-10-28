@@ -519,6 +519,17 @@
     const search = $("#q1Search");
     if (search) search.addEventListener("input", renderPhrases);
     loadPhrases();
+  (function bootHash() {
+    const h = (location.hash || "").replace(/^#/, "");
+    const map = { frame: "structure", structure: "structure", tips: "tips", phrases: "phrases", case: "case", mark: "mark" };
+    const name = map[h];
+    if (!name) return;
+    document.querySelectorAll("#subnav button").forEach((b) => b.classList.toggle("active", b.dataset.panel === name));
+    document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
+    const panel = document.querySelector("#panel-" + name);
+    if (panel) panel.classList.add("active");
+  })();
+
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
