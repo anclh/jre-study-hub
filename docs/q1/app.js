@@ -357,7 +357,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261028b", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261028d", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {

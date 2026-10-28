@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>JRE English Q1 · Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261028c" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261028c" />
+  <link rel="stylesheet" href="styles.css?v=20261028d" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261028d" />
 </head>
 <body>
   <header class="app-header">
@@ -21,7 +21,8 @@
       </div>
     </div>
     <nav class="subnav" id="subnav" aria-label="Q1 sections">
-      <button type="button" data-panel="frame" class="active">框架</button>
+      <button type="button" data-panel="structure" class="active">結構</button>
+      <button type="button" data-panel="tips">Tips</button>
       <button type="button" data-panel="phrases">句式庫</button>
       <button type="button" data-panel="case">計時練習</button>
       <button type="button" data-panel="mark">自評清單</button>
@@ -29,7 +30,82 @@
   </header>
 
   <main>
-            <section class="panel active" id="panel-frame">
+                        <section class="panel active" id="panel-structure">
+      <p class="lede" style="margin:0 0 10px">答卷骨架＋句式＋範例大綱</p>
+
+      <div class="card" id="answer-frame">
+        <h2>1. Answer frame <span class="chip">Fixed skeleton</span></h2>
+        <p class="lede">Opening → Problem analysis → Option comparison → Recommendation → Close。適用房屋、長者、勞工、環境、交通、醫療等——只換例子同措施。</p>
+        <ol class="frame-steps">
+          <li><strong>Opening（1–2 句）</strong> — 核心問題 + 政府目標。<span class="step-ex">越短越好；唔堆背景／數字；唔抄公文 Purpose。</span></li>
+          <li><strong>Problem analysis（2 個）</strong> — 每個：是什麼 + implications（用 Data File 證據）。<span class="step-ex">典型 implications：fiscal／manpower／service quality／public confidence／knock-on effects。Analyse，唔 paraphrase。</span></li>
+          <li><strong>Option comparison（2–3 · 得分核心）</strong> — 固定 criteria：effectiveness｜cost／resources｜feasibility｜stakeholder impact／acceptance。<span class="step-ex">主動回每 option 嘅最強 objection。</span></li>
+          <li><strong>Recommendation</strong> — 清晰選項（one 或 mix）。必須：who leads、pilot／phased、KPIs、timeline、resource condition。<span class="step-ex">效果用 may／could／if accompanied by…。</span></li>
+          <li><strong>Close（短）</strong> — residual risks + 如何 monitor／review。</li>
+        </ol>
+        <ul class="bullet-list warn-list">
+          <li>全卷 Data File 理想 <strong>&lt; ~15 min</strong>；唔好逐份 document 由頭讀到尾。</li>
+          <li><strong>Never copy</strong> 長段 background（paraphrase of background <strong>scores nothing</strong>）。</li>
+        </ul>
+      </div>
+
+      <div class="card" id="starters">
+        <h2>2. 句式 starters（topic-agnostic）</h2>
+        <p class="lede">考場套骨架；詳細句式見「句式庫」。</p>
+        <div class="table-wrap">
+          <table class="mini-table">
+            <thead>
+              <tr><th>Stage</th><th>English starters</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Opening</td><td>The main challenge is… / The key issue facing the administration is…</td></tr>
+              <tr><td>Implications</td><td>This may give rise to… / There could be knock-on effects on… / Left unaddressed, the problem risks… / The fiscal implications warrant careful consideration.</td></tr>
+              <tr><td>Comparison</td><td>Option A scores higher on feasibility but lower on cost-effectiveness. / While Option B may deliver quicker results, it carries greater residual risks. / After weighing the trade-offs…</td></tr>
+              <tr><td>Recommendation</td><td>It is recommended that a pilot be launched in… / Implementation should be phased, starting with… / The [Bureau] should lead, with support from… / KPIs should be set to measure…</td></tr>
+              <tr><td>Constraints</td><td>Subject to available resources… / Contingent on… / In the interim…</td></tr>
+              <tr><td>Close</td><td>Residual risks remain and should be monitored. / A review should be conducted after 12–18 months.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card" id="sample-housing">
+        <h2>3. Sample outline — Housing waiting list <span class="chip">綜合框架</span></h2>
+        <p class="lede">同一 skeleton；換例子同措施即可套去長者照顧、簡約公屋、門診輪候等。</p>
+        <ol class="frame-steps">
+          <li><strong>Opening</strong>The main challenge is the persistently long waiting time for public housing. The government’s objective is to increase supply while managing fiscal and land constraints.</li>
+          <li><strong>Problem analysis</strong>
+            Problem 1: Insufficient 「熟地」 supply → knock-on effect of delayed construction and rising public dissatisfaction.<br />
+            Problem 2: Limited construction capacity and labour shortages → risk of cost overruns and further delays.
+          </li>
+          <li><strong>Option comparison</strong>
+            Option A (accelerate land resumption): higher effectiveness on supply, but lower feasibility due to legal and community resistance.<br />
+            Option B (expand modular integrated construction + import labour): more feasible in the short term, but residual risks on quality control and local labour impact.<br />
+            Mix preferred after weighing trade-offs.
+          </li>
+          <li><strong>Recommendation</strong>It is recommended that a pilot of modular construction be launched on already-earmarked Northern Metropolis sites, while accelerating land resumption for the next phase. The Housing Bureau should lead, with the Development Bureau supporting land supply. KPIs: number of units completed and average waiting time reduction after 18 months. Subject to available construction capacity and funding.</li>
+          <li><strong>Close</strong>Residual risks remain around labour availability and community opposition; these should be monitored through quarterly reviews.</li>
+        </ol>
+      </div>
+
+      <div class="card" id="shared-frames">
+        <h2>4. Shared frames（Q1／Q2）</h2>
+        <p class="lede">兩邊卷都用得着——只換例子同措施。</p>
+        <ul class="bullet-list">
+          <li>有助……惟須…… / This helps to… but must be accompanied by…</li>
+          <li>權衡利弊後…… / After weighing the pros and cons…</li>
+          <li>短期……惟長遠…… / In the short term… but in the long term…</li>
+          <li>建議先推行試點…… / It is recommended that a pilot be launched…</li>
+          <li>視乎可用資源…… / Subject to available resources…</li>
+          <li>仍有剩餘風險，應持續監察。 / Residual risks remain and should be monitored.</li>
+          <li>應設定指標以量度成效。 / KPIs should be set to measure effectiveness.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-tips">
+      <p class="lede" style="margin:0 0 10px">考場操作 tips</p>
+
       <div class="card">
         <h2>1. Exam role</h2>
         <ul class="bullet-list">
@@ -52,77 +128,8 @@
         </ol>
       </div>
 
-      <div class="card" id="answer-frame">
-        <h2>3. Answer frame <span class="chip">Fixed skeleton</span></h2>
-        <p class="lede">Opening → Problem analysis → Option comparison → Recommendation → Close。適用房屋、長者、勞工、環境、交通、醫療等——只換例子同措施。</p>
-        <ol class="frame-steps">
-          <li><strong>Opening（1–2 句）</strong> — 核心問題 + 政府目標。<span class="step-ex">越短越好；唔堆背景／數字；唔抄公文 Purpose。</span></li>
-          <li><strong>Problem analysis（2 個）</strong> — 每個：是什麼 + implications（用 Data File 證據）。<span class="step-ex">典型 implications：fiscal／manpower／service quality／public confidence／knock-on effects。Analyse，唔 paraphrase。</span></li>
-          <li><strong>Option comparison（2–3 · 得分核心）</strong> — 固定 criteria：effectiveness｜cost／resources｜feasibility｜stakeholder impact／acceptance。<span class="step-ex">主動回每 option 嘅最強 objection。</span></li>
-          <li><strong>Recommendation</strong> — 清晰選項（one 或 mix）。必須：who leads、pilot／phased、KPIs、timeline、resource condition。<span class="step-ex">效果用 may／could／if accompanied by…。</span></li>
-          <li><strong>Close（短）</strong> — residual risks + 如何 monitor／review。</li>
-        </ol>
-        <ul class="bullet-list warn-list">
-          <li>全卷 Data File 理想 <strong>&lt; ~15 min</strong>；唔好逐份 document 由頭讀到尾。</li>
-          <li><strong>Never copy</strong> 長段 background（paraphrase of background <strong>scores nothing</strong>）。</li>
-        </ul>
-      </div>
-
-      <div class="card" id="starters">
-        <h2>4. 句式 starters（topic-agnostic）</h2>
-        <p class="lede">考場套骨架；詳細句式見「句式庫」。</p>
-        <div class="table-wrap">
-          <table class="mini-table">
-            <thead>
-              <tr><th>Stage</th><th>English starters</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Opening</td><td>The main challenge is… / The key issue facing the administration is…</td></tr>
-              <tr><td>Implications</td><td>This may give rise to… / There could be knock-on effects on… / Left unaddressed, the problem risks… / The fiscal implications warrant careful consideration.</td></tr>
-              <tr><td>Comparison</td><td>Option A scores higher on feasibility but lower on cost-effectiveness. / While Option B may deliver quicker results, it carries greater residual risks. / After weighing the trade-offs…</td></tr>
-              <tr><td>Recommendation</td><td>It is recommended that a pilot be launched in… / Implementation should be phased, starting with… / The [Bureau] should lead, with support from… / KPIs should be set to measure…</td></tr>
-              <tr><td>Constraints</td><td>Subject to available resources… / Contingent on… / In the interim…</td></tr>
-              <tr><td>Close</td><td>Residual risks remain and should be monitored. / A review should be conducted after 12–18 months.</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="card" id="sample-housing">
-        <h2>5. Sample outline — Housing waiting list <span class="chip">綜合框架</span></h2>
-        <p class="lede">同一 skeleton；換例子同措施即可套去長者照顧、簡約公屋、門診輪候等。</p>
-        <ol class="frame-steps">
-          <li><strong>Opening</strong>The main challenge is the persistently long waiting time for public housing. The government’s objective is to increase supply while managing fiscal and land constraints.</li>
-          <li><strong>Problem analysis</strong>
-            Problem 1: Insufficient 「熟地」 supply → knock-on effect of delayed construction and rising public dissatisfaction.<br />
-            Problem 2: Limited construction capacity and labour shortages → risk of cost overruns and further delays.
-          </li>
-          <li><strong>Option comparison</strong>
-            Option A (accelerate land resumption): higher effectiveness on supply, but lower feasibility due to legal and community resistance.<br />
-            Option B (expand modular integrated construction + import labour): more feasible in the short term, but residual risks on quality control and local labour impact.<br />
-            Mix preferred after weighing trade-offs.
-          </li>
-          <li><strong>Recommendation</strong>It is recommended that a pilot of modular construction be launched on already-earmarked Northern Metropolis sites, while accelerating land resumption for the next phase. The Housing Bureau should lead, with the Development Bureau supporting land supply. KPIs: number of units completed and average waiting time reduction after 18 months. Subject to available construction capacity and funding.</li>
-          <li><strong>Close</strong>Residual risks remain around labour availability and community opposition; these should be monitored through quarterly reviews.</li>
-        </ol>
-      </div>
-
-      <div class="card" id="shared-frames">
-        <h2>6. Shared frames（Q1／Q2）</h2>
-        <p class="lede">兩邊卷都用得着——只換例子同措施。</p>
-        <ul class="bullet-list">
-          <li>有助……惟須…… / This helps to… but must be accompanied by…</li>
-          <li>權衡利弊後…… / After weighing the pros and cons…</li>
-          <li>短期……惟長遠…… / In the short term… but in the long term…</li>
-          <li>建議先推行試點…… / It is recommended that a pilot be launched…</li>
-          <li>視乎可用資源…… / Subject to available resources…</li>
-          <li>仍有剩餘風險，應持續監察。 / Residual risks remain and should be monitored.</li>
-          <li>應設定指標以量度成效。 / KPIs should be set to measure effectiveness.</li>
-        </ul>
-      </div>
-
       <div class="card">
-        <h2>7. Data File 用法</h2>
+        <h2>3. Data File 用法</h2>
         <ul class="bullet-list">
           <li>Data File＝<strong>輔助</strong>，唔係答案本——唔背、唔大篇抄；主體係你嘅分析。</li>
           <li>流程：<strong>先大綱 → 定向翻查 → 整合</strong>。訪談＝stakeholder；數字＝一句＋implies／points to…。</li>
@@ -131,7 +138,7 @@
       </div>
 
       <div class="card">
-        <h2>8. 公務員語氣</h2>
+        <h2>4. 公務員語氣</h2>
         <p class="lede">Internal memo——冷靜、可執行；唔係社論或 IELTS。</p>
         <ul class="bullet-list">
           <li>角色＝內部官員（<strong>建議、分析</strong>），唔係評論員／NGO。中立＋事實；weighing／hedge；部門＋KPI。</li>
@@ -140,7 +147,7 @@
       </div>
 
       <div class="card">
-        <h2>9. Conciseness＋字數</h2>
+        <h2>5. Conciseness＋字數</h2>
         <ul class="bullet-list">
           <li>每句有功能（問題／implication／比較／objection／recommend）。數字只揀撐論點嘅；引完一句 implies。</li>
           <li><strong>時事</strong>：DF 優先；外加只借措施樣板（who／pilot／「有助…但須…」）——唔堆新聞入 Opening。</li>
@@ -149,7 +156,7 @@
       </div>
 
       <div class="card">
-        <h2>10. 冷門題</h2>
+        <h2>6. 冷門題</h2>
         <ul class="bullet-list">
           <li>Data File <strong>就係全部背景</strong>——唔熟領域都唔使背史；先 sort／highlight，再跟框架寫。</li>
           <li>用固定 criteria 拆；結構仍跟本頁 memo——唔另套四段式。</li>
@@ -157,7 +164,7 @@
       </div>
 
       <div class="card">
-        <h2>11. Time budget</h2>
+        <h2>7. Time budget</h2>
         <p class="muted" style="margin:0">全卷 <strong>3 hours · both languages</strong>。English 理想 under ~1/3，留時間寫中文卷。Q1 坊間常用 <strong>~20′ 大綱／Data File + ~70′ 寫</strong>（<strong>非官方</strong>；以紙上 checkpoint 為準）。</p>
       </div>
     </section>
@@ -219,11 +226,11 @@
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-    <script src="data/heat-island.js?v=20261028c"></script>
-  <script src="data/mental-health.js?v=20261028c"></script>
-  <script src="data/sme-digital.js?v=20261028c"></script>
-  <script src="data/elderly-care.js?v=20261028c"></script>
-  <script src="app.js?v=20261028c"></script>
-  <script src="../shell/tabbar.js?v=20261028c"></script>
+    <script src="data/heat-island.js?v=20261028d"></script>
+  <script src="data/mental-health.js?v=20261028d"></script>
+  <script src="data/sme-digital.js?v=20261028d"></script>
+  <script src="data/elderly-care.js?v=20261028d"></script>
+  <script src="app.js?v=20261028d"></script>
+  <script src="../shell/tabbar.js?v=20261028d"></script>
 </body>
 </html>
