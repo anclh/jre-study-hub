@@ -186,6 +186,15 @@
     .bookmark:active {
       background: #d3ebe1;
     }
+  
+    .card-subs {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;
+    }
+    a.card .card-subs a {
+      font-size: 11px; line-height: 1.2; padding: 4px 8px; border-radius: 999px;
+      background: rgba(0,0,0,0.06); color: inherit; text-decoration: none;
+      pointer-events: auto;
+    }
   </style>
 </head>
 <body class="hub-has-tabs">
@@ -211,7 +220,14 @@
         <span class="card-ico" aria-hidden="true">✍️</span>
         <span class="card-body">
           <p class="zh">英文 Q1</p>
-          <p class="en">結構 · Tips · 句式庫 · 計時 · 自評 · Data File</p>
+          <p class="en">Data File · discussion paper</p>
+          <span class="card-subs">
+            <a href="q1/#structure">結構</a>
+            <a href="q1/#tips">Tips</a>
+            <a href="q1/#phrases">句式庫</a>
+            <a href="q1/#case">計時</a>
+            <a href="q1/#mark">自評</a>
+          </span>
         </span>
         <span class="chev" aria-hidden="true">›</span>
       </a>
@@ -219,7 +235,15 @@
         <span class="card-ico" aria-hidden="true">🖋</span>
         <span class="card-body">
           <p class="zh">中文 Q2</p>
-          <p class="en">結構 · 貼士 · 句式庫 · 題庫 · 計時 · 自評</p>
+          <p class="en">議題思維 · 計時寫作</p>
+          <span class="card-subs">
+            <a href="q2/#structure">結構</a>
+            <a href="q2/#tips">貼士</a>
+            <a href="q2/#phrases">句式庫</a>
+            <a href="q2/#bank">題庫</a>
+            <a href="q2/#drill">計時</a>
+            <a href="q2/#mark">自評</a>
+          </span>
         </span>
         <span class="chev" aria-hidden="true">›</span>
       </a>

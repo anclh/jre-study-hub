@@ -83,7 +83,8 @@
     btn.addEventListener("click", () => showPanel(btn.dataset.panel));
   });
   const bootHash = (location.hash || "").replace(/^#/, "");
-  if (bootHash === "frame" || bootHash === "structure" || bootHash === "tips") {
+  const known = new Set(["structure", "tips", "phrases", "bank", "drill", "mark", "frame"]);
+  if (known.has(bootHash)) {
     showPanel(bootHash === "frame" ? "structure" : bootHash);
   }
   document.addEventListener("click", (e) => {
