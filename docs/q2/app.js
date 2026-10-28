@@ -70,6 +70,7 @@
   }
 
   function showPanel(name) {
+    if (name === "frame") name = "structure"; // legacy #frame / data-goto
     document.querySelectorAll("#subnav button").forEach((b) => {
       b.classList.toggle("active", b.dataset.panel === name);
     });
@@ -81,6 +82,10 @@
   document.querySelectorAll("#subnav button").forEach((btn) => {
     btn.addEventListener("click", () => showPanel(btn.dataset.panel));
   });
+  const bootHash = (location.hash || "").replace(/^#/, "");
+  if (bootHash === "frame" || bootHash === "structure" || bootHash === "tips") {
+    showPanel(bootHash === "frame" ? "structure" : bootHash);
+  }
   document.addEventListener("click", (e) => {
     const a = e.target.closest("[data-goto]");
     if (!a) return;
@@ -628,7 +633,7 @@
   async function loadQ2Phrases() {
     const grid = $("#q2PhraseGrid");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261028b", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261028d", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
       renderPaperFilters();

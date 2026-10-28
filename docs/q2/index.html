@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="JRE 中文 Q2 — 議題思維、題庫、計時練習與自評" />
   <title>中文 Q2 · JRE Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261028b" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261028b" />
+  <link rel="stylesheet" href="styles.css?v=20261028d" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261028d" />
 </head>
 <body>
   <header class="app-header">
@@ -22,7 +22,8 @@
       </div>
     </div>
     <nav class="subnav" id="subnav" aria-label="Q2 sections">
-      <button type="button" data-panel="frame" class="active">框架</button>
+      <button type="button" data-panel="structure" class="active">結構</button>
+      <button type="button" data-panel="tips">貼士</button>
       <button type="button" data-panel="phrases">句式庫</button>
       <button type="button" data-panel="bank">題庫</button>
       <button type="button" data-panel="drill">計時練習</button>
@@ -31,7 +32,7 @@
   </header>
 
   <main>
-    <section class="panel active" id="panel-frame">
+        <section class="panel active" id="panel-structure">
       <div class="card">
         <h2>答題框架 · Q2 中文</h2>
         <p class="lede">考<strong>議題思維＋書面表達</strong>（物料 sparse）。要：清晰立場、具體理據、可執行建議。考期 <strong>2026-12-05</strong>。跟官方大牌檔 shape；EO Classroom／坊間 tip 已收編——<strong>唔跟</strong>硬性字數、舊考期、另套四段式。</p>
@@ -73,7 +74,6 @@
         <p class="muted frame-flow">開首立場 → 2 理據（HK）→ 反駁 → 建議 → 短結</p>
       </div>
 
-
       <div class="card" id="sample-housing">
         <h2>範例大綱 · 房屋供應 <span class="chip">綜合框架</span></h2>
         <p class="lede">同一五步骨架；換例子同措施即可套去長者照顧、勞工、北部都會區等題。</p>
@@ -89,6 +89,19 @@
         </ol>
       </div>
 
+      <div class="card" id="stance-pick">
+        <h2>4 · 如何揀立場</h2>
+        <p class="lede"><strong>無標準立場</strong>——要有理據、風險回應、可執行建議。</p>
+        <ol class="frame-steps">
+          <li><strong>先拆題</strong>：政策目標？利／險？反方攻邊？要配套／替代？</li>
+          <li><strong>三種都得</strong>：贊成／反對／有條件贊成——一句釘死。有條件＝肯定目標＋承認風險＋試點／監管</li>
+          <li><strong>反對要有貢獻</strong>：問題＋更有效／更具成本效益嘅替代</li>
+          <li><strong>用政策目標揀</strong>，唔用喜好；少寫「一定／必定」→「若配合…有望…」</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-tips">
       <div class="card" id="scratch">
         <h2>3 · 開卷 scratch（keywords only）</h2>
         <p class="lede">事實 dump 同結構分開；正文先揀用。對齊政策卡「開考 dump」。</p>
@@ -100,17 +113,6 @@
           <li><strong>建議 2–3</strong>（要有 delivery）＋短結關鍵詞</li>
         </ol>
         <p class="muted">Checkpoint（非官方）：10′ 大綱齊 → 55′ 開始短結 → 65′ 檢查開首立場。總目標 ~70–80′。</p>
-      </div>
-
-      <div class="card" id="stance-pick">
-        <h2>4 · 如何揀立場</h2>
-        <p class="lede"><strong>無標準立場</strong>——要有理據、風險回應、可執行建議。</p>
-        <ol class="frame-steps">
-          <li><strong>先拆題</strong>：政策目標？利／險？反方攻邊？要配套／替代？</li>
-          <li><strong>三種都得</strong>：贊成／反對／有條件贊成——一句釘死。有條件＝肯定目標＋承認風險＋試點／監管</li>
-          <li><strong>反對要有貢獻</strong>：問題＋更有效／更具成本效益嘅替代</li>
-          <li><strong>用政策目標揀</strong>，唔用喜好；少寫「一定／必定」→「若配合…有望…」</li>
-        </ol>
       </div>
 
       <div class="card" id="tone">
@@ -223,7 +225,7 @@
       </div>
     </section>
 
-    <section class="panel" id="panel-phrases">
+<section class="panel" id="panel-phrases">
       <div class="card must-use" id="must-phrases-tab">
         <h2>必用 9 句 <span class="chip">文筆一般都夠</span></h2>
         <p class="lede">考試靠骨架，唔靠文采。每段套入本地例子／一個數。</p>
@@ -334,7 +336,7 @@
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261028b"></script>
-  <script src="../shell/tabbar.js?v=20261028b"></script>
+  <script src="app.js?v=20261028d"></script>
+  <script src="../shell/tabbar.js?v=20261028d"></script>
 </body>
 </html>
