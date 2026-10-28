@@ -149,6 +149,33 @@
       "zh": "仍有剩餘風險，應持續監察。",
       "note": "",
       "example": ""
+    },
+    {
+      "id": "pos-03",
+      "category": "position",
+      "paper": "q2",
+      "en": "I support the policy aim, but oppose a one-size-fits-all approach; better to… first.",
+      "zh": "本人贊成……的政策目標，惟反對一刀切……，宜先……。",
+      "note": "有條件贊成／釘目標唔釘手段",
+      "example": "本人贊成加強平台送貨員保障的政策目標，惟反對一刀切強制全員僱員化，宜先立法設行業最低保障。"
+    },
+    {
+      "id": "reb-02",
+      "category": "rebuttal",
+      "paper": "q2",
+      "en": "It is true that…; however, that alone does not justify rejecting… / so it remains preferable to…",
+      "zh": "誠然……；惟此不足以否定……，故仍宜……。",
+      "note": "先讓一步再收窄",
+      "example": "誠然全面僱員化可提高保障；惟此不足以否定分階段立法的必要性，故仍宜先設專屬保障底線。"
+    },
+    {
+      "id": "rec-03",
+      "category": "recommend",
+      "paper": "q2",
+      "en": "If the proposal is not adopted, an alternative that still advances the aim is…",
+      "zh": "若不採納原建議，仍宜以……作為替代，繼續推進……目標。",
+      "note": "反對時要有貢獻（大牌檔跟進）",
+      "example": "若不採納全面僱員化，仍宜以行業專屬保險及惡劣天氣停工標準作為替代，繼續推進保障目標。"
     }
   ]
 }
