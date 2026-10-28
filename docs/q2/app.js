@@ -628,7 +628,7 @@
   async function loadQ2Phrases() {
     const grid = $("#q2PhraseGrid");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261028a", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261028b", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
       renderPaperFilters();

@@ -37,8 +37,8 @@
       "id": "pos-01",
       "category": "position",
       "paper": "q2",
-      "en": "I support… subject to…",
-      "zh": "本人贊成……，惟以……為前提。",
+      "en": "I support / oppose… subject to…",
+      "zh": "本人贊成／反對……，惟以……為前提。",
       "note": "開首釘立場",
       "example": "本人贊成擴大公屋供應，惟以加快熟地供應為前提。"
     },
@@ -176,6 +176,42 @@
       "zh": "若不採納原建議，仍宜以……作為替代，繼續推進……目標。",
       "note": "反對時要有貢獻（大牌檔跟進）",
       "example": "若不採納全面僱員化，仍宜以行業專屬保險及惡劣天氣停工標準作為替代，繼續推進保障目標。"
+    },
+    {
+      "id": "bal-04",
+      "category": "balance",
+      "paper": "common",
+      "en": "After weighing the pros and cons…",
+      "zh": "權衡利弊後……",
+      "note": "中英通用",
+      "example": ""
+    },
+    {
+      "id": "bal-05",
+      "category": "balance",
+      "paper": "common",
+      "en": "Must be accompanied by… / contingent on…",
+      "zh": "須配合……",
+      "note": "條件／配套",
+      "example": ""
+    },
+    {
+      "id": "rec-04",
+      "category": "recommend",
+      "paper": "common",
+      "en": "It is recommended that a pilot be launched…",
+      "zh": "建議先推行試點……",
+      "note": "中英通用",
+      "example": ""
+    },
+    {
+      "id": "rec-05",
+      "category": "recommend",
+      "paper": "common",
+      "en": "KPIs should be set to measure effectiveness.",
+      "zh": "應設定指標以量度成效。",
+      "note": "中英通用",
+      "example": ""
     }
   ]
 }
