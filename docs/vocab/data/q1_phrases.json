@@ -675,6 +675,33 @@
       "zh": "相對再提高資助上限，收緊里程碑式共同投資更能降低「軟錢」風險。",
       "note": "option weigh",
       "example": "Compared with expanding headline grant ceilings, tightening milestone-based co-investment better reduces soft-money risk while keeping early adoption incentives."
+    },
+    {
+      "id": "rec-12",
+      "category": "recommend",
+      "paper": "q1",
+      "en": "Institutionalise a standing peak-response SOP with clear triggers and on-site discretion, rather than festival-by-festival mobilisation alone.",
+      "zh": "把高峰應變標準作業制度化，訂明觸發條件與現場酌情權，而非只靠每次節日臨時動員。",
+      "note": "口岸韌性／應變",
+      "example": "Institutionalise a standing peak-response SOP with clear triggers and on-site discretion, rather than festival-by-festival mobilisation alone."
+    },
+    {
+      "id": "mon-10",
+      "category": "monitor",
+      "paper": "q1",
+      "en": "Publish smoothness KPIs — including wait-time percentiles and diversion on-time rates — within 72 hours after each major peak window.",
+      "zh": "每次重大高峰後七十二小時內公布暢順績效指標，包括輪候時間百分位及疏導準點率。",
+      "note": "KPI／問責",
+      "example": "Publish smoothness KPIs — including wait-time percentiles and diversion on-time rates — within 72 hours after each major peak window."
+    },
+    {
+      "id": "spc-13",
+      "category": "specificity",
+      "paper": "q1",
+      "en": "Security Bureau and Transport and Logistics Bureau should keep a short command chain, with named on-site leads authorised to divert within fifteen minutes of a P50 breach.",
+      "zh": "保安局與運輸及物流局應維持精簡指揮鏈，由具名現場主管在第五十百分位輪候失守後十五分鐘內獲授權疏導。",
+      "note": "who/when／現場授權",
+      "example": "Security Bureau and Transport and Logistics Bureau should keep a short command chain, with named on-site leads authorised to divert within fifteen minutes of a P50 breach."
     }
   ]
 }

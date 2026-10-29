@@ -10714,5 +10714,410 @@
     ],
     "example": "Operational resilience at boundary control points needs clear surge KPIs.",
     "topic": "governance"
+  },
+  {
+    "term": "cross-boundary",
+    "zh": "跨境",
+    "pos": "adj.|phr.",
+    "related": [
+      "boundary control point",
+      "Northern Metropolis"
+    ],
+    "note": "跨境出行／通勤常用；亦作 cross-boundary travel",
+    "synonyms": [
+      "cross-border",
+      "transboundary"
+    ],
+    "antonyms": [
+      "domestic-only",
+      "intra-city"
+    ],
+    "examples": [
+      {
+        "en": "Cross-boundary commuting has become more everyday for Northern Metropolis residents.",
+        "zh": "對北部都會區居民而言，跨境通勤已更趨日常。"
+      },
+      {
+        "en": "The bureau tracks cross-boundary passenger flows at major land ports.",
+        "zh": "政策局追蹤主要陸路口岸的跨境旅客流量。"
+      },
+      {
+        "en": "Policy must reflect rising cross-boundary trip frequency, not only festival peaks.",
+        "zh": "政策須反映跨境行程頻密上升，而非只應對節日高峰。"
+      }
+    ],
+    "example": "Cross-boundary commuting has become more everyday for Northern Metropolis residents.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "boundary control point",
+    "zh": "邊境管制站；口岸管制站",
+    "pos": "n.|phr.",
+    "related": [
+      "immigration clearance",
+      "passenger throughput"
+    ],
+    "note": "陸路口岸常用 BCP；與 checkpoint 近義但公文偏 BCP",
+    "synonyms": [
+      "border control point",
+      "land port",
+      "checkpoint"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Northgate is the city’s busiest land boundary control point.",
+        "zh": "北門是本市最繁忙的陸路邊境管制站。"
+      },
+      {
+        "en": "Peak plans must cover every major boundary control point, not one hall alone.",
+        "zh": "高峰計劃須覆蓋各主要邊境管制站，而非單一候廳。"
+      },
+      {
+        "en": "Staffing at the boundary control point was short of the planned surge roster.",
+        "zh": "邊境管制站人手低於預定的峰值更表。"
+      }
+    ],
+    "example": "Northgate is the city’s busiest land boundary control point.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "passenger throughput",
+    "zh": "旅客吞吐量；旅客流量",
+    "pos": "n.|phr.",
+    "related": [
+      "boundary control point",
+      "peak-hour surge"
+    ],
+    "note": "口岸／機場績效常用；配 daily / peak-window",
+    "synonyms": [
+      "passenger volume",
+      "traveller flow",
+      "footfall"
+    ],
+    "antonyms": [
+      "idle capacity",
+      "low patronage"
+    ],
+    "examples": [
+      {
+        "en": "Daily passenger throughput on ordinary weekdays is about 118,000.",
+        "zh": "平日每日旅客吞吐量約為十一萬八千人次。"
+      },
+      {
+        "en": "Festival passenger throughput nearly doubled versus an ordinary weekend.",
+        "zh": "節日旅客吞吐量較一般週末近乎倍增。"
+      },
+      {
+        "en": "Freight lanes are stable; passenger throughput is the binding constraint.",
+        "zh": "貨運通道穩定；旅客吞吐量才是瓶頸。"
+      }
+    ],
+    "example": "Daily passenger throughput on ordinary weekdays is about 118,000.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "immigration clearance",
+    "zh": "出入境清關；入境檢查放行",
+    "pos": "n.|phr.",
+    "related": [
+      "boundary control point",
+      "wait-time percentile"
+    ],
+    "note": "偏旅客查驗；與 customs clearance（貨物／關稅）分開",
+    "synonyms": [
+      "border clearance",
+      "immigration check",
+      "passenger clearance"
+    ],
+    "antonyms": [
+      "uncleared entry",
+      "refusal of landing"
+    ],
+    "examples": [
+      {
+        "en": "Immigration clearance P90 waits exceeded two hours on the peak night.",
+        "zh": "高峰當晚出入境清關第九十百分位輪候逾兩小時。"
+      },
+      {
+        "en": "Extra booths shortened immigration clearance without relaxing checks.",
+        "zh": "增設櫃位縮短出入境清關，惟未放寬查驗。"
+      },
+      {
+        "en": "Smooth immigration clearance depends on roster buffers and diversion timing.",
+        "zh": "暢順的出入境清關有賴更表緩衝及疏導時機。"
+      }
+    ],
+    "example": "Immigration clearance P90 waits exceeded two hours on the peak night.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "co-location arrangement",
+    "zh": "一地兩檢安排",
+    "pos": "n.|phr.",
+    "related": [
+      "immigration clearance",
+      "cross-boundary"
+    ],
+    "note": "跨境基建公文常用；指雙方查驗程序協同配置",
+    "synonyms": [
+      "co-location clearance",
+      "joint clearance arrangement"
+    ],
+    "antonyms": [
+      "separate clearance",
+      "dual full checks only"
+    ],
+    "examples": [
+      {
+        "en": "The co-location arrangement reduces duplicate checks for eligible travellers.",
+        "zh": "一地兩檢安排為合資格旅客減少重複查驗。"
+      },
+      {
+        "en": "Even with a co-location arrangement, hall layout can still bottleneck outbound peaks.",
+        "zh": "即使有一地兩檢，候廳布局仍可在出境高峰形成樽頸。"
+      },
+      {
+        "en": "Expanding the co-location arrangement requires bilateral operational agreement.",
+        "zh": "擴大一地兩檢安排須雙方營運協議。"
+      }
+    ],
+    "example": "The co-location arrangement reduces duplicate checks for eligible travellers.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "peak-hour surge",
+    "zh": "高峰時段湧現；峰值客流急升",
+    "pos": "n.|phr.",
+    "related": [
+      "passenger throughput",
+      "crowd management"
+    ],
+    "note": "與已有 surge capacity 互補；偏客流現象而非承載力",
+    "synonyms": [
+      "peak surge",
+      "rush-hour spike",
+      "festival peak"
+    ],
+    "antonyms": [
+      "off-peak flow",
+      "steady demand"
+    ],
+    "examples": [
+      {
+        "en": "A peak-hour surge at the land port stretched overtime beyond the roster plan.",
+        "zh": "陸路口岸高峰時段湧現令加班遠超更表計劃。"
+      },
+      {
+        "en": "Forecasting tools should flag a peak-hour surge 48 hours ahead.",
+        "zh": "預測工具應提前四十八小時標示高峰時段湧現。"
+      },
+      {
+        "en": "Crowd diversion must start before the peak-hour surge spills outside the hall.",
+        "zh": "人潮疏導須在高峰湧現溢出候廳前開始。"
+      }
+    ],
+    "example": "A peak-hour surge at the land port stretched overtime beyond the roster plan.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "crowd management",
+    "zh": "人群管理；人潮管制",
+    "pos": "n.|phr.",
+    "related": [
+      "crowd diversion",
+      "peak-hour surge"
+    ],
+    "note": "治安／口岸／大型活動通用",
+    "synonyms": [
+      "crowd control",
+      "people-flow management",
+      "queue management"
+    ],
+    "antonyms": [
+      "unmanaged crowding",
+      "free flow without controls"
+    ],
+    "examples": [
+      {
+        "en": "Crowd management at the boundary control point needs police and transport partners together.",
+        "zh": "邊境管制站的人群管理需要警方與運輸伙伴共同參與。"
+      },
+      {
+        "en": "Effective crowd management starts with early messaging, not cordons alone.",
+        "zh": "有效人群管理始於及早通報，而非單靠封鎖線。"
+      },
+      {
+        "en": "The drill tested crowd management under a simulated festival peak.",
+        "zh": "演習在模擬節日高峰下測試人群管理。"
+      }
+    ],
+    "example": "Crowd management at the boundary control point needs police and transport partners together.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "inter-departmental coordination",
+    "zh": "跨部門協調",
+    "pos": "n.|phr.",
+    "related": [
+      "coordination",
+      "contingency planning"
+    ],
+    "note": "與已有 coordination 互補；強調跨部門機制",
+    "synonyms": [
+      "cross-bureau coordination",
+      "joined-up working",
+      "multi-agency coordination"
+    ],
+    "antonyms": [
+      "siloed response",
+      "single-department action"
+    ],
+    "examples": [
+      {
+        "en": "Inter-departmental coordination was convened at Chief Secretary level for the peak window.",
+        "zh": "高峰時段由政務司長層級召集跨部門協調。"
+      },
+      {
+        "en": "Standing SOPs make inter-departmental coordination repeatable, not one-off.",
+        "zh": "常設標準作業令跨部門協調可重複使用，而非一次性。"
+      },
+      {
+        "en": "Weak inter-departmental coordination delays diversion after queues form.",
+        "zh": "跨部門協調不足會令疏導在人龍形成後才延誤展開。"
+      }
+    ],
+    "example": "Inter-departmental coordination was convened at Chief Secretary level for the peak window.",
+    "topic": "governance"
+  },
+  {
+    "term": "wait-time percentile",
+    "zh": "輪候時間百分位",
+    "pos": "n.|phr.",
+    "related": [
+      "immigration clearance",
+      "passenger throughput"
+    ],
+    "note": "暢順 KPI 常用 P50／P90；避免只報平均",
+    "synonyms": [
+      "queue-time percentile",
+      "waiting-time distribution"
+    ],
+    "antonyms": [
+      "average wait only",
+      "unmeasured queue"
+    ],
+    "examples": [
+      {
+        "en": "Publish wait-time percentiles (P50 and P90) after each major peak window.",
+        "zh": "每次重大高峰後公布輪候時間百分位（第五十及第九十）。"
+      },
+      {
+        "en": "P90 wait-time percentiles better capture traveller pain than the mean alone.",
+        "zh": "第九十百分位輪候較單看平均值更能反映旅客痛點。"
+      },
+      {
+        "en": "Smoothness KPIs should include wait-time percentiles and diversion on-time rates.",
+        "zh": "暢順績效指標應包括輪候時間百分位及疏導準點率。"
+      }
+    ],
+    "example": "Publish wait-time percentiles (P50 and P90) after each major peak window.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "crowd diversion",
+    "zh": "人潮疏導；分流",
+    "pos": "n.|phr.",
+    "related": [
+      "crowd management",
+      "peak-hour surge"
+    ],
+    "note": "口岸外交通／候車疏導常用",
+    "synonyms": [
+      "people-flow diversion",
+      "passenger diversion",
+      "rerouting"
+    ],
+    "antonyms": [
+      "undiverted queue",
+      "single-path funnel"
+    ],
+    "examples": [
+      {
+        "en": "Crowd diversion to relief coaches must start before halls overflow.",
+        "zh": "疏導至紓緩巴士須在候廳滿溢前開始。"
+      },
+      {
+        "en": "Late crowd diversion cut on-time performance to 74% over the peak window.",
+        "zh": "延誤的人潮疏導令高峰期間準點表現跌至百分之七十四。"
+      },
+      {
+        "en": "Pre-booked crowd diversion capacity is cheaper than emergency overtime alone.",
+        "zh": "預留人潮疏導運力較單靠緊急加班更具成本效益。"
+      }
+    ],
+    "example": "Crowd diversion to relief coaches must start before halls overflow.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "Northern Metropolis",
+    "zh": "北部都會區",
+    "pos": "n.|prop.",
+    "related": [
+      "one-hour living circle",
+      "cross-boundary"
+    ],
+    "note": "規劃專名；Q1／Q2 北都＋跨境主題常用",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Northern Metropolis new towns increase everyday cross-boundary trip demand.",
+        "zh": "北部都會區新市鎮推高日常跨境出行需求。"
+      },
+      {
+        "en": "Peak-response planning should align with Northern Metropolis population growth.",
+        "zh": "高峰應變規劃應對接北部都會區人口增長。"
+      },
+      {
+        "en": "Transport models link Northern Metropolis housing intake to land-port throughput.",
+        "zh": "運輸模型把北部都會區入伙與陸路口岸吞吐量掛鈎。"
+      }
+    ],
+    "example": "Northern Metropolis new towns increase everyday cross-boundary trip demand.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "one-hour living circle",
+    "zh": "一小時生活圈",
+    "pos": "n.|phr.",
+    "related": [
+      "Northern Metropolis",
+      "cross-boundary"
+    ],
+    "note": "大灣區／跨境規劃用語；指短途跨境生活半徑",
+    "synonyms": [
+      "one-hour catchment",
+      "short-haul living radius"
+    ],
+    "antonyms": [
+      "long-haul only travel"
+    ],
+    "examples": [
+      {
+        "en": "The one-hour living circle makes festival-style peaks more frequent on ordinary Fridays.",
+        "zh": "一小時生活圈令節日式高峰在普通周五亦更頻密。"
+      },
+      {
+        "en": "Policy should treat the one-hour living circle as structural demand, not a temporary fad.",
+        "zh": "政策應視一小時生活圈為結構性需求，而非短暫潮流。"
+      },
+      {
+        "en": "Rail timetables were adjusted for the one-hour living circle across the boundary.",
+        "zh": "鐵路班次已就跨境一小時生活圈作出調整。"
+      }
+    ],
+    "example": "The one-hour living circle makes festival-style peaks more frequent on ordinary Fridays.",
+    "topic": "transport-infra"
   }
 ]
