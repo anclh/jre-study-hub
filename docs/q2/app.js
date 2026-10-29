@@ -347,7 +347,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261029b", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -634,7 +634,7 @@
   async function loadQ2Phrases() {
     const grid = $("#q2PhraseGrid");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261028d", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261029b", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
       renderPaperFilters();
