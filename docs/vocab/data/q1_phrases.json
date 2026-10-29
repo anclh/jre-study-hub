@@ -639,6 +639,42 @@
       "zh": "應於12至18個月後進行檢討。",
       "note": "Close／監察",
       "example": "A review should be conducted after 12–18 months against the waiting-time and uptake KPIs."
+    },
+    {
+      "id": "ass-11",
+      "category": "assessment",
+      "paper": "q1",
+      "en": "High grant uptake alone does not demonstrate productivity or commercialisation gains.",
+      "zh": "單靠高資助吸納並不代表生產力或商業化有實質提升。",
+      "note": "Avoid「有政策、缺落地」",
+      "example": "High grant uptake alone does not demonstrate productivity or commercialisation gains without scene validation."
+    },
+    {
+      "id": "rec-11",
+      "category": "recommend",
+      "paper": "q1",
+      "en": "Next disbursement should be tied to verified scene-validation and talent-retention milestones.",
+      "zh": "下一期撥款應掛鈎已核實的場景驗證及人才留任里程碑。",
+      "note": "落地考核",
+      "example": "Next disbursement should be tied to verified scene-validation and talent-retention milestones over 12–24 months."
+    },
+    {
+      "id": "spc-12",
+      "category": "specificity",
+      "paper": "q1",
+      "en": "Innovation and Technology Bureau should publish uptake and retention KPIs by firm size within six months.",
+      "zh": "創新科技局應於六個月內按企業規模公布吸納及留任 KPI。",
+      "note": "who/when",
+      "example": "Innovation and Technology Bureau should publish uptake and retention KPIs by firm size within six months, with district breakdowns."
+    },
+    {
+      "id": "cmp-05",
+      "category": "comparison",
+      "paper": "q1",
+      "en": "Compared with expanding headline grant ceilings, tightening milestone-based co-investment better reduces soft-money risk.",
+      "zh": "相對再提高資助上限，收緊里程碑式共同投資更能降低「軟錢」風險。",
+      "note": "option weigh",
+      "example": "Compared with expanding headline grant ceilings, tightening milestone-based co-investment better reduces soft-money risk while keeping early adoption incentives."
     }
   ]
 }

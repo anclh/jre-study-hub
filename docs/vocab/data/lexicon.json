@@ -10351,5 +10351,368 @@
     ],
     "example": "Under-provision of community care prolongs residential waiting lists.",
     "topic": "welfare-population"
+  },
+  {
+    "term": "early adoption",
+    "zh": "早期採用",
+    "pos": "n.",
+    "related": [],
+    "note": "創科資助常見",
+    "synonyms": [
+      "early uptake",
+      "first-mover use",
+      "pilot uptake"
+    ],
+    "antonyms": [
+      "laggard adoption",
+      "late uptake",
+      "non-adoption"
+    ],
+    "examples": [
+      {
+        "en": "Early adoption of smart manufacturing remains uneven among SMEs despite available grants.",
+        "zh": "儘管有資助，中小企對智能製造的早期採用仍不均衡。"
+      },
+      {
+        "en": "The Bureau should track early adoption rates against disbursement timelines.",
+        "zh": "局方應對照撥款時間表追蹤早期採用率。"
+      },
+      {
+        "en": "Without scene validation, early adoption may stall after the pilot year.",
+        "zh": "若缺乏場景驗證，早期採用或在試點年後停滯。"
+      }
+    ],
+    "example": "Early adoption of smart manufacturing remains uneven among SMEs despite available grants.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "industrialisation",
+    "zh": "工業化／產業化",
+    "pos": "n.",
+    "related": [],
+    "note": "新型工業化語境",
+    "synonyms": [
+      "industrial upgrading",
+      "manufacturing scale-up",
+      "industry formation"
+    ],
+    "antonyms": [
+      "deindustrialisation",
+      "pilot-only stage",
+      "fragmented trials"
+    ],
+    "examples": [
+      {
+        "en": "Industrialisation of applied research still hinges on factory-floor validation.",
+        "zh": "應用研究的產業化仍取決於廠房場景驗證。"
+      },
+      {
+        "en": "The plan aims to shorten the path from lab prototype to industrialisation.",
+        "zh": "計劃旨在縮短由實驗室原型至產業化的路徑。"
+      },
+      {
+        "en": "Without co-investment, industrialisation may remain grant-dependent.",
+        "zh": "若缺乏共同投資，產業化或仍依賴資助。"
+      }
+    ],
+    "example": "Industrialisation of applied research still hinges on factory-floor validation.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "grant uptake",
+    "zh": "資助吸納／申請使用率",
+    "pos": "n.",
+    "related": [],
+    "note": "量度政策落地",
+    "synonyms": [
+      "scheme utilisation",
+      "disbursement take-up",
+      "application uptake"
+    ],
+    "antonyms": [
+      "undersubscription",
+      "idle funding",
+      "low take-up"
+    ],
+    "examples": [
+      {
+        "en": "Grant uptake fell short of projections despite simplified application forms.",
+        "zh": "儘管表格已簡化，資助吸納仍低於預期。"
+      },
+      {
+        "en": "Officials should publish grant uptake by firm size and sector.",
+        "zh": "當局應按企業規模及行業公布資助吸納。"
+      },
+      {
+        "en": "High grant uptake alone does not prove productivity gains.",
+        "zh": "高資助吸納本身並不證明生產力提升。"
+      }
+    ],
+    "example": "Grant uptake fell short of projections despite simplified application forms.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "scene validation",
+    "zh": "場景驗證",
+    "pos": "n.",
+    "related": [],
+    "note": "落地考核關鍵",
+    "synonyms": [
+      "use-case validation",
+      "field verification",
+      "real-setting testing"
+    ],
+    "antonyms": [
+      "desk assessment",
+      "lab-only trial",
+      "paper compliance"
+    ],
+    "examples": [
+      {
+        "en": "Scene validation in live factories should precede the next funding tranche.",
+        "zh": "下一期撥款前應先完成真實廠房場景驗證。"
+      },
+      {
+        "en": "The KPI set prioritises scene validation over brochure claims.",
+        "zh": "KPI 以場景驗證優先於宣傳聲稱。"
+      },
+      {
+        "en": "Without scene validation, early adoption risks becoming a one-off demo.",
+        "zh": "缺乏場景驗證，早期採用或淪為一次性示範。"
+      }
+    ],
+    "example": "Scene validation in live factories should precede the next funding tranche.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "talent retention",
+    "zh": "人才留任／留港",
+    "pos": "n.",
+    "related": [],
+    "note": "創科人才考核",
+    "synonyms": [
+      "staff retention",
+      "talent stickiness",
+      "workforce retention"
+    ],
+    "antonyms": [
+      "talent outflow",
+      "brain drain",
+      "high churn"
+    ],
+    "examples": [
+      {
+        "en": "Talent retention after subsidy expiry remains a weak spot in the ecosystem.",
+        "zh": "資助期滿後的人才留任仍是生態系弱點。"
+      },
+      {
+        "en": "Track talent retention for 24 months, not just recruitment numbers.",
+        "zh": "應追蹤 24 個月人才留任，而非只看招聘人數。"
+      },
+      {
+        "en": "Housing and career pathways affect talent retention as much as salary.",
+        "zh": "住屋及晉升路徑對人才留任的影響不亞於薪酬。"
+      }
+    ],
+    "example": "Talent retention after subsidy expiry remains a weak spot in the ecosystem.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "co-investment",
+    "zh": "共同投資／配套出資",
+    "pos": "n.",
+    "related": [],
+    "note": "資助槓桿",
+    "synonyms": [
+      "matching investment",
+      "joint funding",
+      "private co-funding"
+    ],
+    "antonyms": [
+      "full public subsidy",
+      "sole grant reliance",
+      "unmatched funding"
+    ],
+    "examples": [
+      {
+        "en": "Co-investment from industry signals confidence beyond the public grant.",
+        "zh": "業界共同投資顯示對公帑資助以外的信心。"
+      },
+      {
+        "en": "The scheme now requires co-investment above a fixed threshold.",
+        "zh": "計劃現要求共同投資高於固定門檻。"
+      },
+      {
+        "en": "Without co-investment, firms may treat grants as soft money.",
+        "zh": "若無共同投資，企業或視資助為軟錢。"
+      }
+    ],
+    "example": "Co-investment from industry signals confidence beyond the public grant.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "pilot plant",
+    "zh": "中試廠／試點產線",
+    "pos": "n.",
+    "related": [],
+    "note": "產業化中段",
+    "synonyms": [
+      "demonstration line",
+      "trial production line",
+      "scale-up facility"
+    ],
+    "antonyms": [
+      "full commercial plant",
+      "lab bench only",
+      "paper prototype"
+    ],
+    "examples": [
+      {
+        "en": "A shared pilot plant can cut capital barriers for SME early adopters.",
+        "zh": "共用中試廠可降低中小企早期採用者的資本門檻。"
+      },
+      {
+        "en": "Throughput data from the pilot plant should inform the next funding round.",
+        "zh": "中試廠產能數據應為下一輪資助提供依據。"
+      },
+      {
+        "en": "Moving from prototype to pilot plant remains the hardest step.",
+        "zh": "由原型走到中試廠仍是最艱難一步。"
+      }
+    ],
+    "example": "A shared pilot plant can cut capital barriers for SME early adopters.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "advanced manufacturing",
+    "zh": "先進製造",
+    "pos": "n.",
+    "related": [],
+    "note": "新型工業化核心",
+    "synonyms": [
+      "smart manufacturing",
+      "high-value manufacturing",
+      "Industry 4.0 production"
+    ],
+    "antonyms": [
+      "traditional low-tech assembly",
+      "manual batch work",
+      "outdated plant"
+    ],
+    "examples": [
+      {
+        "en": "Advanced manufacturing needs reliable data infrastructure, not only machines.",
+        "zh": "先進製造需要可靠數據基建，而非單靠機器。"
+      },
+      {
+        "en": "The city seeks clusters in advanced manufacturing near logistics hubs.",
+        "zh": "本市擬在物流樞紐附近形成先進製造集群。"
+      },
+      {
+        "en": "Skills shortages constrain advanced manufacturing expansion.",
+        "zh": "技能短缺制約先進製造擴張。"
+      }
+    ],
+    "example": "Advanced manufacturing needs reliable data infrastructure, not only machines.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "technology transfer",
+    "zh": "技術轉移",
+    "pos": "n.",
+    "related": [],
+    "note": "產學研",
+    "synonyms": [
+      "tech diffusion",
+      "knowledge transfer",
+      "IP commercialisation path"
+    ],
+    "antonyms": [
+      "tech lock-in",
+      "siloed IP",
+      "non-transferable know-how"
+    ],
+    "examples": [
+      {
+        "en": "Technology transfer offices should report licensing outcomes, not only filings.",
+        "zh": "技術轉移辦公室應匯報授權成果，而非只計申請數。"
+      },
+      {
+        "en": "Slow technology transfer keeps lab gains off the factory floor.",
+        "zh": "技術轉移緩慢令實驗室成果難落地廠房。"
+      },
+      {
+        "en": "Clear IP rules speed technology transfer to SMEs.",
+        "zh": "清晰知識產權規則加快向中小企技術轉移。"
+      }
+    ],
+    "example": "Technology transfer offices should report licensing outcomes, not only filings.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "commercialisation",
+    "zh": "商品化／商業化",
+    "pos": "n.",
+    "related": [],
+    "note": "研發落地",
+    "synonyms": [
+      "marketisation",
+      "go-to-market",
+      "productisation"
+    ],
+    "antonyms": [
+      "pre-commercial stage",
+      "lab lock-in",
+      "non-marketable research"
+    ],
+    "examples": [
+      {
+        "en": "Commercialisation timelines should be published alongside grant awards.",
+        "zh": "商業化時間表應連同資助結果一併公布。"
+      },
+      {
+        "en": "Weak commercialisation keeps public R&D from lifting productivity.",
+        "zh": "商業化薄弱令公營研發難以拉動生產力。"
+      },
+      {
+        "en": "Investors look for clear commercialisation pathways before co-investment.",
+        "zh": "投資者在共同投資前會先看清商業化路徑。"
+      }
+    ],
+    "example": "Commercialisation timelines should be published alongside grant awards.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "operational resilience",
+    "zh": "營運韌性",
+    "pos": "n.",
+    "related": [],
+    "note": "口岸／跨境亦可",
+    "synonyms": [
+      "operating resilience",
+      "service continuity",
+      "surge readiness"
+    ],
+    "antonyms": [
+      "brittle operations",
+      "single-point failure",
+      "unplanned downtime"
+    ],
+    "examples": [
+      {
+        "en": "Operational resilience at boundary control points needs clear surge KPIs.",
+        "zh": "口岸營運韌性需要清晰的高峰 KPI。"
+      },
+      {
+        "en": "Factories with weak operational resilience struggle during supply shocks.",
+        "zh": "營運韌性弱的廠房在供應衝擊時更易受挫。"
+      },
+      {
+        "en": "Cross-department drills can raise operational resilience before peak periods.",
+        "zh": "跨部門演練可在高峰前提升營運韌性。"
+      }
+    ],
+    "example": "Operational resilience at boundary control points needs clear surge KPIs.",
+    "topic": "governance"
   }
 ]
