@@ -11119,5 +11119,401 @@
     ],
     "example": "The one-hour living circle makes festival-style peaks more frequent on ordinary Fridays.",
     "topic": "transport-infra"
+  },
+  {
+    "term": "land resumption",
+    "zh": "收地",
+    "pos": "n.",
+    "related": [],
+    "note": "北都／基建",
+    "synonyms": [
+      "compulsory acquisition",
+      "land take",
+      "statutory resumption"
+    ],
+    "antonyms": [
+      "voluntary sale",
+      "negotiated purchase",
+      "land retention"
+    ],
+    "examples": [
+      {
+        "en": "Land resumption for the eastern Loop link must keep pace with works tenders.",
+        "zh": "河套東面連接道路的收地須與工程招標同步。"
+      },
+      {
+        "en": "Slow land resumption delays the supply of formed sites for housing.",
+        "zh": "收地緩慢會拖慢住宅熟地供應。"
+      },
+      {
+        "en": "Publish a district-level land resumption timetable with clear milestones.",
+        "zh": "應公布附清晰里程碑的分區收地時間表。"
+      }
+    ],
+    "example": "Land resumption for the eastern Loop link must keep pace with works tenders.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "formed land",
+    "zh": "熟地",
+    "pos": "n.",
+    "related": [],
+    "note": "可供發展用地",
+    "synonyms": [
+      "ready site",
+      "serviced land",
+      "development-ready plot"
+    ],
+    "antonyms": [
+      "raw land",
+      "unformed site",
+      "brownfield without works"
+    ],
+    "examples": [
+      {
+        "en": "Formed land supply, not just rezoning numbers, determines build-out speed.",
+        "zh": "決定上樓速度的是熟地供應，而非單靠改劃數字。"
+      },
+      {
+        "en": "Resumption only creates value when sites become formed land with access and utilities.",
+        "zh": "收地要變成具通道及公用設施的熟地方有價值。"
+      },
+      {
+        "en": "Track the pipeline from gazette to formed land in months, not slogans.",
+        "zh": "應以月數追蹤由憲報至熟地的流水線，而非口號。"
+      }
+    ],
+    "example": "Formed land supply, not just rezoning numbers, determines build-out speed.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "ready site",
+    "zh": "就緒用地／熟地",
+    "pos": "n.",
+    "related": [],
+    "note": "同 formed land",
+    "synonyms": [
+      "formed land",
+      "shovel-ready site",
+      "serviced plot"
+    ],
+    "antonyms": [
+      "unready site",
+      "encumbered lot",
+      "unresumed land"
+    ],
+    "examples": [
+      {
+        "en": "Industry asks for ready sites with road access, not paper rezoning alone.",
+        "zh": "業界要的是具道路接駁的就緒用地，而非紙上改劃。"
+      },
+      {
+        "en": "A ready-site KPI should sit beside the land-resumption count.",
+        "zh": "就緒用地 KPI 應與收地宗數並列。"
+      },
+      {
+        "en": "Without ready sites, Northern Metropolis pledges risk becoming delivery gaps.",
+        "zh": "若無就緒用地，北都承諾或淪為落地缺口。"
+      }
+    ],
+    "example": "Industry asks for ready sites with road access, not paper rezoning alone.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "compensation package",
+    "zh": "補償方案",
+    "pos": "n.",
+    "related": [],
+    "note": "受影響居民／企業",
+    "synonyms": [
+      "ex-gratia package",
+      "rehousing and payment package",
+      "settlement package"
+    ],
+    "antonyms": [
+      "uncompensated clearance",
+      "token payment",
+      "no-rehousing offer"
+    ],
+    "examples": [
+      {
+        "en": "The compensation package must be clear to residents and firms before clearance starts.",
+        "zh": "清拆前補償方案須對居民及企業清晰。"
+      },
+      {
+        "en": "Measure success by take-up of the compensation package, not only gazette dates.",
+        "zh": "成效應看補償方案吸納率，而非只看憲報日期。"
+      },
+      {
+        "en": "A thin compensation package fuels objections and slips the works programme.",
+        "zh": "薄弱補償方案會引發反對並拖慢工程。"
+      }
+    ],
+    "example": "The compensation package must be clear to residents and firms before clearance starts.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "cross-departmental coordination",
+    "zh": "跨部門協調",
+    "pos": "n.",
+    "related": [],
+    "note": "基建落地",
+    "synonyms": [
+      "inter-bureau coordination",
+      "joined-up delivery",
+      "multi-agency coordination"
+    ],
+    "antonyms": [
+      "silo working",
+      "fragmented mandates",
+      "single-bureau silo"
+    ],
+    "examples": [
+      {
+        "en": "Cross-departmental coordination decides whether resumption and works stay in lockstep.",
+        "zh": "跨部門協調決定收地與工程能否同步。"
+      },
+      {
+        "en": "Name a lead bureau for cross-departmental coordination with published milestones.",
+        "zh": "應指定牽頭局負責跨部門協調並公布里程碑。"
+      },
+      {
+        "en": "Weak cross-departmental coordination turns ready-site pledges into delays.",
+        "zh": "跨部門協調薄弱會令熟地承諾變延誤。"
+      }
+    ],
+    "example": "Cross-departmental coordination decides whether resumption and works stay in lockstep.",
+    "topic": "governance"
+  },
+  {
+    "term": "resumption timetable",
+    "zh": "收地時間表",
+    "pos": "n.",
+    "related": [],
+    "note": "節奏考核",
+    "synonyms": [
+      "acquisition schedule",
+      "clearance timetable",
+      "gazettal-to-possession timeline"
+    ],
+    "antonyms": [
+      "open-ended schedule",
+      "slippage without dates",
+      "undated programme"
+    ],
+    "examples": [
+      {
+        "en": "A public resumption timetable lets residents plan and firms price risk.",
+        "zh": "公開收地時間表讓居民可規劃、企業可定價風險。"
+      },
+      {
+        "en": "Slippage on the resumption timetable should trigger a published recovery plan.",
+        "zh": "收地時間表延誤應觸發已公布的追回計劃。"
+      },
+      {
+        "en": "Tie works tenders to the resumption timetable, not the reverse.",
+        "zh": "工程招標應掛鈎收地時間表，而非倒過來。"
+      }
+    ],
+    "example": "A public resumption timetable lets residents plan and firms price risk.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "clearance programme",
+    "zh": "清拆／清場計劃",
+    "pos": "n.",
+    "related": [],
+    "note": "收地後執行",
+    "synonyms": [
+      "site clearance programme",
+      "phased clearance",
+      "vacation programme"
+    ],
+    "antonyms": [
+      "ad-hoc eviction",
+      "unplanned clearance",
+      "indefinite occupation"
+    ],
+    "examples": [
+      {
+        "en": "The clearance programme should phase households and businesses with support desks.",
+        "zh": "清拆計劃應分階段處理住戶及商戶，並設支援櫃枱。"
+      },
+      {
+        "en": "Audit the clearance programme against compensation take-up each quarter.",
+        "zh": "應每季對照補償吸納審核清拆計劃。"
+      },
+      {
+        "en": "A rushed clearance programme without rehousing slots invites judicial review risk.",
+        "zh": "倉卒且無安置名額的清拆計劃易惹司法覆核風險。"
+      }
+    ],
+    "example": "The clearance programme should phase households and businesses with support desks.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "double taxation agreement",
+    "zh": "避免雙重課稅協定",
+    "pos": "n.",
+    "related": [],
+    "note": "港老／稅務網絡",
+    "synonyms": [
+      "tax treaty",
+      "DTA",
+      "comprehensive avoidance of double taxation agreement"
+    ],
+    "antonyms": [
+      "double taxation exposure",
+      "no treaty cover",
+      "unilateral relief only"
+    ],
+    "examples": [
+      {
+        "en": "A new double taxation agreement lowers withholding risk for outbound firms.",
+        "zh": "新的避免雙重課稅協定降低走出去企業的預扣稅風險。"
+      },
+      {
+        "en": "Map which sectors gain most from each double taxation agreement.",
+        "zh": "應梳理各行業從每份避免雙重課稅協定所得實利。"
+      },
+      {
+        "en": "Treaty networks matter only if firms know how to claim double taxation agreement relief.",
+        "zh": "稅務網絡要企業懂得申索協定寬免才有用。"
+      }
+    ],
+    "example": "A new double taxation agreement lowers withholding risk for outbound firms.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "tax treaty",
+    "zh": "稅收協定／稅約",
+    "pos": "n.",
+    "related": [],
+    "note": "DTA 簡稱",
+    "synonyms": [
+      "double taxation agreement",
+      "DTA",
+      "bilateral tax pact"
+    ],
+    "antonyms": [
+      "treaty gap",
+      "no DTA cover",
+      "tax exposure abroad"
+    ],
+    "examples": [
+      {
+        "en": "Expanding the tax treaty network supports firms that invest and hire across borders.",
+        "zh": "擴張稅收協定網絡支持跨境投資及聘用的企業。"
+      },
+      {
+        "en": "Guidance notes should show SMEs how to use each tax treaty in plain steps.",
+        "zh": "指引應以淺白步驟說明中小企如何使用每份稅約。"
+      },
+      {
+        "en": "A tax treaty alone does not fix weak on-the-ground market support.",
+        "zh": "單靠稅約並不能補上落地市場支援不足。"
+      }
+    ],
+    "example": "Expanding the tax treaty network supports firms that invest and hire across borders.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "outbound expansion",
+    "zh": "走出去／對外拓展",
+    "pos": "n.",
+    "related": [],
+    "note": "港企大灣區／海外",
+    "synonyms": [
+      "going-out strategy",
+      "overseas expansion",
+      "cross-boundary growth"
+    ],
+    "antonyms": [
+      "home-market only",
+      "inward-only focus",
+      "retrenchment"
+    ],
+    "examples": [
+      {
+        "en": "Outbound expansion needs tax certainty and practical market platforms, not slogans.",
+        "zh": "走出去需要稅務確定性及實用市場平台，而非口號。"
+      },
+      {
+        "en": "Measure outbound expansion by deal completion and jobs created, not event counts.",
+        "zh": "應用成交及創造職位量度走出去，而非活動場次。"
+      },
+      {
+        "en": "SMEs often stall on outbound expansion when advisory support is fragmented.",
+        "zh": "支援零散時，中小企走出去往往停滯。"
+      }
+    ],
+    "example": "Outbound expansion needs tax certainty and practical market platforms, not slogans.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "policy-delivery gap",
+    "zh": "有政策、缺落地",
+    "pos": "n.",
+    "related": [],
+    "note": "考核常用",
+    "synonyms": [
+      "implementation gap",
+      "delivery shortfall",
+      "policy–practice disconnect"
+    ],
+    "antonyms": [
+      "joined-up delivery",
+      "on-the-ground uptake",
+      "executed policy"
+    ],
+    "examples": [
+      {
+        "en": "A policy-delivery gap appears when schemes exist but firms cannot navigate them.",
+        "zh": "有計劃但企業用不著，便出現有政策缺落地。"
+      },
+      {
+        "en": "Close the policy-delivery gap with named owners, KPIs and scene checks.",
+        "zh": "以指名負責人、KPI 及場景核查收窄有政策缺落地。"
+      },
+      {
+        "en": "GoGBA should be judged on whether it shrinks the policy-delivery gap for SMEs.",
+        "zh": "GoGBA 應以能否縮窄中小企的有政策缺落地來衡量。"
+      }
+    ],
+    "example": "A policy-delivery gap appears when schemes exist but firms cannot navigate them.",
+    "topic": "governance"
+  },
+  {
+    "term": "one-stop platform",
+    "zh": "一站式平台",
+    "pos": "n.",
+    "related": [],
+    "note": "GoGBA 類",
+    "synonyms": [
+      "single-window service",
+      "integrated portal",
+      "unified support desk"
+    ],
+    "antonyms": [
+      "fragmented counters",
+      "multi-window chase",
+      "siloed portals"
+    ],
+    "examples": [
+      {
+        "en": "A one-stop platform only works if case officers can resolve tax and licence queries.",
+        "zh": "一站式平台要個案人員能處理稅務及牌照查詢才有效。"
+      },
+      {
+        "en": "Track how many firms finish a full outbound path through the one-stop platform.",
+        "zh": "應追蹤有多少企業經一站式平台走完整條走出去路徑。"
+      },
+      {
+        "en": "Without follow-through, a one-stop platform becomes another brochure site.",
+        "zh": "若無跟進，一站式平台只會變成另一個宣傳網站。"
+      }
+    ],
+    "example": "A one-stop platform only works if case officers can resolve tax and licence queries.",
+    "topic": "governance"
   }
 ]

@@ -702,6 +702,42 @@
       "zh": "保安局與運輸及物流局應維持精簡指揮鏈，由具名現場主管在第五十百分位輪候失守後十五分鐘內獲授權疏導。",
       "note": "who/when／現場授權",
       "example": "Security Bureau and Transport and Logistics Bureau should keep a short command chain, with named on-site leads authorised to divert within fifteen minutes of a P50 breach."
+    },
+    {
+      "id": "ass-12",
+      "category": "assessment",
+      "paper": "q1",
+      "en": "Resumption counts alone do not show whether formed land is reaching the market on time.",
+      "zh": "單看收地宗數並不能顯示熟地是否按時入市。",
+      "note": "北都／河套",
+      "example": "Resumption counts alone do not show whether formed land is reaching the market on time for housing and industry."
+    },
+    {
+      "id": "rec-13",
+      "category": "recommend",
+      "paper": "q1",
+      "en": "Publish a joint resumption-to-formed-land timetable with a named lead bureau and quarterly recovery triggers.",
+      "zh": "公布由收地至熟地的聯合時間表，指定牽頭局，並設每季追回觸發。",
+      "note": "跨部門",
+      "example": "Publish a joint resumption-to-formed-land timetable with a named lead bureau and quarterly recovery triggers for slippage."
+    },
+    {
+      "id": "spc-14",
+      "category": "specificity",
+      "paper": "q1",
+      "en": "Development Bureau should report compensation take-up and ready-site KPIs by district within six months.",
+      "zh": "發展局應於六個月內按區匯報補償吸納及就緒用地 KPI。",
+      "note": "who/when",
+      "example": "Development Bureau should report compensation take-up and ready-site KPIs by district within six months, alongside works tender status."
+    },
+    {
+      "id": "cmp-06",
+      "category": "comparison",
+      "paper": "q1",
+      "en": "Compared with expanding headline rezoning targets, locking resumption to ready-site milestones better closes the delivery gap.",
+      "zh": "相對再提高改劃目標，把收地掛鈎就緒用地里程碑更能收窄落地缺口。",
+      "note": "option weigh",
+      "example": "Compared with expanding headline rezoning targets, locking resumption to ready-site milestones better closes the delivery gap for Northern Metropolis links."
     }
   ]
 }
