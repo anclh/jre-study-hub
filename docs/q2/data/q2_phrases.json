@@ -212,6 +212,33 @@
       "zh": "應設定指標以量度成效。",
       "note": "中英通用",
       "example": ""
+    },
+    {
+      "id": "arg-04",
+      "category": "arguments",
+      "paper": "q2",
+      "en": "Second, … can make up for the shortfall in…, with … as verifiable evidence.",
+      "zh": "其次，……可補足……的不足，並以……作為可核實依據。",
+      "note": "第二理據＋可核實依據",
+      "example": "其次，公開輪候時間分位可補足「暢順」口號的不足，並以高峰後72小時簡報作為可核實依據。"
+    },
+    {
+      "id": "reb-03",
+      "category": "rebuttal",
+      "paper": "q2",
+      "en": "Critics may say … raises cost/admin burden; yet leaving … unaddressed costs more in the long run, so … remains preferable.",
+      "zh": "反對者或指……會增加成本／行政負擔；惟若不處理……，長遠代價更高，故仍宜……。",
+      "note": "成本反論→長遠代價→仍宜",
+      "example": "反對者或指口岸高峰KPI會增加行政負擔；惟若不處理輪候失控，長遠代價更高，故仍宜訂立可量度暢順指標。"
+    },
+    {
+      "id": "clo-03",
+      "category": "close",
+      "paper": "q2",
+      "en": "In sum, I maintain the stance of…; in delivery, prioritise… and keep reviewing effectiveness.",
+      "zh": "綜上，本人維持……立場；落實時以……為優先，並持續檢討成效。",
+      "note": "短結重申立場＋優先措施（五步收束）",
+      "example": "綜上，本人維持高峰應變制度化的立場；落實時以清晰主責與暢順KPI為優先，並持續檢討成效。"
     }
   ]
 }
