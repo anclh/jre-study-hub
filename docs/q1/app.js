@@ -357,7 +357,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261102j", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261102k", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {
@@ -507,14 +507,49 @@
     if (!list || !card) return;
     const src = card.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261102j", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261102k", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
       if (!items.length) return;
-      list.innerHTML = items
-        .map((it) => "<li>" + String(it.zh || "").trim() + " / " + String(it.en || "").trim() + "</li>")
-        .join("");
+      const stageMeta = Array.isArray(data.stages) ? data.stages : [];
+      const stageLabel = {};
+      stageMeta.forEach((s) => {
+        if (!s || !s.id) return;
+        stageLabel[s.id] = String(s.en || s.zh || s.id).trim();
+      });
+      const stageOrder = stageMeta.map((s) => s && s.id).filter(Boolean);
+      const known = new Set(stageOrder);
+      items.forEach((it) => {
+        const st = String((it && it.stage) || "").trim();
+        if (st && !known.has(st)) {
+          stageOrder.push(st);
+          known.add(st);
+          stageLabel[st] = st;
+        }
+      });
+      const byStage = {};
+      items.forEach((it) => {
+        const st = String((it && it.stage) || "other").trim() || "other";
+        if (!byStage[st]) byStage[st] = [];
+        byStage[st].push(it);
+      });
+      if (!stageOrder.includes("other") && byStage.other) stageOrder.push("other");
+      const ledeEl = card.querySelector(".lede");
+      if (ledeEl && data.lede && data.lede.zh) ledeEl.textContent = String(data.lede.zh).trim();
+      const parts = [];
+      stageOrder.forEach((st) => {
+        const group = byStage[st];
+        if (!group || !group.length) return;
+        const label = stageLabel[st] || st;
+        parts.push('<li class="sf-stage">' + label + "</li>");
+        group.forEach((it) => {
+          parts.push(
+            "<li>" + String(it.zh || "").trim() + " / " + String(it.en || "").trim() + "</li>"
+          );
+        });
+      });
+      list.innerHTML = parts.join("");
     } catch (err) {
       console.warn("shared-frames load failed; keeping static fallback", err);
     }

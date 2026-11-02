@@ -359,3 +359,16 @@ body:has(#panel-case.active) #panel-case > .card:nth-child(2) p { font-size: 12p
   white-space: normal;
 }
 .must-list .zh { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+
+#shared-frames-list li.sf-stage {
+  list-style: none;
+  margin: 14px 0 4px;
+  padding-left: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+#shared-frames-list li.sf-stage:first-child {
+  margin-top: 2px;
+}
