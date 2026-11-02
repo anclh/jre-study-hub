@@ -378,7 +378,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261102k", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261102l", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -686,7 +686,7 @@
   async function loadQ2Phrases() {
     const grid = $("#q2PhraseGrid");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261102k", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261102l", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
       renderPaperFilters();
@@ -700,7 +700,7 @@
     }
   }
 
-  // Q2 essay order only. Stage ids are shared-frames.json keys; labels are not Q1 headings.
+  // Q2 essay order only. Group by q1_stage (fallback: stage). Labels are not Q1 headings.
   const Q2_SHARED_STAGE_ORDER = [
     { stage: "opening", label: "立場" },
     { stage: "problem", label: "理據／例子" },
@@ -715,7 +715,7 @@
     if (!list || !card) return;
     const src = card.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261102k", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261102l", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
@@ -725,7 +725,7 @@
       if (titleEl && titleZh) titleEl.textContent = "4. " + titleZh;
       const byStage = {};
       items.forEach((it) => {
-        const st = String((it && it.stage) || "").trim() || "other";
+        const st = String((it && (it.q1_stage || it.stage)) || "").trim() || "other";
         if (!byStage[st]) byStage[st] = [];
         byStage[st].push(it);
       });
