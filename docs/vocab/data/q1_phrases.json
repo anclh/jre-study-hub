@@ -774,6 +774,33 @@
       "zh": "在十二至十八個月內，公布分區都市固體廢物回收率、源頭分類覆蓋、廠房使用率及公營機構碳排放核算完成度等KPI。",
       "note": "when + KPIs",
       "example": "Within 12–18 months, publish district KPIs for MSW recovery, source-separation coverage, plant utilisation, and public-body carbon-accounting completion."
+    },
+    {
+      "id": "rec-15",
+      "category": "recommend",
+      "paper": "q1",
+      "en": "It is recommended that Innovation and Technology Commission anchor GBA research collaboration in shared facilities and IP protocols, with further funding gated on joint pilots rather than MOUs alone.",
+      "zh": "建議創新科技署以共用設施及知識產權協議锚定大灣區科研合作，並以聯合試點而非單憑備忘錄作為續撥條件。",
+      "note": "I&T · who + condition",
+      "example": "It is recommended that Innovation and Technology Commission anchor GBA research collaboration in shared facilities and IP protocols, with further funding gated on joint pilots rather than MOUs alone."
+    },
+    {
+      "id": "ass-14",
+      "category": "assessment",
+      "paper": "q1",
+      "en": "Headline R&D expenditure growth, set against thin industry-academia-research collaboration and slow commercialisation, points to a translation bottleneck rather than a pure funding shortage.",
+      "zh": "研發開支表面上升，但產學研合作薄弱、商業化緩慢，顯示樽頸在成果轉化，而非純粹資金短缺。",
+      "note": "I&T · diagnose",
+      "example": "Headline R&D expenditure growth, set against thin industry-academia-research collaboration and slow commercialisation, points to a translation bottleneck rather than a pure funding shortage."
+    },
+    {
+      "id": "spc-16",
+      "category": "specificity",
+      "paper": "q1",
+      "en": "Within 12 months, Health Bureau and Hospital Authority should publish specialty-level specialist outpatient waiting-time targets, with primary-care diversion KPIs for stable chronic cases.",
+      "zh": "在十二個月內，醫務衛生局及醫管局應公布各專科門診輪候時間目標，並為穩定慢性個案訂立基層醫療分流 KPI。",
+      "note": "who/when · primary care",
+      "example": "Within 12 months, Health Bureau and Hospital Authority should publish specialty-level specialist outpatient waiting-time targets, with primary-care diversion KPIs for stable chronic cases."
     }
   ]
 }

@@ -11959,5 +11959,437 @@
     ],
     "example": "A thin green jobs pathway can absorb mentees into recovery operations.",
     "topic": "education-manpower"
+  },
+  {
+    "term": "basic research",
+    "zh": "基礎研究",
+    "pos": "n. phr.",
+    "related": [
+      "fundamental research",
+      "applied research"
+    ],
+    "note": "創科／科研資助常用對照",
+    "synonyms": [
+      "fundamental research",
+      "curiosity-driven research",
+      "upstream science"
+    ],
+    "antonyms": [
+      "applied research",
+      "near-market R&D",
+      "product development"
+    ],
+    "examples": [
+      {
+        "en": "Stable funding for basic research underpins longer-term breakthroughs.",
+        "zh": "穩定的基礎研究資助是長遠突破的根基。"
+      },
+      {
+        "en": "Universities should ring-fence basic research capacity alongside commercialisation targets.",
+        "zh": "大學在訂商業化目標時，亦應預留基礎研究能量。"
+      },
+      {
+        "en": "Weak basic research pipelines eventually starve applied projects of ideas.",
+        "zh": "基礎研究管道薄弱，最終會令應用項目缺少構想來源。"
+      }
+    ],
+    "example": "Stable funding for basic research underpins longer-term breakthroughs.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "applied research",
+    "zh": "應用研究",
+    "pos": "n. phr.",
+    "related": [
+      "basic research",
+      "translational research"
+    ],
+    "note": "對接產業落地",
+    "synonyms": [
+      "translational research",
+      "use-inspired research",
+      "application-oriented R&D"
+    ],
+    "antonyms": [
+      "pure basic research",
+      "curiosity-only science",
+      "non-applied inquiry"
+    ],
+    "examples": [
+      {
+        "en": "Applied research grants should require clear industry partners and milestones.",
+        "zh": "應用研究資助應要求清晰產業夥伴及里程碑。"
+      },
+      {
+        "en": "The gap is less headline patents than applied research that reaches the factory floor.",
+        "zh": "缺口不在專利數字，而在能落地廠房的應用研究。"
+      },
+      {
+        "en": "Northern Metropolis clusters need applied research tied to local industry demand.",
+        "zh": "北部都會區群組需要對接本地產業需求的應用研究。"
+      }
+    ],
+    "example": "Applied research grants should require clear industry partners and milestones.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "research collaboration",
+    "zh": "科研合作",
+    "pos": "n. phr.",
+    "related": [
+      "joint research",
+      "GBA cooperation"
+    ],
+    "note": "粵港澳／院校合作常用",
+    "synonyms": [
+      "joint research",
+      "collaborative R&D",
+      "cross-border research partnership"
+    ],
+    "antonyms": [
+      "siloed research",
+      "closed lab culture",
+      "non-cooperative R&D"
+    ],
+    "examples": [
+      {
+        "en": "GBA research collaboration should report joint publications and shared facilities, not MOUs alone.",
+        "zh": "大灣區科研合作應匯報聯合論文及共用設施，而非只計備忘錄。"
+      },
+      {
+        "en": "Cross-boundary research collaboration needs aligned IP and data rules.",
+        "zh": "跨境科研合作需要對齊知識產權及數據規則。"
+      },
+      {
+        "en": "Stable research collaboration with Mainland institutes can deepen basic science capacity.",
+        "zh": "與內地科研院所的穩定合作可加深基礎科學能量。"
+      }
+    ],
+    "example": "GBA research collaboration should report joint publications and shared facilities, not MOUs alone.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "I&T talent",
+    "zh": "創科人才",
+    "pos": "n. phr.",
+    "related": [
+      "talent retention",
+      "talent admission"
+    ],
+    "note": "公務員／施政報告用語；Innovation and Technology",
+    "synonyms": [
+      "innovation talent",
+      "tech talent pool",
+      "STEM workforce"
+    ],
+    "antonyms": [
+      "talent shortage",
+      "skills gap",
+      "brain drain"
+    ],
+    "examples": [
+      {
+        "en": "I&T talent pipelines must cover researchers, engineers and operators, not founders alone.",
+        "zh": "創科人才管道須涵蓋研究員、工程師及營運人員，而非只計創辦人。"
+      },
+      {
+        "en": "Housing and schooling support affect I&T talent decisions as much as salary.",
+        "zh": "住屋及子女就學支援對創科人才去留的影響不亞於薪酬。"
+      },
+      {
+        "en": "Publish I&T talent retention rates 24 months after admission schemes.",
+        "zh": "應公布人才入境計劃後 24 個月的創科人才留任率。"
+      }
+    ],
+    "example": "I&T talent pipelines must cover researchers, engineers and operators, not founders alone.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "GBA innovation corridor",
+    "zh": "大灣區創新走廊",
+    "pos": "n. phr.",
+    "related": [
+      "Greater Bay Area",
+      "Northern Metropolis"
+    ],
+    "note": "空間／產業佈局用語",
+    "synonyms": [
+      "innovation belt",
+      "I&T corridor",
+      "cross-boundary innovation axis"
+    ],
+    "antonyms": [
+      "fragmented innovation islands",
+      "siloed science parks",
+      "disconnected clusters"
+    ],
+    "examples": [
+      {
+        "en": "The GBA innovation corridor needs shared labs and talent mobility, not only branding.",
+        "zh": "大灣區創新走廊需要共用實驗室及人才流動，而非只靠品牌包裝。"
+      },
+      {
+        "en": "Northern Metropolis sites should plug into the GBA innovation corridor with clear industry anchors.",
+        "zh": "北部都會區用地應以清晰產業錨點接入大灣區創新走廊。"
+      },
+      {
+        "en": "Measure the GBA innovation corridor by joint ventures and licensed tech, not ribbon-cuttings.",
+        "zh": "應用合資及技術授權衡量大灣區創新走廊，而非剪綵活動。"
+      }
+    ],
+    "example": "The GBA innovation corridor needs shared labs and talent mobility, not only branding.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "industry-academia-research collaboration",
+    "zh": "產學研合作",
+    "pos": "n. phr.",
+    "related": [
+      "technology transfer",
+      "research collaboration"
+    ],
+    "note": "產學研三位一體；公文常用",
+    "synonyms": [
+      "university-industry collaboration",
+      "triple-helix partnership",
+      "lab-to-market partnership"
+    ],
+    "antonyms": [
+      "siloed academia",
+      "industry-academia disconnect",
+      "closed campus research"
+    ],
+    "examples": [
+      {
+        "en": "Industry-academia-research collaboration should be scored on licensing and pilots, not MOU counts.",
+        "zh": "產學研合作應以授權及試點評核，而非備忘錄數量。"
+      },
+      {
+        "en": "Clear IP sharing rules accelerate industry-academia-research collaboration with SMEs.",
+        "zh": "清晰的知識產權分享規則可加快與中小企的產學研合作。"
+      },
+      {
+        "en": "Public labs can host industry-academia-research collaboration for deep-tech prototypes.",
+        "zh": "公營實驗室可承載深科技原型的產學研合作。"
+      }
+    ],
+    "example": "Industry-academia-research collaboration should be scored on licensing and pilots, not MOU counts.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "deep-tech start-ups",
+    "zh": "深科技初創",
+    "pos": "n. phr.",
+    "related": [
+      "commercialisation",
+      "pilot plant"
+    ],
+    "note": "長週期、高研發強度初創",
+    "synonyms": [
+      "deep technology ventures",
+      "science-based start-ups",
+      "hard-tech firms"
+    ],
+    "antonyms": [
+      "asset-light apps",
+      "pure software copycats",
+      "low-R&D microbusinesses"
+    ],
+    "examples": [
+      {
+        "en": "Deep-tech start-ups need longer runways and shared pilot plants than consumer apps.",
+        "zh": "深科技初創需要比消費應用更長跑道及共用中試設施。"
+      },
+      {
+        "en": "Public co-investment should favour deep-tech start-ups with verified scene validation.",
+        "zh": "公營共同投資應優先具場景驗證的深科技初創。"
+      },
+      {
+        "en": "Talent visas alone will not retain deep-tech start-ups without lab space and buyers.",
+        "zh": "若缺實驗室及客戶，單靠人才簽證亦難留住深科技初創。"
+      }
+    ],
+    "example": "Deep-tech start-ups need longer runways and shared pilot plants than consumer apps.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "R&D expenditure",
+    "zh": "研發開支",
+    "pos": "n. phr.",
+    "related": [
+      "basic research",
+      "applied research"
+    ],
+    "note": "財政／統計指標；British R&D",
+    "synonyms": [
+      "research spending",
+      "R&D outlay",
+      "innovation spend"
+    ],
+    "antonyms": [
+      "R&D under-investment",
+      "zero research budget",
+      "consumption-only spend"
+    ],
+    "examples": [
+      {
+        "en": "Raising R&D expenditure as a share of GDP matters only if outcomes are tracked.",
+        "zh": "提高研發開支佔 GDP 比重，必須同時追蹤成果才有意義。"
+      },
+      {
+        "en": "Private R&D expenditure remains thin outside a handful of large firms.",
+        "zh": "除少數大企外，私營研發開支仍然偏薄。"
+      },
+      {
+        "en": "Ring-fence a share of R&D expenditure for basic research in public universities.",
+        "zh": "應在公帑大學研發開支中預留基礎研究份額。"
+      }
+    ],
+    "example": "Raising R&D expenditure as a share of GDP matters only if outcomes are tracked.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "scientific research institute",
+    "zh": "科研院所",
+    "pos": "n. phr.",
+    "related": [
+      "research collaboration",
+      "technology transfer"
+    ],
+    "note": "公營／半公營研究機構",
+    "synonyms": [
+      "research institute",
+      "public research body",
+      "national laboratory"
+    ],
+    "antonyms": [
+      "teaching-only college",
+      "non-research agency",
+      "pure regulator"
+    ],
+    "examples": [
+      {
+        "en": "Partnerships with Mainland scientific research institutes can deepen basic science capacity.",
+        "zh": "與內地科研院所合作可加深基礎科學能量。"
+      },
+      {
+        "en": "Each scientific research institute should publish technology-transfer and talent KPIs yearly.",
+        "zh": "每所科研院所應每年公布技術轉移及人才 KPI。"
+      },
+      {
+        "en": "Locating a scientific research institute in the Northern Metropolis needs clear industry anchors.",
+        "zh": "在北部都會區設立科研院所需要清晰產業錨點。"
+      }
+    ],
+    "example": "Partnerships with Mainland scientific research institutes can deepen basic science capacity.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "primary care",
+    "zh": "基層醫療",
+    "pos": "n. phr.",
+    "related": [
+      "family medicine",
+      "district health centre"
+    ],
+    "note": "分流專科壓力的上游",
+    "synonyms": [
+      "family medicine",
+      "community-based care",
+      "first-contact care"
+    ],
+    "antonyms": [
+      "hospital-centric care",
+      "specialist-first access",
+      "acute-only model"
+    ],
+    "examples": [
+      {
+        "en": "Stronger primary care can divert stable cases from specialist outpatient queues.",
+        "zh": "強化基層醫療可把穩定個案從專科門診隊列分流。"
+      },
+      {
+        "en": "Primary care capacity should be measured by chronic-disease control, not attendance alone.",
+        "zh": "基層醫療能量應以慢性病控制衡量，而非只計求診人次。"
+      },
+      {
+        "en": "District Health Centres are a vehicle for primary care, not a substitute for specialist backlog clearance.",
+        "zh": "地區康健中心是基層醫療載體，不能替代清理專科積壓。"
+      }
+    ],
+    "example": "Stronger primary care can divert stable cases from specialist outpatient queues.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "specialist outpatient",
+    "zh": "專科門診",
+    "pos": "n. phr.",
+    "related": [
+      "outpatient",
+      "waiting time"
+    ],
+    "note": "HA 服務／輪候焦點；別於一般門診",
+    "synonyms": [
+      "SOPD",
+      "specialty clinic",
+      "specialist clinic"
+    ],
+    "antonyms": [
+      "primary care clinic",
+      "general outpatient",
+      "walk-in GP"
+    ],
+    "examples": [
+      {
+        "en": "Specialist outpatient median waits remain the public’s most visible healthcare KPI.",
+        "zh": "專科門診輪候中位數仍是最受關注的醫療 KPI。"
+      },
+      {
+        "en": "New doctor posts alone will not clear specialist outpatient backlogs without triage redesign.",
+        "zh": "若無分流重整，單靠增設醫生職位亦難清理專科門診積壓。"
+      },
+      {
+        "en": "Publish specialty-level specialist outpatient targets with quarterly variance reports.",
+        "zh": "應公布各專科門診目標，並按季匯報偏差。"
+      }
+    ],
+    "example": "Specialist outpatient median waits remain the public’s most visible healthcare KPI.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "waiting-time target",
+    "zh": "輪候時間目標",
+    "pos": "n. phr.",
+    "related": [
+      "waiting time",
+      "median waiting time"
+    ],
+    "note": "服務承諾／KPI 用語",
+    "synonyms": [
+      "wait-time pledge",
+      "service pledge on waits",
+      "queue-time target"
+    ],
+    "antonyms": [
+      "open-ended wait",
+      "unmeasured backlog",
+      "no service pledge"
+    ],
+    "examples": [
+      {
+        "en": "A waiting-time target without triage rules risks gaming and cherry-picking.",
+        "zh": "沒有分流規則的輪候時間目標，容易出現數據操控及揀案。"
+      },
+      {
+        "en": "Tie additional funding to meeting the waiting-time target for priority specialties.",
+        "zh": "把額外撥款掛鈎優先專科能否達到輪候時間目標。"
+      },
+      {
+        "en": "Publish the waiting-time target and the share of patients still beyond it.",
+        "zh": "應同時公布輪候時間目標及仍超標的病人比例。"
+      }
+    ],
+    "example": "A waiting-time target without triage rules risks gaming and cherry-picking.",
+    "topic": "welfare-population"
   }
 ]
