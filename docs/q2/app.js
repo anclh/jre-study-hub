@@ -82,11 +82,35 @@
   document.querySelectorAll("#subnav button").forEach((btn) => {
     btn.addEventListener("click", () => showPanel(btn.dataset.panel));
   });
-  const bootHash = (location.hash || "").replace(/^#/, "");
-  const known = new Set(["structure", "tips", "phrases", "bank", "drill", "mark", "frame"]);
-  if (known.has(bootHash)) {
-    showPanel(bootHash === "frame" ? "structure" : bootHash);
+  function hashPanel(h) {
+    if (h === "frame" || h === "shared-frames" || h === "shared" || h === "sharedframes") return "structure";
+    return h;
   }
+
+  function applyHash() {
+    const h = (location.hash || "").replace(/^#/, "");
+    const known = new Set([
+      "structure",
+      "tips",
+      "phrases",
+      "bank",
+      "drill",
+      "mark",
+      "frame",
+      "shared-frames",
+      "shared",
+      "sharedframes",
+    ]);
+    if (!known.has(h)) return;
+    showPanel(hashPanel(h));
+    const targetId = h === "shared" || h === "sharedframes" ? "shared-frames" : h;
+    if (targetId !== "shared-frames") return;
+    const target = document.getElementById(targetId);
+    if (target) requestAnimationFrame(() => target.scrollIntoView({ behavior: "smooth", block: "start" }));
+  }
+
+  applyHash();
+  window.addEventListener("hashchange", applyHash);
   document.addEventListener("click", (e) => {
     const a = e.target.closest("[data-goto]");
     if (!a) return;
@@ -347,7 +371,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261102b", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261102j", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -634,7 +658,7 @@
   async function loadQ2Phrases() {
     const grid = $("#q2PhraseGrid");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261102b", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261102j", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
       renderPaperFilters();
@@ -648,6 +672,32 @@
     }
   }
 
+  async function loadSharedFrames() {
+    const list = document.getElementById("shared-frames-list");
+    const card = document.getElementById("shared-frames");
+    if (!list || !card) return;
+    const src = card.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
+    try {
+      const res = await fetch(src + "?v=20261102j", { cache: "no-store" });
+      if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
+      const data = await res.json();
+      const items = Array.isArray(data.items) ? data.items : [];
+      if (!items.length) return;
+      const titleZh = data.title && String(data.title.zh || "").trim();
+      const ledeZh = data.lede && String(data.lede.zh || "").trim();
+      const titleEl = card.querySelector("h2");
+      const ledeEl = card.querySelector(".lede");
+      if (titleEl && titleZh) titleEl.textContent = "4. " + titleZh;
+      if (ledeEl && ledeZh) ledeEl.textContent = ledeZh;
+      list.innerHTML = items
+        .map((it) => "<li>" + escapeHtml(String(it.zh || "").trim()) + " / " + escapeHtml(String(it.en || "").trim()) + "</li>")
+        .join("");
+    } catch (err) {
+      console.warn("shared-frames load failed; keeping static fallback", err);
+    }
+  }
+
   loadBriefs();
   loadQ2Phrases();
+  loadSharedFrames();
 })();
