@@ -357,7 +357,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261102k", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261102l", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {
@@ -507,12 +507,16 @@
     if (!list || !card) return;
     const src = card.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261102k", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261102l", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
       if (!items.length) return;
-      const stageMeta = Array.isArray(data.stages) ? data.stages : [];
+      const stageMeta = Array.isArray(data.q1_stages)
+        ? data.q1_stages
+        : Array.isArray(data.stages)
+          ? data.stages
+          : [];
       const stageLabel = {};
       stageMeta.forEach((s) => {
         if (!s || !s.id) return;
@@ -520,8 +524,10 @@
       });
       const stageOrder = stageMeta.map((s) => s && s.id).filter(Boolean);
       const known = new Set(stageOrder);
+      const stageOf = (it) =>
+        String((it && (it.q1_stage || it.stage)) || "").trim();
       items.forEach((it) => {
-        const st = String((it && it.stage) || "").trim();
+        const st = stageOf(it);
         if (st && !known.has(st)) {
           stageOrder.push(st);
           known.add(st);
@@ -530,7 +536,7 @@
       });
       const byStage = {};
       items.forEach((it) => {
-        const st = String((it && it.stage) || "other").trim() || "other";
+        const st = stageOf(it) || "other";
         if (!byStage[st]) byStage[st] = [];
         byStage[st].push(it);
       });

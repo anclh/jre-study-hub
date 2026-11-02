@@ -1,14 +1,14 @@
 {
-  "version": "20261102k",
+  "version": "20261102l",
   "title": {
     "zh": "Shared frames（Q1／Q2）",
     "en": "Shared frames (Q1 / Q2)"
   },
   "lede": {
-    "zh": "兩邊卷都用得着——只換例子同措施。順序跟作文框架：Opening → Problem analysis → Option comparison → Recommendation → Closing。",
-    "en": "Reusable on both papers — swap examples and measures only. Ordered by essay stages: Opening → Problem analysis → Option comparison → Recommendation → Closing."
+    "zh": "兩邊卷都用得着——只換例子同措施。Q1 顯示序：Opening → Problem analysis → Option comparison → Recommendation → Closing（見 q1_stage）。",
+    "en": "Reusable on both papers — swap examples and measures only. Q1 display order uses q1_stage: Opening → Problem analysis → Option comparison → Recommendation → Closing."
   },
-  "stages": [
+  "q1_stages": [
     {
       "id": "opening",
       "zh": "Opening",
@@ -38,91 +38,91 @@
   "items": [
     {
       "id": "sf-12",
-      "stage": "opening",
+      "q1_stage": "opening",
       "zh": "本人贊成……的政策目標，惟反對一刀切……，宜先……。",
       "en": "I support the aim of …, but oppose a one-size-fits-all approach; we should first…."
     },
     {
+      "id": "sf-01",
+      "q1_stage": "problem",
+      "zh": "有助……惟須……",
+      "en": "This helps to… but must be accompanied by…"
+    },
+    {
       "id": "sf-03",
-      "stage": "problem",
+      "q1_stage": "problem",
       "zh": "短期……惟長遠……",
       "en": "In the short term… but in the long term…"
     },
     {
+      "id": "sf-10",
+      "q1_stage": "problem",
+      "zh": "在長遠方案出台前，需有過渡措施。",
+      "en": "A stopgap measure is needed pending a longer-term solution."
+    },
+    {
       "id": "sf-02",
-      "stage": "options",
+      "q1_stage": "options",
       "zh": "權衡利弊後……",
       "en": "After weighing the pros and cons…"
     },
     {
       "id": "sf-08",
-      "stage": "options",
+      "q1_stage": "options",
       "zh": "權衡取捨後，宜採用混合方案……",
       "en": "After weighing the trade-offs, a mix of … is preferred."
     },
     {
       "id": "sf-13",
-      "stage": "options",
+      "q1_stage": "options",
       "zh": "反對者或指……會增加成本／行政負擔；惟若不處理……，長遠代價更高，故仍宜……。",
       "en": "Critics may say … raises costs/admin burden; yet leaving … unaddressed costs more in the long run, so we should still…."
     },
     {
       "id": "sf-14",
-      "stage": "options",
+      "q1_stage": "options",
       "zh": "若不採納原建議，仍宜以……作為替代，繼續推進……目標。",
       "en": "If the original proposal is not adopted, … remains a workable alternative to advance…."
     },
     {
       "id": "sf-04",
-      "stage": "recommendation",
+      "q1_stage": "recommendation",
       "zh": "建議先推行試點……",
       "en": "It is recommended that a pilot be launched…"
     },
     {
+      "id": "sf-05",
+      "q1_stage": "recommendation",
+      "zh": "視乎可用資源……",
+      "en": "Subject to available resources…"
+    },
+    {
       "id": "sf-09",
-      "stage": "recommendation",
+      "q1_stage": "recommendation",
       "zh": "應由〔政策局／部門〕主導，並由……支援。",
       "en": "The [bureau/department] should lead, with support from…."
     },
     {
       "id": "sf-07",
-      "stage": "recommendation",
+      "q1_stage": "recommendation",
       "zh": "應設定指標以量度成效。",
       "en": "KPIs should be set to measure effectiveness."
     },
     {
-      "id": "sf-05",
-      "stage": "recommendation",
-      "zh": "視乎可用資源……",
-      "en": "Subject to available resources…"
-    },
-    {
-      "id": "sf-10",
-      "stage": "recommendation",
-      "zh": "在長遠方案出台前，需有過渡措施。",
-      "en": "A stopgap measure is needed pending a longer-term solution."
-    },
-    {
       "id": "sf-11",
-      "stage": "recommendation",
+      "q1_stage": "recommendation",
       "zh": "可視乎檢討結果考慮擴大推行。",
       "en": "Consideration may be given to scaling up subject to review findings."
     },
     {
-      "id": "sf-01",
-      "stage": "recommendation",
-      "zh": "有助……惟須……",
-      "en": "This helps to… but must be accompanied by…"
-    },
-    {
       "id": "sf-06",
-      "stage": "closing",
+      "q1_stage": "closing",
       "zh": "仍有剩餘風險，應持續監察。",
       "en": "Residual risks remain and should be monitored."
     },
     {
       "id": "sf-15",
-      "stage": "closing",
+      "q1_stage": "closing",
       "zh": "綜上，本人維持……立場；落實時以……為優先，並持續檢討成效。",
       "en": "In sum, I maintain …; in delivery, prioritise … and keep reviewing outcomes."
     }
