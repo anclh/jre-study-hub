@@ -26,6 +26,7 @@
     active: false,
     source: "filtered",
     shuffle: true,
+    topicFilter: "all",
     deck: [],
     queue: [],
     known: [],
@@ -520,7 +521,9 @@ function chipRow(label, items, cls) {
     wrap.querySelectorAll("button").forEach((btn) => {
       btn.addEventListener("click", () => {
         state.topicFilter = btn.dataset.topic;
+        study.topicFilter = btn.dataset.topic || "all";
         renderTopicFilters();
+        renderStudyTopicFilters();
         renderVocab();
       });
     });
@@ -764,7 +767,7 @@ function chipRow(label, items, cls) {
 
   async function loadQ1() {
     try {
-      const data = await loadJson("/api/q1-phrases", "data/q1_phrases.json?v=20261102f");
+      const data = await loadJson("/api/q1-phrases", "data/q1_phrases.json?v=20261102g");
       state.q1 = {
         disclaimer: data.disclaimer || "",
         categories: data.categories || [],
@@ -799,10 +802,25 @@ function chipRow(label, items, cls) {
     return list;
   }
 
+  /** Browse search only (no browse topic) — used when study source is `filtered`. */
+  function searchOnlyVocabList() {
+    const q = ($("#vocabSearch")?.value || "").trim().toLowerCase();
+    let list = vocabBankList();
+    if (q) list = list.filter((c) => lexiconBlob(c).includes(q));
+    return list;
+  }
+
   function savedVocabList() {
     return Object.values(state.saved)
       .filter((c) => c && c.term && !c.phraseId && (c.pos || "") !== "Q1 phrase")
       .sort((a, b) => (a.term || "").localeCompare(b.term || ""));
+  }
+
+  function applyStudyTopicFilter(list) {
+    if (study.topicFilter && study.topicFilter !== "all") {
+      return list.filter((c) => c.topic === study.topicFilter);
+    }
+    return list;
   }
 
   function getStudyDeck(source) {
@@ -816,9 +834,11 @@ function chipRow(label, items, cls) {
         break;
       case "filtered":
       default:
-        list = filteredVocabList();
+        // Topic comes from study.topicFilter chips; keep search query only.
+        list = searchOnlyVocabList();
         break;
     }
+    list = applyStudyTopicFilter(list);
     // de-dupe by term
     const seen = new Set();
     return list.filter((c) => {
@@ -827,6 +847,83 @@ function chipRow(label, items, cls) {
       seen.add(key);
       return true;
     });
+  }
+
+  function renderStudyTopicFilters() {
+    const topic = study.topicFilter || "all";
+    const html = TOPIC_ORDER.map((key) => {
+      const label = TOPIC_LABELS[key] || key;
+      const active = topic === key ? "active" : "";
+      return `<button type="button" data-topic="${key}" class="${active}">${label}</button>`;
+    }).join("");
+    ["#studyTopicFilters", "#studyOverlayTopics"].forEach((sel) => {
+      const wrap = $(sel);
+      if (!wrap) return;
+      wrap.innerHTML = html;
+      wrap.querySelectorAll("button").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const next = btn.dataset.topic || "all";
+          const fromOverlay = sel === "#studyOverlayTopics";
+          setStudyTopicFilter(next, { restart: fromOverlay && study.active, syncBrowse: true });
+        });
+      });
+    });
+  }
+
+  function setStudyTopicFilter(topic, { restart = false, syncBrowse = true } = {}) {
+    const next = topic || "all";
+    if (restart && study.active) {
+      const prev = study.topicFilter || "all";
+      study.topicFilter = next;
+      const deck = getStudyDeck(study.source || "filtered");
+      if (!deck.length) {
+        study.topicFilter = prev;
+        renderStudyTopicFilters();
+        toast("這個分類暫時沒有詞卡可學");
+        return;
+      }
+      if (syncBrowse) {
+        state.topicFilter = next;
+        renderTopicFilters();
+        renderVocab();
+      }
+      restartStudyWithTopic(deck);
+      return;
+    }
+    study.topicFilter = next;
+    if (syncBrowse) {
+      state.topicFilter = next;
+      renderTopicFilters();
+      renderVocab();
+    }
+    renderStudyTopicFilters();
+  }
+
+  function restartStudyWithTopic(prebuiltDeck) {
+    let deck = prebuiltDeck || getStudyDeck(study.source || "filtered");
+    if (!deck.length) {
+      toast("這個分類暫時沒有詞卡可學");
+      return;
+    }
+    if (study.shuffle) deck = shuffleInPlace([...deck]);
+    else deck = [...deck];
+    study.deck = deck;
+    study.queue = [...deck];
+    study.known = [];
+    study.learning = [];
+    study.everLearning = [];
+    study.total = deck.length;
+    study.flipped = false;
+    const summary = $("#studySummary");
+    if (summary) summary.hidden = true;
+    const stage = $("#studyStage");
+    if (stage) stage.hidden = false;
+    renderStudyTopicFilters();
+    renderStudyCard();
+    const label = TOPIC_LABELS[study.topicFilter] || study.topicFilter || "全部";
+    toast(`分類：${label} · ${deck.length} 張`);
   }
 
   function studyBackExtraHTML(card) {
@@ -991,7 +1088,10 @@ function chipRow(label, items, cls) {
     }
     let deck = getStudyDeck(source);
     if (!deck.length) {
-      toast("這個詞庫暫時沒有詞卡可學");
+      const label = TOPIC_LABELS[study.topicFilter] || "";
+      toast(study.topicFilter !== "all" && label
+        ? `「${label}」暫時沒有詞卡可學`
+        : "這個詞庫暫時沒有詞卡可學");
       return;
     }
     if (shuffle) deck = shuffleInPlace([...deck]);
@@ -1004,6 +1104,7 @@ function chipRow(label, items, cls) {
     study.total = deck.length;
     study.flipped = false;
     openStudyOverlay();
+    renderStudyTopicFilters();
     renderStudyCard();
   }
 
@@ -1261,6 +1362,7 @@ function chipRow(label, items, cls) {
     persistSaved();
     await loadLexicon();
     renderTopicFilters();
+    renderStudyTopicFilters();
     await loadFeed(false);
   }
 

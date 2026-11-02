@@ -8,9 +8,9 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="description" content="JRE English — HKSAR press-release vocabulary bank for exam prep" />
   <title>JRE 英文時事詞彙庫 · Vocab Bank</title>
-  <link rel="stylesheet" href="styles.css?v=20261102f" />
+  <link rel="stylesheet" href="styles.css?v=20261102g" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect rx='8' width='32' height='32' fill='%233d9cf0'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='14' font-family='sans-serif' font-weight='700' fill='%230a1220'%3EJRE%3C/text%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261102f" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261102g" />
 </head>
 <body>
   <header class="app-header">
@@ -71,7 +71,7 @@
           <label class="study-opt">
             <span>詞庫來源</span>
             <select id="studyDeckSource" aria-label="Deck source">
-              <option value="filtered">目前列表（篩選／搜尋）</option>
+              <option value="filtered">目前搜尋結果</option>
               <option value="all">全部詞庫</option>
               <option value="saved">我的生字</option>
             </select>
@@ -80,6 +80,10 @@
             <input type="checkbox" id="studyShuffle" checked />
             <span>打亂順序</span>
           </label>
+          <div class="study-topic-block">
+            <span class="study-topic-label" id="studyTopicLabel">分類</span>
+            <div class="topic-filters study-topic-filters" id="studyTopicFilters" role="group" aria-labelledby="studyTopicLabel"></div>
+          </div>
         </div>
       </div>
 
@@ -133,6 +137,10 @@
         <div class="study-known-pill" id="studyKnownPill" title="Known this round">識 0</div>
       </header>
 
+      <div class="study-overlay-topics-wrap">
+        <div class="topic-filters study-overlay-topics" id="studyOverlayTopics" role="group" aria-label="學習中分類"></div>
+      </div>
+
       <div class="study-stage" id="studyStage">
         <div class="flip-scene" id="flipScene">
           <button type="button" class="flip-card" id="flipCard" aria-label="Flip card">
@@ -170,7 +178,7 @@
   </div>
 
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261102f"></script>
-  <script src="../shell/tabbar.js?v=20261102f"></script>
+  <script src="app.js?v=20261102g"></script>
+  <script src="../shell/tabbar.js?v=20261102g"></script>
 </body>
 </html>
