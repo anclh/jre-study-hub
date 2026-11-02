@@ -357,7 +357,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261102h", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261102i", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {
@@ -500,6 +500,26 @@
     loadMarks();
   }
 
+
+  async function loadSharedFrames() {
+    const list = document.getElementById("shared-frames-list");
+    const card = document.getElementById("shared-frames");
+    if (!list || !card) return;
+    const src = card.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
+    try {
+      const res = await fetch(src + "?v=20261102i", { cache: "no-store" });
+      if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
+      const data = await res.json();
+      const items = Array.isArray(data.items) ? data.items : [];
+      if (!items.length) return;
+      list.innerHTML = items
+        .map((it) => "<li>" + String(it.zh || "").trim() + " / " + String(it.en || "").trim() + "</li>")
+        .join("");
+    } catch (err) {
+      console.warn("shared-frames load failed; keeping static fallback", err);
+    }
+  }
+
   function initNav() {
     $$("#subnav button").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -519,16 +539,58 @@
     const search = $("#q1Search");
     if (search) search.addEventListener("input", renderPhrases);
     loadPhrases();
+  loadSharedFrames();
   (function bootHash() {
     const h = (location.hash || "").replace(/^#/, "");
-    const map = { frame: "structure", structure: "structure", tips: "tips", phrases: "phrases", case: "case", mark: "mark" };
-    const name = map[h];
+    const map = {
+      frame: "structure",
+      structure: "structure",
+      "shared-frames": "structure",
+      shared: "structure",
+      sharedframes: "structure",
+      tips: "tips",
+      phrases: "phrases",
+      case: "case",
+      mark: "mark",
+    };
+    const name = map[h] || (document.getElementById(h) ? "structure" : null);
     if (!name) return;
     document.querySelectorAll("#subnav button").forEach((b) => b.classList.toggle("active", b.dataset.panel === name));
     document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
     const panel = document.querySelector("#panel-" + name);
     if (panel) panel.classList.add("active");
+    const targetId = h === "shared" || h === "sharedframes" ? "shared-frames" : h;
+    const target = document.getElementById(targetId);
+    if (target) {
+      requestAnimationFrame(() => target.scrollIntoView({ behavior: "smooth", block: "start" }));
+    }
   })();
+  window.addEventListener("hashchange", () => {
+    const h = (location.hash || "").replace(/^#/, "");
+    if (!h) return;
+    const map = {
+      frame: "structure",
+      structure: "structure",
+      "shared-frames": "structure",
+      shared: "structure",
+      sharedframes: "structure",
+      tips: "tips",
+      phrases: "phrases",
+      case: "case",
+      mark: "mark",
+    };
+    const name = map[h] || (document.getElementById(h) ? "structure" : null);
+    if (!name) return;
+    document.querySelectorAll("#subnav button").forEach((b) => b.classList.toggle("active", b.dataset.panel === name));
+    document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
+    const panel = document.querySelector("#panel-" + name);
+    if (panel) panel.classList.add("active");
+    const targetId = h === "shared" || h === "sharedframes" ? "shared-frames" : h;
+    const target = document.getElementById(targetId);
+    if (target) {
+      requestAnimationFrame(() => target.scrollIntoView({ behavior: "smooth", block: "start" }));
+    }
+  });
 
   }
 
