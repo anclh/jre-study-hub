@@ -83,7 +83,13 @@
     btn.addEventListener("click", () => showPanel(btn.dataset.panel));
   });
   function hashPanel(h) {
-    if (h === "frame" || h === "shared-frames" || h === "shared" || h === "sharedframes") return "structure";
+    if (
+      h === "frame" ||
+      h === "shared-frames" ||
+      h === "shared" ||
+      h === "sharedframes" ||
+      h === "pair-kits"
+    ) return "structure";
     return h;
   }
 
@@ -100,11 +106,12 @@
       "shared-frames",
       "shared",
       "sharedframes",
+      "pair-kits",
     ]);
     if (!known.has(h)) return;
     showPanel(hashPanel(h));
     const targetId = h === "shared" || h === "sharedframes" ? "shared-frames" : h;
-    if (targetId !== "shared-frames") return;
+    if (targetId !== "shared-frames" && targetId !== "pair-kits") return;
     const target = document.getElementById(targetId);
     if (target) requestAnimationFrame(() => target.scrollIntoView({ behavior: "smooth", block: "start" }));
   }
@@ -395,6 +402,27 @@
     const pick = drills.find((d) => d.id === saved) || drills[0];
     renderDrill(pick);
     renderBriefs();
+    renderPairKits();
+  }
+
+  function renderPairKits() {
+    const el = document.getElementById("pair-kits-list");
+    if (!el) return;
+    const kits = briefsData && Array.isArray(briefsData.pair_kits) ? briefsData.pair_kits : [];
+    if (!kits.length) {
+      el.innerHTML = `<p class="muted">未能載入萬用例子↔措施。</p>`;
+      return;
+    }
+    el.innerHTML = kits
+      .map(
+        (k) => `<article class="pair-kit">
+          <span class="chip">${escapeHtml(k.theme || "")}</span>
+          <p><strong>例</strong> ${escapeHtml(k.example || "")}</p>
+          <p><strong>措施</strong> ${escapeHtml(k.measure || "")}</p>
+          <p><strong>扣</strong> ${escapeHtml(k.tie || "")}</p>
+        </article>`
+      )
+      .join("");
   }
 
   $("#bankSearch").addEventListener("input", () => {
