@@ -764,7 +764,7 @@ function chipRow(label, items, cls) {
 
   async function loadQ1() {
     try {
-      const data = await loadJson("/api/q1-phrases", "data/q1_phrases.json?v=20261102e");
+      const data = await loadJson("/api/q1-phrases", "data/q1_phrases.json?v=20261102f");
       state.q1 = {
         disclaimer: data.disclaimer || "",
         categories: data.categories || [],
@@ -1186,6 +1186,11 @@ function chipRow(label, items, cls) {
     $("#btnStartStudy")?.addEventListener("click", () => startStudy());
     $("#btnStartStudySaved")?.addEventListener("click", () => startStudy("saved"));
     $("#btnStudyClose")?.addEventListener("click", closeStudyOverlay);
+    $("#btnStudySave")?.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleStudySave();
+    });
     $("#btnStillLearning")?.addEventListener("click", markStillLearning);
     $("#btnKnow")?.addEventListener("click", markKnow);
     $("#btnRetryLearning")?.addEventListener("click", retryLearning);
