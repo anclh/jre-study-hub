@@ -239,6 +239,33 @@
       "zh": "綜上，本人維持……立場；落實時以……為優先，並持續檢討成效。",
       "note": "短結重申立場＋優先措施（五步收束）",
       "example": "綜上，本人維持高峰應變制度化的立場；落實時以清晰主責與暢順KPI為優先，並持續檢討成效。"
+    },
+    {
+      "id": "pos-04",
+      "category": "position",
+      "paper": "q2",
+      "en": "I support the direction in principle, but implementation must be phased with clear ownership and review points.",
+      "zh": "本人原則上贊成有關方向，惟落實必須分階段進行，並訂明主責及檢討節點。",
+      "note": "原則贊成＋分階段／主責（有別於 pos-03 目標vs手段）",
+      "example": "本人原則上贊成加強口岸高峰暢順，惟落實必須分階段進行，並訂明保安局／運物局主責及高峰後72小時檢討節點。"
+    },
+    {
+      "id": "arg-05",
+      "category": "arguments",
+      "paper": "q2",
+      "en": "From the perspective of … (stakeholder / public interest), … matters because …, so …",
+      "zh": "從……（持份者／公眾利益）角度而言，……之所以重要，是因為……，故……。",
+      "note": "持份者／公眾利益理據",
+      "example": "從跨境通勤市民的公眾利益角度而言，可量度輪候時間之所以重要，是因為高峰失控會拖垮日常行程，故宜訂立暢順KPI。"
+    },
+    {
+      "id": "rec-06",
+      "category": "recommend",
+      "paper": "q2",
+      "en": "Within 12–18 months, complete a pilot in …, publish mid-term indicators, and decide whether to scale citywide.",
+      "zh": "宜於12至18個月內在……完成試點，公布中期指標，再決定是否全港推開。",
+      "note": "時限＋試點＋中期指標＋是否擴展（delivery 句）",
+      "example": "宜於12至18個月內在兩個高峰口岸完成暢順KPI試點，公布中期輪候分位，再決定是否全港推開。"
     }
   ]
 }
