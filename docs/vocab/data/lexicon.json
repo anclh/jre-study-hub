@@ -11515,5 +11515,449 @@
     ],
     "example": "A one-stop platform only works if case officers can resolve tax and licence queries.",
     "topic": "governance"
+  },
+  {
+    "term": "carbon accounting",
+    "zh": "碳排放核算；碳盤查",
+    "pos": "n. phr.",
+    "related": [
+      "carbon inventory",
+      "greenhouse gas inventory",
+      "carbon neutrality"
+    ],
+    "note": "公營／企業盤查覆蓋常用",
+    "synonyms": [
+      "GHG accounting",
+      "emissions inventory",
+      "carbon inventory"
+    ],
+    "antonyms": [
+      "untracked emissions",
+      "inventory gap",
+      "unaudited footprint"
+    ],
+    "examples": [
+      {
+        "en": "Carbon accounting across departments is still incomplete.",
+        "zh": "各部門的碳排放核算仍未齊全。"
+      },
+      {
+        "en": "Audited carbon accounting underpins the mid-term climate stocktake.",
+        "zh": "經審計的碳排放核算支撐中期氣候檢視。"
+      },
+      {
+        "en": "Without carbon accounting, recovery targets cannot be verified.",
+        "zh": "若無碳排放核算，回收目標便無法核實。"
+      }
+    ],
+    "example": "Carbon accounting across departments is still incomplete.",
+    "topic": "environment-climate"
+  },
+  {
+    "term": "MSW recovery rate",
+    "zh": "都市固體廢物回收率",
+    "pos": "n. phr.",
+    "related": [
+      "municipal solid waste",
+      "recycling",
+      "landfill diversion"
+    ],
+    "note": "氣候／減廢答卷核心數字",
+    "synonyms": [
+      "municipal waste recovery rate",
+      "solid-waste recovery ratio",
+      "MSW recycling rate"
+    ],
+    "antonyms": [
+      "landfill dependence",
+      "disposal-only rate",
+      "recovery shortfall"
+    ],
+    "examples": [
+      {
+        "en": "The MSW recovery rate rose only modestly between 2021 and 2024.",
+        "zh": "都市固體廢物回收率在二零二一至二四年僅溫和上升。"
+      },
+      {
+        "en": "Capital drawdowns should track the MSW recovery rate and plant utilisation.",
+        "zh": "資本撥款應掛鈎都市固體廢物回收率及廠房使用率。"
+      },
+      {
+        "en": "A flat MSW recovery rate signals a policy-delivery gap.",
+        "zh": "都市固體廢物回收率停滞，顯示政策落地缺口。"
+      }
+    ],
+    "example": "The MSW recovery rate rose only modestly between 2021 and 2024.",
+    "topic": "environment-climate"
+  },
+  {
+    "term": "municipal solid waste",
+    "zh": "都市固體廢物",
+    "pos": "n. phr.",
+    "related": [
+      "MSW recovery rate",
+      "landfill",
+      "source separation"
+    ],
+    "note": "常簡稱 MSW",
+    "synonyms": [
+      "MSW",
+      "urban solid waste",
+      "city solid waste"
+    ],
+    "antonyms": [
+      "inert construction waste",
+      "sorted recyclables",
+      "diverted organics"
+    ],
+    "examples": [
+      {
+        "en": "Daily municipal solid waste still averages about ten thousand tonnes.",
+        "zh": "每日都市固體廢物仍平均約一萬公噸。"
+      },
+      {
+        "en": "Food waste is a large share of municipal solid waste.",
+        "zh": "廚餘佔都市固體廢物的一大部分。"
+      },
+      {
+        "en": "Policies should cut municipal solid waste at source, not only at landfill.",
+        "zh": "政策應從源頭減少都市固體廢物，而非只在堆填區處理。"
+      }
+    ],
+    "example": "Daily municipal solid waste still averages about ten thousand tonnes.",
+    "topic": "environment-climate"
+  },
+  {
+    "term": "food-waste recovery",
+    "zh": "廚餘回收",
+    "pos": "n. phr.",
+    "related": [
+      "food waste",
+      "source separation",
+      "facility utilisation"
+    ],
+    "note": "量／率並用；與 food waste 詞條互補",
+    "synonyms": [
+      "organic-waste recovery",
+      "kitchen-waste recovery",
+      "food-waste diversion"
+    ],
+    "antonyms": [
+      "food-waste landfilling",
+      "organic leakage",
+      "uncollected kitchen waste"
+    ],
+    "examples": [
+      {
+        "en": "Food-waste recovery rose, yet several plants run below design load.",
+        "zh": "廚餘回收量上升，但若干廠房低於設計負荷運作。"
+      },
+      {
+        "en": "SME collection contracts underpin food-waste recovery.",
+        "zh": "中小企收集合約支撐廚餘回收。"
+      },
+      {
+        "en": "Report food-waste recovery in tonnes and utilisation, not only campaign counts.",
+        "zh": "應以公噸及使用率匯報廚餘回收，而非只報活動場次。"
+      }
+    ],
+    "example": "Food-waste recovery rose, yet several plants run below design load.",
+    "topic": "environment-climate"
+  },
+  {
+    "term": "source separation",
+    "zh": "源頭分類；廢物源頭分類",
+    "pos": "n. phr.",
+    "related": [
+      "recycling",
+      "food-waste recovery",
+      "estate coverage"
+    ],
+    "note": "屋苑／商戶回收前端",
+    "synonyms": [
+      "waste separation at source",
+      "on-site sorting",
+      "segregation at source"
+    ],
+    "antonyms": [
+      "mixed disposal",
+      "unsorted waste",
+      "co-mingled refuse"
+    ],
+    "examples": [
+      {
+        "en": "Source separation coverage among estates remains uneven.",
+        "zh": "各屋苑的源頭分類覆蓋仍不平均。"
+      },
+      {
+        "en": "Without source separation, new plants risk feedstock shortages.",
+        "zh": "若無源頭分類，新廠房或會面對原料不足。"
+      },
+      {
+        "en": "Manpower and storage constrain source separation in older blocks.",
+        "zh": "舊樓的人手及貯存空間限制源頭分類。"
+      }
+    ],
+    "example": "Source separation coverage among estates remains uneven.",
+    "topic": "environment-climate"
+  },
+  {
+    "term": "climate action plan",
+    "zh": "氣候行動藍圖；氣候行動計劃",
+    "pos": "n. phr.",
+    "related": [
+      "carbon neutrality",
+      "carbon accounting",
+      "MSW recovery rate"
+    ],
+    "note": "中期檢視／落地常用",
+    "synonyms": [
+      "climate blueprint",
+      "decarbonisation roadmap",
+      "climate delivery plan"
+    ],
+    "antonyms": [
+      "climate inaction",
+      "plan without delivery",
+      "brochure-only pledge"
+    ],
+    "examples": [
+      {
+        "en": "The climate action plan needs mid-term recovery milestones, not only 2050 slogans.",
+        "zh": "氣候行動藍圖需要中期回收里程碑，而非只有二零五零口號。"
+      },
+      {
+        "en": "Stocktakes should test whether the climate action plan is on path.",
+        "zh": "中期檢視應測試氣候行動藍圖是否仍在軌道。"
+      },
+      {
+        "en": "Link capital to climate action plan KPIs such as plant utilisation.",
+        "zh": "應把資本掛鈎氣候行動藍圖的KPI，例如廠房使用率。"
+      }
+    ],
+    "example": "The climate action plan needs mid-term recovery milestones, not only 2050 slogans.",
+    "topic": "environment-climate"
+  },
+  {
+    "term": "facility utilisation",
+    "zh": "設施使用率；廠房使用率",
+    "pos": "n. phr.",
+    "related": [
+      "food-waste recovery",
+      "MSW recovery rate",
+      "design load"
+    ],
+    "note": "答卷反駁「先起廠」常用",
+    "synonyms": [
+      "plant utilisation",
+      "capacity utilisation",
+      "design-load take-up"
+    ],
+    "antonyms": [
+      "idle capacity",
+      "stranded plant",
+      "under-used facility"
+    ],
+    "examples": [
+      {
+        "en": "Facility utilisation averages only about sixty percent of design load.",
+        "zh": "設施使用率平均僅約設計負荷的六成。"
+      },
+      {
+        "en": "Further capital should wait on higher facility utilisation.",
+        "zh": "進一步資本應待設施使用率提高後再撥。"
+      },
+      {
+        "en": "Low facility utilisation weakens the case for immediate expansion.",
+        "zh": "低設施使用率削弱即時擴建的理據。"
+      }
+    ],
+    "example": "Facility utilisation averages only about sixty percent of design load.",
+    "topic": "environment-climate"
+  },
+  {
+    "term": "mentorship pairing",
+    "zh": "師友配對；友師配對",
+    "pos": "n. phr.",
+    "related": [
+      "personal development plan",
+      "disadvantaged households",
+      "capacity building"
+    ],
+    "note": "青年／共創類計劃語域",
+    "synonyms": [
+      "mentor matching",
+      "mentor–mentee pairing",
+      "guided mentorship match"
+    ],
+    "antonyms": [
+      "unmatched mentees",
+      "ad hoc volunteering",
+      "one-off talk only"
+    ],
+    "examples": [
+      {
+        "en": "Mentorship pairing works only if mentors stay for a full school year.",
+        "zh": "師友配對要導師留守整個學年才有效。"
+      },
+      {
+        "en": "Cross-bureau mentorship pairing can open green-jobs pathways.",
+        "zh": "跨局師友配對可打開綠色就業路徑。"
+      },
+      {
+        "en": "Track completion rates after mentorship pairing, not only sign-ups.",
+        "zh": "應追蹤師友配對後的完成率，而非只報報名人數。"
+      }
+    ],
+    "example": "Mentorship pairing works only if mentors stay for a full school year.",
+    "topic": "education-manpower"
+  },
+  {
+    "term": "personal development plan",
+    "zh": "個人發展計劃",
+    "pos": "n. phr.",
+    "related": [
+      "mentorship pairing",
+      "capacity building",
+      "internship"
+    ],
+    "note": "師友計劃配套文件",
+    "synonyms": [
+      "individual development plan",
+      "mentee development plan",
+      "personal learning plan"
+    ],
+    "antonyms": [
+      "no follow-up plan",
+      "one-off activity list",
+      "generic worksheet"
+    ],
+    "examples": [
+      {
+        "en": "Each mentee should leave with a personal development plan and review dates.",
+        "zh": "每位學員應帶着個人發展計劃及檢討日期離開。"
+      },
+      {
+        "en": "A personal development plan links school goals to short placements.",
+        "zh": "個人發展計劃把學業目標連結短期實習。"
+      },
+      {
+        "en": "Without a personal development plan, mentorship stays symbolic.",
+        "zh": "若無個人發展計劃，師友計劃只會流於象徵。"
+      }
+    ],
+    "example": "Each mentee should leave with a personal development plan and review dates.",
+    "topic": "education-manpower"
+  },
+  {
+    "term": "disadvantaged households",
+    "zh": "弱勢家庭；貧困家庭",
+    "pos": "n. phr.",
+    "related": [
+      "subdivided flats",
+      "bursary",
+      "mentorship pairing"
+    ],
+    "note": "政策語域；避免口語標籤",
+    "synonyms": [
+      "underprivileged households",
+      "low-income families",
+      "households in need"
+    ],
+    "antonyms": [
+      "affluent households",
+      "well-resourced families",
+      "high-income households"
+    ],
+    "examples": [
+      {
+        "en": "The scheme targets Form 1–4 students from disadvantaged households.",
+        "zh": "計劃對象為弱勢家庭的中一至中四學生。"
+      },
+      {
+        "en": "Financial support should reach disadvantaged households without heavy paperwork.",
+        "zh": "財政支援應到達弱勢家庭，而不增加沉重文書。"
+      },
+      {
+        "en": "Outreach in disadvantaged households needs school and NGO partners.",
+        "zh": "接觸弱勢家庭需要學校及非政府機構伙伴。"
+      }
+    ],
+    "example": "The scheme targets Form 1–4 students from disadvantaged households.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "subdivided flats",
+    "zh": "劏房；分間樓宇單位",
+    "pos": "n. phr.",
+    "related": [
+      "disadvantaged households",
+      "housing-land",
+      "tenancy control"
+    ],
+    "note": "政策／房屋語域；答卷用中性表述",
+    "synonyms": [
+      "subdivided units",
+      "partitioned flats",
+      "sub-divided dwellings"
+    ],
+    "antonyms": [
+      "self-contained flat",
+      "adequate housing",
+      "standard domestic unit"
+    ],
+    "examples": [
+      {
+        "en": "Students living in subdivided flats often lack quiet study space.",
+        "zh": "住在劏房的學生往往缺乏安靜溫習空間。"
+      },
+      {
+        "en": "Estate source separation is harder in buildings with many subdivided flats.",
+        "zh": "劏房密度高的樓宇更難推行屋苑源頭分類。"
+      },
+      {
+        "en": "Mentorship outreach should include households in subdivided flats.",
+        "zh": "師友外展應涵蓋劏房住戶。"
+      }
+    ],
+    "example": "Students living in subdivided flats often lack quiet study space.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "green jobs pathway",
+    "zh": "綠色就業路徑；綠領就業階梯",
+    "pos": "n. phr.",
+    "related": [
+      "mentorship pairing",
+      "facility utilisation",
+      "vocational"
+    ],
+    "note": "回收／氣候與青年銜接一句夠用",
+    "synonyms": [
+      "green employment pathway",
+      "green-skills ladder",
+      "climate careers track"
+    ],
+    "antonyms": [
+      "dead-end placement",
+      "one-off visit only",
+      "unlinked volunteering"
+    ],
+    "examples": [
+      {
+        "en": "A thin green jobs pathway can absorb mentees into recovery operations.",
+        "zh": "一條精簡的綠色就業路徑可讓學員進入回收運作崗位。"
+      },
+      {
+        "en": "Host departments must confirm supervisors before opening a green jobs pathway.",
+        "zh": "開設綠色就業路徑前，接待部門須確認有督導人員。"
+      },
+      {
+        "en": "Reuse training envelopes for the green jobs pathway instead of a new recurrent vote.",
+        "zh": "綠色就業路徑應重用培訓撥款，而非另設經常開支。"
+      }
+    ],
+    "example": "A thin green jobs pathway can absorb mentees into recovery operations.",
+    "topic": "education-manpower"
   }
 ]

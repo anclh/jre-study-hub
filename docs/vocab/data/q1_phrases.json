@@ -738,6 +738,42 @@
       "zh": "相對再提高改劃目標，把收地掛鈎就緒用地里程碑更能收窄落地缺口。",
       "note": "option weigh",
       "example": "Compared with expanding headline rezoning targets, locking resumption to ready-site milestones better closes the delivery gap for Northern Metropolis links."
+    },
+    {
+      "id": "ass-13",
+      "category": "assessment",
+      "paper": "q1",
+      "en": "The modest rise in the MSW recovery rate, set against under-used food-waste plants, points to a collection and source-separation bottleneck rather than a pure capacity shortage.",
+      "zh": "都市固體廢物回收率僅溫和上升，但廚餘廠房使用不足，顯示樽頸在收集與源頭分類，而非純粹產能短缺。",
+      "note": "waste DF · diagnose",
+      "example": "The modest rise in the MSW recovery rate, set against under-used food-waste plants, points to a collection and source-separation bottleneck rather than a pure capacity shortage."
+    },
+    {
+      "id": "cmp-07",
+      "category": "comparison",
+      "paper": "q1",
+      "en": "Compared with accelerating new treatment plants first, locking capital to recovery and utilisation milestones better closes the delivery gap.",
+      "zh": "相對先加快新建處理設施，把資本掛鈎回收及使用率里程碑更能收窄落地缺口。",
+      "note": "option weigh · waste",
+      "example": "Compared with accelerating new treatment plants first, locking capital to recovery and utilisation milestones better closes the delivery gap on the climate action plan."
+    },
+    {
+      "id": "rec-14",
+      "category": "recommend",
+      "paper": "q1",
+      "en": "It is recommended that Environment and Ecology Bureau lead a time-limited collection and inventory surge, with further plant capital released only when utilisation gates are met.",
+      "zh": "建議由環境及生態局牽頭推行有時限的收集與盤查強化，並僅在使用率達標後再釋放建廠資本。",
+      "note": "who + condition",
+      "example": "It is recommended that Environment and Ecology Bureau lead a time-limited collection and inventory surge, with further plant capital released only when utilisation gates are met."
+    },
+    {
+      "id": "spc-15",
+      "category": "specificity",
+      "paper": "q1",
+      "en": "Within 12–18 months, publish district KPIs for MSW recovery, source-separation coverage, plant utilisation, and public-body carbon-accounting completion.",
+      "zh": "在十二至十八個月內，公布分區都市固體廢物回收率、源頭分類覆蓋、廠房使用率及公營機構碳排放核算完成度等KPI。",
+      "note": "when + KPIs",
+      "example": "Within 12–18 months, publish district KPIs for MSW recovery, source-separation coverage, plant utilisation, and public-body carbon-accounting completion."
     }
   ]
 }
