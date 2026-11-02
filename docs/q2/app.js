@@ -378,7 +378,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261102j", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261102k", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -686,7 +686,7 @@
   async function loadQ2Phrases() {
     const grid = $("#q2PhraseGrid");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261102j", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261102k", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
       renderPaperFilters();
@@ -700,26 +700,60 @@
     }
   }
 
+  // Q2 essay order only. Stage ids are shared-frames.json keys; labels are not Q1 headings.
+  const Q2_SHARED_STAGE_ORDER = [
+    { stage: "opening", label: "立場" },
+    { stage: "problem", label: "理據／例子" },
+    { stage: "options", label: "反駁" },
+    { stage: "recommendation", label: "建議" },
+    { stage: "closing", label: "短結" },
+  ];
+
   async function loadSharedFrames() {
     const list = document.getElementById("shared-frames-list");
     const card = document.getElementById("shared-frames");
     if (!list || !card) return;
     const src = card.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261102j", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261102k", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
       if (!items.length) return;
       const titleZh = data.title && String(data.title.zh || "").trim();
-      const ledeZh = data.lede && String(data.lede.zh || "").trim();
       const titleEl = card.querySelector("h2");
-      const ledeEl = card.querySelector(".lede");
       if (titleEl && titleZh) titleEl.textContent = "4. " + titleZh;
-      if (ledeEl && ledeZh) ledeEl.textContent = ledeZh;
-      list.innerHTML = items
-        .map((it) => "<li>" + escapeHtml(String(it.zh || "").trim()) + " / " + escapeHtml(String(it.en || "").trim()) + "</li>")
-        .join("");
+      const byStage = {};
+      items.forEach((it) => {
+        const st = String((it && it.stage) || "").trim() || "other";
+        if (!byStage[st]) byStage[st] = [];
+        byStage[st].push(it);
+      });
+      const used = new Set();
+      const parts = [];
+      function pushGroup(label, group) {
+        if (!group || !group.length) return;
+        parts.push('<li class="sf-stage">' + escapeHtml(label) + "</li>");
+        group.forEach((it) => {
+          parts.push(
+            "<li>" +
+              escapeHtml(String(it.zh || "").trim()) +
+              " / " +
+              escapeHtml(String(it.en || "").trim()) +
+              "</li>"
+          );
+        });
+      }
+      Q2_SHARED_STAGE_ORDER.forEach(({ stage, label }) => {
+        used.add(stage);
+        pushGroup(label, byStage[stage]);
+      });
+      Object.keys(byStage).forEach((st) => {
+        if (used.has(st)) return;
+        pushGroup(st === "other" ? "其他" : st, byStage[st]);
+      });
+      if (!parts.length) return;
+      list.innerHTML = parts.join("");
     } catch (err) {
       console.warn("shared-frames load failed; keeping static fallback", err);
     }
