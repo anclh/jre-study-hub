@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="JRE 中文 Q2 — 議題思維、題庫、計時練習與自評" />
   <title>中文 Q2 · JRE Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261102b" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261102b" />
+  <link rel="stylesheet" href="styles.css?v=20261102j" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261102j" />
 </head>
 <body>
   <header class="app-header">
@@ -74,6 +74,13 @@
         <p class="muted frame-flow">開首立場 → 2 理據（HK）→ 反駁 → 建議 → 短結</p>
       </div>
 
+      <div class="card" id="shared-frames" data-shared-frames-source="../shared/shared-frames.json">
+        <h2>4. Shared frames（Q1／Q2）</h2>
+        <p class="lede">兩邊卷都用得着——只換例子同措施。</p>
+        <p class="muted">Q1 §4 係共用錨點。</p>
+        <ul class="bullet-list" id="shared-frames-list"></ul>
+      </div>
+
       <div class="card" id="sample-housing">
         <h2>範例大綱 · 房屋供應 <span class="chip">綜合框架</span></h2>
         <p class="lede">同一五步骨架；換例子同措施即可套去長者照顧、勞工、北部都會區等題。</p>
@@ -98,6 +105,12 @@
           <li><strong>反對要有貢獻</strong>：問題＋更有效／更具成本效益嘅替代</li>
           <li><strong>用政策目標揀</strong>，唔用喜好；少寫「一定／必定」→「若配合…有望…」</li>
         </ol>
+      </div>
+
+      <div class="card" id="pair-kits">
+        <h2>萬用例子↔措施</h2>
+        <p class="lede">12 組可套入五步：一句例子、一句措施、一句扣立場。數字係約數，以當局公布為準。</p>
+        <div id="pair-kits-list" class="pair-kits"></div>
       </div>
     </section>
 
@@ -336,7 +349,7 @@
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261102b"></script>
-  <script src="../shell/tabbar.js?v=20261102b"></script>
+  <script src="app.js?v=20261102j"></script>
+  <script src="../shell/tabbar.js?v=20261102j"></script>
 </body>
 </html>

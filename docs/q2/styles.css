@@ -304,6 +304,14 @@ textarea {
   display: grid; gap: 6px;
 }
 .bullet-list li::marker { color: var(--accent); }
+.pair-kits { display: grid; gap: 8px; }
+.pair-kit {
+  background: var(--card2); border-radius: 10px; padding: 10px 12px;
+  border-left: 3px solid var(--accent); font-size: 13px; line-height: 1.45;
+}
+.pair-kit .chip { display: inline-flex; margin-bottom: 6px; }
+.pair-kit p { margin: 0 0 4px; }
+.pair-kit p:last-child { margin-bottom: 0; }
 .card h3 { margin: 12px 0 6px; font-size: 14px; color: var(--accent); }
 
 /* Drill sample (below answer), aligned with Q1 */
