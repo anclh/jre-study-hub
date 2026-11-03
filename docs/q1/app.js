@@ -17,6 +17,21 @@
     balance: "平衡／條件",
   };
 
+  // Phrase categories → Answer-frame stages (unmapped → other under Closing)
+  const STAGE_CATS = {
+    opening: ["opening"],
+    problem: ["implications", "assessment"],
+    options: ["comparison", "balance"],
+    recommendation: ["recommend", "specificity", "monitor"],
+    closing: ["discourse"],
+  };
+  const STAGE_ORDER = ["opening", "problem", "options", "recommendation", "closing", "other"];
+  const CAT_TO_STAGE = {};
+  Object.keys(STAGE_CATS).forEach((st) => {
+    STAGE_CATS[st].forEach((c) => {
+      CAT_TO_STAGE[c] = st;
+    });
+  });
 
   const state = {
     q1: { disclaimer: "", categories: [], items: [] },
@@ -117,6 +132,24 @@
     </article>`;
   }
 
+  function stageOfPhrase(item) {
+    return CAT_TO_STAGE[item.category] || "other";
+  }
+
+  function bindPhraseCopy(root) {
+    $$(".btn-copy", root).forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const text = `${btn.dataset.en}\n${btn.dataset.zh || ""}`.trim();
+        try {
+          await navigator.clipboard.writeText(text);
+          toast("已複製句式");
+        } catch {
+          toast("複製失敗 — 請手動選取");
+        }
+      });
+    });
+  }
+
   function renderPhrases() {
     const q = ($("#q1Search")?.value || "").trim().toLowerCase();
     let list = (state.q1.items || []).filter((i) => matchesPaper(i, state.paper));
@@ -130,23 +163,47 @@
     if (count) count.textContent = `${list.length} 句`;
     const disc = $("#q1Disclaimer");
     if (disc) disc.textContent = state.q1.disclaimer || "";
-    const grid = $("#q1Grid");
-    if (!grid) return;
-    if (!list.length) {
-      grid.innerHTML = `<div class="empty">沒有符合的句式。</div>`;
+
+    const byStage = {};
+    STAGE_ORDER.forEach((st) => {
+      byStage[st] = [];
+    });
+    list.forEach((item) => {
+      const st = stageOfPhrase(item);
+      if (!byStage[st]) byStage[st] = [];
+      byStage[st].push(item);
+    });
+
+    const grids = $$(".stage-phrases");
+    if (!grids.length) {
+      // fallback single grid if present
+      const grid = $("#q1Grid");
+      if (!grid) return;
+      grid.innerHTML = list.length
+        ? list.map(phraseHTML).join("")
+        : `<div class="empty">沒有符合的句式。</div>`;
+      bindPhraseCopy(grid);
       return;
     }
-    grid.innerHTML = list.map(phraseHTML).join("");
-    $$(".btn-copy", grid).forEach((btn) => {
-      btn.addEventListener("click", async () => {
-        const text = `${btn.dataset.en}\n${btn.dataset.zh || ""}`.trim();
-        try {
-          await navigator.clipboard.writeText(text);
-          toast("已複製句式");
-        } catch {
-          toast("複製失敗 — 請手動選取");
+
+    grids.forEach((grid) => {
+      const st = grid.getAttribute("data-stage") || "other";
+      const items = byStage[st] || [];
+      if (st === "other") {
+        grid.hidden = items.length === 0;
+        if (!items.length) {
+          grid.innerHTML = "";
+          return;
         }
-      });
+        grid.innerHTML =
+          `<p class="muted" style="margin:0 0 8px;font-size:12px">其他（未對應 stage 嘅句式）</p>` +
+          items.map(phraseHTML).join("");
+      } else if (!items.length) {
+        grid.innerHTML = `<div class="empty">呢段暫時無符合篩選嘅句式。</div>`;
+      } else {
+        grid.innerHTML = items.map(phraseHTML).join("");
+      }
+      bindPhraseCopy(grid);
     });
   }
 
@@ -357,7 +414,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261103c", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261103p", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {
@@ -370,6 +427,10 @@
       renderPhrases();
     } catch (e) {
       console.warn(e);
+      $$(".stage-phrases").forEach((grid) => {
+        grid.innerHTML = `<div class="empty">未能載入 Q1 句式庫（../vocab/data/q1_phrases.json）。</div>`;
+        if (grid.getAttribute("data-stage") === "other") grid.hidden = false;
+      });
       const grid = $("#q1Grid");
       if (grid) grid.innerHTML = `<div class="empty">未能載入 Q1 句式庫（../vocab/data/q1_phrases.json）。</div>`;
     }
@@ -502,62 +563,48 @@
 
 
   async function loadSharedFrames() {
-    const list = document.getElementById("shared-frames-list");
-    const card = document.getElementById("shared-frames");
-    if (!list || !card) return;
-    const src = card.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
+    const root = document.getElementById("shared-frames");
+    if (!root) return;
+    const lists = root.querySelectorAll(".stage-frames");
+    if (!lists.length) return;
+    const src = root.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261103c", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261103p", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
-      if (!items.length) return;
-      const stageMeta = Array.isArray(data.q1_stages)
-        ? data.q1_stages
-        : Array.isArray(data.stages)
-          ? data.stages
-          : [];
-      const stageLabel = {};
-      stageMeta.forEach((s) => {
-        if (!s || !s.id) return;
-        stageLabel[s.id] = String(s.en || s.zh || s.id).trim();
-      });
-      const stageOrder = stageMeta.map((s) => s && s.id).filter(Boolean);
-      const known = new Set(stageOrder);
-      const stageOf = (it) =>
-        String((it && (it.q1_stage || it.stage)) || "").trim();
-      items.forEach((it) => {
-        const st = stageOf(it);
-        if (st && !known.has(st)) {
-          stageOrder.push(st);
-          known.add(st);
-          stageLabel[st] = st;
-        }
-      });
+      const ledeEl = root.querySelector(".stage-shared-lede");
+      if (ledeEl && data.lede && data.lede.zh) {
+        ledeEl.textContent =
+          String(data.lede.zh).trim() + " 每段：結構提示 → Shared frames → 對應句式。";
+      }
+      const stageOf = (it) => String((it && (it.q1_stage || it.stage)) || "").trim() || "other";
       const byStage = {};
       items.forEach((it) => {
-        const st = stageOf(it) || "other";
+        const st = stageOf(it);
         if (!byStage[st]) byStage[st] = [];
         byStage[st].push(it);
       });
-      if (!stageOrder.includes("other") && byStage.other) stageOrder.push("other");
-      const ledeEl = card.querySelector(".lede");
-      if (ledeEl && data.lede && data.lede.zh) ledeEl.textContent = String(data.lede.zh).trim();
-      const parts = [];
-      stageOrder.forEach((st) => {
-        const group = byStage[st];
-        if (!group || !group.length) return;
-        const label = stageLabel[st] || st;
-        parts.push('<li class="sf-stage">' + label + "</li>");
-        group.forEach((it) => {
-          parts.push(
-            "<li>" + String(it.zh || "").trim() + " / " + String(it.en || "").trim() + "</li>"
-          );
-        });
+      lists.forEach((list) => {
+        const st = list.getAttribute("data-stage") || "";
+        const group = byStage[st] || [];
+        if (!group.length) {
+          list.innerHTML = '<li class="muted">（暫無此段 Shared frames）</li>';
+          return;
+        }
+        list.innerHTML = group
+          .map(
+            (it) =>
+              "<li>" +
+              String(it.zh || "").trim() +
+              " / " +
+              String(it.en || "").trim() +
+              "</li>"
+          )
+          .join("");
       });
-      list.innerHTML = parts.join("");
     } catch (err) {
-      console.warn("shared-frames load failed; keeping static fallback", err);
+      console.warn("shared-frames load failed; keeping empty stage lists", err);
     }
   }
 
@@ -581,58 +628,52 @@
     if (search) search.addEventListener("input", renderPhrases);
     loadPhrases();
   loadSharedFrames();
-  (function bootHash() {
-    const h = (location.hash || "").replace(/^#/, "");
+  function applyHash(h) {
     const map = {
       frame: "structure",
       structure: "structure",
       "shared-frames": "structure",
       shared: "structure",
       sharedframes: "structure",
+      phrases: "structure",
+      "phrase-tools": "structure",
+      starters: "structure",
+      "answer-frame": "structure",
+      "sample-housing": "structure",
+      "stage-opening": "structure",
+      "stage-problem": "structure",
+      "stage-options": "structure",
+      "stage-recommendation": "structure",
+      "stage-closing": "structure",
       "example-measure-pairs": "tips",
       tips: "tips",
-      phrases: "phrases",
       case: "case",
       mark: "mark",
     };
     const name = map[h] || (document.getElementById(h) ? "structure" : null);
     if (!name) return;
-    document.querySelectorAll("#subnav button").forEach((b) => b.classList.toggle("active", b.dataset.panel === name));
+    document.querySelectorAll("#subnav button").forEach((b) =>
+      b.classList.toggle("active", b.dataset.panel === name)
+    );
     document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
     const panel = document.querySelector("#panel-" + name);
     if (panel) panel.classList.add("active");
-    const targetId = h === "shared" || h === "sharedframes" ? "shared-frames" : h;
+    let targetId = h;
+    if (h === "shared" || h === "sharedframes") targetId = "shared-frames";
+    if (h === "phrases" || h === "starters") targetId = "phrases";
     const target = document.getElementById(targetId);
     if (target) {
       requestAnimationFrame(() => target.scrollIntoView({ behavior: "smooth", block: "start" }));
     }
+  }
+  (function bootHash() {
+    const h = (location.hash || "").replace(/^#/, "");
+    if (h) applyHash(h);
   })();
   window.addEventListener("hashchange", () => {
     const h = (location.hash || "").replace(/^#/, "");
     if (!h) return;
-    const map = {
-      frame: "structure",
-      structure: "structure",
-      "shared-frames": "structure",
-      shared: "structure",
-      sharedframes: "structure",
-      "example-measure-pairs": "tips",
-      tips: "tips",
-      phrases: "phrases",
-      case: "case",
-      mark: "mark",
-    };
-    const name = map[h] || (document.getElementById(h) ? "structure" : null);
-    if (!name) return;
-    document.querySelectorAll("#subnav button").forEach((b) => b.classList.toggle("active", b.dataset.panel === name));
-    document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
-    const panel = document.querySelector("#panel-" + name);
-    if (panel) panel.classList.add("active");
-    const targetId = h === "shared" || h === "sharedframes" ? "shared-frames" : h;
-    const target = document.getElementById(targetId);
-    if (target) {
-      requestAnimationFrame(() => target.scrollIntoView({ behavior: "smooth", block: "start" }));
-    }
+    applyHash(h);
   });
 
   }
