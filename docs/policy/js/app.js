@@ -46,6 +46,11 @@
       newest: "最新優先",
       oldest: "最舊優先",
       angles: "面試角度／提問",
+      hotFace: "熱面",
+      hardFigure: "硬數字",
+      verifiableFacts: "可驗證事實",
+      measure: "措施",
+      fullSummary: "完整摘要",
       source: "原文連結",
       browse: "瀏覽",
       digest: "每周摘要",
@@ -77,6 +82,11 @@
       newest: "Newest first",
       oldest: "Oldest first",
       angles: "Interview angles / questions",
+      hotFace: "Hot face",
+      hardFigure: "Hard figure",
+      verifiableFacts: "Key facts",
+      measure: "Measure",
+      fullSummary: "Full summary",
       source: "Source link",
       browse: "Browse",
       digest: "Weekly digest",
@@ -209,6 +219,29 @@
     return items;
   }
 
+  function hotFaceBlock(item) {
+    const hf =
+      typeof extractHotFace === "function"
+        ? extractHotFace(item)
+        : { figureOk: false, figureText: "", facts: [], measure: "" };
+    const label = hf.figureOk ? t("hardFigure") : t("verifiableFacts");
+    const body = hf.figureOk
+      ? `<div class="hot-val">${escapeHtml(hf.figureText || "")}</div>`
+      : `<div class="hot-val">${(hf.facts || [])
+          .map((f) => `<div>${escapeHtml(f)}</div>`)
+          .join("")}</div>`;
+    return `<div class="hot-face" aria-label="${escapeAttr(t("hotFace"))}">
+        <div class="hot-row">
+          <div class="hot-k">${escapeHtml(label)}</div>
+          ${body}
+        </div>
+        <div class="hot-row">
+          <div class="hot-k">${escapeHtml(t("measure"))}</div>
+          <div class="hot-val">${escapeHtml(hf.measure || "")}</div>
+        </div>
+      </div>`;
+  }
+
   function renderCards(items) {
     el.cards.innerHTML = "";
     if (!items.length) {
@@ -234,6 +267,7 @@
       const angles = (item.interview_angles || [])
         .map((a) => `<li>${escapeHtml(a)}</li>`)
         .join("");
+      const summary = item.summary || "";
       card.innerHTML = `
         <div class="card-top">
           <span class="date-badge">${escapeHtml(item.date)}</span>
@@ -241,7 +275,11 @@
         <h3>${escapeHtml(itemTitle(item))}</h3>
         ${titleEn}
         <div class="meta-tags">${deptTags}${themeTags}</div>
-        <p class="summary">${escapeHtml(item.summary)}</p>
+        ${hotFaceBlock(item)}
+        <details class="summary-details">
+          <summary>${escapeHtml(t("fullSummary"))}</summary>
+          <p class="summary">${escapeHtml(summary)}</p>
+        </details>
         <div class="angles">
           <h4>${t("angles")}</h4>
           <ol>${angles}</ol>
@@ -288,13 +326,20 @@
           }
         });
         const lis = unique
-          .map(
-            (it) => `<li>
+          .map((it) => {
+            const hf =
+              typeof extractHotFace === "function"
+                ? extractHotFace(it)
+                : { figureOk: false, figureText: "", facts: [], measure: "" };
+            const tip = hf.figureOk
+              ? [hf.figureText, hf.measure].filter(Boolean).join(" · ")
+              : (hf.facts || []).slice(0, 2).join("；") || (it.summary || "").slice(0, 80);
+            return `<li>
               <div class="d-date">${escapeHtml(it.date)}</div>
               <a href="${escapeAttr(it.source_url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(itemTitle(it))}</a>
-              <p class="d-summary">${escapeHtml(it.summary.slice(0, 140))}${it.summary.length > 140 ? "…" : ""}</p>
-            </li>`
-          )
+              <p class="d-summary">${escapeHtml(tip)}</p>
+            </li>`;
+          })
           .join("");
         return `<section class="digest-group">
           <h3>${escapeHtml(deptLabel(deptId))} · ${unique.length}</h3>

@@ -7,9 +7,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="description" content="JRE Study Hub — 聯合招聘考試備試（中英）" />
-  <!-- stamp: 20261103e · 每日溫書抽卡 -->
+  <!-- stamp: 20261103f · 硬數字熱面＋桌面寬度 -->
   <title>JRE Study Hub · 主頁</title>
-  <link rel="stylesheet" href="shell/tabbar.css?v=20261103e" />
+  <link rel="stylesheet" href="shell/tabbar.css?v=20261103f" />
   <style>
     :root {
       --bg: #f4f6f9;
@@ -46,9 +46,15 @@
     }
     a { color: var(--accent-2); }
     .wrap {
-      max-width: 560px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 8px 16px 0;
+    }
+    @media (max-width: 640px) {
+      .wrap {
+        max-width: 100%;
+        padding: 8px 14px 0;
+      }
     }
     .brand {
       display: flex;
@@ -408,10 +414,20 @@
     }
     .draw-status.is-error { color: #b42318; }
     .draw-hand {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
       margin-top: 8px;
+    }
+    @media (min-width: 720px) {
+      .draw-hand {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (min-width: 980px) {
+      .draw-hand {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
     }
     .draw-card {
       background: #fff;
@@ -476,7 +492,7 @@
     }
     .draw-facts > div {
       display: grid;
-      grid-template-columns: 3.6em 1fr;
+      grid-template-columns: 4.8em 1fr;
       gap: 6px;
       align-items: start;
     }
@@ -520,7 +536,7 @@
     }
   </style>
 </head>
-<body class="hub-has-tabs" data-stamp="20261103e">
+<body class="hub-has-tabs" data-stamp="20261103f">
   <main class="wrap">
     <header class="brand">
       <div class="logo" aria-hidden="true">JRE</div>
@@ -530,7 +546,7 @@
       </div>
     </header>
 
-    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103e">
+    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103f">
       <div class="daily-head">
         <div>
           <h2 class="daily-title" id="daily-title">每日溫書</h2>
@@ -707,7 +723,8 @@
       <a href="https://anclh.github.io/collocation-bank/" rel="noopener">anclh.github.io/collocation-bank</a>
     </p>
   </main>
-  <script src="shell/tabbar.js?v=20261103e"></script>
+  <script src="shared/policy-hotface.js?v=20261103f"></script>
+  <script src="shell/tabbar.js?v=20261103f"></script>
   <script>
   (function () {
     var TZ = "Asia/Hong_Kong";
@@ -841,72 +858,16 @@
       return false;
     }
 
-    /** Extract 1 hard figure snippet from summary (+ title). */
-    function extractFigure(item) {
-      var text = ((item.summary || "") + " " + (item.title || "")).replace(/\s+/g, " ");
-      var patterns = [
-        /(\d{1,2})\s*[x×Ｘ]\s*(\d)/,
-        /(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)\s*(?:%|％|萬人|萬元|億元|億港元|港元|萬|億|元|人|間|日|年|宗|倍|公里|個|項|份|名|座|幢|戶|床|劑|次)/,
-        /約?\s*(\d{1,3}(?:[,\s]\d{3})+|\d+)\s*(人|間|個|名|宗|戶|張|隊)/,
-        /(20\d{2})\s*年/,
-        /(\d+(?:\.\d+)?)\s*(?:至|-|–|—)\s*(\d+(?:\.\d+)?)\s*(%|％|萬|億|人|間|日)?/,
-        /(\d+(?:\.\d+)?)\s*(?:%|％)/,
-      ];
-      for (var p = 0; p < patterns.length; p++) {
-        var m = text.match(patterns[p]);
-        if (!m) continue;
-        var snip = m[0].replace(/\s+/g, " ").trim();
-        // skip weak ordinal-looking 二讀-only style if too short Chinese numeral alone
-        if (/^[一二三四五六七八九十百]+$/.test(snip)) continue;
-        if (snip.length > 28) snip = snip.slice(0, 28);
-        return { ok: true, text: snip };
-      }
-      // factual clause fallback (no strong number)
-      var clause = (item.summary || item.title || "").split(/[。；;]/)[0] || "";
-      clause = clause.replace(/\s+/g, " ").trim();
-      if (clause.length > 42) clause = clause.slice(0, 42) + "…";
-      return {
-        ok: false,
-        text: "（摘要無獨立硬數—記 1 個可驗證事實）",
-        fact: clause || "（見政策卡原文）",
-      };
-    }
-
-    /** Extract 1 measure / policy-action clause. */
-    function extractMeasure(item) {
-      var summary = (item.summary || "").replace(/\s+/g, " ").trim();
-      var title = (item.title || "").replace(/\s+/g, " ").trim();
-      var verbRe = /推出|設立|成立|預留|修訂|重建|資助|推行|宣布|刊憲|展開|恢復|徵詢|招募|更新|推進|推動|支持|加強|落實|引入|啟用|擴展|增至|進入|恢復二讀|遷置|回收|致辭|合作/;
-      var parts = summary.split(/[。；;]/).filter(Boolean);
-      var best = "";
-      for (var i = 0; i < parts.length; i++) {
-        var s = parts[i].trim();
-        if (!s) continue;
-        if (verbRe.test(s)) {
-          best = s;
-          break;
-        }
-        if (!best) best = s;
-      }
-      if (!best) best = title;
-      // trim long clauses around the verb
-      if (best.length > 56) {
-        var vm = best.search(verbRe);
-        if (vm > 8) best = "…" + best.slice(Math.max(0, vm - 6));
-        if (best.length > 56) best = best.slice(0, 56) + "…";
-      }
-      return best || "（見政策卡措施）";
-    }
-
     function enrich(item) {
-      var fig = extractFigure(item);
+      var hot = (typeof extractHotFace === "function")
+        ? extractHotFace(item)
+        : { figureOk: false, figureText: "", facts: [], measure: "（見政策卡措施）" };
       return {
         id: item.id,
         date: item.date,
         title: item.title,
         themes: item.themes || [],
-        figure: fig,
-        measure: extractMeasure(item),
+        hotFace: hot,
         hot: isHot(item),
         primary: primaryTheme(item),
       };
@@ -1120,14 +1081,16 @@
         var chips = (card.themes || []).slice(0, 3).map(function (t) {
           return '<span class="draw-chip">' + escapeHtml(themeLabel(t)) + "</span>";
         }).join("");
+        var hf = card.hotFace || {};
+        var figLabel = hf.figureOk ? "硬數字" : "可驗證事實";
         var figHtml;
-        if (card.figure.ok) {
-          figHtml = "<dd>" + escapeHtml(card.figure.text) + "</dd>";
+        if (hf.figureOk) {
+          figHtml = "<dd>" + escapeHtml(hf.figureText || "") + "</dd>";
         } else {
+          var facts = (hf.facts && hf.facts.length) ? hf.facts : ["（見政策卡原文）"];
           figHtml =
-            '<dd class="muted">' +
-            escapeHtml(card.figure.text) +
-            (card.figure.fact ? "<br>" + escapeHtml(card.figure.fact) : "") +
+            '<dd>' +
+            facts.map(function (f) { return escapeHtml(f); }).join("<br>") +
             "</dd>";
         }
         html +=
@@ -1146,11 +1109,11 @@
           escapeHtml(card.title) +
           "</h3>" +
           '<dl class="draw-facts">' +
-          "<div><dt>硬數字</dt>" +
+          "<div><dt>" + figLabel + "</dt>" +
           figHtml +
           "</div>" +
           "<div><dt>措施</dt><dd>" +
-          escapeHtml(card.measure) +
+          escapeHtml(hf.measure || "") +
           "</dd></div>" +
           "</dl>" +
           '<a class="draw-src" href="policy/">原文卡</a>' +
