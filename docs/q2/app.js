@@ -70,8 +70,20 @@
     return THEME_ZH[id] || id;
   }
 
+  const STRUCTURE_SCROLL = {
+    phrases: "q2-stages",
+    "q2-stages": "q2-stages",
+    "pair-kits": "pair-kits",
+    "stage-position": "stage-position",
+    "stage-arguments": "stage-arguments",
+    "stage-rebuttal": "stage-rebuttal",
+    "stage-recommend": "stage-recommend",
+    "stage-balance": "stage-balance",
+    "stage-close": "stage-close",
+  };
+
   function showPanel(name) {
-    if (name === "frame") name = "structure"; // legacy #frame / data-goto
+    if (name === "frame" || name === "phrases") name = "structure"; // legacy #frame / #phrases
     document.querySelectorAll("#subnav button").forEach((b) => {
       b.classList.toggle("active", b.dataset.panel === name);
     });
@@ -80,11 +92,22 @@
     if (panel) panel.classList.add("active");
   }
 
+  function scrollIdFor(token) {
+    if (!token || !Object.prototype.hasOwnProperty.call(STRUCTURE_SCROLL, token)) return null;
+    return STRUCTURE_SCROLL[token];
+  }
+
+  function scrollToId(id) {
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (target) requestAnimationFrame(() => target.scrollIntoView({ behavior: "smooth", block: "start" }));
+  }
+
   document.querySelectorAll("#subnav button").forEach((btn) => {
     btn.addEventListener("click", () => showPanel(btn.dataset.panel));
   });
   function hashPanel(h) {
-    if (h === "frame" || h === "pair-kits") return "structure";
+    if (h === "frame" || scrollIdFor(h)) return "structure";
     return h;
   }
 
@@ -93,18 +116,15 @@
     const known = new Set([
       "structure",
       "tips",
-      "phrases",
       "bank",
       "drill",
       "mark",
       "frame",
-      "pair-kits",
+      ...Object.keys(STRUCTURE_SCROLL),
     ]);
     if (!known.has(h)) return;
     showPanel(hashPanel(h));
-    if (h !== "pair-kits") return;
-    const target = document.getElementById("pair-kits");
-    if (target) requestAnimationFrame(() => target.scrollIntoView({ behavior: "smooth", block: "start" }));
+    scrollToId(scrollIdFor(h));
   }
 
   applyHash();
@@ -113,7 +133,10 @@
     const a = e.target.closest("[data-goto]");
     if (!a) return;
     e.preventDefault();
-    showPanel(a.dataset.goto);
+    const dest = a.dataset.goto;
+    showPanel(dest);
+    const hrefId = (a.getAttribute("href") || "").replace(/^#/, "");
+    scrollToId(scrollIdFor(hrefId) || scrollIdFor(dest));
   });
   const linkToBank = $("#linkToBank");
   if (linkToBank) {
@@ -563,8 +586,9 @@
   loadMarks();
 
 
-  /* —— 句式庫 (Anson bank) —— */
-  const phraseState = { data: { disclaimer: "", categories: [], items: [] }, category: "all", paper: "hub" };
+  /* —— 骨架句，按五步 category 放入結構卡 —— */
+  const phraseState = { data: { disclaimer: "", categories: [], items: [] }, paper: "hub" };
+  const STAGE_CATEGORIES = ["position", "arguments", "rebuttal", "recommend", "balance", "close"];
 
   function phraseCatLabel(id) {
     if (id === "all") return "全部";
@@ -603,25 +627,6 @@
     });
   }
 
-  function renderPhraseFilters() {
-    const cats = ["all", ...(phraseState.data.categories || []).map((c) => c.id)];
-    const wrap = $("#q2PhraseFilters");
-    if (!wrap) return;
-    wrap.innerHTML = cats
-      .map(
-        (c) =>
-          `<button type="button" data-cat="${c}" class="${phraseState.category === c ? "active" : ""}">${phraseCatLabel(c)}</button>`
-      )
-      .join("");
-    wrap.querySelectorAll("button").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        phraseState.category = btn.dataset.cat;
-        renderPhraseFilters();
-        renderQ2Phrases();
-      });
-    });
-  }
-
   function paperLabel(p) {
     if (p === "q2") return "Q2";
     if (p === "q1") return "Q1";
@@ -644,7 +649,6 @@
   function renderQ2Phrases() {
     const q = ($("#q2PhraseSearch")?.value || "").trim().toLowerCase();
     let list = (phraseState.data.items || []).filter((i) => matchesPaper(i, phraseState.paper));
-    if (phraseState.category !== "all") list = list.filter((i) => i.category === phraseState.category);
     if (q) {
       list = list.filter((i) =>
         `${i.zh} ${i.en} ${i.category} ${i.note || ""} ${i.example || ""}`.toLowerCase().includes(q)
@@ -654,39 +658,58 @@
     if (count) count.textContent = `${list.length} 句`;
     const disc = $("#q2PhraseDisclaimer");
     if (disc) disc.textContent = phraseState.data.disclaimer || "";
-    const grid = $("#q2PhraseGrid");
-    if (!grid) return;
-    if (!list.length) {
-      grid.innerHTML = `<div class="empty">沒有符合的句式。</div>`;
-      return;
+    const byCat = {};
+    list.forEach((item) => {
+      const cat = item.category || "other";
+      if (!byCat[cat]) byCat[cat] = [];
+      byCat[cat].push(item);
+    });
+    const known = new Set(STAGE_CATEGORIES);
+    STAGE_CATEGORIES.forEach((cat) => {
+      const grid = document.querySelector(`.phrase-grid[data-stage="${cat}"]`);
+      if (!grid) return;
+      const items = byCat[cat] || [];
+      grid.innerHTML = items.length
+        ? items.map(phraseCardHTML).join("")
+        : `<p class="muted stage-empty">沒有符合的句式。</p>`;
+    });
+    const extras = list.filter((item) => !known.has(item.category));
+    const otherCard = document.getElementById("q2-phrase-other");
+    const otherGrid = document.getElementById("q2PhraseOther");
+    if (otherCard && otherGrid) {
+      otherCard.hidden = extras.length === 0;
+      otherGrid.innerHTML = extras.map(phraseCardHTML).join("");
     }
-    grid.innerHTML = list.map(phraseCardHTML).join("");
-    grid.querySelectorAll(".btn-copy").forEach((btn) => {
-      btn.addEventListener("click", async () => {
-        const text = `${btn.dataset.zh || ""}\n${btn.dataset.en || ""}`.trim();
-        try {
-          await navigator.clipboard.writeText(text);
-          toast("已複製句式");
-        } catch {
-          toast("複製失敗 — 請手動選取");
-        }
-      });
+  }
+
+  const stageRoot = document.getElementById("q2-stages");
+  if (stageRoot) {
+    stageRoot.addEventListener("click", async (e) => {
+      const btn = e.target.closest(".btn-copy");
+      if (!btn) return;
+      const text = `${btn.dataset.zh || ""}\n${btn.dataset.en || ""}`.trim();
+      try {
+        await navigator.clipboard.writeText(text);
+        toast("已複製句式");
+      } catch {
+        toast("複製失敗 — 請手動選取");
+      }
     });
   }
 
   async function loadQ2Phrases() {
-    const grid = $("#q2PhraseGrid");
+    const status = $("#q2PhraseStatus");
     try {
       const res = await fetch("data/q2_phrases.json?v=20261103f", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
+      if (status) status.innerHTML = "";
       renderPaperFilters();
-      renderPhraseFilters();
       renderQ2Phrases();
       const search = $("#q2PhraseSearch");
       if (search) search.addEventListener("input", renderQ2Phrases);
     } catch (e) {
-      if (grid) grid.innerHTML = `<div class="empty">未能載入句式庫（data/q2_phrases.json）。</div>`;
+      if (status) status.innerHTML = `<div class="empty">未能載入句式庫（data/q2_phrases.json）。</div>`;
       console.error(e);
     }
   }
