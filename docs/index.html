@@ -7,9 +7,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="description" content="JRE Study Hub — 聯合招聘考試備試（中英）" />
-  <!-- stamp: 20261103d · 每日溫書 -->
+  <!-- stamp: 20261103e · 每日溫書抽卡 -->
   <title>JRE Study Hub · 主頁</title>
-  <link rel="stylesheet" href="shell/tabbar.css?v=20261103d" />
+  <link rel="stylesheet" href="shell/tabbar.css?v=20261103e" />
   <style>
     :root {
       --bg: #f4f6f9;
@@ -363,6 +363,150 @@
       border-bottom: 1px solid #b7e0d0;
     }
     .daily-tips[hidden] { display: none; }
+
+    /* —— 政策抽卡 —— */
+    .draw-panel {
+      margin-top: 10px;
+      grid-column: 2;
+    }
+    .draw-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+    .draw-btn {
+      appearance: none;
+      -webkit-appearance: none;
+      border: 1px solid #cfe8dc;
+      background: #fff;
+      color: var(--accent);
+      font: inherit;
+      font-size: 0.76rem;
+      font-weight: 700;
+      line-height: 1.2;
+      padding: 6px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .draw-btn.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .draw-btn:active { transform: scale(0.98); }
+    .draw-btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+    .draw-status {
+      margin: 6px 0 0;
+      font-size: 0.74rem;
+      color: var(--muted);
+      min-height: 1.2em;
+    }
+    .draw-status.is-error { color: #b42318; }
+    .draw-hand {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .draw-card {
+      background: #fff;
+      border: 1px solid #cfe8dc;
+      border-radius: 12px;
+      padding: 10px 11px 9px;
+      box-shadow: 0 2px 10px rgba(26, 35, 50, 0.04);
+      border-left: 3px solid var(--accent);
+    }
+    .draw-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .draw-themes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      min-width: 0;
+    }
+    .draw-chip {
+      display: inline-block;
+      font-size: 0.66rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid #cfe8dc;
+      border-radius: 999px;
+      padding: 2px 7px;
+      line-height: 1.25;
+    }
+    .draw-swap {
+      appearance: none;
+      -webkit-appearance: none;
+      flex-shrink: 0;
+      border: 1px solid #cfe8dc;
+      background: #f7faf9;
+      color: var(--accent);
+      font: inherit;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 999px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .draw-swap:active { background: #d3ebe1; }
+    .draw-card-title {
+      margin: 0 0 8px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+    .draw-facts {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .draw-facts > div {
+      display: grid;
+      grid-template-columns: 3.6em 1fr;
+      gap: 6px;
+      align-items: start;
+    }
+    .draw-facts dt {
+      margin: 0;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+      padding-top: 2px;
+    }
+    .draw-facts dd {
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+    .draw-facts dd.muted {
+      color: var(--muted);
+      font-size: 0.76rem;
+    }
+    .draw-src {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--accent-2);
+      text-decoration: none;
+      border-bottom: 1px solid #c7d7f5;
+    }
     .sr-only {
       position: absolute;
       width: 1px;
@@ -376,7 +520,7 @@
     }
   </style>
 </head>
-<body class="hub-has-tabs" data-stamp="20261103d">
+<body class="hub-has-tabs" data-stamp="20261103e">
   <main class="wrap">
     <header class="brand">
       <div class="logo" aria-hidden="true">JRE</div>
@@ -386,7 +530,7 @@
       </div>
     </header>
 
-    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103d">
+    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103e">
       <div class="daily-head">
         <div>
           <h2 class="daily-title" id="daily-title">每日溫書</h2>
@@ -397,14 +541,22 @@
 
       <ul class="daily-list" id="daily-list">
         <li class="daily-item" data-key="policy">
-          <input class="daily-check" type="checkbox" id="chk-policy" aria-describedby="desc-policy" />
+          <input class="daily-check" type="checkbox" id="chk-policy" aria-describedby="desc-policy" title="已背" />
           <div>
             <p class="daily-step-title">
               <label for="chk-policy">政策 20 分</label>
             </p>
             <p class="daily-step-desc" id="desc-policy">抽 2–3 張新／熱卡；每張背 1 硬數字＋1 措施</p>
             <div class="daily-links">
-              <a class="primary" href="policy/">政策卡</a>
+              <a href="policy/">政策庫</a>
+            </div>
+            <div class="draw-panel" id="draw-panel">
+              <div class="draw-toolbar">
+                <button type="button" class="draw-btn primary" id="btn-draw">抽卡</button>
+                <button type="button" class="draw-btn" id="btn-redraw" hidden>再抽</button>
+              </div>
+              <p class="draw-status" id="draw-status" aria-live="polite"></p>
+              <div class="draw-hand" id="draw-hand" hidden></div>
             </div>
           </div>
         </li>
@@ -555,12 +707,35 @@
       <a href="https://anclh.github.io/collocation-bank/" rel="noopener">anclh.github.io/collocation-bank</a>
     </p>
   </main>
-  <script src="shell/tabbar.js?v=20261103d"></script>
+  <script src="shell/tabbar.js?v=20261103e"></script>
   <script>
   (function () {
     var TZ = "Asia/Hong_Kong";
     var KEYS = ["policy", "structure", "write", "vocab"];
     var WD_ZH = ["日", "一", "二", "三", "四", "五", "六"];
+    var HAND_SIZE = 3;
+    var HOT_THEMES = ["housing-land", "healthcare", "innovation", "fintech-ai", "environment-climate"];
+    var THEME_ZH = {
+      "housing-land": "房屋",
+      "healthcare": "醫療",
+      "innovation": "創科",
+      "fintech-ai": "創科",
+      "environment-climate": "環保",
+      "finance": "金融",
+      "governance": "管治",
+      "education": "教育",
+      "northern-metropolis": "北都",
+      "transport-logistics": "交通",
+      "labour": "勞工",
+      "elderly-care": "安老",
+      "poverty-welfare": "福利",
+      "digital-gov": "數碼政府",
+      "legislation": "立法",
+      "culture-tourism": "文旅",
+      "youth": "青年",
+      "sports": "體育",
+      "national-development": "國家發展"
+    };
 
     function hktParts(d) {
       var fmt = new Intl.DateTimeFormat("en-CA", {
@@ -578,7 +753,7 @@
       var y = get("year");
       var m = get("month");
       var day = get("day");
-      var wdShort = get("weekday"); // Sun Mon …
+      var wdShort = get("weekday");
       var map = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
       return {
         ymd: y + "-" + m + "-" + day,
@@ -590,6 +765,9 @@
 
     function storageKey(ymd) {
       return "jre-daily-study:" + ymd;
+    }
+    function drawsKey(ymd) {
+      return "jre-daily-study:" + ymd + ":draws";
     }
 
     function loadState(ymd) {
@@ -609,10 +787,129 @@
       } catch (e) {}
     }
 
+    function loadDrawIds(ymd) {
+      try {
+        var raw = localStorage.getItem(drawsKey(ymd));
+        if (!raw) return null;
+        var arr = JSON.parse(raw);
+        return Array.isArray(arr) ? arr.filter(function (x) { return typeof x === "string"; }) : null;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function saveDrawIds(ymd, ids) {
+      try {
+        localStorage.setItem(drawsKey(ymd), JSON.stringify(ids));
+      } catch (e) {}
+    }
+
     function setPrimary(el, on) {
       if (!el) return;
       if (on) el.classList.add("primary");
       else el.classList.remove("primary");
+    }
+
+    function shuffle(arr) {
+      var a = arr.slice();
+      for (var i = a.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = a[i];
+        a[i] = a[j];
+        a[j] = t;
+      }
+      return a;
+    }
+
+    function primaryTheme(item) {
+      var ts = item.themes || [];
+      for (var i = 0; i < HOT_THEMES.length; i++) {
+        if (ts.indexOf(HOT_THEMES[i]) >= 0) return HOT_THEMES[i];
+      }
+      return ts[0] || "";
+    }
+
+    function themeLabel(id) {
+      return THEME_ZH[id] || id;
+    }
+
+    function isHot(item) {
+      var ts = item.themes || [];
+      for (var i = 0; i < HOT_THEMES.length; i++) {
+        if (ts.indexOf(HOT_THEMES[i]) >= 0) return true;
+      }
+      return false;
+    }
+
+    /** Extract 1 hard figure snippet from summary (+ title). */
+    function extractFigure(item) {
+      var text = ((item.summary || "") + " " + (item.title || "")).replace(/\s+/g, " ");
+      var patterns = [
+        /(\d{1,2})\s*[x×Ｘ]\s*(\d)/,
+        /(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)\s*(?:%|％|萬人|萬元|億元|億港元|港元|萬|億|元|人|間|日|年|宗|倍|公里|個|項|份|名|座|幢|戶|床|劑|次)/,
+        /約?\s*(\d{1,3}(?:[,\s]\d{3})+|\d+)\s*(人|間|個|名|宗|戶|張|隊)/,
+        /(20\d{2})\s*年/,
+        /(\d+(?:\.\d+)?)\s*(?:至|-|–|—)\s*(\d+(?:\.\d+)?)\s*(%|％|萬|億|人|間|日)?/,
+        /(\d+(?:\.\d+)?)\s*(?:%|％)/,
+      ];
+      for (var p = 0; p < patterns.length; p++) {
+        var m = text.match(patterns[p]);
+        if (!m) continue;
+        var snip = m[0].replace(/\s+/g, " ").trim();
+        // skip weak ordinal-looking 二讀-only style if too short Chinese numeral alone
+        if (/^[一二三四五六七八九十百]+$/.test(snip)) continue;
+        if (snip.length > 28) snip = snip.slice(0, 28);
+        return { ok: true, text: snip };
+      }
+      // factual clause fallback (no strong number)
+      var clause = (item.summary || item.title || "").split(/[。；;]/)[0] || "";
+      clause = clause.replace(/\s+/g, " ").trim();
+      if (clause.length > 42) clause = clause.slice(0, 42) + "…";
+      return {
+        ok: false,
+        text: "（摘要無獨立硬數—記 1 個可驗證事實）",
+        fact: clause || "（見政策卡原文）",
+      };
+    }
+
+    /** Extract 1 measure / policy-action clause. */
+    function extractMeasure(item) {
+      var summary = (item.summary || "").replace(/\s+/g, " ").trim();
+      var title = (item.title || "").replace(/\s+/g, " ").trim();
+      var verbRe = /推出|設立|成立|預留|修訂|重建|資助|推行|宣布|刊憲|展開|恢復|徵詢|招募|更新|推進|推動|支持|加強|落實|引入|啟用|擴展|增至|進入|恢復二讀|遷置|回收|致辭|合作/;
+      var parts = summary.split(/[。；;]/).filter(Boolean);
+      var best = "";
+      for (var i = 0; i < parts.length; i++) {
+        var s = parts[i].trim();
+        if (!s) continue;
+        if (verbRe.test(s)) {
+          best = s;
+          break;
+        }
+        if (!best) best = s;
+      }
+      if (!best) best = title;
+      // trim long clauses around the verb
+      if (best.length > 56) {
+        var vm = best.search(verbRe);
+        if (vm > 8) best = "…" + best.slice(Math.max(0, vm - 6));
+        if (best.length > 56) best = best.slice(0, 56) + "…";
+      }
+      return best || "（見政策卡措施）";
+    }
+
+    function enrich(item) {
+      var fig = extractFigure(item);
+      return {
+        id: item.id,
+        date: item.date,
+        title: item.title,
+        themes: item.themes || [],
+        figure: fig,
+        measure: extractMeasure(item),
+        hot: isHot(item),
+        primary: primaryTheme(item),
+      };
     }
 
     var now = hktParts(new Date());
@@ -620,10 +917,10 @@
     if (dateEl) dateEl.textContent = now.label;
 
     var oddDay = now.dayNum % 2 === 1;
-    var wd = now.weekday; // 0=Sun … 6=Sat
+    var wd = now.weekday;
     var isSun = wd === 0;
-    var writeQ1 = wd === 1 || wd === 3 || wd === 5; // Mon Wed Fri
-    var writeQ2 = wd === 2 || wd === 4 || wd === 6; // Tue Thu Sat
+    var writeQ1 = wd === 1 || wd === 3 || wd === 5;
+    var writeQ2 = wd === 2 || wd === 4 || wd === 6;
 
     var q1f = document.getElementById("link-q1-frames");
     var q2f = document.getElementById("link-q2-frames");
@@ -662,7 +959,6 @@
       setPrimary(q1w, false);
       setPrimary(q2w, false);
       if (sunTip) sunTip.hidden = false;
-      // Sunday primary CTAs → timed drills
       var links = document.getElementById("write-links");
       if (links) {
         links.innerHTML =
@@ -700,7 +996,264 @@
         if (item) item.classList.toggle("is-done", !!box.checked);
       });
     });
+
+    /* —— Policy draw UI —— */
+    var allItems = [];
+    var byId = {};
+    var btnDraw = document.getElementById("btn-draw");
+    var btnRedraw = document.getElementById("btn-redraw");
+    var statusEl = document.getElementById("draw-status");
+    var handEl = document.getElementById("draw-hand");
+    var currentIds = [];
+
+    function setStatus(msg, isErr) {
+      if (!statusEl) return;
+      statusEl.textContent = msg || "";
+      statusEl.classList.toggle("is-error", !!isErr);
+    }
+
+    function buildPriorityPool() {
+      var today = [];
+      var dates = {};
+      allItems.forEach(function (it) {
+        if (it.date === now.ymd) today.push(it);
+        dates[it.date] = true;
+      });
+      var recent = today;
+      var recentLabel = "今日新卡";
+      if (!recent.length) {
+        var sortedDates = Object.keys(dates).sort();
+        var latest = sortedDates.length ? sortedDates[sortedDates.length - 1] : "";
+        var second = sortedDates.length > 1 ? sortedDates[sortedDates.length - 2] : "";
+        recent = allItems.filter(function (it) {
+          return it.date === latest || it.date === second;
+        });
+        recentLabel = latest ? ("近卡 " + latest + (second ? "／" + second : "")) : "近卡";
+      }
+      var recentIds = {};
+      recent.forEach(function (it) { recentIds[it.id] = true; });
+      var hot = allItems.filter(function (it) {
+        return !recentIds[it.id] && isHot(it);
+      });
+      var hotIds = {};
+      hot.forEach(function (it) { hotIds[it.id] = true; });
+      var rest = allItems.filter(function (it) {
+        return !recentIds[it.id] && !hotIds[it.id];
+      });
+      return {
+        tiers: [shuffle(recent), shuffle(hot), shuffle(rest)],
+        recentLabel: recentLabel,
+        recentCount: recent.length,
+      };
+    }
+
+    function pickDiverse(n, excludeIds, preferFresh) {
+      excludeIds = excludeIds || {};
+      var built = buildPriorityPool();
+      var picked = [];
+      var usedTheme = {};
+      var usedId = {};
+
+      function tryPick(list, requireNewTheme) {
+        for (var i = 0; i < list.length; i++) {
+          var it = list[i];
+          if (excludeIds[it.id] || usedId[it.id]) continue;
+          var th = primaryTheme(it);
+          if (requireNewTheme && th && usedTheme[th]) continue;
+          picked.push(it);
+          usedId[it.id] = true;
+          if (th) usedTheme[th] = true;
+          return true;
+        }
+        return false;
+      }
+
+      // Pass 1: diverse themes across tiers
+      while (picked.length < n) {
+        var progressed = false;
+        for (var t = 0; t < built.tiers.length; t++) {
+          if (picked.length >= n) break;
+          if (tryPick(built.tiers[t], true)) progressed = true;
+        }
+        if (!progressed) break;
+      }
+      // Pass 2: fill ignoring theme variety
+      while (picked.length < n) {
+        var progressed2 = false;
+        for (var t2 = 0; t2 < built.tiers.length; t2++) {
+          if (picked.length >= n) break;
+          if (tryPick(built.tiers[t2], false)) progressed2 = true;
+        }
+        if (!progressed2) break;
+      }
+      return { items: picked, meta: built };
+    }
+
+    function escapeHtml(s) {
+      return String(s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function renderHand(ids) {
+      currentIds = ids.slice();
+      saveDrawIds(now.ymd, currentIds);
+      if (!handEl) return;
+      if (!ids.length) {
+        handEl.hidden = true;
+        handEl.innerHTML = "";
+        if (btnDraw) btnDraw.hidden = false;
+        if (btnRedraw) btnRedraw.hidden = true;
+        return;
+      }
+      handEl.hidden = false;
+      if (btnDraw) btnDraw.hidden = true;
+      if (btnRedraw) btnRedraw.hidden = false;
+
+      var html = "";
+      ids.forEach(function (id, idx) {
+        var raw = byId[id];
+        if (!raw) return;
+        var card = enrich(raw);
+        var chips = (card.themes || []).slice(0, 3).map(function (t) {
+          return '<span class="draw-chip">' + escapeHtml(themeLabel(t)) + "</span>";
+        }).join("");
+        var figHtml;
+        if (card.figure.ok) {
+          figHtml = "<dd>" + escapeHtml(card.figure.text) + "</dd>";
+        } else {
+          figHtml =
+            '<dd class="muted">' +
+            escapeHtml(card.figure.text) +
+            (card.figure.fact ? "<br>" + escapeHtml(card.figure.fact) : "") +
+            "</dd>";
+        }
+        html +=
+          '<article class="draw-card" data-id="' +
+          escapeHtml(id) +
+          '">' +
+          '<div class="draw-card-top">' +
+          '<div class="draw-themes">' +
+          (chips || '<span class="draw-chip">政策</span>') +
+          "</div>" +
+          '<button type="button" class="draw-swap" data-swap="' +
+          idx +
+          '" aria-label="換一張">換一張</button>' +
+          "</div>" +
+          '<h3 class="draw-card-title">' +
+          escapeHtml(card.title) +
+          "</h3>" +
+          '<dl class="draw-facts">' +
+          "<div><dt>硬數字</dt>" +
+          figHtml +
+          "</div>" +
+          "<div><dt>措施</dt><dd>" +
+          escapeHtml(card.measure) +
+          "</dd></div>" +
+          "</dl>" +
+          '<a class="draw-src" href="policy/">原文卡</a>' +
+          "</article>";
+      });
+      handEl.innerHTML = html;
+    }
+
+    function drawNew(force) {
+      if (!allItems.length) {
+        setStatus("未載入政策卡。", true);
+        return;
+      }
+      var exclude = {};
+      // On 再抽, lightly prefer avoiding current hand if pool allows
+      if (force && currentIds.length) {
+        currentIds.forEach(function (id) { exclude[id] = true; });
+      }
+      var n = Math.min(HAND_SIZE, allItems.length);
+      var result = pickDiverse(n, exclude, true);
+      // If too few after exclusion, allow current ids again
+      if (result.items.length < n && force) {
+        result = pickDiverse(n, {}, true);
+      }
+      var ids = result.items.map(function (it) { return it.id; });
+      renderHand(ids);
+      var meta = result.meta;
+      setStatus(
+        "已抽 " +
+          ids.length +
+          " 張（優先：" +
+          meta.recentLabel +
+          " → 熱題房屋／醫療／創科／環保 → 其餘）"
+      );
+    }
+
+    function swapOne(index) {
+      if (!currentIds.length) return;
+      var exclude = {};
+      currentIds.forEach(function (id) { exclude[id] = true; });
+      var result = pickDiverse(1, exclude, true);
+      if (!result.items.length) {
+        setStatus("沒有其他可換嘅卡。", true);
+        return;
+      }
+      var next = currentIds.slice();
+      next[index] = result.items[0].id;
+      renderHand(next);
+      setStatus("已換第 " + (index + 1) + " 張。");
+    }
+
+    if (handEl) {
+      handEl.addEventListener("click", function (ev) {
+        var t = ev.target;
+        if (!t || !t.getAttribute) return;
+        var swap = t.getAttribute("data-swap");
+        if (swap == null) return;
+        swapOne(parseInt(swap, 10));
+      });
+    }
+    if (btnDraw) {
+      btnDraw.addEventListener("click", function () {
+        drawNew(false);
+      });
+    }
+    if (btnRedraw) {
+      btnRedraw.addEventListener("click", function () {
+        drawNew(true);
+      });
+    }
+
+    setStatus("載入政策卡…");
+    if (btnDraw) btnDraw.disabled = true;
+
+    fetch("policy/data/policies.json", { cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        allItems = (data && data.items) || [];
+        byId = {};
+        allItems.forEach(function (it) {
+          if (it && it.id) byId[it.id] = it;
+        });
+        if (btnDraw) btnDraw.disabled = false;
+        var saved = loadDrawIds(now.ymd);
+        if (saved && saved.length) {
+          var valid = saved.filter(function (id) { return !!byId[id]; });
+          if (valid.length) {
+            renderHand(valid);
+            setStatus("今日手牌（重新整理仍保留；按「再抽」可換一組）");
+            return;
+          }
+        }
+        setStatus("撳「抽卡」抽出 2–3 張（優先今日新卡／熱題）。");
+      })
+      .catch(function () {
+        setStatus("載入失敗——可改開政策庫手動溫。", true);
+        if (btnDraw) btnDraw.disabled = true;
+      });
   })();
   </script>
 </body>
+
 </html>
