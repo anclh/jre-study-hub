@@ -1,6 +1,7 @@
 /**
  * Shared hot-face extractor for policy cards / daily draw.
- * extractHotFace(item) -> { figureOk, figureText, facts, measure }
+ * extractHotFace(item, opts?) -> { figureOk, figureText, facts, measure }
+ * opts.maxMeasure: longer measure clip for daily-draw face (default 36)
  */
 (function (root) {
   "use strict";
@@ -103,7 +104,8 @@
     return t.trim();
   }
 
-  function pickVerbSlice(text) {
+  function pickVerbSlice(text, maxLen) {
+    maxLen = maxLen || 36;
     text = String(text || "");
     if (!text) return "";
     var strong = [];
@@ -116,36 +118,37 @@
       var pick = strong[strong.length - 1];
       var chunk = text.slice(pick.i).trim();
       var comma = chunk.search(/[，,]/);
-      if (comma > 6 && comma <= 36) chunk = chunk.slice(0, comma);
+      if (comma > 6 && comma <= maxLen) chunk = chunk.slice(0, comma);
       if (pick.v === "刊憲") {
         var before = text.slice(0, pick.i);
         var ord = before.match(/《([^》]{4,40})》/);
-        if (ord) return clip("《" + ord[1] + "》刊憲", 36);
+        if (ord) return clip("《" + ord[1] + "》刊憲", Math.min(maxLen, 40));
         return "刊憲";
       }
-      return clip(chunk, 36);
+      return clip(chunk, maxLen);
     }
     var vi = text.search(VERB_RE);
     if (vi >= 0) {
       var c2 = text.slice(vi).trim();
       var cma = c2.search(/[，,]/);
-      if (cma > 6 && cma <= 36) c2 = c2.slice(0, cma);
-      return clip(c2, 36);
+      if (cma > 6 && cma <= maxLen) c2 = c2.slice(0, cma);
+      return clip(c2, maxLen);
     }
     return "";
   }
 
-  function extractMeasure(item) {
+  function extractMeasure(item, maxLen) {
+    maxLen = maxLen || 36;
     var title = titleMain(item.title || "");
     var summary = stripInterview(item.summary || "");
-    var best = pickVerbSlice(title);
+    var best = pickVerbSlice(title, maxLen);
 
     if (!best || best.length < 2 || WEAK_META_RE.test(best)) {
       var parts = summary.split(/[。；;]/).filter(Boolean);
       for (var i = 0; i < parts.length; i++) {
         var s = parts[i].trim();
         if (!s || WEAK_META_RE.test(s)) continue;
-        var cand = pickVerbSlice(s);
+        var cand = pickVerbSlice(s, maxLen);
         if (cand && !WEAK_META_RE.test(cand) && cand.length > 2) {
           best = cand;
           break;
@@ -155,13 +158,13 @@
 
     // Avoid ultra-short weak leftovers like bare 「合作」
     if (!best || best.length < 3 || WEAK_META_RE.test(best)) {
-      best = compressOrgs(clip(title, 32)) || "（見政策卡措施）";
+      best = compressOrgs(clip(title, Math.min(maxLen, 48))) || "（見政策卡措施）";
     }
     best = compressOrgs(best);
-    if (best.length > 36) {
+    if (best.length > maxLen) {
       var c = best.search(/[，,]/);
-      if (c > 8 && c <= 36) best = best.slice(0, c);
-      else best = clip(best, 34);
+      if (c > 8 && c <= maxLen) best = best.slice(0, c);
+      else best = clip(best, Math.max(maxLen - 2, 8));
     }
     return best || "（見政策卡措施）";
   }
@@ -246,12 +249,14 @@
     return facts;
   }
 
-  function extractHotFace(item) {
+  function extractHotFace(item, opts) {
     item = item || {};
+    opts = opts || {};
+    var maxMeasure = opts.maxMeasure || 36;
     var summary = stripInterview(item.summary || "");
     var title = String(item.title || "");
     var figureText = findFigure((summary + " " + title).replace(/\s+/g, " "));
-    var measure = extractMeasure(item);
+    var measure = extractMeasure(item, maxMeasure);
     var figureOk = !!figureText;
     var facts = figureOk ? [] : extractFacts(item, measure);
 

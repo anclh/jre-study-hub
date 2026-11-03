@@ -7,9 +7,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="description" content="JRE Study Hub — 聯合招聘考試備試（中英）" />
-  <!-- stamp: 20261103f · 硬數字熱面＋桌面寬度 -->
+  <!-- stamp: 20261103g · 每日手牌大卡 1–2 欄 -->
   <title>JRE Study Hub · 主頁</title>
-  <link rel="stylesheet" href="shell/tabbar.css?v=20261103f" />
+  <link rel="stylesheet" href="shell/tabbar.css?v=20261103g" />
   <style>
     :root {
       --bg: #f4f6f9;
@@ -416,50 +416,56 @@
     .draw-hand {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 10px;
-      margin-top: 8px;
+      gap: 14px;
+      margin-top: 10px;
     }
-    @media (min-width: 720px) {
+    /* Desktop: 1–2 large cards — never squeeze 3 columns */
+    @media (min-width: 900px) {
       .draw-hand {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-    @media (min-width: 980px) {
-      .draw-hand {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
       }
     }
     .draw-card {
       background: #fff;
       border: 1px solid #cfe8dc;
-      border-radius: 12px;
-      padding: 10px 11px 9px;
-      box-shadow: 0 2px 10px rgba(26, 35, 50, 0.04);
-      border-left: 3px solid var(--accent);
+      border-radius: 14px;
+      padding: 16px 18px 14px;
+      min-height: 220px;
+      box-shadow: 0 4px 16px rgba(26, 35, 50, 0.06);
+      border-left: 4px solid var(--accent);
+      display: flex;
+      flex-direction: column;
+    }
+    @media (min-width: 900px) {
+      .draw-card {
+        padding: 18px 20px 16px;
+        min-height: 248px;
+      }
     }
     .draw-card-top {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      gap: 8px;
-      margin-bottom: 4px;
+      gap: 10px;
+      margin-bottom: 8px;
     }
     .draw-themes {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px;
+      gap: 6px;
       min-width: 0;
     }
     .draw-chip {
       display: inline-block;
-      font-size: 0.66rem;
+      font-size: 0.75rem;
       font-weight: 700;
       color: var(--accent);
       background: var(--accent-soft);
       border: 1px solid #cfe8dc;
       border-radius: 999px;
-      padding: 2px 7px;
-      line-height: 1.25;
+      padding: 3px 10px;
+      line-height: 1.3;
     }
     .draw-swap {
       appearance: none;
@@ -469,60 +475,88 @@
       background: #f7faf9;
       color: var(--accent);
       font: inherit;
-      font-size: 0.7rem;
+      font-size: 0.78rem;
       font-weight: 700;
-      padding: 3px 8px;
+      padding: 5px 11px;
       border-radius: 999px;
       cursor: pointer;
       white-space: nowrap;
     }
     .draw-swap:active { background: #d3ebe1; }
     .draw-card-title {
-      margin: 0 0 8px;
-      font-size: 0.88rem;
+      margin: 0 0 12px;
+      font-size: 1.05rem;
       font-weight: 700;
       color: var(--ink);
-      line-height: 1.35;
+      line-height: 1.4;
+    }
+    @media (min-width: 900px) {
+      .draw-card-title { font-size: 1.12rem; }
     }
     .draw-facts {
       margin: 0;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 10px;
+      flex: 1;
     }
     .draw-facts > div {
       display: grid;
-      grid-template-columns: 4.8em 1fr;
-      gap: 6px;
+      grid-template-columns: 5.6em 1fr;
+      gap: 10px;
       align-items: start;
     }
     .draw-facts dt {
       margin: 0;
-      font-size: 0.68rem;
+      font-size: 0.78rem;
       font-weight: 800;
       color: var(--accent);
       letter-spacing: 0.02em;
-      padding-top: 2px;
+      padding-top: 3px;
     }
     .draw-facts dd {
       margin: 0;
-      font-size: 0.8rem;
+      font-size: 0.95rem;
       color: var(--ink);
-      line-height: 1.4;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+      word-break: break-word;
     }
     .draw-facts dd.muted {
       color: var(--muted);
-      font-size: 0.76rem;
+      font-size: 0.88rem;
+    }
+    .draw-meta {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid #e6f0eb;
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 12px;
+      align-items: baseline;
+    }
+    .draw-meta .draw-date {
+      font-weight: 700;
+      color: var(--ink);
+      font-variant-numeric: tabular-nums;
+    }
+    .draw-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      margin-top: 10px;
     }
     .draw-src {
       display: inline-block;
-      margin-top: 8px;
-      font-size: 0.72rem;
+      font-size: 0.8rem;
       font-weight: 700;
       color: var(--accent-2);
       text-decoration: none;
       border-bottom: 1px solid #c7d7f5;
     }
+    .draw-src:hover { border-bottom-color: var(--accent-2); }
     .sr-only {
       position: absolute;
       width: 1px;
@@ -536,7 +570,7 @@
     }
   </style>
 </head>
-<body class="hub-has-tabs" data-stamp="20261103f">
+<body class="hub-has-tabs" data-stamp="20261103g">
   <main class="wrap">
     <header class="brand">
       <div class="logo" aria-hidden="true">JRE</div>
@@ -546,7 +580,7 @@
       </div>
     </header>
 
-    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103f">
+    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103g">
       <div class="daily-head">
         <div>
           <h2 class="daily-title" id="daily-title">每日溫書</h2>
@@ -723,8 +757,8 @@
       <a href="https://anclh.github.io/collocation-bank/" rel="noopener">anclh.github.io/collocation-bank</a>
     </p>
   </main>
-  <script src="shared/policy-hotface.js?v=20261103f"></script>
-  <script src="shell/tabbar.js?v=20261103f"></script>
+  <script src="shared/policy-hotface.js?v=20261103g"></script>
+  <script src="shell/tabbar.js?v=20261103g"></script>
   <script>
   (function () {
     var TZ = "Asia/Hong_Kong";
@@ -860,13 +894,15 @@
 
     function enrich(item) {
       var hot = (typeof extractHotFace === "function")
-        ? extractHotFace(item)
+        ? extractHotFace(item, { maxMeasure: 110 })
         : { figureOk: false, figureText: "", facts: [], measure: "（見政策卡措施）" };
       return {
         id: item.id,
         date: item.date,
         title: item.title,
         themes: item.themes || [],
+        source_name: item.source_name || "",
+        source_url: item.source_url || "",
         hotFace: hot,
         hot: isHot(item),
         primary: primaryTheme(item),
@@ -1093,6 +1129,21 @@
             facts.map(function (f) { return escapeHtml(f); }).join("<br>") +
             "</dd>";
         }
+        var metaBits = [];
+        if (card.date) {
+          metaBits.push('<span class="draw-date">' + escapeHtml(card.date) + "</span>");
+        }
+        if (card.source_name) {
+          metaBits.push("<span>" + escapeHtml(card.source_name) + "</span>");
+        }
+        var actions =
+          '<a class="draw-src" href="policy/">政策庫</a>';
+        if (card.source_url) {
+          actions +=
+            '<a class="draw-src" href="' +
+            escapeHtml(card.source_url) +
+            '" target="_blank" rel="noopener noreferrer">原文公報</a>';
+        }
         html +=
           '<article class="draw-card" data-id="' +
           escapeHtml(id) +
@@ -1116,7 +1167,12 @@
           escapeHtml(hf.measure || "") +
           "</dd></div>" +
           "</dl>" +
-          '<a class="draw-src" href="policy/">原文卡</a>' +
+          (metaBits.length
+            ? '<div class="draw-meta">' + metaBits.join("") + "</div>"
+            : "") +
+          '<div class="draw-actions">' +
+          actions +
+          "</div>" +
           "</article>";
       });
       handEl.innerHTML = html;
