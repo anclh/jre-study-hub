@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>JRE English Q1 · Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261103r" />
+  <link rel="stylesheet" href="styles.css?v=20261103s" />
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261103c" />
 </head>
 <body>
@@ -16,12 +16,13 @@
         <div class="brand-mark">Q1</div>
         <div>
           <h1>英文 Q1</h1>
-          <p>Discussion paper · Data File · 計時練習</p>
+          <p>Discussion paper · 政策溫習卡 · Data File</p>
         </div>
       </div>
     </div>
     <nav class="subnav" id="subnav" aria-label="Q1 sections">
       <button type="button" data-panel="structure" class="active">結構／句式</button>
+      <button type="button" data-panel="bank">政策溫習卡</button>
       <button type="button" data-panel="tips">Tips</button>
       <button type="button" data-panel="case">計時練習</button>
       <button type="button" data-panel="mark">自評清單</button>
@@ -39,6 +40,33 @@
           <li>全卷 Data File 理想 <strong>&lt; ~15 min</strong>；唔好逐份 document 由頭讀到尾。</li>
           <li><strong>Never copy</strong> 長段 background（paraphrase of background <strong>scores nothing</strong>）。</li>
         </ul>
+        <ol class="frame-skeleton">
+          <li>
+            <a href="#stage-opening"><strong>1. Opening</strong>（1–2 句）</a>
+            <p>核心問題 + 政府目標。越短越好；唔堆背景／數字；唔抄公文 Purpose。</p>
+            <p class="muted">Starters：The main challenge is… / The key issue facing the administration is…</p>
+          </li>
+          <li>
+            <a href="#stage-problem"><strong>2. Problem analysis</strong>（2 個）</a>
+            <p>每個：是什麼 + implications（用 Data File 證據）。典型 implications：fiscal／manpower／service quality／public confidence／knock-on effects。Analyse，唔 paraphrase。</p>
+            <p class="muted">Starters：This may give rise to… / There could be knock-on effects on… / Left unaddressed, the problem risks…</p>
+          </li>
+          <li>
+            <a href="#stage-options"><strong>3. Option comparison</strong>（2–3 · 得分核心）</a>
+            <p>固定 criteria：effectiveness｜cost／resources｜feasibility｜stakeholder impact／acceptance。主動回每 option 嘅最強 objection。</p>
+            <p class="muted">Starters：Option A scores higher on feasibility but lower on cost-effectiveness. / After weighing the trade-offs…</p>
+          </li>
+          <li>
+            <a href="#stage-recommendation"><strong>4. Recommendation</strong></a>
+            <p>清晰選項（one 或 mix）。必須：who leads、pilot／phased、KPIs、timeline、resource condition。效果用 may／could／if accompanied by…。</p>
+            <p class="muted">Starters：It is recommended that a pilot be launched in… / The [Bureau] should lead… / Subject to available resources…</p>
+          </li>
+          <li>
+            <a href="#stage-closing"><strong>5. Closing</strong>（短）</a>
+            <p>Residual risks + 如何 monitor／review。</p>
+            <p class="muted">Starters：Residual risks remain and should be monitored. / A review should be conducted after 12–18 months.</p>
+          </li>
+        </ol>
       </div>
 
       <div class="card must-use" id="phrases">
@@ -144,6 +172,21 @@
         </div>
       </div>
 
+    </section>
+
+
+    <section class="panel" id="panel-bank">
+      <div class="card">
+        <h2>政策溫習卡 <span class="chip">題庫</span></h2>
+        <p class="lede">考試式題目 → 利弊 → 建議立場 → 措施 → 必記事實。對齊 Q1 case 主題同 Q2 題庫事實；點開先見全文。Data File 計時練習仍喺「計時練習」。</p>
+        <div class="search-bar">
+          <input id="bankSearch" type="search" enterkeyhint="search" autocomplete="off" spellcheck="false" placeholder="搜尋主題、題目、立場、事實…" aria-label="搜尋政策溫習卡" />
+        </div>
+        <div class="count" id="bankCount">溫習卡: —</div>
+      </div>
+      <div class="briefs-list" id="briefsList"></div>
+      <div class="card quick-ref" id="quickRef" hidden></div>
+      <div class="card briefs-sources" id="briefsSources" hidden></div>
     </section>
 
     <section class="panel" id="panel-tips">
@@ -266,7 +309,7 @@
   <script src="data/border-resilience.js?v=20261103c"></script>
   <script src="data/loop-link-resumption.js?v=20261103c"></script>
   <script src="data/waste-recovery-2026-11-02.js?v=20261103c"></script>
-  <script src="app.js?v=20261103r"></script>
+  <script src="app.js?v=20261103s"></script>
   <script src="../shell/tabbar.js?v=20261103c"></script>
 </body>
 </html>

@@ -63,6 +63,194 @@
       .replace(/"/g, "&quot;");
   }
 
+  function escapeAttr(s) {
+    return escapeHtml(s).replace(/'/g, "&#39;");
+  }
+
+  function listHtml(items, ordered) {
+    if (!items || !items.length) return "";
+    const tag = ordered ? "ol" : "ul";
+    return `<${tag}>${items.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</${tag}>`;
+  }
+
+  let policyCardsData = null;
+  const openPolicyCards = new Set();
+  let bankQuery = "";
+
+  function cardMatches(card) {
+    const q = bankQuery.trim().toLowerCase();
+    if (!q) return true;
+    const blob = [
+      card.id,
+      card.title_zh,
+      card.title_en,
+      card.prompt,
+      card.stance,
+      ...(card.pros || []),
+      ...(card.cons || []),
+      ...(card.measures || []),
+      ...((card.facts || []).map((f) => f.text || "")),
+      ...((card.theme_ids || [])),
+    ]
+      .join("\n")
+      .toLowerCase();
+    return blob.includes(q);
+  }
+
+  function filteredPolicyCards() {
+    if (!policyCardsData) return [];
+    return (policyCardsData.cards || []).filter(cardMatches);
+  }
+
+  function renderPolicyCards() {
+    const list = $("#briefsList");
+    const countEl = $("#bankCount");
+    const quickRef = $("#quickRef");
+    const sourcesEl = $("#briefsSources");
+    if (!list || !countEl) return;
+
+    if (!policyCardsData) {
+      countEl.textContent = "溫習卡: —";
+      list.innerHTML = `<div class="empty">無法載入 data/policy-cards.json</div>`;
+      if (quickRef) quickRef.hidden = true;
+      if (sourcesEl) sourcesEl.hidden = true;
+      return;
+    }
+
+    const cards = filteredPolicyCards();
+    countEl.textContent = `溫習卡: ${cards.length}`;
+    list.innerHTML = "";
+    if (!cards.length) {
+      list.innerHTML = `<div class="empty">沒有符合條件的項目。試試清空搜尋。</div>`;
+      if (quickRef) quickRef.hidden = true;
+      if (sourcesEl) sourcesEl.hidden = true;
+      return;
+    }
+
+    const frag = document.createDocumentFragment();
+    cards.forEach((card) => {
+      const open = openPolicyCards.has(card.id);
+      const el = document.createElement("article");
+      el.className = "brief-card" + (open ? " open" : "");
+      el.dataset.id = card.id;
+
+      const tags = (card.theme_ids || [])
+        .map((th) => `<span class="chip">${escapeHtml(th)}</span>`)
+        .join("");
+
+      const facts = (card.facts || [])
+        .map((f) => {
+          const link = f.url
+            ? `<br><a href="${escapeAttr(f.url)}" target="_blank" rel="noopener noreferrer">來源 ↗</a>`
+            : "";
+          return `<li>${escapeHtml(f.text)}${link}</li>`;
+        })
+        .join("");
+
+      el.innerHTML = `
+        <button type="button" class="brief-summary" aria-expanded="${open ? "true" : "false"}">
+          <span class="brief-num">${card.n}</span>
+          <span class="brief-summary-text">
+            <h3>${escapeHtml(card.title_zh || card.title_en || card.id)}</h3>
+            <div class="brief-en">${escapeHtml(card.title_en || "")}</div>
+            <p class="brief-stance-one">${escapeHtml(card.stance || "")}</p>
+            <div class="brief-tags">${tags}</div>
+          </span>
+          <span class="brief-chev" aria-hidden="true">▾</span>
+        </button>
+        <div class="brief-body">
+          <div class="brief-section">
+            <h4>考試式題目</h4>
+            <p class="brief-prompt">${escapeHtml(card.prompt)}</p>
+          </div>
+          <div class="brief-section pros">
+            <h4>利</h4>
+            ${listHtml(card.pros, false)}
+          </div>
+          <div class="brief-section cons">
+            <h4>弊</h4>
+            ${listHtml(card.cons, false)}
+          </div>
+          <div class="brief-section stance">
+            <h4>建議立場</h4>
+            <p class="brief-stance-label">${escapeHtml(card.stance || "")}</p>
+          </div>
+          <div class="brief-section">
+            <h4>措施</h4>
+            ${listHtml(card.measures, true)}
+          </div>
+          <div class="brief-section">
+            <h4>必記事實</h4>
+            <ul class="facts-list">${facts}</ul>
+          </div>
+          <div class="brief-actions">
+            <a class="btn" href="#case">去計時練習 Data File</a>
+          </div>
+        </div>`;
+
+      el.querySelector(".brief-summary").addEventListener("click", () => {
+        if (openPolicyCards.has(card.id)) openPolicyCards.delete(card.id);
+        else openPolicyCards.add(card.id);
+        renderPolicyCards();
+      });
+      frag.appendChild(el);
+    });
+    list.appendChild(frag);
+
+    const qr = policyCardsData.quick_ref || [];
+    if (quickRef) {
+      if (qr.length && !bankQuery.trim()) {
+        quickRef.hidden = false;
+        quickRef.innerHTML = `
+          <h3>速查表（練筆前 30 秒）</h3>
+          <table class="quick-ref-table">
+            <thead><tr><th>#</th><th>主題</th><th>一句立場</th></tr></thead>
+            <tbody>
+              ${qr
+                .map(
+                  (r) =>
+                    `<tr><td>${r.n}</td><td>${escapeHtml(r.theme)}</td><td>${escapeHtml(r.stance_one_liner)}</td></tr>`
+                )
+                .join("")}
+            </tbody>
+          </table>`;
+      } else {
+        quickRef.hidden = true;
+        quickRef.innerHTML = "";
+      }
+    }
+
+    const sources = policyCardsData.sources || [];
+    if (sourcesEl) {
+      if (sources.length && !bankQuery.trim()) {
+        sourcesEl.hidden = false;
+        sourcesEl.innerHTML = `
+          <h3>主要來源</h3>
+          <ul>${sources
+            .map(
+              (s) =>
+                `<li><a href="${escapeAttr(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(s.label)}</a></li>`
+            )
+            .join("")}</ul>`;
+      } else {
+        sourcesEl.hidden = true;
+        sourcesEl.innerHTML = "";
+      }
+    }
+  }
+
+  async function loadPolicyCards() {
+    try {
+      const res = await fetch("./data/policy-cards.json?v=20261103s", { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      policyCardsData = await res.json();
+      renderPolicyCards();
+    } catch (err) {
+      console.warn("policy-cards load failed", err);
+      policyCardsData = null;
+      renderPolicyCards();
+    }
+  }
 
   const STAGE_CHIPS = [
     { id: "all", label: "全部" },
@@ -437,7 +625,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261103r", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261103s", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {
@@ -592,7 +780,7 @@
     if (!lists.length) return;
     const src = root.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261103r", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261103s", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
@@ -649,7 +837,15 @@
     renderCase();
     const search = $("#q1Search");
     if (search) search.addEventListener("input", renderPhrases);
+    const bankSearch = $("#bankSearch");
+    if (bankSearch) {
+      bankSearch.addEventListener("input", () => {
+        bankQuery = bankSearch.value || "";
+        renderPolicyCards();
+      });
+    }
     loadPhrases();
+    loadPolicyCards();
   loadSharedFrames();
   function applyHash(h) {
     const map = {
@@ -667,6 +863,9 @@
       "stage-options": "structure",
       "stage-recommendation": "structure",
       "stage-closing": "structure",
+      bank: "bank",
+      "policy-cards": "bank",
+      "briefsList": "bank",
       "example-measure-pairs": "tips",
       tips: "tips",
       case: "case",

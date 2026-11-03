@@ -1,0 +1,385 @@
+{
+  "meta": {
+    "title": "Q1 政策溫習卡",
+    "title_en": "Policy revision cards",
+    "note": "Exam-style packs for English Q1 writing. Facts aligned to Q2 briefs / official PA & GIA sources — not City of Jade Data File fiction.",
+    "updated": "2026-11-03",
+    "stamp": "20261103s"
+  },
+  "cards": [
+    {
+      "id": "elderly-care",
+      "n": 1,
+      "title_zh": "人口老化與居家安老",
+      "title_en": "Ageing society · community care",
+      "theme_ids": [
+        "elderly-care"
+      ],
+      "prompt": "Some argue that Government should sharply expand community care vouchers and day-care places while scaling back new subsidised residential care homes. Analyse the pros and cons, state a clear stance, and propose deliverable measures.",
+      "pros": [
+        "Matches most elders’ preference to age in place and keep community ties.",
+        "Vouchers are more flexible and can stimulate home care, rehab and escort services faster than building homes.",
+        "Residential homes are land- and cost-intensive; community expansion can move sooner."
+      ],
+      "cons": [
+        "Frail, dementia and unsupported elders still need residential places — vouchers alone are not enough.",
+        "Carer burden can be silently shifted to families if community wrap-around is weak.",
+        "Quality risk: large voucher volume without monitoring becomes ‘voucher in hand, service nowhere’."
+      ],
+      "stance": "Support ageing-in-place as the core, with residential care as a backstop — and strengthen carers.",
+      "measures": [
+        "Raise community care vouchers to ~18,000 and residential care vouchers to ~8,000 by 2027-28, with new neighbourhood elderly / day centres.",
+        "Increase means-tested carer allowances and trial better-trained domestic helpers / carer training.",
+        "Scale gerontech (about HK$100m promotion envelope) to cut labour intensity of home care."
+      ],
+      "facts": [
+        {
+          "text": "2025: aged 65+ ~1.79m (~25%); ~36% by 2046. HKEC box.",
+          "url": "https://www.hkeconomy.gov.hk/en/pdf/box-25q4-6-1.pdf"
+        },
+        {
+          "text": "Community care vouchers +2,000 → 18,000; residential care vouchers +1,000 → 8,000 (2027-28). 2026 PA Highlights.",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "Elderly Health Care Vouchers usable at designated GBA service points (latest gazette counts apply)."
+        }
+      ]
+    },
+    {
+      "id": "mental-health",
+      "n": 2,
+      "title_zh": "基層醫療與精神健康",
+      "title_en": "Primary care · mental health",
+      "theme_ids": [
+        "mental-health",
+        "healthcare"
+      ],
+      "prompt": "Some argue that resources should prioritise primary care and community mental-health services, while deferring further expansion of large acute hospitals. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros": [
+        "Prevention and early intervention can ease specialist / A&E load and are more cost-effective long term.",
+        "Community mental-health channels (DHCs, ICCMHs) reach youth and elders faster.",
+        "Extra family-medicine slots (including night clinics) support earlier chronic-disease management."
+      ],
+      "cons": [
+        "Trauma, cancer and acute care still need hospital capacity; ageing raises inpatient demand.",
+        "Weak primary-to-hospital referral pathways send patients back to A&E.",
+        "Workforce scarcity means dual expansion can compete for the same clinicians."
+      ],
+      "stance": "Prioritise primary care + community mental health, without cutting acute hospital capability.",
+      "measures": [
+        "Use District Health Centres as hubs for chronic care and mental-health triage, linked via eHealth; set KPIs on referral time and DNA rates.",
+        "Grow ambulatory / day surgery capacity on the hospital side to free beds.",
+        "Expand community psychiatric nurses and peer support — not beds alone — to shorten specialist waits."
+      ],
+      "facts": [
+        {
+          "text": "From next year: ~220,000 extra family-medicine outpatient slots/year (incl. ~10,000 night clinics); elderly health assessments more than doubled. 2026 PA Ch.VII.",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+        },
+        {
+          "text": "eHealth registrations >6.5m (~87% of population). 2026 PA Ch.VII.",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+        },
+        {
+          "text": "Mental-health package of 11 measures: three-tier school emergency mechanism, more ICCMHs, Joyous Heart pilot extension, etc. Same chapter."
+        }
+      ]
+    },
+    {
+      "id": "waste-recovery",
+      "n": 3,
+      "title_zh": "都市固體廢物收費與回收",
+      "title_en": "MSW charging · recovery",
+      "theme_ids": [
+        "waste-recovery",
+        "transport-environment"
+      ],
+      "prompt": "Some argue that Government should immediately restore and mandate city-wide municipal solid waste charging to hit waste-reduction targets. Analyse pros and cons, state a stance, and propose sequenced measures.",
+      "pros": [
+        "Polluter-pays can shift behaviour and align with Waste Blueprint 2035 goals.",
+        "Can push source separation and lift recovery rates.",
+        "Long-run landfill relief frees land and environmental capacity."
+      ],
+      "cons": [
+        "Livelihood pressure (esp. subdivided flats / low-income) and illegal dumping risk.",
+        "Hard launch before collection networks and enforcement are ready invites failure and backlash.",
+        "Charging is currently suspended — society needs a transition and education window."
+      ],
+      "stance": "Keep charging as a backstop; first deliver recovery infrastructure and habits, then restart in phases.",
+      "measures": [
+        "Reach ‘one food-waste bin per estate’, ~3,000 smart recycling bins and ~2,500 smart food-waste bins; align messaging with Climate Action Plan 2050 / carbon-counting campaigns.",
+        "Pilot charging first at commercial premises, then residential, with recycling credits.",
+        "Couple with Transport Strategy Blueprint: public transport first, green mobility, ~5,000 EV fast chargers in five years."
+      ],
+      "facts": [
+        {
+          "text": "MSW recovery ~31% (2021) → ~34% (2024); food-waste recovery ~2.02 Mt (2024); daily MSW disposal ~10,326 tonnes (2025 publicity figure). info.gov.hk 2026-10-30.",
+          "url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000411.htm"
+        },
+        {
+          "text": "MSW charging: suspended, not cancelled. Cross-check EEB.",
+          "url": "https://www.eeb.gov.hk/"
+        },
+        {
+          "text": "Waste Blueprint 2035 mid-term: −40–45% per capita disposal; ~55% recovery.",
+          "url": "https://www.wastereduction.gov.hk/sites/default/files/2021-07/waste_blueprint_2035_eng.pdf"
+        }
+      ]
+    },
+    {
+      "id": "heat-adaptation",
+      "n": 4,
+      "title_zh": "極端酷熱與城市降溫",
+      "title_en": "Extreme heat · urban cooling",
+      "theme_ids": [
+        "heat-island"
+      ],
+      "prompt": "Some argue that, under intensifying extreme heat, Government should prioritise capital greening and shade in the hottest urban corridors over city-wide cash electricity subsidies or blanket midday outdoor work bans. Analyse the trade-offs, take a stance, and recommend a deliverable package.",
+      "pros": [
+        "Corridor-focused shade / cool surfaces attacks the spatial driver of heat exposure and ambulance load.",
+        "Capital works can sit inside climate-adaptation envelopes with limited new recurrent spend if maintenance stays with existing departments.",
+        "Targeted means-tested relief plus overnight cooling places protect frail elders faster than landscaping alone."
+      ],
+      "cons": [
+        "Greening alone does little for indoor heat in old private walk-ups tonight.",
+        "Open-ended electricity top-ups create recurrent fiscal pressure.",
+        "Hard midday stoppages without flexibility hit SME logistics and construction hard and face weak compliance."
+      ],
+      "stance": "Pilot cool-corridor capital + capped vulnerable relief first; soft outdoor-work guidance before city-wide mandates.",
+      "measures": [
+        "Phase 1: shade, trees, cool pavement and selected PRH/elderly common-area upgrades in the worst corridors; overnight cooling centres on Very Hot Weather Warning nights.",
+        "Time-limited, means-tested summer electricity top-up only for low-income elderly inside those corridors, with a hard spend cap and two-summer review.",
+        "Industry rest-break / shaded-rest guidance now; revisit mandatory cool-roof / façade rules for existing SME stock only after pilots and a funded transition path."
+      ],
+      "facts": [
+        {
+          "text": "Climate Action Plan 2050: cut total carbon emissions by half from 2005 before 2035; carbon neutrality before 2050; urban forestry cited to ease heat-island effects.",
+          "url": "https://cnsd.gov.hk/wp-content/uploads/2023/05/Adaptation-and-Resilience_en.pdf"
+        },
+        {
+          "text": "Building electricity goals: commercial −30–40% and residential −20–30% from 2015 by 2050 (half by 2035). ACE Paper 11/2026.",
+          "url": "https://www.eeb.gov.hk/sites/default/files/en/node5840/ACE_Paper_11_2026.pdf"
+        },
+        {
+          "text": "Government maintains about one million trees under TRAM / urban forestry programmes (DEVB greening).",
+          "url": "https://www.greening.gov.hk/filemanager/greening/en/content_48/Going-Green-and-Staying-Green_Urban-Forestry-Strategies-in-Hong-Kong_20220601.pdf"
+        }
+      ]
+    },
+    {
+      "id": "border-resilience",
+      "n": 5,
+      "title_zh": "口岸韌性與高峰應變",
+      "title_en": "Border resilience · peak response",
+      "theme_ids": [
+        "border-resilience"
+      ],
+      "prompt": "With cross-boundary travel becoming routine (incl. Northern Metropolis planning), some argue peak-crowd border response (e.g. Halloween flows) should be institutionalised with clear short-term lead departments and measurable ‘smoothness’ KPIs, rather than one-off mobilisation. Analyse, take a stance, and propose measures.",
+      "pros": [
+        "Clear lead and KPIs cut ‘who decides’ delays at peak and speed redeployment.",
+        "Standing SOPs prepare for denser daily NM-related flows, not just festival spikes.",
+        "Publishing wait-time / diversion / incident metrics builds trust and after-action accountability."
+      ],
+      "cons": [
+        "Over-rigid SOPs can strip frontline flexibility for unusual incidents.",
+        "Multi-bureau clearance chains (SB / TLB etc.) can slow decisions if every step escalates.",
+        "KPIs that only reward ‘speed’ may trade off inspection quality and safety."
+      ],
+      "stance": "Institutionalise peak response with clear lead + smoothness KPIs, while keeping on-site flexibility.",
+      "measures": [
+        "Standing peak SOP: triggers, command chain, on-site authority; CS-level cross-bureau steering; day-to-day execution by SB / TLB by function.",
+        "Publish smoothness KPIs: wait-time percentiles, public-transport diversion punctuality/load, incident response times; 72-hour post-peak brief.",
+        "Put foreseeable peaks on an annual drill calendar; extend pilots to other land crossings and link to NM passenger forecasts."
+      ],
+      "facts": [
+        {
+          "text": "Huanggang Port activated a cross-department peak response for Halloween flows (window ~30 Oct–1 Nov)."
+        },
+        {
+          "text": "Steering at Chief Secretary level; Security Bureau and Transport and Logistics Bureau in the execution split."
+        },
+        {
+          "text": "Policy angle: border resilience should plug into Northern Metropolis / routine cross-boundary travel, not one-off mobilisation only."
+        }
+      ]
+    },
+    {
+      "id": "new-industrial",
+      "n": 6,
+      "title_zh": "新型工業化資助落地",
+      "title_en": "New industrialisation · funding delivery",
+      "theme_ids": [
+        "new-industrial",
+        "new-industrialisation"
+      ],
+      "prompt": "Some argue that without scene validation, outcome KPIs and talent-retention metrics, New Industrialisation Funding Scheme / Accelerator support will stay ‘policy without delivery’. Should funding be tightly bound to delivery checks? Analyse, take a stance, and recommend measures.",
+      "pros": [
+        "Binding grants to validation and KPIs cuts ‘approve-and-forget’ and raises public-money accountability.",
+        "Accelerator + funding optimisation can move advanced manufacturing / prototypes into real scenes faster.",
+        "Retention metrics address the ‘projects without people’ risk in I&T."
+      ],
+      "cons": [
+        "Over-tight checks slow approvals; SMEs may struggle with compliance costs.",
+        "Scene validation needs cross-bureau coordination — firms may apply elsewhere short term.",
+        "Talent stay is driven by housing/tax/family factors a single grant cannot fully carry."
+      ],
+      "stance": "Bind funding to delivery checks, but phase them and keep them operable — with an SME-light track.",
+      "measures": [
+        "Phase: require minimum scene validation first in selected use-cases (e.g. advanced manufacturing / medical-device prototypes), then widen.",
+        "Verifiable KPIs: milestone hit-rate, local R&D/jobs, key talent retained in HK; miss → adjust later tranches.",
+        "ITIB + scheme administrators publish a one-page scorecard and annual outcomes report; simplify the SME channel."
+      ],
+      "facts": [
+        {
+          "text": "New Industrialisation Funding Scheme (from Sep 2024) is a main current tool (cite scheme name + timing in the exam)."
+        },
+        {
+          "text": "New Industrialisation Acceleration Scheme runs alongside, stressing faster industry landing."
+        },
+        {
+          "text": "Public discussion has cited funding bands around ~HK$2.8m / HK$15m — always check the latest official ceiling; do not treat one figure as the only cap."
+        }
+      ]
+    },
+    {
+      "id": "loop-link-resumption",
+      "n": 7,
+      "title_zh": "河套東連收地與北都落地",
+      "title_en": "Hetao east link · NM delivery",
+      "theme_ids": [
+        "loop-link-resumption",
+        "nmd-loop-resumption"
+      ],
+      "prompt": "Some argue that Northern Metropolis ‘ready sites’ depend on faster resumption for supporting roads such as the Hetao East Link, cross-bureau coordination, and measurable compensation outcomes — not blueprint announcements alone. Analyse, take a stance, and propose measures.",
+      "pros": [
+        "Aligning resumption to road / infrastructure nodes shortens the ‘planned but not ready’ gap for I&T and industry land.",
+        "Clear cross-bureau lead cuts mutual waiting and makes construction / handover dates more predictable.",
+        "Transparent compensation and relocation metrics lower protest/litigation risk and lift delivery confidence."
+      ],
+      "cons": [
+        "Rushing resumption without synced compensation/relocation can inflame communities and delay works.",
+        "One-size timelines ignore plot-level legal and engineering complexity and raise cost.",
+        "Making compensation satisfaction the only KPI can prolong negotiation and miss ready-site targets."
+      ],
+      "stance": "Align resumption to infrastructure nodes + cross-bureau coordination + measurable compensation — no blueprint-only storytelling.",
+      "measures": [
+        "Publish phased resumption and ready-site handover targets keyed to nodes (e.g. Hetao East Link), with named lead departments.",
+        "Standing Lands / Transport / bureau coordination with escalation triggers; quarterly public progress briefs.",
+        "Compensation KPIs: agreement rate, relocation-on-time, business transition completion; miss → fix process, not just publicity."
+      ],
+      "facts": [
+        {
+          "text": "Hetao East Link: resume 112 private lots (~5.7 ha); plus ~113 m² government land occupied by graves/urns; reverts to Government 3 months after notice (2027-01-30). info.gov.hk 2026-10-29.",
+          "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900313.htm"
+        },
+        {
+          "text": "Core tension: whether resumption keeps pace with ready-site supply, and whether cross-bureau coordination cuts mutual waiting."
+        },
+        {
+          "text": "Effectiveness lens: published, verifiable compensation/relocation — not plans alone."
+        }
+      ]
+    },
+    {
+      "id": "sme-digital",
+      "n": 8,
+      "title_zh": "中小企數碼轉型與資安",
+      "title_en": "SME digital uptake · cyber",
+      "theme_ids": [
+        "sme-digital"
+      ],
+      "prompt": "Some argue that SME digital subsidies should shift from approval volume to sustained tool use and basic cybersecurity outcomes (MFA, backups, phishing resilience), with a ring-fenced micro-firm track. Analyse pros and cons, take a stance, and recommend measures.",
+      "pros": [
+        "Outcome KPIs (still-in-use, cyber hygiene) curb ‘grant consultants + shelfware’.",
+        "Matching support for AI and cybersecurity under DTSPP matches real SME risk after rushed e-commerce setup.",
+        "A micro-firm track offsets skew toward larger SMEs that can already write better applications."
+      ],
+      "cons": [
+        "Heavy outcome audits raise admin burden and may deter the weakest firms.",
+        "Pure vouchers can race to the bottom on insecure cheap software.",
+        "Cyber capability gaps mean training must be bundled or take-up stays cosmetic."
+      ],
+      "stance": "Keep matching grants, but pay later tranches on verified use + basic cyber; ring-fence micro firms.",
+      "measures": [
+        "Enhance DTSPP matching subsidies for AI and cybersecurity solutions; publish still-in-use and MFA/backup KPIs at 6–12 months.",
+        "Raise Easy BUD ceiling use and AI-targeted BUD support; keep Digital DIY Portal advisory + cyber risk checks via HKPC.",
+        "Ring-fence a micro-firm (<10 staff) quota with pre-approved vendor list and mandatory short cyber hygiene module before final payment."
+      ],
+      "facts": [
+        {
+          "text": "2026 PA: 10 SME support measures — incl. Easy BUD ceiling raised to HK$150,000 (Jun) and more AI-targeted BUD support.",
+          "url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600290p.htm"
+        },
+        {
+          "text": "DTSPP to be enhanced with matching subsidies for more SMEs adopting AI and cybersecurity solutions. 2026 PA Ch.III.",
+          "url": "https://www.policyaddress.gov.hk/2026/en/chapter3.html"
+        },
+        {
+          "text": "BUD Fund: cumulative ceiling HK$7m per enterprise; general application ceiling HK$800,000; Easy BUD HK$150,000 (30 working-day pledge).",
+          "url": "https://www.tid.gov.hk/en/our_work/support_for_trade_industry/bud.html"
+        }
+      ]
+    }
+  ],
+  "quick_ref": [
+    {
+      "n": 1,
+      "theme": "居家安老",
+      "stance_one_liner": "Ageing-in-place core; residential as backstop + carers."
+    },
+    {
+      "n": 2,
+      "theme": "精神健康",
+      "stance_one_liner": "Primary + community mental health first; keep acute capacity."
+    },
+    {
+      "n": 3,
+      "theme": "廢物收費",
+      "stance_one_liner": "Charging as backstop; infrastructure & habits first."
+    },
+    {
+      "n": 4,
+      "theme": "極端酷熱",
+      "stance_one_liner": "Cool-corridor capital + capped relief before mandates."
+    },
+    {
+      "n": 5,
+      "theme": "口岸韌性",
+      "stance_one_liner": "Institutionalise peaks + KPIs; keep on-site flexibility."
+    },
+    {
+      "n": 6,
+      "theme": "新型工業",
+      "stance_one_liner": "Bind funding to delivery KPIs; phase + SME-light track."
+    },
+    {
+      "n": 7,
+      "theme": "河套東連",
+      "stance_one_liner": "Resumption to nodes + measurable compensation."
+    },
+    {
+      "n": 8,
+      "theme": "中小企數碼",
+      "stance_one_liner": "Pay on verified use + cyber; ring-fence micros."
+    }
+  ],
+  "sources": [
+    {
+      "label": "2026 Policy Address Highlights",
+      "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+    },
+    {
+      "label": "info.gov.hk GIA (MSW / Hetao)",
+      "url": "https://www.info.gov.hk/"
+    },
+    {
+      "label": "Climate Action Plan 2050 (adaptation)",
+      "url": "https://cnsd.gov.hk/wp-content/uploads/2023/05/Adaptation-and-Resilience_en.pdf"
+    },
+    {
+      "label": "Q2 題庫（同源事實）",
+      "url": "../q2/#bank"
+    }
+  ]
+}
