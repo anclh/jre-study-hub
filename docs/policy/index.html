@@ -7,9 +7,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="format-detection" content="telephone=no" />
-  <meta name="description" content="JRE Policy Bank — interview-oriented Hong Kong policy current affairs from public government sources" />
-  <title>JRE Policy Bank · JRE 政策資料庫</title>
-  <link rel="stylesheet" href="css/styles.css?v=20261103i" />
+  <meta name="description" content="JRE Policy Bank — 政策溫習卡（中英閃卡）同面試取向香港政策資料，來源為公開政府公報" />
+  <title>JRE Policy Bank · 政策溫習卡</title>
+  <link rel="stylesheet" href="css/styles.css?v=20261103w" />
+  <link rel="stylesheet" href="../shared/policy-flashcards.css?v=20261103w" />
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261027c" />
 </head>
 <body>
@@ -36,6 +37,30 @@
   </header>
 
   <main class="wrap">
+    <section id="flash" class="policy-flash" aria-labelledby="flashTitle">
+      <div class="briefs-intro" id="bank-study">
+        <h2 id="flashTitle">政策溫習卡</h2>
+        <p class="lede">一打開呢頁就係溫習卡。考試式題目 → 利弊 → 建議立場 → 措施 → 必記事實。中英對齊 Q2 題庫。下面先至係瀏覽／每周摘要。</p>
+        <div class="jre-pf jre-pf-launcher" id="bankFlashLauncher">
+          <div class="jre-pf-launcher-copy">
+            <h3>閃卡溫習 · Quizlet</h3>
+            <p>正面＝主題＋考試題／立場一句；翻面＝利弊→立場→措施→必記。中＋英。點卡翻面，識／未識。</p>
+          </div>
+          <button type="button" class="jre-pf-start" id="btnBankFlash">開始閃卡</button>
+        </div>
+        <div class="search-bar">
+          <input id="bankSearch" type="search" enterkeyhint="search" autocomplete="off" spellcheck="false" placeholder="搜尋主題、題目、立場、事實（中英）…" aria-label="搜尋政策溫習卡" />
+          <button type="button" class="clear-btn" id="bankClear">清除</button>
+        </div>
+        <div class="count" id="bankCount">溫習卡: —</div>
+        <p class="lede bank-list-hint">下面係列表備援；亦可點卡右上「閃」由該題開閃卡。同一套卡：<a href="../q1/#bank">Q1</a> · <a href="../q2/#bank">Q2 題庫</a></p>
+        <p class="flash-status" id="flashStatus" role="status" hidden></p>
+      </div>
+      <div class="briefs-list" id="briefsList"></div>
+      <div class="quick-ref" id="quickRef" hidden></div>
+      <div class="briefs-sources" id="briefsSources" hidden></div>
+    </section>
+
     <section class="hero">
       <h2 data-i18n="heroTitle">搜尋近期香港政策動向</h2>
       <p class="lede" data-i18n="heroLede">關鍵字搜尋、政策局／署過濾、主題標籤、摘要與面試角度——素材來自 info.gov.hk 等公開公報，非任何收費資料庫內容。</p>
@@ -107,6 +132,8 @@
   </footer>
 
   <script src="../shared/policy-hotface.js?v=20261103j"></script>
+  <script src="../shared/policy-flashcards.js?v=20261103w"></script>
+  <script src="js/flash.js?v=20261103w"></script>
   <script src="js/app.js?v=20261103i"></script>
   <script src="../shell/tabbar.js?v=20261025j"></script>
 </body>
