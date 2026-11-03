@@ -7,9 +7,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="description" content="JRE Study Hub — 每日溫書（結構／寫／詞；政策隔日可選）" />
-  <!-- stamp: 20261103l · 結構／寫作參考答案可隱藏 -->
+  <!-- stamp: 20261103m · 結構空白起草＋參考答案可隱藏 -->
   <title>JRE Study Hub · 每日溫書</title>
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103l" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103m" />
   <style>
 
     :root {
@@ -642,7 +642,7 @@
 
   </style>
 </head>
-<body class="hub-has-tabs" data-stamp="20261103l">
+<body class="hub-has-tabs" data-stamp="20261103m">
   <main class="wrap">
     <header class="brand">
       <div class="logo" aria-hidden="true">📅</div>
@@ -652,7 +652,7 @@
       </div>
     </header>
 
-    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103l">
+    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103m">
       <div class="daily-head">
         <div>
           <h2 class="daily-title" id="daily-title">每日溫書</h2>
@@ -677,6 +677,24 @@
             <div class="daily-links">
               <a id="link-q1-frames" href="../q1/#shared-frames">Q1 Opening→Closing</a>
               <a id="link-q2-frames" href="../q2/#shared-frames">Q2 立場→短結</a>
+            </div>
+            <div class="write-pad" id="structure-pad">
+              <p class="write-prompt" id="structure-prompt">
+                <span class="write-prompt-label">今日結構</span>
+                <span id="structure-prompt-text">—</span>
+              </p>
+              <label class="sr-only" for="structure-draft">結構起草區</label>
+              <textarea
+                class="write-area"
+                id="structure-draft"
+                rows="6"
+                placeholder="喺呢度起草結構骨架……（自動按香港日期儲存）"
+                spellcheck="true"
+              ></textarea>
+              <div class="write-meta">
+                <span id="structure-save-status" aria-live="polite">未儲存</span>
+                <button type="button" id="btn-clear-structure-draft">清空草稿</button>
+              </div>
             </div>
             <div class="write-answer" id="structure-answer">
               <p class="write-answer-hint">練完先睇；僅供參考</p>
@@ -794,8 +812,8 @@
       </p>
     </section>
   </main>
-  <script src="../shared/policy-hotface.js?v=20261103l"></script>
-  <script src="../shell/tabbar.js?v=20261103l"></script>
+  <script src="../shared/policy-hotface.js?v=20261103m"></script>
+  <script src="../shell/tabbar.js?v=20261103m"></script>
   <script>
   (function () {
     var TZ = "Asia/Hong_Kong";
@@ -859,6 +877,9 @@
     }
     function draftKey(ymd) {
       return "jre-daily-study:" + ymd + ":draft";
+    }
+    function structureDraftKey(ymd) {
+      return "jre-daily-structure:" + ymd;
     }
 
     function loadState(ymd) {
@@ -1115,6 +1136,57 @@
       }
       if (saveStatusEl) {
         saveStatusEl.textContent = draftEl.value
+          ? ("已載入今日草稿 · " + now.label)
+          : ("空白 · 輸入後自動儲存（" + now.label + "）");
+      }
+    }
+
+    /* —— Structure blank draft pad —— */
+    var structPromptEl = document.getElementById("structure-prompt-text");
+    var structDraftEl = document.getElementById("structure-draft");
+    var structSaveStatusEl = document.getElementById("structure-save-status");
+    var btnClearStructDraft = document.getElementById("btn-clear-structure-draft");
+    var structPromptText;
+    if (isSun) {
+      structPromptText = "日 · 兩邊骨架：Q1 Opening→Closing；Q2 立場→短結。喺下面起草。";
+    } else if (oddDay) {
+      structPromptText = "奇數日 · Q1：Opening → Problem → Options → Recommendation → Closing";
+    } else {
+      structPromptText = "偶數日 · Q2：開首立場 → 理據 → 反駁 → 建議 → 短結";
+    }
+    if (structPromptEl) structPromptEl.textContent = structPromptText;
+    if (structDraftEl) {
+      structDraftEl.setAttribute("aria-label", structPromptText);
+      try {
+        var savedStructDraft = localStorage.getItem(structureDraftKey(now.ymd));
+        if (savedStructDraft != null) structDraftEl.value = savedStructDraft;
+      } catch (e) {}
+      var structDraftTimer = null;
+      function persistStructDraft() {
+        try {
+          localStorage.setItem(structureDraftKey(now.ymd), structDraftEl.value);
+          if (structSaveStatusEl) {
+            structSaveStatusEl.textContent = "已儲存 · " + now.label;
+          }
+        } catch (e) {
+          if (structSaveStatusEl) structSaveStatusEl.textContent = "儲存失敗（瀏覽器限制）";
+        }
+      }
+      structDraftEl.addEventListener("input", function () {
+        if (structSaveStatusEl) structSaveStatusEl.textContent = "儲存中…";
+        if (structDraftTimer) clearTimeout(structDraftTimer);
+        structDraftTimer = setTimeout(persistStructDraft, 350);
+      });
+      if (btnClearStructDraft) {
+        btnClearStructDraft.addEventListener("click", function () {
+          if (structDraftEl.value && !confirm("清空今日結構草稿？")) return;
+          structDraftEl.value = "";
+          persistStructDraft();
+          structDraftEl.focus();
+        });
+      }
+      if (structSaveStatusEl) {
+        structSaveStatusEl.textContent = structDraftEl.value
           ? ("已載入今日草稿 · " + now.label)
           : ("空白 · 輸入後自動儲存（" + now.label + "）");
       }
