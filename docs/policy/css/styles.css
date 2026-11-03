@@ -15,6 +15,12 @@
   --shadow: 0 8px 24px rgba(26, 35, 50, 0.06);
   --radius: 14px;
   --font: "Segoe UI", "PingFang HK", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  /* Aliases so shared Quizlet CSS (Q1 token names) renders here */
+  --card: var(--surface);
+  --card2: #eef2f7;
+  --line: var(--border);
+  --text: var(--ink);
+  --warn: #b45309;
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-left: env(safe-area-inset-left, 0px);
@@ -903,6 +909,101 @@ button {
 .hero.briefs-mode .filters-toolbar,
 .hero.briefs-mode #filtersPanel {
   display: none !important;
+}
+
+/* —— 政策溫習卡: first block in main, always on the landing (browse/digest stay below) —— */
+#flash {
+  display: block;
+  margin-bottom: 14px;
+  scroll-margin-top: calc(var(--hub-tab-h, 56px) + 76px);
+}
+#bank-study { scroll-margin-top: calc(var(--hub-tab-h, 56px) + 76px); }
+#flash .bank-list-hint { margin: 8px 0 0; font-size: 0.82rem; color: var(--muted); }
+#flash .flash-status { margin: 8px 0 0; color: var(--warn); font-size: 0.9rem; }
+#flash .flash-status[hidden] { display: none !important; }
+#flash .search-bar { margin-top: 10px; }
+
+.brief-summary-row {
+  display: flex;
+  align-items: stretch;
+}
+.brief-summary-row .brief-summary {
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+}
+.brief-flash-btn {
+  flex: 0 0 auto;
+  width: 48px;
+  min-height: 48px;
+  margin: 10px 12px 10px 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.brief-flash-btn:active { transform: scale(0.96); }
+
+.bilingual-pair { margin: 0; }
+.bilingual-pair .zh,
+.brief-stance-one .zh,
+.facts-list .zh,
+.bilingual-list .zh,
+.quick-ref .zh {
+  display: block;
+  line-height: 1.45;
+}
+.bilingual-pair .en,
+.brief-stance-one .en,
+.facts-list .en,
+.bilingual-list .en,
+.quick-ref .en {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.4;
+  font-weight: 400;
+}
+.brief-stance-one .zh { font-weight: 650; }
+.bilingual-list { margin: 0; padding-left: 1.2rem; }
+.bilingual-list li { margin: 6px 0; }
+#flash .brief-section .bilingual-pair {
+  padding: 12px 14px;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.brief-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+}
+.brief-actions .btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 650;
+  border-radius: 12px;
+  padding: 10px 14px;
+  min-height: var(--tap);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.brief-actions .btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
 }
 
 @media (max-width: 767px) {
