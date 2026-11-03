@@ -7,9 +7,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="description" content="JRE Study Hub — 每日溫書（結構／寫／詞；政策隔日可選）" />
-  <!-- stamp: 20261103j · 每日溫書獨立 tab -->
+  <!-- stamp: 20261103k · 寫作參考答案可隱藏 -->
   <title>JRE Study Hub · 每日溫書</title>
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103j" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103k" />
   <style>
 
     :root {
@@ -572,6 +572,62 @@
       cursor: pointer;
     }
     .write-meta button:active { background: #d3ebe1; }
+
+    .write-answer {
+      margin-top: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .write-answer-toggle {
+      appearance: none;
+      -webkit-appearance: none;
+      align-self: flex-start;
+      border: 1px solid #cfe8dc;
+      background: #f7faf9;
+      color: var(--accent);
+      font: inherit;
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .write-answer-toggle:active { background: #d3ebe1; }
+    .write-answer-toggle[aria-expanded="true"] {
+      background: var(--accent-soft);
+      border-color: #b7e0d0;
+    }
+    .write-answer-hint {
+      margin: 0;
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .write-answer-box {
+      margin: 0;
+      padding: 12px 12px 11px;
+      background: #f0f4f8;
+      border: 1px dashed #c5d0dc;
+      border-radius: 12px;
+      color: #334155;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+    .write-answer-box[hidden] { display: none; }
+    .write-answer-box .ans-label {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
     .sr-only {
       position: absolute;
       width: 1px;
@@ -586,7 +642,7 @@
 
   </style>
 </head>
-<body class="hub-has-tabs" data-stamp="20261103j">
+<body class="hub-has-tabs" data-stamp="20261103k">
   <main class="wrap">
     <header class="brand">
       <div class="logo" aria-hidden="true">📅</div>
@@ -596,7 +652,7 @@
       </div>
     </header>
 
-    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103j">
+    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103k">
       <div class="daily-head">
         <div>
           <h2 class="daily-title" id="daily-title">每日溫書</h2>
@@ -654,6 +710,20 @@
                 <span id="write-save-status" aria-live="polite">未儲存</span>
                 <button type="button" id="btn-clear-draft">清空草稿</button>
               </div>
+              <div class="write-answer" id="write-answer">
+                <p class="write-answer-hint">寫完先睇；僅供參考</p>
+                <button
+                  type="button"
+                  class="write-answer-toggle"
+                  id="btn-toggle-answer"
+                  aria-expanded="false"
+                  aria-controls="write-answer-box"
+                >顯示參考答案</button>
+                <div class="write-answer-box" id="write-answer-box" hidden>
+                  <span class="ans-label" id="write-answer-label">參考／非標準答</span>
+                  <div id="write-answer-text"></div>
+                </div>
+              </div>
             </div>
           </div>
         </li>
@@ -710,8 +780,8 @@
       </p>
     </section>
   </main>
-  <script src="../shared/policy-hotface.js?v=20261103j"></script>
-  <script src="../shell/tabbar.js?v=20261103j"></script>
+  <script src="../shared/policy-hotface.js?v=20261103k"></script>
+  <script src="../shell/tabbar.js?v=20261103k"></script>
   <script>
   (function () {
     var TZ = "Asia/Hong_Kong";
@@ -1034,6 +1104,51 @@
           ? ("已載入今日草稿 · " + now.label)
           : ("空白 · 輸入後自動儲存（" + now.label + "）");
       }
+    }
+
+    /* —— Sample answer (hidden by default) —— */
+    var ANS_Q1 =
+      "Public hospital outpatient queues remain long, with median waiting times for specialist clinics still measured in months. This delays early intervention and pushes more residents toward A&E for non-urgent care, straining emergency capacity and raising avoidable costs. A practical response is to expand family-medicine night clinics and District Health Centre triage, while using eHealth records to divert stable cases into PPP primary-care slots with clear referral criteria. Taken together, these steps shorten the first contact for common conditions, ease pressure on acute wards, and free hospital teams for complex cases.\n\n（參考／非標準答 · ~110 words）";
+
+    var ANS_Q2 =
+      "我贊成加強基層醫療分流，因為公院專科輪候長，輕症擠佔急症資源。以醫健通與地區康健中心為例，市民可先在社區獲分流與覆診，減少不必要急症求診。措施方面，可擴夜診及家庭醫學門診名額，並以電子病歷銜接公私營，讓穩定個案優先轉介社區。此舉既能縮短初診接觸時間，亦讓醫院集中處理複雜病症。\n\n（參考／非標準答 · 約 150 字）";
+
+    var ANS_SUN =
+      "【大綱骨架 · 參考／非標準答】\n" +
+      "EN — Opening: state the pressure (e.g. waiting time / housing backlog).\n" +
+      "Point 1: implication for residents / service capacity.\n" +
+      "Point 2: one concrete HK measure (DHC / night clinic / rehousing).\n" +
+      "Closing: prioritise + monitor.\n\n" +
+      "中 — 開首：點出壓力（輪候／房屋供應）。\n" +
+      "理據一：對市民／服務容量的影響。\n" +
+      "理據二：一個可執行措施（地區康健／夜診／重建安置）。\n" +
+      "建議＋短結：優次＋跟進指標。\n\n" +
+      "（日：骨架即可，唔使全文貼入寫作區）";
+
+    var ansBtn = document.getElementById("btn-toggle-answer");
+    var ansBox = document.getElementById("write-answer-box");
+    var ansText = document.getElementById("write-answer-text");
+    var ansLabel = document.getElementById("write-answer-label");
+    var sampleBody;
+    if (isSun) {
+      sampleBody = ANS_SUN;
+      if (ansLabel) ansLabel.textContent = "日 · 大綱骨架（參考）";
+    } else if (writeQ1) {
+      sampleBody = ANS_Q1;
+      if (ansLabel) ansLabel.textContent = "Q1 參考／非標準答";
+    } else {
+      sampleBody = ANS_Q2;
+      if (ansLabel) ansLabel.textContent = "Q2 參考／非標準答";
+    }
+    if (ansText) ansText.textContent = sampleBody;
+    if (ansBtn && ansBox) {
+      ansBtn.addEventListener("click", function () {
+        var open = ansBtn.getAttribute("aria-expanded") === "true";
+        var next = !open;
+        ansBtn.setAttribute("aria-expanded", next ? "true" : "false");
+        ansBox.hidden = !next;
+        ansBtn.textContent = next ? "隱藏參考答案" : "顯示參考答案";
+      });
     }
 
     var state = loadState(now.ymd);
