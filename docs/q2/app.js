@@ -84,13 +84,7 @@
     btn.addEventListener("click", () => showPanel(btn.dataset.panel));
   });
   function hashPanel(h) {
-    if (
-      h === "frame" ||
-      h === "shared-frames" ||
-      h === "shared" ||
-      h === "sharedframes" ||
-      h === "pair-kits"
-    ) return "structure";
+    if (h === "frame" || h === "pair-kits") return "structure";
     return h;
   }
 
@@ -104,16 +98,12 @@
       "drill",
       "mark",
       "frame",
-      "shared-frames",
-      "shared",
-      "sharedframes",
       "pair-kits",
     ]);
     if (!known.has(h)) return;
     showPanel(hashPanel(h));
-    const targetId = h === "shared" || h === "sharedframes" ? "shared-frames" : h;
-    if (targetId !== "shared-frames" && targetId !== "pair-kits") return;
-    const target = document.getElementById(targetId);
+    if (h !== "pair-kits") return;
+    const target = document.getElementById("pair-kits");
     if (target) requestAnimationFrame(() => target.scrollIntoView({ behavior: "smooth", block: "start" }));
   }
 
@@ -379,7 +369,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261103e", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261103f", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -687,7 +677,7 @@
   async function loadQ2Phrases() {
     const grid = $("#q2PhraseGrid");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261103e", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261103f", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
       renderPaperFilters();
@@ -701,66 +691,6 @@
     }
   }
 
-  // Q2 essay order only. Group by q1_stage (fallback: stage). Labels are not Q1 headings.
-  const Q2_SHARED_STAGE_ORDER = [
-    { stage: "opening", label: "立場" },
-    { stage: "problem", label: "理據／例子" },
-    { stage: "options", label: "反駁" },
-    { stage: "recommendation", label: "建議" },
-    { stage: "closing", label: "短結" },
-  ];
-
-  async function loadSharedFrames() {
-    const list = document.getElementById("shared-frames-list");
-    const card = document.getElementById("shared-frames");
-    if (!list || !card) return;
-    const src = card.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
-    try {
-      const res = await fetch(src + "?v=20261103e", { cache: "no-store" });
-      if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
-      const data = await res.json();
-      const items = Array.isArray(data.items) ? data.items : [];
-      if (!items.length) return;
-      const titleZh = data.title && String(data.title.zh || "").trim();
-      const titleEl = card.querySelector("h2");
-      if (titleEl && titleZh) titleEl.textContent = "4. " + titleZh;
-      const byStage = {};
-      items.forEach((it) => {
-        const st = String((it && (it.q1_stage || it.stage)) || "").trim() || "other";
-        if (!byStage[st]) byStage[st] = [];
-        byStage[st].push(it);
-      });
-      const used = new Set();
-      const parts = [];
-      function pushGroup(label, group) {
-        if (!group || !group.length) return;
-        parts.push('<li class="sf-stage">' + escapeHtml(label) + "</li>");
-        group.forEach((it) => {
-          parts.push(
-            "<li>" +
-              escapeHtml(String(it.zh || "").trim()) +
-              " / " +
-              escapeHtml(String(it.en || "").trim()) +
-              "</li>"
-          );
-        });
-      }
-      Q2_SHARED_STAGE_ORDER.forEach(({ stage, label }) => {
-        used.add(stage);
-        pushGroup(label, byStage[stage]);
-      });
-      Object.keys(byStage).forEach((st) => {
-        if (used.has(st)) return;
-        pushGroup(st === "other" ? "其他" : st, byStage[st]);
-      });
-      if (!parts.length) return;
-      list.innerHTML = parts.join("");
-    } catch (err) {
-      console.warn("shared-frames load failed; keeping static fallback", err);
-    }
-  }
-
   loadBriefs();
   loadQ2Phrases();
-  loadSharedFrames();
 })();

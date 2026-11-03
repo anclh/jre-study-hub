@@ -304,16 +304,6 @@ textarea {
   display: grid; gap: 6px;
 }
 .bullet-list li::marker { color: var(--accent); }
-#shared-frames-list li.sf-stage {
-  list-style: none;
-  margin: 14px 0 4px;
-  padding-left: 0;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--muted);
-}
-#shared-frames-list li.sf-stage:first-child { margin-top: 2px; }
 .pair-kits { display: grid; gap: 8px; }
 .pair-kit {
   background: var(--card2); border-radius: 10px; padding: 10px 12px;
