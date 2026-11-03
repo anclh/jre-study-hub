@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="JRE 中文 Q2 — 議題思維、題庫、計時練習與自評" />
   <title>中文 Q2 · JRE Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261103e" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103e" />
+  <link rel="stylesheet" href="styles.css?v=20261103f" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103f" />
 </head>
 <body>
   <header class="app-header">
@@ -24,7 +24,6 @@
     <nav class="subnav" id="subnav" aria-label="Q2 sections">
       <button type="button" data-panel="structure" class="active">結構</button>
       <button type="button" data-panel="tips">貼士</button>
-      <button type="button" data-panel="phrases">句式庫</button>
       <button type="button" data-panel="bank">題庫</button>
       <button type="button" data-panel="drill">計時練習</button>
       <button type="button" data-panel="mark">自評清單</button>
@@ -38,21 +37,6 @@
         <p class="lede">考<strong>議題思維＋書面表達</strong>（物料 sparse）。要：清晰立場、具體理據、可執行建議。考期 <strong>2026-12-05</strong>。跟官方大牌檔 shape；EO Classroom／坊間 tip 已收編——<strong>唔跟</strong>硬性字數、舊考期、另套四段式。</p>
       </div>
 
-      <div class="card" id="must-phrases">
-        <h2>必用句（8–10）</h2>
-        <p class="lede">文筆一般都夠——背呢啲骨架句，套入五步就得。完整清單見 <a href="#phrases" data-goto="phrases">句式庫</a>。</p>
-        <ol class="frame-steps">
-          <li><strong>立場</strong>：本人贊成／反對……，惟以……為前提。</li>
-          <li><strong>權衡</strong>：有關建議利弊並存；權衡後，本人傾向……</li>
-          <li><strong>理據起</strong>：首先／其次，……有助……，惟須……</li>
-          <li><strong>例子</strong>：以……為例，……反映……，意味住……</li>
-          <li><strong>反駁</strong>：有意見認為……；惟……，故仍宜……</li>
-          <li><strong>建議</strong>：建議：一、……（試點／分階段）；二、……（KPI）；三、……</li>
-          <li><strong>執行</strong>：宜由……主導，並設……監察成效。</li>
-          <li><strong>短結</strong>：總括而言，……方能在……與……之間取得平衡。</li>
-          <li><strong>語氣</strong>：宜／應／可考慮——少用「我覺得」「毫無疑問」「一定」。</li>
-        </ol>
-      </div>
       <div class="card">
         <h2>1 · 官方 shape（大牌檔）</h2>
         <ol class="frame-steps">
@@ -63,22 +47,67 @@
       </div>
 
       <div class="card" id="five-step">
-        <h2>2 · 固定五步（考場跟呢條）</h2>
-        <ol class="frame-steps">
-          <li><strong>開首</strong>（2–3 行）：一句目的＋<em>明確立場</em>（贊成／反對／有條件贊成）。不要堆背景或數字。</li>
-          <li><strong>理據</strong>（2 個）：主張＋香港例子／措施／數字（<strong>只落地一個</strong>）＋「所以點」。</li>
-          <li><strong>反駁</strong>：指出<strong>最強反方</strong> → 為何仍選己方（或如何配套減低風險）。</li>
-          <li><strong>建議／替代</strong>：2–3 個具體建議（試點／分階段、主責部門、KPI、資源條件）。反對時要提出更有效嘅替代方案。</li>
-          <li><strong>短結</strong>：重申立場＋一句可交付結果。</li>
-        </ol>
-        <p class="muted frame-flow">開首立場 → 2 理據（HK）→ 反駁 → 建議 → 短結</p>
+        <h2>固定五步（考場跟呢條）</h2>
+        <p class="lede">一個流程。每步下面係框架提示，同埋呢步嘅骨架句。</p>
+        <p class="muted frame-flow"><a href="#stage-position">立場</a> → <a href="#stage-arguments">理據／例子</a> → <a href="#stage-rebuttal">反駁</a> → <a href="#stage-recommend">建議</a> → <a href="#stage-close">短結</a></p>
       </div>
 
-      <div class="card" id="shared-frames" data-shared-frames-source="../shared/shared-frames.json">
-        <h2>4. Shared frames（Q1／Q2）</h2>
-        <p class="lede">兩邊卷都用得着——只換例子同措施。順序跟 Q2 框架：立場 → 理據／例子 → 反駁 → 建議 → 短結。</p>
-        <p class="muted">Q1 §4 係共用錨點。</p>
-        <ul class="bullet-list" id="shared-frames-list"></ul>
+      <div id="q2-stages">
+        <div class="card" id="phrase-tools">
+          <h2>骨架句</h2>
+          <p class="lede">文筆一般都夠——考試靠骨架，唔靠文采。每段套入本地例子／一個數。預設顯示 Q2、常用及未標。</p>
+          <div class="toolbar">
+            <div class="search">
+              <input type="search" id="q2PhraseSearch" placeholder="搜尋句式 中／EN…" autocomplete="off" />
+            </div>
+            <span class="count" id="q2PhraseCount">—</span>
+          </div>
+          <p class="muted phrase-paper-note">卷別：預設 Q2、常用及未標。點「全部」見所有；再按已選卷別返回預設。</p>
+          <div class="filters" id="q2PaperFilters" aria-label="卷別篩選"></div>
+          <p class="muted" id="q2PhraseDisclaimer"></p>
+          <div id="q2PhraseStatus"></div>
+        </div>
+
+        <article class="card stage-card" id="stage-position">
+          <h2>立場</h2>
+          <p class="lede">開首（2–3 行）：一句目的＋<em>明確立場</em>（贊成／反對／有條件贊成）。不要堆背景或數字。</p>
+          <div class="phrase-grid" data-stage="position"></div>
+        </article>
+
+        <article class="card stage-card" id="stage-arguments">
+          <h2>理據／例子</h2>
+          <p class="lede">理據（2 個）：主張＋香港例子／措施／數字（<strong>只落地一個</strong>）＋「所以點」。</p>
+          <div class="phrase-grid" data-stage="arguments"></div>
+        </article>
+
+        <article class="card stage-card" id="stage-rebuttal">
+          <h2>反駁</h2>
+          <p class="lede">指出<strong>最強反方</strong> → 為何仍選己方（或如何配套減低風險）。</p>
+          <div class="phrase-grid" data-stage="rebuttal"></div>
+        </article>
+
+        <article class="card stage-card" id="stage-recommend">
+          <h2>建議</h2>
+          <p class="lede">2–3 個具體建議（試點／分階段、主責部門、KPI、資源條件）。反對時要提出更有效嘅替代方案。</p>
+          <p class="muted">語氣：宜／應／可考慮——少用「我覺得」「毫無疑問」「一定」。</p>
+          <div class="phrase-grid" data-stage="recommend"></div>
+          <div class="stage-sub" id="stage-balance">
+            <h3>平衡／條件</h3>
+            <p class="muted">配套同條件句，套入建議段。</p>
+            <div class="phrase-grid" data-stage="balance"></div>
+          </div>
+        </article>
+
+        <article class="card stage-card" id="stage-close">
+          <h2>短結</h2>
+          <p class="lede">重申立場＋一句可交付結果。</p>
+          <div class="phrase-grid" data-stage="close"></div>
+        </article>
+
+        <div class="card" id="q2-phrase-other" hidden>
+          <h2>其他句式</h2>
+          <div class="phrase-grid" id="q2PhraseOther"></div>
+        </div>
       </div>
 
       <div class="card" id="sample-housing">
@@ -238,36 +267,7 @@
       </div>
     </section>
 
-<section class="panel" id="panel-phrases">
-      <div class="card must-use" id="must-phrases-tab">
-        <h2>必用 9 句 <span class="chip">文筆一般都夠</span></h2>
-        <p class="lede">考試靠骨架，唔靠文采。每段套入本地例子／一個數。</p>
-        <ol class="must-list">
-          <li><code>本人贊成／反對……，惟以……為前提。</code></li>
-          <li><code>有關建議利弊並存；權衡後，本人傾向……</code></li>
-          <li><code>首先／其次，……有助……，惟須……</code></li>
-          <li><code>以……為例，……反映……，意味住……</code></li>
-          <li><code>有意見認為……；惟……，故仍宜……</code></li>
-          <li><code>建議：一、……（試點／分階段）；二、……（KPI）；三、……</code></li>
-          <li><code>宜由……主導，並設……監察成效。</code></li>
-          <li><code>總括而言，……方能在……與……之間取得平衡。</code></li>
-          <li><code>宜／應／可考慮……</code>（少用「我覺得」「毫無疑問」「一定」）</li>
-        </ol>
-      </div>
-      <div class="toolbar">
-        <div class="search">
-          <input type="search" id="q2PhraseSearch" placeholder="搜尋句式 中／EN…" autocomplete="off" />
-        </div>
-        <span class="count" id="q2PhraseCount">—</span>
-      </div>
-      <p class="muted" style="margin:0 0 6px;font-size:12px">卷別：預設 Q2、常用及未標。點「全部」見所有；再按已選卷別返回預設。</p>
-      <div class="filters" id="q2PaperFilters" aria-label="卷別篩選" style="margin-bottom:8px"></div>
-      <div class="filters" id="q2PhraseFilters"></div>
-      <p class="muted" id="q2PhraseDisclaimer" style="margin-top:10px"></p>
-      <div class="phrase-grid" id="q2PhraseGrid"></div>
-    </section>
-
-<section class="panel" id="panel-bank">
+    <section class="panel" id="panel-bank">
       <div class="card">
         <h2>中文 Q2 政策題庫</h2>
         <p class="lede">題庫練筆包：考試式題目 → 利弊 → 建議立場 → 措施 → 必記事實。點開主題展開全文；可一鍵轉去計時練習。</p>
@@ -349,7 +349,7 @@
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261103e"></script>
-  <script src="../shell/tabbar.js?v=20261103e"></script>
+  <script src="app.js?v=20261103f"></script>
+  <script src="../shell/tabbar.js?v=20261103f"></script>
 </body>
 </html>
