@@ -2,16 +2,113 @@
   "meta": {
     "title": "Q1 政策溫習卡",
     "title_en": "Policy revision cards",
-    "note": "Exam-style packs for English Q1 writing. Facts aligned to Q2 briefs / official PA & GIA sources — not City of Jade Data File fiction.",
+    "note": "Aligned to docs/q2/data/briefs.json (17 Chinese Q2 briefs). English trim for Q1 writing; facts/stances not invented. Dropped prior English-only forks (heat-adaptation, sme-digital) with no Q2 brief; waste/mental folded into transport-environment / healthcare per Q2.",
     "updated": "2026-11-03",
-    "stamp": "20261103s"
+    "stamp": "20261103u",
+    "source": "docs/q2/data/briefs.json",
+    "count": 17
   },
   "cards": [
     {
-      "id": "elderly-care",
+      "id": "housing-land",
       "n": 1,
+      "title_zh": "房屋與土地",
+      "title_en": "Housing / Land",
+      "theme_ids": [
+        "housing-land"
+      ],
+      "prompt": "Some argue that Government should sharply accelerate public housing (including Light Public Housing) and push Combined Waiting Time below 4.5 years soon, even if that means pausing some private residential land sales. Analyse the pros and cons, state a clear stance, and propose measures.",
+      "pros": [
+        "Directly eases housing pressure for low-income households, shortens waits and lifts living standards.",
+        "Supports orderly clearance of inadequate subdivided units under the Basic Housing Units regime.",
+        "Higher public supply can steady expectations and reduce housing anxiety spilling into fertility and youth development."
+      ],
+      "cons": [
+        "Over-tilting to public housing may disrupt private supply tempo and land revenue.",
+        "Rushed construction can raise cost and quality risk; transport, schools and healthcare must keep pace.",
+        "Light Public Housing is transitional — if prolonged it may create a second-wave rehousing burden."
+      ],
+      "stance": "Support faster public supply, but only with a ladder out of transitional units and matching infrastructure.",
+      "measures": [
+        "Keep public priority under the Long Term Housing Strategy while holding ~2,500 ha of “spade-ready” land to flex public–private mix.",
+        "After ~30,000 Light Public Housing flats complete on schedule, set a clear ladder into conventional PRH / subsidised sale — avoid permanent transit.",
+        "Accelerate Northern Metropolis NDAs so flats, jobs and transport complete together.",
+        "For rebuilds with district support (e.g. Wah Fu Phase 1), publish gazettal and works start dates for related roads (Wah Fu: gazettal early 2027, start mid-2028) so rehousing and access stay aligned."
+      ],
+      "facts": [
+        {
+          "text": "Combined Waiting Time ~4.8 years; target ~4.5 years by 2027. news.gov.hk / Housing Bureau CWT",
+          "url": "https://www.news.gov.hk/eng/2026/08/20260813/20260813_163217_854.html"
+        },
+        {
+          "text": "Next five years: ~196,000 public flats (incl. Light Public Housing); from 2027-28 average >35,000/year (~+73%). 2026 Policy Address",
+          "url": "https://www.policyaddress.gov.hk/2026/en/"
+        },
+        {
+          "text": "Basic Housing Units Ordinance in force from March 2026 to regulate subdivided units. PA / HB",
+          "url": "https://www.policyaddress.gov.hk/2026/en/chapter7.html"
+        },
+        {
+          "text": "Northern Metropolis estimated ~500,000 residential units. info.gov.hk LCQ",
+          "url": "https://www.info.gov.hk/gia/general/202510/15/P2025101500516.htm"
+        },
+        {
+          "text": "Wah Fu rebuild: HA consulted Southern DC on New Wah Fu Phase 1 public housing — generally supported; related Wah Fu Road works for Phase 1 expected to gazette early 2027 and start mid-2028. info.gov.hk 2026-11-02",
+          "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200240.htm"
+        }
+      ]
+    },
+    {
+      "id": "healthcare",
+      "n": 2,
+      "title_zh": "醫療與精神健康",
+      "title_en": "Healthcare / Mental health",
+      "theme_ids": [
+        "healthcare"
+      ],
+      "prompt": "Some argue that resources should prioritise primary care and community mental-health services, while deferring further expansion of large acute hospitals. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros": [
+        "Prevention and early intervention can ease specialist / A&E load and are more cost-effective long term.",
+        "Community mental-health channels (DHCs, ICCMHs) reach youth and elders faster and shorten help-seeking paths.",
+        "Extra family-medicine slots (including night clinics) support earlier chronic-disease management."
+      ],
+      "cons": [
+        "Trauma, cancer and acute care still need hospital capacity; ageing raises inpatient demand.",
+        "Weak primary-to-hospital referral pathways send patients back to A&E.",
+        "Workforce scarcity means dual expansion can compete for the same clinicians."
+      ],
+      "stance": "Prioritise primary care + community mental health, without cutting acute hospital capability.",
+      "measures": [
+        "Use District Health Centres as hubs for chronic care and mental-health triage, linked via eHealth; set KPIs on referral time and DNA rates.",
+        "Grow ambulatory / day-surgery capacity on the hospital side to free beds.",
+        "Expand community psychiatric nurses and peer support — not beds alone — to shorten specialist waits."
+      ],
+      "facts": [
+        {
+          "text": "From next year: ~220,000 extra family-medicine outpatient slots/year (incl. ~10,000 night clinics); elderly health assessments more than doubled. 2026 PA Ch.VII",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+        },
+        {
+          "text": "eHealth registrations >6.5m, ~87% of population. 2026 PA Ch.VII",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+        },
+        {
+          "text": "Eleven mental-health measures: three-tier school emergency mechanism, more ICCMHs, JoyAge-type pilots extended, etc. Same PA chapter."
+        },
+        {
+          "text": "Chinese Medicine Hospital already in service; outpatient volume to more than double with 24-hour inpatient push. 2026 PA",
+          "url": "https://www.policyaddress.gov.hk/2026/en/"
+        },
+        {
+          "text": "Psychiatrist density ~5.55 per 100,000 (2022 lit. figure, approx.) — below many OECD peers; use as “community triage needed” argument (exam: say “relatively low”)."
+        }
+      ]
+    },
+    {
+      "id": "elderly-care",
+      "n": 3,
       "title_zh": "人口老化與居家安老",
-      "title_en": "Ageing society · community care",
+      "title_en": "Ageing society",
       "theme_ids": [
         "elderly-care"
       ],
@@ -24,7 +121,7 @@
       "cons": [
         "Frail, dementia and unsupported elders still need residential places — vouchers alone are not enough.",
         "Carer burden can be silently shifted to families if community wrap-around is weak.",
-        "Quality risk: large voucher volume without monitoring becomes ‘voucher in hand, service nowhere’."
+        "Quality risk: large voucher volume without monitoring becomes “voucher in hand, service nowhere”."
       ],
       "stance": "Support ageing-in-place as the core, with residential care as a backstop — and strengthen carers.",
       "measures": [
@@ -43,281 +140,572 @@
         },
         {
           "text": "Elderly Health Care Vouchers usable at designated GBA service points (latest gazette counts apply)."
+        },
+        {
+          "text": "Community prevention programmes such as JoyAge are local practice precedents."
         }
       ]
     },
     {
-      "id": "mental-health",
-      "n": 2,
-      "title_zh": "基層醫療與精神健康",
-      "title_en": "Primary care · mental health",
+      "id": "youth-education",
+      "n": 4,
+      "title_zh": "青年就業與教育",
+      "title_en": "Youth employment / education",
       "theme_ids": [
-        "mental-health",
-        "healthcare"
+        "youth",
+        "education"
       ],
-      "prompt": "Some argue that resources should prioritise primary care and community mental-health services, while deferring further expansion of large acute hospitals. Analyse the trade-offs, take a stance, and recommend measures.",
+      "prompt": "Some argue that large wage subsidies for private firms to hire fresh graduates should be the main tool against youth unemployment. Analyse the pros and cons, state a stance, and propose measures.",
       "pros": [
-        "Prevention and early intervention can ease specialist / A&E load and are more cost-effective long term.",
-        "Community mental-health channels (DHCs, ICCMHs) reach youth and elders faster.",
-        "Extra family-medicine slots (including night clinics) support earlier chronic-disease management."
+        "Creates entry jobs quickly, builds experience and lowers the “zero experience” barrier.",
+        "Subsidies can steer openings toward shortage fields such as I&T, construction and finance.",
+        "Signals that society values youth upward mobility."
       ],
       "cons": [
-        "Trauma, cancer and acute care still need hospital capacity; ageing raises inpatient demand.",
-        "Weak primary-to-hospital referral pathways send patients back to A&E.",
-        "Workforce scarcity means dual expansion can compete for the same clinicians."
+        "Pure subsidies can become short-lived posts that vanish when funding ends — fiscally unsustainable.",
+        "If skills mismatch is ignored, structural unemployment remains.",
+        "May crowd out unsubsidised young workers or older jobseekers."
       ],
-      "stance": "Prioritise primary care + community mental health, without cutting acute hospital capability.",
+      "stance": "Conditional support: subsidies must bind training, sector targets and retention KPIs.",
       "measures": [
-        "Use District Health Centres as hubs for chronic care and mental-health triage, linked via eHealth; set KPIs on referral time and DNA rates.",
-        "Grow ambulatory / day surgery capacity on the hospital side to free beds.",
-        "Expand community psychiatric nurses and peer support — not beds alone — to shorten specialist waits."
+        "Deliver the two-year ~30,000 jobs / internships / training package; Government co-pays wages (per LD) and set six-month retention KPIs.",
+        "Link Northern Metropolis / I&T roles to internship→full-time conversion; pair Strive and Rise mentoring with disadvantaged students.",
+        "Expand AI / digital skills courses and review CSF to cut mismatch; CSB-level cross-bureau tracking of outcomes for disadvantaged youth."
       ],
       "facts": [
         {
-          "text": "From next year: ~220,000 extra family-medicine outpatient slots/year (incl. ~10,000 night clinics); elderly health assessments more than doubled. 2026 PA Ch.VII.",
-          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+          "text": "Strive and Rise Phase 5: ~4,000 participants (S1–S4 from subdivided / disadvantaged families); mentoring, personal development plans and financial support; CS-level cross-bureau push. info.gov.hk 2026-10-30",
+          "url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000235.htm"
         },
         {
-          "text": "eHealth registrations >6.5m (~87% of population). 2026 PA Ch.VII.",
-          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+          "text": "30,000 Youth Jobs and Internship Scheme: ~10k jobs + 10k internships + 10k training (two years). 2026 PA",
+          "url": "https://www.policyaddress.gov.hk/2026/en/chapter7.html"
         },
         {
-          "text": "Mental-health package of 11 measures: three-tier school emergency mechanism, more ICCMHs, Joyous Heart pilot extension, etc. Same chapter."
+          "text": "Research postgraduate places to rise ~30% to ~9,600 by 2030/31 — education-side talent pull. 2026 PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
         }
       ]
     },
     {
-      "id": "waste-recovery",
-      "n": 3,
-      "title_zh": "都市固體廢物收費與回收",
-      "title_en": "MSW charging · recovery",
+      "id": "culture-tourism",
+      "n": 5,
+      "title_zh": "旅遊、餐飲與文化",
+      "title_en": "Tourism / F&B / culture",
       "theme_ids": [
-        "waste-recovery",
-        "transport-environment"
+        "culture-tourism"
       ],
-      "prompt": "Some argue that Government should immediately restore and mandate city-wide municipal solid waste charging to hit waste-reduction targets. Analyse pros and cons, state a stance, and propose sequenced measures.",
+      "prompt": "Some argue that tourism promotion should focus mainly on overnight high-spending visitors and the mega-events economy, rather than expanding day-trips / low-cost tours. Analyse the trade-offs, take a stance, and recommend measures.",
       "pros": [
-        "Polluter-pays can shift behaviour and align with Waste Blueprint 2035 goals.",
-        "Can push source separation and lift recovery rates.",
-        "Long-run landfill relief frees land and environmental capacity."
+        "Overnight and mega-event visitors spend more per head, helping hotels, retail and performing arts.",
+        "Reduces “many people, little spend” pressure on local transport and the environment.",
+        "Aligns with West Kowloon and other cultural infrastructure to build an international brand."
       ],
       "cons": [
-        "Livelihood pressure (esp. subdivided flats / low-income) and illegal dumping risk.",
-        "Hard launch before collection networks and enforcement are ready invites failure and backlash.",
-        "Charging is currently suspended — society needs a transition and education window."
+        "Day-trips and short-haul GBA visitors still sustain F&B, transport and attractions; a hard cut hurts SMEs.",
+        "Visitor mix is shaped by FX, visas and regional competition — hard for Government to “pick” precisely.",
+        "Over-reliance on mega-events means sharp off-season swings."
       ],
-      "stance": "Keep charging as a backstop; first deliver recovery infrastructure and habits, then restart in phases.",
+      "stance": "Support quality-first promotion, while keeping a diversified visitor mix.",
       "measures": [
-        "Reach ‘one food-waste bin per estate’, ~3,000 smart recycling bins and ~2,500 smart food-waste bins; align messaging with Climate Action Plan 2050 / carbon-counting campaigns.",
-        "Pilot charging first at commercial premises, then residential, with recycling credits.",
-        "Couple with Transport Strategy Blueprint: public transport first, green mobility, ~5,000 EV fast chargers in five years."
+        "Joint Guangdong–Macao multi-stop products; strengthen overnight packages via airport / cruise entry.",
+        "Pair mega-events with night economy and heritage / specialty dining experiences to lift non-shopping spend.",
+        "Manage hotspot queues and peak public transport by time and place to cut resident conflict."
       ],
       "facts": [
         {
-          "text": "MSW recovery ~31% (2021) → ~34% (2024); food-waste recovery ~2.02 Mt (2024); daily MSW disposal ~10,326 tonnes (2025 publicity figure). info.gov.hk 2026-10-30.",
+          "text": "2025 arrivals ~50 million; first five months of 2026 ~23 million (+14%); full-year target ~53.8 million. LCQ info.gov.hk",
+          "url": "https://www.info.gov.hk/gia/general/202606/17/P2026061700299.htm"
+        },
+        {
+          "text": "West Kowloon Performing Arts Centre and other cultural landmarks in 2026 PA Highlights.",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "Policy direction includes mega-events economy and diversified sources (e.g. Muslim tourism — check latest CSTB measures)."
+        }
+      ]
+    },
+    {
+      "id": "gba-integration",
+      "n": 6,
+      "title_zh": "大灣區融合（跨境安老／醫療／就業）",
+      "title_en": "GBA integration",
+      "theme_ids": [
+        "national-development"
+      ],
+      "prompt": "Some argue that Government should encourage more Hong Kong elders to retire in Mainland GBA cities, with cross-boundary health vouchers and welfare portability as the main ageing strategy. Analyse the pros and cons, state a stance, and propose measures.",
+      "pros": [
+        "Lower housing and care costs in some Mainland cities can ease local residential-care waits.",
+        "Cross-boundary voucher use expands choice for elders already living in the GBA.",
+        "Deepens people and service flows in line with GBA development."
+      ],
+      "cons": [
+        "Gaps in records, emergency transfer and regulatory standards create risk; “return to HK when sick” still loads local capacity.",
+        "Social networks, language and habits leave some elders poorly adapted; family visit costs rise.",
+        "If framed as exporting a problem rather than a voluntary option, ethical and political pushback follows."
+      ],
+      "stance": "Support voluntary, reversible, quality-assured cross-boundary options — not as the sole pillar.",
+      "measures": [
+        "Expand recognised provider lists with clear emergency-transfer and complaint pathways.",
+        "Offer trial / short-stay elderly living schemes; keep HK waitlist status intact on return.",
+        "Design youth / professional cross-boundary employment separately from elderly retirement — do not conflate."
+      ],
+      "facts": [
+        {
+          "text": "Elderly Health Care Vouchers extended to GBA; sites and users per latest DH / GIA (exam: “material usage already”). info.gov.hk",
+          "url": "https://www.info.gov.hk/gia/general/202606/17/P2026061700586.htm"
+        },
+        {
+          "text": "Hetao Shenzhen–Hong Kong Science and Technology Innovation Co-operation Zone: “one river, two banks; one zone, two parks”; HK park operating from 2025. LegCo / PA",
+          "url": "https://www.info.gov.hk/gia/general/202505/28/P2025052800554.htm"
+        },
+        {
+          "text": "Northern Metropolis positioned as the main spatial carrier for deeper GBA participation."
+        }
+      ]
+    },
+    {
+      "id": "innovation-nmd",
+      "n": 7,
+      "title_zh": "創科與北部都會區",
+      "title_en": "Innovation & I&T",
+      "theme_ids": [
+        "innovation",
+        "northern-metropolis"
+      ],
+      "prompt": "Some argue that I&T resources should be highly concentrated in the Northern Metropolis (Hetao, San Tin Technopole), cutting dispersed city-wide start-up support. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros": [
+        "Concentration builds clusters and shared labs / data / pilot lines, raising international visibility.",
+        "Proximity to Shenzhen supports R&D–translation–production division of labour.",
+        "Large projects are easier to track on GDP and jobs."
+      ],
+      "cons": [
+        "Draining HK Island / Kowloon ecosystems (universities, finance, professional services) hurts “south finance, north I&T” synergy.",
+        "Infrastructure takes years; over-betting may show little near-term payoff.",
+        "SME start-ups need city-wide networks — not everyone can relocate to the northern New Territories."
+      ],
+      "stance": "Support Northern Metropolis as the main engine, without withdrawing the city-wide network.",
+      "measures": [
+        "Clear division: Hetao for upstream R&D / clinical trials; San Tin for pilot and advanced manufacturing; Hung Shui Kiu etc. for diversified industries.",
+        "Keep urban campus / InnoHK / Cyberport nodes; use Public Sector Trial Scheme and Smart Government Innovation Lab as early-adoption channels, then link by transport and data to NM.",
+        "Tax incentives and franchise / equity tools to crowd in market capital (e.g. San Tin development franchise)."
+      ],
+      "facts": [
+        {
+          "text": "NM ~30,000 ha; ~500,000 homes and ~500–650k jobs (document variants — exam: “hundreds of thousands”). PA / LegCo Policy Pulse",
+          "url": "https://www.info.gov.hk/gia/general/202505/28/P2025052800554.htm"
+        },
+        {
+          "text": "San Tin Technopole ~210 ha I&T land (excl. Hetao); focus on prototypes / pilots / talent. LegCo pp2026",
+          "url": "https://www.legco.gov.hk/yr2026/english/policy-pulse/pp2026-11-northern-metropolis-accelerating-development-e.pdf"
+        },
+        {
+          "text": "AI funding injection ~HK$1bn; AI Commissioner plus seven risk-governance domains. 2026 PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "New Industrialisation Funding Scheme: ~138 applications, 83 supported (~150 smart lines); Gov ~HK$0.5bn, firm match ~HK$1.2bn, total ~HK$1.7bn. Acceleration Scheme: 20 apps, 9 supported; funding ~HK$1.3bn, total investment ~HK$4.3bn (1:2 match). ITIB LegCo 2026-10-28",
+          "url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800363.htm"
+        },
+        {
+          "text": "Public Sector Trial Scheme: >110 trials in three years, >HK$270m; Smart Government Innovation Lab matched ~60 needs across 30+ bureaux, >30 PoCs — early adoption is city-wide, not NM land alone. ITIB LegCo 2026-10-28",
+          "url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800384.htm"
+        }
+      ]
+    },
+    {
+      "id": "transport-environment",
+      "n": 8,
+      "title_zh": "交通與環保（垃圾收費／綠色出行）",
+      "title_en": "Transport / Environment",
+      "theme_ids": [
+        "environment-climate",
+        "transport-logistics"
+      ],
+      "prompt": "Some argue that Government should fully restore and mandatorily implement municipal solid waste charging soon to hit waste-reduction targets. Analyse the pros and cons, state a stance, and propose measures.",
+      "pros": [
+        "Polluter-pays changes behaviour; common internationally; supports Waste Blueprint 2035 targets.",
+        "Can force source separation and raise recovery rates.",
+        "Long-term less landfill dependence frees land and environmental capacity."
+      ],
+      "cons": [
+        "Livelihood pressure (especially subdivided units / low-income); illegal dumping risk.",
+        "Hard push before recovery networks and enforcement are ready breeds failure and backlash.",
+        "Charging is currently suspended — society needs transition and education."
+      ],
+      "stance": "Treat charging as a backstop; first deliver recovery infrastructure and habits, then phase a restart.",
+      "measures": [
+        "First deliver estate food-waste bins, ~3,000 smart recycling bins, ~2,500 smart food-waste bins; align Carbon Inclusion / CAP2050 messaging.",
+        "Pilot charging in commercial premises first, then residential, with recycling points.",
+        "On transport, follow the Transport Strategy Blueprint: public transport first, greener travel, ~5,000 fast chargers in five years."
+      ],
+      "facts": [
+        {
+          "text": "Carbon Inclusion / CAP2050 messaging: MSW recovery ~31% (2021) → ~34% (2024); food-waste recovery 2024 ~2.02 Mt; 2025 daily MSW disposal ~10,326 tonnes. info.gov.hk 2026-10-30",
           "url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000411.htm"
         },
         {
-          "text": "MSW charging: suspended, not cancelled. Cross-check EEB.",
+          "text": "MSW charging: suspended, not cancelled. Check EEB / LegCo. eeb.gov.hk",
           "url": "https://www.eeb.gov.hk/"
         },
         {
-          "text": "Waste Blueprint 2035 mid-term: −40–45% per capita disposal; ~55% recovery.",
+          "text": "Waste Blueprint 2035 mid-term: −40–45% per capita; recovery ~55%. wastereduction.gov.hk",
           "url": "https://www.wastereduction.gov.hk/sites/default/files/2021-07/waste_blueprint_2035_eng.pdf"
+        },
+        {
+          "text": "Transport Strategy Blueprint (2026-02): enjoyable journeys, better connectivity, healthy travel. info.gov.hk",
+          "url": "https://www.info.gov.hk/gia/general/202602/06/P2026020600696.htm"
         }
       ]
     },
     {
-      "id": "heat-adaptation",
-      "n": 4,
-      "title_zh": "極端酷熱與城市降溫",
-      "title_en": "Extreme heat · urban cooling",
+      "id": "fertility-family",
+      "n": 9,
+      "title_zh": "生育與家庭支援",
+      "title_en": "Fertility / family support",
       "theme_ids": [
-        "heat-island"
+        "poverty-welfare"
       ],
-      "prompt": "Some argue that, under intensifying extreme heat, Government should prioritise capital greening and shade in the hottest urban corridors over city-wide cash electricity subsidies or blanket midday outdoor work bans. Analyse the trade-offs, take a stance, and recommend a deliverable package.",
+      "prompt": "Some argue that large cash newborn bonuses should be the main fertility policy, replacing expanded childcare and housing support. Analyse the pros and cons, state a stance, and propose measures.",
       "pros": [
-        "Corridor-focused shade / cool surfaces attacks the spatial driver of heat exposure and ambulance load.",
-        "Capital works can sit inside climate-adaptation envelopes with limited new recurrent spend if maintenance stays with existing departments.",
-        "Targeted means-tested relief plus overnight cooling places protect frail elders faster than landscaping alone."
+        "Cash is immediate and administratively simple; signals that families matter.",
+        "Gives low-income households a short buffer.",
+        "Can combine with stamp-duty relief and tax deductions as a package."
       ],
       "cons": [
-        "Greening alone does little for indoor heat in old private walk-ups tonight.",
-        "Open-ended electricity top-ups create recurrent fiscal pressure.",
-        "Hard midday stoppages without flexibility hit SME logistics and construction hard and face weak compliance."
+        "International evidence: bonuses alone barely move TFR; housing and working hours are the structural drivers here.",
+        "Fiscal sustainability is doubtful; may be seen as “buying babies”.",
+        "Ignores female employment, childcare and workplace culture that shape delayed childbearing."
       ],
-      "stance": "Pilot cool-corridor capital + capped vulnerable relief first; soft outdoor-work guidance before city-wide mandates.",
+      "stance": "Oppose bonus-first; support bonus as a supplement with childcare / housing / reproductive healthcare as the core.",
       "measures": [
-        "Phase 1: shade, trees, cool pavement and selected PRH/elderly common-area upgrades in the worst corridors; overnight cooling centres on Very Hot Weather Warning nights.",
-        "Time-limited, means-tested summer electricity top-up only for low-income elderly inside those corridors, with a hard spend cap and two-summer review.",
-        "Industry rest-break / shaded-rest guidance now; revisit mandatory cool-roof / façade rules for existing SME stock only after pilots and a funded transition path."
+        "Keep newborn bonuses; raise second-child bonus to HK$30,000 (time-limited) as a supplement, not the whole policy.",
+        "Normalise school-based after-school care without quotas; add ~1,800 childcare places via independent centres by end-2030.",
+        "Raise White Form new-flat LTV, stamp-duty relief and PRH / HOS ladder links to cut “child but no home”."
       ],
       "facts": [
         {
-          "text": "Climate Action Plan 2050: cut total carbon emissions by half from 2005 before 2035; carbon neutrality before 2050; urban forestry cited to ease heat-island effects.",
-          "url": "https://cnsd.gov.hk/wp-content/uploads/2023/05/Adaptation-and-Resilience_en.pdf"
+          "text": "Eleven fertility measures: bonus extended three years; second-child bonus HK$20k→30k; tax allowance HK$140k→160k; stamp-duty relief cap HK$20k, etc. 2026 PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
         },
         {
-          "text": "Building electricity goals: commercial −30–40% and residential −20–30% from 2015 by 2050 (half by 2035). ACE Paper 11/2026.",
-          "url": "https://www.eeb.gov.hk/sites/default/files/en/node5840/ACE_Paper_11_2026.pdf"
+          "text": "IVF places to rise in stages to ~1,900 cycles/year."
         },
         {
-          "text": "Government maintains about one million trees under TRAM / urban forestry programmes (DEVB greening).",
-          "url": "https://www.greening.gov.hk/filemanager/greening/en/content_48/Going-Green-and-Staying-Green_Urban-Forestry-Strategies-in-Hong-Kong_20220601.pdf"
+          "text": "Fertility remains very low: cite latest C&SD TFR (exam: “far below 2.1”)."
+        }
+      ]
+    },
+    {
+      "id": "labour-platform",
+      "n": 10,
+      "title_zh": "平台經濟與送貨員保障",
+      "title_en": "Labour / platform economy",
+      "theme_ids": [
+        "labour"
+      ],
+      "prompt": "Some argue that legislation should force food / goods delivery platforms to treat couriers as “employees” with full labour benefits, not merely minimum-protected “contractors”. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros": [
+        "Long hours and high accident risk — employee status brings injury cover and leave.",
+        "Shrinks false self-employment; aligns with international trends.",
+        "Fairness: platforms take commissions and should carry basic duties."
+      ],
+      "cons": [
+        "Full employee status can raise costs, push prices up or cut orders — shrinking flexible work.",
+        "Some couriers value flexible hours and reject fixed employment.",
+        "Hard to classify multi-platform / part-time work for enforcement."
+      ],
+      "stance": "Support sector-specific statutory floors — not necessarily one-step full employee status.",
+      "measures": [
+        "Legislate: mandatory adequate accident insurance, dispute mediation, heat / rain stop-work guidance.",
+        "Allow an optional path to employee status after hours / performance thresholds.",
+        "Cross-bureau action against illegal labour; industry “anti-illegal-employment ambassadors” (PA direction)."
+      ],
+      "facts": [
+        {
+          "text": "2026 PA: new legislation to protect delivery workers; cross-bureau action against illegal employment. PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "Ride-hailing regulation is a usable local precedent for filling a legal vacuum."
+        }
+      ]
+    },
+    {
+      "id": "public-open-space",
+      "n": 11,
+      "title_zh": "公共休憩空間管理",
+      "title_en": "Public open space / parks",
+      "theme_ids": [
+        "culture-tourism"
+      ],
+      "prompt": "Demand for public open space (parks, plazas) has risen. Discuss two main management problems and assess whether Government should launch a new round of public-space upgrades. If you support, propose two concrete actions and how to monitor results; if not, offer two alternatives to improve quality and safety.",
+      "pros": [
+        "Dense districts lack open space per capita; new / upgraded parks improve liveability and community health.",
+        "Activating idle or short-term sites (harbourfront, piers) serves the public before long-term plans land.",
+        "Diverse facilities (sports, children, pet-share) reduce “space competition” conflict."
+      ],
+      "cons": [
+        "Hardware-only upgrades without management and opening-hour rules still breed complaints and neighbour conflict.",
+        "Short private leases for public space raise fears of commercialisation and lost free access.",
+        "Capital and recurrent costs rise; without KPIs, value for money is hard to prove."
+      ],
+      "stance": "Support a new upgrade round — but only with management and monitoring in parallel.",
+      "measures": [
+        "Speed conversion of spade-ready / idle land into public open space; replicate Hoi Fan Road Park (recreation + inclusive + pet-share) and publish district supply gaps.",
+        "Harbourfront / pier short activations: >50% area free public access, publish hours and complaint handling; technical score over rent (Hung Hom dual-envelope model).",
+        "Monitor KPIs: visits, booking waits, complaints, safety incidents; annual DC / online dashboard; miss targets → retune management contracts."
+      ],
+      "facts": [
+        {
+          "text": "Hoi Fan Road Park (YTM) open from 2026-09-30, ~16,000 m² (~1.6 ha); football / basketball / fitness / community garden / inclusive play / pet-share. LCSD",
+          "url": "https://www.info.gov.hk/gia/general/202609/29/P2026092800303.htm"
+        },
+        {
+          "text": "Former Hung Hom rail freight pier ~1.8 ha on ~3-year short lease; >half area waterfront public open space; tender technical 70% / price 30%; winning rent ~HK$1.33m. DEVB",
+          "url": "https://www.info.gov.hk/gia/general/202602/23/P2026022300541.htm"
+        }
+      ]
+    },
+    {
+      "id": "new-industrialisation",
+      "n": 12,
+      "title_zh": "新型工業化與資助落地",
+      "title_en": "New industrialisation / funding delivery",
+      "theme_ids": [
+        "innovation",
+        "national-development"
+      ],
+      "prompt": "Some argue that schemes such as the New Industrialisation Funding Scheme and Acceleration Scheme will stay “policy without delivery” unless grants are tied to scenario validation, outcome KPIs and talent-retention metrics. Should funding be bundled with delivery checks? Take a stance and propose measures.",
+      "pros": [
+        "Bundling grants with scenario proof and KPIs cuts “approve and forget” and raises public-money accountability.",
+        "Acceleration plus optimised funding helps advanced manufacturing and prototypes reach real use cases faster.",
+        "Talent-retention metrics address the structural “projects without people” risk in I&T."
+      ],
+      "cons": [
+        "Over-strict checks can slow approvals; SMEs struggle with compliance cost.",
+        "Scenario validation needs cross-bureau coordination; firms may seek Mainland funding instead in the short run.",
+        "Talent retention also depends on housing, tax and family — one grant scheme cannot carry it all."
+      ],
+      "stance": "Support bundling funding with delivery checks — staged and workable.",
+      "measures": [
+        "Stage it: require minimum scenario validation first in selected use cases (e.g. advanced manufacturing / medical-device prototypes), then widen.",
+        "Set verifiable KPIs: milestone hit rate, local jobs / R&D posts, share of key talent staying in HK; miss → adjust later tranches.",
+        "ITIB-led annual scoreboard with funding agencies; simplify the SME track."
+      ],
+      "facts": [
+        {
+          "text": "New Industrialisation Funding Scheme (from 2024-09) is a main current tool (exam: name + timing)."
+        },
+        {
+          "text": "New Industrialisation Acceleration Scheme runs alongside, focused on faster industrial landing."
+        },
+        {
+          "text": "Public discussion has cited ~HK$2.8m / HK$15m scales — use latest official figures; do not treat as a hard sole ceiling."
+        },
+        {
+          "text": "Related schemes were optimised in 2025 (details per authority announcements)."
         }
       ]
     },
     {
       "id": "border-resilience",
-      "n": 5,
-      "title_zh": "口岸韌性與高峰應變",
-      "title_en": "Border resilience · peak response",
+      "n": 13,
+      "title_zh": "口岸韌性與跨境高峰應變",
+      "title_en": "Border resilience / peak crowd response",
       "theme_ids": [
-        "border-resilience"
+        "transport-logistics",
+        "national-development",
+        "northern-metropolis"
       ],
-      "prompt": "With cross-boundary travel becoming routine (incl. Northern Metropolis planning), some argue peak-crowd border response (e.g. Halloween flows) should be institutionalised with clear short-term lead departments and measurable ‘smoothness’ KPIs, rather than one-off mobilisation. Analyse, take a stance, and propose measures.",
+      "prompt": "Some argue that as cross-boundary travel becomes routine (with Northern Metropolis planning), Government should institutionalise peak-border response (e.g. Halloween crowds): clear short-term lead departments and measurable “smoothness” KPIs — not one-off mobilisation. Analyse the trade-offs, take a stance, and recommend measures.",
       "pros": [
-        "Clear lead and KPIs cut ‘who decides’ delays at peak and speed redeployment.",
-        "Standing SOPs prepare for denser daily NM-related flows, not just festival spikes.",
-        "Publishing wait-time / diversion / incident metrics builds trust and after-action accountability."
+        "Clear lead and KPIs reduce “who decides” fog at peaks and speed on-site redeployment.",
+        "Turning festival / holiday playbooks into SOPs helps handle denser routine flows after NM builds out.",
+        "Publishing wait / diversion / incident metrics builds public confidence and post-event accountability."
       ],
       "cons": [
-        "Over-rigid SOPs can strip frontline flexibility for unusual incidents.",
-        "Multi-bureau clearance chains (SB / TLB etc.) can slow decisions if every step escalates.",
-        "KPIs that only reward ‘speed’ may trade off inspection quality and safety."
+        "Over-rigid SOPs can strip frontline discretion when special incidents need ad hoc action.",
+        "Multi-bureau reporting chains (Security, TLB, etc.) can slow decisions.",
+        "KPIs that only chase “speed” may trade off inspection quality and safety."
       ],
-      "stance": "Institutionalise peak response with clear lead + smoothness KPIs, while keeping on-site flexibility.",
+      "stance": "Support institutionalised peak response with clear leads and smoothness KPIs — keep on-site flexibility.",
       "measures": [
-        "Standing peak SOP: triggers, command chain, on-site authority; CS-level cross-bureau steering; day-to-day execution by SB / TLB by function.",
-        "Publish smoothness KPIs: wait-time percentiles, public-transport diversion punctuality/load, incident response times; 72-hour post-peak brief.",
-        "Put foreseeable peaks on an annual drill calendar; extend pilots to other land crossings and link to NM passenger forecasts."
+        "Peak-border SOP: triggers, command chain, on-site authority; CS-level cross-bureau steer; day-to-day split by SB / TLB functions.",
+        "Publish smoothness KPIs: wait-time percentiles, PT diversion on-time / load, incident response times; brief within 72 hours after peaks.",
+        "Put foreseeable peaks (Halloween etc.) on an annual drill calendar; pilot then extend to other land boundaries; link to NM flow forecasts."
       ],
       "facts": [
         {
-          "text": "Huanggang Port activated a cross-department peak response for Halloween flows (window ~30 Oct–1 Nov)."
+          "text": "Huanggang Control Point activated cross-bureau peak response for Halloween crowds (flow window ~30 Oct–1 Nov)."
         },
         {
-          "text": "Steering at Chief Secretary level; Security Bureau and Transport and Logistics Bureau in the execution split."
+          "text": "Response steered at CS level; Security Bureau and Transport and Logistics Bureau shared execution."
         },
         {
-          "text": "Policy angle: border resilience should plug into Northern Metropolis / routine cross-boundary travel, not one-off mobilisation only."
+          "text": "Policy angle: border resilience as routine capacity for NM / everyday cross-boundary travel — not one-off mobilisation."
         }
       ]
     },
     {
-      "id": "new-industrial",
-      "n": 6,
-      "title_zh": "新型工業化資助落地",
-      "title_en": "New industrialisation · funding delivery",
+      "id": "nmd-loop-resumption",
+      "n": 14,
+      "title_zh": "河套東連收地與北都基建落地",
+      "title_en": "Hetao east link resumption / NM delivery",
       "theme_ids": [
-        "new-industrial",
-        "new-industrialisation"
+        "northern-metropolis",
+        "housing-land",
+        "national-development"
       ],
-      "prompt": "Some argue that without scene validation, outcome KPIs and talent-retention metrics, New Industrialisation Funding Scheme / Accelerator support will stay ‘policy without delivery’. Should funding be tightly bound to delivery checks? Analyse, take a stance, and recommend measures.",
+      "prompt": "Some argue that delivering Northern Metropolis “spade-ready” land hinges on faster land resumption for Hetao east-link roads and cross-bureau coordination, with compensation outcomes for affected residents / firms as the delivery yardstick — not blueprint announcements alone. Analyse the trade-offs, take a stance, and propose measures.",
       "pros": [
-        "Binding grants to validation and KPIs cuts ‘approve-and-forget’ and raises public-money accountability.",
-        "Accelerator + funding optimisation can move advanced manufacturing / prototypes into real scenes faster.",
-        "Retention metrics address the ‘projects without people’ risk in I&T."
+        "Aligning resumption with road / infra milestones shortens the “plan without spade-ready land” gap and speeds I&T / industrial land to market.",
+        "Clear cross-bureau lead cuts bureau-to-bureau waiting and makes construction / handover dates more predictable.",
+        "Transparent compensation and rehousing progress as KPIs can lower protest / litigation risk and raise confidence in NM delivery."
       ],
       "cons": [
-        "Over-tight checks slow approvals; SMEs may struggle with compliance costs.",
-        "Scene validation needs cross-bureau coordination — firms may apply elsewhere short term.",
-        "Talent stay is driven by housing/tax/family factors a single grant cannot fully carry."
+        "Rushing resumption without synced compensation and rehousing can inflame communities and slow the whole programme.",
+        "One-size schedules ignore site-specific legal / engineering complexity and push costs up.",
+        "Making compensation satisfaction the sole KPI can drag negotiations and miss spade-ready supply targets."
       ],
-      "stance": "Bind funding to delivery checks, but phase them and keep them operable — with an SME-light track.",
+      "stance": "Support resumption tempo tied to infra nodes + cross-bureau coordination + measurable compensation outcomes — not blueprint slogans alone.",
       "measures": [
-        "Phase: require minimum scene validation first in selected use-cases (e.g. advanced manufacturing / medical-device prototypes), then widen.",
-        "Verifiable KPIs: milestone hit-rate, local R&D/jobs, key talent retained in HK; miss → adjust later tranches.",
-        "ITIB + scheme administrators publish a one-page scorecard and annual outcomes report; simplify the SME channel."
+        "Publish staged resumption timetables and spade-ready handover targets against infra nodes (e.g. key Hetao east-link segments) with named leads.",
+        "Cross-bureau mechanism (Lands / Transport / policy bureaux) with escalation triggers; quarterly public progress briefs.",
+        "Verifiable compensation / rehousing KPIs: agreement rate, relocation on-time, firm transition support completion; miss → process review, not more PR."
       ],
       "facts": [
         {
-          "text": "New Industrialisation Funding Scheme (from Sep 2024) is a main current tool (cite scheme name + timing in the exam)."
-        },
-        {
-          "text": "New Industrialisation Acceleration Scheme runs alongside, stressing faster industry landing."
-        },
-        {
-          "text": "Public discussion has cited funding bands around ~HK$2.8m / HK$15m — always check the latest official ceiling; do not treat one figure as the only cap."
-        }
-      ]
-    },
-    {
-      "id": "loop-link-resumption",
-      "n": 7,
-      "title_zh": "河套東連收地與北都落地",
-      "title_en": "Hetao east link · NM delivery",
-      "theme_ids": [
-        "loop-link-resumption",
-        "nmd-loop-resumption"
-      ],
-      "prompt": "Some argue that Northern Metropolis ‘ready sites’ depend on faster resumption for supporting roads such as the Hetao East Link, cross-bureau coordination, and measurable compensation outcomes — not blueprint announcements alone. Analyse, take a stance, and propose measures.",
-      "pros": [
-        "Aligning resumption to road / infrastructure nodes shortens the ‘planned but not ready’ gap for I&T and industry land.",
-        "Clear cross-bureau lead cuts mutual waiting and makes construction / handover dates more predictable.",
-        "Transparent compensation and relocation metrics lower protest/litigation risk and lift delivery confidence."
-      ],
-      "cons": [
-        "Rushing resumption without synced compensation/relocation can inflame communities and delay works.",
-        "One-size timelines ignore plot-level legal and engineering complexity and raise cost.",
-        "Making compensation satisfaction the only KPI can prolong negotiation and miss ready-site targets."
-      ],
-      "stance": "Align resumption to infrastructure nodes + cross-bureau coordination + measurable compensation — no blueprint-only storytelling.",
-      "measures": [
-        "Publish phased resumption and ready-site handover targets keyed to nodes (e.g. Hetao East Link), with named lead departments.",
-        "Standing Lands / Transport / bureau coordination with escalation triggers; quarterly public progress briefs.",
-        "Compensation KPIs: agreement rate, relocation-on-time, business transition completion; miss → fix process, not just publicity."
-      ],
-      "facts": [
-        {
-          "text": "Hetao East Link: resume 112 private lots (~5.7 ha); plus ~113 m² government land occupied by graves/urns; reverts to Government 3 months after notice (2027-01-30). info.gov.hk 2026-10-29.",
+          "text": "Hetao east connecting road: resume 112 private lots (~5.7 ha); plus ~113 m² Government land occupied by graves / urns; revert to Government 3 months after notice (2027-01-30). info.gov.hk 2026-10-29",
           "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900313.htm"
         },
         {
-          "text": "Core tension: whether resumption keeps pace with ready-site supply, and whether cross-bureau coordination cuts mutual waiting."
+          "text": "Core tension: whether resumption keeps pace with spade-ready supply, and whether cross-bureau coordination cuts mutual waiting."
         },
         {
-          "text": "Effectiveness lens: published, verifiable compensation/relocation — not plans alone."
+          "text": "Delivery lens: open, verifiable compensation / rehousing for affected residents / firms — not plans alone."
         }
       ]
     },
     {
-      "id": "sme-digital",
-      "n": 8,
-      "title_zh": "中小企數碼轉型與資安",
-      "title_en": "SME digital uptake · cyber",
+      "id": "gba-tax-gogba",
+      "n": 15,
+      "title_zh": "港老稅務協定與 GoGBA『十五五』落地",
+      "title_en": "HK–Laos tax treaty / GoGBA 15th FYP",
       "theme_ids": [
-        "sme-digital"
+        "national-development",
+        "innovation"
       ],
-      "prompt": "Some argue that SME digital subsidies should shift from approval volume to sustained tool use and basic cybersecurity outcomes (MFA, backups, phishing resilience), with a ring-fenced micro-firm track. Analyse pros and cons, take a stance, and recommend measures.",
+      "prompt": "Some argue that Hong Kong should keep expanding its CDTA network (e.g. with Laos) and strengthen one-stop platforms such as GoGBA so HK firms can seize GBA and “go global” opportunities under the 15th Five-Year Plan — avoiding “policy without delivery”. Analyse the trade-offs, take a stance, and recommend measures.",
       "pros": [
-        "Outcome KPIs (still-in-use, cyber hygiene) curb ‘grant consultants + shelfware’.",
-        "Matching support for AI and cybersecurity under DTSPP matches real SME risk after rushed e-commerce setup.",
-        "A micro-firm track offsets skew toward larger SMEs that can already write better applications."
+        "Wider CDTA coverage cuts double-taxation uncertainty and makes overseas investment / contracting more predictable.",
+        "GoGBA one-stop info / matching lowers the entry barrier for SMEs into the GBA and overseas markets.",
+        "Linking the 15th FYP and GBA opportunities turns macro policy into executable firm paths."
       ],
       "cons": [
-        "Heavy outcome audits raise admin burden and may deter the weakest firms.",
-        "Pure vouchers can race to the bottom on insecure cheap software.",
-        "Cyber capability gaps mean training must be bundled or take-up stays cosmetic."
+        "Treaty talks take years; firms may overestimate “sign once, clear everywhere”.",
+        "If the platform only aggregates data without matching and follow-up, it stays “policy without delivery”.",
+        "Local rule of law, FX and industrial policy still drive risk — HK tools cannot erase it all."
       ],
-      "stance": "Keep matching grants, but pay later tranches on verified use + basic cyber; ring-fence micro firms.",
+      "stance": "Support expanding the tax network + strengthening GoGBA delivery services — with matching, follow-up and outcome KPIs.",
       "measures": [
-        "Enhance DTSPP matching subsidies for AI and cybersecurity solutions; publish still-in-use and MFA/backup KPIs at 6–12 months.",
-        "Raise Easy BUD ceiling use and AI-targeted BUD support; keep Digital DIY Portal advisory + cyber risk checks via HKPC.",
-        "Ring-fence a micro-firm (<10 staff) quota with pre-approved vendor list and mandatory short cyber hygiene module before final payment."
+        "Keep expanding CDTAs and publish tax-impact notes for priority sectors (manufacturing, professional services, infra) per latest texts.",
+        "Upgrade GoGBA from info portal to “policy briefing + matching + follow-up”; clear GBA vs go-global tracks.",
+        "Delivery KPIs: active firms, successful match / consult completion, verifiable revisit satisfaction; annual brief — not treaty-count alone."
       ],
       "facts": [
         {
-          "text": "2026 PA: 10 SME support measures — incl. Easy BUD ceiling raised to HK$150,000 (Jun) and more AI-targeted BUD support.",
-          "url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600290p.htm"
+          "text": "HK–Laos CDTA: dividend WHT cap 10%, royalties 5%. info.gov.hk 2026-10-29",
+          "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900532.htm"
         },
         {
-          "text": "DTSPP to be enhanced with matching subsidies for more SMEs adopting AI and cybersecurity solutions. 2026 PA Ch.III.",
-          "url": "https://www.policyaddress.gov.hk/2026/en/chapter3.html"
+          "text": "GoGBA Development Day links national 15th FYP and Hong Kong’s first five-year plan to help firms seize GBA / go-global chances. info.gov.hk 2026-10-29",
+          "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900559.htm"
         },
         {
-          "text": "BUD Fund: cumulative ceiling HK$7m per enterprise; general application ceiling HK$800,000; Easy BUD HK$150,000 (30 working-day pledge).",
-          "url": "https://www.tid.gov.hk/en/our_work/support_for_trade_industry/bud.html"
+          "text": "Substance: treaties cut WHT uncertainty (e.g. dividends 10% / royalties 5%); GoGBA lowers info / matching barriers — use latest official texts."
+        }
+      ]
+    },
+    {
+      "id": "fintech-ensemble",
+      "n": 16,
+      "title_zh": "代幣化結算與數碼金融",
+      "title_en": "Tokenised settlement / digital finance",
+      "theme_ids": [
+        "finance"
+      ],
+      "prompt": "Some argue that Government should accelerate EnsembleTX from controlled pilots toward 24×7 interbank tokenised-deposit settlement backed by tokenised central-bank money, and widen participation to cement Hong Kong’s digital-finance hub role. Analyse the trade-offs, take a stance, and propose measures.",
+      "pros": [
+        "24×7 settlement matches always-on digital markets; banks can settle tokenised deposits with tokenised CB money outside traditional hours.",
+        "12 participating banks and 20 industry pioneers show a broader industry pilot, not a single-firm experiment.",
+        "Controlled pilots already cover real corporate treasury and tokenised MMF trades — useful for liquidity and investor risk management."
+      ],
+      "cons": [
+        "Always-on settlement raises liquidity-management and operational-risk demands; monitoring cost outside traditional hours rises.",
+        "EnsembleTX initially settled via HKD RTGS; unclear dual-track links risk fragmentation.",
+        "Widening participation without clear pilot gates may commercialise faster than risk controls."
+      ],
+      "stance": "Conditional support for advancing 24×7 tokenised CB-money settlement — with RTGS linkage and pilot gates.",
+      "measures": [
+        "HKMA lead, SFC coordinate: publish EnsembleTX–HKD RTGS linkage so dual tracks do not fragment.",
+        "Treat current 12 banks / 20 pioneers as the pilot boundary; publicly review settlement performance on existing use cases (corporate treasury, tokenised MMFs) before widening.",
+        "Require participants to set out off-hours liquidity and ops-risk arrangements before expanding 24×7 to more trade types."
+      ],
+      "facts": [
+        {
+          "text": "2026-11-02: EnsembleTX enters a new stage — 24×7 interbank tokenised-deposit settlement backed by tokenised CB money; banks to 12, pioneers to 20. HKMA",
+          "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200541.htm"
+        },
+        {
+          "text": "EnsembleTX launched Nov 2025, initially settling tokenised deposits via HKD RTGS; new function enables real-time tokenised settlement outside traditional hours. Same GIA."
+        },
+        {
+          "text": "Controlled pilots already executed real trades involving tokenised deposits and digital assets, including corporate treasury and tokenised MMFs. Same GIA."
+        }
+      ]
+    },
+    {
+      "id": "ai-governance",
+      "n": 17,
+      "title_zh": "人工智能與公共服務管治",
+      "title_en": "AI governance / public services",
+      "theme_ids": [
+        "innovation"
+      ],
+      "prompt": "Some argue that Government should accelerate generative AI and AI agents across departments for public-service queries and approvals even before ethics review, data privacy and accountability arrangements are ready — lest Hong Kong fall behind as a digital hub. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros": [
+        "AI Efficiency Team has enabled ~30 projects: TD online booking waits halved; FEHD rubbish-complaint handling time cut by up to ~70% — measurable public-service gains.",
+        "iAM Smart AI assistant organising official service info can move one-stop from portal aggregation to smart navigation, easing counters and hotlines.",
+        "“AI City Brain” led by the Chief Secretary, first stage linking SB Emergency Monitoring and Support Centre, can help cross-bureau emergency and city management."
+      ],
+      "cons": [
+        "GenAI risks hallucination, bias and data leaks; public approvals without human review and an accountability chain damage fairness and trust.",
+        "Cross-bureau big-data sharing without minimality and purpose limits raises privacy / security risk as City Brain scales.",
+        "Rushing deployment can crowd out training and process redesign; civil servants and SMEs lag and the digital divide widens."
+      ],
+      "stance": "Conditional support for faster public-service AI pilots — oppose full rollout before ethics, privacy and accountability are ready.",
+      "measures": [
+        "Digital Policy Office coordinates: expand pilots in high-frequency / non-final decision use cases (iAM Smart navigation, 1823 repeat-issue triage); all outward AI must cite sources and offer human escalation.",
+        "Make ethics risk assessment, data minimality and security compliance statements procurement / go-live gates; keep City Brain Stage 1 to emergency / city-management use cases with published sharing scope and accountable departments.",
+        "Run “AI for All” tiered training plus departmental KPIs (handling time, review rate, complaints); do not widen approval automation until gates are met."
+      ],
+      "facts": [
+        {
+          "text": "AI Efficiency Team: ~30 projects — TD AI halved online booking waits; FEHD AI cut rubbish-complaint time by up to ~70%; EPD AI etc. cut EIA process time ~half. 2026 PA Ch.VIII",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter8.html"
+        },
+        {
+          "text": "Government studying “AI City Brain” city-management system; CS-chaired working group; Stage 1 links SB Emergency Monitoring and Support Centre digital infra. Same chapter.",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter8.html"
+        },
+        {
+          "text": "Digital Policy Office: iAM Smart “AI assistant” pulls official public-service info in real time; new 5.0 mobile app pushed mid–late Oct 2026; enhanced personalisation planned by year-end.",
+          "url": "https://www.digitalpolicy.gov.hk/"
+        },
+        {
+          "text": "HKMA “ART” framework (Accountability, Resilience, Trust) for responsible bank AI, with updated guidance and stronger sandbox — useful public-sector governance contrast. 2026-10"
         }
       ]
     }
@@ -325,43 +713,88 @@
   "quick_ref": [
     {
       "n": 1,
-      "theme": "居家安老",
-      "stance_one_liner": "Ageing-in-place core; residential as backstop + carers."
+      "theme": "Housing / Land",
+      "stance_one_liner": "Support faster public supply, but only with a ladder out of transitional units and matching infrastructure."
     },
     {
       "n": 2,
-      "theme": "精神健康",
-      "stance_one_liner": "Primary + community mental health first; keep acute capacity."
+      "theme": "Healthcare / Mental health",
+      "stance_one_liner": "Prioritise primary care + community mental health, without cutting acute hospital capability."
     },
     {
       "n": 3,
-      "theme": "廢物收費",
-      "stance_one_liner": "Charging as backstop; infrastructure & habits first."
+      "theme": "Ageing society",
+      "stance_one_liner": "Support ageing-in-place as the core, with residential care as a backstop — and strengthen carers."
     },
     {
       "n": 4,
-      "theme": "極端酷熱",
-      "stance_one_liner": "Cool-corridor capital + capped relief before mandates."
+      "theme": "Youth employment / education",
+      "stance_one_liner": "Conditional support: subsidies must bind training, sector targets and retention KPIs."
     },
     {
       "n": 5,
-      "theme": "口岸韌性",
-      "stance_one_liner": "Institutionalise peaks + KPIs; keep on-site flexibility."
+      "theme": "Tourism / F&B / culture",
+      "stance_one_liner": "Support quality-first promotion, while keeping a diversified visitor mix."
     },
     {
       "n": 6,
-      "theme": "新型工業",
-      "stance_one_liner": "Bind funding to delivery KPIs; phase + SME-light track."
+      "theme": "GBA integration",
+      "stance_one_liner": "Support voluntary, reversible, quality-assured cross-boundary options — not as the sole pillar."
     },
     {
       "n": 7,
-      "theme": "河套東連",
-      "stance_one_liner": "Resumption to nodes + measurable compensation."
+      "theme": "Innovation & I&T",
+      "stance_one_liner": "Support Northern Metropolis as the main engine, without withdrawing the city-wide network."
     },
     {
       "n": 8,
-      "theme": "中小企數碼",
-      "stance_one_liner": "Pay on verified use + cyber; ring-fence micros."
+      "theme": "Transport / Environment",
+      "stance_one_liner": "Treat charging as a backstop; first deliver recovery infrastructure and habits, then phase a restart."
+    },
+    {
+      "n": 9,
+      "theme": "Fertility / family support",
+      "stance_one_liner": "Oppose bonus-first; support bonus as a supplement with childcare / housing / reproductive healthcare as the core."
+    },
+    {
+      "n": 10,
+      "theme": "Labour / platform economy",
+      "stance_one_liner": "Support sector-specific statutory floors — not necessarily one-step full employee status."
+    },
+    {
+      "n": 11,
+      "theme": "Public open space / parks",
+      "stance_one_liner": "Support a new upgrade round — but only with management and monitoring in parallel."
+    },
+    {
+      "n": 12,
+      "theme": "New industrialisation / funding delivery",
+      "stance_one_liner": "Support bundling funding with delivery checks — staged and workable."
+    },
+    {
+      "n": 13,
+      "theme": "Border resilience / peak crowd response",
+      "stance_one_liner": "Support institutionalised peak response with clear leads and smoothness KPIs — keep on-site flexibility."
+    },
+    {
+      "n": 14,
+      "theme": "Hetao east link resumption / NM delivery",
+      "stance_one_liner": "Support resumption tempo tied to infra nodes + cross-bureau coordination + measurable compensation outcomes — not blueprint slogans alone."
+    },
+    {
+      "n": 15,
+      "theme": "HK–Laos tax treaty / GoGBA 15th FYP",
+      "stance_one_liner": "Support expanding the tax network + strengthening GoGBA delivery services — with matching, follow-up and outcome KPIs."
+    },
+    {
+      "n": 16,
+      "theme": "Tokenised settlement / digital finance",
+      "stance_one_liner": "Conditional support for advancing 24×7 tokenised CB-money settlement — with RTGS linkage and pilot gates."
+    },
+    {
+      "n": 17,
+      "theme": "AI governance / public services",
+      "stance_one_liner": "Conditional support for faster public-service AI pilots — oppose full rollout before ethics, privacy and accountability are ready."
     }
   ],
   "sources": [
@@ -370,15 +803,11 @@
       "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
     },
     {
-      "label": "info.gov.hk GIA (MSW / Hetao)",
+      "label": "info.gov.hk GIA",
       "url": "https://www.info.gov.hk/"
     },
     {
-      "label": "Climate Action Plan 2050 (adaptation)",
-      "url": "https://cnsd.gov.hk/wp-content/uploads/2023/05/Adaptation-and-Resilience_en.pdf"
-    },
-    {
-      "label": "Q2 題庫（同源事實）",
+      "label": "Q2 中文題庫（同源事實）",
       "url": "../q2/#bank"
     }
   ]
