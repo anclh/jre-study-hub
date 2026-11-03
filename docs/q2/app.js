@@ -90,6 +90,7 @@
     document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
     const panel = $(`#panel-${name}`);
     if (panel) panel.classList.add("active");
+    if (name !== "bank") closeFlash();
   }
 
   function scrollIdFor(token) {
@@ -181,6 +182,94 @@
     return briefsData.briefs.filter(briefMatches);
   }
 
+  function trimScan(s, max) {
+    const t = String(s || "").replace(/\s+/g, " ").trim();
+    if (t.length <= max) return t;
+    return t.slice(0, max - 1).trimEnd() + "…";
+  }
+
+  function scanFacts(facts) {
+    const texts = (facts || [])
+      .map((f) => (f && f.text) || "")
+      .map((t) => t.trim())
+      .filter(Boolean);
+    const hard = texts.filter((t) => /\d/.test(t));
+    const rest = texts.filter((t) => !/\d/.test(t));
+    return [...hard, ...rest].slice(0, 3).map((t) => trimScan(t, 96));
+  }
+
+  function scanMeasures(measures) {
+    return (measures || []).filter(Boolean).slice(0, 3).map((t) => trimScan(t, 88));
+  }
+
+  function themeHitsTitle(theme, title) {
+    const parts = String(theme || "")
+      .split(/[／/、]/)
+      .map((s) => s.trim())
+      .filter((s) => s.length >= 2);
+    return parts.some((p) => title.includes(p));
+  }
+
+  function buildQuickRefRows(briefs, quickRef) {
+    const pool = (quickRef || []).map((r) => ({ ...r, used: false }));
+    const assigned = new Array(briefs.length);
+    briefs.forEach((b, i) => {
+      const title = b.title_zh || b.title || "";
+      const hit = pool.find((r) => !r.used && themeHitsTitle(r.theme, title));
+      if (!hit) return;
+      hit.used = true;
+      assigned[i] = { n: b.n, theme: hit.theme, stance_one_liner: hit.stance_one_liner || "" };
+    });
+    briefs.forEach((b, i) => {
+      if (assigned[i]) return;
+      const title = b.title_zh || b.title || "";
+      const hit = pool.find((r) => !r.used && r.n === b.n);
+      const reserved = hit && briefs.some((other, j) =>
+        !assigned[j] && j !== i && themeHitsTitle(hit.theme, other.title_zh || other.title || "")
+      );
+      if (hit && !reserved) {
+        hit.used = true;
+        assigned[i] = { n: b.n, theme: hit.theme, stance_one_liner: hit.stance_one_liner || "" };
+      } else {
+        assigned[i] = {
+          n: b.n,
+          theme: title,
+          stance_one_liner: String(b.stance || "").replace(/\s+/g, " ").trim(),
+        };
+      }
+    });
+    return assigned;
+  }
+
+  function outlineHtml(outline) {
+    if (!outline || typeof outline !== "object") return "";
+    const blocks = [];
+    if (outline.stance) blocks.push(`<p><strong>立場</strong> ${escapeHtml(outline.stance)}</p>`);
+    if (outline.arguments?.length) blocks.push(`<p><strong>理據</strong></p>${listHtml(outline.arguments, true)}`);
+    if (outline.rebuttal) blocks.push(`<p><strong>反駁</strong> ${escapeHtml(outline.rebuttal)}</p>`);
+    if (outline.recommendations?.length) {
+      blocks.push(`<p><strong>建議</strong></p>${listHtml(outline.recommendations, true)}`);
+    }
+    if (outline.closing) blocks.push(`<p><strong>短結</strong> ${escapeHtml(outline.closing)}</p>`);
+    if (!blocks.length) return "";
+    return `<details class="brief-nest">
+      <summary>寫作大綱</summary>
+      <div class="brief-nest-body">${blocks.join("")}</div>
+    </details>`;
+  }
+
+  function sampleHtml(brief) {
+    if (!brief.sample_answer) return "";
+    return `<details class="brief-nest">
+      <summary>範文</summary>
+      <div class="brief-nest-body">
+        ${brief.sample_note ? `<p class="muted brief-sample-note">${escapeHtml(brief.sample_note)}</p>` : ""}
+        <pre class="brief-sample">${escapeHtml(brief.sample_answer)}</pre>
+        <button type="button" class="btn btn-copy-sample" data-id="${escapeAttr(brief.id)}">複製範文</button>
+      </div>
+    </details>`;
+  }
+
   function renderBriefs() {
     const list = $("#briefsList");
     const countEl = $("#bankCount");
@@ -228,22 +317,35 @@
         })
         .join("");
 
+      const factPreview = scanFacts(brief.facts);
+      const measurePreview = scanMeasures(brief.measures);
+      const scanCols = [
+        factPreview.length
+          ? `<div><h4>必記硬數</h4><ul>${factPreview.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul></div>`
+          : "",
+        measurePreview.length
+          ? `<div><h4>措施要點</h4><ul>${measurePreview.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul></div>`
+          : "",
+      ].join("");
+
       card.innerHTML = `
         <button type="button" class="brief-summary" aria-expanded="${open ? "true" : "false"}">
           <span class="brief-num">${brief.n}</span>
           <span class="brief-summary-text">
             <h3>${escapeHtml(brief.title_zh)}</h3>
             <div class="brief-en">${escapeHtml(brief.title_en || "")}</div>
-            <p class="brief-stance-one">${escapeHtml(brief.stance || "")}</p>
-            <div class="brief-tags">${tags}</div>
           </span>
-          <span class="brief-chev" aria-hidden="true">▾</span>
+          <span class="brief-chev" aria-hidden="true">${open ? "收起" : "全文"} ▾</span>
         </button>
+        <div class="brief-scan-wrap">
+          <p class="scan-kicker">考試式題目</p>
+          <p class="brief-prompt-preview">${escapeHtml(brief.prompt || "")}</p>
+          <p class="scan-kicker">建議立場</p>
+          <p class="brief-stance-one">${escapeHtml(brief.stance || "")}</p>
+          ${scanCols ? `<div class="brief-scan">${scanCols}</div>` : ""}
+          <div class="brief-tags">${tags}</div>
+        </div>
         <div class="brief-body">
-          <div class="brief-section">
-            <h4>考試式題目</h4>
-            <p class="brief-prompt">${escapeHtml(brief.prompt)}</p>
-          </div>
           <div class="brief-section pros">
             <h4>利</h4>
             ${listHtml(brief.pros, false)}
@@ -265,12 +367,8 @@
             <h4>必記事實</h4>
             <ul class="facts-list">${facts}</ul>
           </div>
-          ${brief.sample_answer ? `<div class="brief-section sample">
-            <h4>範文</h4>
-            ${brief.sample_note ? `<p class="muted brief-sample-note">${escapeHtml(brief.sample_note)}</p>` : ""}
-            <pre class="brief-sample">${escapeHtml(brief.sample_answer)}</pre>
-            <button type="button" class="btn btn-copy-sample" data-id="${escapeAttr(brief.id)}">複製範文</button>
-          </div>` : ""}
+          ${outlineHtml(brief.sampleOutline)}
+          ${sampleHtml(brief)}
           <div class="brief-actions">
             <button type="button" class="btn primary btn-use-drill" data-id="${escapeAttr(brief.id)}">用呢題計時</button>
           </div>
@@ -301,8 +399,11 @@
     });
     list.appendChild(frag);
 
-    const qr = briefsData.quick_ref || [];
-    if (qr.length && !bankQuery.trim()) {
+    const allRows = buildQuickRefRows(briefsData.briefs || [], briefsData.quick_ref || []);
+    const qr = bankQuery.trim()
+      ? allRows.filter((r) => briefs.some((b) => b.n === r.n))
+      : allRows;
+    if (qr.length) {
       quickRef.hidden = false;
       quickRef.innerHTML = `
         <h3>速查表（練筆前 30 秒）</h3>
@@ -312,7 +413,7 @@
             ${qr
               .map(
                 (r) =>
-                  `<tr><td>${r.n}</td><td>${escapeHtml(r.theme)}</td><td>${escapeHtml(r.stance_one_liner)}</td></tr>`
+                  `<tr><td>${escapeHtml(r.n)}</td><td>${escapeHtml(r.theme)}</td><td>${escapeHtml(r.stance_one_liner)}</td></tr>`
               )
               .join("")}
           </tbody>
@@ -392,7 +493,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261103f", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261103g", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -447,6 +548,182 @@
     $("#bankSearch").value = "";
     bankQuery = "";
     renderBriefs();
+  });
+
+  /* —— 閃卡：題庫 briefs，中文題幹 + 英文主題，唔譯政策事實 —— */
+  const STORAGE_FLASH = "jre-q2-flash-v1";
+  let flashIndex = 0;
+  let flashFlipped = false;
+  let flashMarks = {};
+  try {
+    flashMarks = JSON.parse(localStorage.getItem(STORAGE_FLASH) || "{}") || {};
+  } catch {
+    flashMarks = {};
+  }
+
+  function englishGloss(brief) {
+    const titleEn = String(brief.title_en || "").trim();
+    const headEn = String(brief.heading || "").split("·")[0].trim();
+    const headIsEn = headEn && !/[\u4e00-\u9fff]/.test(headEn);
+    if (titleEn && headIsEn && headEn !== titleEn && !headEn.includes(titleEn) && !titleEn.includes(headEn)) {
+      return `${titleEn} · ${headEn}`;
+    }
+    return titleEn || (headIsEn ? headEn : "");
+  }
+
+  function flashDeck() {
+    return (briefsData?.briefs || []).slice().sort((a, b) => (a.n || 0) - (b.n || 0));
+  }
+
+  function takeShort(items, n, max) {
+    return (items || []).filter(Boolean).slice(0, n).map((t) => trimScan(t, max));
+  }
+
+  function flashBlock(zh, en, items) {
+    if (!items.length) return "";
+    return `<section class="flash-block"><h3>${zh} <span>${en}</span></h3><ul>${items
+      .map((t) => `<li>${escapeHtml(t)}</li>`)
+      .join("")}</ul></section>`;
+  }
+
+  function saveFlashMarks() {
+    localStorage.setItem(STORAGE_FLASH, JSON.stringify(flashMarks));
+  }
+
+  function renderFlash() {
+    const deck = flashDeck();
+    const front = $("#flashFront");
+    const back = $("#flashBack");
+    const card = $("#flashCard");
+    if (!front || !back || !card) return;
+    if (!deck.length) {
+      front.innerHTML = `<p>題庫未載入。</p>`;
+      back.innerHTML = "";
+      card.classList.remove("is-flipped");
+      return;
+    }
+    if (flashIndex < 0) flashIndex = 0;
+    if (flashIndex >= deck.length) flashIndex = deck.length - 1;
+    const brief = deck[flashIndex];
+    const rows = buildQuickRefRows(briefsData.briefs || [], briefsData.quick_ref || []);
+    const row = rows.find((r) => r.n === brief.n);
+    const stanceShort = (row && row.stance_one_liner) || brief.stance || "";
+    const gloss = englishGloss(brief);
+    const titleEn = String(brief.title_en || "").trim();
+    const extraEn = gloss && gloss !== titleEn ? gloss : "";
+    const mark = flashMarks[brief.id];
+    const markChip =
+      mark === "known"
+        ? `<span class="chip">識</span>`
+        : mark === "unknown"
+          ? `<span class="chip chip-sample">未識</span>`
+          : "";
+    front.innerHTML = `
+      <div class="flash-kicker">${brief.n} / ${deck.length} · 正面 ${markChip}</div>
+      <h2>${escapeHtml(brief.title_zh || brief.title || "")}</h2>
+      <p class="flash-en">${escapeHtml(titleEn || gloss || "")}</p>
+      <p class="flash-kicker">中文題目</p>
+      <p class="flash-prompt">${escapeHtml(brief.prompt || "")}</p>
+      ${extraEn ? `<p class="flash-kicker">English</p><p class="flash-en">${escapeHtml(extraEn)}</p>` : ""}
+      <p class="flash-tap">題幹只有中文。英文係主題（title／heading），唔另譯題目或事實。</p>
+      <p class="flash-kicker">立場 · Stance</p>
+      <p class="flash-stance">${escapeHtml(stanceShort)}</p>
+      <p class="flash-tap">點一下翻面</p>`;
+    const stanceLine = brief.stance || stanceShort;
+    back.innerHTML = `
+      <div class="flash-kicker">${brief.n} / ${deck.length} · 背面 ${markChip}</div>
+      <h2>${escapeHtml(brief.title_zh || "")}</h2>
+      ${flashBlock("利", "Pros", takeShort(brief.pros, 3, 110))}
+      ${flashBlock("弊", "Cons", takeShort(brief.cons, 3, 110))}
+      <section class="flash-block"><h3>立場 <span>Stance</span></h3><p class="flash-stance">${escapeHtml(stanceLine)}</p></section>
+      ${flashBlock("措施", "Measures", takeShort(brief.measures, 3, 110))}
+      ${flashBlock("必記", "Facts", scanFacts(brief.facts))}`;
+    card.classList.toggle("is-flipped", flashFlipped);
+    card.setAttribute("aria-pressed", flashFlipped ? "true" : "false");
+    const progress = $("#flashProgress");
+    if (progress) progress.textContent = `${flashIndex + 1} / ${deck.length}`;
+    const knownN = Object.values(flashMarks).filter((v) => v === "known").length;
+    const unknownN = Object.values(flashMarks).filter((v) => v === "unknown").length;
+    const score = $("#flashScore");
+    if (score) score.textContent = `識 ${knownN} · 未識 ${unknownN}`;
+    const hint = $("#flashHint");
+    if (hint) hint.textContent = flashFlipped ? "背面 · 再點返正面" : "正面 · 點卡片翻面";
+    const prev = $("#flashPrev");
+    const next = $("#flashNext");
+    if (prev) prev.disabled = flashIndex === 0;
+    if (next) next.disabled = flashIndex === deck.length - 1;
+    $("#flashKnown")?.classList.toggle("is-on", mark === "known");
+    $("#flashUnknown")?.classList.toggle("is-off", mark === "unknown");
+  }
+
+  function openFlash() {
+    if (!flashDeck().length) {
+      toast("題庫未載入");
+      return;
+    }
+    flashFlipped = false;
+    const overlay = $("#flashOverlay");
+    if (overlay) overlay.hidden = false;
+    renderFlash();
+  }
+
+  function closeFlash() {
+    const overlay = $("#flashOverlay");
+    if (overlay) overlay.hidden = true;
+  }
+
+  function stepFlash(delta) {
+    const deck = flashDeck();
+    const next = flashIndex + delta;
+    if (next < 0 || next >= deck.length) return;
+    flashIndex = next;
+    flashFlipped = false;
+    renderFlash();
+  }
+
+  function markFlash(kind) {
+    const deck = flashDeck();
+    const brief = deck[flashIndex];
+    if (!brief) return;
+    flashMarks[brief.id] = kind;
+    saveFlashMarks();
+    if (flashIndex < deck.length - 1) {
+      flashIndex += 1;
+      flashFlipped = false;
+    }
+    renderFlash();
+  }
+
+  const btnFlashcards = $("#btnFlashcards");
+  if (btnFlashcards) btnFlashcards.addEventListener("click", openFlash);
+  $("#flashClose")?.addEventListener("click", closeFlash);
+  $("#flashCard")?.addEventListener("click", () => {
+    flashFlipped = !flashFlipped;
+    renderFlash();
+  });
+  $("#flashCard")?.addEventListener("keydown", (e) => {
+    if (e.key !== " " && e.key !== "Enter") return;
+    e.preventDefault();
+    flashFlipped = !flashFlipped;
+    renderFlash();
+  });
+  $("#flashPrev")?.addEventListener("click", () => stepFlash(-1));
+  $("#flashNext")?.addEventListener("click", () => stepFlash(1));
+  $("#flashKnown")?.addEventListener("click", () => markFlash("known"));
+  $("#flashUnknown")?.addEventListener("click", () => markFlash("unknown"));
+  document.addEventListener("keydown", (e) => {
+    const overlay = $("#flashOverlay");
+    if (!overlay || overlay.hidden) return;
+    if (e.key === "Escape") {
+      e.preventDefault();
+      closeFlash();
+    } else if (e.key === "ArrowRight") {
+      e.preventDefault();
+      stepFlash(1);
+    } else if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      stepFlash(-1);
+    }
   });
 
 
@@ -587,6 +864,7 @@
 
 
   /* —— 骨架句，按五步 category 放入結構卡 —— */
+  // paper stays hub (Q2 + common + untagged). No paper-chip row — stage links are the only chips.
   const phraseState = { data: { disclaimer: "", categories: [], items: [] }, paper: "hub" };
   const STAGE_CATEGORIES = ["position", "arguments", "rebuttal", "recommend", "balance", "close"];
 
@@ -596,35 +874,12 @@
     return (cat && cat.zh) || id;
   }
 
-  const PAPER_CHIPS = [
-    { id: "all", label: "全部" },
-    { id: "q2", label: "Q2" },
-    { id: "common", label: "常用" },
-  ];
-
   function matchesPaper(item, filter) {
     const p = item.paper || "";
     if (filter === "all") return true;
     if (filter === "q2") return p === "q2" || p === "";
     if (filter === "common") return p === "common";
     return p === "q2" || p === "common" || p === "";
-  }
-
-  function renderPaperFilters() {
-    const wrap = $("#q2PaperFilters");
-    if (!wrap) return;
-    wrap.innerHTML = PAPER_CHIPS.map(
-      (c) =>
-        `<button type="button" data-paper="${c.id}" class="${phraseState.paper === c.id ? "active" : ""}">${c.label}</button>`
-    ).join("");
-    wrap.querySelectorAll("button").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const next = btn.dataset.paper;
-        phraseState.paper = phraseState.paper === next ? "hub" : next;
-        renderPaperFilters();
-        renderQ2Phrases();
-      });
-    });
   }
 
   function paperLabel(p) {
@@ -634,10 +889,16 @@
     return p || "";
   }
 
-  function phraseCardHTML(item) {
+  function phraseCardHTML(item, { showCategory = false } = {}) {
     const paper = paperLabel(item.paper);
+    const pills = [];
+    if (showCategory) {
+      pills.push(`<span class="cat-pill">${escapeHtml(phraseCatLabel(item.category))}</span>`);
+    }
+    if (paper) pills.push(`<span class="cat-pill paper">${escapeHtml(paper)}</span>`);
+    const meta = pills.length ? `<div class="meta">${pills.join(" ")}</div>` : "";
     return `<article class="phrase-card">
-      <div class="meta"><span class="cat-pill">${escapeHtml(phraseCatLabel(item.category))}</span>${paper ? ` <span class="cat-pill paper">${escapeHtml(paper)}</span>` : ""}</div>
+      ${meta}
       <p class="zh">${escapeHtml(item.zh || "")}</p>
       <p class="en">${escapeHtml(item.en || "")}</p>
       ${item.note ? `<div class="meta">${escapeHtml(item.note)}</div>` : ""}
@@ -670,15 +931,51 @@
       if (!grid) return;
       const items = byCat[cat] || [];
       grid.innerHTML = items.length
-        ? items.map(phraseCardHTML).join("")
+        ? items.map((item) => phraseCardHTML(item)).join("")
         : `<p class="muted stage-empty">沒有符合的句式。</p>`;
     });
     const extras = list.filter((item) => !known.has(item.category));
     const otherCard = document.getElementById("q2-phrase-other");
     const otherGrid = document.getElementById("q2PhraseOther");
     if (otherCard && otherGrid) {
-      otherCard.hidden = extras.length === 0;
-      otherGrid.innerHTML = extras.map(phraseCardHTML).join("");
+      otherGrid.innerHTML = extras.length
+        ? extras.map((item) => phraseCardHTML(item, { showCategory: true })).join("")
+        : `<p class="muted stage-empty">沒有符合的句式。</p>`;
+      const pinned = location.hash === "#q2-phrase-other";
+      otherCard.hidden = extras.length === 0 && !pinned;
+    }
+  }
+
+  function bindStageNav() {
+    const nav = document.getElementById("q2StageNav");
+    if (!nav) return;
+    const links = [...nav.querySelectorAll("a[href^='#']")];
+    function setActive(id) {
+      links.forEach((a) => {
+        const on = a.getAttribute("href") === `#${id}`;
+        a.classList.toggle("active", on);
+        if (on) a.setAttribute("aria-current", "true");
+        else a.removeAttribute("aria-current");
+      });
+    }
+    links.forEach((a) => {
+      a.addEventListener("click", () => {
+        const id = (a.getAttribute("href") || "").slice(1);
+        const target = document.getElementById(id);
+        if (target) target.hidden = false;
+        setActive(id);
+      });
+    });
+    window.addEventListener("hashchange", () => {
+      const id = location.hash.slice(1);
+      if (id === "q2-phrase-other") {
+        const other = document.getElementById("q2-phrase-other");
+        if (other) other.hidden = false;
+      }
+      if (links.some((a) => a.getAttribute("href") === location.hash)) setActive(id);
+    });
+    if (location.hash && links.some((a) => a.getAttribute("href") === location.hash)) {
+      setActive(location.hash.slice(1));
     }
   }
 
@@ -700,11 +997,10 @@
   async function loadQ2Phrases() {
     const status = $("#q2PhraseStatus");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261103f", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261103g", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
       if (status) status.innerHTML = "";
-      renderPaperFilters();
       renderQ2Phrases();
       const search = $("#q2PhraseSearch");
       if (search) search.addEventListener("input", renderQ2Phrases);
@@ -714,6 +1010,7 @@
     }
   }
 
+  bindStageNav();
   loadBriefs();
   loadQ2Phrases();
 })();
