@@ -6,8 +6,7 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>JRE English Q1 · Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261103v" />
-  <link rel="stylesheet" href="../shared/policy-flashcards.css?v=20261103v" />
+  <link rel="stylesheet" href="styles.css?v=20261103y" />
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261103c" />
 </head>
 <body>
@@ -17,13 +16,12 @@
         <div class="brand-mark">Q1</div>
         <div>
           <h1>英文 Q1</h1>
-          <p>Discussion paper · 政策溫習卡 · Data File</p>
+          <p>Discussion paper · Data File</p>
         </div>
       </div>
     </div>
     <nav class="subnav" id="subnav" aria-label="Q1 sections">
       <button type="button" data-panel="structure" class="active">結構／句式</button>
-      <button type="button" data-panel="bank">政策溫習卡</button>
       <button type="button" data-panel="tips">Tips</button>
       <button type="button" data-panel="case">計時練習</button>
       <button type="button" data-panel="mark">自評清單</button>
@@ -33,6 +31,7 @@
   <main>
                                                 <section class="panel active" id="panel-structure">
       <p class="lede" style="margin:0 0 10px">結構＋Shared frames＋句式合一：Opening → Closing，每段直接睇骨架同可用句。</p>
+      <p class="muted" style="margin:0 0 12px">政策溫習卡（閃卡）→ <a href="../policy/#flash">政策 tab</a></p>
 
       <div class="card" id="answer-frame">
         <h2>Answer frame <span class="chip">Fixed skeleton</span></h2>
@@ -176,28 +175,6 @@
     </section>
 
 
-    <section class="panel" id="panel-bank">
-      <div class="card">
-        <h2>政策溫習卡 <span class="chip">題庫</span></h2>
-        <p class="lede">考試式題目 → 利弊 → 建議立場 → 措施 → 必記事實。中英對齊 Q2 題庫；閃卡模式（Quizlet）預設入口。Data File 計時練習仍喺「計時練習」。主場：<a href="../policy/#flash">政策 tab 政策溫習卡</a>。</p>
-        <div class="jre-pf jre-pf-launcher" id="bankFlashLauncher">
-          <div class="jre-pf-launcher-copy">
-            <h3>閃卡溫習 · Quizlet</h3>
-            <p>正面＝主題＋考試題／立場一句；翻面＝利弊→立場→措施→必記。中＋英。</p>
-          </div>
-          <button type="button" class="jre-pf-start" id="btnBankFlash">開始閃卡</button>
-        </div>
-        <div class="search-bar">
-          <input id="bankSearch" type="search" enterkeyhint="search" autocomplete="off" spellcheck="false" placeholder="搜尋主題、題目、立場、事實（中英）…" aria-label="搜尋政策溫習卡" />
-        </div>
-        <div class="count" id="bankCount">溫習卡: —</div>
-        <p class="lede bank-list-hint">下面係列表備援；亦可點卡右上「閃」由該題開閃卡。</p>
-      </div>
-      <div class="briefs-list" id="briefsList"></div>
-      <div class="card quick-ref" id="quickRef" hidden></div>
-      <div class="card briefs-sources" id="briefsSources" hidden></div>
-    </section>
-
     <section class="panel" id="panel-tips">
       <p class="lede" style="margin:0 0 10px">考場操作 tips</p>
 
@@ -318,8 +295,7 @@
   <script src="data/border-resilience.js?v=20261103c"></script>
   <script src="data/loop-link-resumption.js?v=20261103c"></script>
   <script src="data/waste-recovery-2026-11-02.js?v=20261103c"></script>
-  <script src="../shared/policy-flashcards.js?v=20261103v"></script>
-  <script src="app.js?v=20261103v"></script>
+  <script src="app.js?v=20261103y"></script>
   <script src="../shell/tabbar.js?v=20261103c"></script>
 </body>
 </html>
