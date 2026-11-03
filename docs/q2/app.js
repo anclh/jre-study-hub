@@ -378,7 +378,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261103a", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261103b", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -686,7 +686,7 @@
   async function loadQ2Phrases() {
     const grid = $("#q2PhraseGrid");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261103a", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261103b", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
       renderPaperFilters();
@@ -715,7 +715,7 @@
     if (!list || !card) return;
     const src = card.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261103a", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261103b", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
