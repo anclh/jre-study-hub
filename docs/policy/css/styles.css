@@ -447,6 +447,13 @@ button {
   font-weight: 650;
 }
 .hot-val > div + div { margin-top: 4px; }
+.hot-row-bg .hot-k { color: #0f766e; }
+.hot-bg {
+  font-weight: 550;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: #1e293b;
+}
 .summary-details {
   margin: 0 0 12px;
   border: 1px solid var(--border);

@@ -47,6 +47,7 @@
       oldest: "最舊優先",
       angles: "面試角度／提問",
       hotFace: "熱面",
+      background: "背景",
       hardFigure: "硬數字",
       verifiableFacts: "可驗證事實",
       measure: "措施",
@@ -83,6 +84,7 @@
       oldest: "Oldest first",
       angles: "Interview angles / questions",
       hotFace: "Hot face",
+      background: "Background",
       hardFigure: "Hard figure",
       verifiableFacts: "Key facts",
       measure: "Measure",
@@ -223,14 +225,22 @@
     const hf =
       typeof extractHotFace === "function"
         ? extractHotFace(item)
-        : { figureOk: false, figureText: "", facts: [], measure: "" };
+        : { figureOk: false, figureText: "", facts: [], measure: "", background: "" };
     const label = hf.figureOk ? t("hardFigure") : t("verifiableFacts");
     const body = hf.figureOk
       ? `<div class="hot-val">${escapeHtml(hf.figureText || "")}</div>`
       : `<div class="hot-val">${(hf.facts || [])
           .map((f) => `<div>${escapeHtml(f)}</div>`)
           .join("")}</div>`;
+    const bg = (hf.background || "").trim();
+    const bgRow = bg
+      ? `<div class="hot-row hot-row-bg">
+          <div class="hot-k">${escapeHtml(t("background"))}</div>
+          <div class="hot-val hot-bg">${escapeHtml(bg)}</div>
+        </div>`
+      : "";
     return `<div class="hot-face" aria-label="${escapeAttr(t("hotFace"))}">
+        ${bgRow}
         <div class="hot-row">
           <div class="hot-k">${escapeHtml(label)}</div>
           ${body}

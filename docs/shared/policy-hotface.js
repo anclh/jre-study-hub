@@ -1,7 +1,8 @@
 /**
  * Shared hot-face extractor for policy cards / daily draw.
- * extractHotFace(item, opts?) -> { figureOk, figureText, facts, measure }
+ * extractHotFace(item, opts?) -> { figureOk, figureText, facts, measure, background }
  * opts.maxMeasure: longer measure clip for daily-draw face (default 36)
+ * background: 1–2 short context sentences (≈80–140 chars), no interview tails
  */
 (function (root) {
   "use strict";
@@ -249,6 +250,87 @@
     return facts;
   }
 
+  function cleanBackgroundRaw(s) {
+    return String(s || "")
+      .replace(/[\u200b\u200c\u200d\ufeff]/g, "")
+      .replace(/＊{2,}|\*{2,}/g, " ")
+      .replace(/財金政策動態[：:]\s*[「"]?[^」"]*[」"]?\s*/g, "")
+      .replace(/下稿代[^：:]*[：:]/g, "")
+      .replace(/^\s*[「"]+|["」]+\s*$/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function extractBackground(item, measure) {
+    var title = titleMain(item.title || "");
+    var summary = stripInterview(item.summary || "");
+    var measureC = compressOrgs(measure || "");
+    var raw = cleanBackgroundRaw(compressOrgs(summary));
+    if (!raw || raw.length < 24) {
+      var fromTitle = cleanBackgroundRaw(compressOrgs(title));
+      raw = raw ? raw : fromTitle;
+      if (raw && fromTitle && raw.length < 50 && fromTitle.length > raw.length) {
+        raw = fromTitle + "。" + raw;
+      }
+    }
+
+    var sentences = raw
+      .split(/[。；;]/)
+      .map(function (s) { return cleanBackgroundRaw(s); })
+      .filter(function (s) {
+        if (!s || s.length < 8) return false;
+        if (WEAK_META_RE.test(s)) return false;
+        if (/^政策相關公報|^民生／|^創科／|^以下是|^反映相關|^下稿代/.test(s)) return false;
+        return true;
+      });
+
+    var out = "";
+    for (var i = 0; i < sentences.length; i++) {
+      var next = out ? out + "。" + sentences[i] : sentences[i];
+      // Prefer landing in the 80–140 band; allow one more sentence if still short
+      if (out && next.length > 140 && out.length >= 70) break;
+      out = next;
+      if (out.length >= 80 && out.length <= 140) break;
+      if (out.length > 140) break;
+      if (i >= 1 && out.length >= 70) break;
+    }
+
+    if (!out) {
+      var t = compressOrgs(title).replace(/與/g, "×");
+      out = clip(t, 100);
+    }
+
+    // Soft-trim overshoot at clause boundary when possible
+    if (out.length > 140) {
+      var window = out.slice(0, 140);
+      var idxComma = window.lastIndexOf("，");
+      var idxDun = window.lastIndexOf("、");
+      var cut = Math.max(idxComma, idxDun);
+      if (cut >= 70) out = out.slice(0, cut);
+      else out = clip(out, 138);
+    }
+
+    // Avoid a background that is only a near-copy of the measure chip
+    if (measureC && overlapRatio(out, measureC) >= 0.92 && out.length < 40) {
+      var t2 = compressOrgs(title).replace(/與/g, "×");
+      var extra = sentences[0] || "";
+      out = clip((t2 ? t2 + "：" : "") + (extra || out), 120);
+    }
+
+    // Pad ultra-short leftovers with compressed title so reader still gets who/what
+    if (out.length < 40) {
+      var t3 = compressOrgs(title).replace(/與/g, "×");
+      if (t3 && overlapRatio(out, t3) < 0.85) {
+        out = clip(t3 + (out ? "——" + out : ""), 120);
+      }
+    }
+
+    if (out && !/[。！？]$/.test(out)) {
+      if (out.length >= 40) out = out + "。";
+    }
+    return out;
+  }
+
   function extractHotFace(item, opts) {
     item = item || {};
     opts = opts || {};
@@ -274,11 +356,14 @@
       }
     }
 
+    var background = extractBackground(item, measure);
+
     return {
       figureOk: figureOk,
       figureText: figureText || "",
       facts: facts,
       measure: measure,
+      background: background,
     };
   }
 

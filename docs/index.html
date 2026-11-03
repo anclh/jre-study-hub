@@ -7,9 +7,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="description" content="JRE Study Hub — 聯合招聘考試備試（中英）" />
-  <!-- stamp: 20261103h · 每日溫書政策抽卡改隔日／可選 -->
+  <!-- stamp: 20261103i · 熱面加背景／做緊咩 -->
   <title>JRE Study Hub · 主頁</title>
-  <link rel="stylesheet" href="shell/tabbar.css?v=20261103h" />
+  <link rel="stylesheet" href="shell/tabbar.css?v=20261103i" />
   <style>
     :root {
       --bg: #f4f6f9;
@@ -597,6 +597,13 @@
       color: var(--muted);
       font-size: 0.88rem;
     }
+    .draw-facts > div.draw-bg dd {
+      font-weight: 550;
+      font-size: 0.98rem;
+      line-height: 1.55;
+      color: #1e293b;
+    }
+    .draw-facts > div.draw-bg dt { color: #0f766e; }
     .draw-meta {
       margin-top: 14px;
       padding-top: 10px;
@@ -641,7 +648,7 @@
     }
   </style>
 </head>
-<body class="hub-has-tabs" data-stamp="20261103h">
+<body class="hub-has-tabs" data-stamp="20261103i">
   <main class="wrap">
     <header class="brand">
       <div class="logo" aria-hidden="true">JRE</div>
@@ -651,7 +658,7 @@
       </div>
     </header>
 
-    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103h">
+    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103i">
       <div class="daily-head">
         <div>
           <h2 class="daily-title" id="daily-title">每日溫書</h2>
@@ -837,8 +844,8 @@
       <a href="https://anclh.github.io/collocation-bank/" rel="noopener">anclh.github.io/collocation-bank</a>
     </p>
   </main>
-  <script src="shared/policy-hotface.js?v=20261103h"></script>
-  <script src="shell/tabbar.js?v=20261103h"></script>
+  <script src="shared/policy-hotface.js?v=20261103i"></script>
+  <script src="shell/tabbar.js?v=20261103i"></script>
   <script>
   (function () {
     var TZ = "Asia/Hong_Kong";
@@ -975,7 +982,7 @@
     function enrich(item) {
       var hot = (typeof extractHotFace === "function")
         ? extractHotFace(item, { maxMeasure: 110 })
-        : { figureOk: false, figureText: "", facts: [], measure: "（見政策卡措施）" };
+        : { figureOk: false, figureText: "", facts: [], measure: "（見政策卡措施）", background: "" };
       return {
         id: item.id,
         date: item.date,
@@ -1289,6 +1296,11 @@
           escapeHtml(card.title) +
           "</h3>" +
           '<dl class="draw-facts">' +
+          (hf.background
+            ? "<div class=\"draw-bg\"><dt>背景</dt><dd>" +
+              escapeHtml(hf.background) +
+              "</dd></div>"
+            : "") +
           "<div><dt>" + figLabel + "</dt>" +
           figHtml +
           "</div>" +
