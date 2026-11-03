@@ -403,7 +403,7 @@ body:has(#panel-case.active) #panel-case > .card:nth-child(2) p { font-size: 12p
 #shared-frames {
   scroll-margin-top: calc(var(--hub-tab-h, 56px) + 72px);
 }
-#phrases, #phrase-tools, #answer-frame, #sample-housing {
+#phrases, #phrase-tools, #answer-frame {
   scroll-margin-top: calc(var(--hub-tab-h, 56px) + 72px);
 }
 #phrase-tools h2 { margin-bottom: 4px; }
