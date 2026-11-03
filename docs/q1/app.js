@@ -35,7 +35,8 @@
 
   const state = {
     q1: { disclaimer: "", categories: [], items: [] },
-    category: "all",
+    // Stage filter for phrase chips (not fine-grained category)
+    stage: "all",
     // hub = q1 + common + untagged; pure q2 only under「全部」
     paper: "hub",
     modelOpen: false,
@@ -63,19 +64,25 @@
   }
 
 
+  const STAGE_CHIPS = [
+    { id: "all", label: "全部" },
+    { id: "opening", label: "Opening" },
+    { id: "problem", label: "Problem" },
+    { id: "options", label: "Options" },
+    { id: "recommendation", label: "Rec" },
+    { id: "closing", label: "Closing" },
+  ];
+
   function renderFilters() {
-    const cats = ["all", ...(state.q1.categories || []).map((c) => c.id)];
     const wrap = $("#q1Filters");
     if (!wrap) return;
-    wrap.innerHTML = cats
-      .map(
-        (c) =>
-          `<button type="button" data-cat="${c}" class="${state.category === c ? "active" : ""}">${CAT_LABELS[c] || c}</button>`
-      )
-      .join("");
+    wrap.innerHTML = STAGE_CHIPS.map(
+      (c) =>
+        `<button type="button" data-stage="${c.id}" class="${state.stage === c.id ? "active" : ""}">${c.label}</button>`
+    ).join("");
     $$("button", wrap).forEach((btn) => {
       btn.addEventListener("click", () => {
-        state.category = btn.dataset.cat;
+        state.stage = btn.dataset.stage;
         renderFilters();
         renderPhrases();
       });
@@ -83,6 +90,7 @@
   }
 
   const PAPER_CHIPS = [
+    { id: "hub", label: "預設" },
     { id: "all", label: "全部" },
     { id: "q1", label: "Q1" },
     { id: "common", label: "常用" },
@@ -112,8 +120,7 @@
     ).join("");
     $$("button", wrap).forEach((btn) => {
       btn.addEventListener("click", () => {
-        const next = btn.dataset.paper;
-        state.paper = state.paper === next ? "hub" : next;
+        state.paper = btn.dataset.paper;
         renderPaperFilters();
         renderPhrases();
       });
@@ -153,7 +160,13 @@
   function renderPhrases() {
     const q = ($("#q1Search")?.value || "").trim().toLowerCase();
     let list = (state.q1.items || []).filter((i) => matchesPaper(i, state.paper));
-    if (state.category !== "all") list = list.filter((i) => i.category === state.category);
+    if (state.stage !== "all") {
+      list = list.filter((i) => {
+        const st = stageOfPhrase(i);
+        if (state.stage === "closing") return st === "closing" || st === "other";
+        return st === state.stage;
+      });
+    }
     if (q) {
       list = list.filter((i) =>
         `${i.en} ${i.zh} ${i.category} ${i.note || ""} ${i.example || ""}`.toLowerCase().includes(q)
@@ -172,6 +185,16 @@
       const st = stageOfPhrase(item);
       if (!byStage[st]) byStage[st] = [];
       byStage[st].push(item);
+    });
+
+    // Show only the selected stage card when a stage chip is active
+    $$(".stage-block").forEach((block) => {
+      const st = block.getAttribute("data-stage") || "";
+      if (state.stage === "all") {
+        block.hidden = false;
+      } else {
+        block.hidden = st !== state.stage;
+      }
     });
 
     const grids = $$(".stage-phrases");
@@ -414,7 +437,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261103q", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261103r", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {
@@ -569,7 +592,7 @@
     if (!lists.length) return;
     const src = root.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261103q", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261103r", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];

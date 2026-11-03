@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>JRE English Q1 · Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261103q" />
+  <link rel="stylesheet" href="styles.css?v=20261103r" />
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261103c" />
 </head>
 <body>
@@ -60,16 +60,17 @@
 
       <div class="card" id="phrase-tools">
         <h2>句式搜尋／篩選</h2>
-        <p class="lede">篩選會同步套用到下面五個 stage 嘅句式卡。</p>
+        <p class="lede">搜尋／卷別／stage 篩選會同步套用到下面五個 stage 嘅句式卡；揀單一 stage 會只顯示該段。</p>
         <div class="toolbar">
           <div class="search">
             <input type="search" id="q1Search" placeholder="搜尋句式 EN／中…" autocomplete="off" />
           </div>
           <span class="count" id="q1Count">—</span>
         </div>
-        <p class="muted" style="margin:0 0 6px;font-size:12px">卷別：預設為 Q1、常用及未標。點「全部」先見純 Q2；再按已選卷別返回預設。</p>
+        <p class="muted" style="margin:0 0 6px;font-size:12px">卷別：預設＝Q1＋常用＋未標（唔見純 Q2）。點「全部」先見純 Q2。</p>
         <div class="filters" id="q1PaperFilters" aria-label="卷別篩選" style="margin-bottom:8px"></div>
-        <div class="filters" id="q1Filters"></div>
+        <p class="muted" style="margin:0 0 6px;font-size:12px">Stage：對應下面 Opening→Closing 五段。</p>
+        <div class="filters" id="q1Filters" aria-label="Stage 篩選"></div>
         <p class="muted" id="q1Disclaimer" style="margin-top:10px"></p>
       </div>
 
@@ -265,7 +266,7 @@
   <script src="data/border-resilience.js?v=20261103c"></script>
   <script src="data/loop-link-resumption.js?v=20261103c"></script>
   <script src="data/waste-recovery-2026-11-02.js?v=20261103c"></script>
-  <script src="app.js?v=20261103q"></script>
+  <script src="app.js?v=20261103r"></script>
   <script src="../shell/tabbar.js?v=20261103c"></script>
 </body>
 </html>
