@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="JRE 中文 Q2 — 議題思維、題庫、計時練習與自評" />
   <title>中文 Q2 · JRE Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261103f" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103f" />
+  <link rel="stylesheet" href="styles.css?v=20261103g" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103g" />
 </head>
 <body>
   <header class="app-header">
@@ -55,15 +55,21 @@
       <div id="q2-stages">
         <div class="card" id="phrase-tools">
           <h2>骨架句</h2>
-          <p class="lede">文筆一般都夠——考試靠骨架，唔靠文采。每段套入本地例子／一個數。預設顯示 Q2、常用及未標。</p>
+          <p class="lede">文筆一般都夠——考試靠骨架，唔靠文采。每段套入本地例子／一個數。搜尋會套用到下面五步同「其他」。</p>
           <div class="toolbar">
             <div class="search">
               <input type="search" id="q2PhraseSearch" placeholder="搜尋句式 中／EN…" autocomplete="off" />
             </div>
             <span class="count" id="q2PhraseCount">—</span>
           </div>
-          <p class="muted phrase-paper-note">卷別：預設 Q2、常用及未標。點「全部」見所有；再按已選卷別返回預設。</p>
-          <div class="filters" id="q2PaperFilters" aria-label="卷別篩選"></div>
+          <nav class="filters" id="q2StageNav" aria-label="骨架句階段">
+            <a href="#stage-position">立場</a>
+            <a href="#stage-arguments">理據／例子</a>
+            <a href="#stage-rebuttal">反駁</a>
+            <a href="#stage-recommend">建議</a>
+            <a href="#stage-close">短結</a>
+            <a href="#q2-phrase-other">其他</a>
+          </nav>
           <p class="muted" id="q2PhraseDisclaimer"></p>
           <div id="q2PhraseStatus"></div>
         </div>
@@ -260,7 +266,6 @@
         <h2>素材</h2>
         <ul class="link-list">
           <li><a href="#bank" id="linkToBank">本頁題庫</a> — 考試式題目 → 利弊 → 立場 → 措施（有範文標「有範文」）</li>
-          <li><a href="../policy/#flash">政策 tab 政策溫習卡</a> — 中英閃卡主場（Quizlet）</li>
           <li><a href="../policy/">政策 Policy</a> — 事實 dump 來源（每日 refresh）</li>
           <li><a href="https://www.policyaddress.gov.hk/" target="_blank" rel="noopener">施政報告</a> · <a href="https://www.info.gov.hk/" target="_blank" rel="noopener">政府新聞稿</a></li>
           <li><a href="../">Study Hub 主頁</a> · <a href="../q1/">英文 Q1</a> · <a href="../vocab/">詞彙 Vocab</a></li>
@@ -271,15 +276,18 @@
     <section class="panel" id="panel-bank">
       <div class="card">
         <h2>中文 Q2 政策題庫</h2>
-        <p class="lede">題庫練筆包：考試式題目 → 利弊 → 建議立場 → 措施 → 必記事實。點開主題展開全文；可一鍵轉去計時練習。中英閃卡主場：<a href="../policy/#flash">政策 tab · 政策溫習卡</a>。</p>
+        <p class="lede">先掃下面速查表（約 30 秒），或開閃卡翻面練。列表卡預設見題目、一句立場、硬數同措施要點；展開先見利弊全文。範文收在最底。</p>
         <div class="search-bar">
           <input id="bankSearch" type="search" enterkeyhint="search" autocomplete="off" spellcheck="false" placeholder="搜尋主題、題目、立場、事實…" aria-label="搜尋題庫" />
           <button type="button" class="btn" id="bankClear">清除</button>
         </div>
+        <div class="toolbar flash-entry">
+          <button type="button" class="btn primary" id="btnFlashcards">閃卡／Flashcards</button>
+        </div>
         <div class="count" id="bankCount">題庫: —</div>
       </div>
-      <div class="briefs-list" id="briefsList"></div>
       <div class="card quick-ref" id="quickRef" hidden></div>
+      <div class="briefs-list" id="briefsList"></div>
       <div class="card briefs-sources" id="briefsSources" hidden></div>
     </section>
 
@@ -349,8 +357,26 @@
     </section>
   </main>
 
+  <div class="flash-overlay" id="flashOverlay" hidden>
+    <div class="flash-bar">
+      <button type="button" class="btn" id="flashClose">返回題庫</button>
+      <span class="flash-progress" id="flashProgress">—</span>
+      <span class="flash-score" id="flashScore"></span>
+    </div>
+    <div class="flash-card" id="flashCard" role="button" tabindex="0" aria-pressed="false" aria-label="翻面">
+      <div class="flash-face flash-front" id="flashFront"></div>
+      <div class="flash-face flash-back" id="flashBack"></div>
+    </div>
+    <p class="flash-hint" id="flashHint">點卡片翻面</p>
+    <div class="flash-nav">
+      <button type="button" class="btn" id="flashPrev">上一張</button>
+      <button type="button" class="btn" id="flashUnknown">未識</button>
+      <button type="button" class="btn" id="flashKnown">識</button>
+      <button type="button" class="btn" id="flashNext">下一張</button>
+    </div>
+  </div>
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261103f"></script>
-  <script src="../shell/tabbar.js?v=20261103f"></script>
+  <script src="app.js?v=20261103g"></script>
+  <script src="../shell/tabbar.js?v=20261103g"></script>
 </body>
 </html>

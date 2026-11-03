@@ -1251,6 +1251,31 @@
     },
     {
       "n": 12,
+      "theme": "新型工業化",
+      "stance_one_liner": "資助綁落地考核，分階段"
+    },
+    {
+      "n": 13,
+      "theme": "口岸高峰",
+      "stance_one_liner": "應變制度化＋暢順 KPI"
+    },
+    {
+      "n": 14,
+      "theme": "河套收地",
+      "stance_one_liner": "收地對齊基建，成效可量度"
+    },
+    {
+      "n": 15,
+      "theme": "稅務／GoGBA",
+      "stance_one_liner": "擴稅網＋落地跟進，要成效"
+    },
+    {
+      "n": 16,
+      "theme": "代幣化結算",
+      "stance_one_liner": "24x7 有條件，先銜接 RTGS"
+    },
+    {
+      "n": 17,
       "theme": "人工智能",
       "stance_one_liner": "試點加快＋倫理私隱問責門檻"
     }
