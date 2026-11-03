@@ -7,9 +7,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="description" content="JRE Study Hub — 每日溫書（結構／寫／詞；政策隔日可選）" />
-  <!-- stamp: 20261103m · 結構空白起草＋參考答案可隱藏 -->
+  <!-- stamp: 20261103n · 寫步每日 1 題 Q2 政策題庫輪換 -->
   <title>JRE Study Hub · 每日溫書</title>
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103m" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103n" />
   <style>
 
     :root {
@@ -530,6 +530,26 @@
       text-transform: uppercase;
       margin-bottom: 2px;
     }
+    .write-prompt-meta {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .write-prompt-deeplinks {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+    .write-prompt-deeplinks a {
+      margin-right: 10px;
+      color: var(--accent-2, #2b6cb0);
+      text-decoration: none;
+      border-bottom: 1px solid #c7d7f5;
+    }
+    .write-prompt-deeplinks a:hover { border-bottom-color: var(--accent-2, #2b6cb0); }
     .write-area {
       width: 100%;
       min-height: 160px;
@@ -642,7 +662,7 @@
 
   </style>
 </head>
-<body class="hub-has-tabs" data-stamp="20261103m">
+<body class="hub-has-tabs" data-stamp="20261103n">
   <main class="wrap">
     <header class="brand">
       <div class="logo" aria-hidden="true">📅</div>
@@ -652,7 +672,7 @@
       </div>
     </header>
 
-    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103m">
+    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103n">
       <div class="daily-head">
         <div>
           <h2 class="daily-title" id="daily-title">每日溫書</h2>
@@ -720,15 +740,22 @@
               <label for="chk-write">寫 25–40 分</label>
               <span class="daily-badge" id="write-badge" hidden>今日主攻</span>
             </p>
-            <p class="daily-step-desc" id="desc-write">平日一段；日：全文 45 分</p>
+            <p class="daily-step-desc" id="desc-write">今日 1 題（政策題庫輪換）</p>
             <div class="daily-links" id="write-links">
+              <a id="link-q2-write" class="primary" href="../q2/#pair-kits">Q2 萬用配搭</a>
+              <a id="link-q2-bank" href="../q2/#bank">Q2 題庫</a>
+              <a id="link-q2-drill" href="../q2/#drill">Q2 計時</a>
               <a id="link-q1-write" href="../q1/#example-measure-pairs">Q1 例子↔措施</a>
-              <a id="link-q2-write" href="../q2/#pair-kits">Q2 萬用配搭</a>
             </div>
             <div class="write-pad" id="write-pad">
               <p class="write-prompt" id="write-prompt">
                 <span class="write-prompt-label">今日題目</span>
-                <span id="write-prompt-text">—</span>
+                <span class="write-prompt-meta" id="write-prompt-meta" hidden></span>
+                <span id="write-prompt-text">題庫載入中…</span>
+                <span class="write-prompt-deeplinks" id="write-prompt-deeplinks">
+                  <a href="../q2/#bank">題庫</a>
+                  <a href="../q2/#drill">計時</a>
+                </span>
               </p>
               <label class="sr-only" for="write-draft">寫作區</label>
               <textarea
@@ -812,8 +839,8 @@
       </p>
     </section>
   </main>
-  <script src="../shared/policy-hotface.js?v=20261103m"></script>
-  <script src="../shell/tabbar.js?v=20261103m"></script>
+  <script src="../shared/policy-hotface.js?v=20261103n"></script>
+  <script src="../shell/tabbar.js?v=20261103n"></script>
   <script>
   (function () {
     var TZ = "Asia/Hong_Kong";
@@ -977,8 +1004,6 @@
     var oddDay = now.dayNum % 2 === 1;
     var wd = now.weekday;
     var isSun = wd === 0;
-    var writeQ1 = wd === 1 || wd === 3 || wd === 5;
-    var writeQ2 = wd === 2 || wd === 4 || wd === 6;
 
     var q1f = document.getElementById("link-q1-frames");
     var q2f = document.getElementById("link-q2-frames");
@@ -1054,58 +1079,44 @@
     var descWrite = document.getElementById("desc-write");
     var sunTip = document.getElementById("daily-sunday");
 
-    if (isSun) {
-      if (writeItem) writeItem.classList.add("is-today");
-      if (writeBadge) {
-        writeBadge.hidden = false;
-        writeBadge.textContent = "全文 45 分";
-      }
-      if (descWrite) {
-        descWrite.textContent = "日：Q1 或 Q2 全文一篇（45 分）；可用計時頁";
-      }
-      setPrimary(q1w, false);
-      setPrimary(q2w, false);
-      if (sunTip) sunTip.hidden = false;
-      var links = document.getElementById("write-links");
-      if (links) {
-        links.innerHTML =
-          '<a class="primary" href="../q1/#case">Q1 計時全文</a>' +
+    if (writeItem) writeItem.classList.add("is-today");
+    if (writeBadge) {
+      writeBadge.hidden = false;
+      writeBadge.textContent = isSun ? "全文 45 分 · Q2 題庫" : "Q2 題庫";
+    }
+    if (descWrite) {
+      descWrite.textContent = isSun
+        ? "日：全文 45 分 · 今日 1 題（政策題庫輪換）"
+        : "今日 1 題（政策題庫輪換）";
+    }
+    setPrimary(q2w, true);
+    setPrimary(q1w, false);
+    if (sunTip) sunTip.hidden = !isSun;
+    var writeLinks = document.getElementById("write-links");
+    if (writeLinks) {
+      if (isSun) {
+        writeLinks.innerHTML =
           '<a class="primary" href="../q2/#drill">Q2 計時全文</a>' +
-          '<a href="../q1/#example-measure-pairs">Q1 例子↔措施</a>' +
-          '<a href="../q2/#pair-kits">Q2 萬用配搭</a>';
+          '<a class="primary" href="../q2/#bank">Q2 題庫</a>' +
+          '<a href="../q2/#pair-kits">Q2 萬用配搭</a>' +
+          '<a href="../q1/#case">Q1 計時（可選）</a>' +
+          '<a href="../q1/#example-measure-pairs">Q1 例子↔措施</a>';
+      } else {
+        writeLinks.innerHTML =
+          '<a id="link-q2-write" class="primary" href="../q2/#pair-kits">Q2 萬用配搭</a>' +
+          '<a id="link-q2-bank" href="../q2/#bank">Q2 題庫</a>' +
+          '<a id="link-q2-drill" href="../q2/#drill">Q2 計時</a>' +
+          '<a id="link-q1-write" href="../q1/#example-measure-pairs">Q1 例子↔措施</a>';
       }
-    } else {
-      if (writeItem) writeItem.classList.add("is-today");
-      if (writeBadge) {
-        writeBadge.hidden = false;
-        writeBadge.textContent = writeQ1 ? "今日 Q1" : "今日 Q2";
-      }
-      if (descWrite) {
-        descWrite.textContent = writeQ1
-          ? "一三五：Q1 一段 memo（睇 Tips §8 例子↔措施）"
-          : "二四六：Q2 一段理據＋措施（睇萬用配搭）";
-      }
-      setPrimary(q1w, writeQ1);
-      setPrimary(q2w, writeQ2);
-      if (sunTip) sunTip.hidden = true;
     }
 
     /* —— Write prompt + draft pad —— */
+    var promptMetaEl = document.getElementById("write-prompt-meta");
     var promptEl = document.getElementById("write-prompt-text");
     var draftEl = document.getElementById("write-draft");
     var saveStatusEl = document.getElementById("write-save-status");
     var btnClearDraft = document.getElementById("btn-clear-draft");
-    var promptText;
-    if (isSun) {
-      promptText = "日 · 全文 45 分：揀 Q1 或 Q2 做一篇完整答卷（可用計時頁）。喺下面起草大綱／全文。";
-    } else if (writeQ1) {
-      promptText = "一三五 · Q1 一段 memo：用 Data File 寫一段（問題／比較／建議擇一深寫）；對照 Tips 例子↔措施。";
-    } else {
-      promptText = "二四六 · Q2 一段理據＋措施：寫一段完整理據（立場→例子→措施）；對照萬用配搭。";
-    }
-    if (promptEl) promptEl.textContent = promptText;
     if (draftEl) {
-      draftEl.setAttribute("aria-label", promptText);
       try {
         var savedDraft = localStorage.getItem(draftKey(now.ymd));
         if (savedDraft != null) draftEl.value = savedDraft;
@@ -1242,41 +1253,68 @@
       });
     }
 
-    /* —— Sample answer (hidden by default) —— */
-    var ANS_Q1 =
-      "Public hospital outpatient queues remain long, with median waiting times for specialist clinics still measured in months. This delays early intervention and pushes more residents toward A&E for non-urgent care, straining emergency capacity and raising avoidable costs. A practical response is to expand family-medicine night clinics and District Health Centre triage, while using eHealth records to divert stable cases into PPP primary-care slots with clear referral criteria. Taken together, these steps shorten the first contact for common conditions, ease pressure on acute wards, and free hospital teams for complex cases.\n\n（參考／非標準答 · ~110 words）";
-
-    var ANS_Q2 =
-      "我贊成加強基層醫療分流，因為公院專科輪候長，輕症擠佔急症資源。以醫健通與地區康健中心為例，市民可先在社區獲分流與覆診，減少不必要急症求診。措施方面，可擴夜診及家庭醫學門診名額，並以電子病歷銜接公私營，讓穩定個案優先轉介社區。此舉既能縮短初診接觸時間，亦讓醫院集中處理複雜病症。\n\n（參考／非標準答 · 約 150 字）";
-
-    var ANS_SUN =
-      "【大綱骨架 · 參考／非標準答】\n" +
-      "EN — Opening: state the pressure (e.g. waiting time / housing backlog).\n" +
-      "Point 1: implication for residents / service capacity.\n" +
-      "Point 2: one concrete HK measure (DHC / night clinic / rehousing).\n" +
-      "Closing: prioritise + monitor.\n\n" +
-      "中 — 開首：點出壓力（輪候／房屋供應）。\n" +
-      "理據一：對市民／服務容量的影響。\n" +
-      "理據二：一個可執行措施（地區康健／夜診／重建安置）。\n" +
-      "建議＋短結：優次＋跟進指標。\n\n" +
-      "（日：骨架即可，唔使全文貼入寫作區）";
-
+    /* —— Write sample answer from Q2 briefs (hidden by default) —— */
     var ansBtn = document.getElementById("btn-toggle-answer");
     var ansBox = document.getElementById("write-answer-box");
     var ansText = document.getElementById("write-answer-text");
     var ansLabel = document.getElementById("write-answer-label");
-    var sampleBody;
-    if (isSun) {
-      sampleBody = ANS_SUN;
-      if (ansLabel) ansLabel.textContent = "日 · 大綱骨架（參考）";
-    } else if (writeQ1) {
-      sampleBody = ANS_Q1;
-      if (ansLabel) ansLabel.textContent = "Q1 參考／非標準答";
-    } else {
-      sampleBody = ANS_Q2;
-      if (ansLabel) ansLabel.textContent = "Q2 參考／非標準答";
+    var SAMPLE_FALLBACK =
+      "此題暫無內嵌範文。建議按「開首立場 → 理據 → 反駁 → 建議 → 短結」自寫；" +
+      "或開 Q2 題庫／計時睇提示卡。";
+
+    function dayOfYear0(ymd) {
+      var p = String(ymd || "").split("-");
+      var y = parseInt(p[0], 10);
+      var m = parseInt(p[1], 10);
+      var d = parseInt(p[2], 10);
+      if (!y || !m || !d) return 0;
+      return Math.floor((Date.UTC(y, m - 1, d) - Date.UTC(y, 0, 1)) / 86400000);
     }
-    if (ansText) ansText.textContent = sampleBody;
+
+    function applyWriteBrief(brief, errMsg) {
+      if (errMsg) {
+        if (promptMetaEl) {
+          promptMetaEl.hidden = true;
+          promptMetaEl.textContent = "";
+        }
+        if (promptEl) promptEl.textContent = errMsg;
+        if (draftEl) draftEl.setAttribute("aria-label", errMsg);
+        if (ansLabel) ansLabel.textContent = "參考／非標準答";
+        if (ansText) ansText.textContent = SAMPLE_FALLBACK + "\n\n（題庫載入失敗時仍可喺上面起草）";
+        return;
+      }
+      var themeLine =
+        (brief.n != null ? String(brief.n) + ". " : "") +
+        (brief.title_zh || brief.heading || brief.id || "");
+      if (promptMetaEl) {
+        promptMetaEl.hidden = !themeLine;
+        promptMetaEl.textContent = themeLine;
+      }
+      var promptText = brief.prompt || "（此題暫無題幹）";
+      if (isSun) promptText = "【日 · 全文 45 分】" + promptText;
+      if (promptEl) promptEl.textContent = promptText;
+      if (draftEl) draftEl.setAttribute("aria-label", promptText);
+
+      if (brief.sample_answer) {
+        var sampleBody = String(brief.sample_answer);
+        if (brief.sample_note) {
+          sampleBody += "\n\n——\n參考／非標準答 · " + String(brief.sample_note);
+        } else {
+          sampleBody += "\n\n（參考／非標準答）";
+        }
+        if (ansLabel) {
+          ansLabel.textContent =
+            "Q2 參考／非標準答" + (brief.title_zh ? " · " + brief.title_zh : "");
+        }
+        if (ansText) ansText.textContent = sampleBody;
+      } else {
+        if (ansLabel) ansLabel.textContent = "骨架提示 · 參考／非標準答";
+        if (ansText) ansText.textContent = SAMPLE_FALLBACK;
+      }
+    }
+
+    if (ansText) ansText.textContent = "載入參考答案中…";
+    if (ansLabel) ansLabel.textContent = "參考／非標準答";
     if (ansBtn && ansBox) {
       ansBtn.addEventListener("click", function () {
         var open = ansBtn.getAttribute("aria-expanded") === "true";
@@ -1286,6 +1324,21 @@
         ansBtn.textContent = next ? "隱藏參考答案" : "顯示參考答案";
       });
     }
+
+    fetch("../q2/data/briefs.json", { cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        var briefs = (data && Array.isArray(data.briefs)) ? data.briefs : [];
+        if (!briefs.length) throw new Error("empty briefs");
+        var idx = dayOfYear0(now.ymd) % briefs.length;
+        applyWriteBrief(briefs[idx], null);
+      })
+      .catch(function () {
+        applyWriteBrief(null, "題庫載入失敗");
+      });
 
     var state = loadState(now.ymd);
     KEYS.forEach(function (k) {
