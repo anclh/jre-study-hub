@@ -12391,5 +12391,524 @@
     ],
     "example": "A waiting-time target without triage rules risks gaming and cherry-picking.",
     "topic": "welfare-population"
+  },
+  {
+    "term": "family medicine",
+    "zh": "家庭醫學",
+    "pos": "n. phr.",
+    "related": [
+      "primary care",
+      "family doctor",
+      "District Health Centre"
+    ],
+    "note": "基層醫療核心專科；Q1 常用於分流專科積壓",
+    "synonyms": [
+      "family practice",
+      "general practice (primary)",
+      "first-contact medicine"
+    ],
+    "antonyms": [
+      "narrow specialty care",
+      "hospital-only practice",
+      "acute inpatient focus"
+    ],
+    "examples": [
+      {
+        "en": "Expanding family medicine outpatient places can divert stable chronic cases from specialist queues.",
+        "zh": "擴大家庭醫學門診名額，可把穩定慢性病例從專科隊列分流。"
+      },
+      {
+        "en": "Family medicine capacity should be tied to night-clinic coverage and district referral pathways.",
+        "zh": "家庭醫學能量應與夜診覆蓋及地區轉介路徑掛鈎。"
+      },
+      {
+        "en": "Without family medicine gatekeeping, specialist outpatient growth will outpace any one-off backlog clearances.",
+        "zh": "若欠缺家庭醫學把關，專科門診增長將超越任何一次性清積壓措施。"
+      }
+    ],
+    "example": "Expanding family medicine outpatient places can divert stable chronic cases from specialist queues.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "District Health Centre",
+    "zh": "地區康健中心",
+    "pos": "n. phr.",
+    "related": [
+      "primary care",
+      "family medicine",
+      "chronic disease co-management"
+    ],
+    "note": "DHC；官方英文用大寫；勿寫成僅『健康中心』",
+    "synonyms": [
+      "DHC",
+      "district primary-care hub",
+      "community health centre (DHC model)"
+    ],
+    "antonyms": [
+      "hospital A&E-first pathway",
+      "specialist-only clinic",
+      "ad-hoc outreach without hub"
+    ],
+    "examples": [
+      {
+        "en": "District Health Centres should publish diversion rates from A&E and specialist outpatient for stable cases.",
+        "zh": "地區康健中心應公布穩定個案由急症室及專科門診分流的比率。"
+      },
+      {
+        "en": "Scale District Health Centre chronic-disease programmes only after eHealth enrolment and family-doctor pairing meet district targets.",
+        "zh": "待醫健通登記及家庭醫生配對達區目標後，才擴大地區康健中心慢性病計劃。"
+      },
+      {
+        "en": "A District Health Centre without clear referral pathways becomes another attendance counter, not a system fix.",
+        "zh": "欠缺清晰轉介路徑的地區康健中心，只會變成多一個求診櫃台，而非系統解方。"
+      }
+    ],
+    "example": "District Health Centres should publish diversion rates from A&E and specialist outpatient for stable cases.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "eHealth",
+    "zh": "醫健通",
+    "pos": "n.",
+    "related": [
+      "primary care",
+      "referral pathway",
+      "chronic disease co-management"
+    ],
+    "note": "電子健康紀錄互通；登記率常作覆蓋 KPI",
+    "synonyms": [
+      "electronic health record sharing",
+      "shared EHR platform",
+      "health record interchange"
+    ],
+    "antonyms": [
+      "paper-only records",
+      "siloed clinic files",
+      "no cross-provider sharing"
+    ],
+    "examples": [
+      {
+        "en": "eHealth registration above 85% is necessary but not sufficient without usable referral data across providers.",
+        "zh": "醫健通登記率逾八成半是必要條件，但若跨機構轉介數據不可用仍不足夠。"
+      },
+      {
+        "en": "Tie family-medicine expansion funding to eHealth-enabled chronic disease co-management uptake.",
+        "zh": "把家庭醫學擴容撥款掛鈎醫健通支援的慢性病共同治理使用率。"
+      },
+      {
+        "en": "Without eHealth consent workflows, District Health Centre diversion cannot be audited.",
+        "zh": "欠缺醫健通同意流程，地區康健中心分流便無法審核。"
+      }
+    ],
+    "example": "eHealth registration above 85% is necessary but not sufficient without usable referral data across providers.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "night clinic",
+    "zh": "夜診／晚間診所",
+    "pos": "n. phr.",
+    "related": [
+      "family medicine",
+      "primary care",
+      "waiting-time target"
+    ],
+    "note": "HA／家庭醫學擴容常見配套；可寫 evening clinic",
+    "synonyms": [
+      "evening clinic",
+      "after-hours outpatient session",
+      "extended-hour clinic"
+    ],
+    "antonyms": [
+      "daytime-only clinic",
+      "office-hour outpatient only",
+      "no after-hours cover"
+    ],
+    "examples": [
+      {
+        "en": "Night clinic sessions for family medicine should be concentrated in districts with the longest specialist waits.",
+        "zh": "家庭醫學夜診時段應集中在專科輪候最長的地區。"
+      },
+      {
+        "en": "Measure night clinic success by diversion from A&E, not raw attendance.",
+        "zh": "夜診成效應以急症室分流衡量，而非只計求診人次。"
+      },
+      {
+        "en": "A night clinic without same-day referral support will push unresolved cases back to specialist outpatient.",
+        "zh": "欠缺即日轉介支援的夜診，會把未解決個案推回專科門診。"
+      }
+    ],
+    "example": "Night clinic sessions for family medicine should be concentrated in districts with the longest specialist waits.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "chronic disease co-management",
+    "zh": "慢性病共同治理",
+    "pos": "n. phr.",
+    "related": [
+      "primary care",
+      "family doctor",
+      "District Health Centre",
+      "eHealth"
+    ],
+    "note": "基層＋專科協作；常連 CDP／醫社合作",
+    "synonyms": [
+      "shared chronic-care model",
+      "collaborative disease management",
+      "joint chronic-care pathway"
+    ],
+    "antonyms": [
+      "specialist-only follow-up",
+      "fragmented disease care",
+      "one-off consultation without plan"
+    ],
+    "examples": [
+      {
+        "en": "Chronic disease co-management should define which stable cases stay in primary care for 12 months.",
+        "zh": "慢性病共同治理應訂明哪些穩定個案在基層醫療跟進十二個月。"
+      },
+      {
+        "en": "Publish KPIs for chronic disease co-management: control rates, unplanned admission, and specialist re-referral.",
+        "zh": "公布慢性病共同治理 KPI：控制率、非計劃入院及再轉專科比率。"
+      },
+      {
+        "en": "Without family-doctor pairing, chronic disease co-management remains a pamphlet, not a pathway.",
+        "zh": "欠缺家庭醫生配對，慢性病共同治理只是單張，而非路徑。"
+      }
+    ],
+    "example": "Chronic disease co-management should define which stable cases stay in primary care for 12 months.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "referral pathway",
+    "zh": "轉介路徑",
+    "pos": "n. phr.",
+    "related": [
+      "primary care",
+      "specialist outpatient",
+      "family medicine"
+    ],
+    "note": "誰轉、何時轉、回轉條件要寫清",
+    "synonyms": [
+      "care pathway",
+      "referral protocol",
+      "triage-and-refer route"
+    ],
+    "antonyms": [
+      "ad-hoc referral",
+      "open self-referral to specialty",
+      "no step-down route"
+    ],
+    "examples": [
+      {
+        "en": "A clear referral pathway from District Health Centres to family medicine and back from specialists is essential.",
+        "zh": "由地區康健中心至家庭醫學、以及由專科回轉的清晰轉介路徑至關重要。"
+      },
+      {
+        "en": "Lock specialist new-case slots to cases that meet the agreed referral pathway criteria.",
+        "zh": "專科新症名額應鎖定符合既定轉介路徑準則的個案。"
+      },
+      {
+        "en": "Without a step-down referral pathway, primary-care expansion will not shrink specialist queues.",
+        "zh": "欠缺下轉路徑，基層擴容也不會縮短專科隊列。"
+      }
+    ],
+    "example": "A clear referral pathway from District Health Centres to family medicine and back from specialists is essential.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "family doctor",
+    "zh": "家庭醫生",
+    "pos": "n. phr.",
+    "related": [
+      "family medicine",
+      "primary care",
+      "eHealth"
+    ],
+    "note": "配對／名冊常用於基層改革措施",
+    "synonyms": [
+      "regular primary-care doctor",
+      "named GP-equivalent",
+      "first-contact physician"
+    ],
+    "antonyms": [
+      "doctor-shopping pattern",
+      "episodic walk-in only",
+      "no regular provider"
+    ],
+    "examples": [
+      {
+        "en": "Pair each chronic patient with a family doctor before expanding night clinic capacity.",
+        "zh": "在擴大夜診能量前，應先為每名慢性病患者配對家庭醫生。"
+      },
+      {
+        "en": "Family doctor enrolment targets should be district-specific and published quarterly.",
+        "zh": "家庭醫生登記目標應按區訂定並每季公布。"
+      },
+      {
+        "en": "A family doctor without eHealth visibility cannot co-manage across public and private providers.",
+        "zh": "家庭醫生若無醫健通可視性，便無法跨公私營共同治理。"
+      }
+    ],
+    "example": "Pair each chronic patient with a family doctor before expanding night clinic capacity.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "estate redevelopment",
+    "zh": "屋邨重建",
+    "pos": "n. phr.",
+    "related": [
+      "redevelopment",
+      "rehousing",
+      "reception estate"
+    ],
+    "note": "公屋屋邨重建；有別於一般市區重建",
+    "synonyms": [
+      "public housing estate renewal",
+      "aged-estate redevelopment",
+      "HA estate rebuild"
+    ],
+    "antonyms": [
+      "in-situ repair only",
+      "piecemeal block patching",
+      "deferral of estate rebuild"
+    ],
+    "examples": [
+      {
+        "en": "Estate redevelopment must sequence rehousing against reception-estate readiness, not demolition dates alone.",
+        "zh": "屋邨重建須按接待屋邨就緒程度安排安置，不能只按清拆日期。"
+      },
+      {
+        "en": "Publish a public timetable for estate redevelopment phases, including road-gazette milestones.",
+        "zh": "應公布屋邨重建各階段公開時間表，包括道路刊憲里程碑。"
+      },
+      {
+        "en": "Accelerating estate redevelopment without reception flats risks prolonged temporary moves.",
+        "zh": "在欠缺接待單位下加速屋邨重建，恐令臨時搬遷拖長。"
+      }
+    ],
+    "example": "Estate redevelopment must sequence rehousing against reception-estate readiness, not demolition dates alone.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "rehousing",
+    "zh": "安置／遷置",
+    "pos": "n.",
+    "related": [
+      "reception estate",
+      "estate redevelopment",
+      "clearance and rehousing"
+    ],
+    "note": "重建／清拆的關鍵前置；寫清誰、何時、往哪",
+    "synonyms": [
+      "tenant relocation",
+      "reallocation of flats",
+      "decant-and-rehouse"
+    ],
+    "antonyms": [
+      "eviction without offer",
+      "clearance without flat",
+      "forced move with no option"
+    ],
+    "examples": [
+      {
+        "en": "Rehousing commitments should be locked before gazettal of clearance works.",
+        "zh": "清拆工程刊憲前應先鎖定安置承諾。"
+      },
+      {
+        "en": "Track rehousing by household type, not aggregate headcount alone.",
+        "zh": "安置進度應按住戶類型追蹤，而非只計總人數。"
+      },
+      {
+        "en": "Delayed rehousing turns estate redevelopment into a livelihood risk, not a supply gain.",
+        "zh": "安置延誤會使屋邨重建變成民生風險，而非供應增益。"
+      }
+    ],
+    "example": "Rehousing commitments should be locked before gazettal of clearance works.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "reception estate",
+    "zh": "接待屋邨",
+    "pos": "n. phr.",
+    "related": [
+      "rehousing",
+      "estate redevelopment",
+      "clearance and rehousing"
+    ],
+    "note": "重建受影響住戶的接收屋邨；如華富北等",
+    "synonyms": [
+      "receiving estate",
+      "rehousing reception stock",
+      "decanting reception estate"
+    ],
+    "antonyms": [
+      "no reception stock",
+      "same-estate in-situ only",
+      "hotel-style temporary shelter only"
+    ],
+    "examples": [
+      {
+        "en": "Do not accelerate demolition until the reception estate has sufficient vacant flats for priority households.",
+        "zh": "接待屋邨有足夠優先住戶空置單位前，不應加速清拆。"
+      },
+      {
+        "en": "Wah Fu redevelopment sequencing hinges on Wah Fu North as a reception estate plus road-gazette timing.",
+        "zh": "華富重建次序繫於華富北作為接待屋邨，以及道路刊憲時間。"
+      },
+      {
+        "en": "Publish monthly reception estate vacancy against the rehousing queue.",
+        "zh": "應每月公布接待屋邨空置量對照安置輪候。"
+      }
+    ],
+    "example": "Do not accelerate demolition until the reception estate has sufficient vacant flats for priority households.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "clearance and rehousing",
+    "zh": "清拆及安置",
+    "pos": "n. phr.",
+    "related": [
+      "rehousing",
+      "reception estate",
+      "estate redevelopment"
+    ],
+    "note": "HA／清拆工程套語；較 decanting 更常正式使用",
+    "synonyms": [
+      "clearance-and-rehouse package",
+      "site clearance with rehousing",
+      "decanting and rehousing"
+    ],
+    "antonyms": [
+      "clearance without rehousing plan",
+      "demolition-first approach",
+      "vacate-without-offer"
+    ],
+    "examples": [
+      {
+        "en": "Clearance and rehousing should be gated on reception-estate readiness and transport access.",
+        "zh": "清拆及安置應以接待屋邨就緒及交通接駁為關卡。"
+      },
+      {
+        "en": "A clearance and rehousing plan needs household-level offers, not only estate-wide percentages.",
+        "zh": "清拆及安置計劃需要住戶層面的安置方案，而非只報屋邨整體百分比。"
+      },
+      {
+        "en": "Tie works contracts to clearance and rehousing milestones to avoid stranded residents.",
+        "zh": "工程合約應與清拆及安置里程碑掛鈎，避免居民被困。"
+      }
+    ],
+    "example": "Clearance and rehousing should be gated on reception-estate readiness and transport access.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "housing ladder",
+    "zh": "房屋階梯",
+    "pos": "n. phr.",
+    "related": [
+      "public housing",
+      "transitional housing",
+      "estate redevelopment"
+    ],
+    "note": "由過渡／公屋上至資助出售及私人市場的流動",
+    "synonyms": [
+      "housing progression path",
+      "home-ownership ladder",
+      "tenure mobility pathway"
+    ],
+    "antonyms": [
+      "housing lock-in",
+      "no upward mobility",
+      "permanent temporary housing"
+    ],
+    "examples": [
+      {
+        "en": "Estate redevelopment should preserve a housing ladder from transitional and public rental to subsidised sale.",
+        "zh": "屋邨重建應保留由過渡及公屋出租上至資助出售的房屋階梯。"
+      },
+      {
+        "en": "Measure the housing ladder by move-up rates, not only new flat completions.",
+        "zh": "房屋階梯應以向上流動率衡量，而非只計新單位落成。"
+      },
+      {
+        "en": "Without a credible housing ladder, light public housing risks becoming a long-term trap.",
+        "zh": "欠缺可信房屋階梯，簡約公屋恐成長期困局。"
+      }
+    ],
+    "example": "Estate redevelopment should preserve a housing ladder from transitional and public rental to subsidised sale.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "public-private partnership",
+    "zh": "公私營合作",
+    "pos": "n. phr.",
+    "related": [
+      "primary care",
+      "family doctor",
+      "governance"
+    ],
+    "note": "PPP；衛生／房屋措施常用；寫清風險分擔",
+    "synonyms": [
+      "PPP",
+      "cross-sector partnership",
+      "public–private collaboration"
+    ],
+    "antonyms": [
+      "purely public delivery",
+      "fully privatised provision",
+      "no private-sector role"
+    ],
+    "examples": [
+      {
+        "en": "A public-private partnership for family-doctor pairing needs clear fee, quality, and exit rules.",
+        "zh": "家庭醫生配對的公私營合作須有清晰收費、質素及退出規則。"
+      },
+      {
+        "en": "Use public-private partnership capacity for night clinics only where public sessions cannot scale in time.",
+        "zh": "僅在公營時段未能及時擴容時，才以公私營合作補夜診能量。"
+      },
+      {
+        "en": "Public-private partnership is a delivery tool, not a substitute for waiting-time accountability.",
+        "zh": "公私營合作是交付工具，不能替代輪候時間問責。"
+      }
+    ],
+    "example": "A public-private partnership for family-doctor pairing needs clear fee, quality, and exit rules.",
+    "topic": "governance"
+  },
+  {
+    "term": "median waiting time",
+    "zh": "輪候時間中位數",
+    "pos": "n. phr.",
+    "related": [
+      "waiting time",
+      "waiting-time target",
+      "specialist outpatient"
+    ],
+    "note": "較平均數穩健；專科門診／公屋常用公布口徑",
+    "synonyms": [
+      "median wait",
+      "50th-percentile waiting time",
+      "mid-point queue time"
+    ],
+    "antonyms": [
+      "mean waiting time only",
+      "longest-wait anecdote",
+      "unreported wait distribution"
+    ],
+    "examples": [
+      {
+        "en": "Publish median waiting time by specialty alongside the share still beyond the target.",
+        "zh": "應同時公布各專科輪候時間中位數及仍超標比例。"
+      },
+      {
+        "en": "A falling median waiting time can mask a long tail of extreme waits.",
+        "zh": "輪候時間中位數下降，仍可能掩蓋極長輪候的長尾。"
+      },
+      {
+        "en": "Gate extra theatre sessions on closing the gap between median waiting time and the service pledge.",
+        "zh": "額外手術室時段應以縮短輪候時間中位數與服務承諾差距為關卡。"
+      }
+    ],
+    "example": "Publish median waiting time by specialty alongside the share still beyond the target.",
+    "topic": "welfare-population"
   }
 ]

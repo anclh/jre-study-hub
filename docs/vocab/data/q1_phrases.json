@@ -801,6 +801,33 @@
       "zh": "在十二個月內，醫務衛生局及醫管局應公布各專科門診輪候時間目標，並為穩定慢性個案訂立基層醫療分流 KPI。",
       "note": "who/when · primary care",
       "example": "Within 12 months, Health Bureau and Hospital Authority should publish specialty-level specialist outpatient waiting-time targets, with primary-care diversion KPIs for stable chronic cases."
+    },
+    {
+      "id": "rec-16",
+      "category": "recommend",
+      "paper": "q1",
+      "en": "It is recommended that Health Bureau and Hospital Authority prioritise night-clinic and District Health Centre diversion for districts with the longest specialist outpatient median waits, with quarterly publication of diversion and re-referral rates.",
+      "zh": "建議醫務衛生局及醫院管理局，優先在專科門診輪候中位數最長的地區加強夜診及地區康健中心分流，並每季公布分流及再轉介比率。",
+      "note": "Health · night clinic / DHC diversion (distinct from spc-16 specialty targets)",
+      "example": "It is recommended that Health Bureau and Hospital Authority prioritise night-clinic and District Health Centre diversion for districts with the longest specialist outpatient median waits, with quarterly publication of diversion and re-referral rates."
+    },
+    {
+      "id": "cmp-08",
+      "category": "comparison",
+      "paper": "q1",
+      "en": "Locking rehousing to reception-estate readiness and road-gazette milestones is preferable to accelerating demolition alone, which risks stranded households and prolonged temporary moves.",
+      "zh": "把安置鎖定於接待屋邨就緒及道路刊憲里程碑，優於單靠加速清拆——後者易令住戶懸空及臨時搬遷拖長。",
+      "note": "Housing · redevelopment sequencing trade-off",
+      "example": "Locking rehousing to reception-estate readiness and road-gazette milestones is preferable to accelerating demolition alone, which risks stranded households and prolonged temporary moves."
+    },
+    {
+      "id": "spc-17",
+      "category": "specificity",
+      "paper": "q1",
+      "en": "Within one quarter of road gazettal, Housing Authority should issue household-level clearance and rehousing offers keyed to named reception-estate blocks and move-in windows.",
+      "zh": "道路刊憲後一季內，房委會應按指名接待屋邨座數及入伙時窗，發出住戶層面的清拆及安置方案。",
+      "note": "Housing · who / when / reception blocks",
+      "example": "Within one quarter of road gazettal, Housing Authority should issue household-level clearance and rehousing offers keyed to named reception-estate blocks and move-in windows."
     }
   ]
 }

@@ -357,7 +357,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261102l", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261103c", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {
@@ -507,7 +507,7 @@
     if (!list || !card) return;
     const src = card.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261102l", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261103c", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
