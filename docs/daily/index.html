@@ -7,9 +7,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="description" content="JRE Study Hub — 每日溫書（結構／寫／詞；政策隔日可選）" />
-  <!-- stamp: 20261103n · 寫步每日 1 題 Q2 政策題庫輪換 -->
+  <!-- stamp: 20261103o · 寫步參考優先 sampleOutline -->
   <title>JRE Study Hub · 每日溫書</title>
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103n" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103o" />
   <style>
 
     :root {
@@ -662,7 +662,7 @@
 
   </style>
 </head>
-<body class="hub-has-tabs" data-stamp="20261103n">
+<body class="hub-has-tabs" data-stamp="20261103o">
   <main class="wrap">
     <header class="brand">
       <div class="logo" aria-hidden="true">📅</div>
@@ -672,7 +672,7 @@
       </div>
     </header>
 
-    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103n">
+    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103o">
       <div class="daily-head">
         <div>
           <h2 class="daily-title" id="daily-title">每日溫書</h2>
@@ -755,6 +755,8 @@
                 <span class="write-prompt-deeplinks" id="write-prompt-deeplinks">
                   <a href="../q2/#bank">題庫</a>
                   <a href="../q2/#drill">計時</a>
+                  <a href="../q2/#shared-frames">結構框架</a>
+                  <a href="../q2/#pair-kits">萬用配搭</a>
                 </span>
               </p>
               <label class="sr-only" for="write-draft">寫作區</label>
@@ -839,8 +841,8 @@
       </p>
     </section>
   </main>
-  <script src="../shared/policy-hotface.js?v=20261103n"></script>
-  <script src="../shell/tabbar.js?v=20261103n"></script>
+  <script src="../shared/policy-hotface.js?v=20261103o"></script>
+  <script src="../shell/tabbar.js?v=20261103o"></script>
   <script>
   (function () {
     var TZ = "Asia/Hong_Kong";
@@ -1271,6 +1273,35 @@
       return Math.floor((Date.UTC(y, m - 1, d) - Date.UTC(y, 0, 1)) / 86400000);
     }
 
+
+    function formatSampleOutline(outline) {
+      if (!outline || typeof outline !== "object") return "";
+      var lines = [];
+      if (outline.stance) lines.push("立場：" + String(outline.stance));
+      var args = Array.isArray(outline.arguments) ? outline.arguments.filter(Boolean) : [];
+      if (args.length) {
+        lines.push("理據：");
+        args.forEach(function (a, i) {
+          lines.push(String(i + 1) + ". " + String(a));
+        });
+      }
+      if (outline.rebuttal) lines.push("反駁：" + String(outline.rebuttal));
+      var recs = Array.isArray(outline.recommendations)
+        ? outline.recommendations.filter(Boolean)
+        : [];
+      if (recs.length) {
+        lines.push("建議：");
+        recs.forEach(function (r, i) {
+          lines.push(String(i + 1) + ". " + String(r));
+        });
+      }
+      if (outline.closing) lines.push("短結：" + String(outline.closing));
+      if (!lines.length) return "";
+      lines.push("");
+      lines.push("（結構大綱 · 參考／非標準答）");
+      return lines.join("\n");
+    }
+
     function applyWriteBrief(brief, errMsg) {
       if (errMsg) {
         if (promptMetaEl) {
@@ -1283,9 +1314,9 @@
         if (ansText) ansText.textContent = SAMPLE_FALLBACK + "\n\n（題庫載入失敗時仍可喺上面起草）";
         return;
       }
+      var titleBit = brief.title || brief.title_zh || brief.heading || brief.id || "";
       var themeLine =
-        (brief.n != null ? String(brief.n) + ". " : "") +
-        (brief.title_zh || brief.heading || brief.id || "");
+        (brief.n != null ? String(brief.n) + ". " : "") + titleBit;
       if (promptMetaEl) {
         promptMetaEl.hidden = !themeLine;
         promptMetaEl.textContent = themeLine;
@@ -1295,21 +1326,27 @@
       if (promptEl) promptEl.textContent = promptText;
       if (draftEl) draftEl.setAttribute("aria-label", promptText);
 
-      if (brief.sample_answer) {
+      var titleSuffix = titleBit ? " · " + titleBit : "";
+      var outline = brief.sampleOutline;
+      var outlineText = formatSampleOutline(outline);
+      if (outlineText) {
+        if (ansLabel) ansLabel.textContent = "Q2 結構大綱 · 參考／非標準答" + titleSuffix;
+        if (ansText) ansText.textContent = outlineText;
+      } else if (brief.sample_answer) {
         var sampleBody = String(brief.sample_answer);
         if (brief.sample_note) {
           sampleBody += "\n\n——\n參考／非標準答 · " + String(brief.sample_note);
         } else {
           sampleBody += "\n\n（參考／非標準答）";
         }
-        if (ansLabel) {
-          ansLabel.textContent =
-            "Q2 參考／非標準答" + (brief.title_zh ? " · " + brief.title_zh : "");
-        }
+        if (ansLabel) ansLabel.textContent = "Q2 參考／非標準答" + titleSuffix;
         if (ansText) ansText.textContent = sampleBody;
       } else {
         if (ansLabel) ansLabel.textContent = "骨架提示 · 參考／非標準答";
-        if (ansText) ansText.textContent = SAMPLE_FALLBACK;
+        if (ansText) {
+          ansText.textContent =
+            SAMPLE_FALLBACK + "\n\n→ 可開 Q2 題庫／計時：../q2/#bank · ../q2/#drill";
+        }
       }
     }
 
