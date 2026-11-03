@@ -510,3 +510,64 @@ body:has(#panel-case.active) #panel-case > .card:nth-child(2) p { font-size: 12p
   padding: 16px; text-align: center; color: var(--muted);
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
 }
+
+/* —— Bilingual policy cards + flash entry —— */
+.bank-list-hint { margin: 6px 0 0; font-size: 12px; }
+.brief-summary-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+.brief-summary-row .brief-summary { flex: 1 1 auto; }
+.brief-flash-btn {
+  flex: 0 0 auto;
+  width: 48px;
+  min-height: 48px;
+  margin: 8px 10px 8px 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 13px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.brief-flash-btn:active { transform: scale(0.96); }
+.bilingual-pair { margin: 0; }
+.bilingual-pair .zh,
+.brief-stance-one .zh,
+.facts-list .zh,
+.bilingual-list .zh {
+  display: block;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.bilingual-pair .en,
+.brief-stance-one .en,
+.facts-list .en,
+.bilingual-list .en,
+.quick-ref-table .en {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.4;
+  font-weight: 400;
+}
+.brief-stance-one .zh { font-weight: 650; }
+.bilingual-list { margin: 0; padding-left: 1.2rem; }
+.bilingual-list li { margin: 6px 0; }
+.brief-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.brief-actions .btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.brief-prompt.bilingual-pair,
+.brief-section .bilingual-pair {
+  padding: 10px 12px;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}

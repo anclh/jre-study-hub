@@ -2,11 +2,13 @@
   "meta": {
     "title": "Q1 政策溫習卡",
     "title_en": "Policy revision cards",
-    "note": "Aligned to docs/q2/data/briefs.json (17 Chinese Q2 briefs). English trim for Q1 writing; facts/stances not invented. Dropped prior English-only forks (heat-adaptation, sme-digital) with no Q2 brief; waste/mental folded into transport-environment / healthcare per Q2.",
+    "note": "Bilingual Quizlet deck. Chinese from docs/q2/data/briefs.json; English from prior Q1 policy-cards. No invented stances/figures. Fields: *_zh / *_en (+ EN legacy aliases).",
     "updated": "2026-11-03",
-    "stamp": "20261103u",
-    "source": "docs/q2/data/briefs.json",
-    "count": 17
+    "stamp": "20261103v",
+    "source": "docs/q2/data/briefs.json + docs/q1/data/policy-cards.json",
+    "count": 17,
+    "bilingual": true,
+    "shape": "prompt_zh/en, pros_zh/en, cons_zh/en, stance_zh/en, measures_zh/en, facts_zh/en; legacy prompt/pros/cons/stance/measures/facts = EN"
   },
   "cards": [
     {
@@ -16,6 +18,86 @@
       "title_en": "Housing / Land",
       "theme_ids": [
         "housing-land"
+      ],
+      "prompt_zh": "有意見認為，政府應大幅加快興建公營房屋（包括簡約公屋），並把「綜合公屋輪候時間」盡快壓至 4.5 年以下，即使需暫緩部分私人住宅用地招標。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that Government should sharply accelerate public housing (including Light Public Housing) and push Combined Waiting Time below 4.5 years soon, even if that means pausing some private residential land sales. Analyse the pros and cons, state a clear stance, and propose measures.",
+      "pros_zh": [
+        "直接紓緩低收入家庭住屋壓力，縮短輪候，改善生活質素。",
+        "配合「基本住房單位」制度，有助有序取締不適切劏房。",
+        "公屋供應上升可穩定社會預期，減少「住屋焦慮」外溢至生育、青年發展等議題。"
+      ],
+      "pros_en": [
+        "Directly eases housing pressure for low-income households, shortens waits and lifts living standards.",
+        "Supports orderly clearance of inadequate subdivided units under the Basic Housing Units regime.",
+        "Higher public supply can steady expectations and reduce housing anxiety spilling into fertility and youth development."
+      ],
+      "cons_zh": [
+        "過度傾斜公營房屋或影響私人樓市供應節奏與土地收入。",
+        "趕工可能推高建造成本／質素風險；配套交通、學校、醫療需同步。",
+        "簡約公屋屬過渡性質，若長期化或衍生「二次安置」壓力。"
+      ],
+      "cons_en": [
+        "Over-tilting to public housing may disrupt private supply tempo and land revenue.",
+        "Rushed construction can raise cost and quality risk; transport, schools and healthcare must keep pace.",
+        "Light Public Housing is transitional — if prolonged it may create a second-wave rehousing burden."
+      ],
+      "stance_zh": "贊成「加快公營供應，但須梯級化＋配套」",
+      "stance_en": "Support faster public supply, but only with a ladder out of transitional units and matching infrastructure.",
+      "measures_zh": [
+        "按《長遠房屋策略》維持公營優先，同時準備約 2 500 公頃「熟地」土地儲備，靈活調配公私比例。",
+        "簡約公屋如期完成約 30 000 伙後，設清晰「轉入傳統公屋／資助出售」階梯，避免永久過渡。",
+        "加快北部都會區新發展區基建，令單位與就業、交通同步落成。",
+        "重建項目在區議會對新一期公營房屋表示普遍支持後，公布相關道路工程的刊憲與開工節點（華富：預計 2027 年年初刊憲、2028 年中開工），避免安置與通道脫節。"
+      ],
+      "measures_en": [
+        "Keep public priority under the Long Term Housing Strategy while holding ~2,500 ha of “spade-ready” land to flex public–private mix.",
+        "After ~30,000 Light Public Housing flats complete on schedule, set a clear ladder into conventional PRH / subsidised sale — avoid permanent transit.",
+        "Accelerate Northern Metropolis NDAs so flats, jobs and transport complete together.",
+        "For rebuilds with district support (e.g. Wah Fu Phase 1), publish gazettal and works start dates for related roads (Wah Fu: gazettal early 2027, start mid-2028) so rehousing and access stay aligned."
+      ],
+      "facts_zh": [
+        {
+          "text": "綜合公屋輪候時間約 4.8 年；目標 2027 年約 4.5 年。news.gov.hk／Housing Bureau CWT",
+          "url": "https://www.news.gov.hk/eng/2026/08/20260813/20260813_163217_854.html"
+        },
+        {
+          "text": "未來五年公營房屋（連簡約公屋）約 196 000 伙；2027-28 起年均逾 35 000 伙（約升 73%）。2026 Policy Address",
+          "url": "https://www.policyaddress.gov.hk/2026/en/"
+        },
+        {
+          "text": "《基本住房單位條例》2026 年 3 月起實施，規管劏房。Policy Address / HB",
+          "url": "https://www.policyaddress.gov.hk/2026/en/chapter7.html"
+        },
+        {
+          "text": "北部都會區估計可提供約 500 000 住宅單位。info.gov.hk LCQ",
+          "url": "https://www.info.gov.hk/gia/general/202510/15/P2025101500516.htm"
+        },
+        {
+          "text": "華富邨重建：房委會就新華富邨第一期公營房屋發展諮詢南區區議會，獲普遍支持。為配合第一期而重訂華富道路段的相關道路工程，預計 2027 年年初刊憲，並於 2028 年中開展。info.gov.hk 2026-11-02",
+          "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200240.htm"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "Combined Waiting Time ~4.8 years; target ~4.5 years by 2027. news.gov.hk / Housing Bureau CWT",
+          "url": "https://www.news.gov.hk/eng/2026/08/20260813/20260813_163217_854.html"
+        },
+        {
+          "text": "Next five years: ~196,000 public flats (incl. Light Public Housing); from 2027-28 average >35,000/year (~+73%). 2026 Policy Address",
+          "url": "https://www.policyaddress.gov.hk/2026/en/"
+        },
+        {
+          "text": "Basic Housing Units Ordinance in force from March 2026 to regulate subdivided units. PA / HB",
+          "url": "https://www.policyaddress.gov.hk/2026/en/chapter7.html"
+        },
+        {
+          "text": "Northern Metropolis estimated ~500,000 residential units. info.gov.hk LCQ",
+          "url": "https://www.info.gov.hk/gia/general/202510/15/P2025101500516.htm"
+        },
+        {
+          "text": "Wah Fu rebuild: HA consulted Southern DC on New Wah Fu Phase 1 public housing — generally supported; related Wah Fu Road works for Phase 1 expected to gazette early 2027 and start mid-2028. info.gov.hk 2026-11-02",
+          "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200240.htm"
+        }
       ],
       "prompt": "Some argue that Government should sharply accelerate public housing (including Light Public Housing) and push Combined Waiting Time below 4.5 years soon, even if that means pausing some private residential land sales. Analyse the pros and cons, state a clear stance, and propose measures.",
       "pros": [
@@ -66,6 +148,80 @@
       "theme_ids": [
         "healthcare"
       ],
+      "prompt_zh": "有意見認為，政府應把資源優先投放於基層醫療及社區精神健康服務，而暫緩擴建大型急症醫院。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that resources should prioritise primary care and community mental-health services, while deferring further expansion of large acute hospitals. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros_zh": [
+        "「預防勝於治療」可減輕專科／急症負荷，長遠更具成本效益。",
+        "社區精神健康（如康健中心、綜合社區中心）較易接觸青年、長者，縮短求助路徑。",
+        "配合家庭醫學門診擴容（含夜診），慢性病可及早介入。"
+      ],
+      "pros_en": [
+        "Prevention and early intervention can ease specialist / A&E load and are more cost-effective long term.",
+        "Community mental-health channels (DHCs, ICCMHs) reach youth and elders faster and shorten help-seeking paths.",
+        "Extra family-medicine slots (including night clinics) support earlier chronic-disease management."
+      ],
+      "cons_zh": [
+        "急症、癌症、創傷等仍需醫院容量；人口老化令住院需求上升。",
+        "基層轉介若銜接不足，病人仍會湧往急症室。",
+        "醫護人手短缺下，兩邊同時擴張可能互相爭奪人才。"
+      ],
+      "cons_en": [
+        "Trauma, cancer and acute care still need hospital capacity; ageing raises inpatient demand.",
+        "Weak primary-to-hospital referral pathways send patients back to A&E.",
+        "Workforce scarcity means dual expansion can compete for the same clinicians."
+      ],
+      "stance_zh": "贊成「基層＋精神健康優先，但醫院能力不可砍」",
+      "stance_en": "Prioritise primary care + community mental health, without cutting acute hospital capability.",
+      "measures_zh": [
+        "以地區康健中心為樞紐，統一慢病管理與精神健康初篩，並以醫健通銜接病歷與轉介，訂 KPI（轉介時間、覆診流失率）。",
+        "醫院側發展綜合日間醫療醫院／日間手術，釋放住院床。",
+        "擴充精神科社康護士、同儕支援，減輕專科輪候，而非只靠加床。"
+      ],
+      "measures_en": [
+        "Use District Health Centres as hubs for chronic care and mental-health triage, linked via eHealth; set KPIs on referral time and DNA rates.",
+        "Grow ambulatory / day-surgery capacity on the hospital side to free beds.",
+        "Expand community psychiatric nurses and peer support — not beds alone — to shorten specialist waits."
+      ],
+      "facts_zh": [
+        {
+          "text": "明年起每年約 220 000 個額外家庭醫學門診名額（含約 10 000 個夜診）；長者健康評估服務量逾倍增。2026 PA Ch.VII",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+        },
+        {
+          "text": "醫健通（eHealth）登記逾 650 萬人，約佔人口 87%。2026 PA Ch.VII",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+        },
+        {
+          "text": "精神健康十一項措施：校園三層應急機制、增設精神健康綜合社區中心、健心先導計劃伸延等。同上"
+        },
+        {
+          "text": "香港中醫醫院已投入服務；門診量擬逾倍增並推 24 小時住院。2026 PA",
+          "url": "https://www.policyaddress.gov.hk/2026/en/"
+        },
+        {
+          "text": "精神科醫生密度約 5.55／10 萬人（2022，文獻數字，約數），低於不少 OECD 水平——可用作「社區分流必要性」理據（考試宜寫「相對偏低」）。"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "From next year: ~220,000 extra family-medicine outpatient slots/year (incl. ~10,000 night clinics); elderly health assessments more than doubled. 2026 PA Ch.VII",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+        },
+        {
+          "text": "eHealth registrations >6.5m, ~87% of population. 2026 PA Ch.VII",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+        },
+        {
+          "text": "Eleven mental-health measures: three-tier school emergency mechanism, more ICCMHs, JoyAge-type pilots extended, etc. Same PA chapter."
+        },
+        {
+          "text": "Chinese Medicine Hospital already in service; outpatient volume to more than double with 24-hour inpatient push. 2026 PA",
+          "url": "https://www.policyaddress.gov.hk/2026/en/"
+        },
+        {
+          "text": "Psychiatrist density ~5.55 per 100,000 (2022 lit. figure, approx.) — below many OECD peers; use as “community triage needed” argument (exam: say “relatively low”)."
+        }
+      ],
       "prompt": "Some argue that resources should prioritise primary care and community mental-health services, while deferring further expansion of large acute hospitals. Analyse the trade-offs, take a stance, and recommend measures.",
       "pros": [
         "Prevention and early intervention can ease specialist / A&E load and are more cost-effective long term.",
@@ -112,6 +268,72 @@
       "theme_ids": [
         "elderly-care"
       ],
+      "prompt_zh": "有意見認為，政府應大幅提高「居家安老」服務券及日間護理名額，減少興建資助安老院舍。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that Government should sharply expand community care vouchers and day-care places while scaling back new subsidised residential care homes. Analyse the pros and cons, state a clear stance, and propose deliverable measures.",
+      "pros_zh": [
+        "符合多數長者「原居安老」意願，維持社區網絡與尊嚴。",
+        "社區券較具彈性，可刺激市場提供家居照顧、復康、陪診等。",
+        "院舍土地與營運成本高，擴社區服務相對快。"
+      ],
+      "pros_en": [
+        "Matches most elders’ preference to age in place and keep community ties.",
+        "Vouchers are more flexible and can stimulate home care, rehab and escort services faster than building homes.",
+        "Residential homes are land- and cost-intensive; community expansion can move sooner."
+      ],
+      "cons_zh": [
+        "體弱、失智、無家庭支援者仍需院舍；只加券不足。",
+        "照顧者負荷沉重，若社區配套不足會「隱形」轉嫁家庭。",
+        "質素參差：券量大但服務監察不足，或出現「有券無用」。"
+      ],
+      "cons_en": [
+        "Frail, dementia and unsupported elders still need residential places — vouchers alone are not enough.",
+        "Carer burden can be silently shifted to families if community wrap-around is weak.",
+        "Quality risk: large voucher volume without monitoring becomes “voucher in hand, service nowhere”."
+      ],
+      "stance_zh": "贊成「居家為本、院舍為後援」——與現行政策一致，但須強化照顧者",
+      "stance_en": "Support ageing-in-place as the core, with residential care as a backstop — and strengthen carers.",
+      "measures_zh": [
+        "2027-28 社區照顧服務券增至約 18 000、院舍券約 8 000；同步設新鄰里長者中心／日間中心。",
+        "提高低收入照顧者生活津貼，試行引入較具護老經驗的外籍家庭傭工／護老訓練。",
+        "推動樂齡科技（政府預留約 1 億 推廣計劃），降低家居照顧人力密集度。"
+      ],
+      "measures_en": [
+        "Raise community care vouchers to ~18,000 and residential care vouchers to ~8,000 by 2027-28, with new neighbourhood elderly / day centres.",
+        "Increase means-tested carer allowances and trial better-trained domestic helpers / carer training.",
+        "Scale gerontech (about HK$100m promotion envelope) to cut labour intensity of home care."
+      ],
+      "facts_zh": [
+        {
+          "text": "2025 年 65 歲+ 約 179 萬、佔 25%；2046 年約 36%。HKEC box",
+          "url": "https://www.hkeconomy.gov.hk/en/pdf/box-25q4-6-1.pdf"
+        },
+        {
+          "text": "社區照顧服務券擬增 2 000 至 18 000；院舍券增 1 000 至 8 000（2027-28）。2026 PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "長者醫療券可於大灣區指定點使用（服務點數目以最新公報為準）。"
+        },
+        {
+          "text": "「積極樂頤年」（JoyAge）等社區預防抑鬱計劃屬本地實踐先例。"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "2025: aged 65+ ~1.79m (~25%); ~36% by 2046. HKEC box.",
+          "url": "https://www.hkeconomy.gov.hk/en/pdf/box-25q4-6-1.pdf"
+        },
+        {
+          "text": "Community care vouchers +2,000 → 18,000; residential care vouchers +1,000 → 8,000 (2027-28). 2026 PA Highlights.",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "Elderly Health Care Vouchers usable at designated GBA service points (latest gazette counts apply)."
+        },
+        {
+          "text": "Community prevention programmes such as JoyAge are local practice precedents."
+        }
+      ],
       "prompt": "Some argue that Government should sharply expand community care vouchers and day-care places while scaling back new subsidised residential care homes. Analyse the pros and cons, state a clear stance, and propose deliverable measures.",
       "pros": [
         "Matches most elders’ preference to age in place and keep community ties.",
@@ -155,6 +377,68 @@
         "youth",
         "education"
       ],
+      "prompt_zh": "有意見認為，政府應以大額工資補貼推動私營機構大量聘用應屆畢業生，作為解決青年失業的主要手段。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that large wage subsidies for private firms to hire fresh graduates should be the main tool against youth unemployment. Analyse the pros and cons, state a stance, and propose measures.",
+      "pros_zh": [
+        "短期可創造入職機會，累積工作經驗，降低「零經驗」門檻。",
+        "資助可引導企業開放創科、建造、金融等短缺職位。",
+        "傳遞社會重視青年向上流動的信號。"
+      ],
+      "pros_en": [
+        "Creates entry jobs quickly, builds experience and lowers the “zero experience” barrier.",
+        "Subsidies can steer openings toward shortage fields such as I&T, construction and finance.",
+        "Signals that society values youth upward mobility."
+      ],
+      "cons_zh": [
+        "純補貼或變「短期職位」，補貼完即裁；財政不可持續。",
+        "若與技能錯配無關，無法解決結構性失業／轉型。",
+        "可能擠出未獲補貼的在職青年或較年長求職者。"
+      ],
+      "cons_en": [
+        "Pure subsidies can become short-lived posts that vanish when funding ends — fiscally unsustainable.",
+        "If skills mismatch is ignored, structural unemployment remains.",
+        "May crowd out unsubsidised young workers or older jobseekers."
+      ],
+      "stance_zh": "有條件贊成：補貼須綁培訓、行業及留任 KPI",
+      "stance_en": "Conditional support: subsidies must bind training, sector targets and retention KPIs.",
+      "measures_zh": [
+        "落實兩年期約 30 000 個職位／實習／培訓；政府承擔部分薪金（以勞工處公布為準），設六個月後留任率指標。",
+        "銜接北部都會區／創科職位，推動「實習→全職」轉換；並與「共創明Teen」師友／個人發展路徑對接弱勢在學青年。",
+        "加強 AI／數碼技能普及課程＋持續進修基金檢討，減少錯配；政務司長跨部門統籌弱勢青年支援成效。"
+      ],
+      "measures_en": [
+        "Deliver the two-year ~30,000 jobs / internships / training package; Government co-pays wages (per LD) and set six-month retention KPIs.",
+        "Link Northern Metropolis / I&T roles to internship→full-time conversion; pair Strive and Rise mentoring with disadvantaged students.",
+        "Expand AI / digital skills courses and review CSF to cut mismatch; CSB-level cross-bureau tracking of outcomes for disadvantaged youth."
+      ],
+      "facts_zh": [
+        {
+          "text": "「共創明Teen」計劃第五期：約 4 000 人；對象為劏房等弱勢家庭中一至中四；內容含師友配對、個人發展計劃與財政支援；政務司長層級跨部門推動。info.gov.hk 2026-10-30",
+          "url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000235.htm"
+        },
+        {
+          "text": "「三萬青年職位及實習計劃」：約 1 萬職位 + 1 萬實習 + 1 萬培訓（兩年）。2026 PA",
+          "url": "https://www.policyaddress.gov.hk/2026/en/chapter7.html"
+        },
+        {
+          "text": "研究式研究生學額擬增約 30% 至約 9 600（2030/31）——教育側吸納人才。2026 PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "Strive and Rise Phase 5: ~4,000 participants (S1–S4 from subdivided / disadvantaged families); mentoring, personal development plans and financial support; CS-level cross-bureau push. info.gov.hk 2026-10-30",
+          "url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000235.htm"
+        },
+        {
+          "text": "30,000 Youth Jobs and Internship Scheme: ~10k jobs + 10k internships + 10k training (two years). 2026 PA",
+          "url": "https://www.policyaddress.gov.hk/2026/en/chapter7.html"
+        },
+        {
+          "text": "Research postgraduate places to rise ~30% to ~9,600 by 2030/31 — education-side talent pull. 2026 PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        }
+      ],
       "prompt": "Some argue that large wage subsidies for private firms to hire fresh graduates should be the main tool against youth unemployment. Analyse the pros and cons, state a stance, and propose measures.",
       "pros": [
         "Creates entry jobs quickly, builds experience and lowers the “zero experience” barrier.",
@@ -195,6 +479,66 @@
       "theme_ids": [
         "culture-tourism"
       ],
+      "prompt_zh": "有意見認為，政府應把旅遊推廣資源主要集中於吸引過夜高消費旅客及盛事經濟，而非擴大一日遊／廉價團。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that tourism promotion should focus mainly on overnight high-spending visitors and the mega-events economy, rather than expanding day-trips / low-cost tours. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros_zh": [
+        "過夜及盛事旅客人均消費較高，更惠及酒店、零售、表演藝術。",
+        "減少「人多錢少」對社區交通、環境的擠壓。",
+        "配合西九文化區等基建，打造國際文化品牌。"
+      ],
+      "pros_en": [
+        "Overnight and mega-event visitors spend more per head, helping hotels, retail and performing arts.",
+        "Reduces “many people, little spend” pressure on local transport and the environment.",
+        "Aligns with West Kowloon and other cultural infrastructure to build an international brand."
+      ],
+      "cons_zh": [
+        "一日遊、大灣區短途客仍支撐餐飲、交通、景點人流；一刀切損害中小商戶。",
+        "旅客結構受匯率、簽證、周邊競爭影響，政府難以精準「挑選」。",
+        "過度依賴盛事，淡季波動大。"
+      ],
+      "cons_en": [
+        "Day-trips and short-haul GBA visitors still sustain F&B, transport and attractions; a hard cut hurts SMEs.",
+        "Visitor mix is shaped by FX, visas and regional competition — hard for Government to “pick” precisely.",
+        "Over-reliance on mega-events means sharp off-season swings."
+      ],
+      "stance_zh": "贊成「質素為先，但保留多元客源組合」",
+      "stance_en": "Support quality-first promotion, while keeping a diversified visitor mix.",
+      "measures_zh": [
+        "與粵澳推「一程多站」產品；強化機場／郵輪入境的過夜套票。",
+        "盛事＋票尾經濟＋特色餐飲／非遺體驗，拉高非購物消費。",
+        "區分時段與區域人流管理（熱點預約、公共交通加班），減居民衝突。"
+      ],
+      "measures_en": [
+        "Joint Guangdong–Macao multi-stop products; strengthen overnight packages via airport / cruise entry.",
+        "Pair mega-events with night economy and heritage / specialty dining experiences to lift non-shopping spend.",
+        "Manage hotspot queues and peak public transport by time and place to cut resident conflict."
+      ],
+      "facts_zh": [
+        {
+          "text": "2025 訪港約 50 million；2026 首五月約 23 million（+14%）；全年目標約 53.8 million。LCQ info.gov.hk",
+          "url": "https://www.info.gov.hk/gia/general/202606/17/P2026061700299.htm"
+        },
+        {
+          "text": "西九表演藝術中心等新文化地標載於 2026 施政報告。PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "政策方向包括盛事經濟、多元客源（含穆斯林旅遊等——以文體旅局最新措施為準）。"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "2025 arrivals ~50 million; first five months of 2026 ~23 million (+14%); full-year target ~53.8 million. LCQ info.gov.hk",
+          "url": "https://www.info.gov.hk/gia/general/202606/17/P2026061700299.htm"
+        },
+        {
+          "text": "West Kowloon Performing Arts Centre and other cultural landmarks in 2026 PA Highlights.",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "Policy direction includes mega-events economy and diversified sources (e.g. Muslim tourism — check latest CSTB measures)."
+        }
+      ],
       "prompt": "Some argue that tourism promotion should focus mainly on overnight high-spending visitors and the mega-events economy, rather than expanding day-trips / low-cost tours. Analyse the trade-offs, take a stance, and recommend measures.",
       "pros": [
         "Overnight and mega-event visitors spend more per head, helping hotels, retail and performing arts.",
@@ -233,6 +577,66 @@
       "title_en": "GBA integration",
       "theme_ids": [
         "national-development"
+      ],
+      "prompt_zh": "有意見認為，政府應鼓勵更多香港長者移居大灣區內地城市養老，並以跨境醫療券及福利銜接作為主要安老策略。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that Government should encourage more Hong Kong elders to retire in Mainland GBA cities, with cross-boundary health vouchers and welfare portability as the main ageing strategy. Analyse the pros and cons, state a stance, and propose measures.",
+      "pros_zh": [
+        "內地部分城市住房、護理成本較低，可紓緩本港院舍輪候。",
+        "醫療券跨境使用增加選擇，方便已在灣區生活的長者。",
+        "深化人流、服務流融合，符合大灣區建設方向。"
+      ],
+      "pros_en": [
+        "Lower housing and care costs in some Mainland cities can ease local residential-care waits.",
+        "Cross-boundary voucher use expands choice for elders already living in the GBA.",
+        "Deepens people and service flows in line with GBA development."
+      ],
+      "cons_zh": [
+        "醫療紀錄、急症轉介、監管標準差異帶來風險；「有事返港」仍佔用本港資源。",
+        "社會網絡、語言、生活習慣令部分長者不適應；家屬探訪成本。",
+        "若變成「輸出問題」而非自願選擇，易生倫理與政治爭議。"
+      ],
+      "cons_en": [
+        "Gaps in records, emergency transfer and regulatory standards create risk; “return to HK when sick” still loads local capacity.",
+        "Social networks, language and habits leave some elders poorly adapted; family visit costs rise.",
+        "If framed as exporting a problem rather than a voluntary option, ethical and political pushback follows."
+      ],
+      "stance_zh": "贊成「自願、可逆、有質素保證的跨境選項」，反對作為唯一主軸",
+      "stance_en": "Support voluntary, reversible, quality-assured cross-boundary options — not as the sole pillar.",
+      "measures_zh": [
+        "擴大認可醫療機構名單＋明確急症轉介及投訴機制。",
+        "「試住／短住」安老體驗計劃，強調可隨時回港輪候資格不受損。",
+        "青年／專業跨境就業與長者跨境養老分開設計，避免政策混為一談。"
+      ],
+      "measures_en": [
+        "Expand recognised provider lists with clear emergency-transfer and complaint pathways.",
+        "Offer trial / short-stay elderly living schemes; keep HK waitlist status intact on return.",
+        "Design youth / professional cross-boundary employment separately from elderly retirement — do not conflate."
+      ],
+      "facts_zh": [
+        {
+          "text": "長者醫療券擴至大灣區；服務點及使用人數以衛生署／公報最新為準（例：截至某期已有數萬名合資格使用者——約數，考試寫「已有一定使用量」）。info.gov.hk",
+          "url": "https://www.info.gov.hk/gia/general/202606/17/P2026061700586.htm"
+        },
+        {
+          "text": "河套深港科技创新合作區「一河兩岸、一區兩園」；港方園區 2025 年起運作。LegCo / PA",
+          "url": "https://www.info.gov.hk/gia/general/202505/28/P2025052800554.htm"
+        },
+        {
+          "text": "北都定位為深度參與大灣區的主要空間載體。"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "Elderly Health Care Vouchers extended to GBA; sites and users per latest DH / GIA (exam: “material usage already”). info.gov.hk",
+          "url": "https://www.info.gov.hk/gia/general/202606/17/P2026061700586.htm"
+        },
+        {
+          "text": "Hetao Shenzhen–Hong Kong Science and Technology Innovation Co-operation Zone: “one river, two banks; one zone, two parks”; HK park operating from 2025. LegCo / PA",
+          "url": "https://www.info.gov.hk/gia/general/202505/28/P2025052800554.htm"
+        },
+        {
+          "text": "Northern Metropolis positioned as the main spatial carrier for deeper GBA participation."
+        }
       ],
       "prompt": "Some argue that Government should encourage more Hong Kong elders to retire in Mainland GBA cities, with cross-boundary health vouchers and welfare portability as the main ageing strategy. Analyse the pros and cons, state a stance, and propose measures.",
       "pros": [
@@ -273,6 +677,84 @@
       "theme_ids": [
         "innovation",
         "northern-metropolis"
+      ],
+      "prompt_zh": "有意見認為，政府應把創科資源高度集中於北部都會區（河套、新田科技城），減少分散資助全港初創。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that I&T resources should be highly concentrated in the Northern Metropolis (Hetao, San Tin Technopole), cutting dispersed city-wide start-up support. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros_zh": [
+        "集中可形成產業聚落、共享基建（實驗室、數據、中試），提高國際能見度。",
+        "北都鄰近深圳，利於研發—轉化—量產分工。",
+        "大型項目較易衡量 GDP、就業等產出。"
+      ],
+      "pros_en": [
+        "Concentration builds clusters and shared labs / data / pilot lines, raising international visibility.",
+        "Proximity to Shenzhen supports R&D–translation–production division of labour.",
+        "Large projects are easier to track on GDP and jobs."
+      ],
+      "cons_zh": [
+        "港島／九龍創科生態（大學、金融、專業服務）若失血，不利「南金融、北創科」協同。",
+        "基建成熟需時，過度押注短期難見效。",
+        "中小初創需要全市網絡，非人人能迁往新界北。"
+      ],
+      "cons_en": [
+        "Draining HK Island / Kowloon ecosystems (universities, finance, professional services) hurts “south finance, north I&T” synergy.",
+        "Infrastructure takes years; over-betting may show little near-term payoff.",
+        "SME start-ups need city-wide networks — not everyone can relocate to the northern New Territories."
+      ],
+      "stance_zh": "贊成「北都為主引擎，全港網絡配套不撤」",
+      "stance_en": "Support Northern Metropolis as the main engine, without withdrawing the city-wide network.",
+      "measures_zh": [
+        "河套做上游研發／臨床試驗；新田做中試與先進製造；洪水橋等做多元產業——清晰功能分工。",
+        "保留市區校園／InnoHK／數碼港等節點，並用公營機構試用／智慧政府創新實驗室作早期採用通道，再以交通及數據連接北都。",
+        "稅務優惠、專營公司／注資推動市場資金入場（如新田發展專營安排）。"
+      ],
+      "measures_en": [
+        "Clear division: Hetao for upstream R&D / clinical trials; San Tin for pilot and advanced manufacturing; Hung Shui Kiu etc. for diversified industries.",
+        "Keep urban campus / InnoHK / Cyberport nodes; use Public Sector Trial Scheme and Smart Government Innovation Lab as early-adoption channels, then link by transport and data to NM.",
+        "Tax incentives and franchise / equity tools to crowd in market capital (e.g. San Tin development franchise)."
+      ],
+      "facts_zh": [
+        {
+          "text": "北都約 30 000 公頃；住宅約 50 萬、就業約 50–65 萬（不同文件口徑，考試寫「約數十萬」）。PA / LegCo Policy Pulse",
+          "url": "https://www.info.gov.hk/gia/general/202505/28/P2025052800554.htm"
+        },
+        {
+          "text": "新田科技城約 210 公頃創科用地（不含河套）；定位原型／中試／集聚人才。LegCo pp2026",
+          "url": "https://www.legco.gov.hk/yr2026/english/policy-pulse/pp2026-11-northern-metropolis-accelerating-development-e.pdf"
+        },
+        {
+          "text": "AI 資助計劃注資約 10 億；設 AI 專員及風險治理七大範疇。2026 PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "新型工業化資助計劃：約138宗申請、83宗獲支持（近150條智能生產線），政府資助約5億、企業配對約12億、總投資約17億；加速計劃：20宗申請、9宗獲支持，資助約13億、總投資約43億（配對1:2）。ITIB LegCo 2026-10-28",
+          "url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800363.htm"
+        },
+        {
+          "text": "公營機構試用計劃過去三年逾110個試用項目、總額逾2.7億；智慧政府創新實驗室為30多個部門約60項需求配對方案、逾30個概念驗證——早期採用靠全市網絡，唔只北都用地。ITIB LegCo 2026-10-28",
+          "url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800384.htm"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "NM ~30,000 ha; ~500,000 homes and ~500–650k jobs (document variants — exam: “hundreds of thousands”). PA / LegCo Policy Pulse",
+          "url": "https://www.info.gov.hk/gia/general/202505/28/P2025052800554.htm"
+        },
+        {
+          "text": "San Tin Technopole ~210 ha I&T land (excl. Hetao); focus on prototypes / pilots / talent. LegCo pp2026",
+          "url": "https://www.legco.gov.hk/yr2026/english/policy-pulse/pp2026-11-northern-metropolis-accelerating-development-e.pdf"
+        },
+        {
+          "text": "AI funding injection ~HK$1bn; AI Commissioner plus seven risk-governance domains. 2026 PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "New Industrialisation Funding Scheme: ~138 applications, 83 supported (~150 smart lines); Gov ~HK$0.5bn, firm match ~HK$1.2bn, total ~HK$1.7bn. Acceleration Scheme: 20 apps, 9 supported; funding ~HK$1.3bn, total investment ~HK$4.3bn (1:2 match). ITIB LegCo 2026-10-28",
+          "url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800363.htm"
+        },
+        {
+          "text": "Public Sector Trial Scheme: >110 trials in three years, >HK$270m; Smart Government Innovation Lab matched ~60 needs across 30+ bureaux, >30 PoCs — early adoption is city-wide, not NM land alone. ITIB LegCo 2026-10-28",
+          "url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800384.htm"
+        }
       ],
       "prompt": "Some argue that I&T resources should be highly concentrated in the Northern Metropolis (Hetao, San Tin Technopole), cutting dispersed city-wide start-up support. Analyse the trade-offs, take a stance, and recommend measures.",
       "pros": [
@@ -323,6 +805,76 @@
         "environment-climate",
         "transport-logistics"
       ],
+      "prompt_zh": "有意見認為，政府應盡快全面恢復並強制實施都市固體廢物收費，以達致減廢目標。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that Government should fully restore and mandatorily implement municipal solid waste charging soon to hit waste-reduction targets. Analyse the pros and cons, state a stance, and propose measures.",
+      "pros_zh": [
+        "「污染者自付」改變行為，國際上常見；配合《香港資源循環藍圖 2035》減廢目標。",
+        "可倒逼源頭分類，提升回收率。",
+        "長期減堆填依賴，騰出土地與環境容量。"
+      ],
+      "pros_en": [
+        "Polluter-pays changes behaviour; common internationally; supports Waste Blueprint 2035 targets.",
+        "Can force source separation and raise recovery rates.",
+        "Long-term less landfill dependence frees land and environmental capacity."
+      ],
+      "cons_zh": [
+        "民生壓力（尤其劏房、基層）；非法棄置風險。",
+        "回收網絡與執法未完善時硬推，易失效及民怨。",
+        "現正暫停實施，社會需過渡期與教育。"
+      ],
+      "cons_en": [
+        "Livelihood pressure (especially subdivided units / low-income); illegal dumping risk.",
+        "Hard push before recovery networks and enforcement are ready breeds failure and backlash.",
+        "Charging is currently suspended — society needs transition and education."
+      ],
+      "stance_zh": "贊成「收費作後備工具；先達回收基建與減廢習慣，再分階段重啟」",
+      "stance_en": "Treat charging as a backstop; first deliver recovery infrastructure and habits, then phase a restart.",
+      "measures_zh": [
+        "先達「一屋邨一廚餘桶」、智能回收箱約 3 000 套、廚餘智能桶約 2 500 等網絡；對齊全民計碳／《氣候行動藍圖 2050》宣傳口徑。",
+        "工商處先行收費試點，住宅後行；輔以回收積分。",
+        "交通側配合《運輸策略藍圖》：公交為本、綠化出行、電動車充電（五年快充約 5 000 個）。"
+      ],
+      "measures_en": [
+        "First deliver estate food-waste bins, ~3,000 smart recycling bins, ~2,500 smart food-waste bins; align Carbon Inclusion / CAP2050 messaging.",
+        "Pilot charging in commercial premises first, then residential, with recycling points.",
+        "On transport, follow the Transport Strategy Blueprint: public transport first, greener travel, ~5,000 fast chargers in five years."
+      ],
+      "facts_zh": [
+        {
+          "text": "全民計碳／《氣候行動藍圖 2050》相關公布：都市固體廢物回收率 2021 約 31%→2024 約 34%；廚餘回收 2024 約 202 萬公噸；2025 年日均都市固體廢物棄置約 10 326 公噸（宣傳口徑）。info.gov.hk 2026-10-30",
+          "url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000411.htm"
+        },
+        {
+          "text": "都市固體廢物收費：暫停，非擱置取消。傳媒引述 EEB／立法會，宜核對 eeb.gov.hk",
+          "url": "https://www.eeb.gov.hk/"
+        },
+        {
+          "text": "《廢物藍圖 2035》中期：人均減 40–45%、回收約 55%。wastereduction.gov.hk",
+          "url": "https://www.wastereduction.gov.hk/sites/default/files/2021-07/waste_blueprint_2035_eng.pdf"
+        },
+        {
+          "text": "《運輸策略藍圖》（2026-02）：三大主題——愉悅旅程、四通八達、健康出行。info.gov.hk",
+          "url": "https://www.info.gov.hk/gia/general/202602/06/P2026020600696.htm"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "Carbon Inclusion / CAP2050 messaging: MSW recovery ~31% (2021) → ~34% (2024); food-waste recovery 2024 ~2.02 Mt; 2025 daily MSW disposal ~10,326 tonnes. info.gov.hk 2026-10-30",
+          "url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000411.htm"
+        },
+        {
+          "text": "MSW charging: suspended, not cancelled. Check EEB / LegCo. eeb.gov.hk",
+          "url": "https://www.eeb.gov.hk/"
+        },
+        {
+          "text": "Waste Blueprint 2035 mid-term: −40–45% per capita; recovery ~55%. wastereduction.gov.hk",
+          "url": "https://www.wastereduction.gov.hk/sites/default/files/2021-07/waste_blueprint_2035_eng.pdf"
+        },
+        {
+          "text": "Transport Strategy Blueprint (2026-02): enjoyable journeys, better connectivity, healthy travel. info.gov.hk",
+          "url": "https://www.info.gov.hk/gia/general/202602/06/P2026020600696.htm"
+        }
+      ],
       "prompt": "Some argue that Government should fully restore and mandatorily implement municipal solid waste charging soon to hit waste-reduction targets. Analyse the pros and cons, state a stance, and propose measures.",
       "pros": [
         "Polluter-pays changes behaviour; common internationally; supports Waste Blueprint 2035 targets.",
@@ -367,6 +919,64 @@
       "theme_ids": [
         "poverty-welfare"
       ],
+      "prompt_zh": "有意見認為，政府應以大幅現金獎金作為提升本地生育率的主要政策，取代擴展託兒與住屋支援。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that large cash newborn bonuses should be the main fertility policy, replacing expanded childcare and housing support. Analyse the pros and cons, state a stance, and propose measures.",
+      "pros_zh": [
+        "現金即時、行政簡單，象徵重視家庭。",
+        "對低收入家庭有短暫緩衝作用。",
+        "與印花稅寬免、稅務扣除可組合成「組合拳」。"
+      ],
+      "pros_en": [
+        "Cash is immediate and administratively simple; signals that families matter.",
+        "Gives low-income households a short buffer.",
+        "Can combine with stamp-duty relief and tax deductions as a package."
+      ],
+      "cons_zh": [
+        "國際經驗顯示單靠獎金對總和生育率效果有限；本港結構性成本（住屋、工時）才是主因。",
+        "財政可持續性成疑；或被視為「買嬰兒」。",
+        "忽略女性就業、託兒、職場文化，難改變延遲生育決策。"
+      ],
+      "cons_en": [
+        "International evidence: bonuses alone barely move TFR; housing and working hours are the structural drivers here.",
+        "Fiscal sustainability is doubtful; may be seen as “buying babies”.",
+        "Ignores female employment, childcare and workplace culture that shape delayed childbearing."
+      ],
+      "stance_zh": "反對「獎金為主」；贊成「獎金為輔＋託兒／住屋／醫療生育支援為主」",
+      "stance_en": "Oppose bonus-first; support bonus as a supplement with childcare / housing / reproductive healthcare as the core.",
+      "measures_zh": [
+        "新生嬰兒獎金延續；第二胎或以上獎金提高至 3 萬（有時限）——作補充而非唯一。",
+        "常規化「校本課後託管」不設名額；增設獨立幼兒中心，2030 年底前約增 1 800 託兒名額。",
+        "白表新盤按揭成數提高、印花稅寬免與公屋／居屋階梯銜接，降低「有仔無房」。"
+      ],
+      "measures_en": [
+        "Keep newborn bonuses; raise second-child bonus to HK$30,000 (time-limited) as a supplement, not the whole policy.",
+        "Normalise school-based after-school care without quotas; add ~1,800 childcare places via independent centres by end-2030.",
+        "Raise White Form new-flat LTV, stamp-duty relief and PRH / HOS ladder links to cut “child but no home”."
+      ],
+      "facts_zh": [
+        {
+          "text": "十一項生育措施：獎金延三年；第二胎獎金 2 萬→3 萬；稅額 14 萬→16 萬；印花稅寬免上限 2 萬 等。2026 PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "IVF 名額分階段增至每年約 1 900 周期。"
+        },
+        {
+          "text": "生育率長期偏低：可引用統計處最新 TFR（考試寫「遠低於 2.1」即可）。"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "Eleven fertility measures: bonus extended three years; second-child bonus HK$20k→30k; tax allowance HK$140k→160k; stamp-duty relief cap HK$20k, etc. 2026 PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "IVF places to rise in stages to ~1,900 cycles/year."
+        },
+        {
+          "text": "Fertility remains very low: cite latest C&SD TFR (exam: “far below 2.1”)."
+        }
+      ],
       "prompt": "Some argue that large cash newborn bonuses should be the main fertility policy, replacing expanded childcare and housing support. Analyse the pros and cons, state a stance, and propose measures.",
       "pros": [
         "Cash is immediate and administratively simple; signals that families matter.",
@@ -405,6 +1015,58 @@
       "theme_ids": [
         "labour"
       ],
+      "prompt_zh": "有意見認為，政府應立法強制網約配送平台把送貨員界定為「僱員」，享有全面勞工福利，而非僅作最低保障的「特約人員」。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that legislation should force food / goods delivery platforms to treat couriers as “employees” with full labour benefits, not merely minimum-protected “contractors”. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros_zh": [
+        "送貨員工時長、意外風險高，僱員身分可獲工傷、假期等保障。",
+        "減少「假自僱」灰色地帶，符合國際趨勢。",
+        "社會公平：平台賺取抽成，應承擔基本責任。"
+      ],
+      "pros_en": [
+        "Long hours and high accident risk — employee status brings injury cover and leave.",
+        "Shrinks false self-employment; aligns with international trends.",
+        "Fairness: platforms take commissions and should carry basic duties."
+      ],
+      "cons_zh": [
+        "全面僱員化或推高成本，平台轉嫁消費者或縮減訂單，反減就業彈性。",
+        "部分送貨員珍惜彈性工時，不願固定僱傭。",
+        "執法界定困難（多平台接單、兼職）。"
+      ],
+      "cons_en": [
+        "Full employee status can raise costs, push prices up or cut orders — shrinking flexible work.",
+        "Some couriers value flexible hours and reject fixed employment.",
+        "Hard to classify multi-platform / part-time work for enforcement."
+      ],
+      "stance_zh": "贊成「立法設行業專屬保障底線」，但未必一步到位全面僱員化",
+      "stance_en": "Support sector-specific statutory floors — not necessarily one-step full employee status.",
+      "measures_zh": [
+        "立法：強制平台買足夠意外保險、設立爭議調解、高溫／暴雨停工指引。",
+        "允許「選擇性轉僱員」通道（做滿時數／表現可轉）。",
+        "跨部門打擊非法勞工；行業「反非法僱傭大使」收集情報（施政已提方向）。"
+      ],
+      "measures_en": [
+        "Legislate: mandatory adequate accident insurance, dispute mediation, heat / rain stop-work guidance.",
+        "Allow an optional path to employee status after hours / performance thresholds.",
+        "Cross-bureau action against illegal labour; industry “anti-illegal-employment ambassadors” (PA direction)."
+      ],
+      "facts_zh": [
+        {
+          "text": "2026 施政報告：制定保障配送員的新法例；跨部門打擊非法僱傭。PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "相關前序：網約車規管立法經驗，可作文中「填補法律真空」先例。"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "2026 PA: new legislation to protect delivery workers; cross-bureau action against illegal employment. PA Highlights",
+          "url": "https://www.policyaddress.gov.hk/2026/public/pdf/highlight/highlight-full_en.pdf"
+        },
+        {
+          "text": "Ride-hailing regulation is a usable local precedent for filling a legal vacuum."
+        }
+      ],
       "prompt": "Some argue that legislation should force food / goods delivery platforms to treat couriers as “employees” with full labour benefits, not merely minimum-protected “contractors”. Analyse the trade-offs, take a stance, and recommend measures.",
       "pros": [
         "Long hours and high accident risk — employee status brings injury cover and leave.",
@@ -439,6 +1101,60 @@
       "title_en": "Public open space / parks",
       "theme_ids": [
         "culture-tourism"
+      ],
+      "prompt_zh": "近年市民對公共休憩空間（如公園、廣場）使用需求增加。請討論現行公共休憩空間管理的兩項主要問題，並評估政府是否應推行新一輪公共空間優化措施。假如你支持，請提出兩個具體行動，以及如何監察執行成效；假如反對，請提供兩項替代方案以改善公共空間的服務質素和安全。",
+      "prompt_en": "Demand for public open space (parks, plazas) has risen. Discuss two main management problems and assess whether Government should launch a new round of public-space upgrades. If you support, propose two concrete actions and how to monitor results; if not, offer two alternatives to improve quality and safety.",
+      "pros_zh": [
+        "高密度市區休憩人均偏低，新增／優化公園直接改善宜居與社區健康。",
+        "活化閒置或短期用地（如海濱、碼頭）可在長遠規劃落實前先服務市民。",
+        "多元設施（體育、兒童、寵物共享）有助減少「搶用空間」衝突。"
+      ],
+      "pros_en": [
+        "Dense districts lack open space per capita; new / upgraded parks improve liveability and community health.",
+        "Activating idle or short-term sites (harbourfront, piers) serves the public before long-term plans land.",
+        "Diverse facilities (sports, children, pet-share) reduce “space competition” conflict."
+      ],
+      "cons_zh": [
+        "新一輪優化若只加硬體、無管理與開放時間配套，投訴與鄰里衝突仍會出現。",
+        "短期私營營運公眾休憩空間，或令人擔心商業化、暢達／免費使用受影響。",
+        "工務及經常開支上升；若無 KPI，難證明物有所值。"
+      ],
+      "cons_en": [
+        "Hardware-only upgrades without management and opening-hour rules still breed complaints and neighbour conflict.",
+        "Short private leases for public space raise fears of commercialisation and lost free access.",
+        "Capital and recurrent costs rise; without KPIs, value for money is hard to prove."
+      ],
+      "stance_zh": "贊成「新一輪公共空間優化，但須管理＋監察並行」",
+      "stance_en": "Support a new upgrade round — but only with management and monitoring in parallel.",
+      "measures_zh": [
+        "加快「熟地／閒置用地」轉為公眾休憩：複製海帆道公園模式（康樂＋共融＋寵物共享），並公布分區休憩供應差距。",
+        "海濱／碼頭短期活化設硬性條款：逾半面積公眾免費暢達、開放時間與投訴處理公開；技術標權重高於租金（參考紅磡雙信封制）。",
+        "監察 KPI：使用人次、場地預訂等候、投訴宗數、安全事故；每年向區議會／網上儀表板匯報，不達標則調整管理合約。"
+      ],
+      "measures_en": [
+        "Speed conversion of spade-ready / idle land into public open space; replicate Hoi Fan Road Park (recreation + inclusive + pet-share) and publish district supply gaps.",
+        "Harbourfront / pier short activations: >50% area free public access, publish hours and complaint handling; technical score over rent (Hung Hom dual-envelope model).",
+        "Monitor KPIs: visits, booking waits, complaints, safety incidents; annual DC / online dashboard; miss targets → retune management contracts."
+      ],
+      "facts_zh": [
+        {
+          "text": "海帆道公園（油尖旺）2026-09-30 起開放，約 16 000 平方米（約 1.6 公頃）；含足球／籃排／健體／社區園圃／共融兒童遊樂及寵物共享。康文署",
+          "url": "https://www.info.gov.hk/gia/general/202609/29/P2026092800303.htm"
+        },
+        {
+          "text": "前紅磡鐵路貨運碼頭約 1.8 公頃以約三年短期租約活化；逾半面積沿海公眾休憩；招標技術 70%／價格 30%，中標租金約 133 萬元。發展局",
+          "url": "https://www.info.gov.hk/gia/general/202602/23/P2026022300541.htm"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "Hoi Fan Road Park (YTM) open from 2026-09-30, ~16,000 m² (~1.6 ha); football / basketball / fitness / community garden / inclusive play / pet-share. LCSD",
+          "url": "https://www.info.gov.hk/gia/general/202609/29/P2026092800303.htm"
+        },
+        {
+          "text": "Former Hung Hom rail freight pier ~1.8 ha on ~3-year short lease; >half area waterfront public open space; tender technical 70% / price 30%; winning rent ~HK$1.33m. DEVB",
+          "url": "https://www.info.gov.hk/gia/general/202602/23/P2026022300541.htm"
+        }
       ],
       "prompt": "Demand for public open space (parks, plazas) has risen. Discuss two main management problems and assess whether Government should launch a new round of public-space upgrades. If you support, propose two concrete actions and how to monitor results; if not, offer two alternatives to improve quality and safety.",
       "pros": [
@@ -476,6 +1192,68 @@
       "theme_ids": [
         "innovation",
         "national-development"
+      ],
+      "prompt_zh": "有意見認為，政府已推出新型工業化資助計劃、新型工業加速計劃等措施，但若欠缺場景驗證、成效考核與人才留港指標，只會變成「有政策、缺落地」。請分析應否把資助與落地考核捆綁，表明立場，並提出建議。",
+      "prompt_en": "Some argue that schemes such as the New Industrialisation Funding Scheme and Acceleration Scheme will stay “policy without delivery” unless grants are tied to scenario validation, outcome KPIs and talent-retention metrics. Should funding be bundled with delivery checks? Take a stance and propose measures.",
+      "pros_zh": [
+        "把資助與場景驗證、成效 KPI 捆綁，可減少「批出即完結」，提高公帑問責。",
+        "加速計劃與優化資助有助先進製造、原型／中試更快進入應用場景。",
+        "加入人才留港考核，可對應創科「有項目、無人」的結構性風險。"
+      ],
+      "pros_en": [
+        "Bundling grants with scenario proof and KPIs cuts “approve and forget” and raises public-money accountability.",
+        "Acceleration plus optimised funding helps advanced manufacturing and prototypes reach real use cases faster.",
+        "Talent-retention metrics address the structural “projects without people” risk in I&T."
+      ],
+      "cons_zh": [
+        "過嚴考核或拖慢審批，中小企業難以負擔合規成本。",
+        "場景驗證需跨部門協調，短期或令企業轉向外地申請資助。",
+        "人才留港受住屋、稅務、家庭因素影響，單靠一個資助計劃難完全承擔。"
+      ],
+      "cons_en": [
+        "Over-strict checks can slow approvals; SMEs struggle with compliance cost.",
+        "Scenario validation needs cross-bureau coordination; firms may seek Mainland funding instead in the short run.",
+        "Talent retention also depends on housing, tax and family — one grant scheme cannot carry it all."
+      ],
+      "stance_zh": "贊成「資助與落地考核捆綁，惟須分階段、可操作」",
+      "stance_en": "Support bundling funding with delivery checks — staged and workable.",
+      "measures_zh": [
+        "分階段：先在選定應用場景（如先進製造／醫療器械原型）要求最低場景驗證，再擴大至一般項目。",
+        "設定可核實 KPI：項目里程碑達成率、本地就業／研發崗位、及留港關鍵人才比例；未達標則調整後期撥款。",
+        "由創新科技及工業局牽頭，聯同相關資助管理機構公布簡表與年度成效報告，並設中小企簡化通道。"
+      ],
+      "measures_en": [
+        "Stage it: require minimum scenario validation first in selected use cases (e.g. advanced manufacturing / medical-device prototypes), then widen.",
+        "Set verifiable KPIs: milestone hit rate, local jobs / R&D posts, share of key talent staying in HK; miss → adjust later tranches.",
+        "ITIB-led annual scoreboard with funding agencies; simplify the SME track."
+      ],
+      "facts_zh": [
+        {
+          "text": "新型工業化資助計劃（2024-09）為現行主要工具之一（考試寫計劃名稱及時點即可）。"
+        },
+        {
+          "text": "另有新型工業加速計劃，與資助計劃並存，側重加快產業落地節奏。"
+        },
+        {
+          "text": "資助額公開討論中曾提及約 280 萬／1,500 萬量級（以官方最新公布為準，勿寫死為唯一上限）。"
+        },
+        {
+          "text": "2025 年相關資助計劃有優化安排（細節以當局公布為準）。"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "New Industrialisation Funding Scheme (from 2024-09) is a main current tool (exam: name + timing)."
+        },
+        {
+          "text": "New Industrialisation Acceleration Scheme runs alongside, focused on faster industrial landing."
+        },
+        {
+          "text": "Public discussion has cited ~HK$2.8m / HK$15m scales — use latest official figures; do not treat as a hard sole ceiling."
+        },
+        {
+          "text": "Related schemes were optimised in 2025 (details per authority announcements)."
+        }
       ],
       "prompt": "Some argue that schemes such as the New Industrialisation Funding Scheme and Acceleration Scheme will stay “policy without delivery” unless grants are tied to scenario validation, outcome KPIs and talent-retention metrics. Should funding be bundled with delivery checks? Take a stance and propose measures.",
       "pros": [
@@ -519,6 +1297,62 @@
         "national-development",
         "northern-metropolis"
       ],
+      "prompt_zh": "有意見認為，跨境出行已趨日常化（配合北部都會區等規劃），政府應把口岸高峰應變（如萬聖節人流）制度化，明確短期執行主責部門，並訂立可量度「暢順」的指標，而非只作一次性跨部門動員。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that as cross-boundary travel becomes routine (with Northern Metropolis planning), Government should institutionalise peak-border response (e.g. Halloween crowds): clear short-term lead departments and measurable “smoothness” KPIs — not one-off mobilisation. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros_zh": [
+        "明確主責與指標，可減少高峰期「誰拍板」不清，加快現場調配。",
+        "把節日／假期應變沉澱為標準作業，有助應付北都建成後更頻密的跨境日常流量。",
+        "公開暢順指標（輪候、疏導、事故）可提升公眾信心與事後問責。"
+      ],
+      "pros_en": [
+        "Clear lead and KPIs reduce “who decides” fog at peaks and speed on-site redeployment.",
+        "Turning festival / holiday playbooks into SOPs helps handle denser routine flows after NM builds out.",
+        "Publishing wait / diversion / incident metrics builds public confidence and post-event accountability."
+      ],
+      "cons_zh": [
+        "過度制度化或令前線失去臨場彈性，特殊事故仍需特事特辦。",
+        "多局協調（保安、運輸及物流等）若變成層層匯報，反而拖慢決策。",
+        "指標若只重「快」，或犧牲查驗質素與安全。"
+      ],
+      "cons_en": [
+        "Over-rigid SOPs can strip frontline discretion when special incidents need ad hoc action.",
+        "Multi-bureau reporting chains (Security, TLB, etc.) can slow decisions.",
+        "KPIs that only chase “speed” may trade off inspection quality and safety."
+      ],
+      "stance_zh": "贊成「高峰應變制度化＋清晰主責與暢順 KPI」，惟保留現場彈性",
+      "stance_en": "Support institutionalised peak response with clear leads and smoothness KPIs — keep on-site flexibility.",
+      "measures_zh": [
+        "訂立口岸高峰應變標準作業：觸發條件、指揮鏈、現場授權；政務司長層級作跨局統籌，日常執行由保安局／運物局按職能分工。",
+        "公布「暢順」KPI：口岸輪候時間分位、公共交通疏導準點／載客、緊急事故回應時限；高峰後 72 小時內發布簡報。",
+        "把萬聖節等可預見高峰納入年度演練月曆；試點後推廣至其他陸路口岸，並與北都客流預測對接。"
+      ],
+      "measures_en": [
+        "Peak-border SOP: triggers, command chain, on-site authority; CS-level cross-bureau steer; day-to-day split by SB / TLB functions.",
+        "Publish smoothness KPIs: wait-time percentiles, PT diversion on-time / load, incident response times; brief within 72 hours after peaks.",
+        "Put foreseeable peaks (Halloween etc.) on an annual drill calendar; pilot then extend to other land boundaries; link to NM flow forecasts."
+      ],
+      "facts_zh": [
+        {
+          "text": "皇崗口岸曾就萬聖節人流啟動跨部門高峰應變（人流窗口約 10/30–11/1）。"
+        },
+        {
+          "text": "應變由政務司長層級統籌，保安局與運輸及物流局參與執行分工。"
+        },
+        {
+          "text": "政策討論角度：口岸韌性如何對接北部都會區及跨境出行日常化，而非只作一次性動員。"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "Huanggang Control Point activated cross-bureau peak response for Halloween crowds (flow window ~30 Oct–1 Nov)."
+        },
+        {
+          "text": "Response steered at CS level; Security Bureau and Transport and Logistics Bureau shared execution."
+        },
+        {
+          "text": "Policy angle: border resilience as routine capacity for NM / everyday cross-boundary travel — not one-off mobilisation."
+        }
+      ],
       "prompt": "Some argue that as cross-boundary travel becomes routine (with Northern Metropolis planning), Government should institutionalise peak-border response (e.g. Halloween crowds): clear short-term lead departments and measurable “smoothness” KPIs — not one-off mobilisation. Analyse the trade-offs, take a stance, and recommend measures.",
       "pros": [
         "Clear lead and KPIs reduce “who decides” fog at peaks and speed on-site redeployment.",
@@ -557,6 +1391,64 @@
         "northern-metropolis",
         "housing-land",
         "national-development"
+      ],
+      "prompt_zh": "有意見認為，北部都會區要真正供應「熟地」，關鍵在加快河套東面連接道路等配套收地與跨部門協調，並以受影響居民／企業補償成效衡量落地，而非只公布規劃藍圖。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that delivering Northern Metropolis “spade-ready” land hinges on faster land resumption for Hetao east-link roads and cross-bureau coordination, with compensation outcomes for affected residents / firms as the delivery yardstick — not blueprint announcements alone. Analyse the trade-offs, take a stance, and propose measures.",
+      "pros_zh": [
+        "把收地節奏與道路／基建節點對齊，可縮短「有規劃、無熟地」的空窗，加快創科與產業用地入市。",
+        "明確跨部門協調主責，減少局與局之間互等，有助可預見的施工與交地時間表。",
+        "以補償透明度與安置進度作成效指標，可降低抗爭與訴訟風險，提升公眾對北都落地的信心。"
+      ],
+      "pros_en": [
+        "Aligning resumption with road / infra milestones shortens the “plan without spade-ready land” gap and speeds I&T / industrial land to market.",
+        "Clear cross-bureau lead cuts bureau-to-bureau waiting and makes construction / handover dates more predictable.",
+        "Transparent compensation and rehousing progress as KPIs can lower protest / litigation risk and raise confidence in NM delivery."
+      ],
+      "cons_zh": [
+        "過快收地若補償與安置未同步，易激化社區矛盾，反拖慢整體工程。",
+        "跨部門「一刀切」時程或無視個別地段法律與工程複雜度，推高成本。",
+        "過度以補償滿意度作唯一 KPI，或令談判曠日持久，影響「熟地」供應目標。"
+      ],
+      "cons_en": [
+        "Rushing resumption without synced compensation and rehousing can inflame communities and slow the whole programme.",
+        "One-size schedules ignore site-specific legal / engineering complexity and push costs up.",
+        "Making compensation satisfaction the sole KPI can drag negotiations and miss spade-ready supply targets."
+      ],
+      "stance_zh": "贊成「收地節奏對齊基建節點＋跨部門協調＋補償成效可量度」，反對只靠藍圖口號",
+      "stance_en": "Support resumption tempo tied to infra nodes + cross-bureau coordination + measurable compensation outcomes — not blueprint slogans alone.",
+      "measures_zh": [
+        "按基建節點（如河套東連關鍵路段）公布分階段收地時間表與「熟地」交地目標，並標明主責部門。",
+        "設跨部門協調機制（地政／運輸／相關政策局），訂觸發升級條件，避免互等；季度公開進度簡報。",
+        "補償與安置設可核實指標：協議達成率、遷置到位時限、企業過渡支援完成率；未達標則檢討流程而非只加碼宣傳。"
+      ],
+      "measures_en": [
+        "Publish staged resumption timetables and spade-ready handover targets against infra nodes (e.g. key Hetao east-link segments) with named leads.",
+        "Cross-bureau mechanism (Lands / Transport / policy bureaux) with escalation triggers; quarterly public progress briefs.",
+        "Verifiable compensation / rehousing KPIs: agreement rate, relocation on-time, firm transition support completion; miss → process review, not more PR."
+      ],
+      "facts_zh": [
+        {
+          "text": "河套東面連接道路：收回私人土地 112 幅、約 5.7 公頃；另徵用墳墓／金塔佔用政府土地約 113 平方米；公告後 3 個月（2027-01-30）復歸政府。info.gov.hk 2026-10-29",
+          "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900313.htm"
+        },
+        {
+          "text": "核心張力：收地進度能否對齊「熟地」供應，以及跨部門協調是否足以減少互等。"
+        },
+        {
+          "text": "成效衡量角度：受影響居民／企業補償與安置是否公開、可核實，而非僅以規劃圖則作交代。"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "Hetao east connecting road: resume 112 private lots (~5.7 ha); plus ~113 m² Government land occupied by graves / urns; revert to Government 3 months after notice (2027-01-30). info.gov.hk 2026-10-29",
+          "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900313.htm"
+        },
+        {
+          "text": "Core tension: whether resumption keeps pace with spade-ready supply, and whether cross-bureau coordination cuts mutual waiting."
+        },
+        {
+          "text": "Delivery lens: open, verifiable compensation / rehousing for affected residents / firms — not plans alone."
+        }
       ],
       "prompt": "Some argue that delivering Northern Metropolis “spade-ready” land hinges on faster land resumption for Hetao east-link roads and cross-bureau coordination, with compensation outcomes for affected residents / firms as the delivery yardstick — not blueprint announcements alone. Analyse the trade-offs, take a stance, and propose measures.",
       "pros": [
@@ -597,6 +1489,66 @@
         "national-development",
         "innovation"
       ],
+      "prompt_zh": "有意見認為，香港應繼續擴張全面性避免雙重課稅協定網絡（如與老撾等），並強化 GoGBA 等一站式平台，協助港企在『十五五』下把握大灣區及「走出去」機遇，以免「有政策、缺落地」。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that Hong Kong should keep expanding its CDTA network (e.g. with Laos) and strengthen one-stop platforms such as GoGBA so HK firms can seize GBA and “go global” opportunities under the 15th Five-Year Plan — avoiding “policy without delivery”. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros_zh": [
+        "稅務協定網絡擴張可降低雙重課稅與不確定性，提升港企海外投資與承包的可預期性。",
+        "GoGBA 一站式資訊／對接有助中小企降低「走出去」與入灣區的資訊門檻。",
+        "對接『十五五』與大灣區機遇，可把宏觀政策轉成企業可執行的路徑，減少口號與實操脫節。"
+      ],
+      "pros_en": [
+        "Wider CDTA coverage cuts double-taxation uncertainty and makes overseas investment / contracting more predictable.",
+        "GoGBA one-stop info / matching lowers the entry barrier for SMEs into the GBA and overseas markets.",
+        "Linking the 15th FYP and GBA opportunities turns macro policy into executable firm paths."
+      ],
+      "cons_zh": [
+        "協定談判耗時，短期難覆蓋所有目標市場；企業或高估「一簽即通」。",
+        "平台若只彙集資料、缺配對與跟進，仍會變成「有政策、缺落地」。",
+        "稅務與營商環境受當地法治、外匯與產業政策影響，單靠港方工具無法消除全部風險。"
+      ],
+      "cons_en": [
+        "Treaty talks take years; firms may overestimate “sign once, clear everywhere”.",
+        "If the platform only aggregates data without matching and follow-up, it stays “policy without delivery”.",
+        "Local rule of law, FX and industrial policy still drive risk — HK tools cannot erase it all."
+      ],
+      "stance_zh": "贊成「擴張稅務網絡＋強化 GoGBA 落地服務」，惟須配對、跟進與成效指標",
+      "stance_en": "Support expanding the tax network + strengthening GoGBA delivery services — with matching, follow-up and outcome KPIs.",
+      "measures_zh": [
+        "持續擴張全面性避免雙重課稅協定網絡，並公布對重點行業（製造、專業服務、基建）的稅務影響說明（以當局最新文本為準）。",
+        "強化 GoGBA：由資訊門戶升級為「政策解讀＋對接＋跟進」；設灣區場景與「走出去」兩條清晰路徑。",
+        "訂落地 KPI：平台活躍企業數、成功配對／諮詢完成率、企業回訪滿意的可核實比例；年度公開簡報，避免只報協定簽署數。"
+      ],
+      "measures_en": [
+        "Keep expanding CDTAs and publish tax-impact notes for priority sectors (manufacturing, professional services, infra) per latest texts.",
+        "Upgrade GoGBA from info portal to “policy briefing + matching + follow-up”; clear GBA vs go-global tracks.",
+        "Delivery KPIs: active firms, successful match / consult completion, verifiable revisit satisfaction; annual brief — not treaty-count alone."
+      ],
+      "facts_zh": [
+        {
+          "text": "港老全面性避免雙重課稅協定：股息預扣稅上限 10%、特許權使用費 5%。info.gov.hk 2026-10-29",
+          "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900532.htm"
+        },
+        {
+          "text": "GoGBA 發展日對接國家「十五五」與《香港第一個五年規劃》，協助港企把握大灣區及「走出去」機遇。info.gov.hk 2026-10-29",
+          "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900559.htm"
+        },
+        {
+          "text": "實利討論應聚焦：協定降預扣稅不確定性（如股息 10%／特許權 5%）、GoGBA 資訊與對接門檻，並以當局最新文本為準。"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "HK–Laos CDTA: dividend WHT cap 10%, royalties 5%. info.gov.hk 2026-10-29",
+          "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900532.htm"
+        },
+        {
+          "text": "GoGBA Development Day links national 15th FYP and Hong Kong’s first five-year plan to help firms seize GBA / go-global chances. info.gov.hk 2026-10-29",
+          "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900559.htm"
+        },
+        {
+          "text": "Substance: treaties cut WHT uncertainty (e.g. dividends 10% / royalties 5%); GoGBA lowers info / matching barriers — use latest official texts."
+        }
+      ],
       "prompt": "Some argue that Hong Kong should keep expanding its CDTA network (e.g. with Laos) and strengthen one-stop platforms such as GoGBA so HK firms can seize GBA and “go global” opportunities under the 15th Five-Year Plan — avoiding “policy without delivery”. Analyse the trade-offs, take a stance, and recommend measures.",
       "pros": [
         "Wider CDTA coverage cuts double-taxation uncertainty and makes overseas investment / contracting more predictable.",
@@ -636,6 +1588,64 @@
       "theme_ids": [
         "finance"
       ],
+      "prompt_zh": "有意見認為，政府應把 EnsembleTX 由可控試行加快推向以代幣化央行貨幣支持的銀行間代幣化存款 24x7 結算，並擴大參與，以鞏固香港數碼金融樞紐地位。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that Government should accelerate EnsembleTX from controlled pilots toward 24×7 interbank tokenised-deposit settlement backed by tokenised central-bank money, and widen participation to cement Hong Kong’s digital-finance hub role. Analyse the trade-offs, take a stance, and propose measures.",
+      "pros_zh": [
+        "24x7 結算對應全天候數字金融市場，讓參與銀行在傳統營運時間以外以代幣化央行貨幣做即時結算。",
+        "參與銀行增至 12 間、業界先行者增至 20 間，顯示試行已有較廣業界參與，而非單一機構實驗。",
+        "可控試行已涵蓋企業財資管理及代幣化貨幣市場基金等真實交易，有助市場流動性與投資者風險管理。"
+      ],
+      "pros_en": [
+        "24×7 settlement matches always-on digital markets; banks can settle tokenised deposits with tokenised CB money outside traditional hours.",
+        "12 participating banks and 20 industry pioneers show a broader industry pilot, not a single-firm experiment.",
+        "Controlled pilots already cover real corporate treasury and tokenised MMF trades — useful for liquidity and investor risk management."
+      ],
+      "cons_zh": [
+        "全天候結算對銀行流動性管理與操作風險提出新要求，傳統時段以外的監察成本上升。",
+        "EnsembleTX 初期以港元即時支付結算系統結算；新功能並行後若銜接不清，易出現雙軌碎片化。",
+        "參與擴大後若無清楚的試行成效門檻，商業化節奏可能快過風險管控。"
+      ],
+      "cons_en": [
+        "Always-on settlement raises liquidity-management and operational-risk demands; monitoring cost outside traditional hours rises.",
+        "EnsembleTX initially settled via HKD RTGS; unclear dual-track links risk fragmentation.",
+        "Widening participation without clear pilot gates may commercialise faster than risk controls."
+      ],
+      "stance_zh": "有條件贊成推進 24x7 代幣化央行貨幣結算，惟須與 RTGS 銜接並設試行門檻",
+      "stance_en": "Conditional support for advancing 24×7 tokenised CB-money settlement — with RTGS linkage and pilot gates.",
+      "measures_zh": [
+        "由金管局主責、證監會協同，公布 EnsembleTX 與港元即時支付結算系統的銜接安排，避免雙軌碎片化。",
+        "以現時 12 間參與銀行、20 間業界先行者為試行邊界，公開檢討已出現用例（企業財資管理、代幣化貨幣市場基金）的結算表現，達標才擴大參與或用例。",
+        "要求參與機構說明傳統營運時間以外的流動性與操作風險安排，再決定是否把 24x7 結算擴至更多交易類型。"
+      ],
+      "measures_en": [
+        "HKMA lead, SFC coordinate: publish EnsembleTX–HKD RTGS linkage so dual tracks do not fragment.",
+        "Treat current 12 banks / 20 pioneers as the pilot boundary; publicly review settlement performance on existing use cases (corporate treasury, tokenised MMFs) before widening.",
+        "Require participants to set out off-hours liquidity and ops-risk arrangements before expanding 24×7 to more trade types."
+      ],
+      "facts_zh": [
+        {
+          "text": "2026-11-02：Ensemble 項目試行階段 EnsembleTX 進入新階段，以代幣化央行貨幣支持銀行間代幣化存款的 24x7 全天候結算；參與銀行增至 12 間、業界先行者增至 20 間。金管局",
+          "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200541.htm"
+        },
+        {
+          "text": "EnsembleTX 於 2025 年 11 月推出，初期利用港元即時支付結算系統結算銀行間代幣化存款；新功能讓參與者於傳統營運時間以外進行即時代幣化交易結算。同上"
+        },
+        {
+          "text": "可控試行中已實現涉及代幣化存款及數字資產的真實交易，包括企業財資管理及代幣化貨幣市場基金交易。同上"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "2026-11-02: EnsembleTX enters a new stage — 24×7 interbank tokenised-deposit settlement backed by tokenised CB money; banks to 12, pioneers to 20. HKMA",
+          "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200541.htm"
+        },
+        {
+          "text": "EnsembleTX launched Nov 2025, initially settling tokenised deposits via HKD RTGS; new function enables real-time tokenised settlement outside traditional hours. Same GIA."
+        },
+        {
+          "text": "Controlled pilots already executed real trades involving tokenised deposits and digital assets, including corporate treasury and tokenised MMFs. Same GIA."
+        }
+      ],
       "prompt": "Some argue that Government should accelerate EnsembleTX from controlled pilots toward 24×7 interbank tokenised-deposit settlement backed by tokenised central-bank money, and widen participation to cement Hong Kong’s digital-finance hub role. Analyse the trade-offs, take a stance, and propose measures.",
       "pros": [
         "24×7 settlement matches always-on digital markets; banks can settle tokenised deposits with tokenised CB money outside traditional hours.",
@@ -673,6 +1683,74 @@
       "title_en": "AI governance / public services",
       "theme_ids": [
         "innovation"
+      ],
+      "prompt_zh": "有意見認為，政府應全面加快各部門部署生成式人工智能及 AI 代理人處理公共服務查詢與審批，即使倫理審核、數據私隱與問責安排尚未齊備亦須先行，以免落後數碼樞紐競爭。請分析利弊，表明立場，並提出建議。",
+      "prompt_en": "Some argue that Government should accelerate generative AI and AI agents across departments for public-service queries and approvals even before ethics review, data privacy and accountability arrangements are ready — lest Hong Kong fall behind as a digital hub. Analyse the trade-offs, take a stance, and recommend measures.",
+      "pros_zh": [
+        "AI效能提升組已促成及落實約 30 個項目，運輸署網上預約輪候時間縮短一半、食環署處理垃圾投訴縮時最多約七成，顯示公共服務有可量度增益。",
+        "「智方便」推出 AI 助手整理官方公共服務資訊，可把一網通辦由入口整合推進至智能導航，減輕櫃位與熱線負荷。",
+        "「AI城市大腦」由政務司司長牽頭，首階段接入保安局緊急事故監察及支援中心，有助跨部門應急與城市管理。"
+      ],
+      "pros_en": [
+        "AI Efficiency Team has enabled ~30 projects: TD online booking waits halved; FEHD rubbish-complaint handling time cut by up to ~70% — measurable public-service gains.",
+        "iAM Smart AI assistant organising official service info can move one-stop from portal aggregation to smart navigation, easing counters and hotlines.",
+        "“AI City Brain” led by the Chief Secretary, first stage linking SB Emergency Monitoring and Support Centre, can help cross-bureau emergency and city management."
+      ],
+      "cons_zh": [
+        "生成式 AI 易出現幻覺、偏誤與資料外洩；公共審批若缺人工覆核與問責鏈，會損害程序公正與市民信任。",
+        "跨部門大數據共享若缺最小必要與用途限制，私隱與保安風險會隨「城市大腦」擴大而上升。",
+        "全面搶先部署可能擠佔培訓與改程資源，公務員與中小企未能同步轉型，反而擴大數碼鴻溝。"
+      ],
+      "cons_en": [
+        "GenAI risks hallucination, bias and data leaks; public approvals without human review and an accountability chain damage fairness and trust.",
+        "Cross-bureau big-data sharing without minimality and purpose limits raises privacy / security risk as City Brain scales.",
+        "Rushing deployment can crowd out training and process redesign; civil servants and SMEs lag and the digital divide widens."
+      ],
+      "stance_zh": "有條件贊成加快公共服務 AI 試點，但反對倫理、私隱與問責未齊備下全面鋪開",
+      "stance_en": "Conditional support for faster public-service AI pilots — oppose full rollout before ethics, privacy and accountability are ready.",
+      "measures_zh": [
+        "由數字政策辦公室統籌，選定高頻查詢／非終局決定場景（如智方便導航、1823 重複問題識別）擴大試點，所有對外 AI 須標明來源並設人工升級通道。",
+        "把倫理風險評估、數據最小必要、保安合規聲明列為政府採購／上線門檻；「AI城市大腦」首階段限應急與城市管理用例，公開數據共享範圍與問責部門。",
+        "同步推進「AI for All」分層培訓及部門成效 KPI（處理時限、覆核率、投訴），未達標不擴大審批類自動化。"
+      ],
+      "measures_en": [
+        "Digital Policy Office coordinates: expand pilots in high-frequency / non-final decision use cases (iAM Smart navigation, 1823 repeat-issue triage); all outward AI must cite sources and offer human escalation.",
+        "Make ethics risk assessment, data minimality and security compliance statements procurement / go-live gates; keep City Brain Stage 1 to emergency / city-management use cases with published sharing scope and accountable departments.",
+        "Run “AI for All” tiered training plus departmental KPIs (handling time, review rate, complaints); do not widen approval automation until gates are met."
+      ],
+      "facts_zh": [
+        {
+          "text": "「AI效能提升組」至今促成及落實約 30 個項目：運輸署 AI 縮短網上預約輪候約一半；食環署 AI 處理垃圾投訴縮時最多約七成；環保署引入 AI 等技術將環評程序時間縮短約一半。2026 PA Ch.VIII",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter8.html"
+        },
+        {
+          "text": "政府研究和建設「AI城市大腦」綜合城市管理系統；成立由政務司司長擔任組長的工作組；首階段保安局「緊急事故監察及支援中心」數碼基建接入系統。同上",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter8.html"
+        },
+        {
+          "text": "數字政策辦公室公布「智方便」推出「AI助手」，從官方渠道即時整理公共服務資訊；全新 5.0 版流動應用於 2026 年 10 月中下旬推送，年底擬推加強版個人化服務。",
+          "url": "https://www.digitalpolicy.gov.hk/"
+        },
+        {
+          "text": "金管局公布「ART」框架（問責、韌性、信任）推動銀行業負責任採用 AI，並更新相關監管指引及強化沙盒測試——可作公共部門管治對照。2026-10"
+        }
+      ],
+      "facts_en": [
+        {
+          "text": "AI Efficiency Team: ~30 projects — TD AI halved online booking waits; FEHD AI cut rubbish-complaint time by up to ~70%; EPD AI etc. cut EIA process time ~half. 2026 PA Ch.VIII",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter8.html"
+        },
+        {
+          "text": "Government studying “AI City Brain” city-management system; CS-chaired working group; Stage 1 links SB Emergency Monitoring and Support Centre digital infra. Same chapter.",
+          "url": "https://www.policyaddress.gov.hk/2026/tc/chapter8.html"
+        },
+        {
+          "text": "Digital Policy Office: iAM Smart “AI assistant” pulls official public-service info in real time; new 5.0 mobile app pushed mid–late Oct 2026; enhanced personalisation planned by year-end.",
+          "url": "https://www.digitalpolicy.gov.hk/"
+        },
+        {
+          "text": "HKMA “ART” framework (Accountability, Resilience, Trust) for responsible bank AI, with updated guidance and stronger sandbox — useful public-sector governance contrast. 2026-10"
+        }
       ],
       "prompt": "Some argue that Government should accelerate generative AI and AI agents across departments for public-service queries and approvals even before ethics review, data privacy and accountability arrangements are ready — lest Hong Kong fall behind as a digital hub. Analyse the trade-offs, take a stance, and recommend measures.",
       "pros": [
@@ -714,87 +1792,121 @@
     {
       "n": 1,
       "theme": "Housing / Land",
-      "stance_one_liner": "Support faster public supply, but only with a ladder out of transitional units and matching infrastructure."
+      "theme_zh": "房屋與土地",
+      "stance_one_liner": "Support faster public supply, but only with a ladder out of transitional units and matching infrastructure.",
+      "stance_one_liner_zh": "贊成「加快公營供應，但須梯級化＋配套」"
     },
     {
       "n": 2,
       "theme": "Healthcare / Mental health",
-      "stance_one_liner": "Prioritise primary care + community mental health, without cutting acute hospital capability."
+      "theme_zh": "醫療與精神健康",
+      "stance_one_liner": "Prioritise primary care + community mental health, without cutting acute hospital capability.",
+      "stance_one_liner_zh": "贊成「基層＋精神健康優先，但醫院能力不可砍」"
     },
     {
       "n": 3,
       "theme": "Ageing society",
-      "stance_one_liner": "Support ageing-in-place as the core, with residential care as a backstop — and strengthen carers."
+      "theme_zh": "人口老化與居家安老",
+      "stance_one_liner": "Support ageing-in-place as the core, with residential care as a backstop — and strengthen carers.",
+      "stance_one_liner_zh": "贊成「居家為本、院舍為後援」——與現行政策一致，但須強化照顧者"
     },
     {
       "n": 4,
       "theme": "Youth employment / education",
-      "stance_one_liner": "Conditional support: subsidies must bind training, sector targets and retention KPIs."
+      "theme_zh": "青年就業與教育",
+      "stance_one_liner": "Conditional support: subsidies must bind training, sector targets and retention KPIs.",
+      "stance_one_liner_zh": "有條件贊成：補貼須綁培訓、行業及留任 KPI"
     },
     {
       "n": 5,
       "theme": "Tourism / F&B / culture",
-      "stance_one_liner": "Support quality-first promotion, while keeping a diversified visitor mix."
+      "theme_zh": "旅遊、餐飲與文化",
+      "stance_one_liner": "Support quality-first promotion, while keeping a diversified visitor mix.",
+      "stance_one_liner_zh": "贊成「質素為先，但保留多元客源組合」"
     },
     {
       "n": 6,
       "theme": "GBA integration",
-      "stance_one_liner": "Support voluntary, reversible, quality-assured cross-boundary options — not as the sole pillar."
+      "theme_zh": "大灣區融合（跨境安老／醫療／就業）",
+      "stance_one_liner": "Support voluntary, reversible, quality-assured cross-boundary options — not as the sole pillar.",
+      "stance_one_liner_zh": "贊成「自願、可逆、有質素保證的跨境選項」，反對作為唯一主軸"
     },
     {
       "n": 7,
       "theme": "Innovation & I&T",
-      "stance_one_liner": "Support Northern Metropolis as the main engine, without withdrawing the city-wide network."
+      "theme_zh": "創科與北部都會區",
+      "stance_one_liner": "Support Northern Metropolis as the main engine, without withdrawing the city-wide network.",
+      "stance_one_liner_zh": "贊成「北都為主引擎，全港網絡配套不撤」"
     },
     {
       "n": 8,
       "theme": "Transport / Environment",
-      "stance_one_liner": "Treat charging as a backstop; first deliver recovery infrastructure and habits, then phase a restart."
+      "theme_zh": "交通與環保（垃圾收費／綠色出行）",
+      "stance_one_liner": "Treat charging as a backstop; first deliver recovery infrastructure and habits, then phase a restart.",
+      "stance_one_liner_zh": "贊成「收費作後備工具；先達回收基建與減廢習慣，再分階段重啟」"
     },
     {
       "n": 9,
       "theme": "Fertility / family support",
-      "stance_one_liner": "Oppose bonus-first; support bonus as a supplement with childcare / housing / reproductive healthcare as the core."
+      "theme_zh": "生育與家庭支援",
+      "stance_one_liner": "Oppose bonus-first; support bonus as a supplement with childcare / housing / reproductive healthcare as the core.",
+      "stance_one_liner_zh": "反對「獎金為主」；贊成「獎金為輔＋託兒／住屋／醫療生育支援為主」"
     },
     {
       "n": 10,
       "theme": "Labour / platform economy",
-      "stance_one_liner": "Support sector-specific statutory floors — not necessarily one-step full employee status."
+      "theme_zh": "平台經濟與送貨員保障",
+      "stance_one_liner": "Support sector-specific statutory floors — not necessarily one-step full employee status.",
+      "stance_one_liner_zh": "贊成「立法設行業專屬保障底線」，但未必一步到位全面僱員化"
     },
     {
       "n": 11,
       "theme": "Public open space / parks",
-      "stance_one_liner": "Support a new upgrade round — but only with management and monitoring in parallel."
+      "theme_zh": "公共休憩空間管理",
+      "stance_one_liner": "Support a new upgrade round — but only with management and monitoring in parallel.",
+      "stance_one_liner_zh": "贊成「新一輪公共空間優化，但須管理＋監察並行」"
     },
     {
       "n": 12,
       "theme": "New industrialisation / funding delivery",
-      "stance_one_liner": "Support bundling funding with delivery checks — staged and workable."
+      "theme_zh": "新型工業化與資助落地",
+      "stance_one_liner": "Support bundling funding with delivery checks — staged and workable.",
+      "stance_one_liner_zh": "贊成「資助與落地考核捆綁，惟須分階段、可操作」"
     },
     {
       "n": 13,
       "theme": "Border resilience / peak crowd response",
-      "stance_one_liner": "Support institutionalised peak response with clear leads and smoothness KPIs — keep on-site flexibility."
+      "theme_zh": "口岸韌性與跨境高峰應變",
+      "stance_one_liner": "Support institutionalised peak response with clear leads and smoothness KPIs — keep on-site flexibility.",
+      "stance_one_liner_zh": "贊成「高峰應變制度化＋清晰主責與暢順 KPI」，惟保留現場彈性"
     },
     {
       "n": 14,
       "theme": "Hetao east link resumption / NM delivery",
-      "stance_one_liner": "Support resumption tempo tied to infra nodes + cross-bureau coordination + measurable compensation outcomes — not blueprint slogans alone."
+      "theme_zh": "河套東連收地與北都基建落地",
+      "stance_one_liner": "Support resumption tempo tied to infra nodes + cross-bureau coordination + measurable compensation outcomes — not blueprint slogans alone.",
+      "stance_one_liner_zh": "贊成「收地節奏對齊基建節點＋跨部門協調＋補償成效可量度」，反對只靠藍圖口號"
     },
     {
       "n": 15,
       "theme": "HK–Laos tax treaty / GoGBA 15th FYP",
-      "stance_one_liner": "Support expanding the tax network + strengthening GoGBA delivery services — with matching, follow-up and outcome KPIs."
+      "theme_zh": "港老稅務協定與 GoGBA『十五五』落地",
+      "stance_one_liner": "Support expanding the tax network + strengthening GoGBA delivery services — with matching, follow-up and outcome KPIs.",
+      "stance_one_liner_zh": "贊成「擴張稅務網絡＋強化 GoGBA 落地服務」，惟須配對、跟進與成效指標"
     },
     {
       "n": 16,
       "theme": "Tokenised settlement / digital finance",
-      "stance_one_liner": "Conditional support for advancing 24×7 tokenised CB-money settlement — with RTGS linkage and pilot gates."
+      "theme_zh": "代幣化結算與數碼金融",
+      "stance_one_liner": "Conditional support for advancing 24×7 tokenised CB-money settlement — with RTGS linkage and pilot gates.",
+      "stance_one_liner_zh": "有條件贊成推進 24x7 代幣化央行貨幣結算，惟須與 RTGS 銜接並設試行門檻"
     },
     {
       "n": 17,
       "theme": "AI governance / public services",
-      "stance_one_liner": "Conditional support for faster public-service AI pilots — oppose full rollout before ethics, privacy and accountability are ready."
+      "theme_zh": "人工智能與公共服務管治",
+      "stance_one_liner": "Conditional support for faster public-service AI pilots — oppose full rollout before ethics, privacy and accountability are ready.",
+      "stance_one_liner_zh": "有條件贊成加快公共服務 AI 試點，但反對倫理、私隱與問責未齊備下全面鋪開"
     }
   ],
   "sources": [

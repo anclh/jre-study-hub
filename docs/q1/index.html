@@ -6,7 +6,8 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>JRE English Q1 · Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261103u" />
+  <link rel="stylesheet" href="styles.css?v=20261103v" />
+  <link rel="stylesheet" href="../shared/policy-flashcards.css?v=20261103v" />
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261103c" />
 </head>
 <body>
@@ -178,11 +179,19 @@
     <section class="panel" id="panel-bank">
       <div class="card">
         <h2>政策溫習卡 <span class="chip">題庫</span></h2>
-        <p class="lede">考試式題目 → 利弊 → 建議立場 → 措施 → 必記事實。對齊 Q1 case 主題同 Q2 題庫事實；點開先見全文。Data File 計時練習仍喺「計時練習」。</p>
+        <p class="lede">考試式題目 → 利弊 → 建議立場 → 措施 → 必記事實。中英對齊 Q2 題庫；閃卡模式（Quizlet）預設入口。Data File 計時練習仍喺「計時練習」。</p>
+        <div class="jre-pf jre-pf-launcher" id="bankFlashLauncher">
+          <div class="jre-pf-launcher-copy">
+            <h3>閃卡溫習 · Quizlet</h3>
+            <p>正面＝主題＋考試題／立場一句；翻面＝利弊→立場→措施→必記。中＋英。</p>
+          </div>
+          <button type="button" class="jre-pf-start" id="btnBankFlash">開始閃卡</button>
+        </div>
         <div class="search-bar">
-          <input id="bankSearch" type="search" enterkeyhint="search" autocomplete="off" spellcheck="false" placeholder="搜尋主題、題目、立場、事實…" aria-label="搜尋政策溫習卡" />
+          <input id="bankSearch" type="search" enterkeyhint="search" autocomplete="off" spellcheck="false" placeholder="搜尋主題、題目、立場、事實（中英）…" aria-label="搜尋政策溫習卡" />
         </div>
         <div class="count" id="bankCount">溫習卡: —</div>
+        <p class="lede bank-list-hint">下面係列表備援；亦可點卡右上「閃」由該題開閃卡。</p>
       </div>
       <div class="briefs-list" id="briefsList"></div>
       <div class="card quick-ref" id="quickRef" hidden></div>
@@ -309,7 +318,8 @@
   <script src="data/border-resilience.js?v=20261103c"></script>
   <script src="data/loop-link-resumption.js?v=20261103c"></script>
   <script src="data/waste-recovery-2026-11-02.js?v=20261103c"></script>
-  <script src="app.js?v=20261103u"></script>
+  <script src="../shared/policy-flashcards.js?v=20261103v"></script>
+  <script src="app.js?v=20261103v"></script>
   <script src="../shell/tabbar.js?v=20261103c"></script>
 </body>
 </html>
