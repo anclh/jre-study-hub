@@ -266,6 +266,33 @@
       "zh": "宜於12至18個月內在……完成試點，公布中期指標，再決定是否全港推開。",
       "note": "時限＋試點＋中期指標＋是否擴展（delivery 句）",
       "example": "宜於12至18個月內在兩個高峰口岸完成暢順KPI試點，公布中期輪候分位，再決定是否全港推開。"
+    },
+    {
+      "id": "reb-04",
+      "category": "rebuttal",
+      "paper": "q2",
+      "en": "This is not a binary choice between A and B; the workable path is to… while…",
+      "zh": "此事並非在……與……之間二選一；可行做法是一邊……、一邊……。",
+      "note": "拆假兩難／並行推進",
+      "example": "此事並非在加強保障與維持靈活就業之間二選一；可行做法是一邊立法設底線保障、一邊保留平台接單彈性。"
+    },
+    {
+      "id": "arg-06",
+      "category": "arguments",
+      "paper": "q2",
+      "en": "If … is left unaddressed, it will chain into …, so early action on … is warranted.",
+      "zh": "若不及時處理……，將連鎖影響……，故宜及早就……採取行動。",
+      "note": "因果急迫／連鎖後果",
+      "example": "若不及時處理口岸高峰輪候失控，將連鎖影響跨境通勤與旅遊體驗，故宜及早就暢順KPI採取行動。"
+    },
+    {
+      "id": "clo-04",
+      "category": "close",
+      "paper": "q2",
+      "en": "If delivered with clear ownership and review, … can work; otherwise the costs of delay will only grow.",
+      "zh": "只要主責清晰、檢討到位，……即可見效；否則拖延成本只會更大。",
+      "note": "條件式短結：到位則成／否則代價上升",
+      "example": "只要主責清晰、檢討到位，口岸高峰暢順KPI即可見效；否則拖延成本只會更大。"
     }
   ]
 }
