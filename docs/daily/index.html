@@ -7,9 +7,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="description" content="JRE Study Hub — 每日溫書（結構／寫／詞；政策隔日可選）" />
-  <!-- stamp: 20261103k · 寫作參考答案可隱藏 -->
+  <!-- stamp: 20261103l · 結構／寫作參考答案可隱藏 -->
   <title>JRE Study Hub · 每日溫書</title>
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103k" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261103l" />
   <style>
 
     :root {
@@ -642,7 +642,7 @@
 
   </style>
 </head>
-<body class="hub-has-tabs" data-stamp="20261103k">
+<body class="hub-has-tabs" data-stamp="20261103l">
   <main class="wrap">
     <header class="brand">
       <div class="logo" aria-hidden="true">📅</div>
@@ -652,7 +652,7 @@
       </div>
     </header>
 
-    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103k">
+    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103l">
       <div class="daily-head">
         <div>
           <h2 class="daily-title" id="daily-title">每日溫書</h2>
@@ -677,6 +677,20 @@
             <div class="daily-links">
               <a id="link-q1-frames" href="../q1/#shared-frames">Q1 Opening→Closing</a>
               <a id="link-q2-frames" href="../q2/#shared-frames">Q2 立場→短結</a>
+            </div>
+            <div class="write-answer" id="structure-answer">
+              <p class="write-answer-hint">練完先睇；僅供參考</p>
+              <button
+                type="button"
+                class="write-answer-toggle"
+                id="btn-toggle-structure-answer"
+                aria-expanded="false"
+                aria-controls="structure-answer-box"
+              >顯示參考答案</button>
+              <div class="write-answer-box" id="structure-answer-box" hidden>
+                <span class="ans-label" id="structure-answer-label">參考／非標準答</span>
+                <div id="structure-answer-text"></div>
+              </div>
             </div>
           </div>
         </li>
@@ -780,8 +794,8 @@
       </p>
     </section>
   </main>
-  <script src="../shared/policy-hotface.js?v=20261103k"></script>
-  <script src="../shell/tabbar.js?v=20261103k"></script>
+  <script src="../shared/policy-hotface.js?v=20261103l"></script>
+  <script src="../shell/tabbar.js?v=20261103l"></script>
   <script>
   (function () {
     var TZ = "Asia/Hong_Kong";
@@ -1104,6 +1118,56 @@
           ? ("已載入今日草稿 · " + now.label)
           : ("空白 · 輸入後自動儲存（" + now.label + "）");
       }
+    }
+
+    /* —— Structure sample answer (hidden by default; independent of write) —— */
+    var STRUCT_Q1 =
+      "Opening: The main challenge is long public-housing waits; Government aims to raise supply within land and fiscal limits.\n" +
+      "Problem analysis: Thin 「熟地」 delays starts and fuels dissatisfaction; labour and MiC capacity gaps risk overruns.\n" +
+      "Option comparison: Faster resumption lifts supply but faces legal pushback; MiC + phased labour is quicker yet needs quality control—mix preferred.\n" +
+      "Recommendation: Pilot MiC on earmarked Northern Metropolis sites, Housing Bureau lead, Development Bureau on land; KPIs on units and wait after 18 months.\n" +
+      "Closing: Watch labour and community opposition via quarterly reviews.\n\n" +
+      "（結構骨架 · 參考／非標準答 · housing）";
+
+    var STRUCT_Q2 =
+      "開首立場：本人贊成加大公營房屋供應，惟以加快熟地及提升建築產能為前提。\n" +
+      "理據一：增公屋有助縮短輪候；以北部都會區已預留用地為例，配合徵地時限可中期增單位。\n" +
+      "理據二：組裝合成建築可縮工期，惟須質量監管及本地工人培訓。\n" +
+      "反駁：有意見憂成本上升及衝擊私樓；惟分階段並同步私樓供應，仍宜先處理輪候。\n" +
+      "建議：高輪候區 MiC 試點＋18 個月落成／輪候 KPI，房屋局主導、發展局熟地。\n" +
+      "短結：分階段增供並配熟地產能，方能平衡住屋需求與資源限制。\n\n" +
+      "（結構骨架 · 參考／非標準答）";
+
+    var STRUCT_SUN =
+      "【日 · 雙框架速查 · 參考／非標準答】\n" +
+      "Q1 EN: Opening → Problem analysis → Option comparison → Recommendation → Closing\n" +
+      "Q2 中: 開首立場 → 2 理據（HK）→ 反駁 → 建議 → 短結\n" +
+      "Tips: 一段一意；開首短；建議寫 who／pilot／KPI。";
+
+    var structAnsBtn = document.getElementById("btn-toggle-structure-answer");
+    var structAnsBox = document.getElementById("structure-answer-box");
+    var structAnsText = document.getElementById("structure-answer-text");
+    var structAnsLabel = document.getElementById("structure-answer-label");
+    var structBody;
+    if (isSun) {
+      structBody = STRUCT_SUN;
+      if (structAnsLabel) structAnsLabel.textContent = "日 · 雙框架速查（參考）";
+    } else if (oddDay) {
+      structBody = STRUCT_Q1;
+      if (structAnsLabel) structAnsLabel.textContent = "Q1 結構骨架 · 參考／非標準答";
+    } else {
+      structBody = STRUCT_Q2;
+      if (structAnsLabel) structAnsLabel.textContent = "Q2 結構骨架 · 參考／非標準答";
+    }
+    if (structAnsText) structAnsText.textContent = structBody;
+    if (structAnsBtn && structAnsBox) {
+      structAnsBtn.addEventListener("click", function () {
+        var open = structAnsBtn.getAttribute("aria-expanded") === "true";
+        var next = !open;
+        structAnsBtn.setAttribute("aria-expanded", next ? "true" : "false");
+        structAnsBox.hidden = !next;
+        structAnsBtn.textContent = next ? "隱藏參考答案" : "顯示參考答案";
+      });
     }
 
     /* —— Sample answer (hidden by default) —— */
