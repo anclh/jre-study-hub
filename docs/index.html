@@ -7,8 +7,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="description" content="JRE Study Hub — 聯合招聘考試備試（中英）" />
+  <!-- stamp: 20261103d · 每日溫書 -->
   <title>JRE Study Hub · 主頁</title>
-  <link rel="stylesheet" href="shell/tabbar.css?v=20261102i" />
+  <link rel="stylesheet" href="shell/tabbar.css?v=20261103d" />
   <style>
     :root {
       --bg: #f4f6f9;
@@ -193,10 +194,189 @@
     .bookmark:active {
       background: #d3ebe1;
     }
-  
+
+    .card-subs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+      padding-top: 2px;
+    }
+    .card .card-subs a {
+      font-size: 11px;
+      line-height: 1.2;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.06);
+      color: inherit;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .card .card-subs a:active {
+      background: #d3ebe1;
+    }
+
+    /* —— 每日溫書 —— */
+    .daily {
+      margin: 0 0 16px;
+      padding: 14px 14px 12px;
+      background: var(--surface);
+      border: 1px solid #cfe8dc;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--accent);
+    }
+    .daily-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .daily-title {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+    .daily-sub {
+      margin: 3px 0 0;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .daily-meta {
+      flex-shrink: 0;
+      text-align: right;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid #cfe8dc;
+      border-radius: 999px;
+      padding: 4px 9px;
+      white-space: nowrap;
+    }
+    .daily-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .daily-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 8px 10px;
+      align-items: start;
+      padding: 10px 10px 9px;
+      background: #f7faf9;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    .daily-item.is-today {
+      background: var(--accent-soft);
+      border-color: #b7e0d0;
+    }
+    .daily-item.is-done {
+      opacity: 0.72;
+    }
+    .daily-item.is-done .daily-step-title {
+      text-decoration: line-through;
+      text-decoration-color: #9bb5a8;
+    }
+    .daily-check {
+      margin-top: 2px;
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+    .daily-step-title {
+      margin: 0;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .daily-step-desc {
+      margin: 2px 0 0;
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .daily-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 7px;
+      grid-column: 2;
+    }
+    .daily-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 4px 9px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--accent);
+      background: #fff;
+      border: 1px solid #cfe8dc;
+      border-radius: 999px;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .daily-links a.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .daily-links a:active {
+      transform: scale(0.98);
+    }
+    .daily-badge {
+      display: inline-block;
+      margin-left: 4px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--accent);
+      vertical-align: middle;
+    }
+    .daily-tips {
+      margin: 10px 0 0;
+      padding: 9px 10px;
+      background: #f0f4f8;
+      border-radius: 10px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .daily-tips strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+    .daily-tips a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid #b7e0d0;
+    }
+    .daily-tips[hidden] { display: none; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
   </style>
 </head>
-<body class="hub-has-tabs">
+<body class="hub-has-tabs" data-stamp="20261103d">
   <main class="wrap">
     <header class="brand">
       <div class="logo" aria-hidden="true">JRE</div>
@@ -205,6 +385,85 @@
         <p>聯合招聘考試備試（中英）</p>
       </div>
     </header>
+
+    <section class="daily" id="daily-study" aria-labelledby="daily-title" data-stamp="20261103d">
+      <div class="daily-head">
+        <div>
+          <h2 class="daily-title" id="daily-title">每日溫書</h2>
+          <p class="daily-sub">Daily drill · 60–90 分（唔包面試）</p>
+        </div>
+        <div class="daily-meta" id="daily-date" aria-live="polite">—</div>
+      </div>
+
+      <ul class="daily-list" id="daily-list">
+        <li class="daily-item" data-key="policy">
+          <input class="daily-check" type="checkbox" id="chk-policy" aria-describedby="desc-policy" />
+          <div>
+            <p class="daily-step-title">
+              <label for="chk-policy">政策 20 分</label>
+            </p>
+            <p class="daily-step-desc" id="desc-policy">抽 2–3 張新／熱卡；每張背 1 硬數字＋1 措施</p>
+            <div class="daily-links">
+              <a class="primary" href="policy/">政策卡</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="daily-item" data-key="structure" id="daily-structure">
+          <input class="daily-check" type="checkbox" id="chk-structure" aria-describedby="desc-structure" />
+          <div>
+            <p class="daily-step-title">
+              <label for="chk-structure">結構 15 分</label>
+              <span class="daily-badge" id="structure-badge" hidden>今日主攻</span>
+            </p>
+            <p class="daily-step-desc" id="desc-structure">Shared frames：奇數日 Q1 · 偶數日 Q2（兩邊都可開）</p>
+            <div class="daily-links">
+              <a id="link-q1-frames" href="q1/#shared-frames">Q1 Opening→Closing</a>
+              <a id="link-q2-frames" href="q2/#shared-frames">Q2 立場→短結</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="daily-item" data-key="write" id="daily-write">
+          <input class="daily-check" type="checkbox" id="chk-write" aria-describedby="desc-write" />
+          <div>
+            <p class="daily-step-title">
+              <label for="chk-write">寫 25–40 分</label>
+              <span class="daily-badge" id="write-badge" hidden>今日主攻</span>
+            </p>
+            <p class="daily-step-desc" id="desc-write">平日一段；日：全文 45 分</p>
+            <div class="daily-links" id="write-links">
+              <a id="link-q1-write" href="q1/#example-measure-pairs">Q1 例子↔措施</a>
+              <a id="link-q2-write" href="q2/#pair-kits">Q2 萬用配搭</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="daily-item" data-key="vocab">
+          <input class="daily-check" type="checkbox" id="chk-vocab" aria-describedby="desc-vocab" />
+          <div>
+            <p class="daily-step-title">
+              <label for="chk-vocab">詞 10 分</label>
+            </p>
+            <p class="daily-step-desc" id="desc-vocab">翻卡 15–20 張</p>
+            <div class="daily-links">
+              <a class="primary" href="vocab/">詞彙卡</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <p class="daily-tips" id="daily-short">
+        <strong>時間不夠：</strong>政策 10 · 結構 8 · 寫 15 · 詞 5（共約 40 分）
+      </p>
+      <p class="daily-tips" id="daily-sunday" hidden>
+        <strong>日 · 全文 45 分：</strong>揀
+        <a href="q1/#case">Q1 計時</a>
+        或
+        <a href="q2/#drill">Q2 計時</a>
+        做一篇（可略過平日「一段」）。
+      </p>
+    </section>
 
     <nav class="cards" aria-label="Study modules">
       <div class="card">
@@ -279,3 +538,169 @@
         </span>
       </div>
     </nav>
+
+    <section class="bookmarks" aria-label="Official bookmarks">
+      <p class="bookmarks-label">書籤 · Official</p>
+      <div class="bookmarks-grid">
+        <a class="bookmark" href="https://www.csb.gov.hk/tc_chi/recruit/exammat/353.html" rel="noopener" target="_blank">CSB · JRE</a>
+        <a class="bookmark" href="https://www.policyaddress.gov.hk/" rel="noopener" target="_blank">施政報告</a>
+        <a class="bookmark" href="https://www.info.gov.hk/" rel="noopener" target="_blank">info.gov.hk</a>
+        <a class="bookmark" href="https://www.csb.gov.hk/tc_chi/admin/grade/ao/425.html" rel="noopener" target="_blank">AO 職責</a>
+        <a class="bookmark" href="https://www.csb.gov.hk/tc_chi/admin/grade/eo/431.html" rel="noopener" target="_blank">EO 職責</a>
+      </div>
+    </section>
+
+    <p class="note">
+      Collocation Bank 另開：
+      <a href="https://anclh.github.io/collocation-bank/" rel="noopener">anclh.github.io/collocation-bank</a>
+    </p>
+  </main>
+  <script src="shell/tabbar.js?v=20261103d"></script>
+  <script>
+  (function () {
+    var TZ = "Asia/Hong_Kong";
+    var KEYS = ["policy", "structure", "write", "vocab"];
+    var WD_ZH = ["日", "一", "二", "三", "四", "五", "六"];
+
+    function hktParts(d) {
+      var fmt = new Intl.DateTimeFormat("en-CA", {
+        timeZone: TZ,
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        weekday: "short",
+      });
+      var parts = fmt.formatToParts(d);
+      var get = function (t) {
+        for (var i = 0; i < parts.length; i++) if (parts[i].type === t) return parts[i].value;
+        return "";
+      };
+      var y = get("year");
+      var m = get("month");
+      var day = get("day");
+      var wdShort = get("weekday"); // Sun Mon …
+      var map = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+      return {
+        ymd: y + "-" + m + "-" + day,
+        dayNum: parseInt(day, 10),
+        weekday: map[wdShort] != null ? map[wdShort] : 0,
+        label: m + "/" + day + "（" + WD_ZH[map[wdShort] != null ? map[wdShort] : 0] + "）",
+      };
+    }
+
+    function storageKey(ymd) {
+      return "jre-daily-study:" + ymd;
+    }
+
+    function loadState(ymd) {
+      try {
+        var raw = localStorage.getItem(storageKey(ymd));
+        if (!raw) return {};
+        var obj = JSON.parse(raw);
+        return obj && typeof obj === "object" ? obj : {};
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function saveState(ymd, state) {
+      try {
+        localStorage.setItem(storageKey(ymd), JSON.stringify(state));
+      } catch (e) {}
+    }
+
+    function setPrimary(el, on) {
+      if (!el) return;
+      if (on) el.classList.add("primary");
+      else el.classList.remove("primary");
+    }
+
+    var now = hktParts(new Date());
+    var dateEl = document.getElementById("daily-date");
+    if (dateEl) dateEl.textContent = now.label;
+
+    var oddDay = now.dayNum % 2 === 1;
+    var wd = now.weekday; // 0=Sun … 6=Sat
+    var isSun = wd === 0;
+    var writeQ1 = wd === 1 || wd === 3 || wd === 5; // Mon Wed Fri
+    var writeQ2 = wd === 2 || wd === 4 || wd === 6; // Tue Thu Sat
+
+    var q1f = document.getElementById("link-q1-frames");
+    var q2f = document.getElementById("link-q2-frames");
+    setPrimary(q1f, oddDay);
+    setPrimary(q2f, !oddDay);
+    var structItem = document.getElementById("daily-structure");
+    var structBadge = document.getElementById("structure-badge");
+    if (structItem) structItem.classList.add("is-today");
+    if (structBadge) {
+      structBadge.hidden = false;
+      structBadge.textContent = oddDay ? "今日 Q1" : "今日 Q2";
+    }
+    var descStruct = document.getElementById("desc-structure");
+    if (descStruct) {
+      descStruct.textContent = oddDay
+        ? "今日主攻 Q1 Shared frames（Opening→Closing）；Q2 鏡亦可開"
+        : "今日主攻 Q2 Shared frames（立場→短結）；Q1 亦可開";
+    }
+
+    var q1w = document.getElementById("link-q1-write");
+    var q2w = document.getElementById("link-q2-write");
+    var writeItem = document.getElementById("daily-write");
+    var writeBadge = document.getElementById("write-badge");
+    var descWrite = document.getElementById("desc-write");
+    var sunTip = document.getElementById("daily-sunday");
+
+    if (isSun) {
+      if (writeItem) writeItem.classList.add("is-today");
+      if (writeBadge) {
+        writeBadge.hidden = false;
+        writeBadge.textContent = "全文 45 分";
+      }
+      if (descWrite) {
+        descWrite.textContent = "日：Q1 或 Q2 全文一篇（45 分）；可用計時頁";
+      }
+      setPrimary(q1w, false);
+      setPrimary(q2w, false);
+      if (sunTip) sunTip.hidden = false;
+      // Sunday primary CTAs → timed drills
+      var links = document.getElementById("write-links");
+      if (links) {
+        links.innerHTML =
+          '<a class="primary" href="q1/#case">Q1 計時全文</a>' +
+          '<a class="primary" href="q2/#drill">Q2 計時全文</a>' +
+          '<a href="q1/#example-measure-pairs">Q1 例子↔措施</a>' +
+          '<a href="q2/#pair-kits">Q2 萬用配搭</a>';
+      }
+    } else {
+      if (writeItem) writeItem.classList.add("is-today");
+      if (writeBadge) {
+        writeBadge.hidden = false;
+        writeBadge.textContent = writeQ1 ? "今日 Q1" : "今日 Q2";
+      }
+      if (descWrite) {
+        descWrite.textContent = writeQ1
+          ? "一三五：Q1 一段 memo（睇 Tips §8 例子↔措施）"
+          : "二四六：Q2 一段理據＋措施（睇萬用配搭）";
+      }
+      setPrimary(q1w, writeQ1);
+      setPrimary(q2w, writeQ2);
+      if (sunTip) sunTip.hidden = true;
+    }
+
+    var state = loadState(now.ymd);
+    KEYS.forEach(function (k) {
+      var box = document.getElementById("chk-" + k);
+      var item = document.querySelector('.daily-item[data-key="' + k + '"]');
+      if (!box) return;
+      box.checked = !!state[k];
+      if (item) item.classList.toggle("is-done", !!state[k]);
+      box.addEventListener("change", function () {
+        state[k] = !!box.checked;
+        saveState(now.ymd, state);
+        if (item) item.classList.toggle("is-done", !!box.checked);
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
