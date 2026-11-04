@@ -2,13 +2,13 @@
   "meta": {
     "title": "Q1 政策溫習卡",
     "title_en": "Policy revision cards",
-    "note": "Bilingual Quizlet deck. Chinese from docs/q2/data/briefs.json; English from prior Q1 policy-cards. No invented stances/figures. Fields: *_zh / *_en (+ EN legacy aliases).",
-    "updated": "2026-11-03",
-    "stamp": "20261103v",
+    "note": "Bilingual Quizlet deck. Chinese from docs/q2/data/briefs.json; English from prior Q1 policy-cards. No invented stances/figures. stance_points_zh copied from briefs.stance_points (zh-only; briefs have no English points).",
+    "updated": "2026-11-04",
+    "stamp": "20261104b",
     "source": "docs/q2/data/briefs.json + docs/q1/data/policy-cards.json",
     "count": 17,
     "bilingual": true,
-    "shape": "prompt_zh/en, pros_zh/en, cons_zh/en, stance_zh/en, measures_zh/en, facts_zh/en; legacy prompt/pros/cons/stance/measures/facts = EN"
+    "shape": "prompt_zh/en, pros_zh/en, cons_zh/en, stance_zh/en, stance_points_zh (optional stance_points_en; legacy stance_points = zh), measures_zh/en, facts_zh/en; legacy prompt/pros/cons/stance/measures/facts = EN"
   },
   "cards": [
     {
@@ -43,6 +43,12 @@
       ],
       "stance_zh": "贊成「加快公營供應，但須梯級化＋配套」",
       "stance_en": "Support faster public supply, but only with a ladder out of transitional units and matching infrastructure.",
+      "stance_points_zh": [
+        "輪候時間仍高：綜合輪候約 4.8 年（目標 2027 年約 4.5 年），屬民生核心。",
+        "未來五年公營房屋產量約 196 000 伙（連簡約公屋），進入「收成期」，應鞏固而非鬆懈。",
+        "持份者：輪候家庭、劏房戶受益；發展商／私人買家需透過土地儲備與招標節奏平衡。",
+        "個別重建已見地區支持：新華富邨第一期公營房屋發展諮詢獲普遍支持，但相關道路工程仍待 2027 年年初刊憲、2028 年中開工，加快供應須綁配套時間表。"
+      ],
       "measures_zh": [
         "按《長遠房屋策略》維持公營優先，同時準備約 2 500 公頃「熟地」土地儲備，靈活調配公私比例。",
         "簡約公屋如期完成約 30 000 伙後，設清晰「轉入傳統公屋／資助出售」階梯，避免永久過渡。",
@@ -172,6 +178,11 @@
       ],
       "stance_zh": "贊成「基層＋精神健康優先，但醫院能力不可砍」",
       "stance_en": "Prioritise primary care + community mental health, without cutting acute hospital capability.",
+      "stance_points_zh": [
+        "施政報告已定調深化醫療改革：預防與治療並重。",
+        "明年起每年約增 220 000 個醫管局家庭醫學門診名額（含約 10 000 個夜診），顯示政策方向。",
+        "精神健康有「十一項措施」（校園三層應急、健心先導伸延至康健中心等），屬高風險民生議題，宜社區先行。"
+      ],
       "measures_zh": [
         "以地區康健中心為樞紐，統一慢病管理與精神健康初篩，並以醫健通銜接病歷與轉介，訂 KPI（轉介時間、覆診流失率）。",
         "醫院側發展綜合日間醫療醫院／日間手術，釋放住院床。",
@@ -292,6 +303,11 @@
       ],
       "stance_zh": "贊成「居家為本、院舍為後援」——與現行政策一致，但須強化照顧者",
       "stance_en": "Support ageing-in-place as the core, with residential care as a backstop — and strengthen carers.",
+      "stance_points_zh": [
+        "65 歲及以上已約佔人口 25%（2025），2046 年或達 36%，需求結構性上升。",
+        "官方原則已是「居家安老為核心，院舍為後援」。",
+        "銀髮消費／產業同時是經濟機遇（60 歲及以上消費開支 2024 約 3,420 億，2034 或約 4,960 億——約數）。"
+      ],
       "measures_zh": [
         "2027-28 社區照顧服務券增至約 18 000、院舍券約 8 000；同步設新鄰里長者中心／日間中心。",
         "提高低收入照顧者生活津貼，試行引入較具護老經驗的外籍家庭傭工／護老訓練。",
@@ -401,6 +417,11 @@
       ],
       "stance_zh": "有條件贊成：補貼須綁培訓、行業及留任 KPI",
       "stance_en": "Conditional support: subsidies must bind training, sector targets and retention KPIs.",
+      "stance_points_zh": [
+        "「三萬青年職位及實習計劃」以職位＋實習＋培訓組合，較單一路徑穩妥。",
+        "「共創明Teen」第五期約 4 000 人、聚焦劏房等弱勢家庭中一至中四，以師友＋個人發展＋財政支援補基層上游，與就業補貼互補。",
+        "青年問題同時涉及住房、技能、大灣區機遇；持份者含畢業生、中小企與納稅人問責。"
+      ],
       "measures_zh": [
         "落實兩年期約 30 000 個職位／實習／培訓；政府承擔部分薪金（以勞工處公布為準），設六個月後留任率指標。",
         "銜接北部都會區／創科職位，推動「實習→全職」轉換；並與「共創明Teen」師友／個人發展路徑對接弱勢在學青年。",
@@ -503,6 +524,11 @@
       ],
       "stance_zh": "贊成「質素為先，但保留多元客源組合」",
       "stance_en": "Support quality-first promotion, while keeping a diversified visitor mix.",
+      "stance_points_zh": [
+        "2025 年訪港約 5 000 萬 人次（約 +12%）；2026 年料約 5 380 萬——復甦期宜提質也要穩量。",
+        "約 20% 海外旅客經港續程內地，凸顯「一程多站」角色。",
+        "文化設施（如西九表演藝術中心）需穩定觀眾與旅客流量才能可持續。"
+      ],
       "measures_zh": [
         "與粵澳推「一程多站」產品；強化機場／郵輪入境的過夜套票。",
         "盛事＋票尾經濟＋特色餐飲／非遺體驗，拉高非購物消費。",
@@ -602,6 +628,11 @@
       ],
       "stance_zh": "贊成「自願、可逆、有質素保證的跨境選項」，反對作為唯一主軸",
       "stance_en": "Support voluntary, reversible, quality-assured cross-boundary options — not as the sole pillar.",
+      "stance_points_zh": [
+        "本港安老責任不能外判；跨境是補充。",
+        "醫療券已在灣區多個服務點使用，屬可擴大的務實工具。",
+        "須同步處理港人在粵社保、住屋、護老質素監管。"
+      ],
       "measures_zh": [
         "擴大認可醫療機構名單＋明確急症轉介及投訴機制。",
         "「試住／短住」安老體驗計劃，強調可隨時回港輪候資格不受損。",
@@ -702,6 +733,11 @@
       ],
       "stance_zh": "贊成「北都為主引擎，全港網絡配套不撤」",
       "stance_en": "Support Northern Metropolis as the main engine, without withdrawing the city-wide network.",
+      "stance_points_zh": [
+        "北都面積／規劃人口約佔全港約三分之一；屬國家戰略級項目。",
+        "河套香港園區經濟貢獻完全建成後或達每年約 520 億（政府估計）；新田科技城更有更高長遠產值估算——宜作「潛力」而非保證。",
+        "需大學城、人才住房、跨境要素流動同步，否則只是「起樓」。"
+      ],
       "measures_zh": [
         "河套做上游研發／臨床試驗；新田做中試與先進製造；洪水橋等做多元產業——清晰功能分工。",
         "保留市區校園／InnoHK／數碼港等節點，並用公營機構試用／智慧政府創新實驗室作早期採用通道，再以交通及數據連接北都。",
@@ -829,6 +865,11 @@
       ],
       "stance_zh": "贊成「收費作後備工具；先達回收基建與減廢習慣，再分階段重啟」",
       "stance_en": "Treat charging as a backstop; first deliver recovery infrastructure and habits, then phase a restart.",
+      "stance_points_zh": [
+        "當局表明收費是暫停非取消，屬「必要時可啟用」工具。",
+        "回收進度：都市固體廢物回收率由 2021 約 31% 升至 2024 約 34%；廚餘回收 2024 約 202 萬公噸——顯示基建／習慣有進，但仍距藍圖中期約 55%。",
+        "藍圖中期目標：人均棄置降 40–45%、回收率約 55%——需組合拳（收費後備＋回收＋源頭減廢）而非單一收費。"
+      ],
       "measures_zh": [
         "先達「一屋邨一廚餘桶」、智能回收箱約 3 000 套、廚餘智能桶約 2 500 等網絡；對齊全民計碳／《氣候行動藍圖 2050》宣傳口徑。",
         "工商處先行收費試點，住宅後行；輔以回收積分。",
@@ -943,6 +984,11 @@
       ],
       "stance_zh": "反對「獎金為主」；贊成「獎金為輔＋託兒／住屋／醫療生育支援為主」",
       "stance_en": "Oppose bonus-first; support bonus as a supplement with childcare / housing / reproductive healthcare as the core.",
+      "stance_points_zh": [
+        "總和生育率遠低於更替水平（近年約 0.8–0.9，約數），屬結構問題。",
+        "2026 施政報告「十一項促進生育措施」已含獎金、稅、印花稅、按揭、IVF、託兒、課後託管——應整套推進。",
+        "持份者：育齡夫婦、僱主、託兒服務提供者。"
+      ],
       "measures_zh": [
         "新生嬰兒獎金延續；第二胎或以上獎金提高至 3 萬（有時限）——作補充而非唯一。",
         "常規化「校本課後託管」不設名額；增設獨立幼兒中心，2030 年底前約增 1 800 託兒名額。",
@@ -1039,6 +1085,11 @@
       ],
       "stance_zh": "贊成「立法設行業專屬保障底線」，但未必一步到位全面僱員化",
       "stance_en": "Support sector-specific statutory floors — not necessarily one-step full employee status.",
+      "stance_points_zh": [
+        "2026 施政報告已提出為配送員制定新法例——方向正確。",
+        "可參考外地「第三者範疇」：最低收入、意外保險、拒單權、算法透明度。",
+        "同時打擊非法勞工，避免合規平台被不公平競爭。"
+      ],
       "measures_zh": [
         "立法：強制平台買足夠意外保險、設立爭議調解、高溫／暴雨停工指引。",
         "允許「選擇性轉僱員」通道（做滿時數／表現可轉）。",
@@ -1126,6 +1177,11 @@
       ],
       "stance_zh": "贊成「新一輪公共空間優化，但須管理＋監察並行」",
       "stance_en": "Support a new upgrade round — but only with management and monitoring in parallel.",
+      "stance_points_zh": [
+        "需求上升屬實：高密度區新增約1.6公頃公園（如海帆道公園）具指標意義。",
+        "短期活化（如紅磡海濱逾半作公眾休憩）可填補長遠規劃真空，但要守暢達與透明度。",
+        "問題核心多在管理（開放、預訂、寵物規管、安全），唔單係「有冇地」。"
+      ],
       "measures_zh": [
         "加快「熟地／閒置用地」轉為公眾休憩：複製海帆道公園模式（康樂＋共融＋寵物共享），並公布分區休憩供應差距。",
         "海濱／碼頭短期活化設硬性條款：逾半面積公眾免費暢達、開放時間與投訴處理公開；技術標權重高於租金（參考紅磡雙信封制）。",
@@ -1217,6 +1273,11 @@
       ],
       "stance_zh": "贊成「資助與落地考核捆綁，惟須分階段、可操作」",
       "stance_en": "Support bundling funding with delivery checks — staged and workable.",
+      "stance_points_zh": [
+        "已有新型工業化資助計劃（2024-09）及新型工業加速計劃，政策工具並非空白。",
+        "問題核心是落地：場景驗證、資助成效、人才留港如何量度，而非再堆疊口號。",
+        "考核宜試點先行、指標清晰，避免一刀切嚇退中小申請者。"
+      ],
       "measures_zh": [
         "分階段：先在選定應用場景（如先進製造／醫療器械原型）要求最低場景驗證，再擴大至一般項目。",
         "設定可核實 KPI：項目里程碑達成率、本地就業／研發崗位、及留港關鍵人才比例；未達標則調整後期撥款。",
@@ -1321,6 +1382,11 @@
       ],
       "stance_zh": "贊成「高峰應變制度化＋清晰主責與暢順 KPI」，惟保留現場彈性",
       "stance_en": "Support institutionalised peak response with clear leads and smoothness KPIs — keep on-site flexibility.",
+      "stance_points_zh": [
+        "皇崗口岸曾就萬聖節人流啟動跨部門高峰應變，顯示高峰壓力真實存在。",
+        "政務司長統籌、保安局與運輸及物流局參與，反映短期執行牽涉治安與運輸雙線。",
+        "北都與跨境日常化下，偶發動員不足，需要可重複使用的指揮與指標框架。"
+      ],
       "measures_zh": [
         "訂立口岸高峰應變標準作業：觸發條件、指揮鏈、現場授權；政務司長層級作跨局統籌，日常執行由保安局／運物局按職能分工。",
         "公布「暢順」KPI：口岸輪候時間分位、公共交通疏導準點／載客、緊急事故回應時限；高峰後 72 小時內發布簡報。",
@@ -1416,6 +1482,11 @@
       ],
       "stance_zh": "贊成「收地節奏對齊基建節點＋跨部門協調＋補償成效可量度」，反對只靠藍圖口號",
       "stance_en": "Support resumption tempo tied to infra nodes + cross-bureau coordination + measurable compensation outcomes — not blueprint slogans alone.",
+      "stance_points_zh": [
+        "河套東面連接道路屬對接河套／北都的關鍵配套；當局公布收回私人土地 112 幅、約 5.7 公頃，收地與道路落地直接影響「熟地」能否按期供應。",
+        "北都涉及規劃、地政、運輸、創科等多線，缺清晰協調則易「有政策、缺落地」。",
+        "受影響居民與企業的補償／安置進度，應納入公開里程碑（公告後約 3 個月復歸政府），而非事後補救。"
+      ],
       "measures_zh": [
         "按基建節點（如河套東連關鍵路段）公布分階段收地時間表與「熟地」交地目標，並標明主責部門。",
         "設跨部門協調機制（地政／運輸／相關政策局），訂觸發升級條件，避免互等；季度公開進度簡報。",
@@ -1513,6 +1584,11 @@
       ],
       "stance_zh": "贊成「擴張稅務網絡＋強化 GoGBA 落地服務」，惟須配對、跟進與成效指標",
       "stance_en": "Support expanding the tax network + strengthening GoGBA delivery services — with matching, follow-up and outcome KPIs.",
+      "stance_points_zh": [
+        "港老全面性避免雙重課稅協定（股息預扣稅上限 10%、特許權使用費 5%）屬稅務網絡擴張的具體一步，對「走出去」企業有降低雙重課稅不確定性的實利。",
+        "GoGBA 發展日對接國家「十五五」與《香港第一個五年規劃》；平台宜由資訊彙集走向場景對接與個案跟進。",
+        "衡量成效應用企業實際使用、配對成功與跟進完成率，而非只數簽訂協定宗數。"
+      ],
       "measures_zh": [
         "持續擴張全面性避免雙重課稅協定網絡，並公布對重點行業（製造、專業服務、基建）的稅務影響說明（以當局最新文本為準）。",
         "強化 GoGBA：由資訊門戶升級為「政策解讀＋對接＋跟進」；設灣區場景與「走出去」兩條清晰路徑。",
@@ -1612,6 +1688,11 @@
       ],
       "stance_zh": "有條件贊成推進 24x7 代幣化央行貨幣結算，惟須與 RTGS 銜接並設試行門檻",
       "stance_en": "Conditional support for advancing 24×7 tokenised CB-money settlement — with RTGS linkage and pilot gates.",
+      "stance_points_zh": [
+        "2026-11-02 金管局宣布 Ensemble 試行階段 EnsembleTX 以代幣化央行貨幣支持銀行間代幣化存款的 24x7 結算。",
+        "參與規模已至銀行 12 間、業界先行者 20 間；宜在此規模上檢討，而非立即取代傳統結算。",
+        "金管局表明將與證監會深化合作，推動代幣化金融生態及相關市場基建。"
+      ],
       "measures_zh": [
         "由金管局主責、證監會協同，公布 EnsembleTX 與港元即時支付結算系統的銜接安排，避免雙軌碎片化。",
         "以現時 12 間參與銀行、20 間業界先行者為試行邊界，公開檢討已出現用例（企業財資管理、代幣化貨幣市場基金）的結算表現，達標才擴大參與或用例。",
@@ -1708,6 +1789,11 @@
       ],
       "stance_zh": "有條件贊成加快公共服務 AI 試點，但反對倫理、私隱與問責未齊備下全面鋪開",
       "stance_en": "Conditional support for faster public-service AI pilots — oppose full rollout before ethics, privacy and accountability are ready.",
+      "stance_points_zh": [
+        "2026 施政報告：「AI效能提升組」至今約 30 個項目；並提出「AI城市大腦」及風險管治策略。",
+        "數字政策辦公室／智方便：2026-10 推出 AI 助手，年底擬推加強版個人化服務。",
+        "金融側已有金管局「ART」負責任 AI 框架可作跨界參考，顯示「應用」與「管治」應並行。"
+      ],
       "measures_zh": [
         "由數字政策辦公室統籌，選定高頻查詢／非終局決定場景（如智方便導航、1823 重複問題識別）擴大試點，所有對外 AI 須標明來源並設人工升級通道。",
         "把倫理風險評估、數據最小必要、保安合規聲明列為政府採購／上線門檻；「AI城市大腦」首階段限應急與城市管理用例，公開數據共享範圍與問責部門。",

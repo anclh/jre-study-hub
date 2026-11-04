@@ -5,10 +5,12 @@
  * Card shape (bilingual):
  *   id, n, title_zh, title_en,
  *   prompt_zh, prompt_en, stance_zh, stance_en,
+ *   stance_points_zh[], stance_points_en[] (optional),
  *   pros_zh[], pros_en[], cons_zh[], cons_en[],
  *   measures_zh[], measures_en[],
  *   facts_zh[{text,url?}], facts_en[{text,url?}]
  * Legacy EN aliases (prompt/pros/cons/stance/measures/facts) also accepted.
+ * Legacy stance_points[] is the Chinese fallback when stance_points_zh is absent.
  *
  * Usage:
  *   const ctl = JrePolicyFlash.create({ getCards: () => cards });
@@ -56,6 +58,30 @@
   function factText(f) {
     if (!f) return "";
     return typeof f === "string" ? f : f.text || "";
+  }
+
+  function stancePointArrays(card) {
+    const zh = Array.isArray(card.stance_points_zh)
+      ? card.stance_points_zh
+      : Array.isArray(card.stance_points)
+        ? card.stance_points
+        : [];
+    const en = Array.isArray(card.stance_points_en) ? card.stance_points_en : [];
+    return { zh, en };
+  }
+
+  function renderStancePoints(card) {
+    const { zh, en } = stancePointArrays(card);
+    const lines = zipLines(zh, en, Math.max(zh.length, en.length));
+    if (!lines.length) return "";
+    return `<ol class="jre-pf-stance-points">${lines
+      .map((l) => {
+        const showEn = Boolean(l.zh && l.en);
+        return `<li class="jre-pf-bilingual-line"><span class="zh">${esc(l.zh || l.en)}</span>${
+          showEn ? `<span class="en">${esc(l.en)}</span>` : ""
+        }</li>`;
+      })
+      .join("")}</ol>`;
   }
 
   function ensureOverlay() {
@@ -158,6 +184,7 @@
           <div class="label">建議立場 · Stance</div>
           <div class="zh">${esc(stance.zh || stance.en)}</div>
           ${stance.zh && stance.en ? `<div class="en">${esc(stance.en)}</div>` : ""}
+          ${renderStancePoints(card)}
         </div>`;
     }
 
@@ -216,6 +243,7 @@
           <p class="jre-pf-bilingual-line"><span class="zh">${esc(stance.zh || stance.en)}</span>${
             stance.zh && stance.en ? `<span class="en">${esc(stance.en)}</span>` : ""
           }</p>
+          ${renderStancePoints(card)}
         </div>
         <div class="jre-pf-sec">
           <h4>措施 · Measures</h4>

@@ -6,7 +6,7 @@
 (() => {
   "use strict";
 
-  const STAMP = "20261103w";
+  const STAMP = "20261104b";
   const DATA_URL = "../q1/data/policy-cards.json?v=" + STAMP;
   const OPEN_HASHES = ["flash", "bank-study", "flashcards"];
 
@@ -47,6 +47,12 @@
       card.stance,
       card.stance_zh,
       card.stance_en,
+      ...(Array.isArray(card.stance_points_zh)
+        ? card.stance_points_zh
+        : Array.isArray(card.stance_points)
+          ? card.stance_points
+          : []),
+      ...(Array.isArray(card.stance_points_en) ? card.stance_points_en : []),
       ...(card.pros || []),
       ...(card.pros_zh || []),
       ...(card.pros_en || []),
@@ -170,6 +176,14 @@
 
       const stanceZh = card.stance_zh || card.stance || "";
       const stanceEn = card.stance_en || card.stance || "";
+      const pointZh = Array.isArray(card.stance_points_zh)
+        ? card.stance_points_zh
+        : Array.isArray(card.stance_points)
+          ? card.stance_points
+          : [];
+      const pointEn = Array.isArray(card.stance_points_en) ? card.stance_points_en : [];
+      const pointsBlock =
+        pointZh.length || pointEn.length ? bilingualBlock(pointZh, pointEn, true, true) : "";
 
       el.innerHTML = `
         <div class="brief-summary-row">
@@ -205,6 +219,7 @@
           <div class="brief-section stance">
             <h4>建議立場 · Stance</h4>
             ${bilingualBlock(stanceZh, stanceEn, false, false)}
+            ${pointsBlock}
           </div>
           <div class="brief-section">
             <h4>措施 · Measures</h4>

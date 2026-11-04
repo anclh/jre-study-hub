@@ -276,6 +276,22 @@
 .jre-pf-stance-front .zh { font-size: 0.92rem; font-weight: 750; line-height: 1.35; }
 .jre-pf-stance-front .en { margin-top: 4px; font-size: 0.78rem; color: var(--pf-muted, var(--muted)); line-height: 1.35; }
 
+.jre-pf-stance-points {
+  margin: 8px 0 0;
+  padding-left: 1.15rem;
+}
+.jre-pf-stance-front .jre-pf-stance-points .zh {
+  font-size: 0.78rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+.jre-pf-stance-front .jre-pf-stance-points .en {
+  margin-top: 1px;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+.jre-pf-sec .jre-pf-stance-points { margin-top: 6px; }
+
 .jre-pf-sec { margin: 0; }
 .jre-pf-sec h4 {
   margin: 0 0 4px;
