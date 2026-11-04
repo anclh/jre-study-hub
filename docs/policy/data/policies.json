@@ -3,7 +3,7 @@
     "title": "JRE Policy Bank",
     "title_zh": "JRE 政策資料庫",
     "description": "Interview-oriented current affairs bank sourced from public HK government and LegCo materials. Not affiliated with CS Radar.",
-    "updated": "2026-11-03",
+    "updated": "2026-11-04",
     "sources_note": "All items link to public info.gov.hk / policyaddress.gov.hk releases. Summaries and interview angles are original editorial notes for interview practice."
   },
   "departments": [
@@ -231,6 +231,71 @@
     }
   ],
   "items": [
+    {
+      "id": "20261103-300550",
+      "date": "2026-11-03",
+      "title": "QS亞洲大學排名表現卓越 世界頂尖大學校長論壇接續登場 香港高等教育輝映國際舞台",
+      "departments": [
+        "edb"
+      ],
+      "themes": [
+        "education",
+        "northern-metropolis",
+        "national-development"
+      ],
+      "summary": "教育局回應2027年QS亞洲大學排名：香港五間大學入亞洲十強，三間入亞洲五強（港大第1、城大第4、中大第5）；八間排名上升，十一間獲評級大學全數入亞洲五百強。局方指成績反映資源投入，並連結翌日世界頂尖大學校長論壇及北都大學城、吸引國際科研人才等政策。面試宜問樞紐地位如何轉成學額、研究產出與產業連結。",
+      "interview_angles": [
+        "五校入亞洲十強、三校入五強的佳績，如何轉化為非本地生質素、研究經費與產業研發落地？",
+        "北都大學城與吸引國際科研人才的時間表、用地與學額指標應如何設定及考核？",
+        "排名依賴聲譽與國際化指標，政府如何避免「追排名」而忽略本地人才培養與可負擔學費？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/03/P2026110300550.htm",
+      "source_name": "info.gov.hk 新聞公報"
+    },
+    {
+      "id": "20261103-300369",
+      "date": "2026-11-03",
+      "title": "金管局舉辦第五屆國際金融領袖投資峰會",
+      "departments": [
+        "hkma"
+      ],
+      "themes": [
+        "finance",
+        "innovation"
+      ],
+      "summary": "金管局舉辦第五屆國際金融領袖投資峰會主峰會，主題「思變圖新 開拓新局」；約280位國際金融領袖出席，當中約120位為集團主席／行政總裁，國務院副總理何立峰視像開幕。峰會連續五年，並以金管局、證監會與金融學院合辦「與國際投資者對話」作結。面試宜把活動數字對接國際金融中心吸引力與落地成果，而非禮賓表述。",
+      "interview_angles": [
+        "連續五年峰會對鞏固香港國際金融中心地位有何可量度指標（資金流入、機構落戶、市場成交）？",
+        "約120位主席／行政總裁級出席，如何轉化為具體投資或業務擴張，而非一次性曝光？",
+        "金管局、證監會與金融學院合辦投資者對話，應如何跟進監管可預期性與市場開放議題？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/03/P2026110300369.htm",
+      "source_name": "info.gov.hk 新聞公報"
+    },
+    {
+      "id": "20261103-200483",
+      "date": "2026-11-03",
+      "title": "行政長官在2026粵港澳大灣區全球招商大會致辭",
+      "departments": [
+        "ceo",
+        "investHK",
+        "cedb"
+      ],
+      "themes": [
+        "national-development",
+        "northern-metropolis",
+        "finance",
+        "innovation"
+      ],
+      "summary": "行政長官在2026粵港澳大灣區全球招商大會視像致辭：三地政府第五年合辦；指大灣區佔全國面積不足0.6%卻創造約全國九分之一經濟總量。強調《香港第一個五年規劃》對接「十五五」、硬聯通／軟聯通／心聯通，以及前海、南沙、河套與北部都會區（佔港面積約三分之一）。內地企業出海專班已協助超過360家內地企業在港設立或擴展。面試宜抓可驗證招商與平台指標。",
+      "interview_angles": [
+        "出海專班逾360家企業之外，招攬重點企業落戶的優惠政策包成效應用什麼KPI衡量？",
+        "硬聯通／軟聯通／心聯通中，人流物流資金流數據流哪一項短期瓶頸最大？哪個局主責？",
+        "北都佔港約三分一面積，大學城與創科產業「熟地」供應如何對接大灣區招商承諾的時間表？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/03/P2026110200483.htm",
+      "source_name": "info.gov.hk 新聞公報"
+    },
     {
       "id": "20261102-200583",
       "date": "2026-11-02",
