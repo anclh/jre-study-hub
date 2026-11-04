@@ -293,6 +293,33 @@
       "zh": "只要主責清晰、檢討到位，……即可見效；否則拖延成本只會更大。",
       "note": "條件式短結：到位則成／否則代價上升",
       "example": "只要主責清晰、檢討到位，口岸高峰暢順KPI即可見效；否則拖延成本只會更大。"
+    },
+    {
+      "id": "pos-05",
+      "category": "position",
+      "paper": "q2",
+      "en": "I support … provided that risks are mitigated through …; otherwise I would oppose a blanket rollout.",
+      "zh": "本人贊成……，惟須以……緩解風險；否則本人反對一刀切全面推開。",
+      "note": "贊成＋風險緩解門檻／否則反對全面推開",
+      "example": "本人贊成擴大社區藥房配對，惟須以藥師輔導與藥物依從監察緩解風險；否則本人反對一刀切全面推開。"
+    },
+    {
+      "id": "bal-06",
+      "category": "balance",
+      "paper": "q2",
+      "en": "The measure should be proportionate to … and reversible if mid-term indicators are not met.",
+      "zh": "措施宜與……相稱，若中期指標未達則應可回退調整。",
+      "note": "相稱性＋可回退（套入建議段）",
+      "example": "措施宜與地區用藥需求相稱，若中期配對成功率未達則應可回退調整。"
+    },
+    {
+      "id": "rec-07",
+      "category": "recommend",
+      "paper": "q2",
+      "en": "Publish an open dashboard of … within six months, with a named bureau owner and a public review after the first year.",
+      "zh": "宜於六個月內公布……公開儀表板，訂明主責局署，並於首年後公開檢討。",
+      "note": "公開儀表板＋主責＋首年檢討",
+      "example": "宜於六個月內公布社區藥房配對成功率公開儀表板，訂明醫務衛生局主責，並於首年後公開檢討。"
     }
   ]
 }
