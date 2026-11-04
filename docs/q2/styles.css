@@ -244,6 +244,7 @@ textarea {
 .brief-scan {
   display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px;
 }
+.brief-card.open .brief-scan { display: none; }
 .brief-scan h4 {
   margin: 0 0 4px; font-size: 11px; letter-spacing: 0.02em; color: var(--accent);
 }
@@ -273,9 +274,17 @@ textarea {
 .brief-section h4 {
   margin: 0 0 6px; font-size: 12px; color: var(--accent); letter-spacing: 0.02em;
 }
-.brief-section.pros h4 { color: #047857; }
-.brief-section.cons h4 { color: var(--warn); }
+.brief-section.arguments h4 { color: #047857; }
+.brief-section.rebuttal h4 { color: var(--warn); }
 .brief-section.stance h4 { color: #1d4ed8; }
+.brief-section.recommend h4 { color: var(--accent); }
+.brief-section.close h4 { color: var(--text); }
+.brief-sub {
+  margin: 10px 0 4px; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.02em; color: var(--muted);
+}
+.brief-section > .brief-sub:first-child { margin-top: 0; }
+.brief-rebuttal, .brief-closing { margin: 0; font-size: 13px; line-height: 1.55; }
 .brief-prompt {
   margin: 0; padding: 10px 12px; background: #f8fafc;
   border: 1px solid var(--line); border-radius: 10px; font-size: 13px;
@@ -423,16 +432,17 @@ textarea {
     radial-gradient(900px 400px at 10% -10%, #d9f2e8 0%, transparent 55%),
     var(--bg);
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .flash-overlay[hidden] { display: none !important; }
-.flash-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.flash-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; flex: 0 0 auto; }
 .flash-progress { font-weight: 800; font-variant-numeric: tabular-nums; }
 .flash-score { margin-left: auto; color: var(--muted); font-size: 12px; }
 .flash-card {
   display: block;
   flex: 1 1 auto;
   width: 100%;
-  min-height: 240px;
+  min-height: 0;
   max-width: 720px;
   margin: 0 auto;
   text-align: left;
@@ -445,6 +455,11 @@ textarea {
   background: #fff;
   box-shadow: var(--shadow);
   padding: 18px 18px 16px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .flash-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .flash-face { display: block; }
@@ -465,8 +480,10 @@ textarea {
 .flash-block h3 { margin: 0 0 4px; font-size: 13px; color: var(--accent); }
 .flash-block h3 span { font-weight: 600; color: var(--muted); font-size: 11px; }
 .flash-block ul { margin: 0; padding-left: 1.15em; }
-.flash-block li { margin: 3px 0; font-size: 13px; line-height: 1.4; }
-.flash-hint { margin: 0; text-align: center; color: var(--muted); font-size: 12px; }
+.flash-block .flash-stance + ul { margin-top: 6px; }
+.flash-block li { margin: 3px 0; font-size: 13px; line-height: 1.45; overflow-wrap: anywhere; word-break: break-word; }
+.flash-block a { font-size: 12px; font-weight: 600; overflow-wrap: anywhere; }
+.flash-hint { margin: 0; text-align: center; color: var(--muted); font-size: 12px; flex: 0 0 auto; }
 .flash-nav {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -474,6 +491,7 @@ textarea {
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
+  flex: 0 0 auto;
 }
 .flash-nav .btn { min-height: 48px; font-size: 15px; }
 .flash-nav .btn:disabled { opacity: 0.45; cursor: default; }
@@ -481,6 +499,6 @@ textarea {
 .flash-nav .btn.is-off { background: #fff3cd; border-color: #f59e0b; }
 @media (max-width: 640px) {
   .flash-nav { grid-template-columns: 1fr 1fr; }
-  .flash-card { min-height: 280px; }
+  .flash-card { min-height: 0; }
   .flash-face h2 { font-size: 20px; }
 }
