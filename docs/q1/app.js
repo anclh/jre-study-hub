@@ -436,7 +436,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261104c", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261104e", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {
@@ -591,7 +591,7 @@
     if (!lists.length) return;
     const src = root.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261104c", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261104e", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
@@ -661,6 +661,7 @@
       "phrase-tools": "structure",
       starters: "structure",
       "answer-frame": "structure",
+      "timed-df": "structure",
       "stage-opening": "structure",
       "stage-problem": "structure",
       "stage-options": "structure",

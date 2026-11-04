@@ -403,9 +403,20 @@ body:has(#panel-case.active) #panel-case > .card:nth-child(2) p { font-size: 12p
 #shared-frames {
   scroll-margin-top: calc(var(--hub-tab-h, 56px) + 72px);
 }
-#phrases, #phrase-tools, #answer-frame {
+#phrases, #phrase-tools, #answer-frame, #timed-df {
   scroll-margin-top: calc(var(--hub-tab-h, 56px) + 72px);
 }
+.timed-df-block {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.timed-df-block h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--text);
+}
+.timed-df-block .lede { margin-bottom: 8px; }
 #phrase-tools h2 { margin-bottom: 4px; }
 
 /* —— Answer frame skeleton overview —— */
