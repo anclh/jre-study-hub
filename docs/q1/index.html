@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>JRE English Q1 · Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261104e" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261104e" />
+  <link rel="stylesheet" href="styles.css?v=20261104f" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261104f" />
 </head>
 <body>
   <header class="app-header">
@@ -110,10 +110,15 @@
           </div>
           <span class="count" id="q1Count">—</span>
         </div>
-        <p class="muted" style="margin:0 0 6px;font-size:12px">卷別：預設＝Q1＋常用＋未標（唔見純 Q2）。點「全部」先見純 Q2。</p>
-        <div class="filters" id="q1PaperFilters" aria-label="卷別篩選" style="margin-bottom:8px"></div>
-        <p class="muted" style="margin:0 0 6px;font-size:12px">Stage：對應下面 Opening→Closing 五段。</p>
-        <div class="filters" id="q1Filters" aria-label="Stage 篩選"></div>
+        <p class="muted" style="margin:0 0 8px;font-size:12px">卷別：預設＝Q1＋常用＋未標（唔見純 Q2）。揀「全部」先見純 Q2。Stage 對應下面 Opening→Closing 五段。</p>
+        <div class="filter-selects" role="group" aria-label="句式篩選">
+          <label class="select-wrap" for="q1PaperSelect">卷別
+            <select id="q1PaperSelect" aria-label="卷別篩選"></select>
+          </label>
+          <label class="select-wrap" for="q1StageSelect">Stage
+            <select id="q1StageSelect" aria-label="Stage 篩選"></select>
+          </label>
+        </div>
         <p class="muted" id="q1Disclaimer" style="margin-top:10px"></p>
       </div>
 
@@ -302,15 +307,15 @@
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-    <script src="data/heat-island.js?v=20261104e"></script>
-  <script src="data/mental-health.js?v=20261104e"></script>
-  <script src="data/sme-digital.js?v=20261104e"></script>
-  <script src="data/elderly-care.js?v=20261104e"></script>
-  <script src="data/new-industrial.js?v=20261104e"></script>
-  <script src="data/border-resilience.js?v=20261104e"></script>
-  <script src="data/loop-link-resumption.js?v=20261104e"></script>
-  <script src="data/waste-recovery-2026-11-02.js?v=20261104e"></script>
-  <script src="app.js?v=20261104e"></script>
-  <script src="../shell/tabbar.js?v=20261104e"></script>
+    <script src="data/heat-island.js?v=20261104f"></script>
+  <script src="data/mental-health.js?v=20261104f"></script>
+  <script src="data/sme-digital.js?v=20261104f"></script>
+  <script src="data/elderly-care.js?v=20261104f"></script>
+  <script src="data/new-industrial.js?v=20261104f"></script>
+  <script src="data/border-resilience.js?v=20261104f"></script>
+  <script src="data/loop-link-resumption.js?v=20261104f"></script>
+  <script src="data/waste-recovery-2026-11-02.js?v=20261104f"></script>
+  <script src="app.js?v=20261104f"></script>
+  <script src="../shell/tabbar.js?v=20261104f"></script>
 </body>
 </html>

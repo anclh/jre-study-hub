@@ -347,6 +347,18 @@ body:has(#panel-case.active) #panel-case > .card:nth-child(2) p { font-size: 12p
   border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px;
   min-width: min(100%, 280px); max-width: 100%;
 }
+.filter-selects {
+  display: flex; flex-wrap: wrap; gap: 10px 14px;
+  margin-bottom: 4px;
+}
+.filter-selects .select-wrap {
+  flex: 1 1 160px;
+  min-width: min(100%, 160px);
+}
+.filter-selects .select-wrap select {
+  min-width: 0;
+  width: 100%;
+}
 
 .must-use { margin-bottom: 14px; border-color: color-mix(in srgb, var(--accent, #2563eb) 35%, var(--line)); }
 .must-use h2 { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 6px; font-size: 16px; }

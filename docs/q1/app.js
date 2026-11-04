@@ -35,7 +35,7 @@
 
   const state = {
     q1: { disclaimer: "", categories: [], items: [] },
-    // Stage filter for phrase chips (not fine-grained category)
+    // Stage filter for phrase dropdown (not fine-grained category)
     stage: "all",
     // hub = q1 + common + untagged; pure q2 only under「全部」
     paper: "hub",
@@ -63,37 +63,44 @@
       .replace(/"/g, "&quot;");
   }
 
-  const STAGE_CHIPS = [
-    { id: "all", label: "全部" },
+  const STAGE_OPTS = [
+    { id: "all", label: "全部（五段）" },
     { id: "opening", label: "Opening" },
-    { id: "problem", label: "Problem" },
-    { id: "options", label: "Options" },
-    { id: "recommendation", label: "Rec" },
-    { id: "closing", label: "Closing" },
+    { id: "problem", label: "Problem analysis" },
+    { id: "options", label: "Option comparison" },
+    { id: "recommendation", label: "Recommendation" },
+    { id: "closing", label: "Closing + other" },
   ];
 
-  function renderFilters() {
-    const wrap = $("#q1Filters");
-    if (!wrap) return;
-    wrap.innerHTML = STAGE_CHIPS.map(
-      (c) =>
-        `<button type="button" data-stage="${c.id}" class="${state.stage === c.id ? "active" : ""}">${c.label}</button>`
-    ).join("");
-    $$("button", wrap).forEach((btn) => {
-      btn.addEventListener("click", () => {
-        state.stage = btn.dataset.stage;
-        renderFilters();
-        renderPhrases();
-      });
-    });
-  }
-
-  const PAPER_CHIPS = [
-    { id: "hub", label: "預設" },
-    { id: "all", label: "全部" },
+  const PAPER_OPTS = [
+    { id: "hub", label: "預設（Q1＋常用）" },
+    { id: "all", label: "全部（含 Q2）" },
     { id: "q1", label: "Q1" },
     { id: "common", label: "常用" },
   ];
+
+  function fillSelect(sel, opts, value) {
+    if (!sel) return;
+    sel.innerHTML = opts
+      .map(
+        (o) =>
+          `<option value="${o.id}"${o.id === value ? " selected" : ""}>${o.label}</option>`
+      )
+      .join("");
+  }
+
+  function renderFilters() {
+    const sel = $("#q1StageSelect");
+    if (!sel) return;
+    fillSelect(sel, STAGE_OPTS, state.stage);
+    if (!sel.dataset.bound) {
+      sel.dataset.bound = "1";
+      sel.addEventListener("change", () => {
+        state.stage = sel.value || "all";
+        renderPhrases();
+      });
+    }
+  }
 
   function matchesPaper(item, filter) {
     const p = item.paper || "";
@@ -111,19 +118,16 @@
   }
 
   function renderPaperFilters() {
-    const wrap = $("#q1PaperFilters");
-    if (!wrap) return;
-    wrap.innerHTML = PAPER_CHIPS.map(
-      (c) =>
-        `<button type="button" data-paper="${c.id}" class="${state.paper === c.id ? "active" : ""}">${c.label}</button>`
-    ).join("");
-    $$("button", wrap).forEach((btn) => {
-      btn.addEventListener("click", () => {
-        state.paper = btn.dataset.paper;
-        renderPaperFilters();
+    const sel = $("#q1PaperSelect");
+    if (!sel) return;
+    fillSelect(sel, PAPER_OPTS, state.paper);
+    if (!sel.dataset.bound) {
+      sel.dataset.bound = "1";
+      sel.addEventListener("change", () => {
+        state.paper = sel.value || "hub";
         renderPhrases();
       });
-    });
+    }
   }
 
   function phraseHTML(item) {
@@ -186,7 +190,7 @@
       byStage[st].push(item);
     });
 
-    // Show only the selected stage card when a stage chip is active
+    // Show only the selected stage card when a stage filter is active
     $$(".stage-block").forEach((block) => {
       const st = block.getAttribute("data-stage") || "";
       if (state.stage === "all") {
@@ -436,7 +440,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261104e", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261104f", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {
@@ -591,7 +595,7 @@
     if (!lists.length) return;
     const src = root.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261104e", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261104f", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
