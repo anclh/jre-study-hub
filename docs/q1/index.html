@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>JRE English Q1 · Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261104f" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261104f" />
+  <link rel="stylesheet" href="styles.css?v=20261104g" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261104g" />
 </head>
 <body>
   <header class="app-header">
@@ -35,9 +35,10 @@
 
       <div class="card" id="answer-frame">
         <h2>Answer frame <span class="chip">Fixed skeleton</span></h2>
+        <p class="lede official-core"><strong>Official core：</strong>考政策分析與權衡，唔係考閱讀理解或英文寫作；Paraphrasing background scores nothing。</p>
         <p class="lede">下面五段跟呢個序。適用房屋、長者、勞工、環境、交通、醫療等——只換例子同措施。</p>
         <ul class="bullet-list warn-list">
-          <li>全卷 Data File 理想 <strong>&lt; ~15 min</strong>；唔好逐份 document 由頭讀到尾。→ <a href="#timed-df">Timed DF drill</a></li>
+          <li>全卷 Data File 理想 <strong>&lt; ~15 min</strong>；唔好逐份 document 由頭讀到尾。→ <a href="#timed-df">15–20 min 四步</a></li>
           <li><strong>Never copy</strong> 長段 background（paraphrase of background <strong>scores nothing</strong>）。</li>
         </ul>
         <ol class="frame-skeleton">
@@ -69,18 +70,54 @@
         </ol>
 
         <div class="timed-df-block" id="timed-df">
-          <h3>Timed Data File drill <span class="chip">15 min</span></h3>
-          <p class="lede">計時練習：掃讀 → 五步大綱（唔寫全文）。對齊上面 Fixed skeleton 五段。</p>
-          <ol class="frame-steps">
-            <li>
-              <strong>0–5 min · Sort &amp; Highlight</strong>
-              掃讀 Doc A–D。分出 Support / Oppose / Neutral data / Risk。只標可引用數字同持份者觀點。同 Problem 1、Problem 2、Recommendation 無關嘅資料直接 drop。
-            </li>
-            <li>
-              <strong>5–15 min · 5-Step Outline Only</strong>
-              用 bullet 寫五步大綱（唔寫全文）。目標嵌入至少 4 個 <code>q1_phrases.json</code> 句式。
-            </li>
-          </ol>
+          <h3>15–20 min · 四步速讀＋骨架 <span class="chip">Data File</span></h3>
+          <p class="lede">開卷節奏：掃讀編碼 → 問題／影響 → 權衡選項 → 可交付建議。寫作跟上面 Fixed skeleton 五段。</p>
+
+          <details class="four-step" open>
+            <summary><strong>Step 1 · Sorting</strong>（0–5 min）</summary>
+            <div class="four-step-body">
+              <p><span class="step-label">點解</span> Data File 常 6–10 頁，逐字讀唔夠時間（~15 min 上限）；要目標導向掃讀。</p>
+              <p><span class="step-label">操作</span></p>
+              <ol class="four-step-do">
+                <li>釘死 Task Requirements（角色／對象／政策目標）。</li>
+                <li>四代號標籤：<code>P1/P2</code> Problem Data｜<code>Opt</code> Options｜<code>Obj/Con</code> Objections/Constraints｜<code>Rec</code> Feasible Measures。</li>
+                <li>Drop 無關行政資訊。</li>
+              </ol>
+            </div>
+          </details>
+
+          <details class="four-step">
+            <summary><strong>Step 2 · Problems &amp; Implications</strong></summary>
+            <div class="four-step-body">
+              <p><span class="step-label">點解</span> 忌只講現象；要 現象 → 影響人／公帑／體系 → 急需介入。</p>
+              <p><span class="step-label">操作</span> 鎖定 2 個互不重疊主問題；延伸 Implications（嵌 <code>q1_phrases</code>，例 <code>imp-02</code>／<code>imp-03</code>）。</p>
+            </div>
+          </details>
+
+          <details class="four-step">
+            <summary><strong>Step 3 · Comparing Options</strong>（score core）</summary>
+            <div class="four-step-body">
+              <p><span class="step-label">點解</span> 評分核心＝trade-offs。</p>
+              <p class="step-critical"><strong>極重要：</strong>Q1 無獨立反駁段——反對意見段內消化（Addressing Objections Inline）。</p>
+              <p><span class="step-label">操作</span> 四準則 Effectiveness｜Fiscal Cost｜Feasibility/Manpower｜Acceptance；逐 Option 衡量淘汰；段內消化 objections。</p>
+            </div>
+          </details>
+
+          <details class="four-step">
+            <summary><strong>Step 4 · Recommendations &amp; Closing</strong></summary>
+            <div class="four-step-body">
+              <p><span class="step-label">點解</span> 要 Delivery（Who／When／Resources／Pilot／KPIs），唔好淨寫「揀 Option X」。</p>
+              <p><span class="step-label">操作</span> Who（<code>spc-01</code>）→ When/Pilot（<code>rec-02</code>/<code>rec-03</code>）→ Resources（<code>spc-07</code>）→ Complementary（<code>rec-06</code>）→ KPIs+review（<code>mon-01</code>/<code>mon-02</code>）＋ <code>dis-10</code>。</p>
+            </div>
+          </details>
+
+          <ul class="bullet-list hard-rules">
+            <li>唔由頭讀到尾</li>
+            <li>Data File ~15 min</li>
+            <li>outline 用 bullet（唔先寫全文）</li>
+            <li>嵌入 ≥4 個 <code>q1_phrases.json</code> 句式</li>
+            <li>never copy background</li>
+          </ul>
         </div>
       </div>
 
@@ -307,15 +344,15 @@
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-    <script src="data/heat-island.js?v=20261104f"></script>
-  <script src="data/mental-health.js?v=20261104f"></script>
-  <script src="data/sme-digital.js?v=20261104f"></script>
-  <script src="data/elderly-care.js?v=20261104f"></script>
-  <script src="data/new-industrial.js?v=20261104f"></script>
-  <script src="data/border-resilience.js?v=20261104f"></script>
-  <script src="data/loop-link-resumption.js?v=20261104f"></script>
-  <script src="data/waste-recovery-2026-11-02.js?v=20261104f"></script>
-  <script src="app.js?v=20261104f"></script>
-  <script src="../shell/tabbar.js?v=20261104f"></script>
+    <script src="data/heat-island.js?v=20261104g"></script>
+  <script src="data/mental-health.js?v=20261104g"></script>
+  <script src="data/sme-digital.js?v=20261104g"></script>
+  <script src="data/elderly-care.js?v=20261104g"></script>
+  <script src="data/new-industrial.js?v=20261104g"></script>
+  <script src="data/border-resilience.js?v=20261104g"></script>
+  <script src="data/loop-link-resumption.js?v=20261104g"></script>
+  <script src="data/waste-recovery-2026-11-02.js?v=20261104g"></script>
+  <script src="app.js?v=20261104g"></script>
+  <script src="../shell/tabbar.js?v=20261104g"></script>
 </body>
 </html>

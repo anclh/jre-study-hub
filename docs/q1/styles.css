@@ -429,6 +429,76 @@ body:has(#panel-case.active) #panel-case > .card:nth-child(2) p { font-size: 12p
   color: var(--text);
 }
 .timed-df-block .lede { margin-bottom: 8px; }
+.official-core {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 0 8px;
+  padding: 8px 10px;
+  background: var(--card2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.four-step {
+  margin: 0 0 8px;
+  background: var(--card2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0;
+}
+.four-step > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--text);
+  user-select: none;
+}
+.four-step > summary::-webkit-details-marker { display: none; }
+.four-step > summary::before {
+  content: "▸";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+  margin-right: 4px;
+}
+.four-step[open] > summary::before { content: "▾"; }
+.four-step-body {
+  padding: 0 12px 10px;
+  font-size: 13px;
+  line-height: 1.45;
+  border-top: 1px solid var(--line);
+}
+.four-step-body > p { margin: 8px 0 0; }
+.step-label {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--accent);
+  margin-right: 4px;
+}
+.step-critical {
+  margin: 8px 0 0;
+  padding: 8px 10px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  font-size: 13px;
+}
+.four-step-do {
+  margin: 6px 0 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: 4px;
+}
+.four-step-do li { margin: 0; }
+.hard-rules {
+  margin-top: 10px;
+  padding: 8px 10px 8px 1.3em;
+  background: var(--card2);
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+}
+.hard-rules li { font-size: 12px; }
 #phrase-tools h2 { margin-bottom: 4px; }
 
 /* —— Answer frame skeleton overview —— */
