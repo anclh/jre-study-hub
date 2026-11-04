@@ -241,21 +241,70 @@
     return assigned;
   }
 
-  function outlineHtml(outline) {
-    if (!outline || typeof outline !== "object") return "";
-    const blocks = [];
-    if (outline.stance) blocks.push(`<p><strong>立場</strong> ${escapeHtml(outline.stance)}</p>`);
-    if (outline.arguments?.length) blocks.push(`<p><strong>理據</strong></p>${listHtml(outline.arguments, true)}`);
-    if (outline.rebuttal) blocks.push(`<p><strong>反駁</strong> ${escapeHtml(outline.rebuttal)}</p>`);
-    if (outline.recommendations?.length) {
-      blocks.push(`<p><strong>建議</strong></p>${listHtml(outline.recommendations, true)}`);
-    }
-    if (outline.closing) blocks.push(`<p><strong>短結</strong> ${escapeHtml(outline.closing)}</p>`);
-    if (!blocks.length) return "";
-    return `<details class="brief-nest">
-      <summary>寫作大綱</summary>
-      <div class="brief-nest-body">${blocks.join("")}</div>
-    </details>`;
+  function nestBlock(summary, innerHtml) {
+    if (!innerHtml) return "";
+    return `<details class="brief-nest"><summary>${summary}</summary><div class="brief-nest-body">${innerHtml}</div></details>`;
+  }
+
+  function factsListHtml(facts) {
+    const items = (facts || [])
+      .map((f) => {
+        const text = String((f && f.text) || "").trim();
+        if (!text) return "";
+        const url = String((f && f.url) || "").trim();
+        const link = url
+          ? `<br><a href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer">來源 ↗</a>`
+          : "";
+        return `<li>${escapeHtml(text)}${link}</li>`;
+      })
+      .filter(Boolean);
+    if (!items.length) return "";
+    return `<ul class="facts-list">${items.join("")}</ul>`;
+  }
+
+  function stageSection(className, title, body) {
+    if (!String(body || "").trim()) return "";
+    return `<div class="brief-section ${className}"><h4>${escapeHtml(title)}</h4>${body}</div>`;
+  }
+
+  function briefStagesHtml(brief) {
+    const outline = brief.sampleOutline && typeof brief.sampleOutline === "object" ? brief.sampleOutline : {};
+    const stanceBody = [
+      brief.stance ? `<p class="brief-stance-label">${escapeHtml(brief.stance)}</p>` : "",
+      listHtml(brief.stance_points, true),
+      nestBlock("開首句", outline.stance ? `<p>${escapeHtml(outline.stance)}</p>` : ""),
+    ].join("");
+    const support = listHtml(brief.pros, false);
+    const facts = factsListHtml(brief.facts);
+    const argumentBody = [
+      support ? `<p class="brief-sub">支持論點</p>${support}` : "",
+      facts ? `<p class="brief-sub">例子／硬數</p>${facts}` : "",
+      nestBlock("大綱理據", outline.arguments?.length ? listHtml(outline.arguments, true) : ""),
+    ].join("");
+    const cons = listHtml(brief.cons, false);
+    const rebuttalBody = [
+      cons ? `<p class="brief-sub">反方</p>${cons}` : "",
+      outline.rebuttal
+        ? `<p class="brief-sub">回應</p><p class="brief-rebuttal">${escapeHtml(outline.rebuttal)}</p>`
+        : "",
+    ].join("");
+    const recommendBody = [
+      listHtml(brief.measures, true),
+      nestBlock(
+        "大綱建議",
+        outline.recommendations?.length ? listHtml(outline.recommendations, true) : ""
+      ),
+    ].join("");
+    const closingBody = outline.closing
+      ? `<p class="brief-closing">${escapeHtml(outline.closing)}</p>`
+      : "";
+    return [
+      stageSection("stance", "立場", stanceBody),
+      stageSection("arguments", "理據／例子", argumentBody),
+      stageSection("rebuttal", "反駁", rebuttalBody),
+      stageSection("recommend", "建議", recommendBody),
+      stageSection("close", "短結", closingBody),
+    ].join("");
   }
 
   function sampleHtml(brief) {
@@ -308,23 +357,14 @@
           ? `<span class="chip chip-sample">有範文</span>`
           : "");
 
-      const facts = (brief.facts || [])
-        .map((f) => {
-          const link = f.url
-            ? `<br><a href="${escapeAttr(f.url)}" target="_blank" rel="noopener noreferrer">來源 ↗</a>`
-            : "";
-          return `<li>${escapeHtml(f.text)}${link}</li>`;
-        })
-        .join("");
-
       const factPreview = scanFacts(brief.facts);
       const measurePreview = scanMeasures(brief.measures);
       const scanCols = [
         factPreview.length
-          ? `<div><h4>必記硬數</h4><ul>${factPreview.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul></div>`
+          ? `<div><h4>例子</h4><ul>${factPreview.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul></div>`
           : "",
         measurePreview.length
-          ? `<div><h4>措施要點</h4><ul>${measurePreview.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul></div>`
+          ? `<div><h4>建議</h4><ul>${measurePreview.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul></div>`
           : "",
       ].join("");
 
@@ -340,34 +380,13 @@
         <div class="brief-scan-wrap">
           <p class="scan-kicker">考試式題目</p>
           <p class="brief-prompt-preview">${escapeHtml(brief.prompt || "")}</p>
-          <p class="scan-kicker">建議立場</p>
+          <p class="scan-kicker">立場</p>
           <p class="brief-stance-one">${escapeHtml(brief.stance || "")}</p>
           ${scanCols ? `<div class="brief-scan">${scanCols}</div>` : ""}
           <div class="brief-tags">${tags}</div>
         </div>
         <div class="brief-body">
-          <div class="brief-section pros">
-            <h4>利</h4>
-            ${listHtml(brief.pros, false)}
-          </div>
-          <div class="brief-section cons">
-            <h4>弊</h4>
-            ${listHtml(brief.cons, false)}
-          </div>
-          <div class="brief-section stance">
-            <h4>建議立場</h4>
-            <p class="brief-stance-label">${escapeHtml(brief.stance || "")}</p>
-            ${listHtml(brief.stance_points, true)}
-          </div>
-          <div class="brief-section">
-            <h4>措施／替代</h4>
-            ${listHtml(brief.measures, true)}
-          </div>
-          <div class="brief-section">
-            <h4>必記事實</h4>
-            <ul class="facts-list">${facts}</ul>
-          </div>
-          ${outlineHtml(brief.sampleOutline)}
+          ${briefStagesHtml(brief)}
           ${sampleHtml(brief)}
           <div class="brief-actions">
             <button type="button" class="btn primary btn-use-drill" data-id="${escapeAttr(brief.id)}">用呢題計時</button>
@@ -575,8 +594,8 @@
     return (briefsData?.briefs || []).slice().sort((a, b) => (a.n || 0) - (b.n || 0));
   }
 
-  function takeShort(items, n, max) {
-    return (items || []).filter(Boolean).slice(0, n).map((t) => trimScan(t, max));
+  function flashFullItems(items) {
+    return (items || []).map((t) => String(t || "").trim()).filter(Boolean);
   }
 
   function flashBlock(zh, en, items) {
@@ -584,6 +603,34 @@
     return `<section class="flash-block"><h3>${zh} <span>${en}</span></h3><ul>${items
       .map((t) => `<li>${escapeHtml(t)}</li>`)
       .join("")}</ul></section>`;
+  }
+
+  function flashStanceBlock(brief, fallback) {
+    const stance = String(brief.stance || fallback || "").trim();
+    const points = flashFullItems(brief.stance_points);
+    if (!stance && !points.length) return "";
+    const pointsHtml = points.length
+      ? `<ul>${points.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>`
+      : "";
+    return `<section class="flash-block"><h3>立場 <span>Stance</span></h3>${
+      stance ? `<p class="flash-stance">${escapeHtml(stance)}</p>` : ""
+    }${pointsHtml}</section>`;
+  }
+
+  function flashFactsBlock(facts) {
+    const items = (facts || [])
+      .map((f) => {
+        const text = String((f && f.text) || "").trim();
+        if (!text) return "";
+        const url = String((f && f.url) || "").trim();
+        const link = url
+          ? `<br><a href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer">來源 ↗</a>`
+          : "";
+        return `<li>${escapeHtml(text)}${link}</li>`;
+      })
+      .filter(Boolean);
+    if (!items.length) return "";
+    return `<section class="flash-block"><h3>必記 <span>Facts</span></h3><ul>${items.join("")}</ul></section>`;
   }
 
   function saveFlashMarks() {
@@ -629,16 +676,16 @@
       <p class="flash-kicker">立場 · Stance</p>
       <p class="flash-stance">${escapeHtml(stanceShort)}</p>
       <p class="flash-tap">點一下翻面</p>`;
-    const stanceLine = brief.stance || stanceShort;
     back.innerHTML = `
       <div class="flash-kicker">${brief.n} / ${deck.length} · 背面 ${markChip}</div>
       <h2>${escapeHtml(brief.title_zh || "")}</h2>
-      ${flashBlock("利", "Pros", takeShort(brief.pros, 3, 110))}
-      ${flashBlock("弊", "Cons", takeShort(brief.cons, 3, 110))}
-      <section class="flash-block"><h3>立場 <span>Stance</span></h3><p class="flash-stance">${escapeHtml(stanceLine)}</p></section>
-      ${flashBlock("措施", "Measures", takeShort(brief.measures, 3, 110))}
-      ${flashBlock("必記", "Facts", scanFacts(brief.facts))}`;
+      ${flashBlock("利", "Pros", flashFullItems(brief.pros))}
+      ${flashBlock("弊", "Cons", flashFullItems(brief.cons))}
+      ${flashStanceBlock(brief, stanceShort)}
+      ${flashBlock("措施", "Measures", flashFullItems(brief.measures))}
+      ${flashFactsBlock(brief.facts)}`;
     card.classList.toggle("is-flipped", flashFlipped);
+    card.scrollTop = 0;
     card.setAttribute("aria-pressed", flashFlipped ? "true" : "false");
     const progress = $("#flashProgress");
     if (progress) progress.textContent = `${flashIndex + 1} / ${deck.length}`;
@@ -697,12 +744,14 @@
   const btnFlashcards = $("#btnFlashcards");
   if (btnFlashcards) btnFlashcards.addEventListener("click", openFlash);
   $("#flashClose")?.addEventListener("click", closeFlash);
-  $("#flashCard")?.addEventListener("click", () => {
+  $("#flashCard")?.addEventListener("click", (e) => {
+    if (e.target.closest("a")) return;
     flashFlipped = !flashFlipped;
     renderFlash();
   });
   $("#flashCard")?.addEventListener("keydown", (e) => {
     if (e.key !== " " && e.key !== "Enter") return;
+    if (e.target.closest("a")) return;
     e.preventDefault();
     flashFlipped = !flashFlipped;
     renderFlash();
