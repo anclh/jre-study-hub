@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="JRE 中文 Q2 — 議題思維、題庫、計時練習與自評" />
   <title>中文 Q2 · JRE Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261104c" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261104c" />
+  <link rel="stylesheet" href="styles.css?v=20261104d" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261104d" />
 </head>
 <body>
   <header class="app-header">
@@ -37,18 +37,15 @@
         <p class="lede">考<strong>議題思維＋書面表達</strong>（物料 sparse）。要：清晰立場、具體理據、可執行建議。考期 <strong>2026-12-05</strong>。跟官方大牌檔 shape；EO Classroom／坊間 tip 已收編——<strong>唔跟</strong>硬性字數、舊考期、另套四段式。</p>
       </div>
 
-      <div class="card">
+      <div class="card" id="official-shape">
         <h2>1 · 官方 shape（大牌檔）</h2>
-        <ol class="frame-steps">
-          <li><strong>利弊</strong>——正反各點到即止</li>
-          <li><strong>立場</strong>——明確支持或反對（唔好兩邊擺）</li>
-          <li><strong>跟進</strong>——贊成＝措施確保目標可達；反對＝替代方案繼續推目標</li>
-        </ol>
+        <p class="shape-line">利弊正反各點到即止 → 明確一邊立場 → 贊成＝跟進措施／反對＝替代方案（考前自檢；考場跟五步）。</p>
       </div>
 
       <div class="card" id="five-step">
         <h2>固定五步（考場跟呢條）</h2>
-        <p class="lede">一個流程。每步下面係框架提示，同埋呢步嘅骨架句。</p>
+        <p class="shape-vs-flow"><strong>大牌檔三點／一行係 shape／考前自檢；五步係考場流程。</strong></p>
+        <p class="lede">一個流程。每步卡有做咩／唔好／自檢，下面先係骨架句。</p>
         <p class="muted frame-flow"><a href="#stage-position">立場</a> → <a href="#stage-arguments">理據／例子</a> → <a href="#stage-rebuttal">反駁</a> → <a href="#stage-recommend">建議</a> → <a href="#stage-close">短結</a></p>
       </div>
 
@@ -75,27 +72,78 @@
         </div>
 
         <article class="card stage-card" id="stage-position">
-          <h2>立場</h2>
-          <p class="lede">開首（2–3 行）：一句目的＋<em>明確立場</em>（贊成／反對／有條件贊成）。不要堆背景或數字。</p>
+          <h2>立場 <span class="chip">2–3 行</span></h2>
+          <dl class="stage-coach">
+            <div>
+              <dt>做咩</dt>
+              <dd>目標＋贊成／反對／有條件。有條件＝肯定目標＋承認風險＋試點方向。</dd>
+            </div>
+            <div>
+              <dt>唔好</dt>
+              <dd>堆背景數字；兩邊擺。</dd>
+            </div>
+            <div>
+              <dt>自檢</dt>
+              <dd>開首一句可唔可以釘死立場？</dd>
+            </div>
+          </dl>
           <div class="phrase-grid" data-stage="position"></div>
         </article>
 
         <article class="card stage-card" id="stage-arguments">
-          <h2>理據／例子</h2>
-          <p class="lede">理據（2 個）：主張＋香港例子／措施／數字（<strong>只落地一個</strong>）＋「所以點」。</p>
+          <h2>理據／例子 <span class="chip">2 個</span></h2>
+          <dl class="stage-coach">
+            <div>
+              <dt>做咩</dt>
+              <dd>主張→一個 HK 例子／數→所以點。</dd>
+            </div>
+            <div>
+              <dt>唔好</dt>
+              <dd>利弊點到即止當段落；利弊各半當立場；每段堆多個數。</dd>
+            </div>
+            <div>
+              <dt>自檢</dt>
+              <dd>每理據有冇「所以點」＋只落地一個例子／數？</dd>
+            </div>
+          </dl>
           <div class="phrase-grid" data-stage="arguments"></div>
         </article>
 
         <article class="card stage-card" id="stage-rebuttal">
           <h2>反駁</h2>
-          <p class="lede">指出<strong>最強反方</strong> → 為何仍選己方（或如何配套減低風險）。</p>
+          <dl class="stage-coach">
+            <div>
+              <dt>做咩</dt>
+              <dd>最強反方→為何仍己方／配套減風險。</dd>
+            </div>
+            <div>
+              <dt>唔好</dt>
+              <dd>無視反方。Q2 要有獨立反駁段（對照 Q1 段內消化）。</dd>
+            </div>
+            <div>
+              <dt>自檢</dt>
+              <dd>反方係咪最強嗰個？有冇講清仍揀己方？</dd>
+            </div>
+          </dl>
           <div class="phrase-grid" data-stage="rebuttal"></div>
         </article>
 
         <article class="card stage-card" id="stage-recommend">
-          <h2>建議</h2>
-          <p class="lede">2–3 個具體建議（試點／分階段、主責部門、KPI、資源條件）。反對時要提出更有效嘅替代方案。</p>
-          <p class="muted">語氣：宜／應／可考慮——少用「我覺得」「毫無疑問」「一定」。</p>
+          <h2>建議 <span class="chip">2–3 個</span></h2>
+          <dl class="stage-coach">
+            <div>
+              <dt>做咩</dt>
+              <dd>贊成＝措施達標（Who／試點／KPI／資源）；反對＝替代仍推同一目標。語氣宜／應／可考慮。</dd>
+            </div>
+            <div>
+              <dt>唔好</dt>
+              <dd>「大幅增加資源」無 delivery；「我覺得／毫無疑問／一定」。</dd>
+            </div>
+            <div>
+              <dt>自檢</dt>
+              <dd>每建議有冇主責／試點／KPI／資源條件之一？</dd>
+            </div>
+          </dl>
           <div class="phrase-grid" data-stage="recommend"></div>
           <div class="stage-sub" id="stage-balance">
             <h3>平衡／條件</h3>
@@ -106,7 +154,20 @@
 
         <article class="card stage-card" id="stage-close">
           <h2>短結</h2>
-          <p class="lede">重申立場＋一句可交付結果。</p>
+          <dl class="stage-coach">
+            <div>
+              <dt>做咩</dt>
+              <dd>重申立場＋可交付結果。</dd>
+            </div>
+            <div>
+              <dt>唔好</dt>
+              <dd>加新論點。</dd>
+            </div>
+            <div>
+              <dt>自檢</dt>
+              <dd>有冇新理據 sneaking in？</dd>
+            </div>
+          </dl>
           <div class="phrase-grid" data-stage="close"></div>
         </article>
 
@@ -376,7 +437,7 @@
     </div>
   </div>
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261104c"></script>
-  <script src="../shell/tabbar.js?v=20261104c"></script>
+  <script src="app.js?v=20261104d"></script>
+  <script src="../shell/tabbar.js?v=20261104d"></script>
 </body>
 </html>
