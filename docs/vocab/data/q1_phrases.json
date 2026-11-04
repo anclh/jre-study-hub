@@ -828,6 +828,33 @@
       "zh": "道路刊憲後一季內，房委會應按指名接待屋邨座數及入伙時窗，發出住戶層面的清拆及安置方案。",
       "note": "Housing · who / when / reception blocks",
       "example": "Within one quarter of road gazettal, Housing Authority should issue household-level clearance and rehousing offers keyed to named reception-estate blocks and move-in windows."
+    },
+    {
+      "id": "ass-15",
+      "category": "assessment",
+      "paper": "q1",
+      "en": "Headline university rankings, set against thin hostel supply and weak research-industry tenancies, point to a conversion gap rather than a pure reputation shortfall.",
+      "zh": "大學排名亮眼，但對照宿舍短缺及科研產業租約薄弱，反映的是轉化缺口而非純粹聲譽不足。",
+      "note": "教育樞紐／北都大學城；排名→學額／研究落地",
+      "example": "Headline university rankings, set against thin hostel supply and weak research-industry tenancies, point to a conversion gap rather than a pure reputation shortfall."
+    },
+    {
+      "id": "rec-17",
+      "category": "recommend",
+      "paper": "q1",
+      "en": "It is recommended that InvestHK and the Hong Kong Monetary Authority publish a 12-month post-summit conversion dashboard—signed term sheets, retained jobs and AUM booked—rather than attendance figures alone.",
+      "zh": "建議投資推廣署與金管局公布峰會後十二個月轉化儀表板——已簽條款、保留職位及入賬資管規模——而非只報出席人數。",
+      "note": "IFC／投資峰會落地",
+      "example": "It is recommended that InvestHK and the Hong Kong Monetary Authority publish a 12-month post-summit conversion dashboard—signed term sheets, retained jobs and AUM booked—rather than attendance figures alone."
+    },
+    {
+      "id": "spc-18",
+      "category": "specificity",
+      "paper": "q1",
+      "en": "Within 18 months, Education Bureau and Development Bureau should release a Northern Metropolis University Town phasing plan naming hostel beds, lab floorspace and industry tenancy gates for each tranche.",
+      "zh": "十八個月內，教育局與發展局應公布北部都會區大學城分期計劃，列明每期宿舍床位、實驗室樓面及產業租約門檻。",
+      "note": "Who–when–resources；北都大學城",
+      "example": "Within 18 months, Education Bureau and Development Bureau should release a Northern Metropolis University Town phasing plan naming hostel beds, lab floorspace and industry tenancy gates for each tranche."
     }
   ]
 }

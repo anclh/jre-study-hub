@@ -12910,5 +12910,499 @@
     ],
     "example": "Publish median waiting time by specialty alongside the share still beyond the target.",
     "topic": "welfare-population"
+  },
+  {
+    "term": "international education hub",
+    "zh": "國際教育樞紐",
+    "pos": "n. phr.",
+    "related": [
+      "non-local student quota",
+      "Northern Metropolis University Town"
+    ],
+    "note": "施政常用表述；宜寫清學額、研究產出與產業連結 KPI，避免只談排名",
+    "synonyms": [
+      "global education hub",
+      "international higher-education hub",
+      "education hub status"
+    ],
+    "antonyms": [
+      "purely local campus system",
+      "closed higher-education market"
+    ],
+    "examples": [
+      {
+        "en": "An international education hub must convert rankings into quality non-local intake and research translation.",
+        "zh": "國際教育樞紐須把排名轉化為優質非本地生源與研究落地。"
+      },
+      {
+        "en": "Housing and hostel supply constrain how fast Hong Kong can deepen its international education hub role.",
+        "zh": "宿舍及房屋供應制約香港深化國際教育樞紐的速度。"
+      },
+      {
+        "en": "Measure the international education hub by graduate employability and industry R&D links, not reputation surveys alone.",
+        "zh": "衡量國際教育樞紐應看畢業生就業及產業研發連結，而非單靠聲譽調查。"
+      }
+    ],
+    "example": "An international education hub must convert rankings into quality non-local intake and research translation.",
+    "topic": "education-manpower"
+  },
+  {
+    "term": "Northern Metropolis University Town",
+    "zh": "北部都會區大學城",
+    "pos": "n. phr.",
+    "related": [
+      "international education hub",
+      "research talent"
+    ],
+    "note": "北都旗艦；面試宜問用地、學額、人才及與創科產業熟地的對接時間表",
+    "synonyms": [
+      "NM University Town",
+      "Northern Metropolis campus cluster",
+      "university town in the Northern Metropolis"
+    ],
+    "antonyms": [
+      "scattered single-campus expansion only",
+      "no clustered higher-education precinct"
+    ],
+    "examples": [
+      {
+        "en": "The Northern Metropolis University Town needs staged land release tied to hostel and lab readiness.",
+        "zh": "北部都會區大學城須按宿舍及實驗室就緒情況分期批地。"
+      },
+      {
+        "en": "Without transport links, the Northern Metropolis University Town risks becoming an isolated academic enclave.",
+        "zh": "若交通配套不足，北部都會區大學城或成孤立學術飛地。"
+      },
+      {
+        "en": "Gate further capital works for the Northern Metropolis University Town on signed research-industry tenancies.",
+        "zh": "北部都會區大學城其後基建撥款應以已簽科研產業租約為門檻。"
+      }
+    ],
+    "example": "The Northern Metropolis University Town needs staged land release tied to hostel and lab readiness.",
+    "topic": "education-manpower"
+  },
+  {
+    "term": "non-local student quota",
+    "zh": "非本地生學額",
+    "pos": "n. phr.",
+    "related": [
+      "international education hub",
+      "student hostel"
+    ],
+    "note": "自費學額擴充常見於施政報告；配對宿舍及教學質素",
+    "synonyms": [
+      "non-local intake quota",
+      "quota for non-local students",
+      "overseas student places"
+    ],
+    "antonyms": [
+      "local-only admission cap",
+      "zero non-local places"
+    ],
+    "examples": [
+      {
+        "en": "Raising the non-local student quota without hostels merely shifts scarcity onto the rental market.",
+        "zh": "在欠缺宿舍下提高非本地生學額，只會把短缺轉嫁租金市場。"
+      },
+      {
+        "en": "A higher non-local student quota should be phased against teaching capacity and programme accreditation.",
+        "zh": "提高非本地生學額須按教學容量及課程認證分期推行。"
+      },
+      {
+        "en": "Publish the non-local student quota by level and discipline so local access concerns can be tested.",
+        "zh": "按程度及學科公布非本地生學額，以便檢驗本地升學機會疑慮。"
+      }
+    ],
+    "example": "Raising the non-local student quota without hostels merely shifts scarcity onto the rental market.",
+    "topic": "education-manpower"
+  },
+  {
+    "term": "international financial centre",
+    "zh": "國際金融中心",
+    "pos": "n. phr.",
+    "related": [
+      "investment summit",
+      "investment promotion",
+      "capital market"
+    ],
+    "note": "IFC；宜用資金流入、機構落戶、市場成交等可量度指標",
+    "synonyms": [
+      "IFC",
+      "global financial hub",
+      "international finance hub"
+    ],
+    "antonyms": [
+      "purely domestic financial market",
+      "closed capital account hub"
+    ],
+    "examples": [
+      {
+        "en": "Summit attendance alone does not prove international financial centre depth without follow-on listings and mandates.",
+        "zh": "若無後續上市及委託業務，峰會出席人數不足以證明國際金融中心深度。"
+      },
+      {
+        "en": "Regulatory predictability is part of Hong Kong’s international financial centre offer to long-horizon capital.",
+        "zh": "監管可預期性是香港國際金融中心吸引長線資本的一環。"
+      },
+      {
+        "en": "Track the international financial centre with cross-border fundraising and asset-management AUM, not headlines.",
+        "zh": "應用跨境集資及資管規模追蹤國際金融中心，而非新聞標題。"
+      }
+    ],
+    "example": "Summit attendance alone does not prove international financial centre depth without follow-on listings and mandates.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "investment summit",
+    "zh": "投資峰會",
+    "pos": "n. phr.",
+    "related": [
+      "international financial centre",
+      "investment promotion"
+    ],
+    "note": "金管局等主辦常見；寫作時把禮賓場合轉成落地跟進指標",
+    "synonyms": [
+      "investor summit",
+      "financial leaders summit",
+      "capital markets forum"
+    ],
+    "antonyms": [
+      "one-off courtesy visit",
+      "closed industry briefing only"
+    ],
+    "examples": [
+      {
+        "en": "An investment summit should publish a 12-month pipeline of follow-up meetings and signed term sheets.",
+        "zh": "投資峰會應公布十二個月跟進會議及已簽條款清單。"
+      },
+      {
+        "en": "Repeat investment summit branding without conversion metrics risks diminishing returns.",
+        "zh": "投資峰會若無轉化指標，重複品牌推廣或效益遞減。"
+      },
+      {
+        "en": "Pair the investment summit with a named case officer for each priority investor.",
+        "zh": "投資峰會應為每名重點投資者指派專責個案主任。"
+      }
+    ],
+    "example": "An investment summit should publish a 12-month pipeline of follow-up meetings and signed term sheets.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "investment promotion",
+    "zh": "投資推廣／招商",
+    "pos": "n. phr.",
+    "related": [
+      "going-global facilitation desk",
+      "hard connectivity",
+      "Northern Metropolis University Town"
+    ],
+    "note": "招商；對接大灣區／北都承諾時要有落戶及就業 KPI",
+    "synonyms": [
+      "investor attraction",
+      "inward investment promotion",
+      "FDI promotion"
+    ],
+    "antonyms": [
+      "passive wait-for-enquiries stance",
+      "no proactive deal support"
+    ],
+    "examples": [
+      {
+        "en": "Investment promotion packages need transparent eligibility and clawback if jobs are not created.",
+        "zh": "招商優惠須有透明資格及未達就業目標的退回條款。"
+      },
+      {
+        "en": "GBA investment promotion works only if soft connectivity on licensing keeps pace with site tours.",
+        "zh": "大灣區招商須使牌照等軟聯通與實地考察同步。"
+      },
+      {
+        "en": "Report investment promotion results by retained jobs and tax base, not memorandum counts.",
+        "zh": "招商成果應以保留職位及稅基匯報，而非備忘錄數目。"
+      }
+    ],
+    "example": "Investment promotion packages need transparent eligibility and clawback if jobs are not created.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "going-global facilitation desk",
+    "zh": "出海專班／企業出海支援專責組",
+    "pos": "n. phr.",
+    "related": [
+      "investment promotion",
+      "international financial centre"
+    ],
+    "note": "協助內地企業在港設立或擴展；宜追蹤落戶後續營運而非一次性註冊",
+    "synonyms": [
+      "outbound facilitation desk",
+      "going-global task force",
+      "enterprise overseas-expansion desk"
+    ],
+    "antonyms": [
+      "no structured outbound support",
+      "ad-hoc one-off introductions only"
+    ],
+    "examples": [
+      {
+        "en": "The going-global facilitation desk should track firms still active in Hong Kong 24 months after set-up.",
+        "zh": "出海專班應追蹤企業在港設立二十四個月後是否仍在營運。"
+      },
+      {
+        "en": "Pair the going-global facilitation desk with banking, compliance and talent onboarding checklists.",
+        "zh": "出海專班應配套銀行、合規及人才到職清單。"
+      },
+      {
+        "en": "Count only verified expansions under the going-global facilitation desk, not exploratory visits.",
+        "zh": "出海專班只應計核實擴展個案，而非考察訪問。"
+      }
+    ],
+    "example": "The going-global facilitation desk should track firms still active in Hong Kong 24 months after set-up.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "hard connectivity",
+    "zh": "硬聯通",
+    "pos": "n. phr.",
+    "related": [
+      "soft connectivity",
+      "investment promotion"
+    ],
+    "note": "大灣區表述：基建／交通等硬件連接；宜點名人流物流瓶頸及主責局",
+    "synonyms": [
+      "physical connectivity",
+      "infrastructure connectivity",
+      "hardware links"
+    ],
+    "antonyms": [
+      "soft connectivity only",
+      "disconnected physical networks"
+    ],
+    "examples": [
+      {
+        "en": "Hard connectivity gains are wasted if border clearance peaks remain unaddressed.",
+        "zh": "若口岸高峰清關未處理，硬聯通成果便被浪費。"
+      },
+      {
+        "en": "Prioritise hard connectivity projects that unlock Northern Metropolis industrial sites within three years.",
+        "zh": "優先推進三年內可打通北都產業用地的硬聯通項目。"
+      },
+      {
+        "en": "Publish passenger and cargo throughput KPIs for each hard connectivity corridor.",
+        "zh": "為每條硬聯通走廊公布客貨吞吐量 KPI。"
+      }
+    ],
+    "example": "Hard connectivity gains are wasted if border clearance peaks remain unaddressed.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "soft connectivity",
+    "zh": "軟聯通",
+    "pos": "n. phr.",
+    "related": [
+      "hard connectivity",
+      "investment promotion"
+    ],
+    "note": "規則、標準、專業資格、資金數據等制度性連接；常與硬聯通並提",
+    "synonyms": [
+      "institutional connectivity",
+      "rules-based connectivity",
+      "regulatory connectivity"
+    ],
+    "antonyms": [
+      "hard connectivity alone",
+      "fragmented cross-boundary rules"
+    ],
+    "examples": [
+      {
+        "en": "Soft connectivity on professional recognition often bottlenecks GBA talent mobility more than roads do.",
+        "zh": "專業資格互認等軟聯通對大灣區人才流動的制約，往往大於道路。"
+      },
+      {
+        "en": "Without soft connectivity on data and licensing, investment promotion tours cannot convert.",
+        "zh": "欠缺數據及牌照軟聯通，招商考察難以轉化。"
+      },
+      {
+        "en": "Set annual soft connectivity milestones with named lead bureaux and mutual recognition lists.",
+        "zh": "為軟聯通訂立年度里程碑，並列明主責政策局及互認清單。"
+      }
+    ],
+    "example": "Soft connectivity on professional recognition often bottlenecks GBA talent mobility more than roads do.",
+    "topic": "governance"
+  },
+  {
+    "term": "Modular Integrated Construction",
+    "zh": "組裝合成建築法（MiC）",
+    "pos": "n. phr.",
+    "related": [
+      "light public housing",
+      "transitional housing"
+    ],
+    "note": "MiC；加快簡約公屋／過渡房屋落成常用；寫工期、運送及工地銜接風險",
+    "synonyms": [
+      "MiC",
+      "modular construction",
+      "off-site modular building"
+    ],
+    "antonyms": [
+      "purely cast-in-situ construction",
+      "conventional on-site build only"
+    ],
+    "examples": [
+      {
+        "en": "Modular Integrated Construction can compress light public housing programmes if factory slots are booked early.",
+        "zh": "若及早鎖定廠房檔期，組裝合成建築法可壓縮簡約公屋工期。"
+      },
+      {
+        "en": "Transport and lifting constraints can erase Modular Integrated Construction time savings on tight sites.",
+        "zh": "在狹窄工地，運輸及吊運限制可抵銷組裝合成建築法的工期優勢。"
+      },
+      {
+        "en": "Require Modular Integrated Construction suppliers to publish defect and weather-delay rates by project.",
+        "zh": "要求組裝合成建築法供應商按項目公布缺陷及天氣延誤率。"
+      }
+    ],
+    "example": "Modular Integrated Construction can compress light public housing programmes if factory slots are booked early.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "Cash Allowance Trial Scheme",
+    "zh": "現金津貼試行計劃",
+    "pos": "n. phr.",
+    "related": [
+      "transitional housing",
+      "light public housing"
+    ],
+    "note": "為公屋輪候家庭提供現金津貼；屬過渡支援，不能替代長遠房屋供應",
+    "synonyms": [
+      "cash allowance scheme",
+      "rental cash allowance trial",
+      "waiting-list cash subsidy"
+    ],
+    "antonyms": [
+      "in-kind housing allocation only",
+      "no cash support for wait-listed households"
+    ],
+    "examples": [
+      {
+        "en": "The Cash Allowance Trial Scheme eases rent pressure but does not shorten the public rental queue itself.",
+        "zh": "現金津貼試行計劃可紓緩租金壓力，但不會縮短公屋輪候隊本身。"
+      },
+      {
+        "en": "Exit rules for the Cash Allowance Trial Scheme must align with flat offers to avoid sudden income cliffs.",
+        "zh": "現金津貼試行計劃的退出規則須與編配單位對齊，以免收入斷崖。"
+      },
+      {
+        "en": "Evaluate the Cash Allowance Trial Scheme on housing stress indices, not take-up alone.",
+        "zh": "評估現金津貼試行計劃應看住屋壓力指標，而非單看參與率。"
+      }
+    ],
+    "example": "The Cash Allowance Trial Scheme eases rent pressure but does not shorten the public rental queue itself.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "Home Ownership Scheme",
+    "zh": "居者有其屋計劃（居屋）",
+    "pos": "n. phr.",
+    "related": [
+      "housing ladder",
+      "light public housing"
+    ],
+    "note": "HOS；房屋階梯中段；可對照綠表／白表申請",
+    "synonyms": [
+      "HOS",
+      "subsidised sale flats",
+      "home ownership flats"
+    ],
+    "antonyms": [
+      "public rental only",
+      "pure private market purchase"
+    ],
+    "examples": [
+      {
+        "en": "A steady Home Ownership Scheme pipeline anchors the middle of the housing ladder.",
+        "zh": "穩定的居屋供應可穩固房屋階梯中段。"
+      },
+      {
+        "en": "Green Form priority in the Home Ownership Scheme should be reviewed against PRH recovery rates.",
+        "zh": "居屋綠表優先應對照公屋回收入住率檢討。"
+      },
+      {
+        "en": "Do not treat Home Ownership Scheme sales receipts as a substitute for long-term land supply.",
+        "zh": "不可把居屋售樓收入視為長遠土地供應的替代。"
+      }
+    ],
+    "example": "A steady Home Ownership Scheme pipeline anchors the middle of the housing ladder.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "silver economy",
+    "zh": "銀髮經濟",
+    "pos": "n. phr.",
+    "related": [
+      "ageing in place",
+      "community care service voucher",
+      "gerontechnology"
+    ],
+    "note": "高齡化對策常見；宜區分福利開支與可計量產業／就業產出",
+    "synonyms": [
+      "silver market",
+      "longevity economy",
+      "elderly-oriented economy"
+    ],
+    "antonyms": [
+      "youth-only consumption focus",
+      "ageing treated solely as fiscal burden"
+    ],
+    "examples": [
+      {
+        "en": "A silver economy strategy needs products, jobs and standards, not slogans about ageing.",
+        "zh": "銀髮經濟策略需要產品、就業及標準，而非空談人口老化。"
+      },
+      {
+        "en": "Tie silver economy grants to verified local manufacturing or care-tech deployment.",
+        "zh": "銀髮經濟資助應掛鈎經核實的本地生產或樂齡科技應用。"
+      },
+      {
+        "en": "Without carer labour supply, the silver economy cannot scale community care.",
+        "zh": "欠缺照顧人力，銀髮經濟難以擴展社區照顧。"
+      }
+    ],
+    "example": "A silver economy strategy needs products, jobs and standards, not slogans about ageing.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "community care service voucher",
+    "zh": "長者社區照顧服務券",
+    "pos": "n. phr.",
+    "related": [
+      "community care",
+      "residential care home",
+      "silver economy"
+    ],
+    "note": "CCS voucher；與院舍券／宿位擴充並提時要寫清服務容量及質素監察",
+    "synonyms": [
+      "CCS voucher",
+      "community care voucher for the elderly",
+      "elderly community care voucher"
+    ],
+    "antonyms": [
+      "residential placement only",
+      "no demand-side community care subsidy"
+    ],
+    "examples": [
+      {
+        "en": "Extra community care service vouchers fail if day-care and home-care capacity is not expanded in parallel.",
+        "zh": "若日間及家居照顧容量不同步擴充，新增長者社區照顧服務券亦難奏效。"
+      },
+      {
+        "en": "Publish utilisation and outcome data for the community care service voucher by district.",
+        "zh": "按地區公布長者社區照顧服務券的使用及成效數據。"
+      },
+      {
+        "en": "Pair community care service vouchers with carer respite so hospital discharge is not delayed.",
+        "zh": "長者社區照顧服務券應配套照顧者喘息服務，以免延遲醫院出院。"
+      }
+    ],
+    "example": "Extra community care service vouchers fail if day-care and home-care capacity is not expanded in parallel.",
+    "topic": "welfare-population"
   }
 ]
