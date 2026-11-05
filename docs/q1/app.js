@@ -440,7 +440,7 @@
 
   async function loadPhrases() {
     try {
-      const res = await fetch("../vocab/data/q1_phrases.json?v=20261104h", { cache: "no-store" });
+      const res = await fetch("../vocab/data/q1_phrases.json?v=20261105c", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       state.q1 = {
@@ -595,7 +595,7 @@
     if (!lists.length) return;
     const src = root.getAttribute("data-shared-frames-source") || "../shared/shared-frames.json";
     try {
-      const res = await fetch(src + "?v=20261104h", { cache: "no-store" });
+      const res = await fetch(src + "?v=20261105c", { cache: "no-store" });
       if (!res.ok) throw new Error("shared-frames HTTP " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
@@ -658,25 +658,32 @@
     const map = {
       frame: "structure",
       structure: "structure",
-      "shared-frames": "structure",
-      shared: "structure",
-      sharedframes: "structure",
-      phrases: "structure",
-      "phrase-tools": "structure",
-      starters: "structure",
       "answer-frame": "structure",
       "timed-df": "structure",
-      "stage-opening": "structure",
-      "stage-problem": "structure",
-      "stage-options": "structure",
-      "stage-recommendation": "structure",
-      "stage-closing": "structure",
+      "shared-frames": "phrases",
+      shared: "phrases",
+      sharedframes: "phrases",
+      phrases: "phrases",
+      "phrase-tools": "phrases",
+      starters: "phrases",
+      "stage-opening": "phrases",
+      "stage-problem": "phrases",
+      "stage-options": "phrases",
+      "stage-recommendation": "phrases",
+      "stage-closing": "phrases",
       "example-measure-pairs": "tips",
       tips: "tips",
       case: "case",
       mark: "mark",
     };
-    const name = map[h] || (document.getElementById(h) ? "structure" : null);
+    let name = map[h] || null;
+    if (!name) {
+      const el = document.getElementById(h);
+      if (el) {
+        const host = el.closest(".panel");
+        name = host && host.id ? host.id.replace(/^panel-/, "") : "structure";
+      }
+    }
     if (!name) return;
     document.querySelectorAll("#subnav button").forEach((b) =>
       b.classList.toggle("active", b.dataset.panel === name)

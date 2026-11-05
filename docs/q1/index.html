@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>JRE English Q1 · Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261105b" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261105b" />
+  <link rel="stylesheet" href="styles.css?v=20261105c" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261105c" />
 </head>
 <body>
   <header class="app-header">
@@ -21,7 +21,8 @@
       </div>
     </div>
     <nav class="subnav" id="subnav" aria-label="Q1 sections">
-      <button type="button" data-panel="structure" class="active">結構／句式</button>
+      <button type="button" data-panel="structure" class="active">結構</button>
+      <button type="button" data-panel="phrases">句式</button>
       <button type="button" data-panel="tips">Tips</button>
       <button type="button" data-panel="case">計時練習</button>
       <button type="button" data-panel="mark">自評清單</button>
@@ -29,8 +30,8 @@
   </header>
 
   <main>
-                                                <section class="panel active" id="panel-structure">
-      <p class="lede" style="margin:0 0 10px">結構＋Shared frames＋句式合一：Opening → Closing，每段直接睇骨架同可用句。</p>
+    <section class="panel active" id="panel-structure">
+      <p class="lede" style="margin:0 0 10px">Answer frame／Slot-in：5 段 11 句固定骨架。句式庫同篩選喺「句式」tab。</p>
       <p class="muted" style="margin:0 0 12px">政策溫習卡（閃卡）→ <a href="../policy/#flash">政策 tab</a></p>
 
       <div class="card" id="answer-frame">
@@ -68,6 +69,13 @@
           </li>
         </ol>
       </div>
+
+      <p class="muted" style="margin:12px 0 0">必用 10 句、句式搜尋／篩選同五段 Shared frames → <a href="#phrases">句式</a> tab。</p>
+
+    </section>
+
+    <section class="panel" id="panel-phrases">
+      <p class="lede" style="margin:0 0 10px">必用 10 句＋搜尋／篩選＋Opening→Closing 五段句式卡（篩選會同步套用）。</p>
 
       <div class="card must-use" id="phrases">
         <h2>必用 10 句 <span class="chip">文筆一般都夠</span></h2>
@@ -171,6 +179,7 @@
           <div class="phrase-grid stage-phrases" data-stage="other" id="stage-other-phrases" hidden></div>
         </div>
       </div>
+
 
     </section>
 
@@ -287,17 +296,17 @@
   </main>
 
   <div class="toast" id="toast" role="status"></div>
-    <script src="data/youth-digital-2026-11-05.js?v=20261105b"></script>
-    <script src="data/carer-respite-2026-11-04.js?v=20261105b"></script>
-  <script src="data/heat-island.js?v=20261104h"></script>
-  <script src="data/mental-health.js?v=20261104h"></script>
-  <script src="data/sme-digital.js?v=20261104h"></script>
-  <script src="data/elderly-care.js?v=20261104h"></script>
-  <script src="data/new-industrial.js?v=20261104h"></script>
-  <script src="data/border-resilience.js?v=20261104h"></script>
-  <script src="data/loop-link-resumption.js?v=20261104h"></script>
-  <script src="data/waste-recovery-2026-11-02.js?v=20261104h"></script>
-  <script src="app.js?v=20261105b"></script>
-  <script src="../shell/tabbar.js?v=20261105b"></script>
+    <script src="data/youth-digital-2026-11-05.js?v=20261105c"></script>
+    <script src="data/carer-respite-2026-11-04.js?v=20261105c"></script>
+  <script src="data/heat-island.js?v=20261105c"></script>
+  <script src="data/mental-health.js?v=20261105c"></script>
+  <script src="data/sme-digital.js?v=20261105c"></script>
+  <script src="data/elderly-care.js?v=20261105c"></script>
+  <script src="data/new-industrial.js?v=20261105c"></script>
+  <script src="data/border-resilience.js?v=20261105c"></script>
+  <script src="data/loop-link-resumption.js?v=20261105c"></script>
+  <script src="data/waste-recovery-2026-11-02.js?v=20261105c"></script>
+  <script src="app.js?v=20261105c"></script>
+  <script src="../shell/tabbar.js?v=20261105c"></script>
 </body>
 </html>
