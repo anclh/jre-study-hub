@@ -6,6 +6,8 @@
     departments: new Set(),
     themes: new Set(),
     sort: "newest",
+    page: 1,
+    pageSize: 10,
     data: null,
     filtersOpen: localStorage.getItem("jre-filters-open") === "1" || window.matchMedia("(min-width: 768px)").matches,
   };
@@ -19,6 +21,7 @@
     count: document.getElementById("count"),
     sort: document.getElementById("sort"),
     browse: document.getElementById("browse"),
+    pagination: document.getElementById("pagination"),
     digest: document.getElementById("digest"),
     digestBody: document.getElementById("digestBody"),
     hero: document.querySelector(".hero"),
@@ -43,6 +46,9 @@
       depts: "政策局／部門",
       themes: "政策主題",
       results: "結果",
+      pageOf: "第 {page} / {total} 頁",
+      prevPage: "上一頁",
+      nextPage: "下一頁",
       sortLabel: "排序",
       newest: "最新優先",
       oldest: "最舊優先",
@@ -82,6 +88,9 @@
       depts: "Bureaux / departments",
       themes: "Policy themes",
       results: "Results",
+      pageOf: "Page {page} of {total}",
+      prevPage: "Prev",
+      nextPage: "Next",
       sortLabel: "Sort",
       newest: "Newest first",
       oldest: "Oldest first",
@@ -154,6 +163,7 @@
       all.textContent = t("all");
       all.addEventListener("click", () => {
         set.clear();
+        state.page = 1;
         buildChips();
         render();
       });
@@ -167,6 +177,7 @@
         btn.addEventListener("click", () => {
           if (set.has(entry.id)) set.delete(entry.id);
           else set.add(entry.id);
+          state.page = 1;
           buildChips();
           render();
         });
@@ -255,6 +266,88 @@
           <div class="hot-val">${escapeHtml(hf.measure || "")}</div>
         </div>
       </div>`;
+  }
+
+
+  function renderPagination(totalPages) {
+    if (!el.pagination) return;
+    if (totalPages <= 1) {
+      el.pagination.innerHTML = "";
+      return;
+    }
+
+    const frag = document.createDocumentFragment();
+
+    // 上一頁按鈕
+    const prevBtn = document.createElement("button");
+    prevBtn.type = "button";
+    prevBtn.className = "pagination-btn";
+    prevBtn.textContent = `‹ ${t("prevPage")}`;
+    prevBtn.disabled = state.page <= 1;
+    prevBtn.addEventListener("click", () => {
+      if (state.page > 1) {
+        state.page--;
+        render();
+        el.browse.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+    frag.appendChild(prevBtn);
+
+    // 頁碼生成算法 (最多顯示合理數量的頁碼按鈕，附帶省略號)
+    const pages = [];
+    if (totalPages <= 7) {
+      for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+      pages.push(1);
+      if (state.page > 3) pages.push("...");
+      const start = Math.max(2, state.page - 1);
+      const end = Math.min(totalPages - 1, state.page + 1);
+      for (let i = start; i <= end; i++) {
+        if (!pages.includes(i)) pages.push(i);
+      }
+      if (state.page < totalPages - 2) pages.push("...");
+      if (!pages.includes(totalPages)) pages.push(totalPages);
+    }
+
+    pages.forEach((p) => {
+      if (p === "...") {
+        const dots = document.createElement("span");
+        dots.className = "pagination-dots";
+        dots.textContent = "…";
+        frag.appendChild(dots);
+      } else {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "pagination-btn" + (p === state.page ? " active" : "");
+        btn.textContent = String(p);
+        btn.addEventListener("click", () => {
+          if (state.page !== p) {
+            state.page = p;
+            render();
+            el.browse.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+        frag.appendChild(btn);
+      }
+    });
+
+    // 下一頁按鈕
+    const nextBtn = document.createElement("button");
+    nextBtn.type = "button";
+    nextBtn.className = "pagination-btn";
+    nextBtn.textContent = `${t("nextPage")} ›`;
+    nextBtn.disabled = state.page >= totalPages;
+    nextBtn.addEventListener("click", () => {
+      if (state.page < totalPages) {
+        state.page++;
+        render();
+        el.browse.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+    frag.appendChild(nextBtn);
+
+    el.pagination.innerHTML = "";
+    el.pagination.appendChild(frag);
   }
 
   function renderCards(items) {
@@ -381,8 +474,17 @@
       el.browse.hidden = false;
       el.digest.classList.add("visible");
       const items = filtered();
-      el.count.textContent = `${t("results")}: ${items.length} ${t("items")}`;
-      renderCards(items);
+      const totalPages = Math.ceil(items.length / state.pageSize) || 1;
+      if (state.page > totalPages) state.page = totalPages;
+      if (state.page < 1) state.page = 1;
+
+      const start = (state.page - 1) * state.pageSize;
+      const pagedItems = items.slice(start, start + state.pageSize);
+
+      const pageStr = t("pageOf").replace("{page}", state.page).replace("{total}", totalPages);
+      el.count.textContent = `${t("results")}: ${items.length} ${t("items")} (${pageStr})`;
+      renderCards(pagedItems);
+      renderPagination(totalPages);
       renderDigest();
     }
   }
@@ -416,16 +518,19 @@
     );
     el.search.addEventListener("input", () => {
       state.query = el.search.value;
+      state.page = 1;
       render();
     });
     el.clear.addEventListener("click", () => {
       el.search.value = "";
       state.query = "";
+      state.page = 1;
       render();
     });
 
     el.sort.addEventListener("change", () => {
       state.sort = el.sort.value;
+      state.page = 1;
       render();
     });
     if (el.filtersToggle) {
