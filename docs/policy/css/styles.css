@@ -911,11 +911,22 @@ button {
   display: none !important;
 }
 
-/* —— 政策溫習卡: first block in main, always on the landing (browse/digest stay below) —— */
+/* —— 政策溫習卡: first block in main, toggled via tabs —— */
+#flash {
+  display: block;
+}
 #flash {
   display: block;
   margin-bottom: 14px;
   scroll-margin-top: calc(var(--hub-tab-h, 56px) + 76px);
+}
+#flash[hidden],
+.policy-flash[hidden],
+.hero[hidden],
+.browse.hidden,
+.digest[hidden],
+section[hidden] {
+  display: none !important;
 }
 #bank-study { scroll-margin-top: calc(var(--hub-tab-h, 56px) + 76px); }
 #flash .bank-list-hint { margin: 8px 0 0; font-size: 0.82rem; color: var(--muted); }
