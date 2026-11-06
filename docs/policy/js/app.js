@@ -1,7 +1,7 @@
 (() => {
   const state = {
     lang: localStorage.getItem("jre-lang") || "zh",
-    view: "browse",
+    view: "flash",
     query: "",
     departments: new Set(),
     themes: new Set(),
@@ -22,6 +22,7 @@
     digest: document.getElementById("digest"),
     digestBody: document.getElementById("digestBody"),
     hero: document.querySelector(".hero"),
+    flash: document.getElementById("flash"),
     langBtns: document.querySelectorAll("[data-lang]"),
     viewBtns: document.querySelectorAll("[data-view]"),
     i18n: document.querySelectorAll("[data-i18n]"),
@@ -53,6 +54,8 @@
       measure: "措施",
       fullSummary: "完整摘要",
       source: "原文連結",
+      tabFlash: "政策溫習卡",
+      tabBrowse: "搜尋近期政策動向",
       browse: "瀏覽",
       digest: "每周摘要",
       digestTitle: "近14天按部門／局別整理",
@@ -90,6 +93,8 @@
       measure: "Measure",
       fullSummary: "Full summary",
       source: "Source link",
+      tabFlash: "Study Cards",
+      tabBrowse: "Recent Policies",
       browse: "Browse",
       digest: "Weekly digest",
       digestTitle: "Last 14 days by department",
@@ -361,20 +366,23 @@
 
   function render() {
     applyI18n();
+    if (el.flash) el.flash.hidden = true;
+    if (el.hero) el.hero.hidden = true;
     el.browse.classList.add("hidden");
     el.browse.hidden = true;
     el.digest.classList.remove("visible");
 
-    if (state.view === "browse") {
+    if (state.view === "flash") {
+      if (el.flash) el.flash.hidden = false;
+    } else {
+      // 搜尋近期香港政策動向 view (包含 hero 搜尋/篩選、browse 列表與近14天摘要)
+      if (el.hero) el.hero.hidden = false;
       el.browse.classList.remove("hidden");
       el.browse.hidden = false;
+      el.digest.classList.add("visible");
       const items = filtered();
       el.count.textContent = `${t("results")}: ${items.length} ${t("items")}`;
       renderCards(items);
-    } else {
-      // digest (and any legacy non-browse view)
-      if (state.view === "briefs") state.view = "digest";
-      el.digest.classList.add("visible");
       renderDigest();
     }
   }
