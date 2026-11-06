@@ -26,6 +26,7 @@
       <div class="header-actions">
         <div class="view-toggle" role="group" aria-label="View">
           <button type="button" data-view="browse" class="active" data-i18n="browse">瀏覽</button>
+          <button type="button" data-view="bureaux" data-i18n="bureaux">決策局</button>
           <button type="button" data-view="digest" data-i18n="digest">每周摘要</button>
         </div>
         <div class="lang-toggle" role="group" aria-label="Language">
@@ -125,6 +126,448 @@
       </div>
       <div id="digestBody"></div>
     </section>
+    <section id="bureaux" class="bureaux-view" aria-live="polite" hidden>
+      <div class="digest-intro">
+        <h2>特區政府 15 決策局 · 職責與最新政策</h2>
+        <p class="lede">JRE 英文 Q1（Who 主責局署／Rec）及中文 Q2（政策例子／局署對稱／落地措施）官方速查手冊。包含中英全稱、縮寫、核心職責、轄下執行署及最新施政報告關鍵數據。</p>
+      </div>
+
+      <div class="search-bar sticky-search" style="margin-bottom:16px;">
+        <input id="bureauxSearch" type="search" placeholder="搜尋局名（中/EN）、縮寫（如 DEVB, HB）、職責、政策關鍵字..." aria-label="搜尋決策局" />
+      </div>
+
+      <div class="bureaux-cards" id="bureauxCards">
+        <!-- 1. 房屋局 -->
+        <article class="card bureau-item" data-kw="房屋局 HB Housing Bureau 公屋 居屋 簡約公屋 劏房 基本住房單位 輪候時間">
+          <div class="card-top">
+            <span class="date-badge">HB</span>
+          </div>
+          <h3>房屋局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Housing Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">房屋署 (HD)</span><span class="tag">香港房屋委員會 (HKHA)</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>統籌全港公私營房屋政策及推展《長遠房屋策略》（長策）。</li>
+              <li>管理公共租住房屋（PRH）、資助出售房屋（居屋 HOS、綠置居 GSH）。</li>
+              <li>規管不適切居所（劏房）及落實「基本住房單位」制度。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>公屋綜合輪候時間</strong>：約 4.8 年，目標 2026/27 降至約 4.5 年。</div>
+                <div>• <strong>簡約公屋 (LPH)</strong>：興建約 30,000 個單位，作為過渡性支援。</div>
+                <div>• <strong>劏房規管</strong>：推行《基本住房單位條例》，要求面積≥8平方米、獨立廁所及消防標準。</div>
+                <div>• <strong>五年供應收成期</strong>：公營房屋建屋量（連簡約公屋）達約 196,000 伙（升約 73%）。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. 發展局 -->
+        <article class="card bureau-item" data-kw="發展局 DEVB Development Bureau 土地 土地儲備 北部都會區 新田科技城 交椅洲人工島 市區重建 建造業 組裝合成 MiC">
+          <div class="card-top">
+            <span class="date-badge">DEVB</span>
+          </div>
+          <h3>發展局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Development Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">地政總署</span><span class="tag">規劃署</span><span class="tag">屋宇署</span><span class="tag">土木工程拓展署</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>規劃、土地供應與管理、市區更新及工務工程協調。</li>
+              <li>推展大型造地項目（北部都會區、交椅洲人工島）及土地儲備策略。</li>
+              <li>推廣建築創新（組裝合成建築法 MiC）及監督建築安全與工人培訓。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>北部都會區</strong>：總規劃約 30,000 公頃，預計提供約 500,000 伙住宅及數十萬創科職位。</div>
+                <div>• <strong>熟地儲備</strong>：未來十年維持約 2,500 公頃「熟地」儲備，掌握土地主導權。</div>
+                <div>• <strong>建造技術提效</strong>：指定工務工程強制採用組裝合成 (MiC) 及建築信息模擬 (BIM)。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. 醫務衞生局 -->
+        <article class="card bureau-item" data-kw="醫務衞生局 醫衞局 Health Bureau HHB 基層醫療 醫院管理局 HA 地區康健中心 DHC 精神健康 醫療券 公營醫療改革">
+          <div class="card-top">
+            <span class="date-badge">HHB</span>
+          </div>
+          <h3>醫務衞生局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Health Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">衞生署 (DH)</span><span class="tag">醫院管理局 (HA)</span><span class="tag">基層醫療署</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>制定公共醫療衛生政策、管理公立醫院系統及分配醫療資源。</li>
+              <li>落實《基層醫療健康藍圖》，推動「重預防、早治療、社區化」醫療體系。</li>
+              <li>推展中醫藥發展、精神健康服務協調及跨境醫療合作。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>深化醫療改革</strong>：推廣「慢病共治」，每年增設約 220,000 個醫管局家庭醫學門診名額。</div>
+                <div>• <strong>地區康健中心 (DHC)</strong>：於全港 18 區作為基層醫療樞紐，推動慢性病初篩與同儕支援。</div>
+                <div>• <strong>跨境醫療銜接</strong>：擴展「長者醫療券大灣區試點」至大灣區內地多間三甲醫院及社康門診。</div>
+                <div>• <strong>精神健康應急</strong>：落實校園三層應急機制及「健心先導計劃」，改善專科門診輪候。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. 勞工及福利局 -->
+        <article class="card bureau-item" data-kw="勞工及福利局 勞福局 LWB Labour and Welfare Bureau 安老 照顧者 社區照顧券 院舍 平台經濟 外賣員 最低工資 輸入勞工">
+          <div class="card-top">
+            <span class="date-badge">LWB</span>
+          </div>
+          <h3>勞工及福利局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Labour and Welfare Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">社會福利署 (SWD)</span><span class="tag">勞工處 (LD)</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>推展社會福利、扶貧、安老服務、身心障礙人士支援及家庭服務。</li>
+              <li>保障勞工權益、職業安全、就業服務及人力資源政策。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>安老核心方針</strong>：「居家安老為核心，院舍為後援」。</div>
+                <div>• <strong>服務券擴展</strong>：2027-28 社區照顧券增至 18,000 張、院舍券增至 8,000 張。</div>
+                <div>• <strong>照顧者支援</strong>：成立照顧者專線（182 183）、增加日間暫託名額，開展「以老護老」專項篩查。</div>
+                <div>• <strong>平台配送員保障</strong>：研擬行業專屬立法（強制意外保險、惡劣天氣停工指引）。</div>
+                <div>• <strong>最低工資優化</strong>：落實「一年一檢」並引入法定「可加不減」調整方程式。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. 創新科技及工業局 -->
+        <article class="card bureau-item" data-kw="創新科技及工業局 創科局 ITIB Innovation, Technology and Industry Bureau 河套 新田科技城 人工智能 AI 數碼港 科技園 新型工業化">
+          <div class="card-top">
+            <span class="date-badge">ITIB</span>
+          </div>
+          <h3>創新科技及工業局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Innovation, Technology and Industry Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">數碼政策辦公室 (DPO)</span><span class="tag">創新科技署 (ITC)</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>制定香港創科發展藍圖，推動「南金融、北創科」產業佈局。</li>
+              <li>推進河套深港科技創新合作區、新田科技城中試及量產轉化。</li>
+              <li>推動政府及社會數碼轉型（智慧城市、智方便、人工智能安全監管）。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>河套深港科技創新合作區</strong>：港深協同運作「一河兩岸、一區兩園」，爭取數據及樣本跨境流動。</div>
+                <div>• <strong>AI 產業資助</strong>：注資 10 億元推展「人工智能資助計劃」，成立 DPO 統籌數碼政務。</div>
+                <div>• <strong>新型工業加速計劃 (NIFS)</strong>：配對資助生命健康、AI 及先進製造企業在港設立生產線。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. 環境及生態局 -->
+        <article class="card bureau-item" data-kw="環境及生態局 環保局 EEB Environment and Ecology Bureau 垃圾收費 廚餘 回收 碳中和 氣候行動藍圖 電動車 綠色出行 食品安全">
+          <div class="card-top">
+            <span class="date-badge">EEB</span>
+          </div>
+          <h3>環境及生態局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Environment and Ecology Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">環境保護署 (EPD)</span><span class="tag">食物環境衞生署 (FEHD)</span><span class="tag">漁農自然護理署 (AFCD)</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>推行環境保護、節能減碳、廢物管理以及自然生態保育。</li>
+              <li>主管食品安全、漁農業發展、環境衛生及街市管理。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>都市固體廢物收費 (MSW Charging)</strong>：暫停強制實施，聚焦擴建「綠在區區」及公屋智能廚餘桶。</div>
+                <div>• <strong>《香港資源循環藍圖 2035》</strong>：中期目標將人均棄置量減 40–45%，廢物回收率提至約 55%。</div>
+                <div>• <strong>綠色出行與電動車</strong>：五年內快充樁增至約 5,000 個，配合 2035 年前停止燃油私家車新登記。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. 運輸及物流局 -->
+        <article class="card bureau-item" data-kw="運輸及物流局 運物局 TLB Transport and Logistics Bureau 鐵路 網約車 運輸策略藍圖 智慧交通 機場三跑 港珠澳大橋 跨境口岸">
+          <div class="card-top">
+            <span class="date-badge">TLB</span>
+          </div>
+          <h3>運輸及物流局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Transport and Logistics Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">運輸署 (TD)</span><span class="tag">路政署 (HyD)</span><span class="tag">民航處 (CAD)</span><span class="tag">海事處 (MD)</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>規劃及監管陸路交通、公共交通網絡、過海隧道及主要幹道。</li>
+              <li>發展海空運物流樞紐（香港國際機場三跑道系統、智慧港口）。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>主要運輸基建藍圖</strong>：推進「三鐵三道」，包括北環線主線與支線，連接北部都會區。</div>
+                <div>• <strong>的士與網約車規管</strong>：立法引入「的士車隊制」，並就網約車平台發牌與標準展開立法準備。</div>
+                <div>• <strong>智慧綠色集體運輸</strong>：於啟德、東九龍及洪水橋引入雲巴或輕軌等智慧集體運輸。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. 文化體育及旅遊局 -->
+        <article class="card bureau-item" data-kw="文化體育及旅遊局 文體旅局 CSTB Culture, Sports and Tourism Bureau 盛事經濟 啟德體育園 西九文化區 深度遊 無處不旅遊 一程多站">
+          <div class="card-top">
+            <span class="date-badge">CSTB</span>
+          </div>
+          <h3>文化體育及旅遊局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Culture, Sports and Tourism Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">康樂及文化事務署 (LCSD)</span><span class="tag">旅遊事務署 (TC)</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>促進文化藝術、創意產業、體育運動普及化及精英化。</li>
+              <li>制定旅遊業發展藍圖，推動香港作為國際旅遊及文化交流中心。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>啟德體育園啟用</strong>：設 50,000 座位主場館，承接國際頂級體育賽事與大型演藝盛事。</div>
+                <div>• <strong>「無處不旅遊」理念</strong>：由單純購物轉向非遺、歷史文化、海島生態深度遊及大灣區「一程多站」。</div>
+                <div>• <strong>客源多元化</strong>：開拓中東及東盟穆斯林友善（Halal）餐飲與住宿認證，平衡旅客結構。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. 商務及經濟發展局 -->
+        <article class="card bureau-item" data-kw="商務及經濟發展局 商經局 CEDB Commerce and Economic Development Bureau 對外貿易 一帶一路 東盟 中小企支援 電子商貿 知識產權">
+          <div class="card-top">
+            <span class="date-badge">CEDB</span>
+          </div>
+          <h3>商務及經濟發展局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Commerce and Economic Development Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">投資推廣署 (InvestHK)</span><span class="tag">工業貿易署 (TID)</span><span class="tag">知識產權署 (IPD)</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>促進對外貿易投資、開拓「一帶一路」及東盟市場。</li>
+              <li>支援本地中小企業（融資擔保、電商轉型）及維護消費者權益。</li>
+              <li>保障知識產權及推動區域知識產權貿易中心定位。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>中小企融資擔保 (SFGS)</strong>：優化百分百擔保特惠貸款，延長還息不還本期。</div>
+                <div>• <strong>電商拓內銷</strong>：舉辦「香港好物節」，協助本地品牌開拓內地大型電商市場。</div>
+                <div>• <strong>引資引企</strong>：聯同引進重點企業辦公室 (OASES) 引進高增值科技與製造企業落戶。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. 財經事務及庫務局 -->
+        <article class="card bureau-item" data-kw="財經事務及庫務局 財庫局 FSTB Financial Services and the Treasury Bureau 國際金融中心 綠色金融 家族辦公室 虛擬資產 財政赤字 庫務審批">
+          <div class="card-top">
+            <span class="date-badge">FSTB</span>
+          </div>
+          <h3>財經事務及庫務局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Financial Services and the Treasury Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">稅務局 (IRD)</span><span class="tag">庫務署 (Treasury)</span><span class="tag">差餉物業估價署 (RVD)</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>維護及鞏固香港國際金融中心地位，推動資本市場創新（證券、債券、保險、財富管理）。</li>
+              <li>統籌特區政府財政預算、公共開支控制、稅務政策及政府採購。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>金融新動能</strong>：深化離岸人民幣樞紐、發行綠色可持續債券、推動家族辦公室稅務寬減。</div>
+                <div>• <strong>虛擬資產監管</strong>：推行法幣穩定幣發行人制度及場外交易 (OTC) 牌照制度。</div>
+                <div>• <strong>財政整合策略</strong>：在面對結構性財政赤字下，嚴格控制公務員編制增長及經常性開支增幅。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. 民政及青年事務局 -->
+        <article class="card bureau-item" data-kw="民政及青年事務局 民青局 HYAB Home and Youth Affairs Bureau 青年發展藍圖 關愛隊 地區治理 社區網絡 課後託管">
+          <div class="card-top">
+            <span class="date-badge">HYAB</span>
+          </div>
+          <h3>民政及青年事務局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Home and Youth Affairs Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">民政事務總署 (HAD)</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>推行《青年發展藍圖》，涵蓋青年學業、就業、創業及置業（四業）。</li>
+              <li>落實完善地區治理架構，協調 18 區區議會及「關愛隊」運作。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>地區關愛隊</strong>：全港 18 區 452 隊關愛隊全面落地，主動探訪長者戶及支援地區緊急事故。</div>
+                <div>• <strong>三萬青年職位與實習計劃</strong>：兩年內提供 1 萬職位 + 1 萬實習 + 1 萬培訓，促進向上流動。</div>
+                <div>• <strong>青年宿舍計劃</strong>：資助酒店轉作青年宿舍，提供平價租金並鼓勵青年參與社區服務。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. 教育局 -->
+        <article class="card bureau-item" data-kw="教育局 EDB Education Bureau STEAM 國際教育樞紐 專上教育 幼兒教育 師資培訓 職業專才學位">
+          <div class="card-top">
+            <span class="date-badge">EDB</span>
+          </div>
+          <h3>教育局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Education Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">大學教育資助委員會 (UGC)</span><span class="tag">學生資助處 (SFO)</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>制定及推行涵蓋幼稚園、中小學至專上教育的整體方針。</li>
+              <li>推動 STEAM 教育、國民教育、職業專才教育（VPET）及特教支援。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>留學香港 (Study in Hong Kong)</strong>：八大非本地生限額增至 40%，打造國際高等教育樞紐。</div>
+                <div>• <strong>北部都會區大學城</strong>：預留用地吸引本港及國際知名院校合作辦學，促進科研成果轉化。</div>
+                <div>• <strong>應用科學大學 (UAS)</strong>：推展應用學位課程，提升職專教育社會認受性。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 13. 保安局 -->
+        <article class="card bureau-item" data-kw="保安局 SB Security Bureau 國家安全 維護國家安全條例 SNSO 口岸通關 應急管理 警務 消防 入境">
+          <div class="card-top">
+            <span class="date-badge">SB</span>
+          </div>
+          <h3>保安局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Security Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">警務處</span><span class="tag">入境處</span><span class="tag">海關</span><span class="tag">懲教署</span><span class="tag">消防處</span><span class="tag">飛行服務隊</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>維護國家安全、公共秩序、反恐、出入境管制及海關執法。</li>
+              <li>管理六大紀律部隊及統籌大灣區跨境應急救援機制。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>落實《維護國家安全條例》(SNSO)</strong>：補齊維護國家安全法制短板，確保社會大局穩定。</div>
+                <div>• <strong>智慧口岸通關</strong>：皇崗及新口岸推行「合作查驗、一次放行」，提升跨境人流通關速度。</div>
+                <div>• <strong>大灣區應急聯動</strong>：簽署粵港澳應急管理合作協議，實現重大事故救援人員與裝備互援。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 14. 公務員事務局 -->
+        <article class="card bureau-item" data-kw="公務員事務局 CSB Civil Service Bureau 公務員守則 招聘 績效指標 賞罰機制 培訓 學院">
+          <div class="card-top">
+            <span class="date-badge">CSB</span>
+          </div>
+          <h3>公務員事務局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Civil Service Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">公務員學院</span><span class="tag">公務員培訓處</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>全權負責特區公務員隊伍的招聘、晉升、薪酬、福利、品行及紀律。</li>
+              <li>主辦聯合招聘考試 (JRE)、綜合招聘考試 (CRE) 及基本法及國安法測試 (BLNST)。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>更新《公務員守則》</strong>：確立公務員以愛國愛港、以民為本、恪守法治、績效導向為核心。</div>
+                <div>• <strong>強化賞罰機制</strong>：設立「行政長官表揚榜」，同時簡化著令工作表現持續欠佳人員退休的處理機制。</div>
+                <div>• <strong>公務員學院深化培訓</strong>：加強國家事務、憲制秩序及領導應變能力培訓。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 15. 政制及內地事務局 -->
+        <article class="card bureau-item" data-kw="政制及內地事務局 CMAB Constitutional and Mainland Affairs Bureau 基本法 憲法 大灣區發展辦公室 駐內地辦事處 平等機會 私隱">
+          <div class="card-top">
+            <span class="date-badge">CMAB</span>
+          </div>
+          <h3>政制及內地事務局 <span style="font-size:0.9rem;font-weight:normal;color:var(--muted);">Constitutional and Mainland Affairs Bureau</span></h3>
+          <div class="meta-tags">
+            <span class="tag">粵港澳大灣區發展辦公室</span><span class="tag">選舉事務處 (REO)</span><span class="tag">駐內地經貿辦</span>
+          </div>
+          <div class="angles" style="margin-top:10px;">
+            <h4>主要職責</h4>
+            <ul>
+              <li>維持特區憲制秩序、推廣《憲法》與《基本法》。</li>
+              <li>推進與中央及各省市合作，特別是粵港澳大灣區高水平融合。</li>
+              <li>推廣人權、個人資料私隱及反歧視平等機會。</li>
+            </ul>
+          </div>
+          <div class="hot-face" style="margin-top:10px;">
+            <div class="hot-row">
+              <div class="hot-k">最新政策與 JRE 數據</div>
+              <div class="hot-val">
+                <div>• <strong>大灣區高水平融合</strong>：透過「粵港合作聯席會議」機制，深化醫療、養老、金融及青年雙向流動。</div>
+                <div>• <strong>政制與選舉維護</strong>：全面落實「愛國者治港」原則，確保各級公共選舉依法合規高效。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
   </main>
 
   <footer class="app-footer">

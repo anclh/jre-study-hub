@@ -21,6 +21,9 @@
     browse: document.getElementById("browse"),
     digest: document.getElementById("digest"),
     digestBody: document.getElementById("digestBody"),
+    bureaux: document.getElementById("bureaux"),
+    bureauxCards: document.getElementById("bureauxCards"),
+    bureauxSearch: document.getElementById("bureauxSearch"),
     hero: document.querySelector(".hero"),
     langBtns: document.querySelectorAll("[data-lang]"),
     viewBtns: document.querySelectorAll("[data-view]"),
@@ -54,6 +57,7 @@
       fullSummary: "完整摘要",
       source: "原文連結",
       browse: "瀏覽",
+      bureaux: "決策局",
       digest: "每周摘要",
       digestTitle: "近14天按部門／局別整理",
       digestLede: "將最近兩周的政策項目按部門分組，方便快速複習。",
@@ -91,6 +95,7 @@
       fullSummary: "Full summary",
       source: "Source link",
       browse: "Browse",
+      bureaux: "Bureaux",
       digest: "Weekly digest",
       digestTitle: "Last 14 days by department",
       digestLede: "Recent items grouped by bureau/department for quick revision.",
@@ -364,6 +369,10 @@
     el.browse.classList.add("hidden");
     el.browse.hidden = true;
     el.digest.classList.remove("visible");
+    if (el.bureaux) {
+      el.bureaux.hidden = true;
+      el.bureaux.classList.remove("visible");
+    }
 
     if (state.view === "browse") {
       el.browse.classList.remove("hidden");
@@ -371,6 +380,11 @@
       const items = filtered();
       el.count.textContent = `${t("results")}: ${items.length} ${t("items")}`;
       renderCards(items);
+    } else if (state.view === "bureaux") {
+      if (el.bureaux) {
+        el.bureaux.hidden = false;
+        el.bureaux.classList.add("visible");
+      }
     } else {
       // digest (and any legacy non-browse view)
       if (state.view === "briefs") state.view = "digest";
@@ -415,6 +429,17 @@
       state.query = "";
       render();
     });
+    if (el.bureauxSearch) {
+      el.bureauxSearch.addEventListener("input", (e) => {
+        const q = e.target.value.toLowerCase().trim();
+        const bCards = document.querySelectorAll(".bureau-item");
+        bCards.forEach((c) => {
+          const hay = (c.getAttribute("data-kw") + " " + c.innerText).toLowerCase();
+          c.style.display = (!q || hay.includes(q)) ? "block" : "none";
+        });
+      });
+    }
+
     el.sort.addEventListener("change", () => {
       state.sort = el.sort.value;
       render();
