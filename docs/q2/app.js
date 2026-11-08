@@ -512,7 +512,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261104b", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261108a", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -1046,7 +1046,7 @@
   async function loadQ2Phrases() {
     const status = $("#q2PhraseStatus");
     try {
-      const res = await fetch("data/q2_phrases.json?v=20261104b", { cache: "no-store" });
+      const res = await fetch("data/q2_phrases.json?v=20261108a", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       phraseState.data = await res.json();
       if (status) status.innerHTML = "";

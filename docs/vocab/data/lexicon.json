@@ -13404,5 +13404,263 @@
     ],
     "example": "Extra community care service vouchers fail if day-care and home-care capacity is not expanded in parallel.",
     "topic": "welfare-population"
+  },
+  {
+    "term": "transferable record",
+    "zh": "可轉讓紀錄；可轉讓電子紀錄",
+    "pos": "n.",
+    "related": [
+      "electronic transferable record"
+    ],
+    "note": "可轉讓文件的電子紀錄形式；香港法例草案擬賦予其與紙本文件相同功能",
+    "synonyms": [
+      "negotiable record"
+    ],
+    "antonyms": [
+      "non-transferable record"
+    ],
+    "examples": [
+      {
+        "en": "The bill would recognise an electronic transferable record as a legal alternative to paper.",
+        "zh": "條例草案擬承認電子可轉讓紀錄可作為紙本的法律替代形式。"
+      },
+      {
+        "en": "Reliable controls help establish who holds a transferable record.",
+        "zh": "可靠的管控有助確立誰人持有可轉讓紀錄。"
+      }
+    ],
+    "example": "The bill would recognise an electronic transferable record as a legal alternative to paper.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "bill of lading",
+    "zh": "提單",
+    "pos": "n.",
+    "related": [],
+    "note": "證明貨物收託及運輸安排的可轉讓貿易文件",
+    "synonyms": [
+      "shipping document"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "An electronic bill of lading can reduce paperwork in cross-border trade.",
+        "zh": "電子提單可減少跨境貿易的文書工作。"
+      },
+      {
+        "en": "The proposed framework covers documents such as bills of lading.",
+        "zh": "建議框架涵蓋提單等文件。"
+      }
+    ],
+    "example": "An electronic bill of lading can reduce paperwork in cross-border trade.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "promissory note",
+    "zh": "承付票；本票",
+    "pos": "n.",
+    "related": [],
+    "note": "由一方承諾向另一方支付指定款項的可轉讓票據",
+    "synonyms": [
+      "promise-to-pay note"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The draft law would provide for the electronic use of promissory notes.",
+        "zh": "草案將為承付票的電子化提供法律依據。"
+      },
+      {
+        "en": "A promissory note records a promise to repay a stated sum.",
+        "zh": "承付票記錄支付指定款項的承諾。"
+      }
+    ],
+    "example": "The draft law would provide for the electronic use of promissory notes.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "functional equivalence",
+    "zh": "功能等同",
+    "pos": "n.",
+    "related": [
+      "functionally equivalent"
+    ],
+    "note": "法律承認電子文件可履行與紙本相同的功能",
+    "synonyms": [
+      "legal equivalence"
+    ],
+    "antonyms": [
+      "functional disparity"
+    ],
+    "examples": [
+      {
+        "en": "The proposal applies the principle of functional equivalence to electronic trade records.",
+        "zh": "建議把功能等同原則應用於電子貿易紀錄。"
+      },
+      {
+        "en": "Functional equivalence does not require identical technology.",
+        "zh": "功能等同不代表必須採用相同技術。"
+      }
+    ],
+    "example": "The proposal applies the principle of functional equivalence to electronic trade records.",
+    "topic": "governance"
+  },
+  {
+    "term": "technology-neutral",
+    "zh": "技術中立的",
+    "pos": "adj.",
+    "related": [
+      "technology neutrality"
+    ],
+    "note": "規管制度聚焦可靠結果，而不指定單一技術",
+    "synonyms": [
+      "technology-agnostic"
+    ],
+    "antonyms": [
+      "technology-specific"
+    ],
+    "examples": [
+      {
+        "en": "A technology-neutral law can accommodate future digital solutions.",
+        "zh": "技術中立的法例可容納未來的數碼方案。"
+      },
+      {
+        "en": "The framework sets reliability requirements without prescribing one platform.",
+        "zh": "框架訂明可靠性要求，但不指定單一平台。"
+      }
+    ],
+    "example": "A technology-neutral law can accommodate future digital solutions.",
+    "topic": "governance"
+  },
+  {
+    "term": "interoperability",
+    "zh": "互操作性；互通能力",
+    "pos": "n.",
+    "related": [
+      "interoperable"
+    ],
+    "note": "不同系統或司法管轄區之間可互相識別及處理資料",
+    "synonyms": [
+      "compatibility"
+    ],
+    "antonyms": [
+      "incompatibility"
+    ],
+    "examples": [
+      {
+        "en": "Cross-border interoperability is essential for electronic trade documents.",
+        "zh": "電子貿易文件必須具備跨境互操作性。"
+      },
+      {
+        "en": "Common standards can improve interoperability between trading partners.",
+        "zh": "共同標準可提升貿易夥伴之間的互通能力。"
+      }
+    ],
+    "example": "Cross-border interoperability is essential for electronic trade documents.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "traceability",
+    "zh": "可追溯性",
+    "pos": "n.",
+    "related": [
+      "traceable"
+    ],
+    "note": "能追查文件或交易的來源、處理及流轉紀錄",
+    "synonyms": [
+      "audit trail"
+    ],
+    "antonyms": [
+      "opacity"
+    ],
+    "examples": [
+      {
+        "en": "Digital records can improve the traceability of trade transactions.",
+        "zh": "數碼紀錄可提升貿易交易的可追溯性。"
+      },
+      {
+        "en": "A clear audit trail helps resolve disputes over document control.",
+        "zh": "清晰的審計軌跡有助解決文件控制權爭議。"
+      }
+    ],
+    "example": "Digital records can improve the traceability of trade transactions.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "paperless trade",
+    "zh": "無紙貿易",
+    "pos": "n.",
+    "related": [
+      "paperless trading"
+    ],
+    "note": "以電子紀錄取代部分紙本貿易文件及流程",
+    "synonyms": [
+      "digital trade documentation"
+    ],
+    "antonyms": [
+      "paper-based trade"
+    ],
+    "examples": [
+      {
+        "en": "Paperless trade can shorten processing time and reduce administrative costs.",
+        "zh": "無紙貿易可縮短處理時間並減低行政成本。"
+      },
+      {
+        "en": "A sound legal framework is needed to support paperless trade across borders.",
+        "zh": "跨境推行無紙貿易需要穩健的法律框架。"
+      }
+    ],
+    "example": "Paperless trade can shorten processing time and reduce administrative costs.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "legal certainty",
+    "zh": "法律確定性；法律明確性",
+    "pos": "n.",
+    "related": [],
+    "note": "法律規則清晰且結果可預期，有助市民及企業規劃",
+    "synonyms": [
+      "predictability of the law"
+    ],
+    "antonyms": [
+      "legal ambiguity"
+    ],
+    "examples": [
+      {
+        "en": "Clear rules on control and reliability can give businesses greater legal certainty.",
+        "zh": "清晰的控制權及可靠性規則可提高企業的法律確定性。"
+      },
+      {
+        "en": "Legal certainty supports investment in new compliance systems.",
+        "zh": "法律確定性有助企業投資新合規系統。"
+      }
+    ],
+    "example": "Clear rules on control and reliability can give businesses greater legal certainty.",
+    "topic": "governance"
+  },
+  {
+    "term": "compliance cost",
+    "zh": "合規成本",
+    "pos": "n.",
+    "related": [
+      "compliance costs"
+    ],
+    "note": "企業為符合監管要求而承擔的金錢、人手及系統成本",
+    "synonyms": [
+      "regulatory burden"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The Government should assess compliance costs for small and medium-sized enterprises.",
+        "zh": "政府應評估中小企承擔的合規成本。"
+      },
+      {
+        "en": "A phased rollout may help businesses manage compliance costs.",
+        "zh": "分階段推行或有助企業管理合規成本。"
+      }
+    ],
+    "example": "The Government should assess compliance costs for small and medium-sized enterprises.",
+    "topic": "fiscal-regulation"
   }
 ]

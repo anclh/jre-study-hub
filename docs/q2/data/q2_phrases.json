@@ -320,6 +320,24 @@
       "zh": "宜於六個月內公布……公開儀表板，訂明主責局署，並於首年後公開檢討。",
       "note": "公開儀表板＋主責＋首年檢討",
       "example": "宜於六個月內公布社區藥房配對成功率公開儀表板，訂明醫務衛生局主責，並於首年後公開檢討。"
+    },
+    {
+      "id": "arg-07",
+      "category": "arguments",
+      "paper": "q2",
+      "en": "By recognising … while retaining …, the measure can … without forcing every stakeholder to … at the same pace.",
+      "zh": "承認……同時保留……，既可……，亦毋須要求所有持份者以相同步伐……。",
+      "note": "平衡制度創新與選擇／適應差異",
+      "example": "承認電子貿易文件同時保留紙本選項，既可推動無紙化，亦毋須要求所有企業以相同步伐轉型。"
+    },
+    {
+      "id": "rec-08",
+      "category": "recommend",
+      "paper": "q2",
+      "en": "The Government should phase in …, publish clear standards for …, and review … after … to ensure that … .",
+      "zh": "政府宜分階段推行……，公布……的清晰標準，並於……後檢討……，確保……。",
+      "note": "分階段落實＋標準＋檢討",
+      "example": "政府宜分階段推行電子貿易文件，公布文件控制權及可靠性的清晰標準，並於首階段後檢討中小企採用情況，確保數碼轉型兼顧可行性。"
     }
   ]
 }
