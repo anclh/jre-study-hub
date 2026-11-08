@@ -7,6 +7,7 @@ One mobile-first GitHub Pages site behind a shared iPhone bottom tab bar:
 | 政策 Policy | `/docs/policy/` | Policy Bank (canonical in this hub) |
 | 英文Q1 English | `/docs/q1/` | Owned by **JRE English** — framework, phrase bank, mini-drill, Data File practice pack |
 | 中文Q2 Chinese | `/docs/q2/` | Owned by **JRE Chinese** — 議題思維框架 stub；links to Policy briefs |
+| 中文Q2 骨架句 Phrases | `/docs/phrases/` | Searchable, copyable Q2 phrase bank, grouped by writing stage |
 | 詞彙 Vocab | `/docs/vocab/` | Upstream [`anclh/jre-vocab-bank`](https://github.com/anclh/jre-vocab-bank) → `docs/` |
 
 **Live:** https://anclh.github.io/jre-study-hub/
@@ -23,6 +24,7 @@ docs/
   policy/             # Policy Bank
   q1/                 # English Q1 (JRE English) — framework + case pack
   q2/                 # Chinese Q2 stub (JRE Chinese)
+  phrases/            # Standalone Chinese Q2 phrase bank
   vocab/              # Vocab Bank snapshot
 ```
 

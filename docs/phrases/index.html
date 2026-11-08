@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b6e4f" />
+  <meta name="description" content="JRE 中文 Q2 骨架句 — 按五步分類、搜尋及複製句式" />
+  <title>中文 Q2 骨架句 · JRE Study Hub</title>
+  <link rel="stylesheet" href="../q2/styles.css?v=20261108a" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261104d" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-mark">Q2</div>
+        <div>
+          <h1>中文 Q2 骨架句</h1>
+          <p>按五步分類 · 搜尋 · 複製</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="card">
+      <p><a href="../q2/">← 返回中文 Q2</a></p>
+      <h2>骨架句</h2>
+      <p class="lede">文筆一般都夠——考試靠骨架，唔靠文采。每段套入本地例子／一個數。搜尋會套用到下面各分類。</p>
+      <div class="toolbar">
+        <div class="search"><input type="search" id="q2PhraseSearch" placeholder="搜尋句式 中／EN…" autocomplete="off" /></div>
+        <span class="count" id="q2PhraseCount">載入中…</span>
+      </div>
+      <nav class="filters" id="q2StageNav" aria-label="骨架句分類"></nav>
+      <p class="muted" id="q2PhraseDisclaimer"></p>
+      <div id="q2PhraseStatus" role="status"></div>
+    </div>
+    <div id="q2PhrasesRoot"></div>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js?v=20261108a"></script>
+  <script src="../shell/tabbar.js?v=20261108a"></script>
+</body>
+</html>
