@@ -3,7 +3,7 @@
     "title": "JRE Policy Bank",
     "title_zh": "JRE 政策資料庫",
     "description": "Interview-oriented current affairs bank sourced from public HK government and LegCo materials. Not affiliated with CS Radar.",
-    "updated": "2026-11-04",
+    "updated": "2026-11-08",
     "sources_note": "All items link to public info.gov.hk / policyaddress.gov.hk releases. Summaries and interview angles are original editorial notes for interview practice."
   },
   "departments": [
@@ -232,6 +232,118 @@
   ],
   "items": [
     {
+      "id": "20261106-hsk-industry-park-icac",
+      "date": "2026-11-06",
+      "title": "洪水橋產業園公司納入《防止賄賂條例》公共機構規管",
+      "title_en": "Hung Shui Kiu Industry Park Company designated a public body under anti-bribery law",
+      "departments": [
+        "devb"
+      ],
+      "themes": [
+        "legislation",
+        "governance",
+        "northern-metropolis"
+      ],
+      "summary": "政府刊憲修訂命令，將由政府全資擁有、負責發展及營運洪水橋產業園的公司列為《防止賄賂條例》下公共機構。公司董事及僱員將成為條例所指公職人員，與公司工作相關的索取或接受利益等行為受更嚴格規管；與公司有業務往來人士亦受相關條文約束。命令須經立法會先訂立後審議程序，預定2027年1月29日起生效。",
+      "interview_angles": [
+        "產業園肩負招商和土地發展職能，如何在行政效率與公共機構級別的廉潔監管間取得平衡？",
+        "納入條例後，董事、僱員、承辦商及投資者需要哪些清晰指引和合規培訓？",
+        "北都其他由公營機構或政府持有公司承擔的發展職能，是否應採用一致的防貪治理標準？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/06/P2026110500515p.htm",
+      "source_name": "info.gov.hk / 發展局"
+    },
+    {
+      "id": "20261106-e-trade-bill",
+      "date": "2026-11-06",
+      "title": "《2026年電子交易（修訂）條例草案》推動B2B貿易文件電子化",
+      "title_en": "Bill to enable electronic transferable trade documents gazetted",
+      "departments": [
+        "cedb",
+        "legco"
+      ],
+      "themes": [
+        "legislation",
+        "digital-gov",
+        "transport-logistics"
+      ],
+      "summary": "政府刊憲《2026年電子交易（修訂）條例草案》，參考聯合國國際貿易法委員會《電子可轉讓記錄示範法》，為提單、匯票及承付票等文件建立電子化法律框架。草案採用功能等同及技術中立原則，要求可靠處理文件唯一性、控制權及可靠性；電子文件屬可選方式，不會強制取代紙本。政府指已有13個司法管轄區參照示範法立法，草案將於11月18日提交立法會首讀及二讀。",
+      "interview_angles": [
+        "電子可轉讓記錄如何在跨境交易中證明唯一性和控制權，誰負責認證及處理爭議？",
+        "保留紙本選項能否兼顧中小企數碼能力差異，政府如何推動採用而不增加雙重成本？",
+        "香港如何與主要貿易夥伴互認電子文件，並評估減省成本及提升可追溯性的實際成效？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/06/P2026110600185p.htm",
+      "source_name": "info.gov.hk / 商務及經濟發展局"
+    },
+    {
+      "id": "20261104-commodity-ecosystem",
+      "date": "2026-11-04",
+      "title": "政府交代大宗商品交易生態圈及跨境市場互聯互通部署",
+      "title_en": "Government outlines commodity trading ecosystem and cross-border market links",
+      "departments": [
+        "fstb",
+        "hkma",
+        "legco"
+      ],
+      "themes": [
+        "finance",
+        "fintech-ai",
+        "national-development"
+      ],
+      "summary": "財庫局在立法會表示，香港以黃金為切入點發展大宗商品交易生態圈，並由跨部門聯合工作組協調。財庫局研究合資格活動稅務優惠；金管局檢視清算、結算及離岸人民幣流動性，證監會、保監局及港交所分別推進衍生工具監管、風險承保及市場產品合作。政府亦與內地交易所研究跨境交易、倉單互認、結算交割和抵押品安排的可行性。",
+      "interview_angles": [
+        "香港應以哪些市場深度、交易量和實體經濟效益指標衡量生態圈成效？",
+        "跨境期貨交易及倉單互認涉及哪些監管、資金流和投資者保障風險？",
+        "稅務優惠與公共配套如何避免只補貼交易量，並帶動本地倉儲、保險及航運服務？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400306.htm",
+      "source_name": "info.gov.hk / 財經事務及庫務局"
+    },
+    {
+      "id": "20260520-carf",
+      "date": "2026-11-04",
+      "title": "立法會通過加密資產申報框架及經修訂共同匯報標準條例草案",
+      "title_en": "LegCo passes crypto-asset reporting and amended CRS bill",
+      "departments": [
+        "fstb"
+      ],
+      "themes": [
+        "finance",
+        "legislation",
+        "fintech-ai"
+      ],
+      "summary": "立法會於11月4日通過條例草案，落實經合組織加密資產申報框架（CARF）及經修訂共同匯報標準（CRS）。CARF於2027年起實施，服務提供者須收集指定資料，稅務局擬於2028年起交換；修訂CRS同於2028年實施，資料交換預計2029年開始。稅務局將發布指引並設專責小組支援業界。政策焦點是國際稅務透明度、合規成本與資料保密安全的平衡。",
+      "interview_angles": [
+        "新申報責任如何涵蓋不同規模的加密資產服務提供者，政府會否提供分級過渡安排？",
+        "香港如何確保跨境資料交換符合互惠原則，同時保障資料保密和安全？",
+        "CARF及修訂CRS的2027至2029年分階段時間表，如何降低業界不確定性並維持香港競爭力？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400308p.htm",
+      "source_name": "info.gov.hk / 財經事務及庫務局"
+    },
+    {
+      "id": "20261103-gdp-q3",
+      "date": "2026-11-03",
+      "title": "2026年第三季本地生產總值按年增長5.2%",
+      "title_en": "Hong Kong GDP grows 5.2% year-on-year in Q3 2026",
+      "departments": [
+        "fso"
+      ],
+      "themes": [
+        "finance",
+        "governance"
+      ],
+      "summary": "政府統計處預先估計，2026年第三季實質本地生產總值按年增長5.2%，按季增長1.9%；首三季合計按年增長5.1%。貨品出口升30.4%，私人消費升2.8%，本地固定資本形成升7.3%。出口強勁與內需穩定帶動增長，但外圍地緣政治及主要央行收緊貨幣政策仍構成風險；修訂數字及全年預測於11月13日公布。",
+      "interview_angles": [
+        "出口高速增長如何轉化為本地就業、工資和中小企收益？",
+        "消費增幅較出口及投資溫和，政府應如何處理不同板塊復甦不均？",
+        "面對外圍地緣政治和利率風險，財政及產業政策應如何保留緩衝？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/03/P2026110300411.htm",
+      "source_name": "info.gov.hk / 政府統計處"
+    },
+    {
       "id": "20261103-300550",
       "date": "2026-11-03",
       "title": "QS亞洲大學排名表現卓越 世界頂尖大學校長論壇接續登場 香港高等教育輝映國際舞台",
@@ -356,28 +468,6 @@
         "如何避免「有政策、缺落地」？專家小組產出如何變成可執行的合規期望？"
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200422.htm",
-      "source_name": "info.gov.hk 新聞公報"
-    },
-    {
-      "id": "20261102-200372",
-      "date": "2026-11-02",
-      "title": "立法會將審議《2026年税務（修訂）（加密資產申報框架及經修訂的共同匯報標準）條例草案》",
-      "departments": [
-        "fstb",
-        "legco"
-      ],
-      "themes": [
-        "finance",
-        "legislation",
-        "fintech-ai"
-      ],
-      "summary": "立法會將恢復二讀辯論《2026年稅務（修訂）（加密資產申報框架及經修訂的共同匯報標準）條例草案》，推進落實OECD加密資產申報框架（CARF）及經修訂共同匯報標準（CRS）。此為5月刊憲草案的立法進程節點；面試宜對照合規時間表、業界負擔與香港虛擬資產樞紐定位，而非會議程序本身。",
-      "interview_angles": [
-        "二讀後關鍵爭議條款可能是什麼？政府如何平衡稅務透明度與虛擬資產業競爭力？",
-        "相對5月刊憲時公布的實施時間表（CARF／自動交換），立法進度會否影響業界準備？",
-        "中小加密資產服務提供者的合規成本，稅務局有何過渡支援？"
-      ],
-      "source_url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200372.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
     {
@@ -3146,28 +3236,6 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202606/16/P2026061600269.htm",
       "source_name": "info.gov.hk / Social Welfare Department"
-    },
-    {
-      "id": "20260520-carf",
-      "date": "2026-05-20",
-      "title": "加密資產申報框架及經修訂共同匯報標準條例草案將刊憲",
-      "title_en": "Crypto-Asset Reporting Framework Bill 2026 to be gazetted",
-      "departments": [
-        "fstb"
-      ],
-      "themes": [
-        "finance",
-        "legislation",
-        "fintech-ai"
-      ],
-      "summary": "政府公布《2026年稅務（修訂）（加密資產申報框架及經修訂的共同匯報標準）條例草案》將於5月22日刊憲，6月3日提交立法會首讀，以實施經合組織（OECD）的加密資產申報框架（CARF）及共同匯報標準（CRS）最新修訂。財庫局局長許正宇指，此舉履行提升稅務透明度及打擊跨境逃稅的國際責任。計劃明年實施CARF，具香港匯報關聯的加密資產服務提供者須向稅務局登記並履行盡職審查、報稅及備存紀錄；視乎伙伴司法管轄區進度，擬2028年起自動交換加密資產交易稅務資料，並同步實施經修訂CRS。",
-      "interview_angles": [
-        "實施 CARF 對香港虛擬資產樞紐定位是「加分」還是合規成本打擊？",
-        "自動交換資料如何在保密安全與互惠原則下選擇合適伙伴管轄區？",
-        "中小加密平台的合規負擔，政府／稅務局有何過渡支援與指引？"
-      ],
-      "source_url": "https://www.info.gov.hk/gia/general/202605/20/P2026052000240.htm",
-      "source_name": "info.gov.hk 新聞公報"
     },
     {
       "id": "20260501-min-wage-43-1",
