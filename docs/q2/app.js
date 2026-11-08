@@ -120,6 +120,7 @@
       "bank",
       "drill",
       "mark",
+      "phrasebank",
       "frame",
       ...Object.keys(STRUCTURE_SCROLL),
     ]);
