@@ -3,12 +3,12 @@
 
   function hubBase() {
     var path = location.pathname || "/";
-    var markers = ["/daily/", "/policy/", "/bureaux/", "/q1/", "/q2/", "/vocab/"];
+    var markers = ["/policy/", "/bureaux/", "/q1/", "/q2/", "/vocab/"];
     for (var i = 0; i < markers.length; i++) {
       var idx = path.indexOf(markers[i]);
       if (idx >= 0) return path.slice(0, idx + 1);
     }
-    var bare = path.match(/^(.*\/)(daily|policy|bureaux|q1|q2|vocab)\/?$/);
+    var bare = path.match(/^(.*\/)(policy|bureaux|q1|q2|vocab)\/?$/);
     if (bare) return bare[1];
     // Home: /jre-study-hub/ or /jre-study-hub/index.html → directory base
     if (/\/index\.html$/i.test(path)) return path.replace(/index\.html$/i, "");
@@ -18,7 +18,6 @@
 
   function activeKey() {
     var path = location.pathname || "";
-    if (path.indexOf("/daily") >= 0) return "daily";
     if (path.indexOf("/q1") >= 0) return "q1";
     if (path.indexOf("/q2") >= 0) return "q2";
     if (path.indexOf("/vocab") >= 0) return "vocab";
@@ -34,7 +33,6 @@
     var active = activeKey();
     var tabs = [
       { key: "home", href: base, zh: "主頁", en: "Home", ico: "🏠" },
-      { key: "daily", href: base + "daily/", zh: "溫書", en: "Daily", ico: "📅" },
       { key: "policy", href: base + "policy/", zh: "政策", en: "Policy", ico: "🏛" },
       { key: "bureaux", href: base + "bureaux/", zh: "決策局", en: "Bureaux", ico: "🏢" },
       { key: "q1", href: base + "q1/", zh: "英文Q1", en: "English", ico: "✍️" },
