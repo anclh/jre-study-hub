@@ -232,6 +232,51 @@
   ],
   "items": [
     {
+      "id": "20261109-ai-audit-evidence",
+      "date": "2026-11-09",
+      "title": "AI審計應用：大型事務所採用與證據可靠性須並重",
+      "title_en": "AI audit adoption calls for reliable evidence and professional judgement",
+      "departments": [
+        "fso"
+      ],
+      "themes": [
+        "finance",
+        "fintech-ai",
+        "governance"
+      ],
+      "summary": "財政司司長在會財局論壇引述上月研究：五間受訪大型審計事務所中，四間已開始實施AI功能；中小型事務所的審計自動化進度則不一。這是指定樣本的觀察，不能當作全行業八成採用率。講辭提醒業界核查AI輸出的假設及證據，防範虛構文件，並持續培訓年輕專業人員。面試可分析如何在提升效率之餘保留專業判斷、查證責任及人才培育。",
+      "interview_angles": [
+        "使用AI節省例行工序後，事務所應如何核實證據來源及保留人工覆核責任？",
+        "中小型事務所若欠缺技術與培訓資源，監管者可如何支援而不降低審計質素？",
+        "五間大型事務所的調查有何代表性限制？評估行業轉型還須補充哪些資料？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900283.htm",
+      "source_name": "info.gov.hk / 財政司司長辦公室"
+    },
+    {
+      "id": "20261109-ai-compute-procurement",
+      "date": "2026-11-09",
+      "title": "AI算力擴容與採購安全聲明：從基建投入走向可信應用",
+      "title_en": "AI computing expansion paired with procurement safety declarations",
+      "departments": [
+        "itib",
+        "dpo"
+      ],
+      "themes": [
+        "innovation",
+        "fintech-ai",
+        "governance"
+      ],
+      "summary": "創科及工業局局長在電腦會議交代AI部署：沙嶺數據園區預期在2030年後提供180,000 PFLOPS算力，屬未來容量預測而非現有供應；政府另向人工智能資助計劃注資10億元。管治方面，數字政策辦公室將選取試點部門，要求面向公眾的AI項目投標者提交安全及倫理合規聲明，並推動業界管治框架及AI代理安全管理指引。面試可把算力投資、實際使用及採購後監察連起來分析。",
+      "interview_angles": [
+        "算力供應擴大後，如何以使用率、服務可靠性及科研成果轉化衡量公共投資成效？",
+        "投標聲明如何配合獨立測試、合約責任及上線後監察，避免只做書面合規？",
+        "如何讓中小企及研究團隊用得起算力，並兼顧能源需求及資料保安？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900290.htm",
+      "source_name": "info.gov.hk / 創新科技及工業局"
+    },
+    {
       "id": "20261108-carer-canteen",
       "date": "2026-11-08",
       "title": "社區照顧者飯堂：以供餐接觸隱蔽及高風險人士",

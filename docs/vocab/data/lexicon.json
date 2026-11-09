@@ -13662,5 +13662,257 @@
     ],
     "example": "The Government should assess compliance costs for small and medium-sized enterprises.",
     "topic": "fiscal-regulation"
+  },
+  {
+    "term": "professional judgement",
+    "zh": "專業判斷",
+    "pos": "n.",
+    "related": [],
+    "note": "結合證據與專業知識作判斷，不能只依賴AI輸出",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Auditors must exercise professional judgement when assessing AI-generated evidence.",
+        "zh": "審計人員評估AI生成的證據時，必須運用專業判斷。"
+      },
+      {
+        "en": "Professional judgement remains essential when automated checks flag unusual transactions.",
+        "zh": "自動檢查標示異常交易時，專業判斷仍不可少。"
+      }
+    ],
+    "example": "Auditors must exercise professional judgement when assessing AI-generated evidence.",
+    "topic": "governance"
+  },
+  {
+    "term": "audit evidence",
+    "zh": "審計證據",
+    "pos": "n.",
+    "related": [],
+    "note": "用於支持審計結論的資料；來源及可靠性須查證",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "AI tools can organise audit evidence, but auditors must verify its reliability.",
+        "zh": "AI工具可整理審計證據，但審計人員須核實其可靠性。"
+      },
+      {
+        "en": "A convincing document is not necessarily reliable audit evidence.",
+        "zh": "看似可信的文件未必是可靠的審計證據。"
+      }
+    ],
+    "example": "AI tools can organise audit evidence, but auditors must verify its reliability.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "audit automation",
+    "zh": "審計自動化",
+    "pos": "n.",
+    "related": [],
+    "note": "以科技處理部分審計程序，採用程度不等於審計質素",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Smaller firms may need training to benefit from audit automation.",
+        "zh": "較小型事務所或需培訓，才能受惠於審計自動化。"
+      },
+      {
+        "en": "Audit automation should free staff to investigate higher-risk cases.",
+        "zh": "審計自動化應讓員工騰出時間調查較高風險個案。"
+      }
+    ],
+    "example": "Smaller firms may need training to benefit from audit automation.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "internal control",
+    "zh": "內部監控",
+    "pos": "n.",
+    "related": [],
+    "note": "機構管理風險及確保程序可靠的制度與措施",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Strong internal control is needed before AI tools handle sensitive records.",
+        "zh": "AI工具處理敏感紀錄前，須有健全的內部監控。"
+      },
+      {
+        "en": "Management should review internal control as working methods change.",
+        "zh": "管理層應隨工作方式改變而檢視內部監控。"
+      }
+    ],
+    "example": "Strong internal control is needed before AI tools handle sensitive records.",
+    "topic": "governance"
+  },
+  {
+    "term": "financial reporting",
+    "zh": "財務匯報",
+    "pos": "n.",
+    "related": [],
+    "note": "編製及披露財務資料，支援投資者等作決策",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Reliable financial reporting supports investor confidence across markets.",
+        "zh": "可靠的財務匯報有助維持跨市場的投資者信心。"
+      },
+      {
+        "en": "AI adoption does not remove responsibility for accurate financial reporting.",
+        "zh": "採用AI不會免除準確財務匯報的責任。"
+      }
+    ],
+    "example": "Reliable financial reporting supports investor confidence across markets.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "sample representativeness",
+    "zh": "樣本代表性",
+    "pos": "n.",
+    "related": [],
+    "note": "樣本能否反映目標群體；五間大型事務所不能代表全行業",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Sample representativeness matters when interpreting an industry survey.",
+        "zh": "解讀行業調查時，須留意樣本代表性。"
+      },
+      {
+        "en": "A study of large firms alone may have limited sample representativeness.",
+        "zh": "只研究大型企業的調查，樣本代表性可能有限。"
+      }
+    ],
+    "example": "Sample representativeness matters when interpreting an industry survey.",
+    "topic": "governance"
+  },
+  {
+    "term": "evidence reliability",
+    "zh": "證據可靠性",
+    "pos": "n.",
+    "related": [],
+    "note": "資料是否可信及足以支持結論；不能只看文件外觀",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Fabricated documents create new challenges for evidence reliability.",
+        "zh": "虛構文件為證據可靠性帶來新挑戰。"
+      },
+      {
+        "en": "Independent checks can strengthen evidence reliability before a decision is made.",
+        "zh": "作決定前進行獨立查核，可提高證據可靠性。"
+      }
+    ],
+    "example": "Fabricated documents create new challenges for evidence reliability.",
+    "topic": "governance"
+  },
+  {
+    "term": "computing capacity",
+    "zh": "算力容量",
+    "pos": "n.",
+    "related": [],
+    "note": "系統可提供的運算能力；預期容量須與已投入服務容量分開",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Planned computing capacity should be distinguished from capacity already available.",
+        "zh": "規劃中的算力容量須與現有可用容量區分。"
+      },
+      {
+        "en": "More computing capacity will require supporting infrastructure and skilled staff.",
+        "zh": "更大的算力容量需要配套基建及技術人員。"
+      }
+    ],
+    "example": "Planned computing capacity should be distinguished from capacity already available.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "high-performance computing",
+    "zh": "高效能運算",
+    "pos": "n.",
+    "related": [],
+    "note": "以強大運算資源處理複雜科研或產業工作",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "High-performance computing can support demanding research projects.",
+        "zh": "高效能運算可支援運算需求龐大的科研項目。"
+      },
+      {
+        "en": "Subsidies may help research teams access high-performance computing.",
+        "zh": "資助或有助研究團隊使用高效能運算。"
+      }
+    ],
+    "example": "High-performance computing can support demanding research projects.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "compliance declaration",
+    "zh": "合規聲明",
+    "pos": "n.",
+    "related": [],
+    "note": "投標者等就符合規範所作聲明，不能取代實際測試",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "A compliance declaration should be supported by verifiable evidence.",
+        "zh": "合規聲明應有可核實的證據支持。"
+      },
+      {
+        "en": "The contract should specify how a compliance declaration will be checked.",
+        "zh": "合約應列明如何核查合規聲明。"
+      }
+    ],
+    "example": "A compliance declaration should be supported by verifiable evidence.",
+    "topic": "governance"
+  },
+  {
+    "term": "post-deployment monitoring",
+    "zh": "部署後監察",
+    "pos": "n.",
+    "related": [],
+    "note": "系統投入使用後持續檢查表現、風險及事故",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Post-deployment monitoring can detect errors missed during initial testing.",
+        "zh": "部署後監察可發現初期測試未能察覺的錯誤。"
+      },
+      {
+        "en": "Public-facing AI services need clear responsibility for post-deployment monitoring.",
+        "zh": "面向公眾的AI服務須明確訂定部署後監察的責任。"
+      }
+    ],
+    "example": "Post-deployment monitoring can detect errors missed during initial testing.",
+    "topic": "innovation-digital"
+  },
+  {
+    "term": "human oversight",
+    "zh": "人工監督",
+    "pos": "n.",
+    "related": [],
+    "note": "由人員監察及介入自動化流程，並保留問責",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Human oversight should focus on decisions that affect public rights.",
+        "zh": "人工監督應聚焦於影響公眾權利的決定。"
+      },
+      {
+        "en": "Effective human oversight requires staff who can challenge automated outputs.",
+        "zh": "有效的人工監督需要能質疑自動化輸出的員工。"
+      }
+    ],
+    "example": "Human oversight should focus on decisions that affect public rights.",
+    "topic": "governance"
   }
 ]
