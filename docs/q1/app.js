@@ -392,6 +392,24 @@
           <div class="card practice-write-card">
             <h2>作答</h2>
             <p class="lede">空白格寫 memo。答卷存呢部裝置；寫完先睇下面範例。</p>
+            <details class="practice-guide">
+              <summary>
+                <span><strong>Step-by-step timed session</strong><small>Task → sort → analyse → compare → recommend → draft → check</small></span>
+              </summary>
+              <div class="practice-guide-content">
+                <p class="practice-guide-intro"><strong>Planning: 15 minutes maximum.</strong> Keep the Data File scan focused; use the remaining time to write and check.</p>
+                <ol class="practice-steps">
+                  <li><span class="practice-step-time">1 min</span><span><strong>Read the task</strong><small>Note your role, recipient, required outcome and delivery details.</small></span></li>
+                  <li><span class="practice-step-time">5 min</span><span><strong>Sort the Data File</strong><small>Mark P1/P2 evidence, options, costs, constraints and objections. Drop irrelevant noise.</small></span></li>
+                  <li><span class="practice-step-time">3 min</span><span><strong>Set out two problems</strong><small>For each: Problem → Evidence → Implication. Choose distinct problems.</small></span></li>
+                  <li><span class="practice-step-time">4 min</span><span><strong>Compare the options</strong><small>Use common criteria: effectiveness, fiscal cost, feasibility/manpower and accessibility. Address objections inline.</small></span></li>
+                  <li><span class="practice-step-time">2 min</span><span><strong>Choose and plan delivery</strong><small>Fix the lead, pilot and timing, resources, access measures, KPIs and review point.</small></span></li>
+                  <li><span class="practice-step-time">53 / 73 min</span><span><strong>Draft the five-section memo</strong><small>Opening → two problem paragraphs → option comparison → recommendation bullets → closing.</small></span></li>
+                  <li><span class="practice-step-time">2 min</span><span><strong>Final check</strong><small>Check the recommendation answers both problems, fits the budget and names who, when and how success will be measured.</small></span></li>
+                </ol>
+                <p class="practice-guide-foot">Use 53 minutes to draft in a 70-minute session, or 73 minutes in a 90-minute session. The planning and final-check slots stay the same.</p>
+              </div>
+            </details>
             <div class="timer-row">
               <div class="timer" id="timerDisplay">70:00</div>
               <div class="toolbar">
