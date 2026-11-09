@@ -346,7 +346,7 @@
 
     const modelHtml = `<div class="card">
       <h2>範例 memo</h2>
-      <p class="lede">約 850 字。自己寫完先開。</p>
+      <p class="lede">完成作答後再開範例，對照分析、方案取捨與落實安排。</p>
       <div class="toolbar">
         <button type="button" class="btn primary" id="btnToggleModel">顯示範例</button>
       </div>
