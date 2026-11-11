@@ -407,26 +407,12 @@ textarea {
 /* The framework opens as a short brief, then reads as a single paper. */
 .exam-screen #panel-structure.active {
   display: grid;
-  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-4);
 }
 
 .exam-screen #panel-structure > .card {
   margin: 0;
-}
-
-.exam-screen #panel-structure > .card:nth-child(n + 3) {
-  grid-column: 1 / -1;
-}
-
-.exam-screen #official-shape {
-  background: var(--color-jade-deep);
-  color: var(--color-on-jade);
-}
-
-.exam-screen #official-shape .shape-line {
-  font-size: .9375rem;
-  line-height: 1.7;
 }
 
 .exam-screen #five-step > :is(.lede, .shape-vs-flow) {
@@ -537,8 +523,53 @@ textarea {
   }
 }
 
-@media (max-width: 42rem) {
-  .exam-screen #panel-structure.active {
-    grid-template-columns: minmax(0, 1fr);
+/* The Q2 framework pairs a timing reference with readable fill-in sentences. */
+#five-step .frame-timing {
+  max-width: var(--exam-measure, 49rem);
+  font-size: .875rem;
+  margin-block: var(--space-4);
+}
+#five-step .frame-timing :is(th, td) {
+  padding: var(--space-2);
+}
+#five-step .frame-timing tr > :last-child {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+#five-step .frame-skeleton > li {
+  scroll-margin-top: calc(var(--hub-tab-h, 56px) + var(--hub-safe-top, 0px) + 1rem);
+}
+#five-step .frame-skeleton > li > strong {
+  display: block;
+  color: var(--accent);
+  font-size: 1.0625rem;
+  margin-bottom: var(--space-2);
+}
+#five-step .frame-skeleton .bullet-list li + li {
+  margin-top: var(--space-3);
+}
+#five-step .frame-skeleton code,
+#five-step blockquote {
+  display: block;
+  font: inherit;
+  font-size: .9375rem;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--card2);
+  border-inline-start: 2px solid var(--accent);
+  margin: var(--space-1) 0 0;
+  padding: var(--space-2) var(--space-3);
+  overflow-wrap: anywhere;
+}
+#five-step blockquote {
+  max-width: var(--exam-measure, 49rem);
+  margin-block: var(--space-3);
+}
+@media (max-width: 36rem) {
+  #five-step .frame-timing tr > :nth-child(2) {
+    display: none;
+  }
+  #five-step .frame-timing :is(th, td) {
+    padding-inline: var(--space-1);
   }
 }
