@@ -1,118 +1,75 @@
-/* JRE Study Hub — shared top tab bar (6 tabs) — Policy Bank light palette */
+/* Hallmark · v2.0.0 · redesign: full · genre: editorial · shape: app screen · theme: brand (jade) */
+/* Hallmark · critique: make the six destinations readable at phone width and keep their position stable. */
 :root {
-  --hub-tab-h: 56px;
+  --hub-tab-h: 3.5rem;
   --hub-safe-top: env(safe-area-inset-top, 0px);
-  --hub-bg: #ffffff;
-  --hub-border: #e2e8f0;
-  --hub-muted: #5a6a7a;
-  --hub-accent: #0b6e4f;
-  --hub-accent-soft: #e6f4ef;
-  --hub-chip-on-bg: #d8f3e7;
-  --hub-ink: #1a2332;
+  --hub-nav-width: 42rem;
 }
 
-body.hub-has-tabs {
-  padding-top: calc(var(--hub-tab-h) + var(--hub-safe-top) + 8px) !important;
-  padding-bottom: env(safe-area-inset-bottom, 0px) !important;
-  box-sizing: border-box;
+body.hub-has-tabs:has(#jre-hub-tabbar) {
+  padding-top: calc(var(--hub-tab-h) + var(--hub-safe-top));
 }
 
 #jre-hub-tabbar {
   position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 99999;
+  z-index: 90;
+  inset: 0 0 auto;
   display: flex;
-  align-items: stretch;
-  justify-content: space-evenly;
-  gap: 6px;
+  gap: var(--space-1);
+  box-sizing: border-box;
   min-height: calc(var(--hub-tab-h) + var(--hub-safe-top));
-  padding: var(--hub-safe-top) 8px 4px;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--hub-border);
-  box-shadow: 0 8px 24px rgba(26, 35, 50, 0.06);
-  font-family: "Segoe UI", "PingFang HK", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
-  -webkit-tap-highlight-color: transparent;
+  padding: calc(var(--hub-safe-top) + var(--space-1)) max(var(--space-3), calc((100% - var(--hub-nav-width)) / 2)) var(--space-1);
+  border-bottom: var(--rule);
+  background: var(--color-surface);
+  font: 600 var(--text-small)/1.25 var(--font-body);
 }
 
 #jre-hub-tabbar a {
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1px;
-  min-height: 48px;
+  box-sizing: border-box;
   min-width: 0;
-  padding: 4px 2px;
-  margin: 0 1px;
-  border-radius: 12px;
+  min-height: 2.75rem;
+  padding: var(--space-1);
+  border-radius: var(--radius);
+  color: var(--color-muted);
+  text-align: center;
   text-decoration: none;
-  color: var(--hub-muted);
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0;
-  transition: background 0.15s ease, color 0.15s ease;
 }
 
-#jre-hub-tabbar a:active {
-  background: var(--hub-accent-soft);
+#jre-hub-tabbar a:is(.is-active, :hover, :active) {
+  background: var(--color-jade-soft);
+  color: var(--color-jade-deep);
 }
 
-#jre-hub-tabbar a.is-active {
-  color: var(--hub-accent);
-  background: var(--hub-chip-on-bg);
+#jre-hub-tabbar a:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: -2px;
 }
 
 #jre-hub-tabbar .hub-ico {
-  font-size: 15px;
-  line-height: 1;
+  display: none;
 }
 
 #jre-hub-tabbar .hub-zh {
-  font-size: 10px;
-  line-height: 1.1;
+  font-size: .8125rem;
   white-space: nowrap;
 }
 
 #jre-hub-tabbar .hub-en {
-  font-size: 7.5px;
-  font-weight: 500;
-  opacity: 0.75;
-  line-height: 1;
-  white-space: nowrap;
+  font-size: .6875rem;
+  font-weight: 400;
 }
 
-@media (min-width: 768px) {
-  #jre-hub-tabbar {
-    max-width: 560px;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-    border-radius: 0 0 16px 16px;
+@media (max-width: 38rem) {
+  #jre-hub-tabbar .hub-zh {
+    font-size: .75rem;
   }
-  #jre-hub-tabbar {
-    gap: 10px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-  #jre-hub-tabbar a {
-    font-size: 10px;
-    padding: 6px 8px;
-    margin: 0 4px;
-  }
-  #jre-hub-tabbar .hub-zh { font-size: 11px; }
-  #jre-hub-tabbar .hub-en { font-size: 8px; }
-  #jre-hub-tabbar .hub-ico { font-size: 16px; }
-}
 
-@media (max-width: 420px) {
-  #jre-hub-tabbar { gap: 2px; padding-left: 4px; padding-right: 4px; }
-  #jre-hub-tabbar .hub-en { display: none; }
-  #jre-hub-tabbar a { padding: 3px 1px; margin: 0; }
-  #jre-hub-tabbar .hub-zh { font-size: 8.5px; }
-  #jre-hub-tabbar .hub-ico { font-size: 13px; }
+  #jre-hub-tabbar .hub-en {
+    display: none;
+  }
 }

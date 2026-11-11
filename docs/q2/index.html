@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="description" content="JRE 中文 Q2 — 議題思維、題庫、計時練習與自評" />
+  <meta name="description" content="JRE 中文 Q2 ， 議題思維、題庫、計時練習與自評" />
   <title>中文 Q2 · JRE Study Hub</title>
-  <link rel="stylesheet" href="styles.css?v=20261104d" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261104d" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261111" />
+  <link rel="stylesheet" href="../shell/study-theme.css?v=20261111" />
+  <link rel="stylesheet" href="../shared/exam-workspace.css?v=20261111" />
+  <link rel="stylesheet" href="styles.css?v=20261111" />
 </head>
-<body>
+<body class="study-screen exam-screen">
   <header class="app-header">
     <div class="header-inner">
       <div class="brand">
-        <div class="brand-mark">Q2</div>
+        <div class="brand-mark" aria-hidden="true">Q2</div>
         <div>
           <h1>中文 Q2</h1>
-          <p>議題思維 · 題庫 · 計時練習</p>
+          <p>議題思維、題庫與計時練習</p>
         </div>
       </div>
     </div>
@@ -32,27 +34,27 @@
   </header>
 
   <main>
-        <section class="panel active" id="panel-structure">
+    <section class="panel active" id="panel-structure">
       <div class="card">
-        <h2>答題框架 · Q2 中文</h2>
-        <p class="lede">考<strong>議題思維＋書面表達</strong>（物料 sparse）。要：清晰立場、具體理據、可執行建議。考期 <strong>2026-12-05</strong>。跟官方大牌檔 shape；EO Classroom／坊間 tip 已收編——<strong>唔跟</strong>硬性字數、舊考期、另套四段式。</p>
-        <p><a class="btn" href="#phrasebank" data-goto="phrasebank">開啟中文 Q2 骨架句 →</a></p>
+        <h2>答題框架，Q2 中文</h2>
+        <p class="lede">考<strong>議題思維＋書面表達</strong>（物料 sparse）。要：清晰立場、具體理據、可執行建議。考期 <strong>2026-12-05</strong>。跟官方大牌檔 shape；EO Classroom／坊間 tip 已收編，<strong>唔跟</strong>硬性字數、舊考期、另套四段式。</p>
+        <p><a class="btn" href="#phrasebank" data-goto="phrasebank">開啟中文 Q2 骨架句</a></p>
       </div>
 
       <div class="card" id="official-shape">
-        <h2>1 · 官方 shape（大牌檔）</h2>
+        <h2>1，官方 shape（大牌檔）</h2>
         <p class="shape-line">利弊正反各點到即止 → 明確一邊立場 → 贊成＝跟進措施／反對＝替代方案（考前自檢；考場跟五步）。</p>
       </div>
 
       <div class="card" id="five-step">
-        <h2>固定五步（5 段無腦組裝公式 · 11 句 ~900–1,100 字）</h2>
+        <h2>固定五步（5 段無腦組裝公式，11 句 ~900 至 1,100 字）</h2>
         <p class="shape-vs-flow"><strong>大牌檔三點／一行係 shape／考前自檢；五步係考場流程。</strong></p>
         <p class="lede">物料 sparse（少而精），<strong>開卷 10 分鐘五格 Scratch 做好後，最忌重新造句</strong>。直接當成<strong>「填表式組裝（Slot-in Assembly）」</strong>，每段固定套用<a href="#phrasebank" data-goto="phrasebank">「中文 Q2 骨架句」分頁</a>嘅句式路軌，將標記好嘅 keywords 填入去，60 分鐘零卡頓寫出高分政務官議論文。</p>
         <p class="muted frame-flow"><a href="#stage-position">立場</a> → <a href="#stage-arguments">理據／例子</a> → <a href="#stage-rebuttal">反駁</a> → <a href="#stage-recommend">建議</a> → <a href="#stage-close">短結</a></p>
 
         <ol class="frame-skeleton">
           <li>
-            <a href="#stage-position"><strong>1. 立場（固定 2 句 · ~80 字 · 4 分鐘寫完）</strong></a>
+            <a href="#stage-position"><strong>1. 立場（固定 2 句，~80 字，4 分鐘寫完）</strong></a>
             <p>點出政策兩難 ＋ 一句釘死有條件立場（唔騎牆、唔堆背景、唔堆數字）：</p>
             <ul class="bullet-list">
               <li><strong>第 1 句（點出爭議）</strong>：<code>近年社會就 [題目爭議，如：應否強制規管／大幅傾斜某資源] 議論紛紛，核心在於如何平衡 [價值 A，如：公共衛生／勞工保障] 與 [價值 B，如：基層生計／市場彈性]。</code></li>
@@ -60,22 +62,22 @@
             </ul>
           </li>
           <li>
-            <a href="#stage-arguments"><strong>2. 理據／例子（每段固定 3 句 × 2 段 · ~350 字 · 20 分鐘寫完）</strong></a>
+            <a href="#stage-arguments"><strong>2. 理據／例子（每段固定 3 句 × 2 段，~350 字，20 分鐘寫完）</strong></a>
             <p>每個理據嚴格跟 <strong>「主張主題句 → 香港例子／1 個實數（依據） → 因果急迫（所以點）」</strong> 三句式：</p>
             <ul class="bullet-list">
               <li><strong>理據一段（民生／急迫性）</strong>：<br />
-                • <strong>第 3 句（主張 arg-01）</strong>：<code>首先，[措施／方向 A] 有助 [正面效益]，惟須配合 [必要條件]（arg-01）。</code><br />
-                • <strong>第 4 句（例子落地 arg-02）</strong>：<code>以本港 [具體例子／2026 施政報告措施或 1 個實數] 為例，現時 [現況痛點]，反映 [結構性問題]，意味住政府確有迫切需要介入（arg-02）。</code><br />
-                • <strong>第 5 句（因果急迫 arg-06）</strong>：<code>若不及時處理 [核心痛點]，長遠將連鎖影響 [公帑／醫療／社會穩定]，故宜及早採取行動（arg-06）。</code>
+                <strong>第 3 句（主張 arg-01）</strong>：<code>首先，[措施／方向 A] 有助 [正面效益]，惟須配合 [必要條件]（arg-01）。</code><br />
+                <strong>第 4 句（例子落地 arg-02）</strong>：<code>以本港 [具體例子／2026 施政報告措施或 1 個實數] 為例，現時 [現況痛點]，反映 [結構性問題]，意味住政府確有迫切需要介入（arg-02）。</code><br />
+                <strong>第 5 句（因果急迫 arg-06）</strong>：<code>若不及時處理 [核心痛點]，長遠將連鎖影響 [公帑／醫療／社會穩定]，故宜及早採取行動（arg-06）。</code>
               </li>
               <li><strong>理據二段（制度／持份者利益）</strong>：<br />
-                • <strong>第 6 句（主張 arg-04）</strong>：<code>其次，從 [持份者／公眾利益] 角度而言（arg-05），推進有關方向可補足現時 [制度缺口] 的不足，並以 [本地先例／客觀數據] 作為可核實依據（arg-04）。</code><br />
-                • <strong>第 7 句（時間視野 arg-03）</strong>：<code>短期而言雖需投入行政資源，惟長遠有助建立可持續的制度框架，減輕社會整體成本（arg-03）。</code>
+                <strong>第 6 句（主張 arg-04）</strong>：<code>其次，從 [持份者／公眾利益] 角度而言（arg-05），推進有關方向可補足現時 [制度缺口] 的不足，並以 [本地先例／客觀數據] 作為可核實依據（arg-04）。</code><br />
+                <strong>第 7 句（時間視野 arg-03）</strong>：<code>短期而言雖需投入行政資源，惟長遠有助建立可持續的制度框架，減輕社會整體成本（arg-03）。</code>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#stage-rebuttal"><strong>3. 反駁（固定 2 句 · ~180 字 · 10 分鐘寫完 · 中文 Q2 有獨立反駁段！）</strong></a>
+            <a href="#stage-rebuttal"><strong>3. 反駁（固定 2 句，~180 字，10 分鐘寫完，中文 Q2 有獨立反駁段！）</strong></a>
             <p>先讓一步承認反方合理處 → 再拆解假兩難／指明不作為長遠代價更高：</p>
             <ul class="bullet-list">
               <li><strong>第 8 句（點出最強反方 reb-02 / reb-03）</strong>：<code>誠然，反對者或指 [最強反方論點，如：推高營運成本／影響私樓供應／削弱就業彈性]（reb-02 / reb-03）。</code></li>
@@ -83,7 +85,7 @@
             </ul>
           </li>
           <li>
-            <a href="#stage-recommend"><strong>4. 建議（固定引子 +「一、二、三」分點 · ~250 字 · 16 分鐘寫完）</strong></a>
+            <a href="#stage-recommend"><strong>4. 建議（固定引子 +「一、二、三」分點，~250 字，16 分鐘寫完）</strong></a>
             <p>公務員中文卷必用「一、二、三」分點，對齊 <strong>試點與主責（Who/When） → 公開指標（KPIs） → 配套與回退（Balance）</strong>：</p>
             <p class="muted"><strong>引子</strong>：<code>為確保政策穩妥落地，本人建議採取以下三項具體措施（rec-01）：</code></p>
             <ul class="bullet-list">
@@ -93,7 +95,7 @@
             </ul>
           </li>
           <li>
-            <a href="#stage-close"><strong>5. 短結（固定 1–2 句 · ~60 字 · 3 分鐘寫完）</strong></a>
+            <a href="#stage-close"><strong>5. 短結（固定 1 至 2 句，~60 字，3 分鐘寫完）</strong></a>
             <p>唔開新論點，直接重申立場 ＋ 優先交付條件收束：</p>
             <ul class="bullet-list">
               <li><strong>第 11 句（五步收束 clo-01 / clo-03 / clo-04）</strong>：<code>綜上，本人維持 [一句立場] 的立場；落實時以 [試點與配套] 為優先，只要主責清晰、檢討到位，方能在 [政策目標] 與 [資源／持份者限制] 之間取得平衡（clo-01 / clo-03 / clo-04）。</code></li>
@@ -107,69 +109,69 @@
 
     <section class="panel" id="panel-tips">
       <div class="card" id="scratch">
-        <h2>3 · 開卷 scratch（keywords only）</h2>
+        <h2>3，開卷 scratch（keywords only）</h2>
         <p class="lede">事實 dump 同結構分開；正文先揀用。對齊政策卡「開考 dump」。</p>
         <ol class="frame-steps">
-          <li><strong>立場一句</strong>（贊成／反對／有條件——唔好利弊各半）</li>
-          <li><strong>事實 dump</strong>：2–3 個實數／年份、主責局署、1 措施、利弊各一句（冇把握唔估；局署要對）</li>
+          <li><strong>立場一句</strong>（贊成／反對／有條件，唔好利弊各半）</li>
+          <li><strong>事實 dump</strong>：2 至 3 個實數／年份、主責局署、1 措施、利弊各一句（冇把握唔估；局署要對）</li>
           <li><strong>理據 A／B</strong> 各配 1 個 HK 例子（正文每理據只落地 <strong>1</strong> 個數／措施名＋「所以點」）</li>
           <li><strong>最強反方</strong>＋仍揀己方一句</li>
-          <li><strong>建議 2–3</strong>（要有 delivery）＋短結關鍵詞</li>
+          <li><strong>建議 2 至 3</strong>（要有 delivery）＋短結關鍵詞</li>
         </ol>
-        <p class="muted">Checkpoint（非官方）：10′ 大綱齊 → 55′ 開始短結 → 65′ 檢查開首立場。總目標 ~70–80′。</p>
+        <p class="muted">Checkpoint（非官方）：10′ 大綱齊 → 55′ 開始短結 → 65′ 檢查開首立場。總目標 ~70 至 80′。</p>
       </div>
 
       <div class="card" id="tone">
-        <h2>5 · 公務員語氣＋段落</h2>
-        <p class="lede">角色＝潛在政策撰稿人／官員：<strong>建議同分析</strong>，唔係時評／NGO／政黨。Tone＝中立邏輯＋有條理建議——<strong>唔抄</strong> Purpose／Background 格式。</p>
+        <h2>5，公務員語氣＋段落</h2>
+        <p class="lede">角色＝潛在政策撰稿人／官員：<strong>建議同分析</strong>，唔係時評／NGO／政黨。Tone＝中立邏輯＋有條理建議，<strong>唔抄</strong> Purpose／Background 格式。</p>
         <ul class="bullet-list">
           <li>一段一意；開首句＝主題；建議段用「一、二、三」方便掃讀</li>
           <li>公文詞：宜、應、可考慮、試點、檢討成效；用公眾利益／可行性／持份者平衡</li>
-          <li>利弊可以寫，但唔好黨派式「之前做錯／不如外國」——改「須兼顧…／宜配套…」</li>
+          <li>利弊可以寫，但唔好黨派式「之前做錯／不如外國」，改「須兼顧…／宜配套…」</li>
           <li>承認複雜但立場一致：「有助…但須…」</li>
           <li>讀卡三問：成因 → 受影響群 → 當局回應是否成比例</li>
         </ul>
       </div>
 
       <div class="card" id="news-use">
-        <h2>6 · 時事素材用法</h2>
+        <h2>6，時事素材用法</h2>
         <p class="lede">事實庫＝<a href="../policy/">政策 tab</a>。高分靠用得準，唔係堆新聞。</p>
         <ol class="frame-steps">
           <li><strong>措施 → 意義</strong>：計劃名之後跟長期影響／可優化（「有助…但須…」）</li>
           <li><strong>舉一反三</strong>：相近風險群體／政策樣板類推</li>
-          <li><strong>正文 1 個數</strong>：有把握先寫成效；冇就寫措施方向——唔估假數</li>
+          <li><strong>正文 1 個數</strong>：有把握先寫成效；冇就寫措施方向，唔估假數</li>
         </ol>
       </div>
 
       <div class="card" id="concise">
-        <h2>7 · Conciseness＋字數</h2>
-        <p class="lede"><strong>官方無字數上下限</strong>。每句有功能；灌水失焦＝減分訊號。4–5 頁／千字級只係坊間經驗，唔當硬指標。</p>
+        <h2>7，Conciseness＋字數</h2>
+        <p class="lede"><strong>官方無字數上下限</strong>。每句有功能；灌水失焦＝減分訊號。4 至 5 頁／千字級只係坊間經驗，唔當硬指標。</p>
         <ol class="frame-steps">
-          <li>一句一工／一段一職——重述填篇幅就刪</li>
-          <li>scratch 可 dump 2–3 個數；正文每理據只揀 1 個＋「反映／意味住」</li>
+          <li>一句一工／一段一職，重述填篇幅就刪</li>
+          <li>scratch 可 dump 2 至 3 個數；正文每理據只揀 1 個＋「反映／意味住」</li>
           <li>自檢：呢段點樣支持立場？答唔到就改</li>
           <li>少空話（「毫無疑問／顯而易見」）；寫準＞寫多</li>
         </ol>
       </div>
 
       <div class="card" id="uncommon">
-        <h2>8 · 冷門題應對</h2>
-        <p class="lede">唔熟題目都唔使背歷史。考場冇時間搜資料——靠五步＋百搭角度（唔改另套四段）。</p>
+        <h2>8，冷門題應對</h2>
+        <p class="lede">唔熟題目都唔使背歷史。考場冇時間搜資料，靠五步＋百搭角度（唔改另套四段）。</p>
         <ol class="frame-steps">
-          <li>先釘問題＋立場——唔好先寫長背景</li>
-          <li>持份者：局署／市民／業界——各揀利弊落理據</li>
+          <li>先釘問題＋立場，唔好先寫長背景</li>
+          <li>持份者：局署／市民／業界，各揀利弊落理據</li>
           <li>時間視野：短期效果 vs 長遠成本（「有助…但長遠…」）</li>
           <li>百搭：成本效益／公平／行政可行性；例子接地氣或類推</li>
         </ol>
       </div>
 
       <div class="card" id="practice">
-        <h2>9 · 應試策略／練習節奏</h2>
+        <h2>9，應試策略／練習節奏</h2>
         <ol class="frame-steps">
-          <li><strong>時間</strong>（非官方）：約 10′ scratch＋其餘寫作；總 ~70–80′；留數分鐘潤飾</li>
-          <li><strong>First drill</strong>＝官方「大牌檔」；之後每週 1–2 題同一五步</li>
-          <li>考前 1–2 月：施政方向＋政策卡；考前 1–2 週：複習框架／語氣／有範文題</li>
-          <li>每個領域：支持 ×2、反對 ×2、建議／替代 ×1–2（模板見下）</li>
+          <li><strong>時間</strong>（非官方）：約 10′ scratch＋其餘寫作；總 ~70 至 80′；留數分鐘潤飾</li>
+          <li><strong>First drill</strong>＝官方「大牌檔」；之後每週 1 至 2 題同一五步</li>
+          <li>考前 1 至 2 月：施政方向＋政策卡；考前 1 至 2 週：複習框架／語氣／有範文題</li>
+          <li>每個領域：支持 ×2、反對 ×2、建議／替代 ×1 至 2（模板見下）</li>
         </ol>
         <div class="chip-row frame-domains">
           <span class="chip">房屋與土地</span>
@@ -193,7 +195,7 @@
 1. 理據： / 香港例子：
 2. 理據： / 香港例子：
 
-### 可行建議／替代（×1–2）
+### 可行建議／替代（×1 至 2）
 1.
 2.
 
@@ -204,7 +206,7 @@
       </div>
 
       <div class="card">
-        <h2>10 · 常見扣分</h2>
+        <h2>10，常見扣分</h2>
         <table>
           <thead><tr><th>失敗</th><th>點解</th></tr></thead>
           <tbody>
@@ -221,10 +223,10 @@
       <div class="card">
         <h2>素材</h2>
         <ul class="link-list">
-          <li><a href="#bank" id="linkToBank">本頁題庫</a> — 考試式題目 → 利弊 → 立場 → 措施（有範文標「有範文」）</li>
-          <li><a href="../policy/">政策 Policy</a> — 事實 dump 來源（每日 refresh）</li>
-          <li><a href="https://www.policyaddress.gov.hk/" target="_blank" rel="noopener">施政報告</a> · <a href="https://www.info.gov.hk/" target="_blank" rel="noopener">政府新聞稿</a></li>
-          <li><a href="../">Study Hub 主頁</a> · <a href="../q1/">英文 Q1</a> · <a href="../vocab/">詞彙 Vocab</a></li>
+          <li><a href="#bank" id="linkToBank">本頁題庫</a> ， 考試式題目 → 利弊 → 立場 → 措施（有範文標「有範文」）</li>
+          <li><a href="../policy/">政策 Policy</a> ， 事實 dump 來源（每日 refresh）</li>
+          <li><a href="https://www.policyaddress.gov.hk/" target="_blank" rel="noopener">施政報告</a>，<a href="https://www.info.gov.hk/" target="_blank" rel="noopener">政府新聞稿</a></li>
+          <li><a href="../">Study Hub 主頁</a>，<a href="../q1/">英文 Q1</a>，<a href="../vocab/">詞彙 Vocab</a></li>
         </ul>
       </div>
     </section>
@@ -240,7 +242,7 @@
         <div class="toolbar flash-entry">
           <button type="button" class="btn primary" id="btnFlashcards">閃卡／Flashcards</button>
         </div>
-        <div class="count" id="bankCount">題庫: —</div>
+        <div class="count" id="bankCount">題庫載入中…</div>
       </div>
       <div class="card quick-ref" id="quickRef" hidden></div>
       <div class="briefs-list" id="briefsList"></div>
@@ -251,35 +253,41 @@
       <div class="card">
         <h2>計時練習</h2>
         <p class="lede">跟框架寫全文。預設第一題＝官方「大牌檔」sample；其餘題由本頁題庫抽出。</p>
-        <div class="toolbar">
-          <label class="select-wrap">題目
-            <select id="drillSelect"></select>
-          </label>
-          <button type="button" class="btn" id="btnShuffle">換一題</button>
-        </div>
-        <div class="chip-row" id="drillMeta"></div>
-        <pre class="prompt-box" id="drillPrompt">載入中…</pre>
-        <details class="hints">
-          <summary>利弊／措施提示（練習時先收埋）</summary>
-          <div id="drillHints" class="hint-body muted">—</div>
-        </details>
-        <div class="timer-row">
-          <div class="timer" id="timerDisplay">70:00</div>
-          <div class="toolbar">
-            <button type="button" class="btn primary" id="btnStart">開始 70 分</button>
-            <button type="button" class="btn" id="btnStart80">80 分</button>
-            <button type="button" class="btn" id="btnPause">暫停</button>
-            <button type="button" class="btn" id="btnReset">重設</button>
+        <div class="drill-workspace">
+          <div class="drill-source">
+            <div class="toolbar">
+              <label class="select-wrap">題目
+                <select id="drillSelect"></select>
+              </label>
+              <button type="button" class="btn" id="btnShuffle">換一題</button>
+            </div>
+            <div class="chip-row" id="drillMeta"></div>
+            <pre class="prompt-box" id="drillPrompt">載入中…</pre>
+            <details class="hints">
+              <summary>利弊／措施提示（練習時先收埋）</summary>
+              <div id="drillHints" class="hint-body muted">載入中…</div>
+            </details>
+          </div>
+          <div class="drill-writing">
+            <div class="timer-row">
+              <div class="timer" id="timerDisplay">70:00</div>
+              <div class="toolbar">
+                <button type="button" class="btn primary" id="btnStart">開始 70 分</button>
+                <button type="button" class="btn" id="btnStart80">80 分</button>
+                <button type="button" class="btn" id="btnPause">暫停</button>
+                <button type="button" class="btn" id="btnReset">重設</button>
+              </div>
+            </div>
+            <label class="sr-only" for="answer">答卷</label>
+            <textarea id="answer" rows="14" placeholder="開首立場 → 2 理據（HK 例子）→ 反駁 → 建議 → 短結"></textarea>
+            <div class="toolbar">
+              <button type="button" class="btn" id="btnCopyPrompt">複製題目</button>
+              <button type="button" class="btn" id="btnCopyAnswer">複製答卷</button>
+              <span class="count" id="wordCount">0 字</span>
+            </div>
+            <p class="muted">答卷只存在呢部裝置（localStorage）。範文喺下面，<strong>自己寫完先開</strong>；交卷後可去「自評清單」打勾。</p>
           </div>
         </div>
-        <label class="sr-only" for="answer">答卷</label>
-        <textarea id="answer" rows="14" placeholder="開首立場 → 2 理據（HK 例子）→ 反駁 → 建議 → 短結"></textarea>
-        <div class="toolbar">
-          <button type="button" class="btn" id="btnCopyPrompt">複製題目</button>
-          <button type="button" class="btn" id="btnCopyAnswer">複製答卷</button>
-          <span class="count" id="wordCount">0 字</span>
-        </div>
-        <p class="muted">答卷只存在呢部裝置（localStorage）。範文喺下面——<strong>自己寫完先開</strong>；交卷後可去「自評清單」打勾。</p>
       </div>
       <div class="card" id="drillSampleCard" hidden>
         <h2>範文</h2>
@@ -315,7 +323,7 @@
     <section class="panel" id="panel-phrasebank">
       <div class="card">
         <h2>中文 Q2 骨架句</h2>
-        <p class="lede">文筆一般都夠——考試靠骨架，唔靠文采。每段套入本地例子／一個數。搜尋會套用到下面各分類。</p>
+        <p class="lede">文筆一般都夠，考試靠骨架，唔靠文采。每段套入本地例子／一個數。搜尋會套用到下面各分類。</p>
         <div class="toolbar">
           <div class="search"><input type="search" id="q2PhraseSearch" placeholder="搜尋句式 中／EN…" autocomplete="off" /></div>
           <span class="count" id="q2PhraseCount">載入中…</span>
@@ -331,7 +339,7 @@
   <div class="flash-overlay" id="flashOverlay" hidden>
     <div class="flash-bar">
       <button type="button" class="btn" id="flashClose">返回題庫</button>
-      <span class="flash-progress" id="flashProgress">—</span>
+      <span class="flash-progress" id="flashProgress">0 / 0</span>
       <span class="flash-score" id="flashScore"></span>
     </div>
     <div class="flash-card" id="flashCard" role="button" tabindex="0" aria-pressed="false" aria-label="翻面">

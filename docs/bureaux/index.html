@@ -7,153 +7,24 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="香港特區政府決策局架構、中英文名稱、職責及最新政策速查（JRE 備試專用）" />
   <title>政府決策局及最新政策 · JRE Study Hub</title>
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261106a" />
-  <style>
-    :root {
-      --bg: #f4f6f9;
-      --surface: #ffffff;
-      --ink: #1a2332;
-      --muted: #5a6a7a;
-      --border: #e2e8f0;
-      --accent: #0b6e4f;
-      --accent-soft: #e6f4ef;
-      --accent-2: #1d4ed8;
-      --shadow: 0 4px 16px rgba(26, 35, 50, 0.05);
-      --radius: 12px;
-      --font: "Segoe UI", "PingFang HK", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: var(--font);
-      color: var(--ink);
-      background: var(--bg);
-      line-height: 1.55;
-      padding-bottom: 80px;
-    }
-    .app-header {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .header-inner {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .brand-mark {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      background: var(--accent);
-      color: #fff;
-      display: grid;
-      place-items: center;
-      font-weight: 800;
-      font-size: 0.9rem;
-    }
-    .brand-text h1 { margin: 0; font-size: 1.15rem; }
-    .brand-text p { margin: 2px 0 0; color: var(--muted); font-size: 0.8rem; }
-    .wrap {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 16px;
-    }
-    .search-box {
-      margin-bottom: 16px;
-      position: sticky;
-      top: 65px;
-      z-index: 9;
-      background: var(--bg);
-      padding: 6px 0;
-    }
-    .search-box input {
-      width: 100%;
-      padding: 10px 14px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      font-size: 0.95rem;
-      background: var(--surface);
-      outline: none;
-    }
-    .search-box input:focus { border-color: var(--accent); }
-    .bureau-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 16px;
-      margin-bottom: 16px;
-      box-shadow: var(--shadow);
-    }
-    .b-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      border-bottom: 1px solid #edf2f7;
-      padding-bottom: 10px;
-      margin-bottom: 12px;
-    }
-    .b-title h2 { margin: 0; font-size: 1.2rem; color: var(--accent); }
-    .b-title .en { margin: 2px 0 0; font-size: 0.9rem; color: var(--muted); }
-    .b-badge {
-      padding: 3px 8px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      border-radius: 6px;
-      font-size: 0.75rem;
-      font-weight: 700;
-    }
-    .sec-label {
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin: 10px 0 4px;
-    }
-    .responsibilities {
-      margin: 0 0 10px;
-      padding-left: 20px;
-      font-size: 0.9rem;
-      color: #2d3748;
-    }
-    .responsibilities li { margin-bottom: 4px; }
-    .policies-box {
-      background: #f8fafc;
-      border-left: 3px solid var(--accent);
-      padding: 10px 12px;
-      border-radius: 0 6px 6px 0;
-      font-size: 0.88rem;
-    }
-    .policies-box ul { margin: 4px 0 0; padding-left: 18px; }
-    .policies-box li { margin-bottom: 4px; }
-    .depts-tag {
-      margin-top: 10px;
-      font-size: 0.82rem;
-      color: var(--muted);
-    }
-    .depts-tag strong { color: var(--ink); }
-  </style>
+  <link rel="stylesheet" href="../shell/study-theme.css?v=20261111" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261111" />
+  <link rel="stylesheet" href="styles.css?v=20261111" />
 </head>
-<body>
+<body class="study-screen bureau-screen">
   <header class="app-header">
     <div class="header-inner">
-      <div class="brand-mark">局</div>
       <div class="brand-text">
-        <h1>香港特區政府決策局 · 職責與最新政策</h1>
-        <p>15 決策局中英對照 · JRE Q1/Q2 官方部門速查</p>
+        <h1>香港特區政府決策局</h1>
+        <p>查閱 15 個決策局的中英名稱、職責及最新政策</p>
       </div>
     </div>
   </header>
 
   <main class="wrap">
     <div class="search-box">
-      <input type="search" id="search" placeholder="搜尋局名（中/EN）、縮寫（如 DEVB, HB）、職責、最新政策（如簡約公屋、北都、垃圾收費）..." />
+      <label for="search">搜尋決策局</label>
+      <input type="search" id="search" placeholder="局名、縮寫、職責或政策關鍵字" />
     </div>
 
     <div id="bureaux-list">
@@ -166,20 +37,26 @@
           </div>
           <span class="b-badge">HB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>統籌全港公私營房屋政策及推展《長遠房屋策略》（長策）。</li>
-          <li>管理公共租住房屋（PRH）、資助出售房屋（居屋 HOS、綠置居 GSH）。</li>
-          <li>規管不適切居所（劏房）及落實「基本住房單位」制度。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>公屋綜合輪候時間</strong>：約 4.8 年，目標於 2026/27 降至約 4.5 年。</li>
-            <li><strong>簡約公屋（Light Public Housing, LPH）</strong>：興建約 30,000 個單位，作為過渡性支援。</li>
-            <li><strong>立法規管劏房</strong>：制定《基本住房單位條例》，要求最低面積（8 平方米）及衛生消防標準。</li>
-            <li><strong>五年供應收成期</strong>：未來五年總體公營房屋建屋量約 196,000 伙（連簡約公屋）。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>統籌全港公私營房屋政策及推展《長遠房屋策略》（長策）。</li>
+              <li>管理公共租住房屋（PRH）、資助出售房屋（居屋 HOS、綠置居 GSH）。</li>
+              <li>規管不適切居所（劏房）及落實「基本住房單位」制度。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>公屋綜合輪候時間</strong>：約 4.8 年，目標於 2026/27 降至約 4.5 年。</li>
+                <li><strong>簡約公屋（Light Public Housing, LPH）</strong>：興建約 30,000 個單位，作為過渡性支援。</li>
+                <li><strong>立法規管劏房</strong>：制定《基本住房單位條例》，要求最低面積（8 平方米）及衛生消防標準。</li>
+                <li><strong>五年供應收成期</strong>：未來五年總體公營房屋建屋量約 196,000 伙（連簡約公屋）。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 房屋署 (Housing Department, HD)、香港房屋委員會 (HKHA)</div>
       </article>
@@ -193,19 +70,25 @@
           </div>
           <span class="b-badge">DEVB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>規劃、土地供應與管理、市區更新及工務工程協調。</li>
-          <li>推展大型造地項目（北部都會區、交椅洲人工島）及土地儲備策略。</li>
-          <li>推廣建築創新（組裝合成建築法 MiC）及監督建築安全與工人培訓。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>北部都會區（Northern Metropolis）</strong>：佔地約 30,000 公頃，規劃提供約 500,000 伙住宅及數十萬創科就業。</li>
-            <li><strong>熟地儲備</strong>：未來十年預備約 2,500 公頃「熟地」，掌握土地供應主導權。</li>
-            <li><strong>建造技術創新</strong>：強制指定公營項目採用組裝合成（MiC）以提速提效。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>規劃、土地供應與管理、市區更新及工務工程協調。</li>
+              <li>推展大型造地項目（北部都會區、交椅洲人工島）及土地儲備策略。</li>
+              <li>推廣建築創新（組裝合成建築法 MiC）及監督建築安全與工人培訓。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>北部都會區（Northern Metropolis）</strong>：佔地約 30,000 公頃，規劃提供約 500,000 伙住宅及數十萬創科就業。</li>
+                <li><strong>熟地儲備</strong>：未來十年預備約 2,500 公頃「熟地」，掌握土地供應主導權。</li>
+                <li><strong>建造技術創新</strong>：強制指定公營項目採用組裝合成（MiC）以提速提效。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 地政總署 (LandsD)、規劃署 (PlanD)、屋宇署 (BD)、土木工程拓展署 (CEDD)、渠務署、水務署</div>
       </article>
@@ -219,20 +102,26 @@
           </div>
           <span class="b-badge">HHB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>制定公共醫療衛生政策、管理公立醫院系統及分配醫療資源。</li>
-          <li>落實《基層醫療健康藍圖》，推動「重預防、早治療、社區化」醫療體系。</li>
-          <li>推展中醫藥發展、精神健康服務協調及跨境醫療合作。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>深化醫療改革</strong>：推廣「慢病共治計劃」，每年增設約 220,000 個醫管局家庭醫學門診名額。</li>
-            <li><strong>地區康健中心 (DHC)</strong>：於全港 18 區作為基層醫療樞紐，推動慢性病初篩與同儕支援。</li>
-            <li><strong>跨境醫療銜接</strong>：擴展「長者醫療券大灣區試點計劃」至大灣區內地多個核心醫療機構。</li>
-            <li><strong>精神健康應急</strong>：落實校園三層應急機制及「健心先導計劃」，改善專科門診輪候。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>制定公共醫療衛生政策、管理公立醫院系統及分配醫療資源。</li>
+              <li>落實《基層醫療健康藍圖》，推動「重預防、早治療、社區化」醫療體系。</li>
+              <li>推展中醫藥發展、精神健康服務協調及跨境醫療合作。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>深化醫療改革</strong>：推廣「慢病共治計劃」，每年增設約 220,000 個醫管局家庭醫學門診名額。</li>
+                <li><strong>地區康健中心 (DHC)</strong>：於全港 18 區作為基層醫療樞紐，推動慢性病初篩與同儕支援。</li>
+                <li><strong>跨境醫療銜接</strong>：擴展「長者醫療券大灣區試點計劃」至大灣區內地多個核心醫療機構。</li>
+                <li><strong>精神健康應急</strong>：落實校園三層應急機制及「健心先導計劃」，改善專科門診輪候。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 衞生署 (DH)、醫院管理局 (HA)、基層醫療署 (Primary Healthcare Commission)</div>
       </article>
@@ -246,19 +135,25 @@
           </div>
           <span class="b-badge">LWB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>推展社會福利、扶貧、安老服務、身心障礙人士支援及家庭服務。</li>
-          <li>保障勞工權益、職業安全、就業服務及人力資源政策。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>安老核心策略</strong>：「居家安老為核心，院舍為後援」；2027-28 年社區照顧券 (CCSV) 增至 18,000 張、院舍券 (RCSV) 增至 8,000 張。</li>
-            <li><strong>照顧者支援</strong>：成立照顧者專線（182 183）、增加日間暫託名額，推展「以老護老」專項篩查。</li>
-            <li><strong>平台配送員保障</strong>：研究立法為網約配送員訂立行業專屬保障底線（包括意外保險及惡劣天氣停工指引）。</li>
-            <li><strong>最低工資檢討</strong>：落實「一年一檢」並引入「可加不減」法定調整方程式。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>推展社會福利、扶貧、安老服務、身心障礙人士支援及家庭服務。</li>
+              <li>保障勞工權益、職業安全、就業服務及人力資源政策。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>安老核心策略</strong>：「居家安老為核心，院舍為後援」；2027-28 年社區照顧券 (CCSV) 增至 18,000 張、院舍券 (RCSV) 增至 8,000 張。</li>
+                <li><strong>照顧者支援</strong>：成立照顧者專線（182 183）、增加日間暫託名額，推展「以老護老」專項篩查。</li>
+                <li><strong>平台配送員保障</strong>：研究立法為網約配送員訂立行業專屬保障底線（包括意外保險及惡劣天氣停工指引）。</li>
+                <li><strong>最低工資檢討</strong>：落實「一年一檢」並引入「可加不減」法定調整方程式。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 社會福利署 (SWD)、勞工處 (Labour Department, LD)</div>
       </article>
@@ -272,19 +167,25 @@
           </div>
           <span class="b-badge">ITIB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>制定香港創科發展藍圖，推動「南金融、北創科」產業佈局。</li>
-          <li>推進河套深港科技創新合作區、新田科技城中試及量產轉化。</li>
-          <li>推動政府及社會數碼轉型（智慧城市、智方便、人工智能安全監管）。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>河套合作區香港園區</strong>：落實「一河兩岸、一區兩園」，爭取跨境數據及臨床樣本安全流通。</li>
-            <li><strong>AI 產業資助與治理</strong>：注資 10 億元推展「人工智能資助計劃」，設立數碼政策辦公室 (DPO) 統籌數碼政務。</li>
-            <li><strong>新型工業加速計劃 (NIFS)</strong>：提供配對資助吸引生命健康、人工智能及先進製造企業落戶。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>制定香港創科發展藍圖，推動「南金融、北創科」產業佈局。</li>
+              <li>推進河套深港科技創新合作區、新田科技城中試及量產轉化。</li>
+              <li>推動政府及社會數碼轉型（智慧城市、智方便、人工智能安全監管）。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>河套合作區香港園區</strong>：落實「一河兩岸、一區兩園」，爭取跨境數據及臨床樣本安全流通。</li>
+                <li><strong>AI 產業資助與治理</strong>：注資 10 億元推展「人工智能資助計劃」，設立數碼政策辦公室 (DPO) 統籌數碼政務。</li>
+                <li><strong>新型工業加速計劃 (NIFS)</strong>：提供配對資助吸引生命健康、人工智能及先進製造企業落戶。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 數碼政策辦公室 (Digital Policy Office, DPO)、創新科技署 (ITC)</div>
       </article>
@@ -298,18 +199,24 @@
           </div>
           <span class="b-badge">EEB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>推行環境保護、節能減碳、廢物管理以及自然生態保育。</li>
-          <li>主管食品安全、漁農業發展、環境衛生及街市管理。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>都市固體廢物收費 (MSW Charging)</strong>：暫停強制實施，聚焦擴建「綠在區區」回收網絡及公屋智能廚餘桶。</li>
-            <li><strong>《香港資源循環藍圖 2035》</strong>：中期目標將人均棄置量削減 40–45%，廢物回收率提至約 55%。</li>
-            <li><strong>綠色出行與電動車</strong>：五年內將公共及私營快充樁擴增至約 5,000 個，配合 2035 年前停止燃油私家車新登記。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>推行環境保護、節能減碳、廢物管理以及自然生態保育。</li>
+              <li>主管食品安全、漁農業發展、環境衛生及街市管理。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>都市固體廢物收費 (MSW Charging)</strong>：暫停強制實施，聚焦擴建「綠在區區」回收網絡及公屋智能廚餘桶。</li>
+                <li><strong>《香港資源循環藍圖 2035》</strong>：中期目標將人均棄置量削減 40至45%，廢物回收率提至約 55%。</li>
+                <li><strong>綠色出行與電動車</strong>：五年內將公共及私營快充樁擴增至約 5,000 個，配合 2035 年前停止燃油私家車新登記。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 環境保護署 (EPD)、食物環境衞生署 (FEHD)、漁農自然護理署 (AFCD)</div>
       </article>
@@ -323,18 +230,24 @@
           </div>
           <span class="b-badge">TLB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>規劃及監管陸路交通、公共交通網絡、過海隧道及主要幹道。</li>
-          <li>發展海空運物流樞紐（香港國際機場三跑道系統、智慧港口）。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>《香港主要運輸基建發展藍圖》</strong>：落實「三鐵三道」，包括北環線、新界東北線以支援北都發展。</li>
-            <li><strong>網約車與的士規管</strong>：立法引入「的士車隊制」，並就網約車平台發牌與規管進行公眾諮詢及立法準備。</li>
-            <li><strong>智慧出行</strong>：推廣自駕車測試、實時交通燈號控制及跨海口岸交通疏導機制。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>規劃及監管陸路交通、公共交通網絡、過海隧道及主要幹道。</li>
+              <li>發展海空運物流樞紐（香港國際機場三跑道系統、智慧港口）。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>《香港主要運輸基建發展藍圖》</strong>：落實「三鐵三道」，包括北環線、新界東北線以支援北都發展。</li>
+                <li><strong>網約車與的士規管</strong>：立法引入「的士車隊制」，並就網約車平台發牌與規管進行公眾諮詢及立法準備。</li>
+                <li><strong>智慧出行</strong>：推廣自駕車測試、實時交通燈號控制及跨海口岸交通疏導機制。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 運輸署 (TD)、路政署 (HyD)、民航處 (CAD)、海事處 (MD)</div>
       </article>
@@ -348,18 +261,24 @@
           </div>
           <span class="b-badge">CSTB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>促進文化藝術、創意產業、體育運動普及化及精英化。</li>
-          <li>制定旅遊業發展藍圖，推動香港作為國際旅遊及文化交流中心。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>啟德體育園啟用</strong>：主場館（50,000 座位）落成啟用，承接國際頂級賽事與大型演藝盛事。</li>
-            <li><strong>「無處不旅遊」策略</strong>：由單純購物轉向非遺、生態、海島特色深度遊及大灣區「一程多站」。</li>
-            <li><strong>盛事經濟與客源多元化</strong>：設立盛事統籌小組，開拓中東及東盟穆斯林友善旅遊市場。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>促進文化藝術、創意產業、體育運動普及化及精英化。</li>
+              <li>制定旅遊業發展藍圖，推動香港作為國際旅遊及文化交流中心。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>啟德體育園啟用</strong>：主場館（50,000 座位）落成啟用，承接國際頂級賽事與大型演藝盛事。</li>
+                <li><strong>「無處不旅遊」策略</strong>：由單純購物轉向非遺、生態、海島特色深度遊及大灣區「一程多站」。</li>
+                <li><strong>盛事經濟與客源多元化</strong>：設立盛事統籌小組，開拓中東及東盟穆斯林友善旅遊市場。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 康樂及文化事務署 (LCSD)、旅遊事務署 (TC)</div>
       </article>
@@ -373,19 +292,25 @@
           </div>
           <span class="b-badge">CEDB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>促進對外貿易投資、開拓「一帶一路」及東盟市場。</li>
-          <li>支援本地中小企業（融資擔保、電商轉型）及維護消費者權益。</li>
-          <li>保障知識產權及推動區域知識產權貿易中心定位。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>拓展「一帶一路」新興市場</strong>：協助港商打入中東、東盟及中亞供應鏈。</li>
-            <li><strong>中小企融資擔保計劃 (SFGS)</strong>：優化百分百擔保特惠貸款及還息不還本安排。</li>
-            <li><strong>電子商貿「香港好物節」</strong>：協助本地品牌開拓內地龐大電商市場。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>促進對外貿易投資、開拓「一帶一路」及東盟市場。</li>
+              <li>支援本地中小企業（融資擔保、電商轉型）及維護消費者權益。</li>
+              <li>保障知識產權及推動區域知識產權貿易中心定位。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>拓展「一帶一路」新興市場</strong>：協助港商打入中東、東盟及中亞供應鏈。</li>
+                <li><strong>中小企融資擔保計劃 (SFGS)</strong>：優化百分百擔保特惠貸款及還息不還本安排。</li>
+                <li><strong>電子商貿「香港好物節」</strong>：協助本地品牌開拓內地龐大電商市場。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 投資推廣署 (InvestHK)、工業貿易署 (TID)、知識產權署 (IPD)</div>
       </article>
@@ -399,18 +324,24 @@
           </div>
           <span class="b-badge">FSTB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>維護及鞏固香港國際金融中心地位，推動資本市場創新（證券、債券、保險、財富管理）。</li>
-          <li>統籌特區政府財政預算、公共開支控制、稅務政策及政府採購。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>新興金融增長點</strong>：發展綠色及可持續金融、離岸人民幣樞紐、家族辦公室稅務寬減。</li>
-            <li><strong>虛擬資產監管</strong>：推行穩定幣發行人監管制度及虛擬資產場外交易 (OTC) 牌照制度。</li>
-            <li><strong>財政整合策略</strong>：在面對結構性財政赤字下，嚴格控制公務員編制增長及經常性開支增幅。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>維護及鞏固香港國際金融中心地位，推動資本市場創新（證券、債券、保險、財富管理）。</li>
+              <li>統籌特區政府財政預算、公共開支控制、稅務政策及政府採購。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>新興金融增長點</strong>：發展綠色及可持續金融、離岸人民幣樞紐、家族辦公室稅務寬減。</li>
+                <li><strong>虛擬資產監管</strong>：推行穩定幣發行人監管制度及虛擬資產場外交易 (OTC) 牌照制度。</li>
+                <li><strong>財政整合策略</strong>：在面對結構性財政赤字下，嚴格控制公務員編制增長及經常性開支增幅。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 稅務局 (IRD)、庫務署 (Treasury)、差餉物業估價署 (RVD)</div>
       </article>
@@ -424,18 +355,24 @@
           </div>
           <span class="b-badge">HYAB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>推行《青年發展藍圖》，涵蓋青年學業、就業、創業及置業（四業）。</li>
-          <li>落實完善地區治理架構，協調 18 區區議會及「關愛隊」運作。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>關愛隊（Care Teams）</strong>：全港 18 區 452 隊關愛隊全面運作，推動基層探訪、以老護老支援及緊急應變。</li>
-            <li><strong>三萬青年職位與實習計劃</strong>：兩年內提供 1 萬職位 + 1 萬實習 + 1 萬培訓，促進向上流動。</li>
-            <li><strong>青年宿舍計劃</strong>：透過資助酒店轉作青年宿舍，提供平價租金並鼓勵青年參與社區服務。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>推行《青年發展藍圖》，涵蓋青年學業、就業、創業及置業（四業）。</li>
+              <li>落實完善地區治理架構，協調 18 區區議會及「關愛隊」運作。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>關愛隊（Care Teams）</strong>：全港 18 區 452 隊關愛隊全面運作，推動基層探訪、以老護老支援及緊急應變。</li>
+                <li><strong>三萬青年職位與實習計劃</strong>：兩年內提供 1 萬職位 + 1 萬實習 + 1 萬培訓，促進向上流動。</li>
+                <li><strong>青年宿舍計劃</strong>：透過資助酒店轉作青年宿舍，提供平價租金並鼓勵青年參與社區服務。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 民政事務總署 (HAD)</div>
       </article>
@@ -449,18 +386,24 @@
           </div>
           <span class="b-badge">EDB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>制定及推行涵蓋幼稚園、中小學至專上教育的整體方針。</li>
-          <li>推動 STEAM 教育、國民教育、職業專才教育（VPET）及特教支援。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>留學香港品牌（Study in Hong Kong）</strong>：打造國際高端人才集聚高地，擴大非本地生配額及獎學金。</li>
-            <li><strong>北都大學城</strong>：預留用地吸引本地及海內外頂尖大學進駐，推動產學研結合。</li>
-            <li><strong>應用科學大學 (UAS)</strong>：推展應用學位課程，提升職專教育認受性。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>制定及推行涵蓋幼稚園、中小學至專上教育的整體方針。</li>
+              <li>推動 STEAM 教育、國民教育、職業專才教育（VPET）及特教支援。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>留學香港品牌（Study in Hong Kong）</strong>：打造國際高端人才集聚高地，擴大非本地生配額及獎學金。</li>
+                <li><strong>北都大學城</strong>：預留用地吸引本地及海內外頂尖大學進駐，推動產學研結合。</li>
+                <li><strong>應用科學大學 (UAS)</strong>：推展應用學位課程，提升職專教育認受性。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 大學教育資助委員會 (UGC)、學生資助處 (SFO)</div>
       </article>
@@ -474,18 +417,24 @@
           </div>
           <span class="b-badge">SB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>維護國家安全、公共秩序、反恐、出入境管制及海關執法。</li>
-          <li>管理六大紀律部隊及統籌大灣區跨境應急救援機制。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>落實《維護國家安全條例》(SNSO)</strong>：補齊維護國家安全法制短板，確保社會穩定。</li>
-            <li><strong>智慧口岸通關</strong>：皇崗口岸及新口岸推行「合作查驗、一次放行」，提升跨境人流物流速度。</li>
-            <li><strong>大灣區應急聯動</strong>：制定《粵港澳應急管理合作協議》，實現跨境救援人員與裝備互通。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>維護國家安全、公共秩序、反恐、出入境管制及海關執法。</li>
+              <li>管理六大紀律部隊及統籌大灣區跨境應急救援機制。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>落實《維護國家安全條例》(SNSO)</strong>：補齊維護國家安全法制短板，確保社會穩定。</li>
+                <li><strong>智慧口岸通關</strong>：皇崗口岸及新口岸推行「合作查驗、一次放行」，提升跨境人流物流速度。</li>
+                <li><strong>大灣區應急聯動</strong>：制定《粵港澳應急管理合作協議》，實現跨境救援人員與裝備互通。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 香港警務處 (HKPF)、入境事務處 (ImmD)、香港海關 (C&ED)、懲教署 (CSD)、消防處 (FSD)、政府飛行服務隊 (GFS)</div>
       </article>
@@ -499,18 +448,24 @@
           </div>
           <span class="b-badge">CSB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>全權負責特區公務員隊伍的招聘、晉升、薪酬、福利、品行及紀律。</li>
-          <li>主辦聯合招聘考試 (JRE)、綜合招聘考試 (CRE) 及基本法及國安法測試 (BLNST)。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>更新《公務員守則》</strong>：確立公務員以愛國愛港、以民為本、恪守法治為核心價值。</li>
-            <li><strong>強化賞罰機制</strong>：優化「公務員事務局局長嘉許狀」，同時簡化著令工作表現持續欠佳人員退休的處理機制。</li>
-            <li><strong>公務員學院深化培訓</strong>：加強國家事務、憲制秩序及應變能力培訓。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>全權負責特區公務員隊伍的招聘、晉升、薪酬、福利、品行及紀律。</li>
+              <li>主辦聯合招聘考試 (JRE)、綜合招聘考試 (CRE) 及基本法及國安法測試 (BLNST)。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>更新《公務員守則》</strong>：確立公務員以愛國愛港、以民為本、恪守法治為核心價值。</li>
+                <li><strong>強化賞罰機制</strong>：優化「公務員事務局局長嘉許狀」，同時簡化著令工作表現持續欠佳人員退休的處理機制。</li>
+                <li><strong>公務員學院深化培訓</strong>：加強國家事務、憲制秩序及應變能力培訓。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 公務員學院 (Civil Service College)、公務員培訓處</div>
       </article>
@@ -524,18 +479,24 @@
           </div>
           <span class="b-badge">CMAB</span>
         </div>
-        <div class="sec-label">主要職責</div>
-        <ul class="responsibilities">
-          <li>維持特區憲制秩序、推廣《憲法》與《基本法》。</li>
-          <li>推進與中央及各省市合作，特別是粵港澳大灣區高水平融合。</li>
-          <li>推廣人權、個人資料私隱及反歧視平等機會。</li>
-        </ul>
-        <div class="sec-label">最新政策與 JRE 數據焦點</div>
-        <div class="policies-box">
-          <ul>
-            <li><strong>粵港澳大灣區發展統籌</strong>：透過「粵港合作聯席會議」深化醫療、養老、金融及青年雙向流動。</li>
-            <li><strong>政制與選舉制度維護</strong>：全面落實「愛國者治港」原則，確保各級選舉公平廉潔。</li>
-          </ul>
+        <div class="bureau-detail">
+          <section>
+            <h3 class="sec-label">主要職責</h3>
+            <ul class="responsibilities">
+              <li>維持特區憲制秩序、推廣《憲法》與《基本法》。</li>
+              <li>推進與中央及各省市合作，特別是粵港澳大灣區高水平融合。</li>
+              <li>推廣人權、個人資料私隱及反歧視平等機會。</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="sec-label">最新政策與 JRE 數據焦點</h3>
+            <div class="policies-box">
+              <ul>
+                <li><strong>粵港澳大灣區發展統籌</strong>：透過「粵港合作聯席會議」深化醫療、養老、金融及青年雙向流動。</li>
+                <li><strong>政制與選舉制度維護</strong>：全面落實「愛國者治港」原則，確保各級選舉公平廉潔。</li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div class="depts-tag"><strong>執行署／機構：</strong> 粵港澳大灣區發展辦公室、選舉事務處 (REO)、駐內地辦事處 (經貿辦)</div>
       </article>

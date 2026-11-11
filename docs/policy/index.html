@@ -9,29 +9,29 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="description" content="JRE Policy Bank — 政策溫習卡（中英閃卡）同備試用香港政策溫習筆記，來源為公開政府公報" />
   <title>JRE Policy Bank · 政策溫習卡</title>
-  <link rel="stylesheet" href="css/styles.css?v=20261106c" />
-  <link rel="stylesheet" href="../shared/policy-flashcards.css?v=20261103w" />
-  <link rel="stylesheet" href="../shell/tabbar.css?v=20261027c" />
+  <link rel="stylesheet" href="css/styles.css?v=20261111" />
+  <link rel="stylesheet" href="../shared/policy-flashcards.css?v=20261111" />
+  <link rel="stylesheet" href="../shell/tabbar.css?v=20261111" />
+  <link rel="stylesheet" href="../shell/study-theme.css?v=20261111" />
 </head>
-<body>
+<body class="study-screen policy-study">
   <header class="app-header">
     <div class="header-inner">
       <div class="brand">
-        <div class="logo" aria-hidden="true">JRE</div>
         <div class="brand-text">
           <h1>JRE Policy Bank</h1>
           <p data-i18n="subtitle">備試用時事／政策溫習庫（公開政府來源）</p>
         </div>
       </div>
       <div class="header-actions">
-        <div class="view-toggle" role="group" aria-label="View">
-          <button type="button" data-view="flash" class="active" data-i18n="tabFlash">政策溫習卡</button>
-          <button type="button" data-view="browse" data-i18n="tabBrowse">搜尋近期政策動向</button>
-        </div>
         <div class="lang-toggle" role="group" aria-label="Language">
           <button type="button" data-lang="zh" class="active">中</button>
           <button type="button" data-lang="en">EN</button>
         </div>
+      </div>
+      <div class="view-toggle" role="group" aria-label="View">
+        <button type="button" data-view="flash" class="active" data-i18n="tabFlash">政策溫習卡</button>
+        <button type="button" data-view="browse" data-i18n="tabBrowse">搜尋近期政策動向</button>
       </div>
     </div>
   </header>
@@ -40,20 +40,19 @@
     <section id="flash" class="policy-flash" aria-labelledby="flashTitle">
       <div class="briefs-intro" id="bank-study">
         <h2 id="flashTitle">政策溫習卡</h2>
-        <p class="lede">一打開呢頁就係溫習卡。考試式題目 → 利弊 → 建議立場 → 措施 → 必記事實。中英對齊 Q2 題庫。下面先至係瀏覽／每周摘要。</p>
         <div class="jre-pf jre-pf-launcher" id="bankFlashLauncher">
           <div class="jre-pf-launcher-copy">
-            <h3>閃卡溫習 · Quizlet</h3>
-            <p>正面＝主題＋考試題／立場一句；翻面＝利弊→立場→措施→必記。中＋英。點卡翻面，識／未識。</p>
+            <h3>閃卡溫習</h3>
+            <p>先看主題和題目，翻面核對利弊、立場、措施與事實，再標記已識或未識。</p>
           </div>
           <button type="button" class="jre-pf-start" id="btnBankFlash">開始閃卡</button>
         </div>
         <div class="search-bar">
-          <input id="bankSearch" type="search" enterkeyhint="search" autocomplete="off" spellcheck="false" placeholder="搜尋主題、題目、立場、事實（中英）…" aria-label="搜尋政策溫習卡" />
+          <input id="bankSearch" type="search" enterkeyhint="search" autocomplete="off" spellcheck="false" placeholder="搜尋溫習卡（中英）" aria-label="搜尋政策溫習卡" />
           <button type="button" class="clear-btn" id="bankClear">清除</button>
         </div>
-        <div class="count" id="bankCount">溫習卡: —</div>
-        <p class="lede bank-list-hint">下面係列表備援；亦可點卡右上「閃」由該題開閃卡。同一套卡亦喺 <a href="../q2/#bank">Q2 題庫</a>。</p>
+        <div class="count" id="bankCount">載入溫習卡…</div>
+        <p class="lede bank-list-hint">點「閃」可從指定題目開始。中英內容與 <a href="../q2/#bank">Q2 題庫</a>對齊。</p>
         <p class="flash-status" id="flashStatus" role="status" hidden></p>
       </div>
       <div class="briefs-list" id="briefsList"></div>
@@ -61,70 +60,71 @@
       <div class="briefs-sources" id="briefsSources" hidden></div>
     </section>
 
-    <section class="hero">
-      <h2 data-i18n="heroTitle">搜尋近期香港政策動向</h2>
-      <p class="lede" data-i18n="heroLede">關鍵字搜尋、政策局／署過濾、主題標籤、摘要、事實、措施與溫習卡——素材來自 info.gov.hk 等公開公報，非任何收費資料庫內容。</p>
-      <p class="disclaimer" data-i18n="disclaimer">免責：本工具僅供備試參考。摘要與溫習筆記為原創整理，請以原文公報為準。與 CS Radar 無關，亦未使用其付費內容。</p>
-
-      <details class="exam-tip" open>
-        <summary data-i18n="examTipTitle">開考scratch · Q2 事實 dump</summary>
-        <ol class="exam-tip-list">
-          <li data-i18n="examTip1">Dump：2–3 實數／年份、主責局署、1 措施、利弊各一句</li>
-          <li data-i18n="examTip2">正文只落地 1 個撐理據嘅數／措施名＋「所以點」</li>
-          <li data-i18n="examTip3">開頭唔堆數；冇把握唔估</li>
-          <li data-i18n="examTip4">讀卡三問：成因／受影響群／當局回應</li>
-        </ol>
-        <p class="exam-tip-note" data-i18n="examTipNote">舉一反三＋「有助…但須…」；建議唔批評。詳見 Q2 框架。</p>
-      </details>
-
-
-      <div class="search-bar sticky-search">
-        <input id="search" type="search" enterkeyhint="search" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="搜尋標題、摘要、部門、主題…" aria-label="Search" />
-        <button type="button" class="clear-btn" id="clearSearch" data-i18n="clear">清除</button>
-      </div>
-
-      <div class="filters-toolbar" id="filtersToolbar">
-        <button type="button" class="filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="filtersPanel">
-          <span data-i18n="filtersToggle">篩選</span>
-          <span class="filters-count" id="filtersCount" hidden></span>
-          <span class="chev" aria-hidden="true">▾</span>
-        </button>
-      </div>
-
-      <div class="filters" id="filtersPanel" hidden>
-        <div class="filter-row">
-          <div class="filter-label" data-i18n="depts">政策局／部門</div>
-          <div class="chips" id="deptChips"></div>
+    <div class="policy-browse-layout">
+      <section class="hero" hidden>
+        <h2 data-i18n="heroTitle">搜尋近期香港政策動向</h2>
+        <p class="lede" data-i18n="heroLede">關鍵字搜尋、政策局／署過濾、主題標籤、摘要、事實、措施與溫習卡。素材來自 info.gov.hk 等公開公報，非任何收費資料庫內容。</p>
+        <div class="search-bar sticky-search">
+          <input id="search" type="search" enterkeyhint="search" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="搜尋標題、摘要、部門、主題…" aria-label="Search" />
+          <button type="button" class="clear-btn" id="clearSearch" data-i18n="clear">清除</button>
         </div>
-        <div class="filter-row">
-          <div class="filter-label" data-i18n="themes">政策主題</div>
-          <div class="chips" id="themeChips"></div>
+
+        <div class="filters-toolbar" id="filtersToolbar">
+          <button type="button" class="filters-toggle" id="filtersToggle" aria-expanded="false" aria-controls="filtersPanel">
+            <span data-i18n="filtersToggle">篩選</span>
+            <span class="filters-count" id="filtersCount" hidden></span>
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
         </div>
-      </div>
-    </section>
 
-    <section id="browse" class="browse">
-      <div class="toolbar">
-        <div class="count" id="count">結果: —</div>
-        <label class="sort">
-          <span data-i18n="sortLabel">排序</span>
-          <select id="sort">
-            <option value="newest" data-i18n="newest">最新優先</option>
-            <option value="oldest" data-i18n="oldest">最舊優先</option>
-          </select>
-        </label>
-      </div>
-      <div class="cards" id="cards" aria-live="polite"></div>
-    </section>
+        <div class="filters" id="filtersPanel" hidden>
+          <div class="filter-row">
+            <div class="filter-label" data-i18n="depts">政策局／部門</div>
+            <div class="chips" id="deptChips"></div>
+          </div>
+          <div class="filter-row">
+            <div class="filter-label" data-i18n="themes">政策主題</div>
+            <div class="chips" id="themeChips"></div>
+          </div>
+        </div>
 
+        <p class="disclaimer" data-i18n="disclaimer">免責：本工具僅供備試參考。摘要與溫習筆記為原創整理，請以原文公報為準。與 CS Radar 無關，亦未使用其付費內容。</p>
 
-    <section id="digest" class="digest" aria-live="polite">
-      <div class="digest-intro">
-        <h2 data-i18n="digestTitle">近14天按部門／局別整理</h2>
-        <p class="lede" data-i18n="digestLede">將最近兩周的政策項目按部門分組，方便快速複習。</p>
-      </div>
-      <div id="digestBody"></div>
-    </section>
+        <details class="exam-tip">
+          <summary data-i18n="examTipTitle">開考scratch · Q2 事實 dump</summary>
+          <ol class="exam-tip-list">
+            <li data-i18n="examTip1">Dump：2 至 3 個實數／年份、主責局署、1 措施、利弊各一句</li>
+            <li data-i18n="examTip2">正文只落地 1 個撐理據嘅數／措施名＋「所以點」</li>
+            <li data-i18n="examTip3">開頭唔堆數；冇把握唔估</li>
+            <li data-i18n="examTip4">讀卡三問：成因／受影響群／當局回應</li>
+          </ol>
+          <p class="exam-tip-note" data-i18n="examTipNote">舉一反三＋「有助…但須…」；建議唔批評。詳見 Q2 框架。</p>
+        </details>
+      </section>
+
+      <section id="browse" class="browse" hidden>
+        <div class="toolbar">
+          <div class="count" id="count">載入結果…</div>
+          <label class="sort">
+            <span data-i18n="sortLabel">排序</span>
+            <select id="sort">
+              <option value="newest" data-i18n="newest">最新優先</option>
+              <option value="oldest" data-i18n="oldest">最舊優先</option>
+            </select>
+          </label>
+        </div>
+        <div class="cards" id="cards" aria-live="polite"></div>
+        <nav class="pagination" id="pagination" aria-label="政策搜尋結果分頁"></nav>
+      </section>
+
+      <section id="digest" class="digest" aria-live="polite">
+        <div class="digest-intro">
+          <h2 data-i18n="digestTitle">近14天按部門／局別整理</h2>
+          <p class="lede" data-i18n="digestLede">將最近兩周的政策項目按部門分組，方便快速複習。</p>
+        </div>
+        <div id="digestBody"></div>
+      </section>
+    </div>
   </main>
 
   <footer class="app-footer">

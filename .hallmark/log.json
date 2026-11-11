@@ -6,6 +6,28 @@
   "shape": "app screen",
   "theme": "brand jade",
   "axes": "jade ink and cool paper",
+  "nav": "six shared destinations in a fixed text strip",
+  "entry": "Q1, Q2, policy, vocabulary and bureaux",
+  "sections": [
+   "exam workspaces",
+   "policy workspace",
+   "vocabulary lookup and study",
+   "bureau directory"
+  ],
+  "signature": "paper headings and clear lookup-to-study pathways",
+  "imagery": "none",
+  "photos": [],
+  "waived": [],
+  "prompt": "Redesign the rest of the JRE Study Hub",
+  "date": "2026-11-11"
+ },
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "app",
+  "shape": "app screen",
+  "theme": "brand jade",
+  "axes": "jade ink and cool paper",
   "nav": "existing six destinations as a text strip",
   "footer": "official links and Collocation Bank",
   "imagery": "none",

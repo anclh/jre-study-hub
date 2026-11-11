@@ -1,44 +1,8 @@
 /* Hallmark · v2.0.0 · redesign: full · genre: editorial · shape: app screen · theme: brand (jade) · signature: paired exam paper indexes */
 /* Hallmark · critique: separate practice from reference and give shared shortcuts matching positions in both papers. */
-:root {
-  --color-paper: #f3f6f2;
-  --color-surface: #fbfdf9;
-  --color-ink: #192d25;
-  --color-muted: #475e52;
-  --color-rule: #bbcbbf;
-  --color-jade: #0b6e4f;
-  --color-jade-deep: #194c3b;
-  --color-jade-soft: #deece3;
-  --color-on-jade: #f4faf4;
-  --color-on-jade-muted: #d4e8db;
-  --color-focus: #7c460d;
-  --font-body: "Avenir Next", "PingFang HK", "Microsoft JhengHei", system-ui, sans-serif;
-  --font-display: "Baskerville", Georgia, "PingFang HK", serif;
-  --space-1: .25rem;
-  --space-2: .5rem;
-  --space-3: .75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
-  --text-small: .875rem;
-  --text-body: 1rem;
-  --text-section: 1.125rem;
+.study-home {
   --text-paper: 3.625rem;
   --text-title: 4.25rem;
-  --radius: .625rem;
-  --content-width: 72rem;
-  --rule: 1px solid var(--color-rule);
-  --nav-height: 3.5rem;
-  --safe-top: env(safe-area-inset-top, 0px);
-}
-
-html,
-body {
-  overflow-x: clip;
 }
 
 .study-home {
@@ -47,10 +11,6 @@ body {
   background: var(--color-paper);
   color: var(--color-ink);
   font: var(--text-body)/1.55 var(--font-body);
-}
-
-.study-home:has(#jre-hub-tabbar) {
-  padding-top: calc(var(--nav-height) + var(--safe-top));
 }
 
 .study-home * {
@@ -77,8 +37,7 @@ body {
   text-underline-offset: .24em;
 }
 
-.study-home a:focus-visible,
-.study-home #jre-hub-tabbar a:focus-visible {
+.study-home a:focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
   position: relative;
@@ -248,51 +207,6 @@ body {
   text-decoration-thickness: 2px;
 }
 
-#jre-hub-tabbar {
-  position: fixed;
-  z-index: 2;
-  inset: 0 0 auto;
-  display: flex;
-  align-items: stretch;
-  gap: var(--space-1);
-  min-height: calc(var(--nav-height) + var(--safe-top));
-  padding: calc(var(--safe-top) + var(--space-1)) max(var(--space-3), calc((100% - 42rem) / 2)) var(--space-1);
-  border-bottom: var(--rule);
-  background: var(--color-surface);
-}
-
-.study-home #jre-hub-tabbar .hub-ico {
-  display: none;
-}
-
-.study-home #jre-hub-tabbar a {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 0;
-  min-height: 2.75rem;
-  padding: var(--space-1);
-  color: var(--color-muted);
-  border-radius: var(--radius);
-  text-align: center;
-  text-decoration: none;
-}
-
-.study-home #jre-hub-tabbar a:is(.is-active, :hover, :active) {
-  background: var(--color-jade-soft);
-  color: var(--color-jade-deep);
-}
-
-.study-home #jre-hub-tabbar .hub-zh {
-  font-size: .8125rem;
-}
-
-.study-home #jre-hub-tabbar .hub-en {
-  font-size: .6875rem;
-}
-
 @media (max-width: 57rem) {
   .study-layout {
     grid-template-columns: minmax(0, 1fr);
@@ -310,7 +224,7 @@ body {
 }
 
 @media (max-width: 38rem) {
-  :root {
+  .study-home {
     --text-title: 3rem;
     --text-paper: 3rem;
   }
@@ -338,11 +252,4 @@ body {
     padding: var(--space-4);
   }
 
-  .study-home #jre-hub-tabbar .hub-zh {
-    font-size: .75rem;
-  }
-
-  .study-home #jre-hub-tabbar .hub-en {
-    display: none;
-  }
 }
