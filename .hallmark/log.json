@@ -1,0 +1,24 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "app",
+  "shape": "app screen",
+  "theme": "brand jade",
+  "axes": "jade ink and cool paper",
+  "nav": "existing six destinations as a text strip",
+  "footer": "official links and Collocation Bank",
+  "imagery": "none",
+  "photos": [],
+  "entry": "homepage",
+  "sections": [
+   "practice papers",
+   "study references",
+   "official links"
+  ],
+  "signature": "paired Q1 and Q2 indexes with aligned shortcuts",
+  "waived": [],
+  "prompt": "Start from the live hub and redesign the homepage first",
+  "date": "2026-11-11"
+ }
+]

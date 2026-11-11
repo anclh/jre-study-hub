@@ -4,324 +4,71 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0b6e4f" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="description" content="JRE Study Hub — 聯合招聘考試備試（中英）" />
-  <!-- stamp: 20261109a · homepage Q1 subs drop 政策溫習卡 shortcut -->
+  <meta name="description" content="JRE Study Hub — 聯合招聘考試中英文備試。" />
   <title>JRE Study Hub · 主頁</title>
-  <link rel="stylesheet" href="shell/tabbar.css?v=20261109a" />
-  <style>
-    :root {
-      --bg: #f4f6f9;
-      --surface: #ffffff;
-      --ink: #1a2332;
-      --muted: #5a6a7a;
-      --border: #e2e8f0;
-      --accent: #0b6e4f;
-      --accent-soft: #e6f4ef;
-      --accent-2: #1d4ed8;
-      --shadow: 0 8px 24px rgba(26, 35, 50, 0.06);
-      --radius: 14px;
-      --font: "Segoe UI", "PingFang HK", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
-      --safe-left: env(safe-area-inset-left, 0px);
-      --safe-right: env(safe-area-inset-right, 0px);
-      --safe-bottom: env(safe-area-inset-bottom, 0px);
-    }
-    * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      margin: 0;
-      font-family: var(--font);
-      color: var(--ink);
-      background:
-        radial-gradient(1200px 500px at 10% -10%, #d9f2e8 0%, transparent 55%),
-        radial-gradient(900px 400px at 100% 0%, #dce7ff 0%, transparent 50%),
-        var(--bg);
-      line-height: 1.55;
-      min-height: 100vh;
-      min-height: 100dvh;
-      padding-left: var(--safe-left);
-      padding-right: var(--safe-right);
-      padding-bottom: calc(24px + var(--safe-bottom));
-    }
-    a { color: var(--accent-2); }
-    .wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 8px 16px 0;
-    }
-    @media (max-width: 640px) {
-      .wrap {
-        max-width: 100%;
-        padding: 8px 14px 0;
-      }
-    }
-    .brand {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      margin: 8px 0 20px;
-    }
-    .logo {
-      width: 48px;
-      height: 48px;
-      flex-shrink: 0;
-      border-radius: 14px;
-      background: linear-gradient(135deg, var(--accent), #14967a);
-      color: white;
-      display: grid;
-      place-items: center;
-      font-weight: 800;
-      letter-spacing: 0.02em;
-      box-shadow: var(--shadow);
-      font-size: 0.9rem;
-    }
-    .brand-text h1 {
-      margin: 0;
-      font-size: 1.35rem;
-      line-height: 1.2;
-    }
-    .brand-text p {
-      margin: 4px 0 0;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-    .cards {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .card {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      padding: 14px 14px 12px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      color: inherit;
-      -webkit-tap-highlight-color: transparent;
-      transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
-    }
-    .card-hit {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      text-decoration: none;
-      color: inherit;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .card:active {
-      transform: scale(0.985);
-      border-color: #b7e0d0;
-      box-shadow: 0 4px 14px rgba(11, 110, 79, 0.12);
-    }
-    .card-ico {
-      width: 44px;
-      height: 44px;
-      flex-shrink: 0;
-      border-radius: 12px;
-      background: var(--accent-soft);
-      display: grid;
-      place-items: center;
-      font-size: 1.35rem;
-      line-height: 1;
-    }
-    .card-body { flex: 1; min-width: 0; }
-    .card-body .zh {
-      margin: 0;
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--ink);
-    }
-    .card-body .en {
-      margin: 3px 0 0;
-      font-size: 0.78rem;
-      color: var(--muted);
-      line-height: 1.4;
-    }
-    .chev {
-      flex-shrink: 0;
-      color: var(--accent);
-      font-size: 1.25rem;
-      font-weight: 600;
-      opacity: 0.7;
-    }
-    .note {
-      margin: 22px 4px 0;
-      font-size: 0.8rem;
-      color: var(--muted);
-      line-height: 1.45;
-    }
-    .note a {
-      color: var(--accent);
-      font-weight: 600;
-      text-decoration: none;
-      border-bottom: 1px solid #b7e0d0;
-    }
-
-    .bookmarks {
-      margin-top: 18px;
-      padding: 10px 12px 12px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(26, 35, 50, 0.04);
-    }
-    .bookmarks-label {
-      margin: 0 0 8px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      color: var(--muted);
-      text-transform: uppercase;
-    }
-    .bookmarks-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .bookmark {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 5px 9px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      line-height: 1.2;
-      color: var(--accent);
-      background: var(--accent-soft);
-      border: 1px solid #cfe8dc;
-      border-radius: 999px;
-      text-decoration: none;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .bookmark:active {
-      background: #d3ebe1;
-    }
-
-    .card-subs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 10px;
-      padding-top: 2px;
-    }
-    .card .card-subs a {
-      font-size: 11px;
-      line-height: 1.2;
-      padding: 4px 8px;
-      border-radius: 999px;
-      background: rgba(0, 0, 0, 0.06);
-      color: inherit;
-      text-decoration: none;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .card .card-subs a:active {
-      background: #d3ebe1;
-    }
-
-
-    .daily-teaser {
-      margin-bottom: 4px;
-      border-left: 4px solid var(--accent);
-    }
-  </style>
+  <link rel="stylesheet" href="home.css?v=20261111" />
 </head>
-<body class="hub-has-tabs" data-stamp="20261109a">
-  <main class="wrap">
-    <header class="brand">
-      <div class="logo" aria-hidden="true">JRE</div>
-      <div class="brand-text">
-        <h1>JRE Study Hub</h1>
-        <p>聯合招聘考試備試（中英）</p>
-      </div>
+<body class="hub-has-tabs study-home" data-stamp="20261109a">
+  <main class="study-index">
+    <header class="study-title">
+      <h1>JRE Study Hub</h1>
+      <p>聯合招聘考試中英文備試</p>
     </header>
 
-    <nav class="cards" aria-label="Study modules">
-      <div class="card">
-        <a class="card-hit" href="bureaux/">
-          <span class="card-ico" aria-hidden="true">🏢</span>
-          <span class="card-body">
-            <p class="zh">決策局與政策</p>
-            <p class="en">15 局中英名稱 · 核心職責 · 最新施政數據</p>
-          </span>
-          <span class="chev" aria-hidden="true">›</span>
-        </a>
-      </div>
-      <div class="card">
-        <a class="card-hit" href="policy/">
-          <span class="card-ico" aria-hidden="true">🏛</span>
-          <span class="card-body">
-            <p class="zh">政策</p>
-            <p class="en">政策卡</p>
-          </span>
-          <span class="chev" aria-hidden="true">›</span>
-        </a>
-      </div>
-      <div class="card">
-        <a class="card-hit" href="q1/">
-          <span class="card-ico" aria-hidden="true">✍️</span>
-          <span class="card-body">
-            <p class="zh">英文 Q1</p>
-            <p class="en">Data File · discussion paper</p>
-          </span>
-          <span class="chev" aria-hidden="true">›</span>
-        </a>
-        <span class="card-subs">
-          <a href="q1/#structure">結構／句式</a>
-          <a href="q1/#tips">Tips</a>
-          <a href="q1/#case">計時練習</a>
-          <a href="q1/#mark">自評清單</a>
-        </span>
-      </div>
-      <div class="card">
-        <a class="card-hit" href="q2/">
-          <span class="card-ico" aria-hidden="true">🖋</span>
-          <span class="card-body">
-            <p class="zh">中文 Q2</p>
-            <p class="en">議題思維 · 計時寫作</p>
-          </span>
-          <span class="chev" aria-hidden="true">›</span>
-        </a>
-        <span class="card-subs">
-          <a href="q2/#five-step">結構</a>
-          <a href="q2/#tips">貼士</a>
-          <a href="q2/#bank">題庫</a>
-          <a href="q2/#drill">計時練習</a>
-          <a href="q2/#mark">自評清單</a>
-        </span>
-      </div>
-      <div class="card">
-        <a class="card-hit" href="vocab/">
-          <span class="card-ico" aria-hidden="true">📘</span>
-          <span class="card-body">
-            <p class="zh">詞彙</p>
-            <p class="en">詞彙卡 · 我的生字</p>
-          </span>
-          <span class="chev" aria-hidden="true">›</span>
-        </a>
-      </div>
-    </nav>
+    <div class="study-layout">
+      <nav class="practice" aria-labelledby="practice-heading">
+        <h2 id="practice-heading">考卷練習</h2>
+        <div class="papers">
+          <section class="paper" aria-labelledby="english-heading">
+            <a class="paper-cover" href="q1/">
+              <h3 id="english-heading"><span class="paper-code">Q1</span> <span>英文</span></h3>
+              <p lang="en">Data File and discussion paper</p>
+            </a>
+            <ul class="paper-links">
+              <li><a href="q1/#structure">結構／句式</a></li>
+              <li><a href="q1/#tips">寫作貼士</a></li>
+              <li><a href="q1/#case">計時練習</a></li>
+              <li><a href="q1/#mark">自評清單</a></li>
+            </ul>
+          </section>
+          <section class="paper" aria-labelledby="chinese-heading">
+            <a class="paper-cover" href="q2/">
+              <h3 id="chinese-heading"><span class="paper-code">Q2</span> <span>中文</span></h3>
+              <p>議題思維與計時寫作</p>
+            </a>
+            <ul class="paper-links">
+              <li><a href="q2/#five-step">答題結構</a></li>
+              <li><a href="q2/#tips">寫作貼士</a></li>
+              <li><a href="q2/#drill">計時練習</a></li>
+              <li><a href="q2/#mark">自評清單</a></li>
+              <li><a href="q2/#bank">題庫</a></li>
+            </ul>
+          </section>
+        </div>
+      </nav>
 
-    <section class="bookmarks" aria-label="Official bookmarks">
-      <p class="bookmarks-label">書籤 · Official</p>
-      <div class="bookmarks-grid">
-        <a class="bookmark" href="https://www.csb.gov.hk/tc_chi/recruit/exammat/353.html" rel="noopener" target="_blank">CSB · JRE</a>
-        <a class="bookmark" href="https://www.policyaddress.gov.hk/" rel="noopener" target="_blank">施政報告</a>
-        <a class="bookmark" href="https://www.info.gov.hk/" rel="noopener" target="_blank">info.gov.hk</a>
-        <a class="bookmark" href="https://www.csb.gov.hk/tc_chi/admin/grade/ao/425.html" rel="noopener" target="_blank">AO 職責</a>
-        <a class="bookmark" href="https://www.csb.gov.hk/tc_chi/admin/grade/eo/431.html" rel="noopener" target="_blank">EO 職責</a>
-      </div>
-    </section>
+      <nav class="study-reference" aria-labelledby="reference-heading">
+        <h2 id="reference-heading">溫習資料</h2>
+        <ul>
+          <li><a href="policy/"><strong>政策卡</strong><span>香港時事政策</span></a></li>
+          <li><a href="bureaux/"><strong>決策局與政策</strong><span>15 個決策局的中英名稱、職責與施政數據</span></a></li>
+          <li><a href="vocab/"><strong>詞彙</strong><span>詞彙卡與我的生字</span></a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <p class="note">
-      Collocation Bank 另開：
-      <a href="https://anclh.github.io/collocation-bank/" rel="noopener">anclh.github.io/collocation-bank</a>
-    </p>
+    <footer class="study-footer">
+      <h2>官方資料與延伸練習</h2>
+      <ul>
+        <li><a href="https://www.csb.gov.hk/tc_chi/recruit/exammat/353.html" rel="noopener" target="_blank">公務員事務局考試資料</a></li>
+        <li><a href="https://www.policyaddress.gov.hk/" rel="noopener" target="_blank">施政報告</a></li>
+        <li><a href="https://www.info.gov.hk/" rel="noopener" target="_blank">info.gov.hk</a></li>
+        <li><a href="https://www.csb.gov.hk/tc_chi/admin/grade/ao/425.html" rel="noopener" target="_blank">AO 職責</a></li>
+        <li><a href="https://www.csb.gov.hk/tc_chi/admin/grade/eo/431.html" rel="noopener" target="_blank">EO 職責</a></li>
+        <li><a href="https://anclh.github.io/collocation-bank/" rel="noopener" lang="en">Collocation Bank</a></li>
+      </ul>
+    </footer>
   </main>
   <script src="shell/tabbar.js?v=20261108c"></script>
 </body>
-
 </html>
