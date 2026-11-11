@@ -13914,5 +13914,276 @@
     ],
     "example": "Human oversight should focus on decisions that affect public rights.",
     "topic": "governance"
+  },
+  {
+    "term": "commissioning",
+    "zh": "啟用；通車",
+    "pos": "n.",
+    "related": [
+      "commission a railway",
+      "commissioning date"
+    ],
+    "note": "鐵路政策可用 target commissioning by + 年份 表達目標日期",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The Northern Link main line and spur line are targeted for simultaneous commissioning by 2034 or earlier.",
+        "zh": "北環綫主綫及支綫的目標是在2034年或之前同步通車。"
+      },
+      {
+        "en": "The operator should publish a timetable for safety testing before commissioning.",
+        "zh": "營運商應在通車前公布安全測試時間表。"
+      }
+    ],
+    "example": "The Northern Link main line and spur line are targeted for simultaneous commissioning by 2034 or earlier.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "spur line",
+    "zh": "支綫",
+    "pos": "n.",
+    "related": [],
+    "note": "由主綫分支、通往另一地點的鐵路",
+    "synonyms": [
+      "branch line"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The spur line will connect San Tin to Huanggang Port.",
+        "zh": "支綫將連接新田與皇崗口岸。"
+      },
+      {
+        "en": "Running the main line and spur line together can simplify interchange planning.",
+        "zh": "統籌主綫及支綫服務有助簡化轉乘規劃。"
+      }
+    ],
+    "example": "The spur line will connect San Tin to Huanggang Port.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "interchange station",
+    "zh": "轉車站；轉綫站",
+    "pos": "n.",
+    "related": [
+      "interchange time"
+    ],
+    "note": "可配合 interchange between two lines 描述路網連接",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Passengers will be able to transfer to the East Rail Line at an interchange station in Kwu Tung.",
+        "zh": "乘客將可在古洞轉車站轉乘東鐵綫。"
+      },
+      {
+        "en": "The interchange station should have a step-free route between platforms.",
+        "zh": "轉車站應在月台之間提供無梯級通道。"
+      }
+    ],
+    "example": "Passengers will be able to transfer to the East Rail Line at an interchange station in Kwu Tung.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "feeder service",
+    "zh": "接駁服務",
+    "pos": "n.",
+    "related": [
+      "feeder bus"
+    ],
+    "note": "在住宅區或園區與主要交通樞紐之間接駁",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "A feeder service could link new housing estates to existing stations while the railway is under construction.",
+        "zh": "鐵路施工期間，可設接駁服務連接新屋邨及現有車站。"
+      },
+      {
+        "en": "Feeder services should be timed to connect with the last trains.",
+        "zh": "接駁服務時間應配合尾班列車。"
+      }
+    ],
+    "example": "A feeder service could link new housing estates to existing stations while the railway is under construction.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "joint clearance",
+    "zh": "聯合通關；聯合查驗",
+    "pos": "n.",
+    "related": [],
+    "note": "描述兩地口岸合作，可分析輪候時間和應變安排",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Joint clearance could make cross-boundary journeys more predictable.",
+        "zh": "聯合通關可讓跨境行程時間更易預算。"
+      },
+      {
+        "en": "The authorities should agree how to maintain joint clearance during a system outage.",
+        "zh": "有關當局應議定系統故障時如何維持聯合通關。"
+      }
+    ],
+    "example": "Joint clearance could make cross-boundary journeys more predictable.",
+    "topic": "transport-infra"
+  },
+  {
+    "term": "capital cost",
+    "zh": "資本開支；資本成本",
+    "pos": "n.",
+    "related": [
+      "capital expenditure"
+    ],
+    "note": "基建語境指建造及設備等投資；須交代價格基準",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The Government estimated the Northern Link capital cost at about HK$86.2 billion in July 2025 prices.",
+        "zh": "政府估算北環綫資本開支約862億港元，以2025年7月價格計算。"
+      },
+      {
+        "en": "The appraisal should show capital costs and annual operating costs separately.",
+        "zh": "評估應分開列出資本開支和每年營運開支。"
+      }
+    ],
+    "example": "The Government estimated the Northern Link capital cost at about HK$86.2 billion in July 2025 prices.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "price base",
+    "zh": "價格基準",
+    "pos": "n.",
+    "related": [
+      "constant prices"
+    ],
+    "note": "比較兩個成本估算時交代採用哪一時點的價格",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Use a common price base when comparing the original and revised construction estimates.",
+        "zh": "比較原有及修訂後的工程估算時，應採用相同的價格基準。"
+      },
+      {
+        "en": "The report should state its price base so readers can account for inflation.",
+        "zh": "報告應交代價格基準，方便讀者理解通脹的影響。"
+      }
+    ],
+    "example": "Use a common price base when comparing the original and revised construction estimates.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "land premium",
+    "zh": "地價；補地價款額",
+    "pos": "n.",
+    "related": [],
+    "note": "按批地或修訂地契語境選擇中文譯法",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "A fixed sum will be deducted from the assessed land premium on designated sites to support the second part of the Northern Link.",
+        "zh": "指定用地的估算地價將扣除固定款額，為北環綫第二部分提供資金支持。"
+      },
+      {
+        "en": "Publishing the valuation assumptions would help the public assess the land premium deduction.",
+        "zh": "公開估值假設有助公眾評估地價扣減。"
+      }
+    ],
+    "example": "A fixed sum will be deducted from the assessed land premium on designated sites to support the second part of the Northern Link.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "rail-plus-property model",
+    "zh": "鐵路加物業模式",
+    "pos": "n.",
+    "related": [],
+    "note": "結合鐵路建設與物業發展的融資安排",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The rail-plus-property model ties part of the funding for the railway to development at designated sites.",
+        "zh": "鐵路加物業模式把部分鐵路資金與指定用地的發展連繫起來。"
+      },
+      {
+        "en": "An appraisal of the rail-plus-property model should test a scenario with weaker property demand.",
+        "zh": "評估鐵路加物業模式時，應測試物業需求轉弱的情境。"
+      }
+    ],
+    "example": "The rail-plus-property model ties part of the funding for the railway to development at designated sites.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "cost overrun",
+    "zh": "成本超支；工程超支",
+    "pos": "n.",
+    "related": [],
+    "note": "常與 absorb、limit 或 share 搭配",
+    "synonyms": [
+      "budget overrun"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The agreement should specify who bears a cost overrun caused by late design changes.",
+        "zh": "協議應訂明由誰承擔設計後期變更造成的超支。"
+      },
+      {
+        "en": "Publishing contingency use by construction stage can help flag a potential cost overrun.",
+        "zh": "按施工階段公開應急預留款的使用情況，有助及早發現超支風險。"
+      }
+    ],
+    "example": "The agreement should specify who bears a cost overrun caused by late design changes.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "risk allocation",
+    "zh": "風險分配",
+    "pos": "n.",
+    "related": [
+      "allocate risk"
+    ],
+    "note": "說明政府、營運商、承建商或貸款方各自承擔哪些風險",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Risk allocation should reflect each party’s ability to control construction delays.",
+        "zh": "分配風險時應考慮各方控制施工延誤的能力。"
+      },
+      {
+        "en": "The university town appraisal should set out the risk allocation for delays and lower-than-expected occupancy.",
+        "zh": "大學城項目評估應交代工期延誤及使用率低於預期的風險由誰承擔。"
+      }
+    ],
+    "example": "Risk allocation should reflect each party’s ability to control construction delays.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "credit assessment",
+    "zh": "信貸評估",
+    "pos": "n.",
+    "related": [
+      "creditworthiness"
+    ],
+    "note": "銀行評估借款人的還款能力、現金流和抵押品等",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The proposed capital treatment could lower banks’ capital costs, while lenders would still carry out a credit assessment.",
+        "zh": "建議的資本待遇可降低銀行的資本成本，而貸款機構仍須作信貸評估。"
+      },
+      {
+        "en": "Credit assessment should test whether project cash flows can cover debt repayments if construction is delayed.",
+        "zh": "信貸評估應測試施工延誤時，項目現金流能否支付債務還款。"
+      }
+    ],
+    "example": "The proposed capital treatment could lower banks’ capital costs, while lenders would still carry out a credit assessment.",
+    "topic": "fiscal-regulation"
   }
 ]

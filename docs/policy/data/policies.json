@@ -3,7 +3,7 @@
     "title": "JRE Policy Bank",
     "title_zh": "JRE 政策資料庫",
     "description": "Interview-oriented current affairs bank sourced from public HK government and LegCo materials. Not affiliated with CS Radar.",
-    "updated": "2026-11-09",
+    "updated": "2026-11-11",
     "sources_note": "All items link to public info.gov.hk / policyaddress.gov.hk releases. Summaries and interview angles are original editorial notes for interview practice."
   },
   "departments": [
@@ -131,6 +131,11 @@
       "id": "sb",
       "zh": "保安局",
       "en": "Security Bureau"
+    },
+    {
+      "id": "fehd",
+      "zh": "食物環境衞生署",
+      "en": "Food and Environmental Hygiene Department"
     }
   ],
   "themes": [
@@ -231,6 +236,109 @@
     }
   ],
   "items": [
+    {
+      "id": "20261111-gba-carbon-footprint-labels",
+      "date": "2026-11-11",
+      "title": "大灣區擬推動碳足跡標籤互認",
+      "title_en": "Greater Bay Area explores mutual recognition of carbon footprint labels",
+      "departments": [
+        "eeb"
+      ],
+      "themes": [
+        "environment-climate",
+        "national-development"
+      ],
+      "summary": "在COP31中國角的廣東專場，粵港澳三個機構簽署合作框架，擬成立工作協調組，研究如何讓各地碳足跡核算規則和標籤互通。若各地接受可比的核算結果，跨境供應商可減少重複核證；落實仍取決於核算邊界、數據質素和第三方查證。環境及生態局局長在中國角另一場活動公布，香港2025年總碳排放較2014年峰值低32%，這是全港排放比較，不能當作標籤互認的減排成效。",
+      "interview_angles": [
+        "三地產品採用不同電力排放因子時，如何讓標籤可比較？",
+        "怎樣為中小企減少重複核證成本，同時保留抽查和糾正機制？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100043.htm",
+      "source_name": "info.gov.hk / 環境及生態局"
+    },
+    {
+      "id": "20261110-dripping-aircon-enforcement",
+      "date": "2026-11-10",
+      "title": "食環署以紅外線及AI輔助追查冷氣機滴水",
+      "title_en": "FEHD uses infrared and AI to trace dripping air conditioners",
+      "departments": [
+        "fehd"
+      ],
+      "themes": [
+        "digital-gov",
+        "environment-climate"
+      ],
+      "summary": "食環署在全港使用第三代冷氣機滴水巡查系統，以紅外線夜視和AI影像辨識協助定位滴水源頭，並在黑點安排主動巡查。截至2026年9月底約發出8,100張妨擾事故通知，較去年同期多約16%；逾99%收到通知的住戶按要求處理滴水。通知數增加可受巡查強度影響，應配合黑點復發率和處理時間評估居民實際改善。",
+      "interview_angles": [
+        "發出通知前如何由人員核實系統判斷，並讓住戶要求覆核？",
+        "物管公司可先做哪些排水維修和跟進工作？如何衡量同一位置的滴水有否復發？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000648.htm",
+      "source_name": "info.gov.hk / 食物環境衞生署"
+    },
+    {
+      "id": "20261110-northern-link-full-agreement",
+      "date": "2026-11-10",
+      "title": "北環綫主綫及支綫簽訂全項目協議",
+      "title_en": "Full Northern Link agreement covers main and spur lines",
+      "departments": [
+        "tlb"
+      ],
+      "themes": [
+        "northern-metropolis",
+        "transport-logistics",
+        "finance"
+      ],
+      "summary": "政府與港鐵簽訂北環綫全項目協議，主綫與接通深圳皇崗口岸的支綫均進入建造階段，目標在2034年或之前同步通車。政府估算全綫資本開支約862億港元（2025年7月價格），較原估算低28%。第二部分採用「鐵路加物業」模式，在指定用地按有鐵路基礎評估的十足市值地價中扣除固定款額，支援工程融資。",
+      "interview_angles": [
+        "如何定期交代成本、工期及地價扣減，讓公眾看清項目承擔？",
+        "若住宅入伙或園區啟用早於通車，如何安排接駁交通，並以實際轉乘時間衡量成效？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000476.htm",
+      "source_name": "info.gov.hk / 運輸及物流局"
+    },
+    {
+      "id": "20261110-northern-metropolis-bank-capital",
+      "date": "2026-11-10",
+      "title": "金管局擬調整北都相關機構的銀行資本待遇",
+      "title_en": "HKMA proposes capital treatment for Northern Metropolis entities",
+      "departments": [
+        "hkma",
+        "edb"
+      ],
+      "themes": [
+        "northern-metropolis",
+        "finance",
+        "education"
+      ],
+      "summary": "北部都會區金融諮詢工作小組討論大學城的貸款及公私營合作等選項。金管局擬修訂《銀行業（資本）規則》，把包括11所專上院校和3間園區公司在內的相關機構列為本地公營單位，以降低銀行相關資本成本。當局擬於2027年第一季提交立法會，目標第二季生效；現階段屬建議，個別項目仍須接受信貸評估。",
+      "interview_angles": [
+        "降低資本成本後，如何檢視融資年期及息差有否改善？",
+        "銀行和項目機構應如何分配建造超支、收入不足及再融資風險？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000273.htm",
+      "source_name": "info.gov.hk / 香港金融管理局"
+    },
+    {
+      "id": "20261109-robots-community-pilot",
+      "date": "2026-11-09",
+      "title": "「機器人走入社區」試驗計劃接受首輪申請",
+      "title_en": "Digital Policy Office opens community robot lending pilot",
+      "departments": [
+        "dpo"
+      ],
+      "themes": [
+        "digital-gov",
+        "innovation"
+      ],
+      "summary": "數字政策辦公室接受合資格團體免費借用人形機械人，在免費社區活動中示範具身人工智能。首輪申請截至11月20日，活動安排在2026年12月15日至2027年2月28日。試點納入「友智識」數碼共融計劃，讓居民接觸新技術；如要衡量數碼共融成效，可追蹤參與者其後能否完成所需的網上服務操作。",
+      "interview_angles": [
+        "活動如何為長者及行動不便人士提供可參與的操作環節？",
+        "如何以活動後的實際操作能力評估成效，並照顧現場安全？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900281.htm",
+      "source_name": "info.gov.hk / 數字政策辦公室"
+    },
     {
       "id": "20261109-ai-audit-evidence",
       "date": "2026-11-09",
