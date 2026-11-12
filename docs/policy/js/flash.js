@@ -157,8 +157,7 @@
       return;
     }
 
-    const frag = document.createDocumentFragment();
-    cards.forEach((card) => {
+    const entries = cards.map((card) => {
       const open = openPolicyCards.has(card.id);
       const el = document.createElement("article");
       el.className = "brief-card" + (open ? " open" : "");
@@ -219,10 +218,12 @@
           </div>
         </div>`;
 
-      el.querySelector(".brief-summary").addEventListener("click", () => {
-        if (openPolicyCards.has(card.id)) openPolicyCards.delete(card.id);
-        else openPolicyCards.add(card.id);
-        renderPolicyCards();
+      const summary = el.querySelector(".brief-summary");
+      summary.addEventListener("click", () => {
+        const isOpen = el.classList.toggle("open");
+        if (isOpen) openPolicyCards.add(card.id);
+        else openPolicyCards.delete(card.id);
+        summary.setAttribute("aria-expanded", String(isOpen));
       });
       el.querySelectorAll("[data-flash-id]").forEach((btn) => {
         btn.addEventListener("click", (ev) => {
@@ -231,9 +232,9 @@
           openBankFlash(btn.getAttribute("data-flash-id"));
         });
       });
-      frag.appendChild(el);
+      return { theme: card.theme_ids?.[0], card: el };
     });
-    list.appendChild(frag);
+    window.JrePolicyGroups.render(list, entries, { lang: "zh", expandMatches: Boolean(bankQuery.trim()) });
 
     const qr = policyCardsData.quick_ref || [];
     if (quickRef) {
