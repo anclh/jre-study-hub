@@ -140,7 +140,7 @@
 .policy-study .policy-flash,
 .policy-study .policy-browse-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr);
+  grid-template-columns: min(30%, 18rem) minmax(0, 1fr);
   gap: var(--space-6) var(--space-8);
   align-items: start;
 }

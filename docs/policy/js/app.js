@@ -7,7 +7,7 @@
     themes: new Set(),
     sort: "newest",
     data: null,
-    filtersOpen: localStorage.getItem("jre-filters-open") === "1" || window.matchMedia("(min-width: 768px)").matches,
+    filtersOpen: localStorage.getItem("jre-filters-open") === "1",
   };
 
   const el = {
