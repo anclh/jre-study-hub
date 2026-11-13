@@ -14185,5 +14185,215 @@
     ],
     "example": "The proposed capital treatment could lower banks’ capital costs, while lenders would still carry out a credit assessment.",
     "topic": "fiscal-regulation"
+  },
+  {
+    "term": "voluntary listing",
+    "zh": "自願表列",
+    "pos": "n.",
+    "related": [],
+    "note": "指出參與制度由業界自願決定。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Voluntary listing gives the regulator a record of participating suppliers.",
+        "zh": "自願表列讓監管機構掌握參與供應商的資料。"
+      },
+      {
+        "en": "An increase in voluntary listings may reflect greater participation by suppliers.",
+        "zh": "自願表列數目增加，可能反映更多供應商參與。"
+      }
+    ],
+    "example": "Voluntary listing gives the regulator a record of participating suppliers.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "statutory registration",
+    "zh": "法定註冊",
+    "pos": "n.",
+    "related": [],
+    "note": "描述由法例規定的註冊要求。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The proposed statutory registration system would apply to devices supplied locally.",
+        "zh": "擬議的法定註冊制度將適用於在本地供應的器械。"
+      },
+      {
+        "en": "Suppliers need time to prepare documentation for statutory registration.",
+        "zh": "供應商需要時間準備法定註冊所需的文件。"
+      }
+    ],
+    "example": "The proposed statutory registration system would apply to devices supplied locally.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "risk classification",
+    "zh": "風險分類",
+    "pos": "n.",
+    "related": [],
+    "note": "把產品或活動按風險分級，方便調整監管要求。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Risk classification helps determine the level of evidence required for each device.",
+        "zh": "風險分類有助釐定每款器械須提交何種程度的證據。"
+      },
+      {
+        "en": "A change in intended use may affect the risk classification of a device.",
+        "zh": "器械的預定用途如有變更，其風險分類也可能受影響。"
+      }
+    ],
+    "example": "Risk classification helps determine the level of evidence required for each device.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "conformity assessment",
+    "zh": "符合性評估",
+    "pos": "n.",
+    "related": [],
+    "note": "核實產品或程序是否符合指定要求。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Conformity assessment can verify whether a device meets applicable safety and performance requirements.",
+        "zh": "符合性評估可核實器械是否符合適用的安全及性能要求。"
+      },
+      {
+        "en": "The regulator could publish guidance on the evidence accepted for conformity assessment.",
+        "zh": "監管機構可發出指引，列明符合性評估可接納的證據。"
+      }
+    ],
+    "example": "Conformity assessment can verify whether a device meets applicable safety and performance requirements.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "post-market surveillance",
+    "zh": "上市後監察",
+    "pos": "n.",
+    "related": [],
+    "note": "指產品推出市場後，持續監測安全及性能。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Post-market surveillance can reveal faults that only emerge during routine use.",
+        "zh": "上市後監察可發現只在日常使用中出現的故障。"
+      },
+      {
+        "en": "A post-market surveillance plan should specify who investigates incident reports.",
+        "zh": "上市後監察計劃應列明由誰調查事故通報。"
+      }
+    ],
+    "example": "Post-market surveillance can reveal faults that only emerge during routine use.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "adverse event reporting",
+    "zh": "不良事件通報",
+    "pos": "n.",
+    "related": [],
+    "note": "適用於醫療產品安全、通報程序及責任分工。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Adverse event reporting allows clinics to flag suspected device failures promptly.",
+        "zh": "不良事件通報讓診所可迅速呈報懷疑器械故障。"
+      },
+      {
+        "en": "Clear deadlines for adverse event reporting help the regulator assess urgent risks.",
+        "zh": "訂立清晰的不良事件通報時限，有助監管機構評估迫切風險。"
+      }
+    ],
+    "example": "Adverse event reporting allows clinics to flag suspected device failures promptly.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "batch identifier",
+    "zh": "批次識別碼",
+    "pos": "n.",
+    "related": [],
+    "note": "用以追查同一生產批次的產品。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Clinics can record the batch identifier when accepting a delivery of disposable devices.",
+        "zh": "診所接收一次性器械時，可記錄批次識別碼。"
+      },
+      {
+        "en": "A batch identifier helps narrow the scope of a recall to the affected stock.",
+        "zh": "批次識別碼有助把回收範圍限於受影響的存貨。"
+      }
+    ],
+    "example": "Clinics can record the batch identifier when accepting a delivery of disposable devices.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "product recall",
+    "zh": "產品回收",
+    "pos": "n.",
+    "related": [],
+    "note": "指基於安全等問題，從市場收回已供應產品。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "During a product recall, suppliers should confirm that each affected clinic has removed the stock.",
+        "zh": "產品回收期間，供應商應確認各受影響診所已移除存貨。"
+      },
+      {
+        "en": "A product recall may require a contingency plan to maintain access to essential devices.",
+        "zh": "產品回收可能需要應變計劃，以維持必需器械的供應。"
+      }
+    ],
+    "example": "During a product recall, suppliers should confirm that each affected clinic has removed the stock.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "transitional provisions",
+    "zh": "過渡條文",
+    "pos": "n.",
+    "related": [],
+    "note": "在新舊法定制度交替時界定適用規則。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Transitional provisions can set different deadlines for devices of different risk classes.",
+        "zh": "過渡條文可按器械的風險級別訂立不同期限。"
+      },
+      {
+        "en": "The transitional provisions should clarify how existing listings will carry over.",
+        "zh": "過渡條文應說明已表列器械如何轉入新制度。"
+      }
+    ],
+    "example": "Transitional provisions can set different deadlines for devices of different risk classes.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "supply continuity",
+    "zh": "供應持續性",
+    "pos": "n.",
+    "related": [],
+    "note": "用於評估轉制、採購或突發事件對供應的影響。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The regulator could phase in the requirements to protect supply continuity.",
+        "zh": "監管機構可分階段實施規定，以維持供應。"
+      },
+      {
+        "en": "Hospitals should identify alternative suppliers to protect supply continuity during a recall.",
+        "zh": "醫院應物色替代供應商，以維持產品回收期間的供應。"
+      }
+    ],
+    "example": "The regulator could phase in the requirements to protect supply continuity.",
+    "topic": "fiscal-regulation"
   }
 ]

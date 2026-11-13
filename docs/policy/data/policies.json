@@ -3,7 +3,7 @@
     "title": "JRE Policy Bank",
     "title_zh": "JRE 政策資料庫",
     "description": "Interview-oriented current affairs bank sourced from public HK government and LegCo materials. Not affiliated with CS Radar.",
-    "updated": "2026-11-11",
+    "updated": "2026-11-13",
     "sources_note": "All items link to public info.gov.hk / policyaddress.gov.hk releases. Summaries and interview angles are original editorial notes for interview practice."
   },
   "departments": [
@@ -236,6 +236,127 @@
     }
   ],
   "items": [
+    {
+      "id": "20261112-rodent-risk-deployment",
+      "date": "2026-11-12",
+      "title": "食環署按鼠患風險追查鼠窩及堵塞通道",
+      "title_en": "FEHD targets rodent harbourage at high-risk sites",
+      "departments": [
+        "fehd"
+      ],
+      "themes": [
+        "environment-climate",
+        "governance"
+      ],
+      "summary": "食環署於11月4日展開「雷霆行動」，以鼠蹤及前線資料挑選高風險地點，沿活動路線找鼠窩，滅鼠後封堵通道並清理食物來源。署方截至公布時已巡查1,373個地點，發現199處鼠洞或鼠匿藏點。其他部門及私人場地可獲支援，日常清潔和設施保養仍由管理方負責。",
+      "interview_angles": [
+        "如何用同一批地點的鼠蹤變化及覆查結果量度復發？",
+        "跨部門場地應由誰記錄整改、安排覆查及跟進逾期個案？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/12/P2026111200579.htm",
+      "source_name": "info.gov.hk / 食物環境衞生署"
+    },
+    {
+      "id": "20261112-community-living-room-carer-support",
+      "date": "2026-11-12",
+      "title": "荃灣西社區客廳加入照顧者支援",
+      "title_en": "Tsuen Wan West Community Living Room provides targeted carer support",
+      "departments": [
+        "csso",
+        "lwb"
+      ],
+      "themes": [
+        "poverty-welfare"
+      ],
+      "summary": "荃灣西社區客廳由政府牽頭、基金會提供場地、關愛基金承擔營運開支，並由香港基督教女青年會營運。除了共享起居和洗衣設施，中心亦為照顧有特殊需要兒童的會員提供親職訓練及學習支援。截至8月底錄得逾12萬到訪人次。全港18間社區客廳預計可服務約一萬個劏房家庭。",
+      "interview_angles": [
+        "怎樣分開統計到訪人次、獨立服務家庭及完成轉介的家庭？",
+        "若服務額滿，如何兼顧高壓照顧者和甚少接觸社福服務的家庭？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/12/P2026111200501.htm",
+      "source_name": "info.gov.hk / 政務司司長辦公室"
+    },
+    {
+      "id": "20261112-teacher-practising-certificates",
+      "date": "2026-11-12",
+      "title": "教育修例擬引入教師執業證書",
+      "title_en": "Education bill proposes practising certificates for teachers",
+      "departments": [
+        "edb"
+      ],
+      "themes": [
+        "education",
+        "legislation"
+      ],
+      "summary": "政府宣布擬於11月13日刊憲修例，在現有註冊要求上加入執業證書，涵蓋公帑資助學校、私校、國際學校及幼稚園的教師和校長。證書擬有效最多三個學年，申領須符合持續專業發展要求。草案亦處理涉及危害國家安全罪行定罪人士的教師註冊，政府預計11月25日提交立法會首讀及二讀。",
+      "interview_angles": [
+        "如何以課堂應用和同儕回饋評估專業發展成效？",
+        "幼稚園及小型學校可如何安排代課，讓教師有時間進修？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/12/P2026111200202.htm",
+      "source_name": "info.gov.hk / 教育局"
+    },
+    {
+      "id": "20261111-smart-traffic-fund-ai-projects",
+      "date": "2026-11-11",
+      "title": "智慧交通基金資助臨時交通規劃及巴士模擬訓練",
+      "title_en": "Smart Traffic Fund backs AI traffic planning and bus driver training",
+      "departments": [
+        "tlb"
+      ],
+      "themes": [
+        "transport-logistics",
+        "fintech-ai"
+      ],
+      "summary": "運輸署公布智慧交通基金第27批兩個項目合共獲約1,790萬元資助。一個擬用大型語言模型協助擬訂分階段工程的臨時交通安排，另一個擬以巴士營運、行車影片和事故資料設計模擬訓練。項目已獲資助，日後可用測試結果評估規劃質素和司機訓練成效。",
+      "interview_angles": [
+        "AI草擬的改道方案如何覆核行人通道、緊急車輛通行和現場工序？",
+        "可用哪些實際駕駛指標檢驗模擬訓練成效？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100508.htm",
+      "source_name": "info.gov.hk / 運輸署"
+    },
+    {
+      "id": "20261111-graduate-employment-additional-posts",
+      "date": "2026-11-11",
+      "title": "青年就業計劃擬提供額外全職職位",
+      "title_en": "Youth employment initiative targets additional full-time posts",
+      "departments": [
+        "lwb"
+      ],
+      "themes": [
+        "youth",
+        "labour"
+      ],
+      "summary": "勞福局在立法會交代，擬由2027年首季起兩年內透過主要僱主組織提供合共一萬個至少六個月的全職職位，供欠缺工作經驗的職場新鮮人申請。職位須額外增設，超出參與企業的現有人手及常規招聘計劃。這是一項擬議安排，屬三萬青年職位及實習計劃的一環。",
+      "interview_angles": [
+        "如何核對僱主原有招聘計劃，證明受支持職位確屬新增？",
+        "除計算入職人數，如何追蹤合約期滿後的留任、薪酬和技能進展？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100304.htm",
+      "source_name": "info.gov.hk / 勞工及福利局"
+    },
+    {
+      "id": "20261111-medical-devices-statutory-regulation",
+      "date": "2026-11-11",
+      "title": "醫療器械擬由自願表列轉向法定規管",
+      "title_en": "Hong Kong drafts statutory regulation for medical devices",
+      "departments": [
+        "hhb",
+        "dh"
+      ],
+      "themes": [
+        "healthcare",
+        "legislation"
+      ],
+      "summary": "政府正擬備《醫療器械條例草案》，以法定制度取代自願表列，並計劃檢視推出市場後的監察安排。2026年10月底已有11,052款器械表列；政府初步估計約35,000款本地器械須在新制度下註冊，當中包括擬直接過渡的已表列器械。醫務衞生局預定11月13日向立法會衞生事務委員會簡介建議。",
+      "interview_angles": [
+        "如何按風險安排審批次序及過渡期，避免常用器械供應中斷？",
+        "如何以可追溯標籤、不良事件通報時限及回收完成率監察上市後安全？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100272.htm",
+      "source_name": "info.gov.hk / 醫務衞生局"
+    },
     {
       "id": "20261111-gba-carbon-footprint-labels",
       "date": "2026-11-11",
