@@ -323,24 +323,22 @@
   function renderBriefs() {
     const list = $("#briefsList");
     const countEl = $("#bankCount");
-    const quickRef = $("#quickRef");
     const sourcesEl = $("#briefsSources");
     if (!list) return;
 
     if (!briefsData) {
       countEl.textContent = "題庫: —";
       list.innerHTML = `<div class="empty">無法載入 data/briefs.json</div>`;
-      quickRef.hidden = true;
       sourcesEl.hidden = true;
       return;
     }
 
     const briefs = filteredBriefs();
+    renderMemoryGuide();
     countEl.textContent = `題庫: ${briefs.length}`;
     list.innerHTML = "";
     if (!briefs.length) {
       list.innerHTML = `<div class="empty">沒有符合條件的項目。試試清空搜尋。</div>`;
-      quickRef.hidden = true;
       sourcesEl.hidden = true;
       return;
     }
@@ -418,30 +416,6 @@
       frag.appendChild(card);
     });
     list.appendChild(frag);
-
-    const allRows = buildQuickRefRows(briefsData.briefs || [], briefsData.quick_ref || []);
-    const qr = bankQuery.trim()
-      ? allRows.filter((r) => briefs.some((b) => b.n === r.n))
-      : allRows;
-    if (qr.length) {
-      quickRef.hidden = false;
-      quickRef.innerHTML = `
-        <h3>速查表（練筆前 30 秒）</h3>
-        <table>
-          <thead><tr><th>#</th><th>主題</th><th>一句立場</th></tr></thead>
-          <tbody>
-            ${qr
-              .map(
-                (r) =>
-                  `<tr><td>${escapeHtml(r.n)}</td><td>${escapeHtml(r.theme)}</td><td>${escapeHtml(r.stance_one_liner)}</td></tr>`
-              )
-              .join("")}
-          </tbody>
-        </table>`;
-    } else {
-      quickRef.hidden = true;
-      quickRef.innerHTML = "";
-    }
 
     const sources = briefsData.sources || [];
     if (sources.length && !bankQuery.trim()) {
@@ -550,11 +524,11 @@
   function renderMemoryGuide() {
     const el = $("#memory-guide-list");
     if (!el) return;
-    const briefs = briefsData?.briefs || [];
+    const briefs = briefsData ? filteredBriefs() : [];
     el.innerHTML = briefs.length ? briefs.map((brief) => {
       const rows = memoryRows(brief);
       return rows ? `<details class="memory-card"><summary>${escapeHtml(String(brief.n))}. ${escapeHtml(brief.title_zh || brief.title || "")}</summary>${rows}</details>` : "";
-    }).join("") : '<p>題庫未載入，請重新整理。</p>';
+    }).join("") : '<p>沒有符合條件的記憶卡。</p>';
   }
 
   function renderPairKits() {
