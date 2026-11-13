@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261111" />
   <link rel="stylesheet" href="../shell/study-theme.css?v=20261111" />
   <link rel="stylesheet" href="../shared/exam-workspace.css?v=20261111" />
-  <link rel="stylesheet" href="styles.css?v=20261111c" />
+  <link rel="stylesheet" href="styles.css?v=20261113b" />
 </head>
 <body class="study-screen exam-screen">
   <header class="app-header">
@@ -112,6 +112,12 @@
     </section>
 
     <section class="panel" id="panel-tips">
+      <div class="card" id="memory-guide">
+        <h2>利 → 弊 → 做｜17 題記憶卡</h2>
+        <p class="lede">每日抽三題，每題用 30 秒講利、弊、做，再用 30 秒解釋因果；第二日遮住答案重講。</p>
+        <p>［措施］有助［效果］，但可能令［受影響者］面對［代價］，因此應透過［對策］減低影響。題目換咗問法，就重新判斷。</p>
+        <div id="memory-guide-list" aria-live="polite">載入中…</div>
+      </div>
       <div class="card" id="scratch">
         <h2>3，開卷 scratch（keywords only）</h2>
         <p class="lede">事實 dump 同結構分開；正文先揀用。對齊政策卡「開考 dump」。</p>
@@ -359,7 +365,7 @@
     </div>
   </div>
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261108b"></script>
+  <script src="app.js?v=20261113b"></script>
   <script src="../phrases/app.js?v=20261108b"></script>
   <script src="../shell/tabbar.js?v=20261109a"></script>
 </body>

@@ -573,3 +573,11 @@ textarea {
     padding-inline: var(--space-1);
   }
 }
+
+/* Compact recall cues shared by the guide and flash cards. */
+.memory-card { border-top: 1px solid var(--line); padding: var(--space-3) 0; }
+.memory-card summary { cursor: pointer; font-weight: 700; color: var(--accent); }
+.memory-rows { display: grid; gap: var(--space-2); margin: var(--space-3) 0; }
+.memory-rows > div { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: var(--space-2); }
+.memory-rows dt { font-weight: 700; color: var(--accent); }
+.memory-rows dd { margin: 0; overflow-wrap: anywhere; }

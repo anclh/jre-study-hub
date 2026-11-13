@@ -513,7 +513,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261113", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261113b", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -538,6 +538,23 @@
     renderDrill(pick);
     renderBriefs();
     renderPairKits();
+    renderMemoryGuide();
+  }
+
+  function memoryRows(brief) {
+    const memory = brief.memory;
+    if (!memory || !memory.benefit || !memory.risk || !memory.action) return "";
+    return `<dl class="memory-rows"><div><dt>利</dt><dd>${escapeHtml(memory.benefit)}</dd></div><div><dt>弊</dt><dd>${escapeHtml(memory.risk)}</dd></div><div><dt>做</dt><dd>${escapeHtml(memory.action)}</dd></div></dl>`;
+  }
+
+  function renderMemoryGuide() {
+    const el = $("#memory-guide-list");
+    if (!el) return;
+    const briefs = briefsData?.briefs || [];
+    el.innerHTML = briefs.length ? briefs.map((brief) => {
+      const rows = memoryRows(brief);
+      return rows ? `<details class="memory-card"><summary>${escapeHtml(String(brief.n))}. ${escapeHtml(brief.title_zh || brief.title || "")}</summary>${rows}</details>` : "";
+    }).join("") : '<p>題庫未載入，請重新整理。</p>';
   }
 
   function renderPairKits() {
@@ -680,6 +697,7 @@
     back.innerHTML = `
       <div class="flash-kicker">${brief.n} / ${deck.length} · 背面 ${markChip}</div>
       <h2>${escapeHtml(brief.title_zh || "")}</h2>
+      ${brief.memory ? `<section class="flash-block"><h3>利 → 弊 → 做 · 記憶卡</h3>${memoryRows(brief)}</section>` : ""}
       ${flashBlock("利", "Pros", flashFullItems(brief.pros))}
       ${flashBlock("弊", "Cons", flashFullItems(brief.cons))}
       ${flashStanceBlock(brief, stanceShort)}

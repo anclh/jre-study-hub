@@ -9,6 +9,7 @@
   "briefs": [
     {
       "id": "housing-land",
+      "memory": {"benefit": "縮短輪候、改善居住", "risk": "私樓供應及配套受壓", "action": "協調公私供應、設施同步"},
       "n": 1,
       "title_zh": "房屋與土地",
       "title": "房屋與土地",
@@ -91,6 +92,7 @@
     },
     {
       "id": "healthcare",
+      "memory": {"benefit": "社區跟進慢病", "risk": "重症仍需醫院", "action": "加強轉介、保留醫院後援"},
       "n": 2,
       "title_zh": "醫療與精神健康",
       "title": "醫療與精神健康",
@@ -159,6 +161,7 @@
     },
     {
       "id": "elderly-care",
+      "memory": {"benefit": "長者留社區", "risk": "照顧者負擔及重度需要", "action": "增加喘息服務、保留院舍"},
       "n": 3,
       "title_zh": "人口老化與居家安老",
       "title": "人口老化與居家安老",
@@ -224,6 +227,7 @@
     },
     {
       "id": "youth-education",
+      "memory": {"benefit": "青年較易入職", "risk": "補貼結束職位或消失", "action": "補貼綁培訓及留任"},
       "n": 4,
       "title_zh": "青年就業與教育",
       "title": "青年就業與教育",
@@ -287,6 +291,7 @@
     },
     {
       "id": "culture-tourism",
+      "memory": {"benefit": "增加過夜消費", "risk": "短途客及小商戶受影響", "action": "保留多元客源、檢討留宿消費"},
       "n": 5,
       "title_zh": "旅遊、餐飲與文化",
       "title": "旅遊、餐飲與文化",
@@ -348,6 +353,7 @@
     },
     {
       "id": "gba-integration",
+      "memory": {"benefit": "增加安老選擇", "risk": "醫療銜接及監管風險", "action": "自願選擇、加強轉介及投訴支援"},
       "n": 6,
       "title_zh": "大灣區融合（跨境安老／醫療／就業）",
       "title": "大灣區融合（跨境安老／醫療／就業）",
@@ -409,6 +415,7 @@
     },
     {
       "id": "innovation-nmd",
+      "memory": {"benefit": "共享設施、產業聚集", "risk": "其他地區創科資源受壓", "action": "北都場景連接全港研發融資"},
       "n": 7,
       "title_zh": "創科與北部都會區",
       "title": "創科與北部都會區",
@@ -484,6 +491,7 @@
     },
     {
       "id": "transport-environment",
+      "memory": {"benefit": "鼓勵減廢", "risk": "基層負擔及非法棄置風險", "action": "改善回收、支援基層、分階段"},
       "n": 8,
       "title_zh": "交通與環保（垃圾收費／綠色出行）",
       "title": "交通與環保（垃圾收費／綠色出行）",
@@ -555,6 +563,7 @@
     },
     {
       "id": "fertility-family",
+      "memory": {"benefit": "家庭獲即時支援", "risk": "一次性獎金未解決長期成本", "action": "配合託兒、住屋及家庭友善工作"},
       "n": 9,
       "title_zh": "生育與家庭支援",
       "title": "生育與家庭支援",
@@ -615,6 +624,7 @@
     },
     {
       "id": "labour-platform",
+      "memory": {"benefit": "配送員保障增加", "risk": "成本上升及彈性減少", "action": "工傷保障、爭議處理及檢視安排"},
       "n": 10,
       "title_zh": "平台經濟與送貨員保障",
       "title": "平台經濟與送貨員保障",
@@ -672,6 +682,7 @@
     },
     {
       "id": "public-open-space",
+      "memory": {"benefit": "增加市民休憩空間", "risk": "使用衝突及噪音", "action": "按需求分區、監察投訴"},
       "n": 11,
       "title_zh": "公共休憩空間管理",
       "title": "公共休憩空間管理",
@@ -730,6 +741,7 @@
     },
     {
       "id": "new-industrialisation",
+      "memory": {"benefit": "資助成果更可見", "risk": "考核拖慢審批、增加企業負擔", "action": "分階段撥款與合適指標"},
       "n": 12,
       "title_zh": "新型工業化與資助落地",
       "title": "新型工業化與資助落地",
@@ -793,6 +805,7 @@
     },
     {
       "id": "border-resilience",
+      "memory": {"benefit": "旅客及前線安排清晰", "risk": "過多匯報拖慢決策", "action": "明確主責及現場授權"},
       "n": 13,
       "title_zh": "口岸韌性與跨境高峰應變",
       "title": "口岸韌性與跨境高峰應變",
@@ -855,6 +868,7 @@
     },
     {
       "id": "nmd-loop-resumption",
+      "memory": {"benefit": "基建與土地供應銜接", "risk": "居民企業面對搬遷及補償壓力", "action": "分階段時間表、補償安置"},
       "n": 14,
       "title_zh": "河套東連收地與北都基建落地",
       "title": "河套東連收地與北都基建落地",
@@ -917,6 +931,7 @@
     },
     {
       "id": "gba-tax-gogba",
+      "memory": {"benefit": "跨境投資稅務更可預期", "risk": "協定談判需時、當地規則複雜", "action": "稅務指引及企業對接"},
       "n": 15,
       "title_zh": "港老稅務協定與 GoGBA『十五五』落地",
       "title": "港老稅務協定與 GoGBA『十五五』落地",
@@ -979,6 +994,7 @@
     },
     {
       "id": "fintech-ensemble",
+      "memory": {"benefit": "傳統時段以外結算", "risk": "流動性及系統風險", "action": "分階段試行、測試應變"},
       "n": 16,
       "title_zh": "代幣化結算與數碼金融",
       "title": "代幣化結算與數碼金融",
@@ -1039,6 +1055,7 @@
     },
     {
       "id": "ai-governance",
+      "memory": {"benefit": "查詢更快、減少重複工序", "risk": "錯誤偏誤及私隱風險", "action": "低風險試點、人工覆核申訴"},
       "n": 17,
       "title_zh": "人工智能與公共服務管治",
       "title": "人工智能與公共服務管治",
