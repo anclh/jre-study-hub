@@ -3,7 +3,7 @@
     "title": "JRE Policy Bank",
     "title_zh": "JRE 政策資料庫",
     "description": "Interview-oriented current affairs bank sourced from public HK government and LegCo materials. Not affiliated with CS Radar.",
-    "updated": "2026-11-13",
+    "updated": "2026-11-16",
     "sources_note": "All items link to public info.gov.hk / policyaddress.gov.hk releases. Summaries and interview angles are original editorial notes for interview practice."
   },
   "departments": [
@@ -236,6 +236,108 @@
     }
   ],
   "items": [
+    {
+      "id": "20261116-offshore-rmb-bond-index",
+      "date": "2026-11-16",
+      "title": "港交所推出離岸人民幣債券指數",
+      "title_en": "HKEX launches offshore RMB bond index",
+      "departments": [
+        "fso"
+      ],
+      "themes": [
+        "finance",
+        "national-development"
+      ],
+      "summary": "港交所與彭博合作推出指數，涵蓋逾300隻在港上市的人民幣債券，為投資者提供表現基準，亦可用作日後設計追蹤產品。五年期中國國債期貨已於8月推出，可配合管理利率風險。",
+      "interview_angles": [
+        "如何以二手市場成交及買賣差價檢視流動性有否改善？",
+        "制定指數納入準則時，如何兼顧市場代表性和成分債券的可交易性？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/16/P2026111600237.htm",
+      "source_name": "info.gov.hk / 財政司司長辦公室"
+    },
+    {
+      "id": "20261113-hsk-logistics-market-interest",
+      "date": "2026-11-13",
+      "title": "洪水橋／厦村物流用地收到16份意向書",
+      "title_en": "Hung Shui Kiu / Ha Tsuen logistics sites draw 16 expressions of interest",
+      "departments": [
+        "tlb"
+      ],
+      "themes": [
+        "transport-logistics",
+        "northern-metropolis"
+      ],
+      "summary": "政府為洪水橋／厦村現代物流產業群預留約32公頃，首批五幅用地共收到16份意向書。當局會參考業界對配套、批地及財務可行性的意見擬備招標條款，最早於2027年底推出首幅或首批用地招標。",
+      "interview_angles": [
+        "如何按提交者類別及融資準備程度判斷實際競投需求？",
+        "招標應如何訂定啟用及營運里程碑，減少用地閒置？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/13/P2026111300445.htm",
+      "source_name": "info.gov.hk / 運輸及物流局"
+    },
+    {
+      "id": "20261113-mpf-arrears-bill",
+      "date": "2026-11-13",
+      "title": "強積金修例擬增設第二級欠供附加費",
+      "title_en": "MPF bill proposes a second-tier surcharge for persistent arrears",
+      "departments": [
+        "fstb"
+      ],
+      "themes": [
+        "labour",
+        "finance",
+        "legislation"
+      ],
+      "summary": "修例草案擬保留現行5%附加費。僱主如未在供款日後第120日或之前清繳欠款，擬就欠款總額再繳10%第二級附加費。草案亦擬讓積金局對違規受託人施加罰款或公開譴責，並禁止受託人把該等罰款轉嫁予計劃、成分基金或成員。",
+      "interview_angles": [
+        "如何以欠款清繳時間和逾期個案比例評估阻嚇效果？",
+        "如何區分短期周轉困難和反覆欠供，並保障僱員及早收到通知？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/13/P2026111300289.htm",
+      "source_name": "info.gov.hk / 財經事務及庫務局"
+    },
+    {
+      "id": "20261113-subsidised-flats-financing-resale",
+      "date": "2026-11-13",
+      "title": "房委會提高合資格家庭按揭上限並放寬資助房屋轉售年期",
+      "title_en": "Housing Authority approves subsidised flat mortgage and resale changes",
+      "departments": [
+        "hb"
+      ],
+      "themes": [
+        "housing-land",
+        "poverty-welfare"
+      ],
+      "summary": "房委會通過由下一期居屋起，把合資格白表家庭的按揭成數上限由90%升至95%；申請截止時表內須有三歲或以下子女。2022至2025年首次推出出售的資助出售單位，在公開市場出售的限制期亦縮短至首次轉讓起計十年。",
+      "interview_angles": [
+        "降低首期後，如何評估供款負擔和利率變動對家庭預算的影響？",
+        "縮短轉售限制後，可用哪些數據觀察買家流轉及資助單位供應？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/13/P2026111200417.htm",
+      "source_name": "info.gov.hk / 香港房屋委員會"
+    },
+    {
+      "id": "20261113-medical-products-regulator-bill",
+      "date": "2026-11-13",
+      "title": "藥械監管中心草案擬整合規管職能",
+      "title_en": "Bill proposes a statutory Centre for Medical Products Regulation",
+      "departments": [
+        "hhb",
+        "dh"
+      ],
+      "themes": [
+        "healthcare",
+        "legislation"
+      ],
+      "summary": "草案擬成立藥物及醫療器械監督管理中心為法團，代表香港參與國際監管事務，並將中西藥相關規管權力和職能集中於衞生署署長。醫療器械的相關職能將待日後立法後納入。草案預定11月25日提交立法會首讀。",
+      "interview_angles": [
+        "如何在權責移交期間維持申請及安全監察服務？",
+        "如何同時追蹤審批時間和上市後安全訊號，檢視整合成效？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/13/P2026111300224.htm",
+      "source_name": "info.gov.hk / 醫務衞生局"
+    },
     {
       "id": "20261112-rodent-risk-deployment",
       "date": "2026-11-12",

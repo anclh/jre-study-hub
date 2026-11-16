@@ -14395,5 +14395,215 @@
     ],
     "example": "The regulator could phase in the requirements to protect supply continuity.",
     "topic": "fiscal-regulation"
+  },
+  {
+    "term": "contribution arrears",
+    "zh": "拖欠供款",
+    "pos": "n.",
+    "related": [],
+    "note": "指已到期仍未繳交的供款。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The regulator publishes the age profile of contribution arrears.",
+        "zh": "監管機構公布拖欠供款的逾期時間分布。"
+      },
+      {
+        "en": "Workers can check whether their employer has cleared contribution arrears.",
+        "zh": "僱員可查閱僱主是否已清繳拖欠供款。"
+      }
+    ],
+    "example": "The regulator publishes the age profile of contribution arrears.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "surcharge",
+    "zh": "附加費",
+    "pos": "n.",
+    "related": [],
+    "note": "用於逾期付款的額外收費。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "A surcharge applies once the payment deadline has passed.",
+        "zh": "付款逾期後會加徵附加費。"
+      },
+      {
+        "en": "A higher surcharge may encourage employers to settle overdue contributions sooner.",
+        "zh": "較高的附加費或可促使僱主及早清繳拖欠供款。"
+      }
+    ],
+    "example": "A surcharge applies once the payment deadline has passed.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "flat rate",
+    "zh": "劃一費率",
+    "pos": "n.",
+    "related": [],
+    "note": "費率相同，實際收費可隨計算基數而變。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The second-tier surcharge would be levied at a flat rate.",
+        "zh": "第二級附加費擬按劃一費率徵收。"
+      },
+      {
+        "en": "A flat rate makes the additional charge easier to calculate.",
+        "zh": "劃一費率令額外收費較易計算。"
+      }
+    ],
+    "example": "The second-tier surcharge would be levied at a flat rate.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "settle in full",
+    "zh": "全數清繳",
+    "pos": "v. phr.",
+    "related": [],
+    "note": "可用於債項、欠款或罰款。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The notice gives the employer a deadline to settle the debt in full.",
+        "zh": "通知書訂明僱主全數清繳欠款的期限。"
+      },
+      {
+        "en": "Partial payment reduces the balance, which remains overdue until settled in full.",
+        "zh": "部分繳款可減少欠款餘額，惟餘額在全數清繳前仍屬逾期。"
+      }
+    ],
+    "example": "The notice gives the employer a deadline to settle the debt in full.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "fund trustee",
+    "zh": "基金受託人",
+    "pos": "n.",
+    "related": [],
+    "note": "負責依規管要求管理基金。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Each fund trustee must reconcile incoming payments with payroll records.",
+        "zh": "各基金受託人須核對收到的供款及薪酬紀錄。"
+      },
+      {
+        "en": "Employees may ask their fund trustee to confirm whether a payment has been credited.",
+        "zh": "僱員可請基金受託人確認款項是否已入帳。"
+      }
+    ],
+    "example": "Each fund trustee must reconcile incoming payments with payroll records.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "pecuniary penalty",
+    "zh": "金錢罰款",
+    "pos": "n.",
+    "related": [],
+    "note": "規管決定或條例中常見的正式用語。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The authority may impose a pecuniary penalty for a serious breach.",
+        "zh": "監管機構可就嚴重違規施加金錢罰款。"
+      },
+      {
+        "en": "The size of a pecuniary penalty should reflect the seriousness of the breach.",
+        "zh": "金錢罰款的金額應反映違規的嚴重程度。"
+      }
+    ],
+    "example": "The authority may impose a pecuniary penalty for a serious breach.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "public reprimand",
+    "zh": "公開譴責",
+    "pos": "n.",
+    "related": [],
+    "note": "公開的紀律處分，可伴隨罰款。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The regulator issued a public reprimand after its investigation.",
+        "zh": "監管機構完成調查後發出公開譴責。"
+      },
+      {
+        "en": "A public reprimand can alert scheme members to recurring conduct problems.",
+        "zh": "公開譴責可提醒計劃成員留意反覆出現的操守問題。"
+      }
+    ],
+    "example": "The regulator issued a public reprimand after its investigation.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "pass on a penalty",
+    "zh": "轉嫁罰款",
+    "pos": "v. phr.",
+    "related": [],
+    "note": "常用句式為 pass on a penalty to members。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Trustees should be barred from passing on a penalty to scheme members.",
+        "zh": "應禁止受託人向計劃成員轉嫁罰款。"
+      },
+      {
+        "en": "Auditors can check whether a trustee passed on a penalty through higher fees.",
+        "zh": "核數師可檢查受託人有否透過加費轉嫁罰款。"
+      }
+    ],
+    "example": "Trustees should be barred from passing on a penalty to scheme members.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "repeat default",
+    "zh": "反覆欠供；反覆違責",
+    "pos": "n.",
+    "related": [],
+    "note": "退休供款語境下指僱主多次未按期繳付。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Repeat default may justify closer monitoring by the regulator.",
+        "zh": "反覆欠供或有理由由監管機構加強監察。"
+      },
+      {
+        "en": "A record of repeat default helps inspectors prioritise investigations.",
+        "zh": "反覆欠供紀錄有助督察確定調查個案的優先次序。"
+      }
+    ],
+    "example": "Repeat default may justify closer monitoring by the regulator.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "debt recovery",
+    "zh": "追討欠款",
+    "pos": "n.",
+    "related": [],
+    "note": "強調收回欠款的程序及結果。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Early contact can improve the prospects of debt recovery.",
+        "zh": "及早聯絡欠款人有助提高收回欠款的機會。"
+      },
+      {
+        "en": "The authority tracks debt recovery by the age and value of each case.",
+        "zh": "監管機構按每宗個案的逾期時間和金額追蹤欠款收回情況。"
+      }
+    ],
+    "example": "Early contact can improve the prospects of debt recovery.",
+    "topic": "fiscal-regulation"
   }
 ]
