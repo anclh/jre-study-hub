@@ -515,15 +515,25 @@
     renderMemoryGuide();
   }
 
-  function memoryRows(brief) {
+  function hasMemoryCard(brief) {
     const memory = brief.memory;
-    if (!memory || !memory.benefit || !memory.risk || !memory.action) return "";
+    return Boolean(memory?.benefit && memory.risk && memory.action);
+  }
+
+  function memoryRows(brief) {
+    if (!hasMemoryCard(brief)) return "";
+    const memory = brief.memory;
     return `<dl class="memory-rows"><div><dt>利</dt><dd>${escapeHtml(memory.benefit)}</dd></div><div><dt>弊</dt><dd>${escapeHtml(memory.risk)}</dd></div><div><dt>做</dt><dd>${escapeHtml(memory.action)}</dd></div></dl>`;
   }
 
   function renderMemoryGuide() {
     const el = $("#memory-guide-list");
     if (!el) return;
+    const title = $("#memory-guide-title");
+    if (title && briefsData) {
+      const total = briefsData.briefs.filter(hasMemoryCard).length;
+      title.textContent = `利 → 弊 → 做｜${total} 題記憶卡`;
+    }
     const briefs = briefsData ? filteredBriefs() : [];
     el.innerHTML = briefs.length ? briefs.map((brief) => {
       const rows = memoryRows(brief);
