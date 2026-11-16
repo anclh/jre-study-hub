@@ -9,7 +9,7 @@
   <title>政府決策局及最新政策 · JRE Study Hub</title>
   <link rel="stylesheet" href="../shell/study-theme.css?v=20261111" />
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261111" />
-  <link rel="stylesheet" href="styles.css?v=20261111" />
+  <link rel="stylesheet" href="styles.css?v=20261116lookup" />
 </head>
 <body class="study-screen bureau-screen">
   <header class="app-header">
@@ -23,9 +23,109 @@
 
   <main class="wrap">
     <div class="search-box">
-      <label for="search">搜尋決策局</label>
-      <input type="search" id="search" placeholder="局名、縮寫、職責或政策關鍵字" />
+      <label for="search">搜尋議題或決策局</label>
+      <input type="search" id="search" placeholder="例如：託兒、授權票、兩蚊兩折、LWB" />
     </div>
+
+
+    <section class="issue-lookup" id="issue-lookup" aria-labelledby="issue-title">
+      <h2 id="issue-title">按議題搵局</h2>
+      <p>先諗要做咩，再揀主責局。展開議題睇協作、執行分工同 Q2 建議句。</p>
+      <div class="issue-grid">
+        <details class="issue-card" id="issue-childcare" data-keywords="託兒 托兒 托管 兒童照顧 在校課託 課餘託管 childcare after school care">
+          <summary>
+            <span><strong>幼兒照顧與課後託管</strong><span class="issue-en" lang="en">Childcare &amp; after-school care</span></span>
+            <span class="issue-lead">勞工及福利局</span>
+          </summary>
+          <div class="issue-body">
+            <dl>
+              <dt>主責／統籌</dt><dd>勞工及福利局：福利服務及名額規劃。</dd>
+              <dt>協作</dt><dd>教育局協調學校參與及校內安排。</dd>
+              <dt>執行</dt><dd>社會福利署、學校及地區服務機構配對名額和提供服務。</dd>
+            </dl>
+            <p class="issue-example"><strong>答題例句</strong> 建議由勞工及福利局聯同教育局，透過社會福利署、學校及地區服務機構按區盤點輪候人數和服務時段，優先在缺口較大的地區加開名額或延長服務時間。</p>
+            <a href="https://www.info.gov.hk/gia/general/202606/17/P2026061700451.htm">官方資料 ↗</a>
+          </div>
+        </details>
+        <details class="issue-card" id="issue-family-support" data-keywords="現金支援 新生嬰兒獎勵金 出生 津貼 生育醫療 IVF 住屋 baby bonus housing fertility">
+          <summary>
+            <span><strong>生育與家庭支援</strong><span class="issue-en" lang="en">Fertility &amp; family support</span></span>
+            <span class="issue-lead">政務司副司長統籌</span>
+          </summary>
+          <div class="issue-body">
+            <dl>
+              <dt>主責／統籌</dt><dd>政務司副司長統籌：適用於現金、託兒、住屋及生育醫療並行的跨局方案。</dd>
+              <dt>協作</dt><dd>勞福局管託兒，房屋局管住屋支援，醫務衞生局管生育醫療。涉及免稅額或印花稅時，加入財經事務及庫務局。</dd>
+              <dt>執行</dt><dd>各主管部門提供及更新各自的資格、申請和轉介資料。</dd>
+            </dl>
+            <p class="issue-example"><strong>答題例句</strong> 建議由政務司副司長統籌，在保留適量新生嬰兒現金支援的同時，整合託兒、住屋及生育醫療的申請資訊，讓家庭可在同一入口查閱資格及轉介安排。</p>
+            <a href="https://www.info.gov.hk/gia/general/202609/30/P2026093000287.htm">官方資料 ↗</a>
+          </div>
+        </details>
+        <details class="issue-card" id="issue-proxy-votes" data-keywords="授權票 代理人 業主立案法團 大廈管理 表決 電子投票 委任代表 proxy owners voting">
+          <summary>
+            <span><strong>業主大會與電子授權</strong><span class="issue-en" lang="en">Owners’ meetings &amp; proxy voting</span></span>
+            <span class="issue-lead">民政及青年事務局</span>
+          </summary>
+          <div class="issue-body">
+            <dl>
+              <dt>主責／統籌</dt><dd>民政及青年事務局：負責《建築物管理條例》下的業主大會程序和委任代表制度。</dd>
+              <dt>協作</dt><dd>涉及電子身分核實時，可由數字政策辦公室提供技術支援。</dd>
+              <dt>執行</dt><dd>民政事務總署、物管公司及業主立案法團按各自職責提供支援或處理授權文書。</dd>
+            </dl>
+            <p class="issue-example"><strong>答題例句</strong> 建議由民政及青年事務局先在有意參與的屋苑試行電子委任代表，設身份核實及異議渠道，並保留紙本途徑。</p>
+            <a href="https://www.info.gov.hk/gia/general/202611/09/P2026110900590.htm">官方資料 ↗</a>
+          </div>
+        </details>
+        <details class="issue-card" id="issue-building-works" data-keywords="圍標 維修招標 預審名單 強制驗樓 工程採購 tender bid rigging procurement">
+          <summary>
+            <span><strong>樓宇大維修與招標</strong><span class="issue-en" lang="en">Building repairs &amp; tenders</span></span>
+            <span class="issue-lead">發展局</span>
+          </summary>
+          <div class="issue-body">
+            <dl>
+              <dt>主責／統籌</dt><dd>發展局：負責大型維修工程規管及招標支援改革。</dd>
+              <dt>協作</dt><dd>涉及房委會屋苑工程時，房屋局按適用監管安排協作。</dd>
+              <dt>執行</dt><dd>屋宇署負責法定規管。擬設的樓宇維修支援及服務局負責支援業主，兩者分工。</dd>
+            </dl>
+            <p class="issue-example"><strong>答題例句</strong> 建議由發展局訂立預審及評標要求，公開利益申報與主要評標準則，讓業主比較合資格標書。</p>
+            <a href="https://www.devb.gov.hk/tc/publications_and_press_releases/press/index_id_15625.html">官方資料 ↗</a>
+          </div>
+        </details>
+        <details class="issue-card" id="issue-public-works" data-keywords="瑪麗醫院 升降機 電梯 監工 工程質素 問責 lift acceptance construction">
+          <summary>
+            <span><strong>公共工程驗收與通報</strong><span class="issue-en" lang="en">Public works inspection &amp; reporting</span></span>
+            <span class="issue-lead">發展局</span>
+          </summary>
+          <div class="issue-body">
+            <dl>
+              <dt>主責／統籌</dt><dd>發展局：處理政府工程監管與驗收問題。</dd>
+              <dt>協作</dt><dd>涉及醫院啟用或服務安排時，與醫務衞生局及醫院管理局協調。</dd>
+              <dt>執行</dt><dd>建築署負責項目監督，機電工程署按其職能處理升降機安全規管。</dd>
+            </dl>
+            <p class="issue-example"><strong>答題例句</strong> 建議由發展局要求項目團隊在安裝前覆核關鍵尺寸，設重大缺陷通報門檻，並向使用部門定期交代修復進度。</p>
+            <a href="https://www.info.gov.hk/gia/general/202611/13/P2026111300247.htm">官方資料 ↗</a>
+          </div>
+        </details>
+        <details class="issue-card" id="issue-fare-concession" data-keywords="二元優惠 兩元優惠 公共交通 長車短搭 樂悠咭 長者 殘疾人士 fare concession subsidy">
+          <summary>
+            <span><strong>兩蚊兩折與交通補貼</strong><span class="issue-en" lang="en">Concessionary fares</span></span>
+            <span class="issue-lead">勞工及福利局</span>
+          </summary>
+          <div class="issue-body">
+            <dl>
+              <dt>主責／統籌</dt><dd>勞工及福利局：負責長者及合資格殘疾人士票價優惠的政策檢視。</dd>
+              <dt>協作</dt><dd>運輸及物流局就交通安排協作。</dd>
+              <dt>執行</dt><dd>運輸署及公共交通營辦商配合實施，提供路線和票價資訊。</dd>
+            </dl>
+            <p class="issue-example"><strong>答題例句</strong> 建議由勞工及福利局聯同運輸及物流局檢視補貼開支和乘客出行變化，並追蹤有跨區覆診或上班需要人士的負擔。</p>
+            <a href="https://www.info.gov.hk/gia/general/202603/23/P2026032300131.htm">官方資料 ↗</a>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <p id="lookup-empty" role="status" hidden>找不到相符項目。試試簡短關鍵詞，例如「託兒」或「房屋」。</p>
 
     <div id="bureaux-list">
       <!-- 1. 房屋局 -->
@@ -506,19 +606,33 @@
   <script src="../shell/tabbar.js?v=20261109a"></script>
   <script>
     const searchInput = document.getElementById("search");
-    const cards = document.querySelectorAll(".bureau-card");
+    const issueLookup = document.getElementById("issue-lookup");
+    const empty = document.getElementById("lookup-empty");
+    const entries = [...document.querySelectorAll(".bureau-card, .issue-card")].map((card) => [
+      card,
+      [card.dataset.kw, card.dataset.keywords, card.textContent].join(" ").toLowerCase(),
+    ]);
 
-    searchInput.addEventListener("input", (e) => {
-      const q = e.target.value.toLowerCase().trim();
-      cards.forEach((card) => {
-        const text = (card.getAttribute("data-kw") + " " + card.innerText).toLowerCase();
-        if (!q || text.includes(q)) {
-          card.style.display = "block";
-        } else {
-          card.style.display = "none";
+    function filterLookup() {
+      const keywords = searchInput.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      let matches = 0;
+      let issues = 0;
+      for (const [card, text] of entries) {
+        card.hidden = !keywords.every((keyword) => text.includes(keyword));
+        if (!card.hidden) {
+          matches++;
+          if (card.matches(".issue-card")) issues++;
         }
-      });
-    });
+      }
+      issueLookup.hidden = issues === 0;
+      empty.hidden = matches > 0;
+    }
+
+    searchInput.addEventListener("input", filterLookup);
+    filterLookup();
+
+    const linkedIssue = document.getElementById(location.hash.slice(1));
+    if (linkedIssue?.matches(".issue-card")) linkedIssue.open = true;
   </script>
 </body>
 </html>
