@@ -4,7 +4,7 @@
     "title_zh": "JRE 政策資料庫",
     "description": "Interview-oriented current affairs bank sourced from public HK government and LegCo materials. Not affiliated with CS Radar.",
     "updated": "2026-11-16",
-    "sources_note": "All items link to public info.gov.hk / policyaddress.gov.hk releases. Summaries and interview angles are original editorial notes for interview practice."
+    "sources_note": "Official Hong Kong government and LegCo materials are primary sources. Selected cards also link to SCMP reporting. Summaries and interview angles are original study notes."
   },
   "departments": [
     {
@@ -257,6 +257,29 @@
       "source_name": "info.gov.hk / 財政司司長辦公室"
     },
     {
+      "id": "20261114-building-proxy-reform",
+      "date": "2026-11-14",
+      "title": "業主大會授權票改革：加強核查及籌備電子授權",
+      "title_en": "Owners’ meeting proxy reform and proposed digital pilot",
+      "departments": [
+        "hyab",
+        "legco"
+      ],
+      "themes": [
+        "housing-land",
+        "legislation",
+        "digital-gov"
+      ],
+      "summary": "民青局就《建築物管理條例》修訂收到550份書面意見。11月9日向立法會提出按大型維修採購金額提高親自投票門檻，法定人數維持業主人數一成，並建議業主與代表雙方簽署授權文書、提早提交及加強核查。據《南華早報》11月14日報道，局長表示政府暫不即時設授權票上限，計劃2027年試行電子授權。試行安排與日後是否設上限仍須分開看待。",
+      "interview_angles": [
+        "提高親身投票門檻後，可如何協助長者、行動不便或身處外地的業主參與？",
+        "試行電子授權應量度哪些指標，例如核實失敗率、異議處理時間及紙本替代渠道的使用率？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900590.htm",
+      "source_name": "info.gov.hk / 民政及青年事務局",
+      "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3374434/hong-kong-trial-electronic-proxy-voting-platform-curb-bid-rigging-estates"
+    },
+    {
       "id": "20261113-hsk-logistics-market-interest",
       "date": "2026-11-13",
       "title": "洪水橋／厦村物流用地收到16份意向書",
@@ -337,6 +360,29 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/13/P2026111300224.htm",
       "source_name": "info.gov.hk / 醫務衞生局"
+    },
+    {
+      "id": "20261113-qmh-lift-works-oversight",
+      "date": "2026-11-13",
+      "title": "瑪麗醫院升降機調查：公共工程驗收與問責",
+      "title_en": "Queen Mary Hospital lift investigation and public works oversight",
+      "departments": [
+        "devb",
+        "ha",
+        "legco"
+      ],
+      "themes": [
+        "governance",
+        "healthcare"
+      ],
+      "summary": "發展局11月13日向立法會交代瑪麗醫院新臨床大樓升降機調查。新大樓共有28部升降機，部分在工程接近完工時仍頻繁故障。調查指出井道和導軌偏差等施工問題，亦發現項目監察不足。建築署已加密工地檢測及改進數碼監工，機電工程署正檢視安裝、保養及法規制度。發展局將懷疑涉及刑事成分的部分交執法部門跟進。據《南華早報》報道，議員亦追問披露時間及問責範圍。",
+      "interview_angles": [
+        "哪些驗收關卡可在裝機前發現井道偏差？應由誰簽署、保存紀錄及審核？",
+        "當工程缺陷可能影響醫院啟用，應按甚麼風險門檻通報，並交代補救進度？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/13/P2026111300247.htm",
+      "source_name": "info.gov.hk / 發展局",
+      "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3374336/hong-kong-lawmakers-call-wider-investigation-hospital-lift-scandal"
     },
     {
       "id": "20261112-rodent-risk-deployment",
@@ -1135,6 +1181,29 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000235.htm",
       "source_name": "info.gov.hk 新聞公報"
+    },
+    {
+      "id": "20261030-building-maintenance-reform",
+      "date": "2026-10-30",
+      "title": "樓宇維修改革：預審名單、代辦招標與獨立監管",
+      "title_en": "Building maintenance reform: vetted lists, tender support and oversight",
+      "departments": [
+        "devb",
+        "hb"
+      ],
+      "themes": [
+        "housing-land",
+        "governance",
+        "legislation"
+      ],
+      "summary": "發展局與房屋局公布樓宇維修改革，目標於2026年底前完成樓宇維修支援及服務局的註冊與董事局委任。初期擬優先處理原「招標妥」下約1,800個未聘承建商的項目。免費服務包括預審名單及標書範本，收費服務則包括代辦招標與評標。政府另擬將大型維修列為獨立工程類別，並分開驗樓與其後策劃及監工的專業職能。",
+      "interview_angles": [
+        "預審名單如何減低合謀風險，同時讓合資格的新供應商有公平入場機會？",
+        "支援機構代辦招標時，應如何公開評標依據、管理利益衝突並保留業主選擇？"
+      ],
+      "source_url": "https://www.devb.gov.hk/tc/publications_and_press_releases/press/index_id_15625.html",
+      "source_name": "發展局及房屋局",
+      "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3372619/hong-kong-set-new-body-oversee-building-renovations-regulatory-overhaul"
     },
     {
       "id": "20261029-900633",
@@ -3696,6 +3765,29 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202606/16/P2026061600269.htm",
       "source_name": "info.gov.hk / Social Welfare Department"
+    },
+    {
+      "id": "20260606-fare-concession-early-review",
+      "date": "2026-06-06",
+      "title": "兩蚊兩折實施初期：補貼變化與出行負擔",
+      "title_en": "Early review of Hong Kong’s HK$2 fare concession changes",
+      "departments": [
+        "lwb",
+        "tlb"
+      ],
+      "themes": [
+        "transport-logistics",
+        "elderly-care",
+        "poverty-welfare"
+      ],
+      "summary": "二元乘車優惠於4月3日改為「兩蚊兩折」：成人車費不高於10元，合資格乘客仍付2元，超過10元則付成人票價兩折。勞福局局長6月6日指出，4月政府補貼比3月少6,900萬元，成人票價逾10元的車程平均補貼由4.9元降至4.5元。月份日數和公眾假期有別，這是初步月度比較。據《南華早報》6月5日報道，政府亦決定不推行原擬每月240程的上限。",
+      "interview_angles": [
+        "如何剔除假期及季節效應，評估新票價對補貼及乘車行為的實際影響？",
+        "應如何監察需跨區覆診或工作的受惠人士有否因車費上升而減少必要出行？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202606/06/P2026060600481p.htm",
+      "source_name": "info.gov.hk / 勞工及福利局",
+      "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3356116/no-cap-hk2-transport-scheme-trips-costs-outweigh-savings-hong-kong-minister"
     },
     {
       "id": "20260501-min-wage-43-1",

@@ -283,6 +283,9 @@
         .map((a) => `<li>${escapeHtml(a)}</li>`)
         .join("");
       const summary = item.summary || "";
+      const scmpLink = /^https:\/\/www\.scmp\.com\/news\/hong-kong\//.test(item.scmp_url || "")
+        ? `<a class="source-link" href="${escapeAttr(item.scmp_url)}" target="_blank" rel="noopener noreferrer">${state.lang === "zh" ? "南華早報" : "SCMP"} ↗</a>`
+        : "";
       card.innerHTML = `
         <div class="card-top">
           <span class="date-badge">${escapeHtml(item.date)}</span>
@@ -301,6 +304,7 @@
         </div>
         <div class="card-foot">
           <a class="source-link" href="${escapeAttr(item.source_url)}" target="_blank" rel="noopener noreferrer">${t("source")} ↗</a>
+          ${scmpLink}
           <span class="source-name">${escapeHtml(item.source_name || "")}</span>
         </div>`;
       const theme = item.themes.find((id) => state.themes.has(id)) || item.themes[0];
