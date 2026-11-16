@@ -672,6 +672,7 @@
       <div class="flash-kicker">${brief.n} / ${deck.length} · 背面 ${markChip}</div>
       <h2>${escapeHtml(brief.title_zh || "")}</h2>
       ${brief.memory ? `<section class="flash-block"><h3>利 → 弊 → 做 · 記憶卡</h3>${memoryRows(brief)}</section>` : ""}
+      ${brief.sample_answer ? `<details class="flash-sample"><summary>閱讀範文</summary>${brief.sample_note ? `<p class="muted">${escapeHtml(brief.sample_note)}</p>` : ""}<div class="flash-sample-text">${escapeHtml(brief.sample_answer)}</div></details>` : ""}
       ${flashBlock("利", "Pros", flashFullItems(brief.pros))}
       ${flashBlock("弊", "Cons", flashFullItems(brief.cons))}
       ${flashStanceBlock(brief, stanceShort)}
@@ -738,13 +739,13 @@
   if (btnFlashcards) btnFlashcards.addEventListener("click", openFlash);
   $("#flashClose")?.addEventListener("click", closeFlash);
   $("#flashCard")?.addEventListener("click", (e) => {
-    if (e.target.closest("a")) return;
+    if (e.target.closest("a, details")) return;
     flashFlipped = !flashFlipped;
     renderFlash();
   });
   $("#flashCard")?.addEventListener("keydown", (e) => {
     if (e.key !== " " && e.key !== "Enter") return;
-    if (e.target.closest("a")) return;
+    if (e.target.closest("a, details")) return;
     e.preventDefault();
     flashFlipped = !flashFlipped;
     renderFlash();
