@@ -412,13 +412,13 @@
               </div>
             </details>
             <div class="timer-row">
-              <div class="timer" id="timerDisplay">70:00</div>
-              <div class="toolbar">
+              <div class="timer" id="timerDisplay" role="timer" aria-label="剩餘時間 / Time remaining">70:00</div>
+              <button type="button" class="jre-ref-launch" data-jre-lookup data-jre-lookup-tab="bureaux" aria-haspopup="dialog" aria-controls="jre-ref-dialog">查局／詞彙</button>
+              <div class="toolbar timer-controls" role="group" aria-label="計時控制 / Timer controls">
                 <button type="button" class="btn primary" id="btnStart70">70 分</button>
                 <button type="button" class="btn" id="btnStart90">90 分</button>
                 <button type="button" class="btn" id="btnPause">暫停</button>
                 <button type="button" class="btn" id="btnReset">重設</button>
-                <button type="button" class="jre-ref-launch" data-jre-lookup data-jre-lookup-tab="bureaux" aria-haspopup="dialog" aria-controls="jre-ref-dialog">查局／詞彙</button>
               </div>
             </div>
             <label class="sr-only" for="answer">答卷</label>
