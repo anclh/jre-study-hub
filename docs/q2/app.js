@@ -9,6 +9,7 @@
     "elderly-care": "安老與照顧",
     "environment-climate": "環境與氣候",
     finance: "金融與金融科技",
+    governance: "公共管治",
     healthcare: "醫療衞生",
     "housing-land": "房屋與土地",
     innovation: "創科與產業",
@@ -487,7 +488,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261116e", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261117a", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
