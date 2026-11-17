@@ -562,3 +562,9 @@
   color: var(--muted);
   font-size: .875rem;
 }
+
+/* Manual backup controls remain usable on narrow screens. */
+.backup-tools { margin-top: 1rem; }
+.backup-tools p { overflow-wrap: anywhere; }
+.backup-tools label.btn { display: flex; flex-wrap: wrap; gap: .5rem; max-width: 100%; }
+.backup-tools input[type="file"] { max-width: 100%; min-width: 0; font: inherit; }

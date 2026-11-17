@@ -417,6 +417,7 @@
                 <button type="button" class="btn" id="btnStart90">90 分</button>
                 <button type="button" class="btn" id="btnPause">暫停</button>
                 <button type="button" class="btn" id="btnReset">重設</button>
+                <button type="button" class="jre-ref-launch" data-jre-lookup data-jre-lookup-tab="bureaux" aria-haspopup="dialog" aria-controls="jre-ref-dialog">查局／詞彙</button>
               </div>
             </div>
             <label class="sr-only" for="answer">答卷</label>
@@ -525,16 +526,19 @@
     const countEl = $("#wordCount");
     if (!answer || !countEl) return;
 
-    answer.value = localStorage.getItem(STORAGE_ANSWER) || "";
+    try { answer.value = localStorage.getItem(STORAGE_ANSWER) || ""; }
+    catch { toast("未能讀取草稿 / Draft storage unavailable"); }
     function syncCount() {
       countEl.textContent = `${countWords(answer.value)} words`;
     }
     answer.oninput = () => {
-      localStorage.setItem(STORAGE_ANSWER, answer.value);
+      try { localStorage.setItem(STORAGE_ANSWER, answer.value); }
+      catch { toast("草稿未儲存；請複製答卷 / Draft not saved; copy your answer"); }
       syncCount();
     };
     syncCount();
 
+    JreReferenceLookup.mount({base: "../"});
     paintPracticeTimer();
     $("#btnStart70")?.addEventListener("click", () => startPracticeTimer(70));
     $("#btnStart90")?.addEventListener("click", () => startPracticeTimer(90));
@@ -592,7 +596,8 @@
       checks.forEach((c) => {
         o[c.dataset.k] = c.checked;
       });
-      localStorage.setItem(STORAGE_MARKS, JSON.stringify(o));
+      try { localStorage.setItem(STORAGE_MARKS, JSON.stringify(o)); }
+      catch { toast("自評未儲存；請匯出備份 / Checklist not saved; export a backup"); }
       scoreEl.textContent = `${checks.filter((c) => c.checked).length} / ${checks.length}`;
     }
     checks.forEach((c) => c.addEventListener("change", saveMarks));
@@ -603,6 +608,10 @@
       saveMarks();
     });
     loadMarks();
+    JreBackup.mount({root: "#q1-backup", kind: "q1-checklist", key: STORAGE_MARKS,
+      get: () => JreBackup.merge("q1-checklist", JSON.parse(localStorage.getItem(STORAGE_MARKS) || "{}"),
+        Object.fromEntries(checks.map(c => [c.dataset.k, c.checked]))),
+      refresh: loadMarks});
   }
 
 

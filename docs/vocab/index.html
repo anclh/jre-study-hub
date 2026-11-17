@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="description" content="JRE English — HKSAR press-release vocabulary bank for exam prep" />
   <title>JRE 英文時事詞彙庫 · Vocab Bank</title>
-  <link rel="stylesheet" href="styles.css?v=20261111" />
+  <link rel="stylesheet" href="styles.css?v=20261117c" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect rx='8' width='32' height='32' fill='%233d9cf0'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='14' font-family='sans-serif' font-weight='700' fill='%230a1220'%3EJRE%3C/text%3E%3C/svg%3E" />
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261111" />
   <link rel="stylesheet" href="../shell/study-theme.css?v=20261111" />
@@ -86,9 +86,17 @@
       </div>
       <div class="toolbar">
         <button type="button" class="btn primary" id="btnStartStudySaved" title="Study saved words">開始學習生字</button>
-        <button type="button" class="btn" id="btnExport">匯出 JSON</button>
         <button type="button" class="btn" id="btnClearSaved">清空收藏</button>
       </div>
+      <div id="vocab-backup" class="backup-tools">
+          <p>手動備份 / Manual backup：下載後自行保存；轉裝置須匯入檔案，並非自動同步。<br />JSON v1（完整還原 / full restore）或 CSV v1（生字含完整 card_json / words include full card_json）；上限 2 MB。匯入會合併，保留現有內容及勾選。</p>
+          <div class="toolbar">
+            <button type="button" class="btn" data-backup-export="json">匯出 JSON v1</button>
+            <button type="button" class="btn" data-backup-export="csv">匯出 CSV v1</button>
+            <label class="btn">合併匯入 / Import JSON／CSV <input type="file" accept=".json,.csv,application/json,text/csv" aria-label="合併匯入 vocab 備份 / Import backup" /></label>
+          </div>
+          <p role="status" aria-live="polite" data-backup-status></p>
+        </div>
       <div class="card-grid" id="savedGrid"></div>
     </section>
   </main>
@@ -156,7 +164,8 @@
   </div>
 
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261104c"></script>
+  <script src="backup.js?v=20261117c"></script>
+  <script src="app.js?v=20261117c"></script>
   <script src="../shell/tabbar.js?v=20261109a"></script>
 </body>
 </html>

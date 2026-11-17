@@ -43,15 +43,19 @@
   function loadSaved() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? JSON.parse(raw) : {};
+      const saved = raw ? JSON.parse(raw) : {};
+      if (!saved || typeof saved !== "object" || Array.isArray(saved)) return {};
+      return saved;
     } catch {
       return {};
     }
   }
 
   function persistSaved() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state.saved));
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state.saved)); }
+    catch { toast("未能儲存；原有收藏保留 / Save failed; existing words retained"); return false; }
     $("#statSaved").textContent = String(Object.keys(state.saved).length);
+    return true;
   }
 
   function toast(msg) {
@@ -101,12 +105,13 @@
   }
 
   function isSaved(term) {
-    return Boolean(state.saved[term.toLowerCase()]);
+    return Object.values(state.saved).some(c => c.term?.trim().toLowerCase() === term.trim().toLowerCase());
   }
 
   function toggleSave(card) {
-    const key = card.term.toLowerCase();
-    if (state.saved[key]) {
+    const previous = { ...state.saved };
+    const key = Object.keys(state.saved).find(k => state.saved[k].term?.trim().toLowerCase() === card.term.trim().toLowerCase()) || card.term.trim().toLowerCase();
+    if (Object.hasOwn(state.saved, key)) {
       delete state.saved[key];
       toast(`已取消收藏 · Unsaved: ${card.term}`);
     } else {
@@ -116,7 +121,7 @@
       };
       toast(`已收藏 · Saved: ${card.term}`);
     }
-    persistSaved();
+    if (!persistSaved()) { state.saved = previous; return; }
     renderAllCards();
   }
 
@@ -267,7 +272,7 @@ function chipRow(label, items, cls) {
   function bindCardActions(container) {
     container.querySelectorAll(".vocab-card").forEach((el) => {
       const term = el.dataset.term;
-      const card = findCard(term) || state.saved[term.toLowerCase()];
+      const card = Object.values(state.saved).find(c => c.term?.trim().toLowerCase() === term.trim().toLowerCase()) || findCard(term);
       const btn = el.querySelector(".btn-save");
       if (btn && card) {
         btn.addEventListener("click", (e) => {
@@ -642,8 +647,54 @@ function chipRow(label, items, cls) {
       grid.innerHTML = `<div class="empty">尚未收藏生字。在詞彙卡按「☆ 收藏」即可。</div>`;
       return;
     }
-    grid.innerHTML = list.map(vocabCardHTML).join("");
+    grid.replaceChildren(...list.map(savedCardDOM));
     bindCardActions(grid);
+    syncExpandedCards();
+  }
+
+  // Keep the existing card controls and classes while treating restored text as text.
+  function savedCardDOM(card) {
+    const article = document.createElement("article"); article.className = "vocab-card saved";
+    article.dataset.term = card.term; article.dataset.expandable = "true";
+    const add = (tag, cls, value, parent = article) => {
+      const el = document.createElement(tag); el.className = cls; el.textContent = value; parent.append(el); return el;
+    };
+    const summary = add("div", "card-summary", "");
+    summary.setAttribute("role", "button"); summary.tabIndex = 0;
+    const top = add("div", "card-top", "", summary);
+    const term = add("h4", "term", card.term, top); add("span", "pos", card.pos || "", term);
+    const aside = add("span", "card-top-aside", "", top);
+    if (TOPIC_LABELS[card.topic]) add("span", "cat-pill topic-pill", TOPIC_LABELS[card.topic], aside);
+    add("span", "expand-chevron", "", aside);
+    add("div", "zh", card.zh || "", summary);
+    const details = add("div", "card-details", "");
+    if (card.note) add("div", "meta-line", card.note, details);
+    for (const [key, label, cls] of [["synonyms", "同義詞", "chip-syn"], ["antonyms", "反義詞", "chip-ant"]]) {
+      const values = card[key] || (key === "synonyms" ? card.related : []) || [];
+      if (!values.length) continue;
+      const block = add("div", "lex-block", "", details);
+      add("div", "lex-label", label, block);
+      const chips = add("div", "related", "", block);
+      values.forEach(value => add("span", "chip " + cls, value, chips));
+    }
+    const examples = card.examples?.length ? card.examples : (card.example ? [card.example] : []);
+    if (examples.length) {
+      const block = add("div", "lex-block", "", details); add("div", "lex-label", "例句", block);
+      const list = add("ol", "example-list", "", block);
+      for (const ex of examples) {
+        const li = add("li", "example-item", "", list);
+        add("p", "example", typeof ex === "string" ? ex : ex.en || "", li);
+        if (ex.zh) add("p", "example-zh", ex.zh, li);
+      }
+    }
+    if (card.source?.link && /^https?:\/\//i.test(card.source.link)) {
+      const a = add("a", "btn btn-source", card.source.title || "來源 / Source", details);
+      a.href = card.source.link; a.target = "_blank"; a.rel = "noopener";
+    }
+    const collapse = add("button", "btn btn-collapse", "收起", details); collapse.type = "button";
+    const actions = add("div", "card-actions", "");
+    const btn = add("button", "btn btn-save", "★ 已收藏", actions); btn.type = "button";
+    return article;
   }
 
   function renderAllCards() {
@@ -1026,7 +1077,9 @@ function chipRow(label, items, cls) {
     $("#flipTerm").textContent = card.term || "";
     $("#flipPos").textContent = card.pos || "";
     $("#flipZh").textContent = card.zh || "（暫無中文）";
-    $("#flipExtra").innerHTML = studyBackExtraHTML(card);
+    const extra = savedCardDOM(card).querySelector(".card-details");
+    extra.querySelector(".btn-collapse").remove();
+    $("#flipExtra").replaceChildren(extra);
     updateStudyProgress();
     updateStudySaveBtn();
   }
@@ -1313,14 +1366,15 @@ function chipRow(label, items, cls) {
   }
 
   function initTheme() {
-    const saved = localStorage.getItem(THEME_KEY);
+    let saved;
+    try { saved = localStorage.getItem(THEME_KEY); } catch {}
     // Default: Policy light green (not system dark / blue)
     document.documentElement.setAttribute("data-theme", saved || "light");
     $("#btnTheme").addEventListener("click", () => {
       const cur = document.documentElement.getAttribute("data-theme");
       const next = cur === "dark" ? "light" : "dark";
       document.documentElement.setAttribute("data-theme", next);
-      localStorage.setItem(THEME_KEY, next);
+      try { localStorage.setItem(THEME_KEY, next); } catch { toast("主題未儲存 / Theme not saved"); }
     });
   }
 
@@ -1331,21 +1385,15 @@ function chipRow(label, items, cls) {
     if (feedSearch) feedSearch.addEventListener("input", renderFeed);
     const progSearch = $("#progSearch");
     if (progSearch) progSearch.addEventListener("input", renderProgrammes);
-    $("#btnExport").addEventListener("click", () => {
-      const blob = new Blob([JSON.stringify(state.saved, null, 2)], {
-        type: "application/json",
-      });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = `jre-vocab-saved-${new Date().toISOString().slice(0, 10)}.json`;
-      a.click();
-      toast("已匯出收藏");
-    });
+    JreBackup.mount({root: "#vocab-backup", kind: "vocab", key: STORAGE_KEY,
+      get: () => JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"),
+      refresh: next => { state.saved = next; $("#statSaved").textContent = String(Object.keys(next).length); renderAllCards(); updateStudySaveBtn(); }});
     $("#btnClearSaved").addEventListener("click", () => {
       if (!Object.keys(state.saved).length) return;
       if (!confirm("確定清空全部收藏？")) return;
+      const previous = state.saved;
       state.saved = {};
-      persistSaved();
+      if (!persistSaved()) { state.saved = previous; return; }
       renderSaved();
       renderAllCards();
       toast("已清空收藏");
@@ -1359,7 +1407,7 @@ function chipRow(label, items, cls) {
     initTheme();
     initEvents();
     initStudy();
-    persistSaved();
+    $("#statSaved").textContent = String(Object.keys(state.saved).length);
     await loadLexicon();
     renderTopicFilters();
     renderStudyTopicFilters();

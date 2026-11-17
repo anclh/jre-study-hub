@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261111" />
   <link rel="stylesheet" href="../shell/study-theme.css?v=20261111" />
   <link rel="stylesheet" href="../shared/exam-workspace.css?v=20261111" />
-  <link rel="stylesheet" href="styles.css?v=20261111" />
+  <link rel="stylesheet" href="styles.css?v=20261117c" />
+<link rel="stylesheet" href="../shared/reference-lookup.css?v=20261117ref" />
 </head>
 <body class="study-screen exam-screen">
   <header class="app-header">
@@ -22,6 +23,7 @@
           <p lang="en">Discussion paper and Data File</p>
         </div>
       </div>
+      <button type="button" class="jre-ref-launch" data-jre-lookup data-jre-lookup-tab="bureaux" aria-haspopup="dialog" aria-controls="jre-ref-dialog">查局／詞彙</button>
     </div>
     <nav class="subnav" id="subnav" aria-label="Q1 sections">
       <button type="button" data-panel="structure" class="active">結構</button>
@@ -338,6 +340,15 @@
         </ul>
         <p class="score" id="markScore">0 / 7</p>
         <button type="button" class="btn" id="btnClearMarks">清自評</button>
+        <div id="q1-backup" class="backup-tools">
+          <p>手動備份 / Manual backup：下載後自行保存；轉裝置須匯入檔案，並非自動同步。<br />JSON v1（完整還原 / full restore）或 CSV v1（七項自評 / seven checklist items）；上限 2 MB。匯入會合併，保留現有內容及勾選。</p>
+          <div class="toolbar">
+            <button type="button" class="btn" data-backup-export="json">匯出 JSON v1</button>
+            <button type="button" class="btn" data-backup-export="csv">匯出 CSV v1</button>
+            <label class="btn">合併匯入 / Import JSON／CSV <input type="file" accept=".json,.csv,application/json,text/csv" aria-label="合併匯入 q1 備份 / Import backup" /></label>
+          </div>
+          <p role="status" aria-live="polite" data-backup-status></p>
+        </div>
       </div>
     </section>
   </main>
@@ -361,7 +372,10 @@
   <script src="data/family-care-leave-2026-11-17.js?v=20261117a"></script>
   <script src="data/smartview-surveillance-2026-11-17.js?v=20261117a"></script>
   <script src="data/june-news-q1-2026-11-17.js?v=20261117b"></script>
-  <script src="app.js?v=20261117b"></script>
+  <script src="../vocab/backup.js?v=20261117c"></script>
+  <script src="../shared/reference-lookup.js?v=20261117ref"></script>
+  <script>JreReferenceLookup.mount({base: "../"});</script>
+  <script src="app.js?v=20261117c"></script>
   <script src="../shell/tabbar.js?v=20261109a"></script>
 </body>
 </html>
