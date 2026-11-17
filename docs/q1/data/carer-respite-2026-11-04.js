@@ -53,18 +53,14 @@ window.Q1_CASE_PACKS.push({
         "Association of Private Elderly Homes: 'Private day-care centres in urban areas have ~35% spare capacity on weekdays, but carers cannot use government subsidies at our facilities. Meanwhile, many elderly carers are not tech-savvy and may struggle with a mobile-only app.'",
         "Treasury Branch Memo: 'In view of the structural fiscal deficit, any new open-ended, non-means-tested recurrent commitment exceeding $1 billion per annum will face strong pushback from the Finance Committee.'",
       ],
-    },
-    {
-      id: "D",
-      title: "0–5 min Sort & Highlight Reference (Quick Check)",
-      bullets: [
+    }
+  ],
+  sortedNotes: [
         "Problem 1 (Spatial mismatch & subsidy rigidity): 52% headline utilisation masks 94% occupancy (19-day wait) in 3 oldest districts vs 28% in transport-poor industrial towns; ~35% weekday spare capacity in urban private centres sits unused.",
         "Problem 2 (Red tape vs 'elderly caring for elderly'): 185,000 frail elders (+22%); 41% carers aged 60+ working 64 hrs/wk; 14-page form + 3-month medical reassessment takes 3–4 weeks → 18% non-urgent A&E 'social admissions' costing $420M/yr.",
         "Options & Objections: Opt 1 ($3.8B/yr) breaches Treasury's $1B cap; Opt 2 ($2.4B, 5–6 yrs, 450 staff) hits 18% manpower vacancy wall; Opt 3 ($480M/yr + $15M IT, 6-mth pilot) unlocks 35% private capacity, but must address 60+ carers' mobile-app barrier + 14-page form.",
         "Dropped Noise: 28 Nov 2026 HSCB staff sports day at Victoria Park.",
       ],
-    },
-  ],
   learnPoints: [
     "**0–5 min Sort & Highlight**：先標 P1（94% vs 28% 錯配＋私營 35% 空置）、P2（41% 以老護老＋14 頁表等 3–4 周 → 18% 急症社會性入院耗 $4.2 億），直接劃走維園陸運會。",
     "**1. Opening**：一句點出體弱長者升 22% 下暫託支援嘅樽頸，以及政府目標（紓緩照顧者崩潰、控經常開支及醫護人手壓力）。",

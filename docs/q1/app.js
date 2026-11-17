@@ -351,6 +351,7 @@
         <button type="button" class="btn primary" id="btnToggleModel">顯示範例</button>
       </div>
       <div class="model-wrap" id="modelWrap" hidden>
+        ${pack.sortedNotes?.length ? `<section class="model-section"><h3>Step 1 — Sorted notes (0–5 min reference)</h3><ul>${pack.sortedNotes.map(note => `<li>${escapeHtml(note)}</li>`).join("")}</ul></section>` : ""}
         <div class="model-meta">
           <div><strong>To:</strong> ${escapeHtml(model.to || "")}</div>
           <div><strong>From:</strong> ${escapeHtml(model.from || "")}</div>

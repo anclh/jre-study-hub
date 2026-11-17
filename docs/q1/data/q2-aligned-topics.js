@@ -20,9 +20,10 @@
     ];
     window.Q1_CASE_PACKS.push({
       id: p.id, title: p.title, titleZh: p.titleZh,
-      tip: "先用 15 分鐘內完成 task／Data File planning，再按五段骨架寫 memo；留意 Doc D 的 Step 1 排序提示。",
+      tip: "先用 15 分鐘內完成 task／Data File planning，再按五段骨架寫 memo；完成後可開範例查看 Step 1 排序參考。",
       task,
-      docs: [...p.docs, { id: "D", title: "Step 1 — Sorted notes (0–5 min reference)", bullets: p.sort }],
+      docs: p.docs,
+      sortedNotes: p.sort,
       learnPoints: [
         `**Step 1 — Sort:** ${p.sort.join(" ")}`,
         `**Step 2 — Diagnose:** ${p.problems.join(" ")}`,

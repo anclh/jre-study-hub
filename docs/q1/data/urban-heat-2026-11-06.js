@@ -33,14 +33,14 @@ window.Q1_CASE_PACKS.push({
       "Property Owners’ Association: Roof works may cause disruption and unfairly benefit tenants; owners should not carry open-ended maintenance costs.",
       "Treasury Branch: New recurrent heat-resilience spending is capped at $180 million/year. Proposals must target high-risk districts and show health outcomes.",
       "District Health Network: Cash helps with bills, but without outreach, isolated residents may not recognise danger or seek help in time."
-    ]},
-    { id: "D", title: "0–5 min Sort & Highlight Reference", bullets: [
+    ]}
+  ],
+  sortedNotes: [
       "P1: 8% vs 24% canopy; +3.2°C night surface temperature; 37% without AC; arrears +19%.",
       "P2: ambulance calls +28%; 54% aged 65+; 62% from six old districts; only 4/14 centres open after 8 p.m.; 41% attendances potentially avoidable.",
       "Options: O1 fast but $1.44B and untargeted; O2 $1.9B / 4–6 years / 180 staff; O3 $168M recurrent under cap, four-month pilot.",
       "Objections: evening / mobility access; roof disruption and maintenance; outreach needed. Drop orchid exhibition noise."
-    ]}
-  ],
+    ],
   learnPoints: [
     "**Step 1 — Sort:** EEB AO → Heat Resilience Task Group; P1 unequal exposure / household vulnerability; P2 inaccessible prevention response; compare cost, speed, staffing and equity; drop orchid exhibition.",
     "**Step 2 — Diagnose:** Heat and energy poverty compound health inequalities; limited evening access leaves older residents exposed and avoidable cases enter emergency care.",

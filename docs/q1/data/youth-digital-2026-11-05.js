@@ -51,19 +51,15 @@ window.Q1_CASE_PACKS.push({
         "Tech Enterprise Alliance: 'Hundreds of entry-level digital roles are available, but grass-roots youths lack exposure and transit subsidies. However, hardware loans without structured mentorship risk devices being used purely for gaming.'",
         "Treasury Branch Memo: 'Recurrent budget envelope for new youth digital initiatives is strictly capped at $250 million/year. Schemes must be targeted and show tangible career outcomes.'",
       ],
-    },
-    {
-      id: "D",
-      title: "0–5 min Sort & Highlight Reference (Quick Check)",
-      bullets: [
+    }
+  ],
+  sortedNotes: [
         "Problem 1 Data (Hardware/Broadband deficit): 48,500 SDU youth; 34% laptop ownership (vs 82%); 29% broadband; 15 GB cap exhausts early → 38% digital failure rate (vs 11%).",
         "Problem 2 Data (Internship mismatch & Red Tape): 3,200 open tech slots (+45% YoY) with <12% non-elite uptake; 16-page application form taking 8–10 weeks vetting.",
         "Options & Constraints: Opt 1 ($720M/yr) breaches Treasury $250M cap threefold; Opt 2 ($2.8B, 5–7 yrs) hits 19% trainer vacancy barrier; Opt 3 ($180M/yr + $25M one-off, 5-mth pilot) fits within fiscal limit.",
         "Inline Objection to Tackle: Tech Alliance warns hardware alone risks gaming → tie to compulsory accredited modules and transit bursary.",
         "Dropped Noise: 18 June 2027 Dragon boat race at Shing Mun River.",
       ],
-    },
-  ],
   learnPoints: [
     "**0–5 min Sort & Highlight**：鎖定 P1（34% 電腦、29% 寬頻 → 38% 不合格率）、P2（3,200 空缺但 <12% 申請、16 頁表等 8–10 週），直接剔走龍舟賽噪音。",
     "**1. Opening**：1–2 句點出 48,500 劏房青年數碼排斥與向上流動受阻，以及政府目標（縮窄數碼鴻溝、尊重財政與人手限制）。",

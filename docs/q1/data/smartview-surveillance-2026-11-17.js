@@ -65,18 +65,14 @@ window.Q1_CASE_PACKS.push({
         "Criminal Investigation Department: 'In serious syndicate crimes and missing vulnerable persons, suspects or victims are rarely identified on Day 1. Keeping match trails for 180 days under inspector sign-off is essential to connect cross-district movements across 60,000 camera feeds without keeping bulky video indefinitely.'",
         "Department of Justice (Public Law Division): 'A 180-day metadata retention period is legally defensible only if search thresholds require documented reasonable suspicion of serious crime signed by an Inspector, backed by statutory destruction requirements.'",
       ],
-    },
-    {
-      id: "D",
-      title: "0–5 min Sort & Highlight Reference (Quick Check)",
-      bullets: [
+    }
+  ],
+  sortedNotes: [
         "P1: Data governance asymmetry: 31-day video ceiling vs proposed 180-day metadata match log. Without independent verification of automated deletion, a 180-day location trail generates public anxiety and privacy litigation risk.",
         "P2: Operational oversight at scale: Expanding from 18,000 to 60,000 cameras by 2028 will multiply search volumes. Restricting searches to Inspector rank or above provides crucial deterrence against misuse, but requires automated audit logging to prevent bottlenecks.",
         "Options: O1 ($6M) cripples complex investigations; O2 creates excessive privacy intrusion and legal vulnerability; O3 ($15M) balances investigative utility with audited 180-day metadata limits and independent Privacy Commissioner oversight.",
         "Noise to drop: Police Band Gala Concert in January 2027.",
       ],
-    },
-  ],
   learnPoints: [
     "**Step 1 — Sort:** Security Bureau AO → Public Surveillance Oversight Committee; P1 31-day video vs 180-day match log asymmetry and unverified activation status; P2 scale of 60,000 cameras by 2028 requiring robust Inspector-rank sign-off; drop police band concert.",
     "**Step 2 — Diagnose:** AI facial recognition enables rapid detection across 60,000 cameras, but retaining 180-day location logs without independent verification risks privacy backlash and legal challenges.",

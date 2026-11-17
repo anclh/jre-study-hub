@@ -64,18 +64,14 @@ window.Q1_CASE_PACKS.push({
         "Employers' Federation of Jade: 'Civil service family care leave must remain strictly an internal employer benefit. It should not be misconstrued as a statutory blueprint or prelude to mandating hourly family leave for the private sector, where SMEs already face severe manpower shortages.'",
         "Treasury Branch: 'All departmental relief coverage, overtime, and administrative overheads must be absorbed within existing personal emoluments baselines. No supplementary subvention will be granted.'",
       ],
-    },
-    {
-      id: "D",
-      title: "0–5 min Sort & Highlight Reference (Quick Check)",
-      bullets: [
+    }
+  ],
+  sortedNotes: [
         "P1: Operational disparity across clusters: 62,000 disciplinary staff (88% shift) and 34,000 health/social workers (72% shift) operate under rigid 85–90% manning rules where backup takes 2–3 hours. Unplanned 1–4h absences risk service gaps or delayed emergency response, unlike 79,000 desk-based staff.",
         "P2: Verification and external credibility dilemmas: Reason-only approval risks accusations of civil service privilege and pattern abuse, whereas rigid upfront documentation destroys the utility of short emergency leave. Clear boundary: policy is internal and non-statutory for private businesses.",
         "Options: O1 ($16M) eliminates abuse but adds heavy red tape and destroys emergency utility; O2 ($1.5M) triggers roster collapse and public outcry; O3 ($6.5M) balances reason-based dignity, 48h scheduled notice, emergency flexibility, and risk-based 5% audit under existing baselines.",
         "Distractor to drop: Civil Service Staff Choir showcase in February 2027.",
       ],
-    },
-  ],
   learnPoints: [
     "**Step 1 — Sort:** CSB AO → Senior Civil Service Management Committee; P1 frontline shift vulnerability and minimum manning vs desk flexibility; P2 verification standard vs abuse risk and private-sector concerns; distinguish proposal from statutory law; drop choir concert noise.",
     "**Step 2 — Diagnose:** 1–4 hour leave blocks are valuable for emergencies, but in 24/7 services where backup takes 2–3 hours, uncoordinated absences threaten essential service delivery and invite public scrutiny.",

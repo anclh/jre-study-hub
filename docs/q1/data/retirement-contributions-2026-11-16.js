@@ -29,13 +29,13 @@ window.Q1_CASE_PACKS.push({
       "Workers' Council: Workers need timely notice and a way to correct employer records. Members should never pay for a trustee's penalties.",
       "Small Employers Federation: Automated charges should pause while credible payroll disputes are reviewed. Short-term cash flow problems and repeat defaults warrant different responses.",
       "Treasury: The pilot must start within six months. Setup spending is capped at $4 million and annual recurrent spending at $7 million."
-    ] },
-    { id: "D", title: "Sorted notes (0–5 minute reference)", bullets: [
+    ] }
+  ],
+  sortedNotes: [
       "P1: 900 of 6,000 overdue accounts hold 60% of outstanding contributions. Persistent arrears warrant prioritisation.",
       "P2: The median worker notice arrives after 46 days. Payroll errors and potential fee pass-through create separate risks to workers.",
       "Compare speed, recurrent cost, proportionality and ability to recover money. O2 fits the caps and deadline. Ignore the canteen relocation."
-    ] }
-  ],
+    ],
   learnPoints: [
     "Use 900 out of 6,000 for the share of overdue accounts, and $36 million out of $60 million for the share of money outstanding.",
     "Distinguish days to notify a worker from days to credit recovered contributions to the worker's account.",
