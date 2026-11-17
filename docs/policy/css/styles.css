@@ -89,7 +89,13 @@
 }
 
 .policy-study .brand p { margin-top: var(--space-2); }
-.policy-study .header-actions { align-self: center; }
+.policy-study .header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  align-self: center;
+}
 
 .policy-study .lang-toggle,
 .policy-study .view-toggle {
@@ -245,13 +251,20 @@
 }
 
 .policy-study :is(.clear-btn, .sort select) { padding: var(--space-2) var(--space-3); }
-.policy-study .filters-toolbar { margin-top: var(--space-2); }
+.policy-study .filters-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
 
 .policy-study .filters-toggle {
   display: flex;
   align-items: center;
   gap: var(--space-2);
-  width: 100%;
+  flex: 1 1 12rem;
+  width: auto;
   padding: var(--space-2) var(--space-3);
   text-align: start;
   font-weight: 650;

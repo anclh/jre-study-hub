@@ -9,8 +9,9 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="description" content="JRE Policy Bank — 政策溫習卡（中英閃卡）同備試用香港政策溫習筆記，來源為公開政府公報" />
   <title>JRE Policy Bank · 政策溫習卡</title>
-  <link rel="stylesheet" href="css/styles.css?v=20261112b" />
+  <link rel="stylesheet" href="css/styles.css?v=20261117ref" />
   <link rel="stylesheet" href="../shared/policy-flashcards.css?v=20261111" />
+  <link rel="stylesheet" href="../shared/reference-lookup.css?v=20261117ref" />
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261111" />
   <link rel="stylesheet" href="../shell/study-theme.css?v=20261111" />
 </head>
@@ -24,6 +25,7 @@
         </div>
       </div>
       <div class="header-actions">
+        <button type="button" class="jre-ref-launch" data-jre-lookup data-jre-lookup-tab="bureaux" aria-haspopup="dialog" aria-controls="jre-ref-dialog" data-i18n="lookup">查局／詞彙</button>
         <div class="lang-toggle" role="group" aria-label="Language">
           <button type="button" data-lang="zh" class="active">中</button>
           <button type="button" data-lang="en">EN</button>
@@ -75,12 +77,17 @@
             <span class="filters-count" id="filtersCount" hidden></span>
             <span class="chev" aria-hidden="true">▾</span>
           </button>
+          <button type="button" class="clear-btn" id="clearFilters" hidden data-i18n="clearFilters">清除篩選</button>
         </div>
 
         <div class="filters" id="filtersPanel" hidden>
           <div class="filter-row">
             <div class="filter-label" data-i18n="depts">政策局／部門</div>
             <div class="chips" id="deptChips"></div>
+          </div>
+          <div class="filter-row">
+            <div class="filter-label" data-i18n="years">年份</div>
+            <div class="chips" id="yearChips"></div>
           </div>
           <div class="filter-row">
             <div class="filter-label" data-i18n="themes">政策主題</div>
@@ -132,9 +139,11 @@
 
   <script src="../shared/policy-hotface.js?v=20261103j"></script>
   <script src="../shared/policy-flashcards.js?v=20261103w"></script>
+  <script src="../shared/reference-lookup.js?v=20261117ref"></script>
   <script src="js/groups.js?v=20261112"></script>
   <script src="js/flash.js?v=20261112"></script>
-  <script src="js/app.js?v=20261117june"></script>
+  <script src="js/filters.js?v=20261117ref"></script>
+  <script src="js/app.js?v=20261117ref"></script>
   <script src="../shell/tabbar.js?v=20261109a"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     query: "",
     departments: new Set(),
     themes: new Set(),
+    years: new Set(),
     sort: "newest",
     data: null,
     filtersOpen: localStorage.getItem("jre-filters-open") === "1",
@@ -15,6 +16,8 @@
     clear: document.getElementById("clearSearch"),
     deptChips: document.getElementById("deptChips"),
     themeChips: document.getElementById("themeChips"),
+    yearChips: document.getElementById("yearChips"),
+    clearFilters: document.getElementById("clearFilters"),
     cards: document.getElementById("cards"),
     count: document.getElementById("count"),
     sort: document.getElementById("sort"),
@@ -42,6 +45,9 @@
       clear: "清除",
       depts: "政策局／部門",
       themes: "政策主題",
+      years: "年份",
+      clearFilters: "清除篩選",
+      lookup: "查局／詞彙",
       results: "結果",
       sortLabel: "排序",
       newest: "最新優先",
@@ -81,6 +87,9 @@
       clear: "Clear",
       depts: "Bureaux / departments",
       themes: "Policy themes",
+      years: "Year",
+      clearFilters: "Clear filters",
+      lookup: "Bureaux / vocab",
       results: "Results",
       sortLabel: "Sort",
       newest: "Newest first",
@@ -175,6 +184,11 @@
     };
     mk(el.deptChips, state.data.departments, state.departments);
     mk(el.themeChips, state.data.themes, state.themes);
+    if (el.yearChips) {
+      const years = (window.JrePolicySearch ? window.JrePolicySearch.uniqueYears(state.data.items) : [])
+        .map((year) => ({ id: year, zh: year, en: year }));
+      mk(el.yearChips, years, state.years);
+    }
     updateFiltersUi();
   }
 
@@ -182,7 +196,7 @@
     if (!el.filtersToggle || !el.filtersPanel) return;
     el.filtersToggle.setAttribute("aria-expanded", state.filtersOpen ? "true" : "false");
     el.filtersPanel.hidden = !state.filtersOpen;
-    const n = state.departments.size + state.themes.size;
+    const n = state.departments.size + state.themes.size + state.years.size;
     if (n > 0) {
       el.filtersCount.hidden = false;
       el.filtersCount.textContent = String(n);
@@ -190,31 +204,63 @@
       el.filtersCount.hidden = true;
       el.filtersCount.textContent = "";
     }
+    if (el.clearFilters) {
+      const active = Boolean(state.query.trim()) || n > 0;
+      el.clearFilters.hidden = !active;
+    }
   }
 
   function matches(item) {
+    if (window.JrePolicySearch) {
+      return window.JrePolicySearch.matchesItem(
+        item,
+        {
+          query: state.query,
+          departments: state.departments,
+          themes: state.themes,
+          years: state.years,
+        },
+        { deptLabel, themeLabel }
+      );
+    }
     const q = state.query.trim().toLowerCase();
     if (state.departments.size) {
-      const ok = item.departments.some((d) => state.departments.has(d));
+      const ok = (item.departments || []).some((d) => state.departments.has(d));
       if (!ok) return false;
     }
     if (state.themes.size) {
-      const ok = item.themes.some((th) => state.themes.has(th));
+      const ok = (item.themes || []).some((th) => state.themes.has(th));
       if (!ok) return false;
+    }
+    if (state.years.size) {
+      const year = String(item.date || "").slice(0, 4);
+      if (!year || !state.years.has(year)) return false;
     }
     if (!q) return true;
     const hay = [
       item.title,
       item.title_en || "",
       item.summary,
+      item.date || "",
       ...(item.interview_angles || []),
-      ...item.departments.map(deptLabel),
-      ...item.themes.map(themeLabel),
+      ...(item.departments || []).map(deptLabel),
+      ...(item.themes || []).map(themeLabel),
       item.source_name || "",
     ]
       .join(" ")
       .toLowerCase();
     return hay.includes(q);
+  }
+
+  function clearAllFilters() {
+    if (el.search) el.search.value = "";
+    state.query = "";
+    state.departments.clear();
+    state.themes.clear();
+    state.years.clear();
+    if (state.data) buildChips();
+    else updateFiltersUi();
+    render();
   }
 
   function filtered() {
@@ -312,7 +358,7 @@
     });
     window.JrePolicyGroups.render(el.cards, entries, {
       lang: state.lang,
-      expandMatches: Boolean(state.query.trim() || state.departments.size || state.themes.size),
+      expandMatches: Boolean(state.query.trim() || state.departments.size || state.themes.size || state.years.size),
     });
   }
 
@@ -374,6 +420,7 @@
 
   function render() {
     applyI18n();
+    updateFiltersUi();
     if (el.flash) el.flash.hidden = true;
     if (el.hero) el.hero.hidden = true;
     el.browse.classList.add("hidden");
@@ -429,8 +476,12 @@
     el.clear.addEventListener("click", () => {
       el.search.value = "";
       state.query = "";
+      updateFiltersUi();
       render();
     });
+    if (el.clearFilters) {
+      el.clearFilters.addEventListener("click", clearAllFilters);
+    }
 
     el.sort.addEventListener("change", () => {
       state.sort = el.sort.value;
@@ -451,6 +502,9 @@
       state.data = await polRes.json();
       buildChips();
       render();
+      if (window.JreReferenceLookup) {
+        window.JreReferenceLookup.mount({ base: "../" });
+      }
     } catch (err) {
       el.cards.innerHTML = `<div class="error">${t("loadError")}<br><small>${escapeHtml(String(err))}</small></div>`;
       el.browse.classList.remove("hidden");

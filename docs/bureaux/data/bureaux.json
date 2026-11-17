@@ -1,0 +1,731 @@
+{
+  "meta": {
+    "title": "Hong Kong Policy Bureaux lookup",
+    "title_zh": "香港特區政府決策局速查",
+    "source": "docs/bureaux/index.html",
+    "updated": "2026-11-17",
+    "count": 15,
+    "issueCount": 24,
+    "note": "Extracted from the existing Study Hub bureaux page. Do not invent bureaux. Collocation Bank is not in this hub."
+  },
+  "bureaux": [
+    {
+      "id": "hb",
+      "abbr": "HB",
+      "zh": "房屋局",
+      "en": "Housing Bureau",
+      "keywords": "房屋局 HB Housing Bureau 公屋 居屋 簡約公屋 劏房 基本住房單位 輪候時間",
+      "responsibilities": [
+        "統籌全港公私營房屋政策及推展《長遠房屋策略》（長策）。",
+        "管理公共租住房屋（PRH）、資助出售房屋（居屋 HOS、綠置居 GSH）。",
+        "規管不適切居所（劏房）及落實「基本住房單位」制度。"
+      ],
+      "policyFocus": [
+        {
+          "title": "公屋綜合輪候時間",
+          "text": "約 4.8 年，目標於 2026/27 降至約 4.5 年。"
+        },
+        {
+          "title": "簡約公屋（Light Public Housing, LPH）",
+          "text": "興建約 30,000 個單位，作為過渡性支援。"
+        },
+        {
+          "title": "立法規管劏房",
+          "text": "制定《基本住房單位條例》，要求最低面積（8 平方米）及衛生消防標準。"
+        },
+        {
+          "title": "五年供應收成期",
+          "text": "未來五年總體公營房屋建屋量約 196,000 伙（連簡約公屋）。"
+        }
+      ],
+      "departments": "房屋署 (Housing Department, HD)、香港房屋委員會 (HKHA)"
+    },
+    {
+      "id": "devb",
+      "abbr": "DEVB",
+      "zh": "發展局",
+      "en": "Development Bureau",
+      "keywords": "發展局 DEVB Development Bureau 土地 土地儲備 北部都會區 新田科技城 交椅洲人工島 市區重建 建造業 組裝合成 MiC",
+      "responsibilities": [
+        "規劃、土地供應與管理、市區更新及工務工程協調。",
+        "推展大型造地項目（北部都會區、交椅洲人工島）及土地儲備策略。",
+        "推廣建築創新（組裝合成建築法 MiC）及監督建築安全與工人培訓。"
+      ],
+      "policyFocus": [
+        {
+          "title": "北部都會區（Northern Metropolis）",
+          "text": "佔地約 30,000 公頃，規劃提供約 500,000 伙住宅及數十萬創科就業。"
+        },
+        {
+          "title": "熟地儲備",
+          "text": "未來十年預備約 2,500 公頃「熟地」，掌握土地供應主導權。"
+        },
+        {
+          "title": "建造技術創新",
+          "text": "強制指定公營項目採用組裝合成（MiC）以提速提效。"
+        }
+      ],
+      "departments": "地政總署 (LandsD)、規劃署 (PlanD)、屋宇署 (BD)、土木工程拓展署 (CEDD)、渠務署、水務署"
+    },
+    {
+      "id": "hhb",
+      "abbr": "HHB",
+      "zh": "醫務衞生局",
+      "en": "Health Bureau",
+      "keywords": "醫務衞生局 醫衞局 Health Bureau 基層醫療 醫院管理局 HA 地區康健中心 DHC 精神健康 醫療券 公營醫療改革",
+      "responsibilities": [
+        "制定公共醫療衛生政策、管理公立醫院系統及分配醫療資源。",
+        "落實《基層醫療健康藍圖》，推動「重預防、早治療、社區化」醫療體系。",
+        "推展中醫藥發展、精神健康服務協調及跨境醫療合作。"
+      ],
+      "policyFocus": [
+        {
+          "title": "深化醫療改革",
+          "text": "推廣「慢病共治計劃」，每年增設約 220,000 個醫管局家庭醫學門診名額。"
+        },
+        {
+          "title": "地區康健中心 (DHC)",
+          "text": "於全港 18 區作為基層醫療樞紐，推動慢性病初篩與同儕支援。"
+        },
+        {
+          "title": "跨境醫療銜接",
+          "text": "擴展「長者醫療券大灣區試點計劃」至大灣區內地多個核心醫療機構。"
+        },
+        {
+          "title": "精神健康應急",
+          "text": "落實校園三層應急機制及「健心先導計劃」，改善專科門診輪候。"
+        }
+      ],
+      "departments": "衞生署 (DH)、醫院管理局 (HA)、基層醫療署 (Primary Healthcare Commission)"
+    },
+    {
+      "id": "lwb",
+      "abbr": "LWB",
+      "zh": "勞工及福利局",
+      "en": "Labour and Welfare Bureau",
+      "keywords": "勞工及福利局 勞福局 LWB Labour and Welfare Bureau 安老 照顧者 社區照顧券 院舍 平台經濟 外賣員 最低工資 輸入勞工",
+      "responsibilities": [
+        "推展社會福利、扶貧、安老服務、身心障礙人士支援及家庭服務。",
+        "保障勞工權益、職業安全、就業服務及人力資源政策。"
+      ],
+      "policyFocus": [
+        {
+          "title": "安老核心策略",
+          "text": "「居家安老為核心，院舍為後援」；2027-28 年社區照顧券 (CCSV) 增至 18,000 張、院舍券 (RCSV) 增至 8,000 張。"
+        },
+        {
+          "title": "照顧者支援",
+          "text": "成立照顧者專線（182 183）、增加日間暫託名額，推展「以老護老」專項篩查。"
+        },
+        {
+          "title": "平台配送員保障",
+          "text": "研究立法為網約配送員訂立行業專屬保障底線（包括意外保險及惡劣天氣停工指引）。"
+        },
+        {
+          "title": "最低工資檢討",
+          "text": "落實「一年一檢」並引入「可加不減」法定調整方程式。"
+        }
+      ],
+      "departments": "社會福利署 (SWD)、勞工處 (Labour Department, LD)"
+    },
+    {
+      "id": "itib",
+      "abbr": "ITIB",
+      "zh": "創新科技及工業局",
+      "en": "Innovation, Technology and Industry Bureau",
+      "keywords": "創新科技及工業局 創科局 ITIB Innovation, Technology and Industry Bureau 河套 新田科技城 人工智能 AI 數碼港 科技園 新型工業化",
+      "responsibilities": [
+        "制定香港創科發展藍圖，推動「南金融、北創科」產業佈局。",
+        "推進河套深港科技創新合作區、新田科技城中試及量產轉化。",
+        "推動政府及社會數碼轉型（智慧城市、智方便、人工智能安全監管）。"
+      ],
+      "policyFocus": [
+        {
+          "title": "河套合作區香港園區",
+          "text": "落實「一河兩岸、一區兩園」，爭取跨境數據及臨床樣本安全流通。"
+        },
+        {
+          "title": "AI 產業資助與治理",
+          "text": "注資 10 億元推展「人工智能資助計劃」，設立數碼政策辦公室 (DPO) 統籌數碼政務。"
+        },
+        {
+          "title": "新型工業加速計劃 (NIFS)",
+          "text": "提供配對資助吸引生命健康、人工智能及先進製造企業落戶。"
+        }
+      ],
+      "departments": "數碼政策辦公室 (Digital Policy Office, DPO)、創新科技署 (ITC)"
+    },
+    {
+      "id": "eeb",
+      "abbr": "EEB",
+      "zh": "環境及生態局",
+      "en": "Environment and Ecology Bureau",
+      "keywords": "環境及生態局 環保局 EEB Environment and Ecology Bureau 垃圾收費 廚餘 回收 碳中和 氣候行動藍圖 電動車 綠色出行 食品安全",
+      "responsibilities": [
+        "推行環境保護、節能減碳、廢物管理以及自然生態保育。",
+        "主管食品安全、漁農業發展、環境衛生及街市管理。"
+      ],
+      "policyFocus": [
+        {
+          "title": "都市固體廢物收費 (MSW Charging)",
+          "text": "暫停強制實施，聚焦擴建「綠在區區」回收網絡及公屋智能廚餘桶。"
+        },
+        {
+          "title": "《香港資源循環藍圖 2035》",
+          "text": "中期目標將人均棄置量削減 40至45%，廢物回收率提至約 55%。"
+        },
+        {
+          "title": "綠色出行與電動車",
+          "text": "五年內將公共及私營快充樁擴增至約 5,000 個，配合 2035 年前停止燃油私家車新登記。"
+        }
+      ],
+      "departments": "環境保護署 (EPD)、食物環境衞生署 (FEHD)、漁農自然護理署 (AFCD)"
+    },
+    {
+      "id": "tlb",
+      "abbr": "TLB",
+      "zh": "運輸及物流局",
+      "en": "Transport and Logistics Bureau",
+      "keywords": "運輸及物流局 運物局 TLB Transport and Logistics Bureau 鐵路 網約車 運輸策略藍圖 智慧交通 機場三跑 港珠澳大橋 跨境口岸",
+      "responsibilities": [
+        "規劃及監管陸路交通、公共交通網絡、過海隧道及主要幹道。",
+        "發展海空運物流樞紐（香港國際機場三跑道系統、智慧港口）。"
+      ],
+      "policyFocus": [
+        {
+          "title": "《香港主要運輸基建發展藍圖》",
+          "text": "落實「三鐵三道」，包括北環線、新界東北線以支援北都發展。"
+        },
+        {
+          "title": "網約車與的士規管",
+          "text": "立法引入「的士車隊制」，並就網約車平台發牌與規管進行公眾諮詢及立法準備。"
+        },
+        {
+          "title": "智慧出行",
+          "text": "推廣自駕車測試、實時交通燈號控制及跨海口岸交通疏導機制。"
+        }
+      ],
+      "departments": "運輸署 (TD)、路政署 (HyD)、民航處 (CAD)、海事處 (MD)"
+    },
+    {
+      "id": "cstb",
+      "abbr": "CSTB",
+      "zh": "文化體育及旅遊局",
+      "en": "Culture, Sports and Tourism Bureau",
+      "keywords": "文化體育及旅遊局 文體旅局 CSTB Culture, Sports and Tourism Bureau 盛事經濟 啟德體育園 西九文化區 深度遊 無處不旅遊 一程多站",
+      "responsibilities": [
+        "促進文化藝術、創意產業、體育運動普及化及精英化。",
+        "制定旅遊業發展藍圖，推動香港作為國際旅遊及文化交流中心。"
+      ],
+      "policyFocus": [
+        {
+          "title": "啟德體育園啟用",
+          "text": "主場館（50,000 座位）落成啟用，承接國際頂級賽事與大型演藝盛事。"
+        },
+        {
+          "title": "「無處不旅遊」策略",
+          "text": "由單純購物轉向非遺、生態、海島特色深度遊及大灣區「一程多站」。"
+        },
+        {
+          "title": "盛事經濟與客源多元化",
+          "text": "設立盛事統籌小組，開拓中東及東盟穆斯林友善旅遊市場。"
+        }
+      ],
+      "departments": "康樂及文化事務署 (LCSD)、旅遊事務署 (TC)"
+    },
+    {
+      "id": "cedb",
+      "abbr": "CEDB",
+      "zh": "商務及經濟發展局",
+      "en": "Commerce and Economic Development Bureau",
+      "keywords": "商務及經濟發展局 商經局 CEDB Commerce and Economic Development Bureau 對外貿易 一帶一路 東盟 中小企支援 電子商貿 知識產權",
+      "responsibilities": [
+        "促進對外貿易投資、開拓「一帶一路」及東盟市場。",
+        "支援本地中小企業（融資擔保、電商轉型）及維護消費者權益。",
+        "保障知識產權及推動區域知識產權貿易中心定位。"
+      ],
+      "policyFocus": [
+        {
+          "title": "拓展「一帶一路」新興市場",
+          "text": "協助港商打入中東、東盟及中亞供應鏈。"
+        },
+        {
+          "title": "中小企融資擔保計劃 (SFGS)",
+          "text": "優化百分百擔保特惠貸款及還息不還本安排。"
+        },
+        {
+          "title": "電子商貿「香港好物節」",
+          "text": "協助本地品牌開拓內地龐大電商市場。"
+        }
+      ],
+      "departments": "投資推廣署 (InvestHK)、工業貿易署 (TID)、知識產權署 (IPD)"
+    },
+    {
+      "id": "fstb",
+      "abbr": "FSTB",
+      "zh": "財經事務及庫務局",
+      "en": "Financial Services and the Treasury Bureau",
+      "keywords": "財經事務及庫務局 財庫局 FSTB Financial Services and the Treasury Bureau 國際金融中心 綠色金融 家族辦公室 虛擬資產 財政赤字 庫務審批",
+      "responsibilities": [
+        "維護及鞏固香港國際金融中心地位，推動資本市場創新（證券、債券、保險、財富管理）。",
+        "統籌特區政府財政預算、公共開支控制、稅務政策及政府採購。"
+      ],
+      "policyFocus": [
+        {
+          "title": "新興金融增長點",
+          "text": "發展綠色及可持續金融、離岸人民幣樞紐、家族辦公室稅務寬減。"
+        },
+        {
+          "title": "虛擬資產監管",
+          "text": "推行穩定幣發行人監管制度及虛擬資產場外交易 (OTC) 牌照制度。"
+        },
+        {
+          "title": "財政整合策略",
+          "text": "在面對結構性財政赤字下，嚴格控制公務員編制增長及經常性開支增幅。"
+        }
+      ],
+      "departments": "稅務局 (IRD)、庫務署 (Treasury)、差餉物業估價署 (RVD)"
+    },
+    {
+      "id": "hyab",
+      "abbr": "HYAB",
+      "zh": "民政及青年事務局",
+      "en": "Home and Youth Affairs Bureau",
+      "keywords": "民政及青年事務局 民青局 HYAB Home and Youth Affairs Bureau 青年發展藍圖 關愛隊 地區治理 社區網絡 課後託管",
+      "responsibilities": [
+        "推行《青年發展藍圖》，涵蓋青年學業、就業、創業及置業（四業）。",
+        "落實完善地區治理架構，協調 18 區區議會及「關愛隊」運作。"
+      ],
+      "policyFocus": [
+        {
+          "title": "關愛隊（Care Teams）",
+          "text": "全港 18 區 452 隊關愛隊全面運作，推動基層探訪、以老護老支援及緊急應變。"
+        },
+        {
+          "title": "三萬青年職位與實習計劃",
+          "text": "兩年內提供 1 萬職位 + 1 萬實習 + 1 萬培訓，促進向上流動。"
+        },
+        {
+          "title": "青年宿舍計劃",
+          "text": "透過資助酒店轉作青年宿舍，提供平價租金並鼓勵青年參與社區服務。"
+        }
+      ],
+      "departments": "民政事務總署 (HAD)"
+    },
+    {
+      "id": "edb",
+      "abbr": "EDB",
+      "zh": "教育局",
+      "en": "Education Bureau",
+      "keywords": "教育局 EDB Education Bureau STEAM 國際教育樞紐 專上教育 幼兒教育 師資培訓 職業專才學位",
+      "responsibilities": [
+        "制定及推行涵蓋幼稚園、中小學至專上教育的整體方針。",
+        "推動 STEAM 教育、國民教育、職業專才教育（VPET）及特教支援。"
+      ],
+      "policyFocus": [
+        {
+          "title": "留學香港品牌（Study in Hong Kong）",
+          "text": "打造國際高端人才集聚高地，擴大非本地生配額及獎學金。"
+        },
+        {
+          "title": "北都大學城",
+          "text": "預留用地吸引本地及海內外頂尖大學進駐，推動產學研結合。"
+        },
+        {
+          "title": "應用科學大學 (UAS)",
+          "text": "推展應用學位課程，提升職專教育認受性。"
+        }
+      ],
+      "departments": "大學教育資助委員會 (UGC)、學生資助處 (SFO)"
+    },
+    {
+      "id": "sb",
+      "abbr": "SB",
+      "zh": "保安局",
+      "en": "Security Bureau",
+      "keywords": "保安局 SB Security Bureau 國家安全 維護國家安全條例 SNSO 口岸通關 應急管理 警務 消防 入境",
+      "responsibilities": [
+        "維護國家安全、公共秩序、反恐、出入境管制及海關執法。",
+        "管理六大紀律部隊及統籌大灣區跨境應急救援機制。"
+      ],
+      "policyFocus": [
+        {
+          "title": "落實《維護國家安全條例》(SNSO)",
+          "text": "補齊維護國家安全法制短板，確保社會穩定。"
+        },
+        {
+          "title": "智慧口岸通關",
+          "text": "皇崗口岸及新口岸推行「合作查驗、一次放行」，提升跨境人流物流速度。"
+        },
+        {
+          "title": "大灣區應急聯動",
+          "text": "制定《粵港澳應急管理合作協議》，實現跨境救援人員與裝備互通。"
+        }
+      ],
+      "departments": "香港警務處 (HKPF)、入境事務處 (ImmD)、香港海關 (C&ED)、懲教署 (CSD)、消防處 (FSD)、政府飛行服務隊 (GFS)"
+    },
+    {
+      "id": "csb",
+      "abbr": "CSB",
+      "zh": "公務員事務局",
+      "en": "Civil Service Bureau",
+      "keywords": "公務員事務局 CSB Civil Service Bureau 公務員守則 招聘 績效指標 賞罰機制 培訓 學院",
+      "responsibilities": [
+        "全權負責特區公務員隊伍的招聘、晉升、薪酬、福利、品行及紀律。",
+        "主辦聯合招聘考試 (JRE)、綜合招聘考試 (CRE) 及基本法及國安法測試 (BLNST)。"
+      ],
+      "policyFocus": [
+        {
+          "title": "更新《公務員守則》",
+          "text": "確立公務員以愛國愛港、以民為本、恪守法治為核心價值。"
+        },
+        {
+          "title": "強化賞罰機制",
+          "text": "優化「公務員事務局局長嘉許狀」，同時簡化著令工作表現持續欠佳人員退休的處理機制。"
+        },
+        {
+          "title": "公務員學院深化培訓",
+          "text": "加強國家事務、憲制秩序及應變能力培訓。"
+        }
+      ],
+      "departments": "公務員學院 (Civil Service College)、公務員培訓處"
+    },
+    {
+      "id": "cmab",
+      "abbr": "CMAB",
+      "zh": "政制及內地事務局",
+      "en": "Constitutional and Mainland Affairs Bureau",
+      "keywords": "政制及內地事務局 CMAB Constitutional and Mainland Affairs Bureau 基本法 憲法 大灣區發展辦公室 駐內地辦事處 平等機會 私隱",
+      "responsibilities": [
+        "維持特區憲制秩序、推廣《憲法》與《基本法》。",
+        "推進與中央及各省市合作，特別是粵港澳大灣區高水平融合。",
+        "推廣人權、個人資料私隱及反歧視平等機會。"
+      ],
+      "policyFocus": [
+        {
+          "title": "粵港澳大灣區發展統籌",
+          "text": "透過「粵港合作聯席會議」深化醫療、養老、金融及青年雙向流動。"
+        },
+        {
+          "title": "政制與選舉制度維護",
+          "text": "全面落實「愛國者治港」原則，確保各級選舉公平廉潔。"
+        }
+      ],
+      "departments": "粵港澳大灣區發展辦公室、選舉事務處 (REO)、駐內地辦事處 (經貿辦)"
+    }
+  ],
+  "issues": [
+    {
+      "id": "issue-childcare",
+      "briefId": "",
+      "keywords": "託兒 托兒 托管 兒童照顧 在校課託 課餘託管 childcare after school care",
+      "zh": "幼兒照顧與課後託管",
+      "en": "Childcare & after-school care",
+      "lead": "勞工及福利局",
+      "owner": "勞工及福利局：福利服務及名額規劃。",
+      "collaborate": "教育局協調學校參與及校內安排。",
+      "execute": "社會福利署、學校及地區服務機構配對名額和提供服務。",
+      "example": "建議由勞工及福利局聯同教育局，透過社會福利署、學校及地區服務機構按區盤點輪候人數和服務時段，優先在缺口較大的地區加開名額或延長服務時間。",
+      "source": "https://www.info.gov.hk/gia/general/202606/17/P2026061700451.htm"
+    },
+    {
+      "id": "issue-family-support",
+      "briefId": "fertility-family",
+      "keywords": "現金支援 新生嬰兒獎勵金 出生 津貼 生育醫療 IVF 住屋 baby bonus housing fertility",
+      "zh": "生育與家庭支援",
+      "en": "Fertility & family support",
+      "lead": "政務司副司長統籌",
+      "owner": "政務司副司長統籌：適用於現金、託兒、住屋及生育醫療並行的跨局方案。",
+      "collaborate": "勞福局管託兒，房屋局管住屋支援，醫務衞生局管生育醫療。涉及免稅額或印花稅時，加入財經事務及庫務局。",
+      "execute": "各主管部門提供及更新各自的資格、申請和轉介資料。",
+      "example": "建議由政務司副司長統籌，在保留適量新生嬰兒現金支援的同時，整合託兒、住屋及生育醫療的申請資訊，讓家庭可在同一入口查閱資格及轉介安排。",
+      "source": "https://www.info.gov.hk/gia/general/202609/30/P2026093000287.htm"
+    },
+    {
+      "id": "issue-proxy-votes",
+      "briefId": "building-proxy-votes",
+      "keywords": "授權票 代理人 業主立案法團 大廈管理 表決 電子投票 委任代表 proxy owners voting",
+      "zh": "業主大會表決與電子委任代表",
+      "en": "Owners’ meetings & proxy voting",
+      "lead": "民政及青年事務局",
+      "owner": "民政及青年事務局：負責《建築物管理條例》下的業主大會程序和委任代表制度。",
+      "collaborate": "涉及電子身分核實時，可由數字政策辦公室提供技術支援。",
+      "execute": "民政事務總署、物管公司及業主立案法團按各自職責提供支援或處理授權文書。",
+      "example": "建議由民政及青年事務局先在有意參與的屋苑試行電子委任代表，設身份核實及異議渠道，並保留紙本途徑。",
+      "source": "https://www.info.gov.hk/gia/general/202611/09/P2026110900590.htm"
+    },
+    {
+      "id": "issue-building-works",
+      "briefId": "building-repair-procurement",
+      "keywords": "圍標 維修招標 預審名單 強制驗樓 工程採購 tender bid rigging procurement",
+      "zh": "樓宇維修採購與獨立監管",
+      "en": "Building repairs & tenders",
+      "lead": "發展局",
+      "owner": "發展局：負責大型維修工程規管及招標支援改革。",
+      "collaborate": "涉及房委會屋苑工程時，房屋局按適用監管安排協作。",
+      "execute": "屋宇署負責法定規管。擬設的樓宇維修支援及服務局負責支援業主，兩者分工。",
+      "example": "建議由發展局訂立預審及評標要求，公開利益申報與主要評標準則，讓業主比較合資格標書。",
+      "source": "https://www.devb.gov.hk/tc/publications_and_press_releases/press/index_id_15625.html"
+    },
+    {
+      "id": "issue-public-works",
+      "briefId": "public-works-lift-acceptance",
+      "keywords": "瑪麗醫院 升降機 電梯 監工 工程質素 問責 lift acceptance construction",
+      "zh": "公共工程驗收與瑪麗醫院升降機",
+      "en": "Public works inspection & reporting",
+      "lead": "發展局",
+      "owner": "發展局：處理政府工程監管與驗收問題。",
+      "collaborate": "涉及醫院啟用或服務安排時，與醫務衞生局及醫院管理局協調。",
+      "execute": "建築署負責項目監督，機電工程署按其職能處理升降機安全規管。",
+      "example": "建議由發展局要求項目團隊在安裝前覆核關鍵尺寸，設重大缺陷通報門檻，並向使用部門定期交代修復進度。",
+      "source": "https://www.info.gov.hk/gia/general/202611/13/P2026111300247.htm"
+    },
+    {
+      "id": "issue-fare-concession",
+      "briefId": "two-dollar-fare-concession",
+      "keywords": "二元優惠 兩元優惠 公共交通 長車短搭 樂悠咭 長者 殘疾人士 fare concession subsidy",
+      "zh": "兩蚊兩折與必要出行負擔",
+      "en": "Concessionary fares",
+      "lead": "勞工及福利局",
+      "owner": "勞工及福利局：負責長者及合資格殘疾人士票價優惠的政策檢視。",
+      "collaborate": "運輸及物流局就交通安排協作。",
+      "execute": "運輸署及公共交通營辦商配合實施，提供路線和票價資訊。",
+      "example": "建議由勞工及福利局聯同運輸及物流局檢視補貼開支和乘客出行變化，並追蹤有跨區覆診或上班需要人士的負擔。",
+      "source": "https://www.info.gov.hk/gia/general/202603/23/P2026032300131.htm"
+    },
+    {
+      "id": "issue-housing-land",
+      "briefId": "housing-land",
+      "keywords": "公屋 居屋 簡約公屋 熟地 土地供應 4.8 PRH housing",
+      "zh": "房屋與土地",
+      "en": "Housing and land",
+      "lead": "房屋局",
+      "owner": "房屋局：規劃公營房屋供應及輪候安排。",
+      "collaborate": "發展局協調造地、規劃和基建，牽涉私宅供地時一併檢視土地時間表。",
+      "execute": "房委會及房屋署推展相關建屋及編配，地政總署按安排處理土地。",
+      "example": "建議由房屋局聯同發展局把熟地交付、建屋及入伙排成一張時間表，逐季核對實際入伙和綜合輪候時間。",
+      "source": "https://www.news.gov.hk/eng/2026/08/20260813/20260813_163217_854.html"
+    },
+    {
+      "id": "issue-healthcare",
+      "briefId": "healthcare",
+      "keywords": "精神科 地區康健中心 家庭醫學門診 primary care mental health",
+      "zh": "醫療與精神健康",
+      "en": "Healthcare and mental health",
+      "lead": "醫務衞生局",
+      "owner": "醫務衞生局：統籌基層醫療、精神健康及公營醫療資源。",
+      "collaborate": "勞工及福利局和教育局按需要銜接社區及校園支援。",
+      "execute": "基層醫療署及地區康健中心提供基層服務，醫管局負責公營診療與專科轉介，社署及營辦機構支援社區個案。",
+      "example": "建議由醫務衞生局與勞福局先完善地區篩查和轉介，再按高風險個案輪候與急症容量決定擴充次序。",
+      "source": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+    },
+    {
+      "id": "issue-elderly-care",
+      "briefId": "elderly-care",
+      "keywords": "長者 服務券 日間護理 照顧者 安老院舍 elderly voucher",
+      "zh": "人口老化與居家安老",
+      "en": "Ageing and ageing in place",
+      "lead": "勞工及福利局",
+      "owner": "勞工及福利局：決定社區照顧、日間護理及院舍服務如何分配。",
+      "collaborate": "由醫務衞生局協助銜接出院、復康及基層醫療。",
+      "execute": "社署及服務營辦者按照顧需要評估和提供服務，醫管局配合出院轉介。",
+      "example": "建議由勞工及福利局按區補充日間護理與上門照顧，並為高照顧需要個案保留院舍配額。",
+      "source": "https://www.info.gov.hk/gia/general/202611/05/P2026110500265.htm"
+    },
+    {
+      "id": "issue-youth-education",
+      "briefId": "youth-education",
+      "keywords": "畢業生 青年失業 工資補貼 全職 graduate youth employment",
+      "zh": "青年就業與教育",
+      "en": "Youth employment and education",
+      "lead": "勞工及福利局（就業補貼）",
+      "owner": "勞工及福利局（就業補貼）：按青年就業需要設計僱主參與及補貼條件。",
+      "collaborate": "教育局協調院校及職涯輔導，民政及青年事務局可協助青年外展。",
+      "execute": "參與僱主提供職位及培訓，院校及服務機構按計劃協助職位配對。",
+      "example": "建議由勞工及福利局要求僱主證明職位屬新增，並追蹤培訓完成和補貼期後留任情況。",
+      "source": "https://www.info.gov.hk/gia/general/202611/11/P2026111100304.htm"
+    },
+    {
+      "id": "issue-culture-tourism",
+      "briefId": "culture-tourism",
+      "keywords": "盛事 過夜旅客 西九 一日遊 餐飲 tourism events",
+      "zh": "旅遊、餐飲與文化",
+      "en": "Tourism, food and culture",
+      "lead": "文化體育及旅遊局",
+      "owner": "文化體育及旅遊局：制定旅遊推廣與盛事策略。",
+      "collaborate": "需要增加跨區交通或處理食肆衞生時，分別聯同運輸及物流局和環境及生態局。",
+      "execute": "旅發局推廣及開拓客源，主辦機構和商戶安排旅遊產品和活動。",
+      "example": "建議由文化體育及旅遊局透過旅發局推出可帶動過夜的文化活動路線，並以留宿晚數、旅客消費及居民影響檢討。",
+      "source": "https://www.info.gov.hk/gia/general/202611/02/P2026110200588p.htm"
+    },
+    {
+      "id": "issue-gba-integration",
+      "briefId": "gba-integration",
+      "keywords": "跨境養老 醫療券 廣東院舍 大灣區 GBA",
+      "zh": "大灣區融合（跨境安老／醫療／就業）",
+      "en": "Greater Bay Area integration",
+      "lead": "勞工及福利局（跨境安老）",
+      "owner": "勞工及福利局（跨境安老）：就題目的跨境院舍和福利銜接提出方案。",
+      "collaborate": "醫務衞生局負責醫療券和醫療銜接，政制及內地事務局支援跨境政策聯繫。",
+      "execute": "社署及參與院舍安排照顧支援，衞生署及參與醫療機構處理醫療券服務。若題目轉問青年跨境就業，按就業措施另分工。",
+      "example": "建議由勞工及福利局聯同醫務衞生局，先向有意參與長者說明醫療、福利及回港支援，再按自願原則試行。",
+      "source": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html"
+    },
+    {
+      "id": "issue-innovation-nmd",
+      "briefId": "innovation-nmd",
+      "keywords": "創科 北都 河套 新田科技城 初創 園區 中試 innovation",
+      "zh": "創科與北部都會區",
+      "en": "Innovation and the Northern Metropolis",
+      "lead": "創新科技及工業局（創科資源）",
+      "owner": "創新科技及工業局（創科資源）：訂立園區、研發和初創支援政策。",
+      "collaborate": "發展局負責北都土地與基建，產業園區發展需要對齊用地交付。",
+      "execute": "創科署、科技園公司及港深創科園等按各自計劃向企業和研究團隊提供支援。",
+      "example": "建議由創新科技及工業局把需共用設施的中試項目集中於北都，並保留全港可申請的試用及轉化資助。",
+      "source": "https://www.info.gov.hk/gia/general/202609/17/P2026091700623p.htm"
+    },
+    {
+      "id": "issue-transport-environment",
+      "briefId": "transport-environment",
+      "keywords": "都市固體廢物 垃圾收費 綠色出行 廚餘 EV waste green transport",
+      "zh": "交通與環保（垃圾收費／綠色出行）",
+      "en": "Waste charging and greener transport",
+      "lead": "環境及生態局（垃圾收費）",
+      "owner": "環境及生態局（垃圾收費）：主責減廢、回收配套及垃圾收費政策。",
+      "collaborate": "涉及小區回收或公共地方收集時，協調物管及相關場地部門。若建議涉及公共交通服務，由運輸及物流局處理交通部分。",
+      "execute": "環保署推進減廢及回收安排，食環署與收集服務承辦方按各自職能配合。",
+      "example": "建議由環境及生態局按區先檢視回收及廚餘收集覆蓋，再以人均棄置量和住戶合規成本評估收費時間表。",
+      "source": "https://www.wastereduction.gov.hk/tc"
+    },
+    {
+      "id": "issue-labour-platform",
+      "briefId": "labour-platform",
+      "keywords": "外賣員 送貨員 工傷 勞工保障 gig delivery worker",
+      "zh": "平台經濟與送貨員保障",
+      "en": "Platform work and courier protection",
+      "lead": "勞工及福利局",
+      "owner": "勞工及福利局：就配送員的勞工保障、責任分配和制度設計制訂政策。",
+      "collaborate": "按措施徵詢配送員、平台及保險業界，確定不同工作安排所需保障。",
+      "execute": "勞工處負責勞工保障及執行安排，平台按其法定或合約責任落實。",
+      "example": "建議由勞工及福利局先明訂工傷保障及申訴機制，再按實際工作控制程度檢視僱傭身份。",
+      "source": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html"
+    },
+    {
+      "id": "issue-public-open-space",
+      "briefId": "public-open-space",
+      "keywords": "海帆道 公園 廣場 海濱 公共空間 康文署 park open space",
+      "zh": "公共休憩空間管理",
+      "en": "Public open space",
+      "lead": "文化體育及旅遊局（康文場地）",
+      "owner": "文化體育及旅遊局（康文場地）：康文署公園的服務安排可由文體旅局政策範疇切入。",
+      "collaborate": "若措施關乎規劃、海濱或土地活化，則由發展局按項目負責，並與場地管理者協調。",
+      "execute": "康文署管理轄下場地，其他場地按土地及營運安排由其管理機構落實。",
+      "example": "建議先由康文署在轄下公園試行分時共用，再按使用率、投訴和無障礙使用情況調整。",
+      "source": "https://www.info.gov.hk/gia/general/202609/29/P2026092800303.htm"
+    },
+    {
+      "id": "issue-new-industrialisation",
+      "briefId": "new-industrialisation",
+      "keywords": "新型工業 智能生產線 配對資助 中試 量產 industrialisation",
+      "zh": "新型工業化與資助落地",
+      "en": "New industrialisation funding",
+      "lead": "創新科技及工業局",
+      "owner": "創新科技及工業局：設計工業資助政策及成果要求。",
+      "collaborate": "與產業及科研機構協商可查證的中試、量產及人才培訓指標。",
+      "execute": "創新科技署執行計劃，受資助企業提交進度及驗收證據。",
+      "example": "建議由創新科技及工業局把撥款與中試、量產及培訓里程碑連結，並容許有理據的延期申請。",
+      "source": "https://www.info.gov.hk/gia/general/202610/28/P2026102800363.htm"
+    },
+    {
+      "id": "issue-border-resilience",
+      "briefId": "border-resilience",
+      "keywords": "皇崗 港珠澳大橋 通關 過關 高峰 入境處 border",
+      "zh": "口岸韌性與跨境高峰應變",
+      "en": "Border resilience and peak travel",
+      "lead": "保安局（通關及秩序）",
+      "owner": "保安局（通關及秩序）：統籌口岸查驗和應急方面的香港安排。",
+      "collaborate": "運輸及物流局處理口岸接駁，跨境延時或聯合安排需與內地當局協調。",
+      "execute": "入境處處理旅客出入境，海關負責其查驗工作，警務處及運輸署按需要維持秩序及調度交通。",
+      "example": "建議由保安局聯同運輸及物流局制定分級應變門檻，按候檢時間調配人手及加密接駁班次。",
+      "source": "https://www.info.gov.hk/gia/general/202611/11/P2026111100292p.htm"
+    },
+    {
+      "id": "issue-nmd-loop-resumption",
+      "briefId": "nmd-loop-resumption",
+      "keywords": "河套 東面連接道路 收地 補償 熟地 loop resumption",
+      "zh": "河套東連收地與北都基建落地",
+      "en": "Loop link road, land resumption and infrastructure",
+      "lead": "發展局",
+      "owner": "發展局：統籌收地、工程與熟地交付。",
+      "collaborate": "與創新科技及工業局及園區營運方對齊啟用需要。",
+      "execute": "地政總署處理收地及補償，土木工程拓展署等工務部門按項目負責工程。",
+      "example": "建議由發展局訂立收地、補償安置和道路交付里程碑，並定期公布完成情況及延誤原因。",
+      "source": "https://www.info.gov.hk/gia/general/202610/29/P2026102900313.htm"
+    },
+    {
+      "id": "issue-gba-tax-gogba",
+      "briefId": "gba-tax-gogba",
+      "keywords": "老撾 預扣稅 避免雙重課稅 十五五 GoGBA tax treaty",
+      "zh": "港老稅務協定與 GoGBA『十五五』落地",
+      "en": "Hong Kong–Laos tax treaty and GoGBA",
+      "lead": "財經事務及庫務局（稅務協定）",
+      "owner": "財經事務及庫務局（稅務協定）：處理避免雙重課稅協定及稅務政策。",
+      "collaborate": "政制及內地事務局轄下的大灣區發展辦公室與貿發局等銜接 GoGBA 企業支援，兩條工作線各有主責。",
+      "execute": "稅務局提供協定執行及稅務資訊，貿發局等提供市場資訊與企業對接。",
+      "example": "建議由財經事務及庫務局交代協定的適用條件，並由大灣區支援平台把有需要的中小企轉介至合適的稅務和市場服務。",
+      "source": "https://www.info.gov.hk/gia/general/202610/29/P2026102900532.htm"
+    },
+    {
+      "id": "issue-fintech-ensemble",
+      "briefId": "fintech-ensemble",
+      "keywords": "代幣化 央行貨幣 24x7 EnsembleTX fintech HKMA",
+      "zh": "代幣化結算與數碼金融",
+      "en": "Tokenised settlement and digital finance",
+      "lead": "香港金融管理局（試行）",
+      "owner": "香港金融管理局（試行）：主導 EnsembleTX 的設計與試行安排。",
+      "collaborate": "財經事務及庫務局協調金融發展政策，參與銀行共同測試交易及風控。",
+      "execute": "金管局與參與銀行按試行框架處理測試、結算及事故通報。",
+      "example": "建議由金管局先按結算失敗率和備援演練結果擴大參與，再檢討全天候操作及流動性安排。",
+      "source": "https://www.info.gov.hk/gia/general/202611/02/P2026110200541.htm"
+    },
+    {
+      "id": "issue-ai-governance",
+      "briefId": "ai-governance",
+      "keywords": "人工智能 代理人 智方便 數字辦 私隱 審批 AI DPO",
+      "zh": "人工智能與公共服務管治",
+      "en": "AI and public service governance",
+      "lead": "創新科技及工業局（數字政府）",
+      "owner": "創新科技及工業局（數字政府）：為部門應用人工智能建立共通治理要求。",
+      "collaborate": "個別政策局保留對其審批的問責。涉及 AI 城市大腦時，按其政務司司長工作組的安排統籌。",
+      "execute": "數字政策辦公室提供指引及技術支援，使用部門負責資料質素、覆核及申訴。",
+      "example": "建議由數字政策辦公室協助部門先試行低風險查詢工具，審批個案保留人工覆核及決定紀錄。",
+      "source": "https://www.policyaddress.gov.hk/2026/tc/chapter8.html"
+    },
+    {
+      "id": "issue-newborn-screening",
+      "briefId": "newborn-screening",
+      "keywords": "初生 新生兒 罕見病 代謝病 覆檢 私家醫院 newborn screening",
+      "zh": "初生嬰兒罕見病篩查",
+      "en": "Newborn screening for rare diseases",
+      "lead": "醫務衞生局",
+      "owner": "醫務衞生局：決定篩查擴展範圍及資源配套。",
+      "collaborate": "邀請私家醫院參與，並與公營體系協定家長知情、異常結果轉介及跟進安排。",
+      "execute": "醫管局、香港兒童醫院及參與醫院按計劃負責採樣、化驗或專科跟進。",
+      "example": "建議由醫務衞生局按化驗和覆檢容量分批擴展，與參與醫院訂明通知家長及轉介時限。",
+      "source": "https://www.info.gov.hk/gia/general/202606/03/P2026060300509.htm"
+    },
+    {
+      "id": "issue-sample-daipaidong",
+      "briefId": "sample-daipaidong",
+      "keywords": "大牌檔 流動小販 熟食 牌照 衞生 油煙 hawker dai pai dong",
+      "zh": "大牌檔與小販規管（示範題）",
+      "en": "Dai pai dong and hawker regulation",
+      "lead": "環境及生態局",
+      "owner": "環境及生態局：負責食物業及小販衞生政策。",
+      "collaborate": "消防處協助消防安全要求，文化體育及旅遊局可配合飲食文化推廣。",
+      "execute": "食環署處理相關牌照及衞生執法，環保署按職能處理油煙滋擾。",
+      "example": "建議由食環署在指定地點試行分時持牌經營，按衞生抽查、阻塞及投訴情況檢討。",
+      "source": "https://www.info.gov.hk/gia/general/202605/07/P2026050700408p.htm"
+    }
+  ]
+}
