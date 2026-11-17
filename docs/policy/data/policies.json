@@ -4,7 +4,7 @@
     "title_zh": "JRE 政策資料庫",
     "description": "Interview-oriented current affairs bank sourced from public HK government and LegCo materials. Not affiliated with CS Radar.",
     "updated": "2026-11-17",
-    "sources_note": "Official Hong Kong government and LegCo materials remain primary sources where linked. SCMP-sourced cards are labelled and distinguish reported proposals from implementation. Summaries and interview angles are original study notes; recommendations are study suggestions, not government commitments.",
+    "sources_note": "Official Hong Kong government and LegCo materials remain primary sources where linked. SCMP-sourced cards cover selected policy-relevant reporting from June 2026 to 17 November 2026 and distinguish reported proposals from implementation. Summaries and interview angles are original study notes; recommendations are study suggestions, not government commitments.",
     "last_scmp_refresh": "2026-11-17"
   },
   "departments": [
@@ -494,6 +494,31 @@
       "source_name": "info.gov.hk / 教育局"
     },
     {
+      "id": "20260703-nm-bill",
+      "date": "2026-11-12",
+      "title": "《北部都會區發展條例草案》刊憲並於11月通過",
+      "title_en": "Northern Metropolis Development Bill gazetted and passed",
+      "departments": [
+        "devb",
+        "legco"
+      ],
+      "themes": [
+        "northern-metropolis",
+        "legislation",
+        "housing-land"
+      ],
+      "summary": "政府於2026年7月3日刊憲《北部都會區發展條例草案》，擬精簡規劃及土地程序、加快工程及便利產業營運，並賦權行政長官會同行政會議就六方面訂立附屬法例，包括指定範圍內改用途／放寬參數可由一般最少約九個月壓縮至約兩個月。 據《南華早報》11月12日報道，立法會完成三讀並一致通過草案，辯論約八小時。發展局局長甯漢豪表示新法為五年規劃下北都作為創科樞紐奠基。報道引議員指，這是香港首次為單一地區訂立專項法例。通過不等於工程已展開，附屬法例及個別項目仍須跟進。",
+      "interview_angles": [
+        "利：專項法例可加快土地及規劃程序，有助投資者評估北都時間表。",
+        "弊：主體法例加附屬法例授權，公眾參與期縮短後，保育、收地及監察缺口可能後移。",
+        "建議：公布附屬法例時間表、公眾參與日數，以及通過後首批「熟地」及收地補償的可核查指標。"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202607/03/P2026070300863.htm",
+      "source_name": "info.gov.hk 新聞公報",
+      "last_updated": "2026-11-12",
+      "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3374173/hong-kong-passes-bill-speed-development-northern-metropolis-megaproject"
+    },
+    {
       "id": "20261111-smart-traffic-fund-ai-projects",
       "date": "2026-11-11",
       "title": "智慧交通基金資助臨時交通規劃及巴士模擬訓練",
@@ -573,6 +598,29 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100043.htm",
       "source_name": "info.gov.hk / 環境及生態局"
+    },
+    {
+      "id": "20261111-talent-scheme-no-caps",
+      "date": "2026-11-11",
+      "title": "勞福局：暫不調整搶人才計劃，亦無上限非本地畢業生求職",
+      "title_en": "No cap on talent schemes or non-local graduates seeking jobs",
+      "departments": [
+        "lwb",
+        "edb"
+      ],
+      "themes": [
+        "labour",
+        "education",
+        "youth"
+      ],
+      "summary": "據《南華早報》11月11日報道，勞工及福利局局長孫玉菡在立法會表示，暫無計劃大幅調整搶人才政策，亦不會為非本地畢業生在港求職設上限。他指勞動人口於2018年見頂、人口老化，仍需輸入人才；由2022年施政報告起推出高才通等途徑，大多數高才通簽證持有人來自內地。孫玉菡稱各人才入境計劃已有逾32萬人抵港，本地畢業生仍具「天然優勢」。工聯會議員指約25,000名非本地畢業生經IANG留港求職，增加非創科本地生壓力。孫玉菡指IANG給予兩年求職期，獲聘才續簽證，並指商業及專業服務仍需大量人手。當局正與公營大學籌備2028-29至2030-31三年期規劃，對齊創科與產業人力。此為立法會答問報道，並非正式修訂計劃名額。",
+      "interview_angles": [
+        "利：人口老化下輸入人才可補支柱行業人手，IANG須獲聘才續簽證。",
+        "弊：若本地非創科畢業生失業上升，而輸入規模沒有行業配額，公眾會質疑「本地優先」是否落空。",
+        "建議：按行業公布本地生與IANG／高才通的就業率及起薪，三年期學額規劃對齊短缺工種，並訂檢討觸發指標。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/article/3374092/hong-kong-rules-out-talent-scheme-caps-despite-squeeze-jobs-local-graduates",
+      "source_name": "South China Morning Post / news report"
     },
     {
       "id": "20261110-dripping-aircon-enforcement",
@@ -1514,6 +1562,27 @@
       "source_name": "info.gov.hk 新聞公報"
     },
     {
+      "id": "20261029-peak-lighting-scrapped",
+      "date": "2026-10-29",
+      "title": "山頂盧吉道夏力道燈光計劃因反對叫停",
+      "title_en": "Peak trail lighting project scrapped after public outcry",
+      "departments": [
+        "cstb"
+      ],
+      "themes": [
+        "culture-tourism",
+        "governance"
+      ],
+      "summary": "據《南華早報》10月29日報道，文化體育及旅遊局與旅發局向中西區區議會提交文件，評估縮減方案後認為無迫切需要推行山頂步道裝飾燈光，承諾盡快恢復原貌。原計劃於盧吉道、夏力道設小規模柔和低眩光裝置，試行12個月，每晚7時至10時，用以取代「幻彩詠香江」並配合冬季旅遊。反對後曾由10個點減至7個、樹上燈由52減至24、展示縮至明年2月底。局長羅淑佩當晚表示經考慮後決定現階段不推行；裝置未啟用，花費有限，燈具可轉至其他光影項目。局方稱4月起諮詢區議會，5月至9月去信居民，10月27日再與區議員落場。",
+      "interview_angles": [
+        "利：未啟用即停，花費有限，顯示可因地區反對調整旅遊裝置。",
+        "弊：諮詢期間已開始安裝，縮減方案仍未消除居民與樹木專家反對，程序先於共識。",
+        "建議：旅遊裝置未獲區議會同意前不施工；停工後公布已用金額、復原限期及設備重用情況。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3372608/hong-kong-scraps-lighting-attraction-peak-after-public-outcry",
+      "source_name": "South China Morning Post / news report"
+    },
+    {
       "id": "20261028-800650",
       "date": "2026-10-28",
       "title": "政務司司長主持皇崗口岸港方口岸區跨部門工作小組會議",
@@ -1730,6 +1799,28 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600319.htm",
       "source_name": "info.gov.hk 新聞公報"
+    },
+    {
+      "id": "20261026-tuen-mun-pulp-cardboard",
+      "date": "2026-10-26",
+      "title": "屯門紙漿廠全面本地製漿後，執紙皮收購價受壓",
+      "title_en": "Tuen Mun pulp mill shift squeezes cardboard collectors’ rates",
+      "departments": [
+        "eeb"
+      ],
+      "themes": [
+        "environment-climate",
+        "poverty-welfare",
+        "labour"
+      ],
+      "summary": "據《南華早報》10月26日報道，10月1日起廢紙改由屯門環保園洲至紙業紙漿廠處理，減少依賴出口。廠方最終每年處理約50萬至72萬公噸，可收紙種擴至紙盒、紙袋、蛋托及包裝紙。報道引消息人士指，2020年底內地禁進口廢紙後香港曾保留部分出口配額；9月業者獲通知10月配額減至零，2020年底起的每月補貼亦結束。環保署規定達標廢紙前線最低價每公斤0.65元，廠方向回收商收購不少於每公噸1,295.51元。有收集者稱只收到每公斤0.5至0.6元：粉嶺鄺女士一日約30元，另一位潘女士由數年前每公斤1元、一日最多約200元，跌至約70元。杏花邨打包廠稱本月收紙量跌最多四成，至今蝕約25萬元，9月底裁5人。環保署稱1月至9月回收逾41萬公噸，與去年同期相若；原先3億元預算現用於紙漿廠服務費以維持價格及回收量。民間2023年估算全港約2,791至3,456名拾荒者。圖表顯示都市固體廢物中回收廢紙由2014年947,900公噸，降至2020年450,000，2024年586,100。",
+      "interview_angles": [
+        "利：本地製漿減少出口依賴，雜紙可回收，有助循環經濟。",
+        "弊：補貼與出口配額同時停止，街舖運輸成本上升，指定最低價未必落到執紙者。",
+        "建議：抽查街舖實付是否達到每公斤0.65元，分開公布廠方收紙量與前線實收價，並以回收量及執紙者收入一併檢討過渡期。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/health-environment/article/3372130/how-will-hong-kongs-cardboard-scavengers-survive-prices-drop-after-new-policy",
+      "source_name": "South China Morning Post / news report"
     },
     {
       "id": "20261025-500364",
@@ -3816,29 +3907,6 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202607/11/P2026071100610.htm",
       "source_name": "info.gov.hk / Labour and Welfare Bureau"
-    },
-    {
-      "id": "20260703-nm-bill",
-      "date": "2026-07-03",
-      "title": "《北部都會區發展條例草案》刊憲",
-      "title_en": "Northern Metropolis Development Bill gazetted",
-      "departments": [
-        "devb",
-        "legco"
-      ],
-      "themes": [
-        "northern-metropolis",
-        "legislation",
-        "housing-land"
-      ],
-      "summary": "政府刊憲《北部都會區發展條例草案》，擬進一步精簡規劃及土地程序、加快工程及便利產業營運，並於7月8日提交立法會首讀及二讀。草案劃定適用範圍，並賦權行政長官會同行政會議就六方面訂立附屬法例，包括精簡城規（指定範圍內改用途／放寬參數程序可由一般最少約九個月壓縮至約兩個月）、加快收地補償、鼓勵創新建造、精簡建築噪音許可、便利及規管跨境生產要素流動，以及為指定範圍設立法定機構。政府已提交首批附屬法例擬稿供議員預覽，並指經三月至五月公眾諮詢後社會大致支持，爭取年內通過。",
-      "interview_angles": [
-        "以主體法例＋附屬法例授權，如何在發展速度與立法會監察之間取得平衡？",
-        "精簡城規至約兩個月，公眾參與三星期是否足夠？保育地帶如何獲豁免？",
-        "跨境人員「白名單」、數據及設備流動措施，對河套創科園運作有何關鍵作用？"
-      ],
-      "source_url": "https://www.info.gov.hk/gia/general/202607/03/P2026070300863.htm",
-      "source_name": "info.gov.hk 新聞公報"
     },
     {
       "id": "20260616-gd-rcs-29",
