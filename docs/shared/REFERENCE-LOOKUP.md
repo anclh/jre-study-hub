@@ -2,21 +2,20 @@
 
 Reusable in-page drawer for **15 Policy Bureaux** and the hub **vocab lexicon**. Policy Bank owns this file. Q1 / Q2 / vocab pages were **not** edited in Stage 1.
 
-Live stamp: **`?v=20261117ref`**
+Live stamp: **`?v=20261117b`**
 
 ## URLs (GitHub Pages, `docs/` root)
 
 | Asset | URL from a `docs/q1/` or `docs/q2/` page |
 |---|---|
 | CSS | `../shared/reference-lookup.css?v=20261117ref` |
-| JS | `../shared/reference-lookup.js?v=20261117ref` |
+| JS | `../shared/reference-lookup.js?v=20261117b` |
 | Bureau JSON | `../bureaux/data/bureaux.json` (15 bureaux + 24 issue cards, extracted from `docs/bureaux/index.html`) |
 | Vocab JSON | `../vocab/data/lexicon.json` (existing hub lexicon; do not copy) |
 | Full bureaux page | `../bureaux/` |
 | Full vocab page | `../vocab/` |
-| Collocation Bank | `https://anclh.github.io/collocation-bank/` (separate app; **not** in this hub) |
 
-Policy browse also loads the same assets as a live host: `https://anclh.github.io/jre-study-hub/policy/?v=20261117ref`
+Policy, Q1 and Q2 already load this drawer. Policy page: `https://anclh.github.io/jre-study-hub/policy/?v=20261117b`
 
 ## Minimal host snippet (Q1 / Q2)
 
@@ -24,7 +23,7 @@ Do **not** wrap the drill textarea in this markup. Opening and closing the drawe
 
 ```html
 <link rel="stylesheet" href="../shared/reference-lookup.css?v=20261117ref" />
-<script src="../shared/reference-lookup.js?v=20261117ref"></script>
+<script src="../shared/reference-lookup.js?v=20261117b"></script>
 <button type="button"
         class="jre-ref-launch"
         data-jre-lookup
@@ -47,7 +46,6 @@ JreReferenceLookup.mount({
   base: "../",
   lang: "zh",                 // optional; else <html lang>
   defaultTab: "bureaux",      // or "vocab"
-  collocationUrl: "https://anclh.github.io/collocation-bank/",
   bureauxUrl: "../bureaux/data/bureaux.json",  // optional override
   vocabUrl: "../vocab/data/lexicon.json"
 });
@@ -66,7 +64,7 @@ Mobile: bottom sheet, inner pane scrolls. Desktop: right-hand drawer. `z-index` 
 
 - **Bureaux:** 15 HKSAR policy bureaux from the existing hub page. Issue cards reuse the same page’s 「按議題搵局」 copy. Unknown bureau is omitted, never invented.
 - **Vocab:** live fetch of hub `lexicon.json`. Results capped at 40 rows in the drawer (status shows matched total).
-- **Collocation Bank:** **not** shipped in this hub (see README). Same GitHub-Pages host, different app. Stage 1 does **not** fetch or iframe it. The drawer footer is a labelled external link plus a one-line note. Do not change the Collocation Bank app.
+- Drawer footer links only to the hub bureaux page and vocab bank.
 - Drawer close does not navigate, does not reset host forms, and does not touch checklist / 我的生字 keys.
 
 ## Out of scope (later owners)

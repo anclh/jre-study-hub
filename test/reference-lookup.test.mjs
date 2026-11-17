@@ -29,10 +29,11 @@ test("bureau search finds 託兒 under HYAB / LWB issue, not an invented bureau"
   assert.equal(housing[0].id, "hb");
 });
 
-test("vocab search uses hub lexicon and collocation stays an external URL", () => {
+test("vocab search uses hub lexicon and the drawer has no collocation link", () => {
   const hits = api.filterVocab(lexicon, "alleviate");
   assert.ok(hits.some((row) => row.term === "alleviate"));
-  assert.equal(api.COLLOCATION_URL, "https://anclh.github.io/collocation-bank/");
+  assert.equal(api.COLLOCATION_URL, undefined);
+  assert.equal(src.toLowerCase().includes("collocation"), false);
   assert.equal(api.joinUrl("../", "bureaux/data/bureaux.json"), "../bureaux/data/bureaux.json");
 });
 

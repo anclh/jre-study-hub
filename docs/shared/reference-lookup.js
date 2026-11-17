@@ -1,6 +1,5 @@
 (() => {
   const root = typeof globalThis !== "undefined" ? globalThis : window;
-  const COLLOCATION_URL = "https://anclh.github.io/collocation-bank/";
   const copy = {
     zh: {
       title: "查局／詞彙",
@@ -21,8 +20,6 @@
       collab: "協作",
       execute: "執行",
       example: "答題例句",
-      collocation: "Collocation Bank（獨立應用）",
-      collocationNote: "搭配詞庫不在 Study Hub 內，亦無跨源嵌入。需要時另開該應用。",
       fullBureaux: "完整決策局頁",
       fullVocab: "詞彙庫",
       shown: "顯示",
@@ -47,8 +44,6 @@
       collab: "Collaborate",
       execute: "Deliver",
       example: "Answer line",
-      collocation: "Collocation Bank (separate app)",
-      collocationNote: "Collocations are not in this hub and are not embedded. Open the separate app if needed.",
       fullBureaux: "Full bureaux page",
       fullVocab: "Vocab bank",
       shown: "Showing",
@@ -255,9 +250,7 @@
     const foot = dialog.querySelector("#jre-ref-foot");
     foot.innerHTML = `
       <a href="${escapeHtml(joinUrl(base, "bureaux/"))}">${escapeHtml(t(lang, "fullBureaux"))}</a>
-      <a href="${escapeHtml(joinUrl(base, "vocab/"))}">${escapeHtml(t(lang, "fullVocab"))}</a>
-      <a href="${escapeHtml(state.options.collocationUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t(lang, "collocation"))} ↗</a>
-      <p class="jre-ref-note">${escapeHtml(t(lang, "collocationNote"))}</p>`;
+      <a href="${escapeHtml(joinUrl(base, "vocab/"))}">${escapeHtml(t(lang, "fullVocab"))}</a>`;
   }
 
   async function loadBureaux() {
@@ -391,8 +384,7 @@
   }
 
   const api = {
-    version: "20261117ref",
-    COLLOCATION_URL,
+    version: "20261117b",
     joinUrl,
     matchesHay,
     filterBureaux,
@@ -403,7 +395,6 @@
       state.options = Object.assign(
         {
           base: "../",
-          collocationUrl: COLLOCATION_URL,
           defaultTab: "bureaux",
         },
         options || {}
