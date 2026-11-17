@@ -439,7 +439,7 @@
 
   function renderDrill(d) {
     current = d;
-    localStorage.setItem(STORAGE_DRILL, d.id);
+    try { localStorage.setItem(STORAGE_DRILL, d.id); } catch {}
     $("#drillSelect").value = d.id;
     const chips = [`<span class="chip">${escapeHtml(d.title_zh)}</span>`];
     if (d.sample_answer) chips.push('<span class="chip chip-sample">有範文</span>');
@@ -508,7 +508,8 @@
       toast("題庫未載入 — 用大牌檔 sample");
     }
     fillSelect();
-    const saved = localStorage.getItem(STORAGE_DRILL);
+    let saved = null;
+    try { saved = localStorage.getItem(STORAGE_DRILL); } catch {}
     const pick = drills.find((d) => d.id === saved) || drills[0];
     renderDrill(pick);
     renderBriefs();
@@ -637,7 +638,7 @@
   }
 
   function saveFlashMarks() {
-    localStorage.setItem(STORAGE_FLASH, JSON.stringify(flashMarks));
+    try { localStorage.setItem(STORAGE_FLASH, JSON.stringify(flashMarks)); } catch {}
   }
 
   function renderFlash() {
@@ -766,6 +767,7 @@
   $("#flashKnown")?.addEventListener("click", () => markFlash("known"));
   $("#flashUnknown")?.addEventListener("click", () => markFlash("unknown"));
   document.addEventListener("keydown", (e) => {
+    if (window.JreReferenceLookup?.isOpen()) return;
     const overlay = $("#flashOverlay");
     if (!overlay || overlay.hidden) return;
     if (e.key === "Escape") {
@@ -862,7 +864,11 @@
   paintTimer();
 
   const answer = $("#answer");
-  answer.value = localStorage.getItem(STORAGE_ANSWER) || "";
+  try {
+    answer.value = localStorage.getItem(STORAGE_ANSWER) || "";
+  } catch {
+    toast("未能讀取草稿 / Draft storage unavailable");
+  }
   const countEl = $("#wordCount");
   function countChars(t) {
     return (t || "").replace(/\s/g, "").length;
@@ -871,7 +877,11 @@
     countEl.textContent = `${countChars(answer.value)} 字`;
   }
   answer.addEventListener("input", () => {
-    localStorage.setItem(STORAGE_ANSWER, answer.value);
+    try {
+      localStorage.setItem(STORAGE_ANSWER, answer.value);
+    } catch {
+      toast("草稿未儲存；請複製答卷 / Draft not saved; copy your answer");
+    }
     syncCount();
   });
   syncCount();
@@ -889,11 +899,23 @@
 
   const checks = [...document.querySelectorAll("#checklist input")];
   const scoreEl = $("#markScore");
-  function loadMarks() {
-    let saved = {};
+  const MARK_KEYS = checks.map((c) => c.dataset.k);
+  function readStoredMarks() {
+    let parsed = {};
     try {
-      saved = JSON.parse(localStorage.getItem(STORAGE_MARKS) || "{}");
-    } catch {}
+      parsed = JSON.parse(localStorage.getItem(STORAGE_MARKS) || "{}") || {};
+    } catch {
+      return {};
+    }
+    if (typeof parsed !== "object" || Array.isArray(parsed)) return {};
+    const out = {};
+    MARK_KEYS.forEach((k) => {
+      if (typeof parsed[k] === "boolean") out[k] = parsed[k];
+    });
+    return out;
+  }
+  function loadMarks() {
+    const saved = readStoredMarks();
     checks.forEach((c) => {
       c.checked = !!saved[c.dataset.k];
     });
@@ -904,7 +926,11 @@
     checks.forEach((c) => {
       o[c.dataset.k] = c.checked;
     });
-    localStorage.setItem(STORAGE_MARKS, JSON.stringify(o));
+    try {
+      localStorage.setItem(STORAGE_MARKS, JSON.stringify(o));
+    } catch {
+      toast("自評未儲存；請匯出備份 / Checklist not saved; export a backup");
+    }
     scoreEl.textContent = `${checks.filter((c) => c.checked).length} / ${checks.length}`;
   }
   checks.forEach((c) => c.addEventListener("change", saveMarks));
@@ -915,6 +941,23 @@
     saveMarks();
   };
   loadMarks();
+  if (window.JreQ2Backup) {
+    JreQ2Backup.mount({
+      root: "#q2-backup",
+      kind: "q2-checklist",
+      key: STORAGE_MARKS,
+      get: () =>
+        JreQ2Backup.merge(
+          "q2-checklist",
+          readStoredMarks(),
+          Object.fromEntries(checks.map((c) => [c.dataset.k, c.checked]))
+        ),
+      refresh: loadMarks,
+    });
+  }
+  if (window.JreReferenceLookup) {
+    JreReferenceLookup.mount({ base: "../" });
+  }
 
 
   loadBriefs();

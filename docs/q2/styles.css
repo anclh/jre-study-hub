@@ -586,3 +586,20 @@ textarea {
 .flash-sample summary { color: var(--accent); font-weight: 700; cursor: pointer; }
 .flash-sample summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .flash-sample-text { white-space: pre-wrap; line-height: 1.75; margin-top: var(--space-3); overflow-wrap: anywhere; user-select: text; }
+
+/* Header lookup button alignment on desktop and narrow viewports. */
+.exam-screen .header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+/* Manual backup controls remain usable on narrow screens. */
+.backup-tools { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.backup-tools p { overflow-wrap: anywhere; font-size: .875rem; color: var(--muted); margin: 0 0 var(--space-2); }
+.backup-tools label.btn { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; max-width: 100%; cursor: pointer; }
+.backup-tools input[type="file"] { max-width: 100%; min-width: 0; font: inherit; }
+.backup-tools [data-backup-status] { margin-top: var(--space-2); margin-bottom: 0; color: var(--text); font-weight: 600; }
+.backup-tools [data-backup-status]:empty { display: none; }

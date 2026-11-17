@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261111" />
   <link rel="stylesheet" href="../shell/study-theme.css?v=20261111" />
   <link rel="stylesheet" href="../shared/exam-workspace.css?v=20261111" />
-  <link rel="stylesheet" href="styles.css?v=20261116" />
+  <link rel="stylesheet" href="styles.css?v=20261117d" />
+  <link rel="stylesheet" href="../shared/reference-lookup.css?v=20261117ref" />
 </head>
 <body class="study-screen exam-screen">
   <header class="app-header">
@@ -22,6 +23,7 @@
           <p>議題思維、題庫與計時練習</p>
         </div>
       </div>
+      <button type="button" class="jre-ref-launch" data-jre-lookup data-jre-lookup-tab="bureaux" aria-haspopup="dialog" aria-controls="jre-ref-dialog">查局／詞彙</button>
     </div>
     <nav class="subnav" id="subnav" aria-label="Q2 sections">
       <button type="button" data-panel="structure" class="active">結構</button>
@@ -292,6 +294,7 @@
                 <button type="button" class="btn" id="btnStart80">80 分</button>
                 <button type="button" class="btn" id="btnPause">暫停</button>
                 <button type="button" class="btn" id="btnReset">重設</button>
+                <button type="button" class="jre-ref-launch" data-jre-lookup data-jre-lookup-tab="bureaux" aria-haspopup="dialog" aria-controls="jre-ref-dialog">查局／詞彙</button>
               </div>
             </div>
             <label class="sr-only" for="answer">答卷</label>
@@ -333,6 +336,15 @@
         </ul>
         <p class="score" id="markScore">0 / 7</p>
         <button type="button" class="btn" id="btnClearMarks">清自評</button>
+        <div id="q2-backup" class="backup-tools">
+          <p>手動備份 / Manual backup：下載後自行保存；轉裝置須匯入檔案，並非自動同步。<br />JSON v1（完整還原 / full restore）或 CSV v1（七項自評 / seven checklist items）；上限 2 MB。匯入會合併，保留現有勾選。</p>
+          <div class="toolbar">
+            <button type="button" class="btn" data-backup-export="json">匯出 JSON v1</button>
+            <button type="button" class="btn" data-backup-export="csv">匯出 CSV v1</button>
+            <label class="btn">合併匯入 / Import JSON／CSV <input type="file" accept=".json,.csv,application/json,text/csv" aria-label="合併匯入 Q2 備份 / Import Q2 backup" /></label>
+          </div>
+          <p role="status" aria-live="polite" data-backup-status></p>
+        </div>
       </div>
     </section>
 
@@ -371,7 +383,10 @@
     </div>
   </div>
   <div class="toast" id="toast" role="status"></div>
-  <script src="app.js?v=20261117b"></script>
+  <script src="backup.js?v=20261117d"></script>
+  <script src="../shared/reference-lookup.js?v=20261117ref"></script>
+  <script>JreReferenceLookup.mount({base: "../"});</script>
+  <script src="app.js?v=20261117d"></script>
   <script src="../phrases/app.js?v=20261108b"></script>
   <script src="../shell/tabbar.js?v=20261109a"></script>
 </body>
