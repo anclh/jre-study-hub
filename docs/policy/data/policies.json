@@ -3,8 +3,9 @@
     "title": "JRE Policy Bank",
     "title_zh": "JRE 政策資料庫",
     "description": "Interview-oriented current affairs bank sourced from public HK government and LegCo materials. Not affiliated with CS Radar.",
-    "updated": "2026-11-16",
-    "sources_note": "Official Hong Kong government and LegCo materials are primary sources. Selected cards also link to SCMP reporting. Summaries and interview angles are original study notes."
+    "updated": "2026-11-17",
+    "sources_note": "Official Hong Kong government and LegCo materials remain primary sources where linked. SCMP-sourced cards are labelled and distinguish reported proposals from implementation. Summaries and interview angles are original study notes; recommendations are study suggestions, not government commitments.",
+    "last_scmp_refresh": "2026-11-17"
   },
   "departments": [
     {
@@ -136,6 +137,11 @@
       "id": "fehd",
       "zh": "食物環境衞生署",
       "en": "Food and Environmental Hygiene Department"
+    },
+    {
+      "id": "csb",
+      "zh": "公務員事務局",
+      "en": "Civil Service Bureau"
     }
   ],
   "themes": [
@@ -257,6 +263,27 @@
       "source_name": "info.gov.hk / 財政司司長辦公室"
     },
     {
+      "id": "20261116-piraeus-green-shipping",
+      "date": "2026-11-16",
+      "title": "香港與比雷埃夫斯港建立綠色航運走廊",
+      "title_en": "Hong Kong–Piraeus green shipping corridor",
+      "departments": [
+        "tlb"
+      ],
+      "themes": [
+        "transport-logistics",
+        "environment-climate"
+      ],
+      "summary": "據《南華早報》11月16日報道，行政長官宣布香港與希臘比雷埃夫斯港建立綠色航運走廊，並成立專責小組研究航運綠色燃料交易平台。政府亦擬與洋浦及湛江港口合作，連接內地燃料供應與國際市場。相關五年規劃目標為2030年前建立五條綠色能源走廊，並使7%香港註冊船舶使用綠色航運燃料；目標不等於已達成。",
+      "interview_angles": [
+        "利：把燃料供應、加注及交易結合，可吸引航運服務及減碳投資；應以實際加注量與船舶使用率驗證。",
+        "弊：綠色燃料成本、供應穩定及不同認證標準可能阻礙採用；航運走廊與能源供應走廊須分清。",
+        "建議：先以指定航線試行長期供應合約及全生命周期碳核證，公布燃料價格差、使用量與減排成效，再逐步擴大。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374617/hong-kong-embarks-green-shipping-collaboration-greek-port",
+      "source_name": "South China Morning Post / news report"
+    },
+    {
       "id": "20261114-building-proxy-reform",
       "date": "2026-11-14",
       "title": "業主大會授權票改革：加強核查及籌備電子授權",
@@ -278,6 +305,28 @@
       "source_url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900590.htm",
       "source_name": "info.gov.hk / 民政及青年事務局",
       "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3374434/hong-kong-trial-electronic-proxy-voting-platform-curb-bid-rigging-estates"
+    },
+    {
+      "id": "20261114-smartview-facial-recognition",
+      "date": "2026-11-14",
+      "title": "銳眼計劃擬啟用AI人臉識別：治安效益與私隱保障",
+      "title_en": "SmartView facial recognition: policing and privacy safeguards",
+      "departments": [
+        "sb"
+      ],
+      "themes": [
+        "digital-gov",
+        "governance",
+        "fintech-ai"
+      ],
+      "summary": "據《南華早報》11月14日報道，警務處處長表示將於11月16日啟用銳眼AI人臉識別，支援追查疑犯及尋找失蹤人士。報道指搜索須由督察或以上批准；影片保存不超過31日，人臉識別所產生的出現時間及地點等資料擬保存最多180日。銳眼目標為2028年前安裝六萬部鏡頭。此卡記錄公布安排，並未另行核實啟用完成情況。",
+      "interview_angles": [
+        "利：加快翻查影像及尋找失蹤長者，亦可能提升破案效率；應公布尋回時間和案件成效。",
+        "弊：誤認、用途擴張及長期追蹤風險，可能損害私隱與公眾信任；辨識命中不應直接視作定罪證據。",
+        "建議：限定查詢目的，保留審批及存取紀錄，安排人工覆核和獨立審核，公布誤配率並定期檢視180日保留期的必要性。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3374436/hong-kong-police-activate-ai-facial-recognition-across-surveillance-network",
+      "source_name": "South China Morning Post / news report"
     },
     {
       "id": "20261113-hsk-logistics-market-interest",
@@ -558,13 +607,16 @@
         "transport-logistics",
         "finance"
       ],
-      "summary": "政府與港鐵簽訂北環綫全項目協議，主綫與接通深圳皇崗口岸的支綫均進入建造階段，目標在2034年或之前同步通車。政府估算全綫資本開支約862億港元（2025年7月價格），較原估算低28%。第二部分採用「鐵路加物業」模式，在指定用地按有鐵路基礎評估的十足市值地價中扣除固定款額，支援工程融資。",
+      "summary": "政府與港鐵簽訂北環綫全項目協議，主綫與接通深圳皇崗口岸的支綫均進入建造階段，目標在2034年或之前同步通車。政府估算全綫資本開支約862億港元（2025年7月價格），較原估算低28%。第二部分採用「鐵路加物業」模式，在指定用地按有鐵路基礎評估的十足市值地價中扣除固定款額，支援工程融資。 據《南華早報》11月14日跟進，港鐵表示新增八幅用地雖支援項目，但物業回款周期長，仍有現金流壓力，正研究發債及貸款；獲批土地不等於即時現金收入。",
       "interview_angles": [
-        "如何定期交代成本、工期及地價扣減，讓公眾看清項目承擔？",
-        "若住宅入伙或園區啟用早於通車，如何安排接駁交通，並以實際轉乘時間衡量成效？"
+        "利：土地增值可支援鐵路建設，但長期項目回報與短期現金流須分開評估。",
+        "弊：樓市疲弱或售樓延誤可能擴大融資缺口，增加借貸成本與公共財政風險。",
+        "建議：公開年度現金流及利率、樓價壓力測試，分階段安排融資，交代政府承擔上限及工期影響。"
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000476.htm",
-      "source_name": "info.gov.hk / 運輸及物流局"
+      "source_name": "info.gov.hk / 運輸及物流局",
+      "scmp_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374441/hong-kong-rail-giant-warns-cash-crunch-despite-northern-metropolis-land-grant",
+      "last_updated": "2026-11-14"
     },
     {
       "id": "20261110-northern-metropolis-bank-capital",
@@ -587,6 +639,28 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000273.htm",
       "source_name": "info.gov.hk / 香港金融管理局"
+    },
+    {
+      "id": "20261110-civil-service-family-care-leave",
+      "date": "2026-11-10",
+      "title": "公務員家庭關顧假擬於2027年推行：每年12小時",
+      "title_en": "Civil service family care leave planned for 2027",
+      "departments": [
+        "csb"
+      ],
+      "themes": [
+        "labour",
+        "elderly-care",
+        "governance"
+      ],
+      "summary": "據《南華早報》11月10日報道，政府擬由2027年1月起給予公務員每年最多12小時家庭關顧假，每次申請一至四小時，涵蓋陪家人覆診、照顧患病親屬、子女學校活動及家庭突發事情。一般只須提供理由，毋須證明；緊急情況可先獲上司批准後補交申請，合理懷疑濫用時可要求文件。詳細安排仍須諮詢職方，措施並非私營僱員的法定假期。",
+      "interview_angles": [
+        "利：短時數假期切合覆診和照顧需要，有助工作家庭平衡及挽留人才。",
+        "弊：前線輪班和人手緊張部門較難調配，亦須處理批核不一致及濫用風險；不宜直接推斷可提升生育率。",
+        "建議：訂立跨部門批核指引及緊急替補安排，以使用率、拒批理由、服務輪候時間及員工滿意度檢討，兼顧照顧者需要與公共服務。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/politics/article/3373895/hong-kong-civil-servants-be-given-12-hours-family-care-leave-year",
+      "source_name": "South China Morning Post / news report"
     },
     {
       "id": "20261109-robots-community-pilot",
@@ -652,6 +726,26 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900290.htm",
       "source_name": "info.gov.hk / 創新科技及工業局"
+    },
+    {
+      "id": "20261109-legco-motion-research",
+      "date": "2026-11-09",
+      "title": "立法會擬要求無立法效力議案附研究及建議",
+      "title_en": "Research requirement for non-binding LegCo motions",
+      "departments": [
+        "legco"
+      ],
+      "themes": [
+        "governance"
+      ],
+      "summary": "據《南華早報》11月9日報道，立法會主席表示由2027年起，議員提出無立法效力的議案時，須提交相關研究結果及建議，讓政府和公眾理解議案理據，推動循證討論。無立法效力議案主要表達關注及促請政府行動，本身不會改變法律；新要求亦不等於政府必須採納建議。",
+      "interview_angles": [
+        "利：讓政策主張有可檢視的證據和建議，提升辯論及公眾監察的質素。",
+        "弊：若缺乏來源和方法標準，可能變成文件堆砌；研究資源差異亦可能影響參與。",
+        "建議：統一披露資料來源、研究局限、成本及受影響群體，提供共享研究支援，並追蹤政府回應及建議落實情況。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/politics/article/3373777/evidence-based-legco-require-research-lawmakers-raising-non-binding-motions",
+      "source_name": "South China Morning Post / news report"
     },
     {
       "id": "20261108-carer-canteen",
@@ -1189,21 +1283,24 @@
       "title_en": "Building maintenance reform: vetted lists, tender support and oversight",
       "departments": [
         "devb",
-        "hb"
+        "hb",
+        "csso"
       ],
       "themes": [
         "housing-land",
         "governance",
         "legislation"
       ],
-      "summary": "發展局與房屋局公布樓宇維修改革，目標於2026年底前完成樓宇維修支援及服務局的註冊與董事局委任。初期擬優先處理原「招標妥」下約1,800個未聘承建商的項目。免費服務包括預審名單及標書範本，收費服務則包括代辦招標與評標。政府另擬將大型維修列為獨立工程類別，並分開驗樓與其後策劃及監工的專業職能。",
+      "summary": "發展局與房屋局公布樓宇維修改革，目標於2026年底前完成樓宇維修支援及服務局的註冊與董事局委任。初期擬優先處理原「招標妥」下約1,800個未聘承建商的項目。免費服務包括預審名單及標書範本，收費服務則包括代辦招標與評標。政府另擬將大型維修列為獨立工程類別，並分開驗樓與其後策劃及監工的專業職能。 據《南華早報》11月16日報道，政務司司長主持改革督導委員會首次會議，檢視部門分工、方案及時間表，要求成熟措施盡快落實並加快修例準備。調查委員會提出120項建議，涵蓋消防、維修監管及打擊圍標；擬議修法尚未等同通過。",
       "interview_angles": [
-        "預審名單如何減低合謀風險，同時讓合資格的新供應商有公平入場機會？",
-        "支援機構代辦招標時，應如何公開評標依據、管理利益衝突並保留業主選擇？"
+        "利：跨部門督導有助釐清責任，整合樓宇維修、消防及反圍標工作。",
+        "弊：若只追求速度而缺乏可核查的交付指標，制度改革可能流於程序；合規成本亦可能轉嫁業主。",
+        "建議：公布120項建議的責任部門、時限和進度，優先處理高危樓宇，並以獨立抽查及業主負擔評估驗證成效。"
       ],
       "source_url": "https://www.devb.gov.hk/tc/publications_and_press_releases/press/index_id_15625.html",
       "source_name": "發展局及房屋局",
-      "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3372619/hong-kong-set-new-body-oversee-building-renovations-regulatory-overhaul"
+      "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3374619/tai-po-fire-reform-panel-holds-first-meeting-chan-urges-swift-action",
+      "last_updated": "2026-11-16"
     },
     {
       "id": "20261029-900633",
