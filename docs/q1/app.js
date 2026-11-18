@@ -40,7 +40,8 @@
     // hub = q1 + common + untagged; pure q2 only under「全部」
     paper: "hub",
     modelOpen: false,
-    caseId: null,
+    caseId: Q1Planning.activeDrill(),
+    memoDraft: null,
   };
 
   const $ = (s, el = document) => el.querySelector(s);
@@ -417,6 +418,7 @@
           </div>
         </div>
         <div class="practice-pane practice-pane-write">
+          <div class="card practice-planning" id="planningRoot"></div>
           <div class="card practice-write-card">
             <h2>作答</h2>
             <p class="lede">空白格寫 memo。答卷存呢部裝置；寫完先睇下面範例。</p>
@@ -476,12 +478,14 @@
     if (sel) {
       sel.onchange = () => {
         state.caseId = sel.value;
+        Q1Planning.selectDrill(state.caseId);
         stopPracticeTick();
         practiceRemain = 70 * 60;
         renderCase();
         toast("已換題");
       };
     }
+    Q1Planning.mount($("#planningRoot"), pack.id);
     initPractice();
   }
 
@@ -554,12 +558,16 @@
     const countEl = $("#wordCount");
     if (!answer || !countEl) return;
 
-    try { answer.value = localStorage.getItem(STORAGE_ANSWER) || ""; }
-    catch { toast("未能讀取草稿 / Draft storage unavailable"); }
+    if (state.memoDraft === null) {
+      try { state.memoDraft = localStorage.getItem(STORAGE_ANSWER) || ""; }
+      catch { state.memoDraft = ""; toast("未能讀取草稿 / Draft storage unavailable"); }
+    }
+    answer.value = state.memoDraft;
     function syncCount() {
       countEl.textContent = `${countWords(answer.value)} words`;
     }
     answer.oninput = () => {
+      state.memoDraft = answer.value;
       try { localStorage.setItem(STORAGE_ANSWER, answer.value); }
       catch { toast("草稿未儲存；請複製答卷 / Draft not saved; copy your answer"); }
       syncCount();

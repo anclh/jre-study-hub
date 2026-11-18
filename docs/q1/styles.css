@@ -600,3 +600,16 @@
 @media (max-width: 900px) {
   .practice-write-card #answer { min-height: max(16rem, 48dvh); }
 }
+
+/* Editable planning sits before the full memo; neither card has a fixed height. */
+.practice-pane-write { gap: var(--space-4); }
+.practice-planning { flex: 0 0 auto; min-width: 0; margin: 0; }
+.planning-section { min-width: 0; margin-top: var(--space-4); }
+.planning-section h3 { margin: 0 0 var(--space-2); font-size: 1rem; }
+.planning-section p { margin: 0 0 var(--space-2); font-size: .875rem; color: var(--muted); overflow-wrap: anywhere; }
+.planning-section textarea {
+  display: block; width: 100%; max-width: 100%; min-height: 7rem; resize: vertical;
+  padding: var(--space-3); border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--card); color: var(--text); font: inherit; line-height: 1.55;
+}
+.planning-status { min-height: 1.6em; margin: var(--space-3) 0 0; overflow-wrap: anywhere; }
