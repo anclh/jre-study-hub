@@ -3,10 +3,12 @@
     "title": "Hong Kong Policy Bureaux lookup",
     "title_zh": "香港特區政府決策局速查",
     "source": "docs/bureaux/index.html",
-    "updated": "2026-11-17",
+    "updated": "2026-11-18",
     "count": 15,
     "issueCount": 24,
-    "note": "Extracted from the existing Study Hub bureaux page. Do not invent bureaux. Collocation Bank is not in this hub."
+    "note": "Extracted from the existing Study Hub bureaux page. Do not invent bureaux. Collocation Bank is not in this hub.",
+    "policyAsOf": "2026-11-18",
+    "updateCount": 23
   },
   "bureaux": [
     {
@@ -14,13 +16,18 @@
       "abbr": "HB",
       "zh": "房屋局",
       "en": "Housing Bureau",
-      "keywords": "房屋局 HB Housing Bureau 公屋 居屋 簡約公屋 劏房 基本住房單位 輪候時間",
+      "keywords": "房屋局 HB Housing Bureau 公屋 居屋 簡約公屋 劏房 基本住房單位 輪候時間 居屋按揭上限及轉售限制",
       "responsibilities": [
         "統籌全港公私營房屋政策及推展《長遠房屋策略》（長策）。",
         "管理公共租住房屋（PRH）、資助出售房屋（居屋 HOS、綠置居 GSH）。",
         "規管不適切居所（劏房）及落實「基本住房單位」制度。"
       ],
       "policyFocus": [
+        {
+          "title": "居屋按揭上限及轉售限制（2026-11-13）",
+          "text": "房委會已通過。由下一期居屋起，合資格白表家庭（申請截止時有三歲或以下子女）的按揭成數上限由90%升至95%。",
+          "fresh": true
+        },
         {
           "title": "公屋綜合輪候時間",
           "text": "約 4.8 年，目標於 2026/27 降至約 4.5 年。"
@@ -38,20 +45,46 @@
           "text": "未來五年總體公營房屋建屋量約 196,000 伙（連簡約公屋）。"
         }
       ],
-      "departments": "房屋署 (Housing Department, HD)、香港房屋委員會 (HKHA)"
+      "departments": "房屋署 (Housing Department, HD)、香港房屋委員會 (HKHA)",
+      "updates": [
+        {
+          "id": "hb-hos-mortgage-20261113",
+          "title": "居屋按揭上限及轉售限制",
+          "titleEn": "HOS mortgage cap and resale limit",
+          "status": "passed",
+          "statusZh": "房委會已通過",
+          "date": "2026-11-13",
+          "facts": [
+            "由下一期居屋起，合資格白表家庭（申請截止時有三歲或以下子女）的按揭成數上限由90%升至95%。",
+            "2022至2025年首次推出出售的資助出售單位，在公開市場出售的限制期縮短至首次轉讓起計十年。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/13/P2026111200417.htm",
+          "sourceName": "info.gov.hk"
+        }
+      ]
     },
     {
       "id": "devb",
       "abbr": "DEVB",
       "zh": "發展局",
       "en": "Development Bureau",
-      "keywords": "發展局 DEVB Development Bureau 土地 土地儲備 北部都會區 新田科技城 交椅洲人工島 市區重建 建造業 組裝合成 MiC",
+      "keywords": "發展局 DEVB Development Bureau 土地 土地儲備 北部都會區 新田科技城 交椅洲人工島 市區重建 建造業 組裝合成 MiC 北部都會區發展條例草案 洪水橋產業園公司納入《防止賄賂條例》",
       "responsibilities": [
         "規劃、土地供應與管理、市區更新及工務工程協調。",
         "推展大型造地項目（北部都會區、交椅洲人工島）及土地儲備策略。",
         "推廣建築創新（組裝合成建築法 MiC）及監督建築安全與工人培訓。"
       ],
       "policyFocus": [
+        {
+          "title": "北部都會區發展條例草案（2026-11-12）",
+          "text": "2026-07-03刊憲；報道稱11月已三讀通過，未等於工程已展開。草案於2026年7月3日刊憲，擬把指定範圍改用途程序由一般最少約九個月壓縮至約兩個月。",
+          "fresh": true
+        },
+        {
+          "title": "洪水橋產業園公司納入《防止賄賂條例》（2026-11-06）",
+          "text": "已刊憲，預定2027-01-29生效。政府刊憲把負責發展及營運洪水橋產業園的全資公司列為《防止賄賂條例》下的公共機構。",
+          "fresh": true
+        },
         {
           "title": "北部都會區（Northern Metropolis）",
           "text": "佔地約 30,000 公頃，規劃提供約 500,000 伙住宅及數十萬創科就業。"
@@ -65,20 +98,60 @@
           "text": "強制指定公營項目採用組裝合成（MiC）以提速提效。"
         }
       ],
-      "departments": "地政總署 (LandsD)、規劃署 (PlanD)、屋宇署 (BD)、土木工程拓展署 (CEDD)、渠務署、水務署"
+      "departments": "地政總署 (LandsD)、規劃署 (PlanD)、屋宇署 (BD)、土木工程拓展署 (CEDD)、渠務署、水務署",
+      "updates": [
+        {
+          "id": "devb-nm-ordinance-20261112",
+          "title": "北部都會區發展條例草案",
+          "titleEn": "Northern Metropolis development bill",
+          "status": "reported-passed",
+          "statusZh": "2026-07-03刊憲；報道稱11月已三讀通過，未等於工程已展開",
+          "date": "2026-11-12",
+          "facts": [
+            "草案於2026年7月3日刊憲，擬把指定範圍改用途程序由一般最少約九個月壓縮至約兩個月。",
+            "據政策庫所引《南華早報》11月12日報道，立法會已三讀通過。通過不等於工程已展開，附屬法例及個別項目仍須跟進。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202607/03/P2026070300863.htm",
+          "sourceName": "info.gov.hk（刊憲）"
+        },
+        {
+          "id": "devb-hsk-pobo-20261106",
+          "title": "洪水橋產業園公司納入《防止賄賂條例》",
+          "titleEn": "Hung Shui Kiu industry park company under the POBO",
+          "status": "not-yet-effective",
+          "statusZh": "已刊憲，預定2027-01-29生效",
+          "date": "2026-11-06",
+          "facts": [
+            "政府刊憲把負責發展及營運洪水橋產業園的全資公司列為《防止賄賂條例》下的公共機構。",
+            "命令須經立法會先訂立後審議程序，預定2027年1月29日起生效。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/06/P2026110500515p.htm",
+          "sourceName": "info.gov.hk"
+        }
+      ]
     },
     {
       "id": "hhb",
       "abbr": "HHB",
       "zh": "醫務衞生局",
       "en": "Health Bureau",
-      "keywords": "醫務衞生局 醫衞局 Health Bureau 基層醫療 醫院管理局 HA 地區康健中心 DHC 精神健康 醫療券 公營醫療改革",
+      "keywords": "醫務衞生局 醫衞局 Health Bureau 基層醫療 醫院管理局 HA 地區康健中心 DHC 精神健康 醫療券 公營醫療改革 子宮頸篩查HPV自採樣擴至地區網絡 藥械監管中心草案",
       "responsibilities": [
         "制定公共醫療衛生政策、管理公立醫院系統及分配醫療資源。",
         "落實《基層醫療健康藍圖》，推動「重預防、早治療、社區化」醫療體系。",
         "推展中醫藥發展、精神健康服務協調及跨境醫療合作。"
       ],
       "policyFocus": [
+        {
+          "title": "子宮頸篩查HPV自採樣擴至地區網絡（2026-11-17）",
+          "text": "已擴展服務，不等於已經人人受檢。11間母嬰健康院已提供HPV自採樣；三間婦女健康匯於2026年初開展，並自3月起逐步擴至18區康健中心及康健站。",
+          "fresh": true
+        },
+        {
+          "title": "藥械監管中心草案（2026-11-13）",
+          "text": "草案，預定11月25日首讀。草案擬成立藥物及醫療器械監督管理中心，並把中西藥相關規管職能集中於衞生署署長。醫療器械職能待日後立法才納入。",
+          "fresh": true
+        },
         {
           "title": "深化醫療改革",
           "text": "推廣「慢病共治計劃」，每年增設約 220,000 個醫管局家庭醫學門診名額。"
@@ -96,19 +169,64 @@
           "text": "落實校園三層應急機制及「健心先導計劃」，改善專科門診輪候。"
         }
       ],
-      "departments": "衞生署 (DH)、醫院管理局 (HA)、基層醫療署 (Primary Healthcare Commission)"
+      "departments": "衞生署 (DH)、醫院管理局 (HA)、基層醫療署 (Primary Healthcare Commission)",
+      "updates": [
+        {
+          "id": "hhb-hpv-self-sampling-20261117",
+          "title": "子宮頸篩查HPV自採樣擴至地區網絡",
+          "titleEn": "HPV self-sampling in the district network",
+          "status": "implemented",
+          "statusZh": "已擴展服務，不等於已經人人受檢",
+          "date": "2026-11-17",
+          "facts": [
+            "11間母嬰健康院已提供HPV自採樣；三間婦女健康匯於2026年初開展，並自3月起逐步擴至18區康健中心及康健站。",
+            "免費HPV補種計劃將於2026年12月31日結束。服務擴展不等於所有合資格婦女已接受檢測。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/17/P2026111700510.htm",
+          "sourceName": "info.gov.hk"
+        },
+        {
+          "id": "hhb-medical-products-bill-20261113",
+          "title": "藥械監管中心草案",
+          "titleEn": "Medical products regulator bill",
+          "status": "proposed",
+          "statusZh": "草案，預定11月25日首讀",
+          "date": "2026-11-13",
+          "facts": [
+            "草案擬成立藥物及醫療器械監督管理中心，並把中西藥相關規管職能集中於衞生署署長。醫療器械職能待日後立法才納入。",
+            "預定2026年11月25日提交立法會首讀。現階段不是已生效機構。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/13/P2026111300224.htm",
+          "sourceName": "info.gov.hk"
+        }
+      ]
     },
     {
       "id": "lwb",
       "abbr": "LWB",
       "zh": "勞工及福利局",
       "en": "Labour and Welfare Bureau",
-      "keywords": "勞工及福利局 勞福局 LWB Labour and Welfare Bureau 安老 照顧者 社區照顧券 院舍 平台經濟 外賣員 最低工資 輸入勞工",
+      "keywords": "勞工及福利局 勞福局 LWB Labour and Welfare Bureau 安老 照顧者 社區照顧券 院舍 平台經濟 外賣員 最低工資 輸入勞工 8至10月失業率3.8% 額外一萬個青年全職職位 社區照顧者飯堂試行",
       "responsibilities": [
         "推展社會福利、扶貧、安老服務、身心障礙人士支援及家庭服務。",
         "保障勞工權益、職業安全、就業服務及人力資源政策。"
       ],
       "policyFocus": [
+        {
+          "title": "8至10月失業率3.8%（2026-11-17）",
+          "text": "已公布統計，不是新計劃。2026年8至10月經季節性調整失業率為3.8%，較前一個三個月低0.1個百分點；就業不足率維持2.0%。",
+          "fresh": true
+        },
+        {
+          "title": "額外一萬個青年全職職位（2026-11-11）",
+          "text": "擬議，未等於職位已到位。擬由2027年首季起兩年內，透過主要僱主組織提供共10,000個至少六個月的全職職位，職位須屬額外增設。",
+          "fresh": true
+        },
+        {
+          "title": "社區照顧者飯堂試行（2026-11-08）",
+          "text": "南區試行中。南區石排灣邨試行，至11月8日公布已提供逾4,000份飯餐，接觸近400名隱蔽及高風險人士。",
+          "fresh": true
+        },
         {
           "title": "安老核心策略",
           "text": "「居家安老為核心，院舍為後援」；2027-28 年社區照顧券 (CCSV) 增至 18,000 張、院舍券 (RCSV) 增至 8,000 張。"
@@ -126,20 +244,69 @@
           "text": "落實「一年一檢」並引入「可加不減」法定調整方程式。"
         }
       ],
-      "departments": "社會福利署 (SWD)、勞工處 (Labour Department, LD)"
+      "departments": "社會福利署 (SWD)、勞工處 (Labour Department, LD)",
+      "updates": [
+        {
+          "id": "lwb-unemployment-20261117",
+          "title": "8至10月失業率3.8%",
+          "titleEn": "Unemployment rate 3.8% for August to October",
+          "status": "statistic",
+          "statusZh": "已公布統計，不是新計劃",
+          "date": "2026-11-17",
+          "facts": [
+            "2026年8至10月經季節性調整失業率為3.8%，較前一個三個月低0.1個百分點；就業不足率維持2.0%。",
+            "同期總就業人數減少約1,200人，勞動人口減少約5,800人。失業率下降不能單獨解讀為新增職位增加。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/17/P2026111700273.htm",
+          "sourceName": "info.gov.hk"
+        },
+        {
+          "id": "lwb-youth-posts-20261111",
+          "title": "額外一萬個青年全職職位",
+          "titleEn": "10,000 additional full-time posts for new entrants",
+          "status": "proposed",
+          "statusZh": "擬議，未等於職位已到位",
+          "date": "2026-11-11",
+          "facts": [
+            "擬由2027年首季起兩年內，透過主要僱主組織提供共10,000個至少六個月的全職職位，職位須屬額外增設。",
+            "這是三萬青年職位及實習計劃的一環，現階段是擬議安排。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/11/P2026111100304.htm",
+          "sourceName": "info.gov.hk"
+        },
+        {
+          "id": "lwb-carer-canteen-20261108",
+          "title": "社區照顧者飯堂試行",
+          "titleEn": "Community carer canteen pilot",
+          "status": "pilot",
+          "statusZh": "南區試行中",
+          "date": "2026-11-08",
+          "facts": [
+            "南區石排灣邨試行，至11月8日公布已提供逾4,000份飯餐，接觸近400名隱蔽及高風險人士。",
+            "飯餐數目本身不能證明照顧壓力已經下降。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/08/P2026110600621.htm",
+          "sourceName": "info.gov.hk"
+        }
+      ]
     },
     {
       "id": "itib",
       "abbr": "ITIB",
       "zh": "創新科技及工業局",
       "en": "Innovation, Technology and Industry Bureau",
-      "keywords": "創新科技及工業局 創科局 ITIB Innovation, Technology and Industry Bureau 河套 新田科技城 人工智能 AI 數碼港 科技園 新型工業化",
+      "keywords": "創新科技及工業局 創科局 ITIB Innovation, Technology and Industry Bureau 河套 新田科技城 人工智能 AI 數碼港 科技園 新型工業化 AI算力預測與資助計劃注資",
       "responsibilities": [
         "制定香港創科發展藍圖，推動「南金融、北創科」產業佈局。",
         "推進河套深港科技創新合作區、新田科技城中試及量產轉化。",
         "推動政府及社會數碼轉型（智慧城市、智方便、人工智能安全監管）。"
       ],
       "policyFocus": [
+        {
+          "title": "AI算力預測與資助計劃注資（2026-11-09）",
+          "text": "已公布方向；算力數字是2030年後預測。沙嶺數據園區預期在2030年後提供180,000 PFLOPS。這是未來容量預測，不是現有算力。",
+          "fresh": true
+        },
         {
           "title": "河套合作區香港園區",
           "text": "落實「一河兩岸、一區兩園」，爭取跨境數據及臨床樣本安全流通。"
@@ -153,19 +320,45 @@
           "text": "提供配對資助吸引生命健康、人工智能及先進製造企業落戶。"
         }
       ],
-      "departments": "數碼政策辦公室 (Digital Policy Office, DPO)、創新科技署 (ITC)"
+      "departments": "數碼政策辦公室 (Digital Policy Office, DPO)、創新科技署 (ITC)",
+      "updates": [
+        {
+          "id": "itib-ai-compute-20261109",
+          "title": "AI算力預測與資助計劃注資",
+          "titleEn": "AI compute forecast and funding-scheme injection",
+          "status": "announced",
+          "statusZh": "已公布方向；算力數字是2030年後預測",
+          "date": "2026-11-09",
+          "facts": [
+            "沙嶺數據園區預期在2030年後提供180,000 PFLOPS。這是未來容量預測，不是現有算力。",
+            "政府另向人工智能資助計劃注資10億元。面向公眾的AI項目投標者將要提交安全及倫理合規聲明，屬管治方向，不是已完成的全港審查。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/09/P2026110900290.htm",
+          "sourceName": "info.gov.hk"
+        }
+      ]
     },
     {
       "id": "eeb",
       "abbr": "EEB",
       "zh": "環境及生態局",
       "en": "Environment and Ecology Bureau",
-      "keywords": "環境及生態局 環保局 EEB Environment and Ecology Bureau 垃圾收費 廚餘 回收 碳中和 氣候行動藍圖 電動車 綠色出行 食品安全",
+      "keywords": "環境及生態局 環保局 EEB Environment and Ecology Bureau 垃圾收費 廚餘 回收 碳中和 氣候行動藍圖 電動車 綠色出行 食品安全 大灣區碳足跡標籤合作框架 冷氣機滴水巡查",
       "responsibilities": [
         "推行環境保護、節能減碳、廢物管理以及自然生態保育。",
         "主管食品安全、漁農業發展、環境衛生及街市管理。"
       ],
       "policyFocus": [
+        {
+          "title": "大灣區碳足跡標籤合作框架（2026-11-11）",
+          "text": "已簽合作框架，尚未互認。粵港澳三個機構簽署合作框架，研究碳足跡核算規則和標籤互通。落實仍視乎核算邊界、數據質素和第三方查證。",
+          "fresh": true
+        },
+        {
+          "title": "冷氣機滴水巡查（2026-11-10）",
+          "text": "食環署執行中。食環署使用第三代巡查系統（紅外線夜視及AI影像辨識）。截至2026年9月底約發出8,100張妨擾事故通知，較去年同期多約16%。",
+          "fresh": true
+        },
         {
           "title": "都市固體廢物收費 (MSW Charging)",
           "text": "暫停強制實施，聚焦擴建「綠在區區」回收網絡及公屋智能廚餘桶。"
@@ -179,19 +372,64 @@
           "text": "五年內將公共及私營快充樁擴增至約 5,000 個，配合 2035 年前停止燃油私家車新登記。"
         }
       ],
-      "departments": "環境保護署 (EPD)、食物環境衞生署 (FEHD)、漁農自然護理署 (AFCD)"
+      "departments": "環境保護署 (EPD)、食物環境衞生署 (FEHD)、漁農自然護理署 (AFCD)",
+      "updates": [
+        {
+          "id": "eeb-carbon-label-20261111",
+          "title": "大灣區碳足跡標籤合作框架",
+          "titleEn": "GBA carbon-footprint label framework",
+          "status": "proposed",
+          "statusZh": "已簽合作框架，尚未互認",
+          "date": "2026-11-11",
+          "facts": [
+            "粵港澳三個機構簽署合作框架，研究碳足跡核算規則和標籤互通。落實仍視乎核算邊界、數據質素和第三方查證。",
+            "同場另公布香港2025年總碳排放較2014年峰值低32%。這是全港排放比較，不能當成標籤互認的減排成果。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/11/P2026111100043.htm",
+          "sourceName": "info.gov.hk"
+        },
+        {
+          "id": "eeb-dripping-ac-20261110",
+          "title": "冷氣機滴水巡查",
+          "titleEn": "Dripping air-conditioner patrols",
+          "status": "implemented",
+          "statusZh": "食環署執行中",
+          "date": "2026-11-10",
+          "facts": [
+            "食環署使用第三代巡查系統（紅外線夜視及AI影像辨識）。截至2026年9月底約發出8,100張妨擾事故通知，較去年同期多約16%。",
+            "逾99%收到通知的住戶按要求處理。通知增加可受巡查強度影響，不能單獨當成滋擾已按比例下降。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/10/P2026111000648.htm",
+          "sourceName": "info.gov.hk"
+        }
+      ]
     },
     {
       "id": "tlb",
       "abbr": "TLB",
       "zh": "運輸及物流局",
       "en": "Transport and Logistics Bureau",
-      "keywords": "運輸及物流局 運物局 TLB Transport and Logistics Bureau 鐵路 網約車 運輸策略藍圖 智慧交通 機場三跑 港珠澳大橋 跨境口岸",
+      "keywords": "運輸及物流局 運物局 TLB Transport and Logistics Bureau 鐵路 網約車 運輸策略藍圖 智慧交通 機場三跑 港珠澳大橋 跨境口岸 北環綫全項目協議 洪水橋／厦村物流用地意向 可持續航空燃料混配備忘錄",
       "responsibilities": [
         "規劃及監管陸路交通、公共交通網絡、過海隧道及主要幹道。",
         "發展海空運物流樞紐（香港國際機場三跑道系統、智慧港口）。"
       ],
       "policyFocus": [
+        {
+          "title": "北環綫全項目協議（2026-11-10）",
+          "text": "已簽協議並進入建造；2034是目標。政府與港鐵簽訂北環綫全項目協議，主綫及接通皇崗的支綫進入建造，目標2034年或之前同步通車。",
+          "fresh": true
+        },
+        {
+          "title": "洪水橋／厦村物流用地意向（2026-11-13）",
+          "text": "已收意向書，未批地。現代物流產業群預留約32公頃，首批五幅用地共收到16份意向書。",
+          "fresh": true
+        },
+        {
+          "title": "可持續航空燃料混配備忘錄（2026-11-17）",
+          "text": "已簽備忘錄，設施未投產。機管局、EcoCeres及香港中華煤氣簽署諒解備忘錄，推動本地可持續航空燃料混配設施。",
+          "fresh": true
+        },
         {
           "title": "《香港主要運輸基建發展藍圖》",
           "text": "落實「三鐵三道」，包括北環線、新界東北線以支援北都發展。"
@@ -205,19 +443,68 @@
           "text": "推廣自駕車測試、實時交通燈號控制及跨海口岸交通疏導機制。"
         }
       ],
-      "departments": "運輸署 (TD)、路政署 (HyD)、民航處 (CAD)、海事處 (MD)"
+      "departments": "運輸署 (TD)、路政署 (HyD)、民航處 (CAD)、海事處 (MD)",
+      "updates": [
+        {
+          "id": "tlb-northern-link-20261110",
+          "title": "北環綫全項目協議",
+          "titleEn": "Northern Link full project agreement",
+          "status": "signed",
+          "statusZh": "已簽協議並進入建造；2034是目標",
+          "date": "2026-11-10",
+          "facts": [
+            "政府與港鐵簽訂北環綫全項目協議，主綫及接通皇崗的支綫進入建造，目標2034年或之前同步通車。",
+            "政府估算全綫資本開支約862億港元（2025年7月價格），較原估算低28%。通車年份是目標，不是已通車。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/10/P2026111000476.htm",
+          "sourceName": "info.gov.hk"
+        },
+        {
+          "id": "tlb-hsk-logistics-20261113",
+          "title": "洪水橋／厦村物流用地意向",
+          "titleEn": "Hung Shui Kiu / Ha Tsuen logistics sites",
+          "status": "consultation",
+          "statusZh": "已收意向書，未批地",
+          "date": "2026-11-13",
+          "facts": [
+            "現代物流產業群預留約32公頃，首批五幅用地共收到16份意向書。",
+            "最早於2027年底推出首幅或首批用地招標。意向書不是已批出土地。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/13/P2026111300445.htm",
+          "sourceName": "info.gov.hk"
+        },
+        {
+          "id": "tlb-saf-mou-20261117",
+          "title": "可持續航空燃料混配備忘錄",
+          "titleEn": "Sustainable aviation fuel blending MoU",
+          "status": "announced",
+          "statusZh": "已簽備忘錄，設施未投產",
+          "date": "2026-11-17",
+          "facts": [
+            "機管局、EcoCeres及香港中華煤氣簽署諒解備忘錄，推動本地可持續航空燃料混配設施。",
+            "備忘錄是合作方向。報道補充提及屯門第38區，但設施並未投產，亦未有已核實的減排成果。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/17/P2026111700611.htm",
+          "sourceName": "info.gov.hk"
+        }
+      ]
     },
     {
       "id": "cstb",
       "abbr": "CSTB",
       "zh": "文化體育及旅遊局",
       "en": "Culture, Sports and Tourism Bureau",
-      "keywords": "文化體育及旅遊局 文體旅局 CSTB Culture, Sports and Tourism Bureau 盛事經濟 啟德體育園 西九文化區 深度遊 無處不旅遊 一程多站",
+      "keywords": "文化體育及旅遊局 文體旅局 CSTB Culture, Sports and Tourism Bureau 盛事經濟 啟德體育園 西九文化區 深度遊 無處不旅遊 一程多站 山頂步道燈光計劃叫停",
       "responsibilities": [
         "促進文化藝術、創意產業、體育運動普及化及精英化。",
         "制定旅遊業發展藍圖，推動香港作為國際旅遊及文化交流中心。"
       ],
       "policyFocus": [
+        {
+          "title": "山頂步道燈光計劃叫停（2026-10-29）",
+          "text": "決定現階段不推行。文體旅局與旅發局評估後，決定現階段不推行盧吉道、夏力道裝飾燈光。裝置未啟用。",
+          "fresh": true
+        },
         {
           "title": "啟德體育園啟用",
           "text": "主場館（50,000 座位）落成啟用，承接國際頂級賽事與大型演藝盛事。"
@@ -231,20 +518,41 @@
           "text": "設立盛事統籌小組，開拓中東及東盟穆斯林友善旅遊市場。"
         }
       ],
-      "departments": "康樂及文化事務署 (LCSD)、旅遊事務署 (TC)"
+      "departments": "康樂及文化事務署 (LCSD)、旅遊事務署 (TC)",
+      "updates": [
+        {
+          "id": "cstb-peak-lighting-20261029",
+          "title": "山頂步道燈光計劃叫停",
+          "titleEn": "Peak trail lighting plan stopped",
+          "status": "not-proceeding",
+          "statusZh": "決定現階段不推行",
+          "date": "2026-10-29",
+          "facts": [
+            "文體旅局與旅發局評估後，決定現階段不推行盧吉道、夏力道裝飾燈光。裝置未啟用。",
+            "據《南華早報》10月29日報道，縮減方案曾由10個點減至7個、樹上燈由52減至24。"
+          ],
+          "source": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3372608/hong-kong-scraps-lighting-attraction-peak-after-public-outcry",
+          "sourceName": "南華早報"
+        }
+      ]
     },
     {
       "id": "cedb",
       "abbr": "CEDB",
       "zh": "商務及經濟發展局",
       "en": "Commerce and Economic Development Bureau",
-      "keywords": "商務及經濟發展局 商經局 CEDB Commerce and Economic Development Bureau 對外貿易 一帶一路 東盟 中小企支援 電子商貿 知識產權",
+      "keywords": "商務及經濟發展局 商經局 CEDB Commerce and Economic Development Bureau 對外貿易 一帶一路 東盟 中小企支援 電子商貿 知識產權 電子交易修訂條例草案",
       "responsibilities": [
         "促進對外貿易投資、開拓「一帶一路」及東盟市場。",
         "支援本地中小企業（融資擔保、電商轉型）及維護消費者權益。",
         "保障知識產權及推動區域知識產權貿易中心定位。"
       ],
       "policyFocus": [
+        {
+          "title": "電子交易修訂條例草案（2026-11-06）",
+          "text": "11月6日刊憲；未核實11月18日會議結果。草案為提單、匯票及承付票建立可選的電子化框架，不強制取代紙本。",
+          "fresh": true
+        },
         {
           "title": "拓展「一帶一路」新興市場",
           "text": "協助港商打入中東、東盟及中亞供應鏈。"
@@ -258,19 +566,45 @@
           "text": "協助本地品牌開拓內地龐大電商市場。"
         }
       ],
-      "departments": "投資推廣署 (InvestHK)、工業貿易署 (TID)、知識產權署 (IPD)"
+      "departments": "投資推廣署 (InvestHK)、工業貿易署 (TID)、知識產權署 (IPD)",
+      "updates": [
+        {
+          "id": "cedb-etrade-bill-20261106",
+          "title": "電子交易修訂條例草案",
+          "titleEn": "Electronic Transactions amendment bill",
+          "status": "gazetted",
+          "statusZh": "11月6日刊憲；未核實11月18日會議結果",
+          "date": "2026-11-06",
+          "facts": [
+            "草案為提單、匯票及承付票建立可選的電子化框架，不強制取代紙本。",
+            "政府11月6日表示將於11月18日提交首讀及二讀。本頁未核實當日會議結果，亦未當成已經通過。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/06/P2026110600185p.htm",
+          "sourceName": "info.gov.hk"
+        }
+      ]
     },
     {
       "id": "fstb",
       "abbr": "FSTB",
       "zh": "財經事務及庫務局",
       "en": "Financial Services and the Treasury Bureau",
-      "keywords": "財經事務及庫務局 財庫局 FSTB Financial Services and the Treasury Bureau 國際金融中心 綠色金融 家族辦公室 虛擬資產 財政赤字 庫務審批",
+      "keywords": "財經事務及庫務局 財庫局 FSTB Financial Services and the Treasury Bureau 國際金融中心 綠色金融 家族辦公室 虛擬資產 財政赤字 庫務審批 加密資產申報框架及共同匯報標準 強積金第二級欠供附加費草案",
       "responsibilities": [
         "維護及鞏固香港國際金融中心地位，推動資本市場創新（證券、債券、保險、財富管理）。",
         "統籌特區政府財政預算、公共開支控制、稅務政策及政府採購。"
       ],
       "policyFocus": [
+        {
+          "title": "加密資產申報框架及共同匯報標準（2026-11-04）",
+          "text": "11月4日通過，尚未到實施日。立法會通過加密資產申報框架（CARF）及經修訂共同匯報標準（CRS）條例草案。",
+          "fresh": true
+        },
+        {
+          "title": "強積金第二級欠供附加費草案（2026-11-13）",
+          "text": "草案，未生效。草案擬保留現行5%附加費；僱主若未在供款日後第120日或之前清繳，再就欠款總額繳10%第二級附加費。",
+          "fresh": true
+        },
         {
           "title": "新興金融增長點",
           "text": "發展綠色及可持續金融、離岸人民幣樞紐、家族辦公室稅務寬減。"
@@ -284,19 +618,54 @@
           "text": "在面對結構性財政赤字下，嚴格控制公務員編制增長及經常性開支增幅。"
         }
       ],
-      "departments": "稅務局 (IRD)、庫務署 (Treasury)、差餉物業估價署 (RVD)"
+      "departments": "稅務局 (IRD)、庫務署 (Treasury)、差餉物業估價署 (RVD)",
+      "updates": [
+        {
+          "id": "fstb-carf-20261104",
+          "title": "加密資產申報框架及共同匯報標準",
+          "titleEn": "CARF and revised CRS",
+          "status": "passed",
+          "statusZh": "11月4日通過，尚未到實施日",
+          "date": "2026-11-04",
+          "facts": [
+            "立法會通過加密資產申報框架（CARF）及經修訂共同匯報標準（CRS）條例草案。",
+            "CARF於2027年起實施，稅務局擬於2028年起交換資料；修訂CRS於2028年實施，資料交換預計2029年開始。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/04/P2026110400308p.htm",
+          "sourceName": "info.gov.hk"
+        },
+        {
+          "id": "fstb-mpf-surcharge-20261113",
+          "title": "強積金第二級欠供附加費草案",
+          "titleEn": "MPF second-tier surcharge bill",
+          "status": "proposed",
+          "statusZh": "草案，未生效",
+          "date": "2026-11-13",
+          "facts": [
+            "草案擬保留現行5%附加費；僱主若未在供款日後第120日或之前清繳，再就欠款總額繳10%第二級附加費。",
+            "亦擬禁止受託人把相關罰款轉嫁予計劃、成分基金或成員。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/13/P2026111300289.htm",
+          "sourceName": "info.gov.hk"
+        }
+      ]
     },
     {
       "id": "hyab",
       "abbr": "HYAB",
       "zh": "民政及青年事務局",
       "en": "Home and Youth Affairs Bureau",
-      "keywords": "民政及青年事務局 民青局 HYAB Home and Youth Affairs Bureau 青年發展藍圖 關愛隊 地區治理 社區網絡 課後託管",
+      "keywords": "民政及青年事務局 民青局 HYAB Home and Youth Affairs Bureau 青年發展藍圖 關愛隊 地區治理 社區網絡 課後託管 業主大會授權票改革",
       "responsibilities": [
         "推行《青年發展藍圖》，涵蓋青年學業、就業、創業及置業（四業）。",
         "落實完善地區治理架構，協調 18 區區議會及「關愛隊」運作。"
       ],
       "policyFocus": [
+        {
+          "title": "業主大會授權票改革（2026-11-14）",
+          "text": "已交立法會方向；電子授權試行仍是報道。民青局收到550份書面意見。11月9日向立法會提出按大型維修採購金額提高親自投票門檻，法定人數維持業主人數一成，並建議雙方簽署、提早提交及加強核查。",
+          "fresh": true
+        },
         {
           "title": "關愛隊（Care Teams）",
           "text": "全港 18 區 452 隊關愛隊全面運作，推動基層探訪、以老護老支援及緊急應變。"
@@ -310,19 +679,45 @@
           "text": "透過資助酒店轉作青年宿舍，提供平價租金並鼓勵青年參與社區服務。"
         }
       ],
-      "departments": "民政事務總署 (HAD)"
+      "departments": "民政事務總署 (HAD)",
+      "updates": [
+        {
+          "id": "hyab-proxy-20261114",
+          "title": "業主大會授權票改革",
+          "titleEn": "Owners' meeting proxy reform",
+          "status": "proposed",
+          "statusZh": "已交立法會方向；電子授權試行仍是報道",
+          "date": "2026-11-14",
+          "facts": [
+            "民青局收到550份書面意見。11月9日向立法會提出按大型維修採購金額提高親自投票門檻，法定人數維持業主人數一成，並建議雙方簽署、提早提交及加強核查。",
+            "據《南華早報》11月14日報道，局長表示暫不即時設授權票上限，計劃2027年試行電子授權。試行與日後是否設上限仍未定案。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/09/P2026110900590.htm",
+          "sourceName": "info.gov.hk"
+        }
+      ]
     },
     {
       "id": "edb",
       "abbr": "EDB",
       "zh": "教育局",
       "en": "Education Bureau",
-      "keywords": "教育局 EDB Education Bureau STEAM 國際教育樞紐 專上教育 幼兒教育 師資培訓 職業專才學位",
+      "keywords": "教育局 EDB Education Bureau STEAM 國際教育樞紐 專上教育 幼兒教育 師資培訓 職業專才學位 教師執業證書修例 2027年QS亞洲大學排名",
       "responsibilities": [
         "制定及推行涵蓋幼稚園、中小學至專上教育的整體方針。",
         "推動 STEAM 教育、國民教育、職業專才教育（VPET）及特教支援。"
       ],
       "policyFocus": [
+        {
+          "title": "教師執業證書修例（2026-11-12）",
+          "text": "已公布立法時間表，未當成已生效。11月12日宣布擬於11月13日刊憲，在現有註冊之上加入執業證書，涵蓋公帑資助學校、私校、國際學校及幼稚園的教師和校長。",
+          "fresh": true
+        },
+        {
+          "title": "2027年QS亞洲大學排名（2026-11-03）",
+          "text": "已公布排名結果，不是新增學額。教育局回應：五間大學入亞洲十強，三間入五強（港大第1、城大第4、中大第5）。",
+          "fresh": true
+        },
         {
           "title": "留學香港品牌（Study in Hong Kong）",
           "text": "打造國際高端人才集聚高地，擴大非本地生配額及獎學金。"
@@ -336,19 +731,54 @@
           "text": "推展應用學位課程，提升職專教育認受性。"
         }
       ],
-      "departments": "大學教育資助委員會 (UGC)、學生資助處 (SFO)"
+      "departments": "大學教育資助委員會 (UGC)、學生資助處 (SFO)",
+      "updates": [
+        {
+          "id": "edb-teacher-cert-20261112",
+          "title": "教師執業證書修例",
+          "titleEn": "Teacher practising certificates",
+          "status": "gazetted",
+          "statusZh": "已公布立法時間表，未當成已生效",
+          "date": "2026-11-12",
+          "facts": [
+            "11月12日宣布擬於11月13日刊憲，在現有註冊之上加入執業證書，涵蓋公帑資助學校、私校、國際學校及幼稚園的教師和校長。",
+            "證書擬有效最多三個學年，並須符合持續專業發展。政府預計11月25日首讀。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/12/P2026111200202.htm",
+          "sourceName": "info.gov.hk"
+        },
+        {
+          "id": "edb-qs-asia-20261103",
+          "title": "2027年QS亞洲大學排名",
+          "titleEn": "QS Asia University Rankings 2027",
+          "status": "published",
+          "statusZh": "已公布排名結果，不是新增學額",
+          "date": "2026-11-03",
+          "facts": [
+            "教育局回應：五間大學入亞洲十強，三間入五強（港大第1、城大第4、中大第5）。",
+            "八間排名上升，十一間獲評級大學全數入亞洲五百強。這是排名結果，不是新增學額或研究產出。"
+          ],
+          "source": "https://www.info.gov.hk/gia/general/202611/03/P2026110300550.htm",
+          "sourceName": "info.gov.hk"
+        }
+      ]
     },
     {
       "id": "sb",
       "abbr": "SB",
       "zh": "保安局",
       "en": "Security Bureau",
-      "keywords": "保安局 SB Security Bureau 國家安全 維護國家安全條例 SNSO 口岸通關 應急管理 警務 消防 入境",
+      "keywords": "保安局 SB Security Bureau 國家安全 維護國家安全條例 SNSO 口岸通關 應急管理 警務 消防 入境 銳眼AI人臉識別",
       "responsibilities": [
         "維護國家安全、公共秩序、反恐、出入境管制及海關執法。",
         "管理六大紀律部隊及統籌大灣區跨境應急救援機制。"
       ],
       "policyFocus": [
+        {
+          "title": "銳眼AI人臉識別（2026-11-14）",
+          "text": "報道公布，本頁未另行核實已啟用。據《南華早報》11月14日報道，警務處處長表示將於11月16日啟用銳眼AI人臉識別。本頁未另行核實啟用完成情況。",
+          "fresh": true
+        },
         {
           "title": "落實《維護國家安全條例》(SNSO)",
           "text": "補齊維護國家安全法制短板，確保社會穩定。"
@@ -362,19 +792,40 @@
           "text": "制定《粵港澳應急管理合作協議》，實現跨境救援人員與裝備互通。"
         }
       ],
-      "departments": "香港警務處 (HKPF)、入境事務處 (ImmD)、香港海關 (C&ED)、懲教署 (CSD)、消防處 (FSD)、政府飛行服務隊 (GFS)"
+      "departments": "香港警務處 (HKPF)、入境事務處 (ImmD)、香港海關 (C&ED)、懲教署 (CSD)、消防處 (FSD)、政府飛行服務隊 (GFS)",
+      "updates": [
+        {
+          "id": "sb-smartview-20261114",
+          "title": "銳眼AI人臉識別",
+          "titleEn": "SmartView AI facial recognition",
+          "status": "reported",
+          "statusZh": "報道公布，本頁未另行核實已啟用",
+          "date": "2026-11-14",
+          "facts": [
+            "據《南華早報》11月14日報道，警務處處長表示將於11月16日啟用銳眼AI人臉識別。本頁未另行核實啟用完成情況。",
+            "報道指搜索須督察或以上批准；影片保存不超過31日，識別資料擬保存最多180日。六萬部鏡頭是2028年前的目標，不是已安裝數量。"
+          ],
+          "source": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3374436/hong-kong-police-activate-ai-facial-recognition-across-surveillance-network",
+          "sourceName": "南華早報"
+        }
+      ]
     },
     {
       "id": "csb",
       "abbr": "CSB",
       "zh": "公務員事務局",
       "en": "Civil Service Bureau",
-      "keywords": "公務員事務局 CSB Civil Service Bureau 公務員守則 招聘 績效指標 賞罰機制 培訓 學院",
+      "keywords": "公務員事務局 CSB Civil Service Bureau 公務員守則 招聘 績效指標 賞罰機制 培訓 學院 公務員家庭關顧假",
       "responsibilities": [
         "全權負責特區公務員隊伍的招聘、晉升、薪酬、福利、品行及紀律。",
         "主辦聯合招聘考試 (JRE)、綜合招聘考試 (CRE) 及基本法及國安法測試 (BLNST)。"
       ],
       "policyFocus": [
+        {
+          "title": "公務員家庭關顧假（2026-11-10）",
+          "text": "報道中的擬議，未生效，亦非私營法定假。據《南華早報》11月10日報道，政府擬由2027年1月起給公務員每年最多12小時家庭關顧假，每次一至四小時。",
+          "fresh": true
+        },
         {
           "title": "更新《公務員守則》",
           "text": "確立公務員以愛國愛港、以民為本、恪守法治為核心價值。"
@@ -388,7 +839,23 @@
           "text": "加強國家事務、憲制秩序及應變能力培訓。"
         }
       ],
-      "departments": "公務員學院 (Civil Service College)、公務員培訓處"
+      "departments": "公務員學院 (Civil Service College)、公務員培訓處",
+      "updates": [
+        {
+          "id": "csb-family-care-leave-20261110",
+          "title": "公務員家庭關顧假",
+          "titleEn": "Civil service family-care leave",
+          "status": "proposed",
+          "statusZh": "報道中的擬議，未生效，亦非私營法定假",
+          "date": "2026-11-10",
+          "facts": [
+            "據《南華早報》11月10日報道，政府擬由2027年1月起給公務員每年最多12小時家庭關顧假，每次一至四小時。",
+            "詳細安排仍須諮詢職方。這不是私營僱員的法定假期，亦未生效。"
+          ],
+          "source": "https://www.scmp.com/news/hong-kong/politics/article/3373895/hong-kong-civil-servants-be-given-12-hours-family-care-leave-year",
+          "sourceName": "南華早報"
+        }
+      ]
     },
     {
       "id": "cmab",
@@ -411,7 +878,8 @@
           "text": "全面落實「愛國者治港」原則，確保各級選舉公平廉潔。"
         }
       ],
-      "departments": "粵港澳大灣區發展辦公室、選舉事務處 (REO)、駐內地辦事處 (經貿辦)"
+      "departments": "粵港澳大灣區發展辦公室、選舉事務處 (REO)、駐內地辦事處 (經貿辦)",
+      "updates": []
     }
   ],
   "issues": [
