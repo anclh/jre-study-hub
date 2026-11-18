@@ -2940,6 +2940,28 @@
       "source_name": "info.gov.hk 新聞公報"
     },
     {
+      "id": "20261016-private-healthcare-fee-transparency",
+      "date": "2026-10-16",
+      "title": "私營醫療收費透明度新規擬明年8月起分階段實施：價目表、預算及賬單統計",
+      "title_en": "Private healthcare fee transparency rules planned in phases from Aug 2027",
+      "departments": [
+        "hhb"
+      ],
+      "themes": [
+        "healthcare",
+        "legislation",
+        "governance"
+      ],
+      "summary": "據《南華早報》10月16日報道，醫務衞生局向立法會提交文件，擬於年底前向立法會提交規例並訂立實務守則，分階段加強私營醫療收費透明度：最快明年8月先涵蓋全港14間私家醫院，2027年11月擴至日間醫療中心，2028年中擴至診所。所有機構須以指定格式提供中英文價目表，列明各項收費（固定價或價格範圍）及額外收費項目，並於接待處及收費處等公開查閱；私院亦須於入院前提供涵蓋醫院及醫生費的服務費用預算（不足12小時前確認預約除外）。若最終賬單較預算高出20%或以上，醫院須提供書面解釋。此外，私院須於每年3月31日前公布並向政府提交上一曆年標準病床單一治療或程序的收費統計，且須由執業會計師審計。仁安醫院、中大醫院及私營診所集團代表稱整體可行，其中仁安醫院料每年審計開支可達約10萬元。此為立法會文件及業界回應報道，規例尚未正式刊憲生效。",
+      "interview_angles": [
+        "利：中英文價目表、入院前預算及超預算20%須書面解釋，加上跨院標準病床統計，有助減少私營醫療資訊不對稱並配合自願醫保及公私營分流。",
+        "弊：門診與複合病症收費受病情影響大，訪問醫生與醫院之間的費用估算協作有摩擦，強制會計師審計亦可能推高私院合規成本。",
+        "建議：按醫院、日間中心及診所分階段訂立標準手術編碼及預算模板，設電子比價平台並定期檢討20%解釋門檻對急症及複雜個案的適用性。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/health-environment/article/3371134/hong-kong-private-healthcare-providers-face-new-rules-make-fees-more-transparent",
+      "source_name": "South China Morning Post / news report"
+    },
+    {
       "id": "20261015-siti-scenario",
       "date": "2026-10-15",
       "title": "創科局局長談應用場景配對與新型工業化",
@@ -3407,6 +3429,27 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/09/P2026100900280.htm",
       "source_name": "info.gov.hk / Security Bureau"
+    },
+    {
+      "id": "20261002-helper-minimum-wage-5220",
+      "date": "2026-10-02",
+      "title": "外傭規定最低工資調升2.35%至每月5,220元，膳食津貼維持1,236元",
+      "title_en": "Foreign domestic helper minimum wage raised 2.35% to HK$5,220; food allowance unchanged",
+      "departments": [
+        "lwb"
+      ],
+      "themes": [
+        "labour",
+        "governance"
+      ],
+      "summary": "據《南華早報》10月2日報道，政府宣布調高外籍家庭傭工規定最低工資2.35%，由每月5,100元增至5,220元（去年曾由4,990元上調2.2%至5,100元），適用於10月3日或之後簽訂的合約；而沒有提供免費膳食的膳食津貼則維持自2023年以來的每月1,236元不變。政府發言人指按既定機制綜合考慮過去一年經濟、勞工市場、僱主負擔能力及外傭基本生活需要後作出調整。勞資雙方均表不滿：工會聯會原促請把最低工資增至6,670元、膳食津貼增至2,770元，並要求政府公開釐定指標；僱主團體此前則要求凍薪，引述6,000名僱主調查稱高達70%受訪者指加薪後或考慮不聘用外傭，並促請增設聘請外傭開支稅項扣減及加強打擊「跳工」。",
+      "interview_angles": [
+        "利：微調2.35%反映經濟改善同時維持膳食津貼不變，在保障外傭基本購買力與顧及中產及雙職家庭負擔之間取折衷。",
+        "弊：勞工界認為追不上通脹且2023年起膳食津貼停滯，僱主界則指育兒及按揭開支高企下再加薪易推高家庭護理成本，且釐定公式透明度不足。",
+        "建議：公開最低工資與膳食津貼年度檢討的統計指標權重，同時配合社區託兒及日間長者照顧服務，減輕家庭對單一聘用外傭的剛性依賴。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3369569/hong-kong-raise-helpers-monthly-minimum-wage-hk5220",
+      "source_name": "South China Morning Post / news report"
     },
     {
       "id": "20260930-sports-nso-governance",
@@ -3924,6 +3967,29 @@
       "source_name": "South China Morning Post / news report"
     },
     {
+      "id": "20260910-plain-cigarette-packaging",
+      "date": "2026-09-10",
+      "title": "全煙害警示平裝煙包擬明年3月起實施、12月全面執法，並引入完稅標籤",
+      "title_en": "Plain cigarette packaging rules to start March 2027, full enforcement December",
+      "departments": [
+        "hhb",
+        "dh"
+      ],
+      "themes": [
+        "healthcare",
+        "legislation",
+        "youth"
+      ],
+      "summary": "據《南華早報》9月10日報道，衞生署公布就《吸煙（公眾衞生）條例》提交附屬法例，規定所有零售捲煙包、長支煙盒及指定雪茄須採用統一平裝棕色，移除品牌商標、色彩圖案及推廣字句，僅准以指定字體印上牌子及款式名稱，並刪除焦油及尼古丁含量標示以避免吸煙者誤以為低焦油較少危害。新規將於2027年3月1日生效，設九個月過渡期至2027年12月1日全面執法，違例者循簡易程序定罪最高可罰款5萬元。政府亦會更換自2018年沿用、覆蓋煙包面積至少85%的12款健康忠告圖像，並同步推行附有實體及數碼防偽特徵的完稅煙草標籤以區分私煙。控煙酒辦引述中大2023年調查指79.8%受訪吸煙者認為平裝減低煙草吸引力，澳洲實施後一年內嘗試戒煙比率由20.2%升至26.6%。去年香港吸煙率由2023年9.1%降至8.5%，但仍未達7.8%目標。",
+      "interview_angles": [
+        "利：平裝煙包配定期輪換的85%警示圖像，可削弱對青少年的包裝吸引力，並以數碼防偽完稅標籤同時堵截私煙。",
+        "弊：零售商與進口商須在九個月內消化及更換包裝，若私煙執法未能同步跟上，部分價格敏感吸煙者可能轉向非法渠道。",
+        "建議：同步公開完稅標籤掃描核驗指引與海關打擊私煙數據，並在2027年12月全面執法後追蹤青少年吸煙率、戒煙熱線求助量及私煙檢獲變化。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/health-environment/article/3367037/hong-kong-roll-out-plain-cigarette-packs-march-full-enforcement-december",
+      "source_name": "South China Morning Post / news report"
+    },
+    {
       "id": "20260902-poverty-commission",
       "date": "2026-09-02",
       "title": "「扶貧專責委員會」正名並召開第七屆首次會議",
@@ -3944,6 +4010,31 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/02/P2026090200274p.htm",
       "source_name": "info.gov.hk 新聞公報"
+    },
+    {
+      "id": "20260831-fanling-golf-course-eia-appeal",
+      "date": "2026-08-31",
+      "title": "粉嶺高爾夫球場建屋環評上訴遭駁回：公眾諮詢程序與城規保育取捨",
+      "title_en": "Government loses appeal over Fanling golf course housing EIA ruling",
+      "departments": [
+        "devb",
+        "eeb",
+        "doj"
+      ],
+      "themes": [
+        "housing-land",
+        "environment-climate",
+        "governance",
+        "legislation"
+      ],
+      "summary": "據《南華早報》8月31日報道，上訴庭駁回政府就粉嶺高爾夫球場建屋計劃環評報告司法覆核案的上訴，維持原審撤銷環保署署長有條件批准土拓署環評報告的裁決。該計劃擬在政府於2023年9月收回的32公頃土地（原172公頃球場部分）中發展約9.5公頃以興建12,000個公營房屋單位（原目標2029年落成）。上訴庭認同原審法官裁斷，指土拓署其後提交的生態及水文補充資料未重新展開公眾諮詢，令程序不公；署長附加的批准條件涉及重大改動佈局，令批准欠缺確定性；報告亦未妥善處理古樹名木及文化生態影響。上訴庭並駁回政府指《環境影響評估條例》於2023年6月把環評門檻由20公頃（或10萬人口）放寬至50公頃後案件已屬「學術性」的論點，指出修例不免除當局就已展開的環評依法審視的責任。裁決料令項目須重開公眾諮詢。",
+      "interview_angles": [
+        "利：司法覆核與上訴結果守住法定公眾諮詢的程序公義與生態古樹把關，避免政府在補充重大資料後繞過公眾檢視。",
+        "弊：12,000個原定2029年落成的公營房屋單位進一步延誤，反映大型用地開發若前期環評與法定諮詢瑕疵，反而拖慢整體房屋供應。",
+        "建議：在收回土地或大型發展前期即公開完整水文及古樹生態評估並設補充資料覆核諮詢機制，同時交代收回的32公頃土地在重做諮詢期間的過渡管理及房屋供應替代安排。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3365863/hong-kong-government-loses-appeal-over-fanling-golf-course-housing-plan",
+      "source_name": "South China Morning Post / news report"
     },
     {
       "id": "20260826-nm-fin-taskforce",
@@ -4054,6 +4145,30 @@
         "建議：及早向所有人才簽證申請人發出清晰的居港年數及豁免或證明清單，釐清短期離港計算準則，並與自資院校及大灣區校園銜接安排一併說明。"
       ],
       "source_url": "https://www.scmp.com/news/hong-kong/education/article/3362597/mainland-chinese-families-lose-legal-challenge-over-public-university-fees",
+      "source_name": "South China Morning Post / news report"
+    },
+    {
+      "id": "20260722-advance-decision-ehealth",
+      "date": "2026-07-22",
+      "title": "《維持生命治療的預作決定條例》7月底生效，預設醫療指示可上載醫健通",
+      "title_en": "End-of-life advance directives law takes effect; uploadable to eHealth",
+      "departments": [
+        "hhb",
+        "ha"
+      ],
+      "themes": [
+        "healthcare",
+        "elderly-care",
+        "legislation",
+        "digital-gov"
+      ],
+      "summary": "據《南華早報》7月22日報道，《維持生命治療的預作決定條例》於2026年7月31日生效，距離條例獲立法會通過逾20個月，為自2010年起依普通法推行的預設醫療指示及「不作心肺復甦術」（DNACPR）命令提供清晰法定保障，同時保障訂立人及急救救援人員。由7月31日起，市民已訂立的預設醫療指示可由註冊醫生上載影像至「醫健通」，當局日後亦擬容許在醫健通電子簽署（暫未定時間表）；惟DNACPR命令暫仍須保留紙本正本（醫管局去年起向病人派發標準化黃色文件袋以作緊急識別）。公立醫院過去十多年簽署數字顯著上升：預設醫療指示由2013年325份增至2025年2,070份（逾九成訂明臨終不作心肺復甦），DNACPR命令由325份增至5,084份；醫管局已把逾4,800名病人的DNACPR轉為法定表格，並要求相關醫護及非緊急救護人員每兩年培訓一次。智庫建議須同時確保醫院臨床管理及緊急救援系統能即時查閱，並鼓勵及早與家人溝通。",
+      "interview_angles": [
+        "利：把預設醫療指示納入法定框架並接駁醫健通，在人口老化下能尊重病人自主意願並減少前線急救員的法律不確定性。",
+        "弊：DNACPR仍須依賴實體紙本及黃色文件袋，院前急救（尤其獨居長者）仍可能因找不到正本或家屬意見分歧而執行困難。",
+        "建議：訂下醫健通電子簽署及DNACPR數碼互通的時間表，確保消防處救護車與醫管局急症室系統實時互通，並加強家庭醫護及院舍預設照顧計劃輔導。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/health-environment/article/3361489/end-life-directives-go-ehealth-new-law-takes-effect-hong-kong",
       "source_name": "South China Morning Post / news report"
     },
     {
