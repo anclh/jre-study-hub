@@ -1795,6 +1795,28 @@
       "source_name": "info.gov.hk 新聞公報"
     },
     {
+      "id": "20261028-basic-housing-units-grace-period",
+      "date": "2026-10-28",
+      "title": "簡樸房寬限期登記約七成：九龍佔多數及執法進度",
+      "title_en": "70% of subdivided flats registered for Basic Housing Units grace period",
+      "departments": [
+        "hb"
+      ],
+      "themes": [
+        "housing-land",
+        "legislation",
+        "governance"
+      ],
+      "summary": "據《南華早報》10月28日報道，房屋局向立法會書面回覆指，自3月《簡樸房條例》開放申請以來，已有75,070個分間單位（涉及約21,000個完整住宅單位）登記36個月寬限期，佔早前調查約11萬個分間單位約七成。當中九龍佔49,100個（65%），包括油尖旺區21,500個及深水埗區16,300個；港島佔13,400個（集中東區及灣仔）；新界佔12,570個（約26%位於荃灣）。明年3月起只准合資格「簡樸房」或已登記寬限期單位合法出租；寬限期申請至2027年2月28日止（寬限期由明年3月至2030年2月）。另局方接獲約250宗「簡樸房」認證申請並已批出53宗，專設網站列出83個認證單位。房屋局局長何永賢指不會即時一刀切執法，將按安全風險、違規程度及公營房屋供應有序跟進。",
+      "interview_angles": [
+        "利：七成分間單位已登記寬限期並有專設認證名單，有助過渡期內把租盤納入規管，避免短期供應驟減。",
+        "弊：目前僅約250宗認證申請及53宗獲批，與約11萬個分間單位存量差距甚大，若部分業主選擇退場或轉嫁改裝成本，低收入租戶仍面對迫遷及安置壓力。",
+        "建議：按高風險樓宇優先巡查執法並定期公布各區認證進度與退場個案，同時把不合資格單位的租戶轉介至簡約公屋、過渡性房屋及社區支援服務。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/society/article/3372442/kowloon-leads-70-hong-kongs-subdivided-flats-registered-grace-period",
+      "source_name": "South China Morning Post / news report"
+    },
+    {
       "id": "20261026-600638",
       "date": "2026-10-26",
       "title": "偽冒與金管局數碼港元相關的借貸項目",
@@ -3881,6 +3903,27 @@
       "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
     },
     {
+      "id": "20260912-prepaid-cooling-off-bill",
+      "date": "2026-09-12",
+      "title": "預繳式美容及健身合約擬立法設七天冷靜期，目標2027年上半年交草案",
+      "title_en": "Prepaid beauty and fitness cooling-off period bill targeted for H1 2027",
+      "departments": [
+        "cedb"
+      ],
+      "themes": [
+        "legislation",
+        "governance"
+      ],
+      "summary": "據《南華早報》9月12日報道，商務及經濟發展局局長丘應樺表示，政府已於8月31日完成為期兩個月的公眾諮詢，擬於2027年上半年向立法會提交修訂《商品說明條例》的草案，為預繳式美容及健身服務合約設立法定7天冷靜期及14天退款期。當局建議豁免較低金額合約，門檻介乎3,000元至15,000元或以上，並指美容與健身兩行業門檻或有不同；同時擬禁止商戶分拆單一合約以規避規管、建議合約期上限為兩年，並賦權海關處理不當收款個案。若顧客於冷靜期取消合約，商戶可扣除最高相當於一次性信用卡付款2%或分期付款5%的行政費。2024年消委會接獲2,929宗美容服務投訴，涉款9,300萬元，近半源於舒適堡結業。此為立法時間表與諮詢方向報道，條例草案尚未提交。",
+      "interview_angles": [
+        "利：法定冷靜期與退款時限、禁止拆單及兩年合約上限，可針對性減低高壓推銷及預繳結業對消費者的損失。",
+        "弊：若豁免門檻過高或銀行退款流程耗時，消費者仍難受保障；門檻過低或行政費不足，則可能增加守法中小企合規及現金流壓力。",
+        "建議：按美容及健身業合約特徵訂立清晰門檻與標準取消表格，並聯同銀行與支付機構建立快速退款通道，實施後檢視投訴宗數及商戶適應情況。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/society/article/3367280/hong-kong-table-cooling-period-bill-beauty-fitness-deals-mid-2027",
+      "source_name": "South China Morning Post / news report"
+    },
+    {
       "id": "20260902-poverty-commission",
       "date": "2026-09-02",
       "title": "「扶貧專責委員會」正名並召開第七屆首次會議",
@@ -3947,6 +3990,28 @@
       "source_name": "info.gov.hk / Health Bureau"
     },
     {
+      "id": "20260822-public-hospital-fee-waivers",
+      "date": "2026-08-22",
+      "title": "公營醫療收費改革後全額豁免增20倍至28萬人，急症室非緊急求診跌約兩成",
+      "title_en": "Full public hospital fee waivers jump 20-fold to 280,000 after fee reform",
+      "departments": [
+        "hhb",
+        "ha"
+      ],
+      "themes": [
+        "healthcare",
+        "poverty-welfare"
+      ],
+      "summary": "據《南華早報》8月22日報道，醫務衞生局局長盧寵茂表示，自2026年1月1日實施公營醫療收費改革以來，首八個月獲全額醫療費用豁免的病人由以往約14,000人增至約28萬人（增幅逾20倍）；經放寬入息及資產限額後，合資格獲資助或免費醫療人士由30萬人增至140萬人。改革下，公立醫院急症室非緊急個案收費由過往每次50至150元調升至400元，政府早前指上半年非緊急急症室求診人次減少約20%。盧寵茂指政府對公營醫療資助率由以往最高97.6%降至現時95%，目標五年內逐步降至90%，以推動「能者共付」並支援危重及弱勢病人。今年至今藥物名冊亦加快納入17種藥物（包括專科藥），例如有血癌標靶藥自費由2萬至4萬元降至每四星期20元。",
+      "interview_angles": [
+        "利：以較高非緊急收費分流輕症（求診跌約兩成），同時將豁免安全網擴大至28萬人及加快納入昂貴專科藥，有助集中資源救治危重病人並維持財政可持續。",
+        "弊：急症室收費升至400元及資助率擬逐步降至90%，可能令不屬豁免範圍的夾心或慢性病患者承受較大負擔；而豁免資格擴展至140萬人亦考驗醫管局審批與社工行政負荷。",
+        "建議：定期公布各聯網急症室不同分流類別的輪候時間及豁免審批時效，簡化低收入與長期病患的資產審查及電子申請，並強化地區康健中心及家庭醫學門診承接輕症。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/health-environment/article/3364912/full-fee-waivers-rise-20-fold-280000-after-healthcare-reform-minister-says",
+      "source_name": "South China Morning Post / news report"
+    },
+    {
       "id": "20260813-hung-shui-kiu-logistics",
       "date": "2026-08-13",
       "title": "政府邀請市場就洪水橋／厦村現代物流叢集用地提交意向",
@@ -3967,6 +4032,51 @@
       ],
       "source_url": "https://www.info.gov.hk/gia/general/202608/13/P2026081300409.htm",
       "source_name": "info.gov.hk 新聞公報"
+    },
+    {
+      "id": "20260731-uni-fee-residency-jr",
+      "date": "2026-07-31",
+      "title": "高院駁回人才計劃子女資助大學學費兩年居港規定司法覆核",
+      "title_en": "High Court dismisses judicial review over 2-year residency rule for subsidised uni fees",
+      "departments": [
+        "edb",
+        "doj"
+      ],
+      "themes": [
+        "education",
+        "legislation",
+        "governance"
+      ],
+      "summary": "據《南華早報》7月31日報道，87個透過人才簽證計劃來港的內地家庭就資助大學學費居港規定提出司法覆核，遭高等法院法官高浩文駁回並須支付訟費。政府於2025年7月公布收緊資格，要求人才計劃受養子女須於2028年起在港居滿至少兩年方可享資助大學學費（2027/28學年設一年過渡期）。現時未成年來港受養人可按本地生身份報讀資助課程（下學年學費47,000元），非本地生則須付三倍學費；社會關注有家庭安排子女在內地就讀再以DSE報考（「考試移民」）。判詞指政策經當局充分考慮，制定政策屬行政機關權限，廣義分類難免對少數人較嚴苛，並不構成不合理或歧視，且政府已預留過渡時間讓家庭規劃。",
+      "interview_angles": [
+        "利：兩年居港門檻加上一年過渡期，可在保留吸引人才誘因的同時回應「考試移民」爭議，確保公帑資助大學學位主要用於實質在港生活及學習的學生。",
+        "弊：剛來港的人才家庭或其子女在過渡期內仍可能面對三倍非本地學費與升學不確定性，或削弱部分有中學適齡子女家庭來港意欲。",
+        "建議：及早向所有人才簽證申請人發出清晰的居港年數及豁免或證明清單，釐清短期離港計算準則，並與自資院校及大灣區校園銜接安排一併說明。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/education/article/3362597/mainland-chinese-families-lose-legal-challenge-over-public-university-fees",
+      "source_name": "South China Morning Post / news report"
+    },
+    {
+      "id": "20260714-welfare-jobs-incentive-45k",
+      "date": "2026-07-14",
+      "title": "關愛基金推最高4.5萬元就業獎勵試驗計劃，助綜援戶轉投在職家庭津貼",
+      "title_en": "HK$45,000 Community Care Fund pilot incentivises CSSA-to-WFA transition",
+      "departments": [
+        "lwb",
+        "swd"
+      ],
+      "themes": [
+        "poverty-welfare",
+        "labour"
+      ],
+      "summary": "據《南華早報》7月14日報道，政府公布由關愛基金撥款、於2026年10月1日推行為期三年的就業獎勵試驗計劃，鼓勵綜援家庭透過持續就業實現自力更生。合資格家庭由綜援轉投在職家庭津貼（職津），首年可獲10,000元、次年15,000元、第三年20,000元，三年合共最高45,000元；申請戶須脫離綜援並在12個月內連續兩次獲批職津（且領取津貼至少10個月）。議員指單親家庭基本職津工時門檻僅每月36小時（一般申請人為144至192小時），料最受惠，但亦關注散工及就業斷層或令單親戶未能符合10個月要求，促請設寬限期並加強託兒及彈性工時配對。截至5月全港有194,367宗綜援個案（涉256,452人）；截至2月職津涵蓋約47,000戶（約16萬人）。",
+      "interview_angles": [
+        "利：以遞增式三年現金獎勵（1萬→1.5萬→2萬元）配合職津，可減低脫離綜援時的「福利懸崖」顧慮，鼓勵持續就業而非短期試工。",
+        "弊：12個月內須連續兩次獲批且領滿10個月的硬性門檻，對從事散工或兼顧照顧的單親家長門檻較高，若非自願失業或工時波動便可能失去資格。",
+        "建議：為非自願失業或短暫轉工設有限度寬限月數（須提供求職紀錄），同步由勞工處及社署加強彈性工時配對與課餘託管名額，並以兩年後重返綜援率檢視成效。"
+      ],
+      "source_url": "https://www.scmp.com/news/hong-kong/society/article/3360468/new-hk45000-job-scheme-expected-benefit-single-parent-families-most",
+      "source_name": "South China Morning Post / news report"
     },
     {
       "id": "20260711-platform-workers-comp-details",
