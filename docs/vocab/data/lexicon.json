@@ -14815,5 +14815,304 @@
     ],
     "example": "Job retention is a useful outcome measure for employment support programmes.",
     "topic": "labour"
+  },
+  {
+    "term": "grace period",
+    "zh": "寬限期；畀當事人時間處理要求嘅過渡期",
+    "pos": "n.",
+    "related": [
+      "grace-period"
+    ],
+    "note": "常配 register for / during a grace period。寬限唔等於已獲認證，亦唔代表所有責任或執法一律暫停。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Officers should explain which requirements apply during the grace period.",
+        "zh": "職員應講清楚寬限期內要符合邊啲要求。"
+      },
+      {
+        "en": "Registration for a grace period should not be confused with safety certification.",
+        "zh": "登記寬限期唔應同安全認證混為一談。"
+      }
+    ],
+    "example": "Officers should explain which requirements apply during the grace period.",
+    "topic": "housing-land"
+  },
+  {
+    "term": "risk-based enforcement",
+    "zh": "按風險高低安排優次嘅執法",
+    "pos": "n.",
+    "related": [
+      "risk based enforcement",
+      "risk-led enforcement"
+    ],
+    "note": "常配 adopt a risk-based enforcement approach。要交代評估準則、權限同覆核安排，唔係自行豁免低風險個案。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "A risk-based enforcement approach should use clear and reviewable criteria.",
+        "zh": "按風險執法應採用清晰而可覆核嘅準則。"
+      },
+      {
+        "en": "The proposed risk-based enforcement plan requires a costed staffing assessment.",
+        "zh": "建議嘅風險為本執法計劃，需要先評估人手同成本。"
+      }
+    ],
+    "example": "A risk-based enforcement approach should use clear and reviewable criteria.",
+    "topic": "governance"
+  },
+  {
+    "term": "cooling-off period",
+    "zh": "冷靜期；合約訂立後可按適用規則重新考慮嘅期間",
+    "pos": "n.",
+    "related": [
+      "cooling off period",
+      "cooling-off window"
+    ],
+    "note": "常配 introduce / propose a cooling-off period。取消、退款、費用及例外要按適用安排講清楚；立法建議唔等於已有權利。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The paper proposes a cooling-off period for specified prepaid contracts.",
+        "zh": "文件建議為指定預繳合約設冷靜期。"
+      },
+      {
+        "en": "Guidance should distinguish the cooling-off period from the refund deadline.",
+        "zh": "指引應分清冷靜期同退款限期。"
+      }
+    ],
+    "example": "The paper proposes a cooling-off period for specified prepaid contracts.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "residency requirement",
+    "zh": "居住要求；資格上要符合嘅居住條件",
+    "pos": "n.",
+    "related": [
+      "residence requirement"
+    ],
+    "note": "常配 meet / satisfy a residency requirement。亦可用 residence requirement；唔好自行推斷離境日數點計。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Applicants need clear guidance on the residency requirement.",
+        "zh": "申請人需要清晰指引，先知道居住要求係點。"
+      },
+      {
+        "en": "Ambiguous evidence about the residency requirement should be referred to authorised officers.",
+        "zh": "涉及居住要求而唔清楚嘅證明，應交獲授權職員處理。"
+      }
+    ],
+    "example": "Applicants need clear guidance on the residency requirement.",
+    "topic": "education-manpower"
+  },
+  {
+    "term": "pre-admission estimate",
+    "zh": "入院前費用預算；預先估計嘅收費",
+    "pos": "n.",
+    "related": [
+      "pre admission estimate",
+      "preadmission estimate"
+    ],
+    "note": "常配 provide / revise a pre-admission estimate。estimate 唔等於固定報價或價格上限；先說明包括同不包括啲乜。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The proposed pre-admission estimate would cover hospital and doctor charges.",
+        "zh": "建議嘅入院前預算會涵蓋醫院同醫生收費。"
+      },
+      {
+        "en": "A pre-admission estimate should explain which services are included.",
+        "zh": "入院前預算應講明包括邊啲服務。"
+      }
+    ],
+    "example": "The proposed pre-admission estimate would cover hospital and doctor charges.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "code of practice",
+    "zh": "實務守則；指導實際操作嘅規範",
+    "pos": "n.",
+    "related": [
+      "codes of practice"
+    ],
+    "note": "常配 issue / comply with a code of practice。法律效力視乎適用制度，唔好一律當成法例或純自願指引。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The draft code of practice sets out proposed reporting procedures.",
+        "zh": "守則草稿列出建議嘅申報程序。"
+      },
+      {
+        "en": "Officers should confirm the status of the code of practice before advising providers.",
+        "zh": "職員向服務提供者解說前，應先確認守則嘅地位。"
+      }
+    ],
+    "example": "The draft code of practice sets out proposed reporting procedures.",
+    "topic": "governance"
+  },
+  {
+    "term": "minimum allowable wage",
+    "zh": "最低容許工資；指定制度下嘅工資下限",
+    "pos": "n.",
+    "related": [
+      "MAW"
+    ],
+    "note": "常配 revise / comply with the minimum allowable wage；縮寫 MAW。香港外傭語境要同一般 statutory minimum wage 分清，並交代合約日期。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The notice should identify the contracts covered by the revised minimum allowable wage.",
+        "zh": "通知應講明調整後嘅最低容許工資涵蓋邊啲合約。"
+      },
+      {
+        "en": "A stakeholder demand should not be presented as the adopted minimum allowable wage.",
+        "zh": "持份者提出嘅金額唔應寫成已採用嘅最低容許工資。"
+      }
+    ],
+    "example": "The notice should identify the contracts covered by the revised minimum allowable wage.",
+    "topic": "labour"
+  },
+  {
+    "term": "plain packaging",
+    "zh": "平裝包裝；統一外觀並限制品牌設計嘅包裝安排",
+    "pos": "n.",
+    "related": [
+      "standardised tobacco packaging",
+      "standardized tobacco packaging"
+    ],
+    "note": "常配 introduce / implement plain packaging。煙草語境唔係普通紙袋；對吸引力嘅意見唔等於戒煙成效。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The plain packaging rollout requires clear transition guidance for retailers.",
+        "zh": "推行平裝包裝，需要畀零售商清晰嘅過渡指引。"
+      },
+      {
+        "en": "Views on plain packaging do not establish its effect on sustained cessation.",
+        "zh": "對平裝包裝嘅睇法，唔足以證明持續戒煙成效。"
+      }
+    ],
+    "example": "The plain packaging rollout requires clear transition guidance for retailers.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "summary conviction",
+    "zh": "循簡易程序定罪",
+    "pos": "n.",
+    "related": [],
+    "note": "常見搭配 on summary conviction。summary 指司法程序，唔係即時定罪或毋須審訊；刑罰同適用範圍須核對相關條文。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The brief should distinguish summary conviction from conviction on indictment.",
+        "zh": "簡報應分清循簡易程序定罪同循公訴程序定罪。"
+      },
+      {
+        "en": "Check the relevant provision before describing a penalty on summary conviction.",
+        "zh": "描述循簡易程序定罪嘅刑罰前，要先核對相關條文。"
+      }
+    ],
+    "example": "The brief should distinguish summary conviction from conviction on indictment.",
+    "topic": "governance"
+  },
+  {
+    "term": "environmental impact assessment",
+    "zh": "環境影響評估；檢視項目可能造成嘅環境影響",
+    "pos": "n.",
+    "related": [
+      "EIA"
+    ],
+    "note": "縮寫 EIA；常配 conduct / submit an environmental impact assessment。提交、諮詢同批准係唔同階段；唔好由簡短新聞自行補法律門檻。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Material revisions to an environmental impact assessment require procedural advice.",
+        "zh": "環評有重要修訂時，需要徵詢程序方面嘅意見。"
+      },
+      {
+        "en": "Submission of an environmental impact assessment does not guarantee approval.",
+        "zh": "提交環評唔代表一定獲批。"
+      }
+    ],
+    "example": "Material revisions to an environmental impact assessment require procedural advice.",
+    "topic": "environment-climate"
+  },
+  {
+    "term": "judicial review",
+    "zh": "司法覆核；由法院審視公權力決定是否合法",
+    "pos": "n.",
+    "related": [
+      "JR"
+    ],
+    "note": "常配 apply for / seek judicial review。唔等於法院重新揀最理想政策；一宗裁決唔能夠證明所有同類政策都合法或違法。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The paper should describe the outcome of the judicial review accurately.",
+        "zh": "文件應準確交代司法覆核嘅結果。"
+      },
+      {
+        "en": "A judicial review ruling should not be generalised beyond the issues decided.",
+        "zh": "司法覆核裁決唔應被擴大到未有裁定嘅問題。"
+      }
+    ],
+    "example": "The paper should describe the outcome of the judicial review accurately.",
+    "topic": "governance"
+  },
+  {
+    "term": "advance medical directive",
+    "zh": "預設醫療指示；預先表達特定醫療決定嘅指示",
+    "pos": "n.",
+    "related": [
+      "AMD"
+    ],
+    "note": "縮寫 AMD；常配 make / record an advance medical directive。AMD 同 do-not-attempt cardiopulmonary resuscitation (DNACPR) 紀錄要分清；影像上傳唔等於電子簽署或全部紙本已被取代，唔用作個別醫療／法律建議。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Guidance should distinguish an advance medical directive from a DNACPR form.",
+        "zh": "指引應分清預設醫療指示同 DNACPR 表格。"
+      },
+      {
+        "en": "Uploading an image of an advance medical directive is different from signing it electronically.",
+        "zh": "上傳預設醫療指示嘅影像，同電子簽署係兩回事。"
+      }
+    ],
+    "example": "Guidance should distinguish an advance medical directive from a DNACPR form.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "statutory form",
+    "zh": "法定表格；由法例訂明嘅表格",
+    "pos": "n.",
+    "related": [],
+    "note": "常配 use / complete the prescribed statutory form。唔係所有政府表格都屬法定表格；格式、適用性同簽署要求要核對正式規定。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Staff should confirm which statutory form applies to the procedure.",
+        "zh": "職員應確認該程序要用邊款法定表格。"
+      },
+      {
+        "en": "An administrative checklist should not be described as a statutory form.",
+        "zh": "行政檢查清單唔應被講成法定表格。"
+      }
+    ],
+    "example": "Staff should confirm which statutory form applies to the procedure.",
+    "topic": "governance"
   }
 ]
