@@ -3,9 +3,9 @@
     "title": "JRE Policy Bank",
     "title_zh": "JRE 政策資料庫",
     "description": "Interview-oriented current affairs bank sourced from public HK government and LegCo materials. Not affiliated with CS Radar.",
-    "updated": "2026-11-17",
+    "updated": "2026-11-18",
     "sources_note": "Official Hong Kong government and LegCo materials remain primary sources where linked. SCMP-sourced cards cover selected policy-relevant reporting from June 2026 to 17 November 2026 and distinguish reported proposals from implementation. Summaries and interview angles are original study notes; recommendations are study suggestions, not government commitments.",
-    "last_scmp_refresh": "2026-11-17"
+    "last_scmp_refresh": "2026-11-18"
   },
   "departments": [
     {
@@ -242,6 +242,87 @@
     }
   ],
   "items": [
+    {
+      "id": "20261117-labour-force-statistics",
+      "date": "2026-11-17",
+      "title": "失業率降至3.8%：須連同就業及勞動人口判讀",
+      "title_en": "Unemployment falls to 3.8%; read alongside employment and labour force",
+      "departments": [
+        "lwb"
+      ],
+      "themes": [
+        "labour"
+      ],
+      "summary": "政府公布2026年8至10月經季節性調整失業率為3.8%，較前一個三個月期間低0.1個百分點；就業不足率維持2.0%。同期總就業人數減少約1,200人，勞動人口減少約5,800人。數據屬臨時及移動三個月統計，不能單憑失業率下降便推斷新增職位增加。SCMP亦報道餐飲業失業率跌幅較明顯。",
+      "interview_angles": [
+        "失業率下跌但就業人數亦減少，政府應如何向公眾解釋？",
+        "評估就業支援時，如何結合持續就業、工時及薪酬，避免只看單一比率？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/17/P2026111700273.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報",
+      "scmp_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374748/hong-kongs-unemployment-rate-dips-38-amid-steady-growth"
+    },
+    {
+      "id": "20261117-hpv-self-sampling",
+      "date": "2026-11-17",
+      "title": "子宮頸篩查自採樣擴至地區網絡：服務覆蓋與跟進並重",
+      "title_en": "HPV self-sampling expands through district primary care",
+      "departments": [
+        "dh",
+        "hhb"
+      ],
+      "themes": [
+        "healthcare"
+      ],
+      "summary": "衞生署表示，11間母嬰健康院已提供HPV自採樣檢測；三間婦女健康匯於2026年初開始提供服務，並自3月起逐步擴展至全港18區康健中心及康健站，作為增值服務。免費HPV補種計劃將於12月31日結束。服務擴展不等於所有合資格婦女已接受檢測，仍須重視接觸、轉介及後續跟進。",
+      "interview_angles": [
+        "如何接觸因時間、私隱或資訊障礙而未參與篩查的婦女？",
+        "除服務點數目外，應如何追蹤樣本有效率、結果通知及陽性個案轉介完成率？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/17/P2026111700510.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20261117-antimicrobial-recording",
+      "date": "2026-11-17",
+      "title": "抗菌素電子紀錄平台：自願參與與私家診所擴展",
+      "title_en": "Electronic antimicrobial records and planned private-clinic expansion",
+      "departments": [
+        "dh"
+      ],
+      "themes": [
+        "healthcare",
+        "digital-gov"
+      ],
+      "summary": "衞生署表示，截至2026年10月底，近六成相關持牌抗菌素藥商已登記第一階段電子平台；政府正籌備第二階段，目標於2027年收集涵蓋私家診所的用藥數據。當局亦正檢討及考慮修例，要求以電子方式記錄處方及配藥數據。現階段登記屬自願，登記比例不等於完整上報或法定要求已生效。",
+      "interview_angles": [
+        "如何降低診所及藥房輸入資料的負擔，同時保障紀錄完整性？",
+        "平台應如何以用藥及耐藥趨勢評估成效，而非只統計登記數目？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/17/P2026111700290.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20261117-saf-blending-cooperation",
+      "date": "2026-11-17",
+      "title": "機管局等簽署航空燃料混配合作備忘錄",
+      "title_en": "Airport Authority and partners sign SAF blending MOU",
+      "departments": [
+        "tlb"
+      ],
+      "themes": [
+        "transport-logistics",
+        "environment-climate"
+      ],
+      "summary": "機管局、EcoCeres及香港中華煤氣簽署諒解備忘錄，推動本地可持續航空燃料混配設施發展。官方同日亦公布綠色船用燃料認證標準合作。SCMP報道混配設施設於屯門第38區，作為跨境燃料供應鏈的一環；此為報道補充背景。備忘錄反映合作方向，並非設施已投產或減排成果已獲驗證。",
+      "interview_angles": [
+        "如何把合作備忘錄轉化為供應、認證及安全審批的可核查里程碑？",
+        "評估燃料減排時，應如何查證全生命週期排放並避免重複計算？"
+      ],
+      "source_url": "https://www.info.gov.hk/gia/general/202611/17/P2026111700611.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報",
+      "scmp_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374782/hong-kong-plans-first-sustainable-aviation-fuel-facility-meet-2030-goal"
+    },
     {
       "id": "20261116-offshore-rmb-bond-index",
       "date": "2026-11-16",

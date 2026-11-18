@@ -14605,5 +14605,215 @@
     ],
     "example": "Early contact can improve the prospects of debt recovery.",
     "topic": "fiscal-regulation"
+  },
+  {
+    "term": "seasonally adjusted",
+    "zh": "經季節性調整",
+    "pos": "adj.",
+    "related": [],
+    "note": "用於排除季節性波動後的統計。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The seasonally adjusted rate helps analysts compare different periods.",
+        "zh": "經季節性調整的比率有助分析員比較不同期間。"
+      },
+      {
+        "en": "State clearly whether a labour-market figure is seasonally adjusted.",
+        "zh": "應清楚說明勞動市場數字是否經季節性調整。"
+      }
+    ],
+    "example": "The seasonally adjusted rate helps analysts compare different periods.",
+    "topic": "labour"
+  },
+  {
+    "term": "percentage point",
+    "zh": "百分點",
+    "pos": "n.",
+    "related": [],
+    "note": "比較兩個百分比的絕對差額，勿與百分比變幅混淆。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "A fall from 3.9% to 3.8% is a decrease of 0.1 percentage point.",
+        "zh": "由3.9%降至3.8%，即下跌0.1個百分點。"
+      },
+      {
+        "en": "The report distinguishes percentage-point changes from percentage changes.",
+        "zh": "報告區分百分點變動與百分比變動。"
+      }
+    ],
+    "example": "A fall from 3.9% to 3.8% is a decrease of 0.1 percentage point.",
+    "topic": "labour"
+  },
+  {
+    "term": "labour force",
+    "zh": "勞動人口",
+    "pos": "n.",
+    "related": [],
+    "note": "涵蓋就業及失業人口；不可與就業人數互換。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "A smaller labour force can affect the interpretation of a falling unemployment rate.",
+        "zh": "勞動人口減少會影響對失業率下跌的解讀。"
+      },
+      {
+        "en": "Assess changes in the labour force alongside total employment.",
+        "zh": "應同時評估勞動人口與總就業人數的變動。"
+      }
+    ],
+    "example": "A smaller labour force can affect the interpretation of a falling unemployment rate.",
+    "topic": "labour"
+  },
+  {
+    "term": "underemployment",
+    "zh": "就業不足",
+    "pos": "n.",
+    "related": [],
+    "note": "分析工作不足的情況，與失業分開處理。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The underemployment rate can reveal pressures that the unemployment rate does not capture.",
+        "zh": "就業不足率可反映失業率未能涵蓋的壓力。"
+      },
+      {
+        "en": "Employment support should address underemployment as well as unemployment.",
+        "zh": "就業支援應同時處理就業不足及失業問題。"
+      }
+    ],
+    "example": "The underemployment rate can reveal pressures that the unemployment rate does not capture.",
+    "topic": "labour"
+  },
+  {
+    "term": "provisional figures",
+    "zh": "臨時數字",
+    "pos": "n.",
+    "related": [],
+    "note": "初步公布、其後可能修訂的統計。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Provisional figures should be labelled clearly in a policy brief.",
+        "zh": "政策簡報應清楚標示臨時數字。"
+      },
+      {
+        "en": "Check for revisions before comparing provisional figures with earlier estimates.",
+        "zh": "比較臨時數字與較早估計前，應先查閱有否修訂。"
+      }
+    ],
+    "example": "Provisional figures should be labelled clearly in a policy brief.",
+    "topic": "labour"
+  },
+  {
+    "term": "moving three-month period",
+    "zh": "移動三個月期間",
+    "pos": "n.",
+    "related": [],
+    "note": "相鄰期間有月份重疊，並非互不重疊的季度。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The survey describes labour-market conditions over a moving three-month period.",
+        "zh": "調查描述移動三個月期間的勞動市場狀況。"
+      },
+      {
+        "en": "Adjacent moving three-month periods share two months of data.",
+        "zh": "相鄰的移動三個月期間有兩個月份的數據重疊。"
+      }
+    ],
+    "example": "The survey describes labour-market conditions over a moving three-month period.",
+    "topic": "labour"
+  },
+  {
+    "term": "total employment",
+    "zh": "總就業人數",
+    "pos": "n.",
+    "related": [],
+    "note": "屬人數指標，不等於失業率或職位空缺。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Total employment may fall even when the unemployment rate declines.",
+        "zh": "即使失業率下降，總就業人數仍可能下跌。"
+      },
+      {
+        "en": "Read total employment together with changes in the labour force.",
+        "zh": "解讀總就業人數時，應同時考慮勞動人口變動。"
+      }
+    ],
+    "example": "Total employment may fall even when the unemployment rate declines.",
+    "topic": "labour"
+  },
+  {
+    "term": "labour force participation",
+    "zh": "勞動人口參與",
+    "pos": "n.",
+    "related": [],
+    "note": "討論人口參與勞動市場的情況。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Flexible working arrangements may support labour force participation among carers.",
+        "zh": "彈性工作安排可支援照顧者參與勞動市場。"
+      },
+      {
+        "en": "A policy review should examine barriers to labour force participation.",
+        "zh": "政策檢討應審視參與勞動市場的障礙。"
+      }
+    ],
+    "example": "Flexible working arrangements may support labour force participation among carers.",
+    "topic": "labour"
+  },
+  {
+    "term": "sectoral breakdown",
+    "zh": "按行業劃分的數據",
+    "pos": "n.",
+    "related": [],
+    "note": "用於辨識整體數字之下的行業差異。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "A sectoral breakdown can reveal uneven improvements in employment.",
+        "zh": "按行業劃分的數據可顯示就業改善並不平均。"
+      },
+      {
+        "en": "Use a sectoral breakdown to target retraining resources.",
+        "zh": "應利用按行業劃分的數據，針對性分配再培訓資源。"
+      }
+    ],
+    "example": "A sectoral breakdown can reveal uneven improvements in employment.",
+    "topic": "labour"
+  },
+  {
+    "term": "job retention",
+    "zh": "持續就業；留任",
+    "pos": "n.",
+    "related": [],
+    "note": "評估就業支援後工作能否維持，宜訂明追蹤期間。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Job retention is a useful outcome measure for employment support programmes.",
+        "zh": "持續就業是評估就業支援計劃的實用成效指標。"
+      },
+      {
+        "en": "Track job retention after the wage subsidy ends.",
+        "zh": "工資補貼結束後，應追蹤僱員能否持續就業。"
+      }
+    ],
+    "example": "Job retention is a useful outcome measure for employment support programmes.",
+    "topic": "labour"
   }
 ]
