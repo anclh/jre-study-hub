@@ -286,7 +286,34 @@
   }
 
   function getCasePacks() {
-    return Array.isArray(window.Q1_CASE_PACKS) ? window.Q1_CASE_PACKS : [];
+    // Follow Q2 question-bank order (briefs.json n); unmatched Q1 topics stay last.
+    const q2Order = {
+      "housing-land-2026-11-09": 1,
+      "mental-health-2026-10-26": 2,
+      "elderly-care-2026-10-28": 3,
+      "youth-employment-2026-11-09": 4,
+      "tourism-culture-2026-11-09": 5,
+      "gba-services-2026-11-09": 6,
+      "waste-recovery-2026-11-02": 8,
+      "family-support-2026-11-09": 9,
+      "platform-work-2026-11-09": 10,
+      "public-space-2026-11-09": 11,
+      "new-industrial-2026-10-29": 12,
+      "border-resilience-2026-10-29": 13,
+      "loop-link-resumption-2026-10-30": 14,
+      "digital-finance-2026-11-09": 16,
+      "ai-public-services-2026-11-09": 17,
+      "owners-proxy-pilot-2026-11-16": 19,
+      "maintenance-tender-support-2026-11-16": 20,
+      "hospital-lift-oversight-2026-11-16": 21,
+      "fare-concession-review-2026-11-16": 22,
+      "family-care-leave-2026-11-17": 23,
+      "smartview-surveillance-2026-11-17": 24,
+      "paper-recovery-pricing-2026-11-17": 27,
+      "talent-scheme-evidence-2026-11-17": 29
+    };
+    const packs = Array.isArray(window.Q1_CASE_PACKS) ? window.Q1_CASE_PACKS : [];
+    return packs.slice().sort((a, b) => (q2Order[a.id] ?? Infinity) - (q2Order[b.id] ?? Infinity));
   }
 
   function getActivePack() {
