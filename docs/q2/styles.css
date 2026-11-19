@@ -603,3 +603,43 @@ textarea {
 .backup-tools input[type="file"] { max-width: 100%; min-width: 0; font: inherit; }
 .backup-tools [data-backup-status] { margin-top: var(--space-2); margin-bottom: 0; color: var(--text); font-weight: 600; }
 .backup-tools [data-backup-status]:empty { display: none; }
+
+/* Q2 tips: spot-check table scrolls; pattern rows stay readable on a phone. */
+#panel-tips > p { margin: 0 0 var(--space-2); font-size: 13px; line-height: 1.55; }
+#panel-tips .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: var(--space-2) 0; }
+#panel-tips .doc-table { width: 100%; border-collapse: collapse; font-size: 13px; line-height: 1.55; }
+#panel-tips .spot-table { min-width: 44rem; }
+#panel-tips .doc-table th,
+#panel-tips .doc-table td {
+  border: 1px solid var(--line);
+  padding: var(--space-2);
+  text-align: left;
+  vertical-align: top;
+}
+#panel-tips .doc-table thead th {
+  background: var(--card2);
+  color: var(--accent);
+  font-weight: 700;
+}
+#panel-tips .pattern-block + .pattern-block { margin-top: var(--space-4); }
+#panel-tips .pattern-block h3 { margin: 0 0 2px; }
+#panel-tips .pattern-block .muted { margin: 0 0 var(--space-2); }
+#panel-tips .pattern-table th[scope="row"] {
+  width: 7.25rem;
+  white-space: nowrap;
+  color: var(--accent);
+  background: var(--card2);
+  font-weight: 700;
+}
+#panel-tips .tip-sentence {
+  display: block;
+  font: inherit;
+  font-size: .9375rem;
+  line-height: 1.7;
+  background: var(--card2);
+  border-inline-start: 2px solid var(--accent);
+  margin: var(--space-1) 0 var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  overflow-wrap: anywhere;
+}
+#panel-tips .tip-sentence:last-child { margin-bottom: 0; }
