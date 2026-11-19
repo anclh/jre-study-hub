@@ -566,9 +566,6 @@ textarea {
   margin-block: var(--space-3);
 }
 @media (max-width: 36rem) {
-  #five-step .frame-timing tr > :nth-child(2) {
-    display: none;
-  }
   #five-step .frame-timing :is(th, td) {
     padding-inline: var(--space-1);
   }
