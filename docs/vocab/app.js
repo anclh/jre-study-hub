@@ -978,49 +978,23 @@ function chipRow(label, items, cls) {
   }
 
   function studyBackExtraHTML(card) {
-    const synonyms = (card.synonyms || card.related || []).filter(Boolean).slice(0, 6);
-    const antonyms = (card.antonyms || []).filter(Boolean).slice(0, 4);
-    const topicLabel = TOPIC_LABELS[card.topic] || "";
-    let examples = Array.isArray(card.examples) && card.examples.length
-      ? card.examples
-      : card.example
-        ? [{ en: card.example, zh: "" }]
-        : [];
-    examples = examples.slice(0, 2);
-    const parts = [];
-    if (topicLabel) {
-      parts.push(`<div class="flip-topic"><span class="cat-pill topic-pill">${escapeHtml(topicLabel)}</span></div>`);
-    }
-    if (synonyms.length) {
-      parts.push(
-        `<div class="lex-block"><div class="lex-label">同義詞</div><div class="related">${synonyms
-          .map((r) => `<span class="chip chip-syn">${escapeHtml(r)}</span>`)
-          .join("")}</div></div>`
-      );
-    }
-    if (antonyms.length) {
-      parts.push(
-        `<div class="lex-block"><div class="lex-label">反義詞</div><div class="related">${antonyms
-          .map((r) => `<span class="chip chip-ant">${escapeHtml(r)}</span>`)
-          .join("")}</div></div>`
-      );
-    }
-    if (examples.length) {
-      const items = examples
-        .map((ex) => {
-          const en = typeof ex === "string" ? ex : ex.en || "";
-          const zh = typeof ex === "string" ? "" : ex.zh || "";
-          return `<li class="example-item">
-  <p class="example">${highlightExample(en, card.matchedSpan)}</p>
-  ${zh ? `<p class="example-zh">${escapeHtml(zh)}</p>` : ""}
-</li>`;
-        })
-        .join("");
-      parts.push(
-        `<div class="lex-block"><div class="lex-label">例句</div><ol class="example-list">${items}</ol></div>`
-      );
-    }
-    return parts.join("");
+    const key = termKey(card.term);
+    const entry = (state.lexicon || []).find((item) => termKey(item.term) === key);
+    const glossary = globalThis.JRE_VOCAB_MEANINGS;
+    const reference = glossary && Object.hasOwn(glossary, key) ? glossary[key] : {};
+    const meaning = card.meaningEn || entry?.meaningEn || reference.meaning;
+    const synonyms = card.synonyms?.length ? card.synonyms : entry?.synonyms?.length ? entry.synonyms : reference.synonyms;
+    const antonyms = card.antonyms?.length ? card.antonyms : entry?.antonyms?.length ? entry.antonyms : reference.antonyms;
+    const examples = card.examples?.length ? card.examples : entry?.examples;
+    const missing = (label, message) =>
+      `<div class="lex-block"><div class="lex-label">${label}</div><p class="muted">${message}</p></div>`;
+
+    return [
+      `<div class="lex-block"><div class="lex-label">英文釋義</div><p class="example">${escapeHtml(meaning || "暫未收錄")}</p></div>`,
+      chipRow("同義詞", synonyms, "chip-syn") || missing("同義詞", "未收錄合適同義詞"),
+      chipRow("反義詞", antonyms, "chip-ant") || missing("反義詞", "未收錄合適反義詞"),
+      examplesHTML({ ...card, examples, example: card.example || entry?.example }) || missing("例句", "暫未收錄"),
+    ].join("");
   }
 
   function updateStudyProgress() {
@@ -1076,10 +1050,9 @@ function chipRow(label, items, cls) {
     }
     $("#flipTerm").textContent = card.term || "";
     $("#flipPos").textContent = card.pos || "";
-    $("#flipZh").textContent = card.zh || "（暫無中文）";
-    const extra = savedCardDOM(card).querySelector(".card-details");
-    extra.querySelector(".btn-collapse").remove();
-    $("#flipExtra").replaceChildren(extra);
+    const entry = (state.lexicon || []).find((item) => termKey(item.term) === termKey(card.term));
+    $("#flipZh").textContent = card.zh || entry?.zh || "暫未收錄";
+    $("#flipExtra").innerHTML = studyBackExtraHTML(card);
     updateStudyProgress();
     updateStudySaveBtn();
   }
@@ -1417,6 +1390,7 @@ function chipRow(label, items, cls) {
   if (typeof JRE_VOCAB_TEST !== "undefined" && JRE_VOCAB_TEST) {
     globalThis.JRE_VOCAB_TEST_API = {
       vocabCardHTML,
+      studyBackExtraHTML,
       toggleCardExpand,
       state,
     };
