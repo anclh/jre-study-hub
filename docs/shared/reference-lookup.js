@@ -5,21 +5,26 @@
       title: "查局／詞彙",
       tabBureaux: "決策局",
       tabVocab: "詞彙",
-      searchBureaux: "搜尋決策局、職責或議題（如託兒、房屋）",
+      searchBureaux: "搜尋決策局、措施或議題（如 4.4年）",
       searchVocab: "搜尋英文、中文或同義詞",
       close: "關閉",
       empty: "沒有符合的項目。試試較短關鍵詞。",
       loading: "載入中…",
       error: "無法載入資料。可改開完整頁面。",
       issues: "按議題搵局",
-      bureaux: "15 個決策局",
+      bureaux: "決策局",
       lead: "主責／統籌",
       duties: "主要職責",
       focus: "政策焦點",
+      updates: "近期措施",
+      source: "來源",
       depts: "執行署／機構",
       collab: "協作",
       execute: "執行",
       example: "答題例句",
+      synonyms: "同義詞",
+      related: "相關詞",
+      antonyms: "反義詞",
       fullBureaux: "完整決策局頁",
       fullVocab: "詞彙庫",
       shown: "顯示",
@@ -29,21 +34,26 @@
       title: "Bureaux / vocab",
       tabBureaux: "Bureaux",
       tabVocab: "Vocab",
-      searchBureaux: "Search bureaux, duties or issues (e.g. childcare, housing)",
+      searchBureaux: "Search bureaux, measures or issues (e.g. 4.4 years)",
       searchVocab: "Search English, Chinese or synonyms",
       close: "Close",
       empty: "No matches. Try a shorter keyword.",
       loading: "Loading…",
       error: "Could not load data. Open the full page instead.",
       issues: "Find the bureau by issue",
-      bureaux: "15 policy bureaux",
+      bureaux: "Policy bureaux",
       lead: "Lead / coordinate",
       duties: "Main duties",
       focus: "Policy focus",
+      updates: "Recent measures",
+      source: "Source",
       depts: "Executive departments",
       collab: "Collaborate",
       execute: "Deliver",
       example: "Answer line",
+      synonyms: "Synonyms",
+      related: "Related terms",
+      antonyms: "Antonyms",
       fullBureaux: "Full bureaux page",
       fullVocab: "Vocab bank",
       shown: "Showing",
@@ -73,6 +83,9 @@
 
   function bureauHay(bureau) {
     const focus = (bureau.policyFocus || []).map((row) => `${row.title || ""} ${row.text || ""}`);
+    const updates = (bureau.updates || []).map((row) =>
+      [row.title, row.titleEn, row.date, row.statusZh, ...(row.facts || [])].join(" ")
+    );
     return [
       bureau.zh,
       bureau.en,
@@ -81,6 +94,7 @@
       bureau.departments,
       ...(bureau.responsibilities || []),
       ...focus,
+      ...updates,
     ].join(" ");
   }
 
@@ -97,8 +111,13 @@
     ].join(" ");
   }
 
+  function vocabExamples(entry) {
+    const examples = entry.examples?.length ? entry.examples : [entry.example].filter(Boolean);
+    return examples.map((ex) => typeof ex === "string" ? { en: ex } : ex);
+  }
+
   function vocabHay(entry) {
-    const examples = (entry.examples || []).map((ex) => `${ex.en || ""} ${ex.zh || ""}`);
+    const examples = vocabExamples(entry).map((ex) => `${ex.en || ""} ${ex.zh || ""}`);
     return [
       entry.term,
       entry.zh,
@@ -144,13 +163,12 @@
   }
 
   const state = {
-    mounted: false,
-    open: false,
     tab: "bureaux",
     query: "",
     options: null,
     trigger: null,
-    data: { bureaux: null, vocab: null },
+    requests: {},
+    renderId: 0,
     dialog: null,
     search: null,
     body: null,
@@ -197,9 +215,15 @@
       if (event.target === dialog) api.close();
     });
     dialog.addEventListener("keydown", (event) => {
-      if (event.key !== "Tab" || !dialog.open) return;
-      const nodes = [...dialog.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')].filter(
-        (node) => !node.disabled && node.offsetParent !== null
+      if (event.key === "Escape" && !event.isComposing) {
+        event.preventDefault();
+        event.stopPropagation();
+        api.close();
+        return;
+      }
+      if (event.key !== "Tab") return;
+      const nodes = [...dialog.querySelectorAll("button, a[href], input, summary")].filter(
+        (node) => !node.disabled && node.tabIndex >= 0 && node.getClientRects().length
       );
       if (!nodes.length) return;
       const first = nodes[0];
@@ -212,7 +236,7 @@
         first.focus();
       }
     });
-    state.tabs.forEach((tab) => {
+    state.tabs.forEach((tab, index) => {
       tab.addEventListener("click", () => {
         state.tab = tab.dataset.tab;
         state.query = "";
@@ -221,13 +245,17 @@
         render();
         state.search.focus();
       });
+      tab.addEventListener("keydown", (event) => {
+        if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+        event.preventDefault();
+        const next = state.tabs[event.key === "Home" ? 0 : event.key === "End" ? 1 : 1 - index];
+        next.click();
+        next.focus();
+      });
     });
     state.search.addEventListener("input", () => {
       state.query = state.search.value;
       render();
-    });
-    state.search.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") api.close();
     });
   }
 
@@ -244,6 +272,7 @@
       tab.tabIndex = selected ? 0 : -1;
       tab.textContent = t(lang, tab.dataset.tab === "vocab" ? "tabVocab" : "tabBureaux");
     });
+    state.body.setAttribute("aria-labelledby", `jre-ref-tab-${state.tab}`);
     state.search.placeholder = t(lang, state.tab === "vocab" ? "searchVocab" : "searchBureaux");
     state.search.setAttribute("aria-label", state.search.placeholder);
     const base = state.options.base;
@@ -253,33 +282,62 @@
       <a href="${escapeHtml(joinUrl(base, "vocab/"))}">${escapeHtml(t(lang, "fullVocab"))}</a>`;
   }
 
-  async function loadBureaux() {
-    if (state.data.bureaux) return state.data.bureaux;
-    const url = state.options.bureauxUrl || joinUrl(state.options.base, "bureaux/data/bureaux.json");
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error("bureaux " + res.status);
-    state.data.bureaux = await res.json();
-    return state.data.bureaux;
+  function loadData(tab) {
+    const { bureauxUrl, vocabUrl, base } = state.options;
+    const url = tab === "vocab"
+      ? vocabUrl || joinUrl(base, "vocab/data/lexicon.json")
+      : bureauxUrl || joinUrl(base, "bureaux/data/bureaux.json");
+    const requests = state.requests;
+    if (!requests[tab]) {
+      requests[tab] = fetch(url, { cache: "no-cache" }).then(async (response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        if (tab === "vocab") {
+          const entries = Array.isArray(data) ? data : data?.items;
+          if (Array.isArray(entries)) return entries;
+        } else if (Array.isArray(data?.bureaux) && (data.issues == null || Array.isArray(data.issues))) {
+          return data;
+        }
+        throw new Error("Invalid lookup data");
+      }).catch((error) => {
+        delete requests[tab];
+        throw error;
+      });
+    }
+    return requests[tab];
   }
 
-  async function loadVocab() {
-    if (state.data.vocab) return state.data.vocab;
-    const url = state.options.vocabUrl || joinUrl(state.options.base, "vocab/data/lexicon.json");
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error("vocab " + res.status);
-    const json = await res.json();
-    state.data.vocab = Array.isArray(json) ? json : json.items || [];
-    return state.data.vocab;
+  function renderSource(url, name) {
+    if (!/^https?:\/\//i.test(url || "")) return "";
+    return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(name)} ↗</a>`;
   }
 
-  function renderBureauCard(bureau, lang) {
+  function renderUpdate(row, lang) {
+    const otherSources = (row.moreSources || []).map((item) =>
+      renderSource(item?.url, item?.name || t(lang, "source"))
+    );
+    const sources = [renderSource(row.source, row.sourceName || t(lang, "source")), ...otherSources].filter(Boolean);
+    const meta = [row.date, row.statusZh || row.status].filter(Boolean).join(" · ");
+    const facts = (row.facts || []).map((fact) => `<li>${escapeHtml(fact)}</li>`).join("");
+    return `<li class="jre-ref-update">
+      <strong>${escapeHtml(row.title)}</strong>
+      ${row.titleEn ? `<div class="jre-ref-meta" lang="en">${escapeHtml(row.titleEn)}</div>` : ""}
+      <div class="jre-ref-meta">${escapeHtml(meta)}</div>
+      <ul>${facts}</ul>
+      ${sources.length ? `<div class="jre-ref-sources">${sources.join(" ")}</div>` : ""}
+    </li>`;
+  }
+
+  function renderBureauCard(bureau, lang, expanded) {
     const duties = (bureau.responsibilities || []).map((row) => `<li>${escapeHtml(row)}</li>`).join("");
+    const updates = (bureau.updates || []).map((row) => renderUpdate(row, lang)).join("");
     const focus = (bureau.policyFocus || [])
+      .filter((row) => !row.fresh || !updates)
       .map((row) => `<li><strong>${escapeHtml(row.title || "")}</strong> ${escapeHtml(row.text || "")}</li>`)
       .join("");
     const name = lang === "en" ? bureau.en : bureau.zh;
     const alt = lang === "en" ? bureau.zh : bureau.en;
-    return `<details class="jre-ref-card">
+    return `<details class="jre-ref-card"${expanded ? " open" : ""}>
       <summary><span class="jre-ref-name">${escapeHtml(name)}</span>
         <span class="jre-ref-en">${escapeHtml(alt)}</span>
         <span class="jre-ref-abbr">${escapeHtml(bureau.abbr || "")}</span></summary>
@@ -287,8 +345,8 @@
         <dl>
           <dt>${escapeHtml(t(lang, "duties"))}</dt>
           <dd><ul>${duties}</ul></dd>
-          <dt>${escapeHtml(t(lang, "focus"))}</dt>
-          <dd><ul>${focus}</ul></dd>
+          ${updates ? `<dt>${escapeHtml(t(lang, "updates"))}</dt><dd><ul class="jre-ref-updates">${updates}</ul></dd>` : ""}
+          ${focus ? `<dt>${escapeHtml(t(lang, "focus"))}</dt><dd><ul>${focus}</ul></dd>` : ""}
           <dt>${escapeHtml(t(lang, "depts"))}</dt>
           <dd>${escapeHtml(bureau.departments || "")}</dd>
         </dl>
@@ -299,9 +357,7 @@
   function renderIssueCard(issue, lang) {
     const name = lang === "en" && issue.en ? issue.en : issue.zh;
     const alt = lang === "en" ? issue.zh : issue.en;
-    const source = issue.source
-      ? `<p><a href="${escapeHtml(issue.source)}" target="_blank" rel="noopener noreferrer">↗</a></p>`
-      : "";
+    const source = renderSource(issue.source, t(lang, "source"));
     return `<details class="jre-ref-card">
       <summary><span class="jre-ref-name">${escapeHtml(name)}</span>
         <span class="jre-ref-en">${escapeHtml(alt || "")}</span>
@@ -313,43 +369,52 @@
           <dt>${escapeHtml(t(lang, "execute"))}</dt><dd>${escapeHtml(issue.execute || "")}</dd>
           <dt>${escapeHtml(t(lang, "example"))}</dt><dd>${escapeHtml(issue.example || "")}</dd>
         </dl>
-        ${source}
+        ${source ? `<p>${source}</p>` : ""}
       </div>
     </details>`;
   }
 
-  function renderVocabCard(entry) {
-    const ex = (entry.examples && entry.examples[0]) || {};
-    const example = ex.en || entry.example || "";
-    const exampleZh = ex.zh || "";
+  function renderVocabCard(entry, lang) {
+    const examples = vocabExamples(entry).map((ex) =>
+      `<li class="jre-ref-ex"><span lang="en">${escapeHtml(ex.en)}</span>${ex.zh ? `<br>${escapeHtml(ex.zh)}` : ""}</li>`
+    ).join("");
+    const terms = ["synonyms", "related", "antonyms"].filter((key) => entry[key]?.length).map((key) =>
+      `<div class="jre-ref-meta"><strong>${escapeHtml(t(lang, key))}</strong> ${escapeHtml(entry[key].join(" · "))}</div>`
+    ).join("");
     return `<article class="jre-ref-term">
-      <h4>${escapeHtml(entry.term || "")} <span class="jre-ref-zh">${escapeHtml(entry.zh || "")}</span></h4>
-      <p class="jre-ref-meta">${escapeHtml([entry.pos, entry.topic].filter(Boolean).join(" · "))}</p>
-      ${example ? `<p class="jre-ref-ex">${escapeHtml(example)}${exampleZh ? `<br>${escapeHtml(exampleZh)}` : ""}</p>` : ""}
+      <h3><span lang="en">${escapeHtml(entry.term || "")}</span> <span class="jre-ref-zh">${escapeHtml(entry.zh || "")}</span></h3>
+      <div class="jre-ref-meta">${escapeHtml([entry.pos, entry.note].filter(Boolean).join(" · "))}</div>
+      ${terms}
+      ${examples ? `<ul class="jre-ref-examples">${examples}</ul>` : ""}
     </article>`;
   }
 
   async function render() {
-    if (!state.dialog) return;
+    const renderId = ++state.renderId;
+    const { tab, query } = state;
     const lang = detectLang(state.options);
-    state.body.innerHTML = `<p class="jre-ref-status">${escapeHtml(t(lang, "loading"))}</p>`;
+    if (!state.requests[tab]) {
+      state.status.textContent = t(lang, "loading");
+      state.body.innerHTML = "";
+    }
     try {
-      if (state.tab === "vocab") {
-        const vocab = await loadVocab();
-        const matched = filterVocab(vocab, state.query);
+      const data = await loadData(tab);
+      if (renderId !== state.renderId) return;
+      state.body.scrollTop = 0;
+      if (tab === "vocab") {
+        const matched = filterVocab(data, query);
         const limit = 40;
         const shown = matched.slice(0, limit);
         state.status.textContent = matched.length
           ? `${t(lang, "shown")} ${shown.length}${t(lang, "of")}${matched.length}`
           : "";
         state.body.innerHTML = shown.length
-          ? shown.map(renderVocabCard).join("")
+          ? shown.map((row) => renderVocabCard(row, lang)).join("")
           : `<p class="jre-ref-empty">${escapeHtml(t(lang, "empty"))}</p>`;
         return;
       }
-      const pack = await loadBureaux();
-      const bureaux = filterBureaux(pack.bureaux || [], state.query);
-      const issues = filterIssues(pack.issues || [], state.query);
+      const bureaux = filterBureaux(data.bureaux, query);
+      const issues = filterIssues(data.issues, query);
       state.status.textContent = `${t(lang, "bureaux")} ${bureaux.length} · ${t(lang, "issues")} ${issues.length}`;
       if (!bureaux.length && !issues.length) {
         state.body.innerHTML = `<p class="jre-ref-empty">${escapeHtml(t(lang, "empty"))}</p>`;
@@ -359,12 +424,13 @@
         ? `<section class="jre-ref-group"><h3>${escapeHtml(t(lang, "issues"))}</h3>${issues.map((row) => renderIssueCard(row, lang)).join("")}</section>`
         : "";
       const bureauBlock = bureaux.length
-        ? `<section class="jre-ref-group"><h3>${escapeHtml(t(lang, "bureaux"))}</h3>${bureaux.map((row) => renderBureauCard(row, lang)).join("")}</section>`
+        ? `<section class="jre-ref-group"><h3>${escapeHtml(t(lang, "bureaux"))}</h3>${bureaux.map((row) => renderBureauCard(row, lang, query.trim() && bureaux.length === 1)).join("")}</section>`
         : "";
-      state.body.innerHTML = issueBlock + bureauBlock;
-    } catch (err) {
+      state.body.innerHTML = query.trim() ? bureauBlock + issueBlock : issueBlock + bureauBlock;
+    } catch {
+      if (renderId !== state.renderId) return;
       state.status.textContent = "";
-      state.body.innerHTML = `<p class="jre-ref-error">${escapeHtml(t(lang, "error"))}<br><small>${escapeHtml(String(err))}</small></p>`;
+      state.body.innerHTML = `<p class="jre-ref-error" role="alert">${escapeHtml(t(lang, "error"))}</p>`;
     }
   }
 
@@ -384,7 +450,7 @@
   }
 
   const api = {
-    version: "20261117b",
+    version: "20261123b",
     joinUrl,
     matchesHay,
     filterBureaux,
@@ -401,13 +467,13 @@
       );
       ensureDom();
       bindLaunches(document);
-      state.mounted = true;
       return api;
     },
     open(opts) {
       api.mount(state.options || (opts && opts.options) || {});
       const next = opts || {};
       state.trigger = next.trigger || document.activeElement;
+      state.requests = {};
       state.tab = next.tab || state.options.defaultTab || "bureaux";
       state.query = next.query || "";
       paintChrome();
@@ -415,18 +481,17 @@
       if (typeof state.dialog.showModal === "function" && !state.dialog.open) {
         state.dialog.showModal();
       }
-      state.open = true;
       render();
       state.search.focus();
       if (state.query) state.search.select();
       return api;
     },
     close() {
+      ++state.renderId;
       if (state.dialog && state.dialog.open) state.dialog.close();
-      state.open = false;
       const trigger = state.trigger;
       state.trigger = null;
-      if (trigger && typeof trigger.focus === "function") trigger.focus();
+      if (trigger && typeof trigger.focus === "function") trigger.focus({ preventScroll: true });
       return api;
     },
     isOpen() {
