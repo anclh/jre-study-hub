@@ -28,6 +28,7 @@
 .bureau-screen .brand-text p {
   margin: var(--space-2) 0 0;
   color: var(--color-muted);
+  overflow-wrap: anywhere;
 }
 
 .bureau-screen .wrap {
@@ -335,6 +336,18 @@
   border-radius: var(--radius);
   background: var(--color-surface);
   overflow-wrap: anywhere;
+  touch-action: pan-y;
+}
+
+.flash-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+}
+
+.flash-sources a,
+.update-list a {
+  overflow-wrap: anywhere;
 }
 
 .flash-card h3 {
@@ -355,13 +368,32 @@
 }
 
 @media (max-width: 42rem) {
+  .flash-controls label,
+  .flash-progress {
+    flex: 1 1 100%;
+  }
+
   .flash-controls button,
-  .flash-card button,
   .mode-switch button {
-    flex: 1 1 8rem;
+    flex: 1 1 calc(50% - var(--space-2));
+    min-width: 6.5rem;
+  }
+
+  .flash-card button {
+    min-width: 6.5rem;
   }
 
   .flash-card {
     min-height: 18rem;
+  }
+}
+
+@media (max-width: 24.5rem) {
+  .bureau-screen {
+    --bureau-gutter: 0.75rem;
+  }
+
+  .bureau-screen h1 {
+    font-size: 1.65rem;
   }
 }

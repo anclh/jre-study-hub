@@ -1,7 +1,7 @@
 /* Bureaux browse + flashcards. Both modes read data/bureaux.json. No localStorage. */
 (() => {
-  const DATA_URL = "data/bureaux.json?v=20261118b";
-  const AS_OF = "2026-11-18";
+  const DATA_URL = "data/bureaux.json?v=20261123a";
+  const AS_OF = "2026-11-23";
 
   const state = {
     pack: null,
@@ -50,8 +50,7 @@
           lines: update.facts || [],
           status: update.statusZh || "",
           date: update.date || "",
-          source: update.source || "",
-          sourceName: update.sourceName || "來源",
+          sources: sourceList(update),
         });
       });
     });
@@ -80,11 +79,7 @@
                 <span class="update-status">${escapeHtml(row.statusZh || "")}</span></p>
               <p class="update-meta">${escapeHtml(row.date || "")}${row.titleEn ? ` · ${escapeHtml(row.titleEn)}` : ""}</p>
               <ul>${(row.facts || []).map((fact) => `<li>${escapeHtml(fact)}</li>`).join("")}</ul>
-              ${
-                row.source
-                  ? `<a href="${escapeHtml(row.source)}" rel="noopener" target="_blank">${escapeHtml(row.sourceName || "來源")} ↗</a>`
-                  : ""
-              }
+              ${sourceHtml(sourceList(row))}
             </li>`
           )
           .join("")}</ul>`
@@ -144,6 +139,24 @@
     if (empty) empty.hidden = matches > 0;
   }
 
+  function sourceList(row) {
+    const links = [];
+    if (row.source) links.push({ url: row.source, name: row.sourceName || "來源" });
+    (row.moreSources || []).forEach((item) => {
+      if (item && item.url) links.push({ url: item.url, name: item.name || "來源" });
+    });
+    return links;
+  }
+
+  function sourceHtml(links) {
+    return (links || [])
+      .map(
+        (link) =>
+          `<a href="${escapeHtml(link.url)}" rel="noopener" target="_blank">${escapeHtml(link.name)} ↗</a>`
+      )
+      .join(" ");
+  }
+
   function currentPool() {
     const bureauId = $("flash-bureau") ? $("flash-bureau").value : "all";
     const cards = buildCards(state.pack.bureaux || []);
@@ -174,14 +187,13 @@
     $("flash-back-lines").innerHTML = (card.lines || []).map((line) => `<li>${escapeHtml(line)}</li>`).join("");
     $("flash-back-status").textContent = [card.status, card.date].filter(Boolean).join(" · ");
     const link = $("flash-back-source");
-    if (card.source) {
+    const sources = card.sources || [];
+    if (sources.length) {
       link.hidden = false;
-      link.href = card.source;
-      link.textContent = `${card.sourceName} ↗`;
+      link.innerHTML = sourceHtml(sources);
     } else {
       link.hidden = true;
-      link.removeAttribute("href");
-      link.textContent = "";
+      link.innerHTML = "";
     }
     $("flash-back").hidden = !state.flipped;
     $("flash-flip").textContent = state.flipped ? "收回答案" : "翻面";
@@ -241,7 +253,26 @@
       state.flipped = !state.flipped;
       showCard();
     });
+    let pointer = null;
+    $("flash-card").addEventListener("pointerdown", (event) => {
+      if (event.target.closest("a, button")) return;
+      pointer = { x: event.clientX, y: event.clientY, id: event.pointerId };
+    });
+    $("flash-card").addEventListener("pointerup", (event) => {
+      if (!pointer || event.pointerId !== pointer.id) return;
+      const dx = event.clientX - pointer.x;
+      const dy = event.clientY - pointer.y;
+      pointer = null;
+      if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy)) return;
+      state.skipFlip = true;
+      if (dx < 0) $("flash-next").click();
+      else $("flash-prev").click();
+    });
     $("flash-card").addEventListener("click", (event) => {
+      if (state.skipFlip) {
+        state.skipFlip = false;
+        return;
+      }
       if (event.target.closest("a, button")) return;
       state.flipped = !state.flipped;
       showCard();
