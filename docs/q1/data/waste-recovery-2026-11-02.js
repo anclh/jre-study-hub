@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "waste-recovery-2026-11-02",
   title: "MSW Recovery & Carbon Accounting Delivery · City of Jade",
-  titleZh: "都市固體廢物回收／計碳／氣候行動落地",
+  titleZh: "都市固體廢物回收／碳核算與氣候行動落地",
   tip: "先只睇 Data File，15 分鐘內 sort／highlight，自己寫完先睇範例。",
   task: {
     role: "You are an Administrative Officer in the Environment and Ecology Bureau of the City of Jade. The Permanent Secretary has asked you to prepare an internal discussion paper (about 500–800 words) for senior management ahead of a mid-term Climate Action Plan stocktake.",

@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "owners-proxy-pilot-2026-11-16",
   title: "Verifying Proxy Appointments at Owners’ Meetings · City of Jade",
-  titleZh: "業主大會：電子授權試點與投票可及性",
+  titleZh: "業主大會／電子授權試點與投票可及性",
   tip: "先分清法定人數、親身投票門檻同代表委任。寫完先睇五部分範文。",
   task: {
     role: "You are an Administrative Officer in the City of Jade's Home Affairs Bureau. Prepare an internal discussion paper for the Building Governance Committee on a proposed electronic proxy appointment pilot.",

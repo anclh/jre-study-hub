@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "multilingual-app-access-2026-11-16",
   title: "From App Access to Completed Applications · City of Jade",
-  titleZh: "政府 App 共融：由搵到資料到完成申請",
+  titleZh: "政府 App 共融／資訊查閱與完成申請",
   tip: "原創虛構練習。先睇申請流程邊一步最多人退出，再比較翻譯、簡化流程同人工協助。寫完先睇五部分範文。",
   task: {
     role: "You are an Administrative Officer in the City of Jade's Digital Services Bureau. Write an internal discussion paper for the Public Services Committee on improving access to government apps for ethnic minority residents.",

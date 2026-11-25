@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "urban-heat-2026-11-06",
   title: "Urban Heat Risk & Neighbourhood Cooling · City of Jade",
-  titleZh: "城市熱風險與社區降溫（2026-11-06 模擬卷）",
+  titleZh: "城市熱風險／社區降溫",
   tip: "先做 15–20 分鐘四步速讀：標 P1/P2、options、constraints/objections，刪走蘭花展噪音；再按固定五段骨架寫。",
   task: {
     role: "You are an Administrative Officer in the Environment and Ecology Bureau (EEB), City of Jade. Draft an internal discussion paper for the Interdepartmental Task Group on Summer Heat Resilience.",

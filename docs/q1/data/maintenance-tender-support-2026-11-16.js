@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "maintenance-tender-support-2026-11-16",
   title: "Fairer Building Maintenance Tenders · City of Jade",
-  titleZh: "樓宇維修：預審名單與代辦招標監管",
+  titleZh: "樓宇維修／預審名單與代辦招標監管",
   tip: "由投標競爭、利益衝突同業主選擇入手。寫完先睇範文。",
   task: {
     role: "You are an Administrative Officer in the City of Jade's Development Bureau. Advise the Building Renewal Committee on the first phase of a proposed Maintenance Support Office.",

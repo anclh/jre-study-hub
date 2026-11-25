@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "carer-respite-2026-11-04",
   title: "Support for Informal Elderly Carers & Respite Slot Matching · City of Jade",
-  titleZh: "護老者暫託支援／空置名額配對（2026-11-04 速練）",
+  titleZh: "護老者暫託支援／空置名額配對",
   tip: "先只睇 Data File，15 分鐘內 sort／highlight（刪走無關資料如運動會），自己寫完 5 步大綱先睇下面範例。",
   task: {
     role: "You are an Administrative Officer in the Health and Social Care Bureau (HSCB) of the City of Jade. Draft an internal discussion paper for the Task Force on Community Care.",

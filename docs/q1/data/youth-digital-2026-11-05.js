@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "youth-digital-2026-11-05",
   title: "Youth Digital Exclusion & Cross-Boundary Tech Placements · City of Jade",
-  titleZh: "青年數碼包容／北部創科實習配對（2026-11-05 速練）",
+  titleZh: "青年數碼包容／北部創科實習配對",
   tip: "先只睇 Data File，15 分鐘內 sort／highlight（刪走無關資料如龍舟賽），自己寫完 5 步大綱先睇下面範例。",
   task: {
     role: "You are an Administrative Officer (AO) in the Innovation, Technology and Industry Bureau (ITIB) of the City of Jade. Draft an internal discussion paper for the Task Force on Digital Transformation and Youth Mobility.",

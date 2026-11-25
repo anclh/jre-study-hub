@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "fare-concession-review-2026-11-16",
   title: "Reviewing the Fare Concession · City of Jade",
-  titleZh: "乘車優惠檢討：補貼減少，必要出行有冇受影響？",
+  titleZh: "乘車優惠／補貼與必要出行",
   tip: "虛構練習。先將補貼、登車次數同完整旅程分開睇，再按五部分框架寫約 700 字。寫完先睇範文。",
   task: {
     role: "You are an Administrative Officer in the City of Jade's Transport and Welfare Bureau. Write an internal discussion paper for the Mobility Committee after the first month of a revised fare concession for older and eligible disabled passengers.",

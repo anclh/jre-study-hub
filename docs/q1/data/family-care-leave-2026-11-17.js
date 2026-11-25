@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "family-care-leave-2026-11-17",
   title: "Civil Service Family Care Leave: Verification, Shift Rostering and Implementation · City of Jade",
-  titleZh: "公務員家庭關顧假：審批指引、前線輪班調配與防濫用機制（2026-11-17 模擬卷）",
+  titleZh: "公務員家庭關顧假／審批、輪班與防濫用",
   tip: "先花 15 分鐘整理 Data File：分清政策宣布／建議與法定權益；前線輪班與後勤文職調配壓力截然不同；剔除雜音後按五段骨架寫約 700 字。",
   task: {
     role: "You are an Administrative Officer in the Civil Service Bureau (CSB) of the City of Jade. Draft an internal discussion paper for the Senior Civil Service Management Committee on the proposed implementation arrangements for Civil Service Family Care Leave.",

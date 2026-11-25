@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "hospital-lift-oversight-2026-11-16",
   title: "Hospital Lift Works: Inspection, Escalation and Disclosure · City of Jade",
-  titleZh: "醫院升降機工程：分段驗收、風險通報與披露",
+  titleZh: "醫院升降機工程／分段驗收、風險通報與披露",
   tip: "分清工程驗收、臨床啟用同紀律調查。寫完先睇範文。",
   task: {
     role: "You are an Administrative Officer in the City of Jade's Public Works Bureau. Prepare an internal discussion paper for the Capital Works Committee after recurring lift faults at Harbour Ridge Hospital's new clinical wing.",

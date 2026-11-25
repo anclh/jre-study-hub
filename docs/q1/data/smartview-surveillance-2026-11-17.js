@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "smartview-surveillance-2026-11-17",
   title: "SmartView AI Facial Recognition: Authorisation, Data Retention and Public Accountability · City of Jade",
-  titleZh: "SmartView 人工智能人臉識別：授權層級、資料留存期與公眾問責（2026-11-17 模擬卷）",
+  titleZh: "人臉識別／授權、留存與問責",
   tip: "分清宣布啟用與獨立驗證；影像 31 日上限與比對紀錄 180 日上限分開睇。按五段骨架寫約 700 字。",
   task: {
     role: "You are an Administrative Officer in the Security Bureau, City of Jade. Prepare an internal discussion paper for the Public Surveillance Oversight Committee regarding the operational activation and data governance of the SmartView facial recognition system.",

@@ -4,7 +4,7 @@ window.Q1_CASE_PACKS.push(...[
   {
     "id": "paper-recovery-pricing-2026-11-17",
     "title": "Waste-paper Recovery: Collector Protection and a Viable Collection Network · City of Jade",
-    "titleZh": "廢紙回收：拾荒者收入與回收網絡（2026-11-17 短題）",
+    "titleZh": "廢紙回收／拾荒者收入與回收網絡",
     "tip": "15 分鐘內整理：分清供應鏈價格、全年／部分年度數據；單一廠商個案唔代表全行。",
     "task": {
       "role": "You are an Administrative Officer in the Environmental Services Bureau of the fictional City of Jade. Prepare an internal discussion paper on protecting collectors while maintaining a viable waste-paper recovery network.",
@@ -160,7 +160,7 @@ window.Q1_CASE_PACKS.push(...[
   {
     "id": "talent-scheme-evidence-2026-11-17",
     "title": "Talent Schemes: Graduate Employment and Evidence for a Cap · City of Jade",
-    "titleZh": "人才計劃：畢業生就業與設限證據（2026-11-17 短題）",
+    "titleZh": "人才計劃／畢業生就業與設限證據",
     "tip": "重點係證據夠唔夠支持決策：累計入境唔等於現時勞動人口；唔好將 IANG 直接相加或推斷搶走職位。",
     "task": {
       "role": "You are an Administrative Officer in the Labour and Talent Bureau of the fictional City of Jade. Prepare an internal discussion paper on responding to graduate employment concerns while maintaining access to needed skills.",

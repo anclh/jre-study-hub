@@ -3,7 +3,7 @@ window.Q1_CASE_PACKS = window.Q1_CASE_PACKS || [];
 window.Q1_CASE_PACKS.push({
   id: "retirement-contributions-2026-11-16",
   title: "Recovering Retirement Contributions · City of Jade",
-  titleZh: "追討拖欠退休供款（2026-11-16 模擬卷）",
+  titleZh: "退休供款／追討拖欠",
   tip: "把欠款宗數、金額和逾期時間分開，並比較措施能否及早收回供款。",
   task: {
     role: "You are an Administrative Officer in the City of Jade Labour Bureau. Write a memo to the Director of Retirement Protection.",
