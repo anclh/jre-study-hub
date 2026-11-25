@@ -2,9 +2,9 @@
   "meta": {
     "title": "JRE Policy Bank",
     "title_zh": "JRE 政策資料庫",
-    "description": "Interview-oriented current affairs bank sourced from public HK government and LegCo materials. Not affiliated with CS Radar.",
-    "updated": "2026-11-18",
-    "sources_note": "Official Hong Kong government and LegCo materials remain primary sources where linked. SCMP-sourced cards cover selected policy-relevant reporting from June 2026 to 17 November 2026 and distinguish reported proposals from implementation. Summaries and interview angles are original study notes; recommendations are study suggestions, not government commitments.",
+    "description": "Hong Kong current affairs and policy cards.",
+    "updated": "2026-11-25",
+    "sources_note": "Hong Kong Government and Legislative Council materials are primary sources. Selected historical cards also reference reporting by the South China Morning Post.",
     "last_scmp_refresh": "2026-11-18"
   },
   "departments": [
@@ -243,6 +243,215 @@
   ],
   "items": [
     {
+      "id": "20261125-community-drug-formulary",
+      "date": "2026-11-25",
+      "title": "社區藥物名冊12月30日推出：涵蓋151項藥物",
+      "title_en": "Community Drug Formulary to launch on 30 December with 151 drug items",
+      "departments": [
+        "hhb",
+        "ha"
+      ],
+      "themes": [
+        "healthcare",
+        "poverty-welfare"
+      ],
+      "summary": "151項藥物列入首批名冊，較現行清單增加38項。醫務衞生局11月25日宣布，基層醫療共同治理網絡的家庭醫生將於12月30日起按名冊處方，涵蓋146項非專利藥及5項專利藥，每項每周共付額分別為兩元及三十元。參加者每年可獲二百元補貼抵扣非專利藥共付額，現約70,000名已進入治療階段的病人將率先受惠。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/25/P2026112500208.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20260916-kai-tak-sports",
+      "date": "2026-11-25",
+      "title": "盛事旅遊：首十月訪港旅客約4,580萬人次",
+      "title_en": "Mega Events + Tourism: about 45.8 million visitor arrivals in the first ten months",
+      "departments": [
+        "cstb"
+      ],
+      "themes": [
+        "culture-tourism",
+        "sports"
+      ],
+      "summary": "約4,580萬訪港旅客人次是2026年首10個月的全港數字，按年增12%。文體旅局11月25日回覆立法會，稱政府正以盛事旅遊策略串連活動、節慶及消費優惠。大坑舞火龍錄得逾10萬人次，其中約4萬是旅客。上半年入境旅遊相關總開支約1,110億元，全年2,381億元屬預測；兩項數字均為整體入境旅遊統計。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/25/P2026112500264.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20261124-gleneagles-ehealth-suspension",
+      "date": "2026-11-24",
+      "title": "港怡醫院流動應用程式資料外洩，醫健通註冊暫停",
+      "title_en": "Gleneagles eHealth registration suspended after patient app data breach",
+      "departments": [
+        "hhb",
+        "dh"
+      ],
+      "themes": [
+        "healthcare",
+        "digital-gov",
+        "governance"
+      ],
+      "summary": "港怡醫院的流動應用程式與醫健通沒有直接連接。醫務衞生局十一月二十三日接報後依法暫停該院醫健通註冊。暫停期間院方無法透過醫健通查閱或提供電子健康紀錄。醫務衞生局要求院方提交調查報告，當時未發現醫健通受入侵或資料外洩的證據。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/24/P2026112400714.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20261124-fire-services-bills",
+      "date": "2026-11-24",
+      "title": "消防安全兩項草案擬刊憲：責任人制度與定額罰款",
+      "title_en": "Two fire safety bills announced, covering responsible persons and fixed penalties",
+      "departments": [
+        "sb",
+        "legco"
+      ],
+      "themes": [
+        "legislation",
+        "housing-land",
+        "governance"
+      ],
+      "summary": "477份有效意見表示支持或給予正面評價，佔506份有效意見的94.3%。政府11月24日宣布兩項草案將於11月27日刊憲，擬於12月2日提交立法會首讀。方案包括確立消防裝置責任人、改革承辦商註冊及紀律制度，以及對責任清晰的違規行為引入定額罰款。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/24/P2026112400248.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20261124-wang-fuk-support-grants",
+      "date": "2026-11-24",
+      "title": "宏福苑援助基金公布業主及死者家屬新生活津貼",
+      "title_en": "Wang Fuk Court support fund announces new grants for owners and bereaved families",
+      "departments": [
+        "csso",
+        "swd"
+      ],
+      "themes": [
+        "poverty-welfare",
+        "housing-land"
+      ],
+      "summary": "30萬元是每個宏福苑單位業主的津貼，基金安排於2026年12月底及2027年6月底各發一半。每名死者的家屬合共可獲20萬元，安排於2026年12月底發放。政府11月24日宣布按一戶一社工機制處理，受惠者毋須另行申請。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/24/P2026112400135.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20261123-public-housing-building-control",
+      "date": "2026-11-23",
+      "title": "房屋局成立公營房屋樓宇管制組，按屋苑監管大型維修",
+      "title_en": "Public Housing Building Control Section established for project-based oversight",
+      "departments": [
+        "hb"
+      ],
+      "themes": [
+        "housing-land",
+        "governance"
+      ],
+      "summary": "5個正進行大型維修的屋苑已各獲專責小隊及聯絡主任支援。房屋局11月23日成立公營房屋樓宇管制組，取代獨立審查組，分設新建工程和現有樓宇管制兩個小組。原審查組發出的法定命令及通知仍然有效，已提交文件由新組繼續處理。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/23/P2026112300615.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20261120-subsidised-rental-wait",
+      "date": "2026-11-20",
+      "title": "資助出租房屋綜合輪候時間降至4.4年",
+      "title_en": "Composite waiting time for subsidised rental housing falls to 4.4 years",
+      "departments": [
+        "hb"
+      ],
+      "themes": [
+        "housing-land",
+        "poverty-welfare"
+      ],
+      "summary": "4.4年是截至2026年9月底的綜合輪候時間，6月底為4.8年。房屋局11月20日公布，統計以過去12個月獲編配的家庭及長者一人申請者計算，涵蓋公屋及簡約公屋。同期只計獲編配公屋的平均輪候時間為5.3年，獲編配簡約公屋則為2.8年。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/20/P2026112000309.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20261120-ai-risk-governance",
+      "date": "2026-11-20",
+      "title": "人工智能風險管治工作組召開首次會議",
+      "title_en": "Cross-bureau working group on AI risk governance holds first meeting",
+      "departments": [
+        "csso",
+        "itib",
+        "dpo"
+      ],
+      "themes": [
+        "fintech-ai",
+        "digital-gov",
+        "governance"
+      ],
+      "summary": "7項行動列入人工智能風險管治策略。政務司司長11月20日主持工作組首次會議，協調各項行動的落實，包括保障未成年使用者、研究人工智能產品事故責任、制訂人工智能代理管理指引及評估就業影響。工作組會按進度定期召開會議，監察各政策局及部門的落實工作。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/20/P2026112000407.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20261120-virtual-asset-services-bill",
+      "date": "2026-11-20",
+      "title": "虛擬資產服務修例草案刊憲，擬規管四類服務",
+      "title_en": "Virtual asset services bill gazetted for four additional services",
+      "departments": [
+        "fstb",
+        "hkma",
+        "legco"
+      ],
+      "themes": [
+        "finance",
+        "fintech-ai",
+        "legislation"
+      ],
+      "summary": "4個服務類別擬納入監管，包括交易、意見、管理及託管。政府於11月20日刊憲，擬要求在港經營上述業務者向證監會領牌或註冊，並接受適當人選等規管要求。草案安排12月2日提交立法會首讀。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/20/P2026112000582.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20260703-nm-bill",
+      "date": "2026-11-20",
+      "title": "《北部都會區發展條例》部分條文已生效",
+      "title_en": "Northern Metropolis Development Ordinance gazetted, with some provisions in force",
+      "departments": [
+        "devb",
+        "legco"
+      ],
+      "themes": [
+        "northern-metropolis",
+        "legislation",
+        "housing-land"
+      ],
+      "summary": "立法會十一月十二日三讀通過條例，政府十一月二十日刊憲。發展局按已生效條文公布適用範圍圖則NM/001。條例為規劃、土地補償、建築工程審批、噪音管制和跨境流動等便利措施提供法律基礎。首批附屬法例目標於二○二七年一月提交立法會審議，並於同年第一季生效。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/20/P2026112000550.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20261118-banking-legislation",
+      "date": "2026-11-18",
+      "title": "立法會通過銀行業修例，三級制將改為兩級制",
+      "title_en": "LegCo passes banking amendments, paving the way for a two-tier system",
+      "departments": [
+        "fstb",
+        "hkma",
+        "legco"
+      ],
+      "themes": [
+        "finance",
+        "legislation"
+      ],
+      "summary": "5個主要範疇納入修例。立法會11月18日通過，條例將於2027年1月1日起分階段生效。修例內容包括規管銀行控權公司、委聘專業人士協助監管、更新執法條文，以及將三級銀行制精簡為兩級。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/18/P2026111800410.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20260822-public-hospital-fee-waivers",
+      "date": "2026-11-18",
+      "title": "公營醫療收費改革：首10個月豁免約9億元",
+      "title_en": "Public healthcare fee reform: about HK$900 million waived in the first 10 months",
+      "departments": [
+        "hhb",
+        "ha"
+      ],
+      "themes": [
+        "healthcare",
+        "poverty-welfare"
+      ],
+      "summary": "約9億元是2026年首10個月擴大豁免機制下獲豁免的醫療費。首階段改革已於1月1日生效。醫務衞生局11月18日向立法會報告，獲全額豁免人數由過往每年不足14,000人增至逾25萬人，非緊急急症室求診按年減少17.5%。新設每年10,000元的醫療開支上限毋須經濟審查，截至10月底已有逾24,000宗病人申請獲批。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/18/P2026111800418.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
       "id": "20261117-labour-force-statistics",
       "date": "2026-11-17",
       "title": "失業率降至3.8%：須連同就業及勞動人口判讀",
@@ -254,10 +463,6 @@
         "labour"
       ],
       "summary": "政府公布2026年8至10月經季節性調整失業率為3.8%，較前一個三個月期間低0.1個百分點；就業不足率維持2.0%。同期總就業人數減少約1,200人，勞動人口減少約5,800人。數據屬臨時及移動三個月統計，不能單憑失業率下降便推斷新增職位增加。SCMP亦報道餐飲業失業率跌幅較明顯。",
-      "interview_angles": [
-        "失業率下跌但就業人數亦減少，政府應如何向公眾解釋？",
-        "評估就業支援時，如何結合持續就業、工時及薪酬，避免只看單一比率？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/17/P2026111700273.htm",
       "source_name": "info.gov.hk / 香港政府新聞公報",
       "scmp_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374748/hong-kongs-unemployment-rate-dips-38-amid-steady-growth"
@@ -275,10 +480,6 @@
         "healthcare"
       ],
       "summary": "衞生署表示，11間母嬰健康院已提供HPV自採樣檢測；三間婦女健康匯於2026年初開始提供服務，並自3月起逐步擴展至全港18區康健中心及康健站，作為增值服務。免費HPV補種計劃將於12月31日結束。服務擴展不等於所有合資格婦女已接受檢測，仍須重視接觸、轉介及後續跟進。",
-      "interview_angles": [
-        "如何接觸因時間、私隱或資訊障礙而未參與篩查的婦女？",
-        "除服務點數目外，應如何追蹤樣本有效率、結果通知及陽性個案轉介完成率？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/17/P2026111700510.htm",
       "source_name": "info.gov.hk / 香港政府新聞公報"
     },
@@ -295,10 +496,6 @@
         "digital-gov"
       ],
       "summary": "衞生署表示，截至2026年10月底，近六成相關持牌抗菌素藥商已登記第一階段電子平台；政府正籌備第二階段，目標於2027年收集涵蓋私家診所的用藥數據。當局亦正檢討及考慮修例，要求以電子方式記錄處方及配藥數據。現階段登記屬自願，登記比例不等於完整上報或法定要求已生效。",
-      "interview_angles": [
-        "如何降低診所及藥房輸入資料的負擔，同時保障紀錄完整性？",
-        "平台應如何以用藥及耐藥趨勢評估成效，而非只統計登記數目？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/17/P2026111700290.htm",
       "source_name": "info.gov.hk / 香港政府新聞公報"
     },
@@ -315,10 +512,6 @@
         "environment-climate"
       ],
       "summary": "機管局、EcoCeres及香港中華煤氣簽署諒解備忘錄，推動本地可持續航空燃料混配設施發展。官方同日亦公布綠色船用燃料認證標準合作。SCMP報道混配設施設於屯門第38區，作為跨境燃料供應鏈的一環；此為報道補充背景。備忘錄反映合作方向，並非設施已投產或減排成果已獲驗證。",
-      "interview_angles": [
-        "如何把合作備忘錄轉化為供應、認證及安全審批的可核查里程碑？",
-        "評估燃料減排時，應如何查證全生命週期排放並避免重複計算？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/17/P2026111700611.htm",
       "source_name": "info.gov.hk / 香港政府新聞公報",
       "scmp_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374782/hong-kong-plans-first-sustainable-aviation-fuel-facility-meet-2030-goal"
@@ -336,10 +529,6 @@
         "national-development"
       ],
       "summary": "港交所與彭博合作推出指數，涵蓋逾300隻在港上市的人民幣債券，為投資者提供表現基準，亦可用作日後設計追蹤產品。五年期中國國債期貨已於8月推出，可配合管理利率風險。",
-      "interview_angles": [
-        "如何以二手市場成交及買賣差價檢視流動性有否改善？",
-        "制定指數納入準則時，如何兼顧市場代表性和成分債券的可交易性？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/16/P2026111600237.htm",
       "source_name": "info.gov.hk / 財政司司長辦公室"
     },
@@ -356,11 +545,6 @@
         "environment-climate"
       ],
       "summary": "據《南華早報》11月16日報道，行政長官宣布香港與希臘比雷埃夫斯港建立綠色航運走廊，並成立專責小組研究航運綠色燃料交易平台。政府亦擬與洋浦及湛江港口合作，連接內地燃料供應與國際市場。相關五年規劃目標為2030年前建立五條綠色能源走廊，並使7%香港註冊船舶使用綠色航運燃料；目標不等於已達成。",
-      "interview_angles": [
-        "利：把燃料供應、加注及交易結合，可吸引航運服務及減碳投資；應以實際加注量與船舶使用率驗證。",
-        "弊：綠色燃料成本、供應穩定及不同認證標準可能阻礙採用；航運走廊與能源供應走廊須分清。",
-        "建議：先以指定航線試行長期供應合約及全生命周期碳核證，公布燃料價格差、使用量與減排成效，再逐步擴大。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374617/hong-kong-embarks-green-shipping-collaboration-greek-port",
       "source_name": "South China Morning Post / news report"
     },
@@ -379,10 +563,6 @@
         "digital-gov"
       ],
       "summary": "民青局就《建築物管理條例》修訂收到550份書面意見。11月9日向立法會提出按大型維修採購金額提高親自投票門檻，法定人數維持業主人數一成，並建議業主與代表雙方簽署授權文書、提早提交及加強核查。據《南華早報》11月14日報道，局長表示政府暫不即時設授權票上限，計劃2027年試行電子授權。試行安排與日後是否設上限仍須分開看待。",
-      "interview_angles": [
-        "提高親身投票門檻後，可如何協助長者、行動不便或身處外地的業主參與？",
-        "試行電子授權應量度哪些指標，例如核實失敗率、異議處理時間及紙本替代渠道的使用率？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900590.htm",
       "source_name": "info.gov.hk / 民政及青年事務局",
       "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3374434/hong-kong-trial-electronic-proxy-voting-platform-curb-bid-rigging-estates"
@@ -401,11 +581,6 @@
         "fintech-ai"
       ],
       "summary": "據《南華早報》11月14日報道，警務處處長表示將於11月16日啟用銳眼AI人臉識別，支援追查疑犯及尋找失蹤人士。報道指搜索須由督察或以上批准；影片保存不超過31日，人臉識別所產生的出現時間及地點等資料擬保存最多180日。銳眼目標為2028年前安裝六萬部鏡頭。此卡記錄公布安排，並未另行核實啟用完成情況。",
-      "interview_angles": [
-        "利：加快翻查影像及尋找失蹤長者，亦可能提升破案效率；應公布尋回時間和案件成效。",
-        "弊：誤認、用途擴張及長期追蹤風險，可能損害私隱與公眾信任；辨識命中不應直接視作定罪證據。",
-        "建議：限定查詢目的，保留審批及存取紀錄，安排人工覆核和獨立審核，公布誤配率並定期檢視180日保留期的必要性。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3374436/hong-kong-police-activate-ai-facial-recognition-across-surveillance-network",
       "source_name": "South China Morning Post / news report"
     },
@@ -422,10 +597,6 @@
         "northern-metropolis"
       ],
       "summary": "政府為洪水橋／厦村現代物流產業群預留約32公頃，首批五幅用地共收到16份意向書。當局會參考業界對配套、批地及財務可行性的意見擬備招標條款，最早於2027年底推出首幅或首批用地招標。",
-      "interview_angles": [
-        "如何按提交者類別及融資準備程度判斷實際競投需求？",
-        "招標應如何訂定啟用及營運里程碑，減少用地閒置？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/13/P2026111300445.htm",
       "source_name": "info.gov.hk / 運輸及物流局"
     },
@@ -443,10 +614,6 @@
         "legislation"
       ],
       "summary": "修例草案擬保留現行5%附加費。僱主如未在供款日後第120日或之前清繳欠款，擬就欠款總額再繳10%第二級附加費。草案亦擬讓積金局對違規受託人施加罰款或公開譴責，並禁止受託人把該等罰款轉嫁予計劃、成分基金或成員。",
-      "interview_angles": [
-        "如何以欠款清繳時間和逾期個案比例評估阻嚇效果？",
-        "如何區分短期周轉困難和反覆欠供，並保障僱員及早收到通知？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/13/P2026111300289.htm",
       "source_name": "info.gov.hk / 財經事務及庫務局"
     },
@@ -463,10 +630,6 @@
         "poverty-welfare"
       ],
       "summary": "房委會通過由下一期居屋起，把合資格白表家庭的按揭成數上限由90%升至95%；申請截止時表內須有三歲或以下子女。2022至2025年首次推出出售的資助出售單位，在公開市場出售的限制期亦縮短至首次轉讓起計十年。",
-      "interview_angles": [
-        "降低首期後，如何評估供款負擔和利率變動對家庭預算的影響？",
-        "縮短轉售限制後，可用哪些數據觀察買家流轉及資助單位供應？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/13/P2026111200417.htm",
       "source_name": "info.gov.hk / 香港房屋委員會"
     },
@@ -484,10 +647,6 @@
         "legislation"
       ],
       "summary": "草案擬成立藥物及醫療器械監督管理中心為法團，代表香港參與國際監管事務，並將中西藥相關規管權力和職能集中於衞生署署長。醫療器械的相關職能將待日後立法後納入。草案預定11月25日提交立法會首讀。",
-      "interview_angles": [
-        "如何在權責移交期間維持申請及安全監察服務？",
-        "如何同時追蹤審批時間和上市後安全訊號，檢視整合成效？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/13/P2026111300224.htm",
       "source_name": "info.gov.hk / 醫務衞生局"
     },
@@ -506,10 +665,6 @@
         "healthcare"
       ],
       "summary": "發展局11月13日向立法會交代瑪麗醫院新臨床大樓升降機調查。新大樓共有28部升降機，部分在工程接近完工時仍頻繁故障。調查指出井道和導軌偏差等施工問題，亦發現項目監察不足。建築署已加密工地檢測及改進數碼監工，機電工程署正檢視安裝、保養及法規制度。發展局將懷疑涉及刑事成分的部分交執法部門跟進。據《南華早報》報道，議員亦追問披露時間及問責範圍。",
-      "interview_angles": [
-        "哪些驗收關卡可在裝機前發現井道偏差？應由誰簽署、保存紀錄及審核？",
-        "當工程缺陷可能影響醫院啟用，應按甚麼風險門檻通報，並交代補救進度？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/13/P2026111300247.htm",
       "source_name": "info.gov.hk / 發展局",
       "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3374336/hong-kong-lawmakers-call-wider-investigation-hospital-lift-scandal"
@@ -527,10 +682,6 @@
         "governance"
       ],
       "summary": "食環署於11月4日展開「雷霆行動」，以鼠蹤及前線資料挑選高風險地點，沿活動路線找鼠窩，滅鼠後封堵通道並清理食物來源。署方截至公布時已巡查1,373個地點，發現199處鼠洞或鼠匿藏點。其他部門及私人場地可獲支援，日常清潔和設施保養仍由管理方負責。",
-      "interview_angles": [
-        "如何用同一批地點的鼠蹤變化及覆查結果量度復發？",
-        "跨部門場地應由誰記錄整改、安排覆查及跟進逾期個案？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/12/P2026111200579.htm",
       "source_name": "info.gov.hk / 食物環境衞生署"
     },
@@ -547,10 +698,6 @@
         "poverty-welfare"
       ],
       "summary": "荃灣西社區客廳由政府牽頭、基金會提供場地、關愛基金承擔營運開支，並由香港基督教女青年會營運。除了共享起居和洗衣設施，中心亦為照顧有特殊需要兒童的會員提供親職訓練及學習支援。截至8月底錄得逾12萬到訪人次。全港18間社區客廳預計可服務約一萬個劏房家庭。",
-      "interview_angles": [
-        "怎樣分開統計到訪人次、獨立服務家庭及完成轉介的家庭？",
-        "若服務額滿，如何兼顧高壓照顧者和甚少接觸社福服務的家庭？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/12/P2026111200501.htm",
       "source_name": "info.gov.hk / 政務司司長辦公室"
     },
@@ -567,37 +714,8 @@
         "legislation"
       ],
       "summary": "政府宣布擬於11月13日刊憲修例，在現有註冊要求上加入執業證書，涵蓋公帑資助學校、私校、國際學校及幼稚園的教師和校長。證書擬有效最多三個學年，申領須符合持續專業發展要求。草案亦處理涉及危害國家安全罪行定罪人士的教師註冊，政府預計11月25日提交立法會首讀及二讀。",
-      "interview_angles": [
-        "如何以課堂應用和同儕回饋評估專業發展成效？",
-        "幼稚園及小型學校可如何安排代課，讓教師有時間進修？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/12/P2026111200202.htm",
       "source_name": "info.gov.hk / 教育局"
-    },
-    {
-      "id": "20260703-nm-bill",
-      "date": "2026-11-12",
-      "title": "《北部都會區發展條例草案》刊憲並於11月通過",
-      "title_en": "Northern Metropolis Development Bill gazetted and passed",
-      "departments": [
-        "devb",
-        "legco"
-      ],
-      "themes": [
-        "northern-metropolis",
-        "legislation",
-        "housing-land"
-      ],
-      "summary": "政府於2026年7月3日刊憲《北部都會區發展條例草案》，擬精簡規劃及土地程序、加快工程及便利產業營運，並賦權行政長官會同行政會議就六方面訂立附屬法例，包括指定範圍內改用途／放寬參數可由一般最少約九個月壓縮至約兩個月。 據《南華早報》11月12日報道，立法會完成三讀並一致通過草案，辯論約八小時。發展局局長甯漢豪表示新法為五年規劃下北都作為創科樞紐奠基。報道引議員指，這是香港首次為單一地區訂立專項法例。通過不等於工程已展開，附屬法例及個別項目仍須跟進。",
-      "interview_angles": [
-        "利：專項法例可加快土地及規劃程序，有助投資者評估北都時間表。",
-        "弊：主體法例加附屬法例授權，公眾參與期縮短後，保育、收地及監察缺口可能後移。",
-        "建議：公布附屬法例時間表、公眾參與日數，以及通過後首批「熟地」及收地補償的可核查指標。"
-      ],
-      "source_url": "https://www.info.gov.hk/gia/general/202607/03/P2026070300863.htm",
-      "source_name": "info.gov.hk 新聞公報",
-      "last_updated": "2026-11-12",
-      "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3374173/hong-kong-passes-bill-speed-development-northern-metropolis-megaproject"
     },
     {
       "id": "20261111-smart-traffic-fund-ai-projects",
@@ -612,10 +730,6 @@
         "fintech-ai"
       ],
       "summary": "運輸署公布智慧交通基金第27批兩個項目合共獲約1,790萬元資助。一個擬用大型語言模型協助擬訂分階段工程的臨時交通安排，另一個擬以巴士營運、行車影片和事故資料設計模擬訓練。項目已獲資助，日後可用測試結果評估規劃質素和司機訓練成效。",
-      "interview_angles": [
-        "AI草擬的改道方案如何覆核行人通道、緊急車輛通行和現場工序？",
-        "可用哪些實際駕駛指標檢驗模擬訓練成效？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100508.htm",
       "source_name": "info.gov.hk / 運輸署"
     },
@@ -632,10 +746,6 @@
         "labour"
       ],
       "summary": "勞福局在立法會交代，擬由2027年首季起兩年內透過主要僱主組織提供合共一萬個至少六個月的全職職位，供欠缺工作經驗的職場新鮮人申請。職位須額外增設，超出參與企業的現有人手及常規招聘計劃。這是一項擬議安排，屬三萬青年職位及實習計劃的一環。",
-      "interview_angles": [
-        "如何核對僱主原有招聘計劃，證明受支持職位確屬新增？",
-        "除計算入職人數，如何追蹤合約期滿後的留任、薪酬和技能進展？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100304.htm",
       "source_name": "info.gov.hk / 勞工及福利局"
     },
@@ -653,10 +763,6 @@
         "legislation"
       ],
       "summary": "政府正擬備《醫療器械條例草案》，以法定制度取代自願表列，並計劃檢視推出市場後的監察安排。2026年10月底已有11,052款器械表列；政府初步估計約35,000款本地器械須在新制度下註冊，當中包括擬直接過渡的已表列器械。醫務衞生局預定11月13日向立法會衞生事務委員會簡介建議。",
-      "interview_angles": [
-        "如何按風險安排審批次序及過渡期，避免常用器械供應中斷？",
-        "如何以可追溯標籤、不良事件通報時限及回收完成率監察上市後安全？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100272.htm",
       "source_name": "info.gov.hk / 醫務衞生局"
     },
@@ -673,10 +779,6 @@
         "national-development"
       ],
       "summary": "在COP31中國角的廣東專場，粵港澳三個機構簽署合作框架，擬成立工作協調組，研究如何讓各地碳足跡核算規則和標籤互通。若各地接受可比的核算結果，跨境供應商可減少重複核證；落實仍取決於核算邊界、數據質素和第三方查證。環境及生態局局長在中國角另一場活動公布，香港2025年總碳排放較2014年峰值低32%，這是全港排放比較，不能當作標籤互認的減排成效。",
-      "interview_angles": [
-        "三地產品採用不同電力排放因子時，如何讓標籤可比較？",
-        "怎樣為中小企減少重複核證成本，同時保留抽查和糾正機制？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100043.htm",
       "source_name": "info.gov.hk / 環境及生態局"
     },
@@ -695,11 +797,6 @@
         "youth"
       ],
       "summary": "據《南華早報》11月11日報道，勞工及福利局局長孫玉菡在立法會表示，暫無計劃大幅調整搶人才政策，亦不會為非本地畢業生在港求職設上限。他指勞動人口於2018年見頂、人口老化，仍需輸入人才；由2022年施政報告起推出高才通等途徑，大多數高才通簽證持有人來自內地。孫玉菡稱各人才入境計劃已有逾32萬人抵港，本地畢業生仍具「天然優勢」。工聯會議員指約25,000名非本地畢業生經IANG留港求職，增加非創科本地生壓力。孫玉菡指IANG給予兩年求職期，獲聘才續簽證，並指商業及專業服務仍需大量人手。當局正與公營大學籌備2028-29至2030-31三年期規劃，對齊創科與產業人力。此為立法會答問報道，並非正式修訂計劃名額。",
-      "interview_angles": [
-        "利：人口老化下輸入人才可補支柱行業人手，IANG須獲聘才續簽證。",
-        "弊：若本地非創科畢業生失業上升，而輸入規模沒有行業配額，公眾會質疑「本地優先」是否落空。",
-        "建議：按行業公布本地生與IANG／高才通的就業率及起薪，三年期學額規劃對齊短缺工種，並訂檢討觸發指標。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/article/3374092/hong-kong-rules-out-talent-scheme-caps-despite-squeeze-jobs-local-graduates",
       "source_name": "South China Morning Post / news report"
     },
@@ -716,10 +813,6 @@
         "environment-climate"
       ],
       "summary": "食環署在全港使用第三代冷氣機滴水巡查系統，以紅外線夜視和AI影像辨識協助定位滴水源頭，並在黑點安排主動巡查。截至2026年9月底約發出8,100張妨擾事故通知，較去年同期多約16%；逾99%收到通知的住戶按要求處理滴水。通知數增加可受巡查強度影響，應配合黑點復發率和處理時間評估居民實際改善。",
-      "interview_angles": [
-        "發出通知前如何由人員核實系統判斷，並讓住戶要求覆核？",
-        "物管公司可先做哪些排水維修和跟進工作？如何衡量同一位置的滴水有否復發？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000648.htm",
       "source_name": "info.gov.hk / 食物環境衞生署"
     },
@@ -737,11 +830,6 @@
         "finance"
       ],
       "summary": "政府與港鐵簽訂北環綫全項目協議，主綫與接通深圳皇崗口岸的支綫均進入建造階段，目標在2034年或之前同步通車。政府估算全綫資本開支約862億港元（2025年7月價格），較原估算低28%。第二部分採用「鐵路加物業」模式，在指定用地按有鐵路基礎評估的十足市值地價中扣除固定款額，支援工程融資。 據《南華早報》11月14日跟進，港鐵表示新增八幅用地雖支援項目，但物業回款周期長，仍有現金流壓力，正研究發債及貸款；獲批土地不等於即時現金收入。",
-      "interview_angles": [
-        "利：土地增值可支援鐵路建設，但長期項目回報與短期現金流須分開評估。",
-        "弊：樓市疲弱或售樓延誤可能擴大融資缺口，增加借貸成本與公共財政風險。",
-        "建議：公開年度現金流及利率、樓價壓力測試，分階段安排融資，交代政府承擔上限及工期影響。"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000476.htm",
       "source_name": "info.gov.hk / 運輸及物流局",
       "scmp_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374441/hong-kong-rail-giant-warns-cash-crunch-despite-northern-metropolis-land-grant",
@@ -762,10 +850,6 @@
         "education"
       ],
       "summary": "北部都會區金融諮詢工作小組討論大學城的貸款及公私營合作等選項。金管局擬修訂《銀行業（資本）規則》，把包括11所專上院校和3間園區公司在內的相關機構列為本地公營單位，以降低銀行相關資本成本。當局擬於2027年第一季提交立法會，目標第二季生效；現階段屬建議，個別項目仍須接受信貸評估。",
-      "interview_angles": [
-        "降低資本成本後，如何檢視融資年期及息差有否改善？",
-        "銀行和項目機構應如何分配建造超支、收入不足及再融資風險？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000273.htm",
       "source_name": "info.gov.hk / 香港金融管理局"
     },
@@ -783,11 +867,6 @@
         "governance"
       ],
       "summary": "據《南華早報》11月10日報道，政府擬由2027年1月起給予公務員每年最多12小時家庭關顧假，每次申請一至四小時，涵蓋陪家人覆診、照顧患病親屬、子女學校活動及家庭突發事情。一般只須提供理由，毋須證明；緊急情況可先獲上司批准後補交申請，合理懷疑濫用時可要求文件。詳細安排仍須諮詢職方，措施並非私營僱員的法定假期。",
-      "interview_angles": [
-        "利：短時數假期切合覆診和照顧需要，有助工作家庭平衡及挽留人才。",
-        "弊：前線輪班和人手緊張部門較難調配，亦須處理批核不一致及濫用風險；不宜直接推斷可提升生育率。",
-        "建議：訂立跨部門批核指引及緊急替補安排，以使用率、拒批理由、服務輪候時間及員工滿意度檢討，兼顧照顧者需要與公共服務。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/politics/article/3373895/hong-kong-civil-servants-be-given-12-hours-family-care-leave-year",
       "source_name": "South China Morning Post / news report"
     },
@@ -804,10 +883,6 @@
         "innovation"
       ],
       "summary": "數字政策辦公室接受合資格團體免費借用人形機械人，在免費社區活動中示範具身人工智能。首輪申請截至11月20日，活動安排在2026年12月15日至2027年2月28日。試點納入「友智識」數碼共融計劃，讓居民接觸新技術；如要衡量數碼共融成效，可追蹤參與者其後能否完成所需的網上服務操作。",
-      "interview_angles": [
-        "活動如何為長者及行動不便人士提供可參與的操作環節？",
-        "如何以活動後的實際操作能力評估成效，並照顧現場安全？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900281.htm",
       "source_name": "info.gov.hk / 數字政策辦公室"
     },
@@ -824,12 +899,7 @@
         "fintech-ai",
         "governance"
       ],
-      "summary": "財政司司長在會財局論壇引述上月研究：五間受訪大型審計事務所中，四間已開始實施AI功能；中小型事務所的審計自動化進度則不一。這是指定樣本的觀察，不能當作全行業八成採用率。講辭提醒業界核查AI輸出的假設及證據，防範虛構文件，並持續培訓年輕專業人員。面試可分析如何在提升效率之餘保留專業判斷、查證責任及人才培育。",
-      "interview_angles": [
-        "使用AI節省例行工序後，事務所應如何核實證據來源及保留人工覆核責任？",
-        "中小型事務所若欠缺技術與培訓資源，監管者可如何支援而不降低審計質素？",
-        "五間大型事務所的調查有何代表性限制？評估行業轉型還須補充哪些資料？"
-      ],
+      "summary": "財政司司長在會財局論壇引述上月研究：五間受訪大型審計事務所中，四間已開始實施AI功能；中小型事務所的審計自動化進度則不一。這是指定樣本的觀察，不能當作全行業八成採用率。講辭提醒業界核查AI輸出的假設及證據，防範虛構文件，並持續培訓年輕專業人員。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900283.htm",
       "source_name": "info.gov.hk / 財政司司長辦公室"
     },
@@ -847,12 +917,7 @@
         "fintech-ai",
         "governance"
       ],
-      "summary": "創科及工業局局長在電腦會議交代AI部署：沙嶺數據園區預期在2030年後提供180,000 PFLOPS算力，屬未來容量預測而非現有供應；政府另向人工智能資助計劃注資10億元。管治方面，數字政策辦公室將選取試點部門，要求面向公眾的AI項目投標者提交安全及倫理合規聲明，並推動業界管治框架及AI代理安全管理指引。面試可把算力投資、實際使用及採購後監察連起來分析。",
-      "interview_angles": [
-        "算力供應擴大後，如何以使用率、服務可靠性及科研成果轉化衡量公共投資成效？",
-        "投標聲明如何配合獨立測試、合約責任及上線後監察，避免只做書面合規？",
-        "如何讓中小企及研究團隊用得起算力，並兼顧能源需求及資料保安？"
-      ],
+      "summary": "創科及工業局局長在電腦會議交代AI部署：沙嶺數據園區預期在2030年後提供180,000 PFLOPS算力，屬未來容量預測而非現有供應；政府另向人工智能資助計劃注資10億元。管治方面，數字政策辦公室將選取試點部門，要求面向公眾的AI項目投標者提交安全及倫理合規聲明，並推動業界管治框架及AI代理安全管理指引。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900290.htm",
       "source_name": "info.gov.hk / 創新科技及工業局"
     },
@@ -868,11 +933,6 @@
         "governance"
       ],
       "summary": "據《南華早報》11月9日報道，立法會主席表示由2027年起，議員提出無立法效力的議案時，須提交相關研究結果及建議，讓政府和公眾理解議案理據，推動循證討論。無立法效力議案主要表達關注及促請政府行動，本身不會改變法律；新要求亦不等於政府必須採納建議。",
-      "interview_angles": [
-        "利：讓政策主張有可檢視的證據和建議，提升辯論及公眾監察的質素。",
-        "弊：若缺乏來源和方法標準，可能變成文件堆砌；研究資源差異亦可能影響參與。",
-        "建議：統一披露資料來源、研究局限、成本及受影響群體，提供共享研究支援，並追蹤政府回應及建議落實情況。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/politics/article/3373777/evidence-based-legco-require-research-lawmakers-raising-non-binding-motions",
       "source_name": "South China Morning Post / news report"
     },
@@ -888,12 +948,7 @@
         "poverty-welfare",
         "elderly-care"
       ],
-      "summary": "社區照顧者飯堂計劃自三月在南區石排灣邨試行，至十一月八日公布已提供逾4,000份飯餐，接觸近400名隱蔽及高風險人士。計劃透過日常供餐識別照顧者及獨居長者需要，再連接支援服務。面試可討論如何把接觸人數轉化為有效轉介及持續支援；供餐總數本身並不能證明照顧壓力已減輕。",
-      "interview_angles": [
-        "如何利用低門檻供餐識別隱蔽照顧者，同時保障私隱並避免標籤效應？",
-        "除飯餐和接觸人數外，應否追蹤轉介完成率、持續使用服務及照顧者壓力變化？",
-        "若擴展至其他地區，如何按高風險人口、營運能力及成本效益選點？"
-      ],
+      "summary": "社區照顧者飯堂計劃自三月在南區石排灣邨試行，至十一月八日公布已提供逾4,000份飯餐，接觸近400名隱蔽及高風險人士。計劃透過日常供餐識別照顧者及獨居長者需要，再連接支援服務。供餐總數本身並不能證明照顧壓力已減輕。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/08/P2026110600621.htm",
       "source_name": "info.gov.hk / 勞工及福利局"
     },
@@ -911,11 +966,6 @@
         "northern-metropolis"
       ],
       "summary": "政府刊憲修訂命令，將由政府全資擁有、負責發展及營運洪水橋產業園的公司列為《防止賄賂條例》下公共機構。公司董事及僱員將成為條例所指公職人員，與公司工作相關的索取或接受利益等行為受更嚴格規管；與公司有業務往來人士亦受相關條文約束。命令須經立法會先訂立後審議程序，預定2027年1月29日起生效。",
-      "interview_angles": [
-        "產業園肩負招商和土地發展職能，如何在行政效率與公共機構級別的廉潔監管間取得平衡？",
-        "納入條例後，董事、僱員、承辦商及投資者需要哪些清晰指引和合規培訓？",
-        "北都其他由公營機構或政府持有公司承擔的發展職能，是否應採用一致的防貪治理標準？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/06/P2026110500515p.htm",
       "source_name": "info.gov.hk / 發展局"
     },
@@ -934,11 +984,6 @@
         "transport-logistics"
       ],
       "summary": "政府刊憲《2026年電子交易（修訂）條例草案》，參考聯合國國際貿易法委員會《電子可轉讓記錄示範法》，為提單、匯票及承付票等文件建立電子化法律框架。草案採用功能等同及技術中立原則，要求可靠處理文件唯一性、控制權及可靠性；電子文件屬可選方式，不會強制取代紙本。政府指已有13個司法管轄區參照示範法立法，草案將於11月18日提交立法會首讀及二讀。",
-      "interview_angles": [
-        "電子可轉讓記錄如何在跨境交易中證明唯一性和控制權，誰負責認證及處理爭議？",
-        "保留紙本選項能否兼顧中小企數碼能力差異，政府如何推動採用而不增加雙重成本？",
-        "香港如何與主要貿易夥伴互認電子文件，並評估減省成本及提升可追溯性的實際成效？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/06/P2026110600185p.htm",
       "source_name": "info.gov.hk / 商務及經濟發展局"
     },
@@ -956,11 +1001,6 @@
         "governance"
       ],
       "summary": "小西灣兒童體能智力測驗中心將於2026年12月21日啓用，面積較牛頭角舊中心大逾一倍。衞生署七間中心的服務將於2027年5月31日整合至醫管局，配合臨床服務職能重整，並與香港兒童醫院相關服務銜接。交接涵蓋個案紀錄與預約通知；家長若選擇不轉交資料，須在2026年12月31日前交回文件，相關日後預約將取消，再求診須重新轉介。",
-      "interview_angles": [
-        "如何以輪候時間、評估至治療間隔及失約率衡量整合成效？",
-        "交接期間如何避免個案流失，並向家長清楚解釋資料移交及退出後果？",
-        "中心空間擴大如何配合跨專業人手，才可轉化為實際服務容量？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/06/P2026110500448.htm",
       "source_name": "info.gov.hk / 衞生署"
     },
@@ -976,11 +1016,6 @@
         "finance"
       ],
       "summary": "金管局第三季調查涵蓋約2,500間中小企。撇除沒有意見者，83%認為銀行批核與六個月前相比不變或較容易，較上季78%上升；已獲貸款者中表示取態收緊的比例由4%降至2%。但已知新申請結果者的完全或部分成功比例由85%降至78%。僅2%受訪企業季內申請新貸款，相關結果易波動；觀感改善不能直接等同整體貸款供應增加。",
-      "interview_angles": [
-        "如何解釋信貸觀感改善與新申請成功比例下降並存，避免混淆不同分母？",
-        "政府應如何兼顧中小企融資需要、銀行風險管理及企業長期可持續性？",
-        "評估支援政策時，還需哪些貸款投放、需求及行業分布資料？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/06/P2026110600510.htm",
       "source_name": "info.gov.hk / 香港金融管理局"
     },
@@ -997,13 +1032,25 @@
         "legislation"
       ],
       "summary": "財庫局向立法會委員會介紹擬議印花稅寬免，降低新房託在港上市前重組非住宅資產的成本，住宅物業不適用。受惠房託須於物業轉讓後六個月內上市，並持有相關物業或投資工具股份及維持上市至少兩年。政府目標於2027年上半年提交草案；建議以提交草案當日作生效起點，待通過後按資格退還期間已繳稅款。現階段屬立法建議，並非已生效優惠。",
-      "interview_angles": [
-        "如何衡量稅收減免能否帶來新增上市、資產規模和市場流動性？",
-        "六個月上市及兩年持有要求能否防止避稅，如何處理未能如期上市的情況？",
-        "為何排除住宅物業，政策如何兼顧金融發展與本地樓市影響？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/06/P2026110600465.htm",
       "source_name": "info.gov.hk / 財經事務及庫務局"
+    },
+    {
+      "id": "20261104-real-name-ticketing",
+      "date": "2026-11-04",
+      "title": "防止炒賣門票：實名制按個別節目考慮",
+      "title_en": "Anti-scalping measures: real-name ticketing considered event by event",
+      "departments": [
+        "cstb",
+        "legco"
+      ],
+      "themes": [
+        "culture-tourism",
+        "governance"
+      ],
+      "summary": "30%是紅館及伊利沙伯體育館四場或以上節目最低公開發售比例；啟德體育園營運方一般要求至少50%。文體旅局11月4日向立法會表示，城市售票網會就個別大型或熱門節目與主辦方研究實名售票或登記抽籤。政府繼續研究，答覆未宣布全面強制實名售票或生效日期。",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400259.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
     },
     {
       "id": "20261104-commodity-ecosystem",
@@ -1021,11 +1068,6 @@
         "national-development"
       ],
       "summary": "財庫局在立法會表示，香港以黃金為切入點發展大宗商品交易生態圈，並由跨部門聯合工作組協調。財庫局研究合資格活動稅務優惠；金管局檢視清算、結算及離岸人民幣流動性，證監會、保監局及港交所分別推進衍生工具監管、風險承保及市場產品合作。政府亦與內地交易所研究跨境交易、倉單互認、結算交割和抵押品安排的可行性。",
-      "interview_angles": [
-        "香港應以哪些市場深度、交易量和實體經濟效益指標衡量生態圈成效？",
-        "跨境期貨交易及倉單互認涉及哪些監管、資金流和投資者保障風險？",
-        "稅務優惠與公共配套如何避免只補貼交易量，並帶動本地倉儲、保險及航運服務？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400306.htm",
       "source_name": "info.gov.hk / 財經事務及庫務局"
     },
@@ -1043,11 +1085,6 @@
         "fintech-ai"
       ],
       "summary": "立法會於11月4日通過條例草案，落實經合組織加密資產申報框架（CARF）及經修訂共同匯報標準（CRS）。CARF於2027年起實施，服務提供者須收集指定資料，稅務局擬於2028年起交換；修訂CRS同於2028年實施，資料交換預計2029年開始。稅務局將發布指引並設專責小組支援業界。政策焦點是國際稅務透明度、合規成本與資料保密安全的平衡。",
-      "interview_angles": [
-        "新申報責任如何涵蓋不同規模的加密資產服務提供者，政府會否提供分級過渡安排？",
-        "香港如何確保跨境資料交換符合互惠原則，同時保障資料保密和安全？",
-        "CARF及修訂CRS的2027至2029年分階段時間表，如何降低業界不確定性並維持香港競爭力？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400308p.htm",
       "source_name": "info.gov.hk / 財經事務及庫務局"
     },
@@ -1064,11 +1101,6 @@
         "governance"
       ],
       "summary": "政府統計處預先估計，2026年第三季實質本地生產總值按年增長5.2%，按季增長1.9%；首三季合計按年增長5.1%。貨品出口升30.4%，私人消費升2.8%，本地固定資本形成升7.3%。出口強勁與內需穩定帶動增長，但外圍地緣政治及主要央行收緊貨幣政策仍構成風險；修訂數字及全年預測於11月13日公布。",
-      "interview_angles": [
-        "出口高速增長如何轉化為本地就業、工資和中小企收益？",
-        "消費增幅較出口及投資溫和，政府應如何處理不同板塊復甦不均？",
-        "面對外圍地緣政治和利率風險，財政及產業政策應如何保留緩衝？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202611/03/P2026110300411.htm",
       "source_name": "info.gov.hk / 政府統計處"
     },
@@ -1084,12 +1116,7 @@
         "northern-metropolis",
         "national-development"
       ],
-      "summary": "教育局回應2027年QS亞洲大學排名：香港五間大學入亞洲十強，三間入亞洲五強（港大第1、城大第4、中大第5）；八間排名上升，十一間獲評級大學全數入亞洲五百強。局方指成績反映資源投入，並連結翌日世界頂尖大學校長論壇及北都大學城、吸引國際科研人才等政策。面試宜問樞紐地位如何轉成學額、研究產出與產業連結。",
-      "interview_angles": [
-        "五校入亞洲十強、三校入五強的佳績，如何轉化為非本地生質素、研究經費與產業研發落地？",
-        "北都大學城與吸引國際科研人才的時間表、用地與學額指標應如何設定及考核？",
-        "排名依賴聲譽與國際化指標，政府如何避免「追排名」而忽略本地人才培養與可負擔學費？"
-      ],
+      "summary": "教育局回應2027年QS亞洲大學排名：香港五間大學入亞洲十強，三間入亞洲五強（港大第1、城大第4、中大第5）；八間排名上升，十一間獲評級大學全數入亞洲五百強。局方指成績反映資源投入，並連結翌日世界頂尖大學校長論壇及北都大學城、吸引國際科研人才等政策。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/03/P2026110300550.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1104,12 +1131,7 @@
         "finance",
         "innovation"
       ],
-      "summary": "金管局舉辦第五屆國際金融領袖投資峰會主峰會，主題「思變圖新 開拓新局」；約280位國際金融領袖出席，當中約120位為集團主席／行政總裁，國務院副總理何立峰視像開幕。峰會連續五年，並以金管局、證監會與金融學院合辦「與國際投資者對話」作結。面試宜把活動數字對接國際金融中心吸引力與落地成果，而非禮賓表述。",
-      "interview_angles": [
-        "連續五年峰會對鞏固香港國際金融中心地位有何可量度指標（資金流入、機構落戶、市場成交）？",
-        "約120位主席／行政總裁級出席，如何轉化為具體投資或業務擴張，而非一次性曝光？",
-        "金管局、證監會與金融學院合辦投資者對話，應如何跟進監管可預期性與市場開放議題？"
-      ],
+      "summary": "金管局舉辦第五屆國際金融領袖投資峰會主峰會，主題「思變圖新 開拓新局」；約280位國際金融領袖出席，當中約120位為集團主席／行政總裁，國務院副總理何立峰視像開幕。峰會連續五年，並以金管局、證監會與金融學院合辦「與國際投資者對話」作結。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/03/P2026110300369.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1128,12 +1150,7 @@
         "finance",
         "innovation"
       ],
-      "summary": "行政長官在2026粵港澳大灣區全球招商大會視像致辭：三地政府第五年合辦；指大灣區佔全國面積不足0.6%卻創造約全國九分之一經濟總量。強調《香港第一個五年規劃》對接「十五五」、硬聯通／軟聯通／心聯通，以及前海、南沙、河套與北部都會區（佔港面積約三分之一）。內地企業出海專班已協助超過360家內地企業在港設立或擴展。面試宜抓可驗證招商與平台指標。",
-      "interview_angles": [
-        "出海專班逾360家企業之外，招攬重點企業落戶的優惠政策包成效應用什麼KPI衡量？",
-        "硬聯通／軟聯通／心聯通中，人流物流資金流數據流哪一項短期瓶頸最大？哪個局主責？",
-        "北都佔港約三分一面積，大學城與創科產業「熟地」供應如何對接大灣區招商承諾的時間表？"
-      ],
+      "summary": "行政長官在2026粵港澳大灣區全球招商大會視像致辭：三地政府第五年合辦；指大灣區佔全國面積不足0.6%卻創造約全國九分之一經濟總量。強調《香港第一個五年規劃》對接「十五五」、硬聯通／軟聯通／心聯通，以及前海、南沙、河套與北部都會區（佔港面積約三分之一）。內地企業出海專班已協助超過360家內地企業在港設立或擴展。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/03/P2026110200483.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1149,12 +1166,7 @@
         "fintech-ai",
         "governance"
       ],
-      "summary": "金管局與香港科技大學推出後量子密碼學工具包，為銀行提供管治安排、密碼風險評估、過渡需求識別與進度監察框架，配合較早推出的量子準備度指數，協助業界有序過渡至後量子密碼學。面試宜問強制性、時間表與對銀行IT成本的影響。",
-      "interview_angles": [
-        "工具包與量子準備度指數會否升級為監管期望或強制時間表？涵蓋哪些系統優先？",
-        "中小銀行如何負擔後量子遷移成本？金管局有否分層要求或共享基建？",
-        "若主要經濟體步伐不一，香港應領先強制還是跟從國際時間表？"
-      ],
+      "summary": "金管局與香港科技大學推出後量子密碼學工具包，為銀行提供管治安排、密碼風險評估、過渡需求識別與進度監察框架，配合較早推出的量子準備度指數，協助業界有序過渡至後量子密碼學。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200583.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1169,12 +1181,7 @@
         "finance",
         "fintech-ai"
       ],
-      "summary": "金管局宣布Ensemble項目試行階段EnsembleTX進入新階段，透過代幣化央行貨幣支持銀行間代幣化存款的24x7結算；參與銀行及業界先行者分別增至12間及20間。面試宜聚焦代幣化結算的風險管控、流動性與對傳統RTGS的關係。",
-      "interview_angles": [
-        "24x7代幣化結算對銀行流動性管理與操作風險有何新要求？",
-        "EnsembleTX如何與現有RTGS／跨境支付基建銜接，避免雙軌碎片化？",
-        "擴大參與後，金管局如何設定試行「成功／退出」準則再決定全面推展？"
-      ],
+      "summary": "金管局宣布Ensemble項目試行階段EnsembleTX進入新階段，透過代幣化央行貨幣支持銀行間代幣化存款的24x7結算；參與銀行及業界先行者分別增至12間及20間。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200541.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1190,12 +1197,7 @@
         "fintech-ai",
         "governance"
       ],
-      "summary": "金管局推出SAGE項目並成立代理式金融專家小組，推動代理式人工智能（agentic AI）在金融業的負責任發展與應用，強調管治與賦能並重，並提出「認識你的代理（KYA）」等概念。面試宜問監管邊界、問責歸屬與對消費者保障的含義。",
-      "interview_angles": [
-        "「KYA／代理式金融」若出錯，責任應落在銀行、模型供應商還是客戶？監管如何劃界？",
-        "SAGE與現有虛擬銀行／金融科技沙盒有何分工？何時由試驗轉為正式指引？",
-        "如何避免「有政策、缺落地」？專家小組產出如何變成可執行的合規期望？"
-      ],
+      "summary": "金管局推出SAGE項目並成立代理式金融專家小組，推動代理式人工智能（agentic AI）在金融業的負責任發展與應用，強調管治與賦能並重，並提出「認識你的代理（KYA）」等概念。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200422.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1212,12 +1214,7 @@
         "national-development",
         "youth"
       ],
-      "summary": "行政長官李家超與教育部部長懷進鵬會面，就深化教育合作交流意見；教育局局長蔡若蓮等亦有出席。公報提及留學香港、政產學研投等方向。面試宜抽取可驗證合作項目（招生、科研、資歷互認），評估是否超越禮節性會面。",
-      "interview_angles": [
-        "會面成果如何轉化為可量度指標（內地生／教研合作宗數、留學香港計劃名額）？",
-        "教育合作如何對接《香港第一個五年規劃》的人才與創科目標，而非停留於意向？",
-        "若成效未如預期，下一份《施政報告》應如何調整對接國家教育部的機制？"
-      ],
+      "summary": "行政長官李家超與教育部部長懷進鵬會面，就深化教育合作交流意見；教育局局長蔡若蓮等亦有出席。公報提及留學香港、政產學研投等方向。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200346.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1232,12 +1229,7 @@
         "housing-land",
         "governance"
       ],
-      "summary": "房屋委員會向南區區議會介紹華富邨重建及遷置計劃最新進展，並就新華富邨第一期公營房屋發展徵詢意見，獲普遍支持。薄扶林南多個接收屋邨工程按序推展（如華富北邨）；相關道路工程擬於2027年刊憲、其後開展。面試宜問重建時序、安置銜接與區內交通配套。",
-      "interview_angles": [
-        "華富重建各期入伙／遷置時序如何避免「拆多於建」造成過渡安置壓力？",
-        "接收屋邨與道路工程刊憲／動工節點延誤時，房委會的應變與問責機制是什麼？",
-        "南區公屋供應如何對接整體公營房屋十年建屋量目標？"
-      ],
+      "summary": "房屋委員會向南區區議會介紹華富邨重建及遷置計劃最新進展，並就新華富邨第一期公營房屋發展徵詢意見，獲普遍支持。薄扶林南多個接收屋邨工程按序推展（如華富北邨）；相關道路工程擬於2027年刊憲、其後開展。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200240.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1254,12 +1246,7 @@
         "national-development",
         "governance"
       ],
-      "summary": "行政長官在2026大灣區科學論壇開幕式致辭，闡述香港對接國家科技創新與大灣區協同的定位。面試宜抽取可驗證主張（例如科研設施、成果轉化、人才跨境流動），評估是否超越儀式性表述。",
-      "interview_angles": [
-        "致辭中的創科主張如何對應北部都會區、河套深港創新合作區與新型工業化落地指標？",
-        "如何避免「有政策、缺落地」？場景驗證、資助成效與人才留港應如何考核？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "行政長官在2026大灣區科學論壇開幕式致辭，闡述香港對接國家科技創新與大灣區協同的定位。",
       "source_url": "https://www.info.gov.hk/gia/general/202611/01/P2026103000621.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1274,12 +1261,7 @@
         "culture-tourism",
         "national-development"
       ],
-      "summary": "第六屆「粵港澳大灣區文化藝術節」展開，康文署籌劃多項本地及訪港節目與展覽，並支持香港藝團走進大灣區城市演出。屬文體旅＋大灣區文化交流措施，面試宜問旅客轉化、產業收益與「中外文化藝術交流中心」定位是否可量度。",
-      "interview_angles": [
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "如何衡量對訪港旅客、藝團收入與青年文化就業的實質帶動？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "第六屆「粵港澳大灣區文化藝術節」展開，康文署籌劃多項本地及訪港節目與展覽，並支持香港藝團走進大灣區城市演出。屬文體旅＋大灣區文化交流措施。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/31/P2026103000481.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1294,12 +1276,7 @@
         "environment-climate",
         "legislation"
       ],
-      "summary": "政府將《2026年野生動物保護（修訂）條例草案》刊憲，更新野生動物保護法定框架。面試宜扣連本港人獸衝突、保育與發展用地張力，以及罰則／執法是否足夠阻嚇非法飼養、餵飼或貿易行為。",
-      "interview_angles": [
-        "修訂主要堵塞哪些執法或罰則缺口？與郊野公園、發展項目環評如何協調？",
-        "如何在保育目標與新界／北部都會區發展壓力之間取平衡？",
-        "若立法會或業界反對關鍵條文，政府有何備選方案及時間表？"
-      ],
+      "summary": "政府將《2026年野生動物保護（修訂）條例草案》刊憲，更新野生動物保護法定框架。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/30/P2026102900478.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1315,12 +1292,7 @@
         "legislation",
         "fintech-ai"
       ],
-      "summary": "政府將《2026年證券及期貨（修訂）條例草案》刊憲，推進證券期貨監管框架更新。面試焦點應放在修訂針對的市場缺口（例如中介人規管、市場基建、投資者保障或科技驅動交易），以及對鞏固國際金融中心地位與合規成本的平衡。",
-      "interview_angles": [
-        "條例／附屬法例的政策目標是什麼？與現行制度相比，簡化了哪些程序，又削弱了哪些制衡？",
-        "對市場中介人合規成本與零售投資者保障的淨影響如何評估？",
-        "若立法會或業界反對關鍵條文，政府有何備選方案及時間表？"
-      ],
+      "summary": "政府將《2026年證券及期貨（修訂）條例草案》刊憲，推進證券期貨監管框架更新。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000568.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1335,12 +1307,7 @@
         "environment-climate",
         "governance"
       ],
-      "summary": "署理環境及生態局局長出席「全民計碳大行動」宣傳活動巡禮並致辭，重申《香港氣候行動藍圖2050》目標，並引用廚餘回收等數字（例如廚餘回收佔都市固體廢物比例由約31%升至約34%；平均每日約10 326公噸等公開數據）。面試宜用可驗證減碳／回收指標追問政策成效，而非活動儀式。",
-      "interview_angles": [
-        "計碳行動如何轉化為住戶／企業可量度減排行為，而非一次性宣傳？",
-        "廚餘回收比例提升後，下一階段瓶頸是收集網絡、處理產能，還是誘因設計？",
-        "對照《氣候行動藍圖2050》，中期減碳里程碑是否需要更新時間表與問責？"
-      ],
+      "summary": "署理環境及生態局局長出席「全民計碳大行動」宣傳活動巡禮並致辭，重申《香港氣候行動藍圖2050》目標，並引用廚餘回收等數字（例如廚餘回收佔都市固體廢物比例由約31%升至約34%；平均每日約10 326公噸等公開數據）。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000411.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1355,12 +1322,7 @@
         "environment-climate",
         "innovation"
       ],
-      "summary": "署理環境及生態局局長出席香港電動漁船啟航儀式暨「綠色能源促進藍色經濟發展」圓桌會議，強調漁業綠色轉型與可持續發展，並聯繫《香港氣候行動藍圖2050》。面試宜問電動／綠色漁船的資助、充電／加能基建與業界採用誘因，避免停留於啟航儀式。",
-      "interview_angles": [
-        "電動漁船由示範到規模化，政府在船隻改裝資助與岸電／充電基建上的承擔是什麼？",
-        "「藍色經濟」主張如何對接本地漁民生計，而非僅成為綠色公關項目？",
-        "如何避免「有政策、缺落地」？場景驗證與採用率應如何考核？"
-      ],
+      "summary": "署理環境及生態局局長出席香港電動漁船啟航儀式暨「綠色能源促進藍色經濟發展」圓桌會議，強調漁業綠色轉型與可持續發展，並聯繫《香港氣候行動藍圖2050》。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000303.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1375,12 +1337,7 @@
         "finance",
         "national-development"
       ],
-      "summary": "財經事務及庫務局局長在上海出席「滬港聯心、助企遠航」合作交流論壇，聚焦滬港金融合作與助力中資企業出海。面試宜追問具體互聯互通措施、風險管理及對本港作為國際融資／財富管理平台的增量。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "滬港合作與現有債券通、互換通、跨境理財通等渠道如何分工？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "財經事務及庫務局局長在上海出席「滬港聯心、助企遠航」合作交流論壇，聚焦滬港金融合作與助力中資企業出海。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000291.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1396,12 +1353,7 @@
         "youth",
         "education"
       ],
-      "summary": "「共創明『Teen』計劃」展開第五期學員招募，對象為弱勢社群家庭（尤其居於劏房）的中一至中四學生，預計招募約4 000人。計劃由政務司司長領導的跨部門行動小組推動，以政、商、民合作推行師友配對、個人發展規劃與財政支援。屬精準扶貧／青年上流的旗艦措施，面試宜問成效指標與商界持續參與。",
-      "interview_angles": [
-        "如何量度學員升學、就業與社交資本改善，避免「有活動、無結果」？",
-        "目標群組是否夠精準？如何避免資源錯配，並確保商界／僱主參與可持續？",
-        "與其他青年實習、劏房家庭支援措施如何分工，減少重疊？"
-      ],
+      "summary": "「共創明『Teen』計劃」展開第五期學員招募，對象為弱勢社群家庭（尤其居於劏房）的中一至中四學生，預計招募約4 000人。計劃由政務司司長領導的跨部門行動小組推動，以政、商、民合作推行師友配對、個人發展規劃與財政支援。屬精準扶貧／青年上流的旗艦措施。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000235.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1421,11 +1373,6 @@
         "legislation"
       ],
       "summary": "發展局與房屋局公布樓宇維修改革，目標於2026年底前完成樓宇維修支援及服務局的註冊與董事局委任。初期擬優先處理原「招標妥」下約1,800個未聘承建商的項目。免費服務包括預審名單及標書範本，收費服務則包括代辦招標與評標。政府另擬將大型維修列為獨立工程類別，並分開驗樓與其後策劃及監工的專業職能。 據《南華早報》11月16日報道，政務司司長主持改革督導委員會首次會議，檢視部門分工、方案及時間表，要求成熟措施盡快落實並加快修例準備。調查委員會提出120項建議，涵蓋消防、維修監管及打擊圍標；擬議修法尚未等同通過。",
-      "interview_angles": [
-        "利：跨部門督導有助釐清責任，整合樓宇維修、消防及反圍標工作。",
-        "弊：若只追求速度而缺乏可核查的交付指標，制度改革可能流於程序；合規成本亦可能轉嫁業主。",
-        "建議：公布120項建議的責任部門、時限和進度，優先處理高危樓宇，並以獨立抽查及業主負擔評估驗證成效。"
-      ],
       "source_url": "https://www.devb.gov.hk/tc/publications_and_press_releases/press/index_id_15625.html",
       "source_name": "發展局及房屋局",
       "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3374619/tai-po-fire-reform-panel-holds-first-meeting-chan-urges-swift-action",
@@ -1445,12 +1392,7 @@
         "education",
         "national-development"
       ],
-      "summary": "「政制及內地事務局局長出席「GoGBA大灣區發展日——『十五五』大灣區新機遇」的主旨演講全文」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是政制及內地事務局局長謝小華今日（十月二十九日）出席「GoGBA大灣區發展日——『十五五』大灣區新機遇」活動的主旨演講全文： 張廳長（廣東省商務廳廳長張勁松）、黃委員（澳門特別行政區招商投資促進局委員黃伊琳）、Sophia（香港貿易發展局總裁張淑芬）、各位嘉賓、各位朋友： 大家好！很高興出席「GoGBA大灣區發展日」，與各位一同探討在國家「十五五」規劃與《香港第一個五年規劃》下，粵港澳大灣區建設所帶來的新機遇，以及香港如何在融入和服務國家發展大局中展現新的活力。要點包括：二○二六年《施政報告》中亦提倡發展區域知識產權貿易中心；《香港第一個五年規劃》；《五年規劃》；《行政長官2026年施政報告》。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「政制及內地事務局局長出席「GoGBA大灣區發展日——『十五五』大灣區新機遇」的主旨演講全文」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「政制及內地事務局局長出席「GoGBA大灣區發展日——『十五五』大灣區新機遇」的主旨演講全文」反映相關政策推廣或區域合作取態，以下是政制及內地事務局局長謝小華今日（十月二十九日）出席「GoGBA大灣區發展日——『十五五』大灣區新機遇」活動的主旨演講全文： 張廳長（廣東省商務廳廳長張勁松）、黃委員（澳門特別行政區招商投資促進局委員黃伊琳）、Sophia（香港貿易發展局總裁張淑芬）、各位嘉賓、各位朋友： 大家好！很高興出席「GoGBA大灣區發展日」，與各位一同探討在國家「十五五」規劃與《香港第一個五年規劃》下，粵港澳大灣區建設所帶來的新機遇，以及香港如何在融入和服務國家發展大局中展現新的活力。要點包括：二○二六年《施政報告》中亦提倡發展區域知識產權貿易中心；《香港第一個五年規劃》；《五年規劃》；《行政長官2026年施政報告》。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900633.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1468,11 +1410,6 @@
         "national-development"
       ],
       "summary": "政策相關公報：「粵港澳大灣區發展辦公室舉辦「GoGBA大灣區發展日」 助企業把握「十五五」大灣區新機遇」。政制及內地事務局粵港澳大灣區發展辦公室今日（十月二十九日）聯同香港貿易發展局（貿發局）舉辦「GoGBA大灣區發展日——『十五五』大灣區新機遇」。研討會旨在透過粵港澳三地官方機構的主旨演講、行業代表專題討論以及對接交流環節，協助參與企業了解國家「十五五」規劃及《香港第一個五年規劃》（《五年規劃》）下的政策方向與商機，探討如何善用粵港澳三地優勢，以創新驅動發展，拓展國際市場。要點包括：《香港第一個五年規劃》；《五年規劃》；「GoGBA大灣區發展日——『十五五』大灣區新機遇」。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「粵港澳大灣區發展辦公室舉辦「GoGBA大灣區發展日」 助企業把握「十五五」大灣區新機遇」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900559.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1491,11 +1428,6 @@
         "governance"
       ],
       "summary": "財金政策動態：「​香港與老撾簽訂稅務協定」。財政司司長陳茂波今日（十月二十九日）在香港與老撾副總理兼財政部部長山迪帕進行雙邊會議，並共同見證署理財經事務及庫務局（財庫局）局長陳浩濂與老撾財政部副部長Soulivath Souvannachoumkham分別代表香港特別行政區（特區）政府和老撾政府簽署全面性避免雙重課稅協定。陳茂波說：「老撾是東南亞國家聯盟（東盟）成員國，也是共建『一帶一路』國家，與香港在經貿和投資等領域的合作潛力龐大。要點包括：10%；5%；《稅務條例》；「一帶一路」。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900532.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1509,11 +1441,7 @@
       "themes": [
         "culture-tourism"
       ],
-      "summary": "「​文化體育及旅遊局副局長出席「竹墨之間——華萼交輝樓藏品捐贈展」開幕典禮暨捐贈儀式致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是文化體育及旅遊局副局長劉震今日（十月二十九日）出席「竹墨之間——華萼交輝樓藏品捐贈展」開幕典禮暨捐贈儀式的致辭全文： 何醫生（何孟澈醫生）、許教授（博物館諮詢委員會藝術專責委員會主席許焯權教授）、各位嘉賓、各位朋友： 大家好。很高興今日見證香港藝術館「竹墨之間——華萼交輝樓藏品捐贈展」開幕典禮暨捐贈儀式。要點包括：「華萼交輝樓」。",
-      "interview_angles": [
-        "「​文化體育及旅遊局副局長出席「竹墨之間——華萼交輝樓藏品捐贈展」開幕典禮暨捐贈儀式致辭」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「​文化體育及旅遊局副局長出席「竹墨之間——華萼交輝樓藏品捐贈展」開幕典禮暨捐贈儀式致辭」反映相關政策推廣或區域合作取態，以下是文化體育及旅遊局副局長劉震今日（十月二十九日）出席「竹墨之間——華萼交輝樓藏品捐贈展」開幕典禮暨捐贈儀式的致辭全文： 何醫生（何孟澈醫生）、許教授（博物館諮詢委員會藝術專責委員會主席許焯權教授）、各位嘉賓、各位朋友： 大家好。很高興今日見證香港藝術館「竹墨之間——華萼交輝樓藏品捐贈展」開幕典禮暨捐贈儀式。要點包括：「華萼交輝樓」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900447.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1531,11 +1459,6 @@
         "healthcare"
       ],
       "summary": "政策相關公報：「立法會︰教育局局長就「推動新時代下的教師專業發展」議員議案總結發言」。以下是教育局局長蔡若蓮博士今日（十月二十九日）在立法會會議就「推動新時代下的教師專業發展」議員議案的總結發言全文： 感謝鄧飛議員提出的議案，各位議員在辯論中，就推動新時代教師專業發展及教師執業證書機制提出真知灼見。以下我會重點回應各位議員的意見及建議。要點包括：16萬；《憲法》；《基本法》；《香港國安法》。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "措施如何在加快服務／新藥准入與安全把關、公營系統負荷之間取平衡？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900363.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1551,12 +1474,7 @@
         "digital-gov",
         "governance"
       ],
-      "summary": "創新科技及工業局局長出席「香港網絡安全攻防演練──以攻築防2026」開幕典禮並致辭，凸顯以實戰演練強化關鍵基礎設施與公共機構網絡防衛的政策方向。面試宜問演練覆蓋範圍、公私營協作及與數字政府／智慧城市風險治理的銜接。",
-      "interview_angles": [
-        "演練成果如何轉化為強制標準、資助或對關鍵行業的合規要求？",
-        "如何避免「有政策、缺落地」？場景驗證、資助成效與人才留港應如何考核？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "創新科技及工業局局長出席「香港網絡安全攻防演練──以攻築防2026」開幕典禮並致辭，凸顯以實戰演練強化關鍵基礎設施與公共機構網絡防衛的政策方向。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900354.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1571,11 +1489,6 @@
         "northern-metropolis"
       ],
       "summary": "政策相關公報：「北部都會區馬拉松二○二六人流安全管理措施及特別交通安排」。警方今日（十月二十九日）提醒市民，將由明日起（十月三十日）實施人流安全管理措施及特別交通安排，以配合本周日（十一月一日）舉行的北部都會區馬拉松二○二六，呼籲市民及早規劃行程，盡量使用公共交通工具或接駁巴士服務。（一）臨時封路及交通改道安排 視乎比賽實際完畢時間及直至道路可安全重開供通車為止，下列道路將於下述時間封閉，禁止所有車輛駛入： 甲、道路封閉（公共車路） 由十一月一日上午二時至上午約八時 — 介乎大涌橋路與安心街之間的安麗街（介乎大涌橋路與安平街之間的安麗街東行慢線除外）； — 介乎安麗街與中華電力有限公司–沙田中心之間的安心街（北行）慢線；及 — 介乎愉德苑與盡頭路之間的安睦街。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「北部都會區馬拉松二○二六人流安全管理措施及特別交通安排」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900339.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1593,11 +1506,6 @@
         "innovation"
       ],
       "summary": "房屋／土地政策動態：「政府張貼收回及徵用土地公告以進行河套區發展—東面連接道路工程」。​地政總署今日（十月二十九日）根據《道路（工程、使用及補償）條例》（第370章）第14條，及《土地徵用（管有業權）條例》（第130章）第4條，張貼收回土地公告及徵用土地公告，收回112幅總面積約5.7公頃的私人土地，並徵用被七個墳墓和12個金塔所佔用約113平方米的政府土地，以進行河套區發展—東面連接道路工程。有關土地將於公告張貼後三個月（即二○二七年一月三十日）復歸和轉歸政府所有。要點包括：二○二七年一月三十日）復歸和轉歸政府所有；7公頃；12個；《道路（工程、使用及補償）條例》。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "房屋／土地措施如何與公營房屋、私人市場及北部都會區供應銜接？",
-        "若市場反應冷淡或申請遠超供應，政府會如何調整優先次序？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900313.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1612,11 +1520,6 @@
         "finance"
       ],
       "summary": "財金政策動態：「金管局回應美聯儲議息決定」。下稿代香港金融管理局發出︰ 美國聯邦儲備局（美聯儲）聯邦公開市場委員會在香港時間今日（十月二十九日）清晨公布維持聯邦基金利率目標區間於3.75-4厘。美聯儲維持息率不變的決定符合市場預期。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "「金管局回應美聯儲議息決定」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900259.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1633,12 +1536,7 @@
         "national-development",
         "innovation"
       ],
-      "summary": "「創新科技及工業局常任秘書長出席國宏嘉信深港科創種子基金啓動發佈會致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是創新科技及工業局常任秘書長蔡傑銘今日（十月二十九日）在國宏嘉信深港科創種子基金啓動發佈會的致辭： 冼董事長（國宏嘉信資本董事長冼漢廸）、鍾署長（河套深港科技創新合作區深圳園區發展署署長鍾海）、覃部長（深圳市委統戰部副部長覃敬騰）、鄧博士（國宏嘉信深港科創種子基金榮譽主席鄧淑明博士）、各位領導、各位嘉賓、各位朋友： 大家好！今天很高興出席國宏嘉信深港科創種子基金成立發佈會，與在座各位共同見證這一深港科創合作的重要時刻。要點包括：《行政長官2026年施政報告》；「十五五」；「三大創科園區、五大研發機構」；「政、產、學、研、投」。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "如何避免「有政策、缺落地」？場景驗證、資助成效與人才留港應如何考核？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「創新科技及工業局常任秘書長出席國宏嘉信深港科創種子基金啓動發佈會致辭」反映相關政策推廣或區域合作取態，以下是創新科技及工業局常任秘書長蔡傑銘今日（十月二十九日）在國宏嘉信深港科創種子基金啓動發佈會的致辭： 冼董事長（國宏嘉信資本董事長冼漢廸）、鍾署長（河套深港科技創新合作區深圳園區發展署署長鍾海）、覃部長（深圳市委統戰部副部長覃敬騰）、鄧博士（國宏嘉信深港科創種子基金榮譽主席鄧淑明博士）、各位領導、各位嘉賓、各位朋友： 大家好！今天很高興出席國宏嘉信深港科創種子基金成立發佈會，與在座各位共同見證這一深港科創合作的重要時刻。要點包括：《行政長官2026年施政報告》；「十五五」；「三大創科園區、五大研發機構」；「政、產、學、研、投」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900190.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1655,11 +1553,6 @@
         "governance"
       ],
       "summary": "據《南華早報》10月29日報道，文化體育及旅遊局與旅發局向中西區區議會提交文件，評估縮減方案後認為無迫切需要推行山頂步道裝飾燈光，承諾盡快恢復原貌。原計劃於盧吉道、夏力道設小規模柔和低眩光裝置，試行12個月，每晚7時至10時，用以取代「幻彩詠香江」並配合冬季旅遊。反對後曾由10個點減至7個、樹上燈由52減至24、展示縮至明年2月底。局長羅淑佩當晚表示經考慮後決定現階段不推行；裝置未啟用，花費有限，燈具可轉至其他光影項目。局方稱4月起諮詢區議會，5月至9月去信居民，10月27日再與區議員落場。",
-      "interview_angles": [
-        "利：未啟用即停，花費有限，顯示可因地區反對調整旅遊裝置。",
-        "弊：諮詢期間已開始安裝，縮減方案仍未消除居民與樹木專家反對，程序先於共識。",
-        "建議：旅遊裝置未獲區議會同意前不施工；停工後公布已用金額、復原限期及設備重用情況。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3372608/hong-kong-scraps-lighting-attraction-peak-after-public-outcry",
       "source_name": "South China Morning Post / news report"
     },
@@ -1678,11 +1571,6 @@
         "culture-tourism"
       ],
       "summary": "政策相關公報：「政務司司長主持皇崗口岸港方口岸區跨部門工作小組會議」。政務司司長陳國基今日（十月二十八日）主持皇崗口岸港方口岸區跨部門工作小組會議，全面統籌並督導各政府部門就應對本周末萬聖節期間（即十月三十日至十一月一日）皇崗口岸跨境人流及車流高峰的預備工作。保安局局長鄧炳強、運輸及物流局局長陳美寶，以及其他相關政府部門的代表出席會議。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「政務司司長主持皇崗口岸港方口岸區跨部門工作小組會議」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800650.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1698,10 +1586,6 @@
         "education"
       ],
       "summary": "政策相關公報：「​保安局發布《安仔與熊仔：維護國安小公民》教育繪本」。保安局今日（十月二十八日）舉辦《安仔與熊仔：維護國安小公民》教育繪本發布會。繪本由保安局出版，並得到教育局支持，透過豐富圖畫和簡單文字，向幼兒傳揚國家安全的重要概念，培養他們守法守規的意識，成為愛家愛國的小公民。要點包括：二○二四年年中推出並深受教育界及學生歡迎的國家安全動漫系列「安仔與熊仔」為背景；《輕輕唱》；「安仔與熊仔」。",
-      "interview_angles": [
-        "「​保安局發布《安仔與熊仔：維護國安小公民》教育繪本」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800440.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1718,12 +1602,7 @@
         "finance",
         "legislation"
       ],
-      "summary": "立法進程：商務及經濟發展局局長動議二讀《2026年稅務（修訂）（知識產權開支的稅項扣除）條例草案》。草案旨在完善知識產權相關開支的稅項扣除安排，提升企業在港進行研發、購置及商業化知識產權的誘因，對齊國際稅務競爭與本港創科／新型工業化策略。面試宜追問扣除範圍、防避稅閘門，以及對中小企與跨國企業的差異影響。",
-      "interview_angles": [
-        "稅項扣除涵蓋哪些知識產權類別與開支？如何防止利潤轉移／虛增扣除？",
-        "與現行研發開支加成扣除、專利盒等措施如何銜接，會否出現雙重優惠？",
-        "預期對本港創科投資、總部設立及稅基的淨效果如何量度？"
-      ],
+      "summary": "立法進程：商務及經濟發展局局長動議二讀《2026年稅務（修訂）（知識產權開支的稅項扣除）條例草案》。草案旨在完善知識產權相關開支的稅項扣除安排，提升企業在港進行研發、購置及商業化知識產權的誘因，對齊國際稅務競爭與本港創科／新型工業化策略。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800416.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1739,12 +1618,7 @@
         "legislation",
         "governance"
       ],
-      "summary": "立法進程：財經事務及庫務局局長於立法會動議二讀《追加撥款（2025-2026年度）條例草案》。草案旨在為2025-26年度已批出但超出原有預算／需追加的開支提供法定撥款追認，屬年度公共財政問責程序。面試宜聚焦超支項目類別、審批把關及對下年度財政紀律的啟示，而非程序儀式本身。",
-      "interview_angles": [
-        "追加撥款集中在哪些政策範疇？反映預算估算失誤、突發開支，還是政策加碼？",
-        "立法會審核追加撥款時，如何強化對政策局超支的問責與前瞻控制？",
-        "對2026-27年度財政預算案的開支上限與儲備水平有何啟示？"
-      ],
+      "summary": "立法進程：財經事務及庫務局局長於立法會動議二讀《追加撥款（2025-2026年度）條例草案》。草案旨在為2025-26年度已批出但超出原有預算／需追加的開支提供法定撥款追認，屬年度公共財政問責程序。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800409.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1763,11 +1637,6 @@
         "digital-gov"
       ],
       "summary": "創科／產業政策動態：「立法會三題：為創科初創企業的產品提供試用途徑」。以下是今日（十月二十八日）在立法會會議上吳傑莊議員的提問和創新科技及工業局局長孫東教授的答覆： 有創科初創企業人士向本人反映，本港缺乏途徑讓該等企業研發的產品獲得「早期採用」（即在產品新推出而未普及時率先試用）。就此，政府可否告知本會： （一）過去三年，政府及法定機構支援本地創科企業產品獲得「早期採用」的資助項目為何，並列出該等項目的資助金額、資助期限及實質成果； （二）會否研究推出政策措施以加強支持初創企業產品的早期採用，並進一步放寬相關資助計劃的申請規限，例如為本地初創公司提供綠色通道或優化權重比例評分，並由政府牽頭，在部分政府項目招標時讓本地初創優…要點包括：110個；7億；30個；《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「立法會三題：為創科初創企業的產品提供試用途徑」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800384.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1786,11 +1655,6 @@
         "governance"
       ],
       "summary": "創科／產業政策動態：「​立法會十題：推動香港新型工業化發展」。以下是今日（十月二十八日）在立法會會議上陳祖恒議員的提問和創新科技及工業局局長孫東教授的書面答覆： 政府當局分別於二○二○年七月及二○二四年九月推出「新型工業化資助計劃」（資助計劃）（於二○二三年十月正名自「再工業化資助計劃」）及 「新型工業加速計劃」，以推進本港新型工業化，加快創新科技產業發展。要點包括：二○二四年九月推出「新型工業化資助計劃」（資助計劃）（於二○二三年十月正名自「再工業化資助；二○二五年「資助計劃」推出優化措施；280萬；1,500萬。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "如何避免「有政策、缺落地」？場景驗證、資助成效與人才留港應如何考核？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/28/P2026102800363.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1808,11 +1672,6 @@
         "governance"
       ],
       "summary": "據《南華早報》10月28日報道，房屋局向立法會書面回覆指，自3月《簡樸房條例》開放申請以來，已有75,070個分間單位（涉及約21,000個完整住宅單位）登記36個月寬限期，佔早前調查約11萬個分間單位約七成。當中九龍佔49,100個（65%），包括油尖旺區21,500個及深水埗區16,300個；港島佔13,400個（集中東區及灣仔）；新界佔12,570個（約26%位於荃灣）。明年3月起只准合資格「簡樸房」或已登記寬限期單位合法出租；寬限期申請至2027年2月28日止（寬限期由明年3月至2030年2月）。另局方接獲約250宗「簡樸房」認證申請並已批出53宗，專設網站列出83個認證單位。房屋局局長何永賢指不會即時一刀切執法，將按安全風險、違規程度及公營房屋供應有序跟進。",
-      "interview_angles": [
-        "利：七成分間單位已登記寬限期並有專設認證名單，有助過渡期內把租盤納入規管，避免短期供應驟減。",
-        "弊：目前僅約250宗認證申請及53宗獲批，與約11萬個分間單位存量差距甚大，若部分業主選擇退場或轉嫁改裝成本，低收入租戶仍面對迫遷及安置壓力。",
-        "建議：按高風險樓宇優先巡查執法並定期公布各區認證進度與退場個案，同時把不合資格單位的租戶轉介至簡約公屋、過渡性房屋及社區支援服務。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/society/article/3372442/kowloon-leads-70-hong-kongs-subdivided-flats-registered-grace-period",
       "source_name": "South China Morning Post / news report"
     },
@@ -1828,11 +1687,6 @@
         "innovation"
       ],
       "summary": "財金政策動態：「偽冒與金管局數碼港元相關的借貸項目」。下稿代香港金融管理局發出︰ 香港金融管理局（金管局）近日接獲大量公眾查詢有關偽冒數碼港元項目，欺騙公眾簽署協議，訛稱有關貸款將兌換成數碼港元資產。金管局嚴正澄清，上述欺詐協議及借貸項目與金管局絕無任何關係；並再次強調，局方不會就任何個人財務事宜聯絡市民或進行資金轉撥。要點包括：「數碼港元」。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "如何避免「有政策、缺落地」？場景驗證、資助成效與人才留港應如何考核？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600638.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1851,11 +1705,6 @@
         "national-development"
       ],
       "summary": "創科／產業政策動態：「政制及內地事務局副局長在立法會政制事務委員會會議就香港第一個五年規劃及二○二六年施政報告中有關粵港澳大灣區建設的政策措施開場發言」。以下是政制及內地事務局副局長胡健民今日（十月二十六日）在立法會政制事務委員會會議就香港第一個五年規劃及二○二六年施政報告中有關粵港澳大灣區建設的政策措施的開場發言： 行政長官在今年九月十六日發表《香港第一個五年規劃》以及二○二六年《施政報告》。在上一次的會議，我們已經向委員介紹了《香港第一個五年規劃》及《施政報告》中有關選舉、愛國主義教育、推廣《憲法》和《基本法》，以及促進平等機會和消除歧視等方面的政策措施；另外，我們亦已在工商及創新科技事務委員會介紹了有關推動粵港澳大灣區建設及與內地區域合作的措施。要點包括：二○二六年施政報告中有關粵港澳大灣區建設的政策措施的開場發言：\n主席、各位議員：\n行政長官；二○二六年《施政報告》；二○二六年《施政報告》提出了多項具體措施；《香港第一個五年規劃》。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「政制及內地事務局副局長在立法會政制事務委員會會議就香港第一個五年規劃及二○二六年施政報告中有關粵港澳大灣區建設的政策措施開場發言」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600511.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1873,12 +1722,7 @@
         "national-development",
         "finance"
       ],
-      "summary": "「行政長官與生態環境部部長會面」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。行政長官李家超今日（十月二十六日）在禮賓府與生態環境部部長黃潤秋會面，就深化綠色合作交流意見。環境及生態局局長謝展寰亦有出席。要點包括：《香港第一個五年規劃》；「一帶一路」；「一國兩制」；「超級聯繫人」。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "「行政長官與生態環境部部長會面」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「行政長官與生態環境部部長會面」反映相關政策推廣或區域合作取態，行政長官李家超今日（十月二十六日）在禮賓府與生態環境部部長黃潤秋會面，就深化綠色合作交流意見。環境及生態局局長謝展寰亦有出席。要點包括：《香港第一個五年規劃》；「一帶一路」；「一國兩制」；「超級聯繫人」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600328.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1895,11 +1739,6 @@
         "transport-logistics"
       ],
       "summary": "政策相關公報：「十一月一日北部都會區馬拉松特別交通及運輸安排」。運輸署今日（十月二十六日）提醒市民和旅客，為配合星期日（十一月一日）舉行的北部都會區馬拉松2026，當日凌晨二時起，石門、龍山隧道（北行）及粉嶺繞道（南行）多處路段將分階段實施臨時封路安排。受影響路段下午約三時前分階段重開 北部都會區馬拉松的三個主要項目（即全馬、半馬及十公里賽事）的起點分別設於石門、香港科學園及粉嶺繞道，而終點均為粉嶺繞道。要點包括：「香港出行易」。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "跨境／物流安排如何服務大灣區人流物流，同時控制本港社區與基建負荷？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600319.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1917,11 +1756,6 @@
         "labour"
       ],
       "summary": "據《南華早報》10月26日報道，10月1日起廢紙改由屯門環保園洲至紙業紙漿廠處理，減少依賴出口。廠方最終每年處理約50萬至72萬公噸，可收紙種擴至紙盒、紙袋、蛋托及包裝紙。報道引消息人士指，2020年底內地禁進口廢紙後香港曾保留部分出口配額；9月業者獲通知10月配額減至零，2020年底起的每月補貼亦結束。環保署規定達標廢紙前線最低價每公斤0.65元，廠方向回收商收購不少於每公噸1,295.51元。有收集者稱只收到每公斤0.5至0.6元：粉嶺鄺女士一日約30元，另一位潘女士由數年前每公斤1元、一日最多約200元，跌至約70元。杏花邨打包廠稱本月收紙量跌最多四成，至今蝕約25萬元，9月底裁5人。環保署稱1月至9月回收逾41萬公噸，與去年同期相若；原先3億元預算現用於紙漿廠服務費以維持價格及回收量。民間2023年估算全港約2,791至3,456名拾荒者。圖表顯示都市固體廢物中回收廢紙由2014年947,900公噸，降至2020年450,000，2024年586,100。",
-      "interview_angles": [
-        "利：本地製漿減少出口依賴，雜紙可回收，有助循環經濟。",
-        "弊：補貼與出口配額同時停止，街舖運輸成本上升，指定最低價未必落到執紙者。",
-        "建議：抽查街舖實付是否達到每公斤0.65元，分開公布廠方收紙量與前線實收價，並以回收量及執紙者收入一併檢討過渡期。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/health-environment/article/3372130/how-will-hong-kongs-cardboard-scavengers-survive-prices-drop-after-new-policy",
       "source_name": "South China Morning Post / news report"
     },
@@ -1939,12 +1773,7 @@
         "national-development",
         "innovation"
       ],
-      "summary": "「政務司司長出席粵港澳大灣區人才高質量發展大會」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。政務司司長陳國基今日（十月二十五日）出席在東莞舉行的第四屆粵港澳大灣區人才高質量發展大會暨第三屆粵港澳大灣區博士博士後創新創業大賽開幕儀式，並在大會上發言。陳國基致辭時表示，香港在「一國兩制」下背靠祖國、聯通世界，是國家的國際門戶。要點包括：二○二三年已先後在廣州、香港、澳門輪流舉辦；《香港第一個五年規劃》；「一國兩制」；「十五五」。",
-      "interview_angles": [
-        "如何避免「有政策、缺落地」？場景驗證、資助成效與人才留港應如何考核？",
-        "「政務司司長出席粵港澳大灣區人才高質量發展大會」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「政務司司長出席粵港澳大灣區人才高質量發展大會」反映相關政策推廣或區域合作取態，政務司司長陳國基今日（十月二十五日）出席在東莞舉行的第四屆粵港澳大灣區人才高質量發展大會暨第三屆粵港澳大灣區博士博士後創新創業大賽開幕儀式，並在大會上發言。陳國基致辭時表示，香港在「一國兩制」下背靠祖國、聯通世界，是國家的國際門戶。要點包括：二○二三年已先後在廣州、香港、澳門輪流舉辦；《香港第一個五年規劃》；「一國兩制」；「十五五」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/25/P2026102500364.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1962,12 +1791,7 @@
         "education",
         "youth"
       ],
-      "summary": "「政務司司長在東莞出席第四屆粵港澳大灣區人才高質量發展大會致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是政務司司長陳國基今日（十月二十五日）在東莞出席第四屆粵港澳大灣區人才高質量發展大會的致辭： 尊敬的俞家棟副部長（人力資源和社會保障部副部長）、王勝副省長（廣東省人民政府副省長）、龔志明局長（澳門特別行政區政府教育及青年發展局局長）、各位領導、各位嘉賓、各位朋友： 大家上午好！很高興來到東莞松山湖，出席今天大會的開幕式。要點包括：二○二三年首屆大會在廣州舉行時；二○二四年第二屆大會在香港舉辦；約69萬；32萬。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「政務司司長在東莞出席第四屆粵港澳大灣區人才高質量發展大會致辭」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「政務司司長在東莞出席第四屆粵港澳大灣區人才高質量發展大會致辭」反映相關政策推廣或區域合作取態，以下是政務司司長陳國基今日（十月二十五日）在東莞出席第四屆粵港澳大灣區人才高質量發展大會的致辭： 尊敬的俞家棟副部長（人力資源和社會保障部副部長）、王勝副省長（廣東省人民政府副省長）、龔志明局長（澳門特別行政區政府教育及青年發展局局長）、各位領導、各位嘉賓、各位朋友： 大家上午好！很高興來到東莞松山湖，出席今天大會的開幕式。要點包括：二○二三年首屆大會在廣州舉行時；二○二四年第二屆大會在香港舉辦；約69萬；32萬。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/25/P2026102500264.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -1984,12 +1808,7 @@
         "governance",
         "transport-logistics"
       ],
-      "summary": "「「反恐怖主義教育專題展覽」今日開幕」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。由跨部門反恐專責組（反恐專責組）主辦、警務處國家安全處協辦，以及保安局協調舉辦「反恐怖主義教育專題展覽」今日（十月二十四日）於尖沙咀香港歷史博物館舉行開幕典禮。展覽旨在透過多媒體展示及互動體驗，提升市民反恐意識和應變能力。要點包括：《香港第一個五年規劃》；《行政長官2026年施政報告》；「預防、準備、應變、復原」；「多一份警覺，少一份危機」。",
-      "interview_angles": [
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "跨境／物流安排如何服務大灣區人流物流，同時控制本港社區與基建負荷？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「「反恐怖主義教育專題展覽」今日開幕」反映相關政策推廣或區域合作取態，由跨部門反恐專責組（反恐專責組）主辦、警務處國家安全處協辦，以及保安局協調舉辦「反恐怖主義教育專題展覽」今日（十月二十四日）於尖沙咀香港歷史博物館舉行開幕典禮。展覽旨在透過多媒體展示及互動體驗，提升市民反恐意識和應變能力。要點包括：《香港第一個五年規劃》；《行政長官2026年施政報告》；「預防、準備、應變、復原」；「多一份警覺，少一份危機」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/24/P2026102400509.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2007,12 +1826,7 @@
         "education",
         "national-development"
       ],
-      "summary": "「​行政長官出席新界鄉議局一百周年慶祝晚宴致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是行政長官李家超今日（十月二十三日）出席新界鄉議局一百周年慶祝晚宴的致辭： 尊敬的梁振英副主席（全國政協副主席）、尊敬的周霽主任（中央人民政府駐香港特別行政區聯絡辦公室主任）、陳楓副署長（中央人民政府駐香港特別行政區維護國家安全公署副署長）、張長偉副特派員（中華人民共和國外交部駐香港特別行政區特派員公署副特派員）、朱宏少將（中國人民解放軍駐香港部隊政治工作部主任）、劉業強主席（新界鄉議局主席）、各位鄉親、各位嘉賓、各位朋友： 大家好！很高興出席新界鄉議局一百周年慶祝晚宴，和各位聚首一堂，共同見證鄉議局百載耕耘的成果，共同祝賀鄉議局昂首邁進新里程。要點包括：《香港第一個五年規劃》；「一五」。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「​行政長官出席新界鄉議局一百周年慶祝晚宴致辭」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「​行政長官出席新界鄉議局一百周年慶祝晚宴致辭」反映相關政策推廣或區域合作取態，以下是行政長官李家超今日（十月二十三日）出席新界鄉議局一百周年慶祝晚宴的致辭： 尊敬的梁振英副主席（全國政協副主席）、尊敬的周霽主任（中央人民政府駐香港特別行政區聯絡辦公室主任）、陳楓副署長（中央人民政府駐香港特別行政區維護國家安全公署副署長）、張長偉副特派員（中華人民共和國外交部駐香港特別行政區特派員公署副特派員）、朱宏少將（中國人民解放軍駐香港部隊政治工作部主任）、劉業強主席（新界鄉議局主席）、各位鄉親、各位嘉賓、各位朋友： 大家好！很高興出席新界鄉議局一百周年慶祝晚宴，和各位聚首一堂，共同見證鄉議局百載耕耘的成果，共同祝賀鄉議局昂首邁進新里程。要點包括：《香港第一個五年規劃》；「一五」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300697.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2030,12 +1844,7 @@
         "legislation",
         "governance"
       ],
-      "summary": "「律政司副司長在第五屆全球海洋中心城市建設法治論壇暨粵港澳大灣區海洋法治論壇致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是律政司副司長張國鈞博士今日（十月二十三日）在第五屆全球海洋中心城市建設法治論壇暨粵港澳大灣區海洋法治論壇的視像致辭： 高法官（國際海洋法法庭前原法官、中國海洋法學會原會長高之國）、成副局長（深圳市海洋發展局副局長成嶂旻）、趙秘書長（深圳國際仲裁院秘書長趙楓）、各位嘉賓、各位朋友： 大家下午好。感謝深圳國際仲裁院的邀請，讓我可再次在本論壇上發表開幕辭。要點包括：二○二五年倫敦大學瑪麗皇后學院國際仲裁調查；400宗；《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》；《行政長官2026年施政報告》。",
-      "interview_angles": [
-        "條例／附屬法例的政策目標是什麼？與現行制度相比，簡化了哪些程序，又削弱了哪些制衡？",
-        "若立法會或業界反對關鍵條文，政府有何備選方案及時間表？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「律政司副司長在第五屆全球海洋中心城市建設法治論壇暨粵港澳大灣區海洋法治論壇致辭」反映相關政策推廣或區域合作取態，以下是律政司副司長張國鈞博士今日（十月二十三日）在第五屆全球海洋中心城市建設法治論壇暨粵港澳大灣區海洋法治論壇的視像致辭： 高法官（國際海洋法法庭前原法官、中國海洋法學會原會長高之國）、成副局長（深圳市海洋發展局副局長成嶂旻）、趙秘書長（深圳國際仲裁院秘書長趙楓）、各位嘉賓、各位朋友： 大家下午好。感謝深圳國際仲裁院的邀請，讓我可再次在本論壇上發表開幕辭。要點包括：二○二五年倫敦大學瑪麗皇后學院國際仲裁調查；400宗；《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》；《行政長官2026年施政報告》。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300683.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2054,11 +1863,6 @@
         "governance"
       ],
       "summary": "創科／產業政策動態：「​財政司司長在北京拜會中央部委和到訪人工智能企業」。財政司司長陳茂波今日（十月二十三日）展開在北京的訪問行程。早上，他到訪中國證券監督管理委員會與主席吳清會面。要點包括：二○二六年《施政報告》中宣布；二○二四年在《內地與香港關於建立更緊密經貿關係的安排》（CEPA） 框架下簽署進一步開放內；《關於加強內地與香港經濟貿易合作的諒解備忘錄》；《關於加強自貿區港交流合作的諒解備忘錄》。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300596.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2076,11 +1880,6 @@
         "governance"
       ],
       "summary": "政策相關公報：「家庭議會《家・和諧共融・爆旋擊！》小學互動教育劇場首演禮今日順利舉行」。民政及青年事務局（民青局）聯同家庭議會主辦的《家・和諧共融・爆旋擊！》小學互動教育劇場今日（十月二十三日）下午在油蔴地天主教小學（海泓道）舉行首演禮，約有350名學生及家長出席。要點包括：二○二六年《施政報告》中宣布民青局與家庭議會將再次舉辦全港美好家庭選舉；《施政報告》；「家・和諧共融」；「畢得鳥家庭」。",
-      "interview_angles": [
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "「家庭議會《家・和諧共融・爆旋擊！》小學互動教育劇場首演禮今日順利舉行」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300567.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2095,11 +1894,6 @@
         "finance"
       ],
       "summary": "財金政策動態：「二○二六年十月二十三日人民幣國債投標結果」。下稿代香港金融管理局發出︰ 二○二六年十月二十三日人民幣國債投標結果： ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ BCMKFB26002（增發） 2028年2月13日（或當期付息日） 分配比例（按最低接納價） ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ BCMKFB26003（增發） 2029年2月13日（或當期付息日） 分配比例（按最低接納價） ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ BCMKFB26004（增…要點包括：二○二六年十月二十三日人民幣國債投標結果：\n投標結果\n＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊；2026年10月23日\n可供投標債券\n：\n二年期人民幣債券\n發行人\n：\n中華人民共；2026年10月27日\n屆滿日期\n：\n2028年2月13日（或當期付息日）\n息率；2026年10月23日\n可供投標債券\n：\n三年期人民幣債券\n發行人\n：…",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "「二○二六年十月二十三日人民幣國債投標結果」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300480.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2114,11 +1908,6 @@
         "labour"
       ],
       "summary": "民生／勞工福利政策動態：「​僱主因違反「補充勞工優化計劃」本地招聘規定被行政制裁」。勞工處今日（十月二十三日）宣布，對港深車業服務有限公司實施行政制裁，即時中止處理該公司已提交的「補充勞工優化計劃」（優化計劃）輸入勞工申請，並由即日起拒絕處理該公司隨後兩年在優化計劃下提交的申請。勞工處發言人表示：「經調查後，勞工處確定上述公司在申請輸入駕駛員的本地公開招聘期間，違反以下優化計劃的規定，故此被施加行政制裁： （一）在無合理理由的情況下沒有按已同意的安排面見一名合資格求職者；以及 （二）向本處提交不實的本地公開招聘結果。",
-      "interview_angles": [
-        "目標群組是否夠精準？如何避免資源錯配，並確保商界／僱主參與可持續？",
-        "「​僱主因違反「補充勞工優化計劃」本地招聘規定被行政制裁」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300272.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2133,11 +1922,6 @@
         "finance"
       ],
       "summary": "財金政策動態：「​金管局指定一級流動性提供行及擴大有關安排規模」。下稿代香港金融管理局發出︰ 香港金融管理局（金管局）今日（十月二十三日）宣布，指定12間銀行作為香港離岸人民幣市場的一級流動性提供行，為期兩年，於現時指定期結束後即二○二六年十月二十七日起生效，並增加一級流動性提供行安排下可提供的人民幣流動性總額。12間一級流動性提供行如下： 中國農業銀行股份等機構。要點包括：二○二六年十月二十七日起生效；200億；220億。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "「​金管局指定一級流動性提供行及擴大有關安排規模」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300271.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2156,11 +1940,6 @@
         "national-development"
       ],
       "summary": "創科／產業政策動態：「立法會：創新科技及工業局副局長就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論總結發言」。以下是創新科技及工業局副局長張曼莉今日（十月二十二日）在立法會會議就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論的的總結發言： 我感謝李廣宇議員提出這項重要的議案，亦感謝鄧飛議員、鄧銘心議員及陳博智議員提出修正案，以及39位議員在席上提出的寶貴意見。以下我會就創新科技（創科）發展方面作整體回應。要點包括：15個；約420個；2億；《香港第一個五年規劃》。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「立法會：創新科技及工業局副局長就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論總結發言」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200381.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2179,11 +1958,6 @@
         "national-development"
       ],
       "summary": "創科／產業政策動態：「立法會：署理教育局局長就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論總結發言」。以下是署理教育局局長施俊輝博士今日（十月二十二日）在立法會會議就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論的總結發言： 再次感謝李廣宇議員提出的議案，鄧飛議員、鄧銘心議員及陳博智議員提出的修正案，衷心感謝合共43位議員踴躍建言，就深化粵港科技人才教育協作，加強人才培育與促進就業提出寶貴建議。香港享有背靠祖國、聯通世界的獨特優勢。要點包括：「十五五」；「人才培養、科學研究、成果轉化、產業發展」。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「立法會：署理教育局局長就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論總結發言」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200366.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2201,12 +1975,7 @@
         "finance",
         "governance"
       ],
-      "summary": "「商務及經濟發展局局長在澳門出席第四屆粵港澳大灣區發展工商大會全體會議致辭全文」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是商務及經濟發展局局長丘應樺今日（十月二十二日）在澳門出席第四屆粵港澳大灣區發展工商大會全體會議的致辭全文： 各位領導、各位嘉賓、各位朋友： 大家好。很高興今天來到澳門，出席第四屆粵港澳大灣區發展工商大會，與各位共商合作、共謀發展。要點包括：《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》；「融通灣區 鏈動世界」；「融通灣區」；「鏈動世界」。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「商務及經濟發展局局長在澳門出席第四屆粵港澳大灣區發展工商大會全體會議致辭全文」反映相關政策推廣或區域合作取態，以下是商務及經濟發展局局長丘應樺今日（十月二十二日）在澳門出席第四屆粵港澳大灣區發展工商大會全體會議的致辭全文： 各位領導、各位嘉賓、各位朋友： 大家好。很高興今天來到澳門，出席第四屆粵港澳大灣區發展工商大會，與各位共商合作、共謀發展。要點包括：《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》；「融通灣區 鏈動世界」；「融通灣區」；「鏈動世界」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200337.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2224,11 +1993,6 @@
         "fintech-ai"
       ],
       "summary": "創科／產業政策動態：「立法會：勞工及福利局副局長就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論總結發言」。​以下是勞工及福利局（勞福局）副局長何啟明今日（十月二十二日）在立法會會議上就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論的總結發言： 感謝各位議員就議案提出的寶貴意見。我首先介紹勞福局在本地培訓和就業服務的相關工作。要點包括：二○二八年本港整體人力短缺將由上次推算的18萬人收窄至約13萬人；二○二二年銳減約六成；二○二六年《施政報告》宣布；二○二五年一月起將參加計劃的資格放寬至29歲或以下持副學位或以上學歷的青年。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "「立法會：勞工及福利局副局長就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論總結發言」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200310.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2245,12 +2009,7 @@
         "national-development",
         "finance"
       ],
-      "summary": "「行政長官在第四屆粵港澳大灣區發展工商大會致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是行政長官李家超今日（十月二十二日）在第四屆粵港澳大灣區發展工商大會的視像致辭： 大家好！很高興以視頻參與第四屆粵港澳大灣區發展工商大會。要點包括：二○二六年亞太經合組織財政部長會；《香港第一個五年規劃》；「融通灣區 鏈動世界」；「十五五」。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「行政長官在第四屆粵港澳大灣區發展工商大會致辭」反映相關政策推廣或區域合作取態，以下是行政長官李家超今日（十月二十二日）在第四屆粵港澳大灣區發展工商大會的視像致辭： 大家好！很高興以視頻參與第四屆粵港澳大灣區發展工商大會。要點包括：二○二六年亞太經合組織財政部長會；《香港第一個五年規劃》；「融通灣區 鏈動世界」；「十五五」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/22/P2026102100311.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2266,12 +2025,7 @@
         "culture-tourism",
         "governance"
       ],
-      "summary": "「​文化體育及旅遊局局長出席「香港 連場好戲」電影旅遊系列宣傳啟動儀式致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是文化體育及旅遊局局長羅淑佩今日（十月二十一日）出席「香港 連場好戲」電影旅遊系列宣傳啟動儀式的致辭： 林建岳博士（香港旅遊發展局（旅發局）主席）、各位影視界好朋友、支持機構代表、傳媒朋友： 大家好！好高興今日出席「香港 連場好戲」電影旅遊系列宣傳啟動儀式。要點包括：《施政報告》；「東方荷里活」；「電影+旅遊」；「九龍城寨光影之旅」。",
-      "interview_angles": [
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "「​文化體育及旅遊局局長出席「香港 連場好戲」電影旅遊系列宣傳啟動儀式致辭」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「​文化體育及旅遊局局長出席「香港 連場好戲」電影旅遊系列宣傳啟動儀式致辭」反映相關政策推廣或區域合作取態，以下是文化體育及旅遊局局長羅淑佩今日（十月二十一日）出席「香港 連場好戲」電影旅遊系列宣傳啟動儀式的致辭： 林建岳博士（香港旅遊發展局（旅發局）主席）、各位影視界好朋友、支持機構代表、傳媒朋友： 大家好！好高興今日出席「香港 連場好戲」電影旅遊系列宣傳啟動儀式。要點包括：《施政報告》；「東方荷里活」；「電影+旅遊」；「九龍城寨光影之旅」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100725.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2289,12 +2043,7 @@
         "finance",
         "governance"
       ],
-      "summary": "「行政長官與財政部部長會面」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。行政長官李家超今日（十月二十一日）在禮賓府與財政部部長藍佛安會面，就內地和香港的經濟金融發展交流意見。財政司司長陳茂波、財政司副司長黃偉綸和財經事務及庫務局局長許正宇亦有出席。要點包括：二○二六年亞太區經濟合作組織（亞太經合組織；《2026年APEC財長聯合聲明》；《亞太地區數字基礎設施融資政策聲明》；《香港第一個五年規劃》。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「行政長官與財政部部長會面」反映相關政策推廣或區域合作取態，行政長官李家超今日（十月二十一日）在禮賓府與財政部部長藍佛安會面，就內地和香港的經濟金融發展交流意見。財政司司長陳茂波、財政司副司長黃偉綸和財經事務及庫務局局長許正宇亦有出席。要點包括：二○二六年亞太區經濟合作組織（亞太經合組織；《2026年APEC財長聯合聲明》；《亞太地區數字基礎設施融資政策聲明》；《香港第一個五年規劃》。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100694.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2312,12 +2061,7 @@
         "education",
         "national-development"
       ],
-      "summary": "「創新科技及工業局常任秘書長出席香港政協青年聯會互動交流分享會致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是創新科技及工業局常任秘書長蔡傑銘今日（十月二十一日）在香港政協青年聯會互動交流分享會的致辭： 容主席（香港政協青年聯會主席容思瀚）、各位會員： 大家好！感謝香港政協青年聯會的邀請，有機會向大家介紹特區政府在推動香港創新科技（創科）發展的工作。要點包括：二○二五年超過5 200間；3%；《香港第一個五年規劃》；《2025年世界數碼競爭力排名》。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「創新科技及工業局常任秘書長出席香港政協青年聯會互動交流分享會致辭」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「創新科技及工業局常任秘書長出席香港政協青年聯會互動交流分享會致辭」反映相關政策推廣或區域合作取態，以下是創新科技及工業局常任秘書長蔡傑銘今日（十月二十一日）在香港政協青年聯會互動交流分享會的致辭： 容主席（香港政協青年聯會主席容思瀚）、各位會員： 大家好！感謝香港政協青年聯會的邀請，有機會向大家介紹特區政府在推動香港創新科技（創科）發展的工作。要點包括：二○二五年超過5 200間；3%；《香港第一個五年規劃》；《2025年世界數碼競爭力排名》。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100624.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2336,11 +2080,6 @@
         "culture-tourism"
       ],
       "summary": "政策相關公報：「立法會四題：推動北部都會區的會展業發展」。以下是今日（十月二十一日）在立法會會議上洪錦鉉議員的提問和商務及經濟發展局局長丘應樺的答覆： 隨着香港特別行政區政府積極對接國家發展戰略，北部都會區（北都）的會議及展覽（會展）業發展備受關注。就此，政府可否告知本會： （一）過去三年，本港會展業的直接及間接經濟貢獻（包括佔本地生產總值比例）、訪港過夜會議、展覽及獎勵旅遊旅客人數及人均消費、主要會展場地可用展覽面積的變化，以及現時政府對業界的主要支援措施（包括各項資助計劃及場地最新擴建進度）分別為何； （二）是否知悉，香港會議展覽中心及亞洲國際博覽館於傳統旺季的租用情況及需求為何；有否評估上述場地是否足以應…要點包括：二○二四年會展業為香港經濟貢獻502億元；二○二三年首次推出「定期展覽獎勵計劃」（「獎勵計劃」）；二○二五年七月增加撥款推出「獎勵計劃2.0」；502億。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「立法會四題：推動北部都會區的會展業發展」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100450.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2357,36 +2096,26 @@
         "healthcare"
       ],
       "summary": "政策相關公報：「立法會五題：規管藥物」。以下是今日（十月二十一日）在立法會會議上文頴怡議員的提問和醫務衞生局局長盧寵茂教授的答覆︰ 據悉不少市民在外遊時會購買成藥回港自用，當中部分藥物屬受管制藥品（例如在《藥劑業及毒藥規例》毒藥表第一部所列的毒藥），若在沒有醫護專業人員指導下服用，可能對健康構成風險。要點包括：，個；2%；《藥劑業及毒藥規例》；《藥劑業及毒藥條例》。",
-      "interview_angles": [
-        "措施如何在加快服務／新藥准入與安全把關、公營系統負荷之間取平衡？",
-        "「立法會五題：規管藥物」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100405.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
     {
       "id": "20261021-100355",
       "date": "2026-10-21",
-      "title": "​立法會：政務司司長提交回應政府帳目委員會第八十五及八十六號報告書政府覆文致辭",
+      "title": "廚餘收集升至每日約400公噸，公共屋邨續推一座一桶",
+      "title_en": "Food waste collection rises to about 400 tonnes a day",
       "departments": [
+        "eeb",
         "csso",
-        "tlb",
         "legco"
       ],
       "themes": [
-        "education",
         "environment-climate",
-        "fintech-ai"
+        "governance"
       ],
-      "summary": "「​立法會：政務司司長提交回應政府帳目委員會第八十五及八十六號報告書政府覆文致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是政務司司長陳國基今日（十月二十一日）在立法會會議上提交政府帳目委員會（帳委會）第八十五及八十六號報告書政府覆文的致辭全文： 我今天向立法會提交政府覆文，回應政府帳目委員會今年七月十五日向立法會提交的第八十五及第八十六號報告書。政府歡迎帳委會的報告書，亦感謝帳委會主席陳祖恒議員及各位委員的投入和貢獻。要點包括：二○二五年每日平均約350公噸；二○二六年上半年每日平均約400公噸；14%；約260個。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "「​立法會：政務司司長提交回應政府帳目委員會第八十五及八十六號報告書政府覆文致辭」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
-      "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100355.htm",
-      "source_name": "info.gov.hk 新聞公報"
+      "summary": "約400公噸是2026年上半年平均每日廚餘收集量，較2025年的350公噸增約14%。政務司司長10月21日向立法會提交政府覆文時指出，已設約260個公眾廚餘回收點；公共屋邨一座一桶仍以2026年底達標為目標。環保署已為廚餘收集服務訂立巡查及違規評核指引。",
+      "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100358.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
     },
     {
       "id": "20261021-100267",
@@ -2403,11 +2132,6 @@
         "healthcare"
       ],
       "summary": "政策相關公報：「​立法會十一題：規管跨境醫療廣告」。以下是今日（十月二十一日）在立法會會議上李浩然議員的提問和醫務衞生局局長盧寵茂教授的書面答覆︰ 有意見指隨着粵港澳大灣區醫療融合加速發展，本港市面及網絡平台出現不少由跨境醫療機構投放的宣傳廣告；然而，部分宣傳廣告在服務效果與風險披露方面情況參差，市民在參考相關資訊並前往境外求診時可能面對消費或醫療權益等問題，甚至有機會造成安全隱患。要點包括：《不良廣告（醫藥）條例》；《商品說明條例》；《醫療廣告管理辦法》。",
-      "interview_angles": [
-        "措施如何在加快服務／新藥准入與安全把關、公營系統負荷之間取平衡？",
-        "「​立法會十一題：規管跨境醫療廣告」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100267.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2424,11 +2148,6 @@
         "finance"
       ],
       "summary": "金管局代為公布，國家財政部將透過香港金融管理局的債務工具中央結算系統（CMU）發行人民幣國債，並附招標通告及招標資料備忘錄。此舉延續內地在港發行人民幣主權債券的安排，鞏固香港作為離岸人民幣業務樞紐及國際債券發行平台的角色，亦與加強與內地金融市場互聯互通的政策方向一致。",
-      "interview_angles": [
-        "持續在港發行人民幣國債，對鞏固香港離岸人民幣中心地位有何實質作用？",
-        "CMU 作為結算基建，如何支援未來更多內地主權及準主權機構來港發債？",
-        "若全球利率及人民幣匯率波動加劇，本港人民幣債券市場的吸引力會否受影響？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/20/P2026101600545.htm",
       "source_name": "info.gov.hk / HKMA"
     },
@@ -2446,11 +2165,6 @@
         "governance"
       ],
       "summary": "政府今日推出「共創香港—福利項目配對平台」，邀請社福機構及社企於2026年11月29日或之前提交首輪項目建議。平台落實《香港特區首個五年規劃》及2026年《施政報告》提出的政府、商界、社區三方協作扶貧模式，由「扶貧專責委員會」撮合商界資源與社區創意項目，資金由資助方直接撥予項目倡議者。首輪須服務劏房戶、單親戶、全老戶及／或照顧者，並至少涵蓋喘息支援、情緒健康、居住安全、託兒、鄰舍互助、營養、數碼共融、安老科技或積極樂頤年等主題之一。",
-      "interview_angles": [
-        "三方協作配對平台與傳統政府直接資助有何分別？如何確保問責而不經平台過帳？",
-        "首輪鎖定劏房／單親／全老／照顧者，反映「精準扶貧」如何隨社會需要調整對象？",
-        "若商界參與不足或項目質素參差，政府有何機制維持平台可持續運作？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/20/P2026102000238.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2467,11 +2181,6 @@
         "governance"
       ],
       "summary": "財經事務及庫務局局長於2026年亞太經合組織（APEC）財長會議相關研討會發表開幕辭（僅英文），突顯香港作為國際金融中心主辦及參與區域財金對話的角色。活動反映政府透過多邊平台推廣本港金融優勢、區域聯通及政策合作，與鞏固國際地位及「超級聯繫人」定位相關。",
-      "interview_angles": [
-        "主辦或參與 APEC 財金活動，如何轉化為實質的企業投資或市場互聯成果？",
-        "在地緣政治張力下，香港如何平衡國際金融平台角色與國家發展大局？",
-        "財庫局近年在綠色金融、人民幣及資產管理方面的國際推廣重點是甚麼？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/20/P2026102000207.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2486,12 +2195,7 @@
         "national-development",
         "governance"
       ],
-      "summary": "「​行政長官出席慶祝中華人民共和國成立七十七周年暨港區省級政協委員聯誼會成立二十周年慶典致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是行政長官李家超今日（十月二十日）出席慶祝中華人民共和國成立七十七周年暨港區省級政協委員聯誼會成立二十周年慶典的致辭： 尊敬的周霽主任（中央人民政府駐香港特別行政區聯絡辦公室主任）、劉賜貴主任（全國政協港澳台僑委員會主任）、林銳副會長（中華海外聯誼會副會長）、陳楓副署長（中央人民政府駐香港特別行政區維護國家安全公署副署長）、李永勝副特派員（中華人民共和國外交部駐香港特別行政區特派員公署副特派員）、蘇清棟主席（港區省級政協委員聯誼會主席）、霍啟山會長（港區省級政協委員聯誼會會長）、各位嘉賓、各位朋友： 很高興與各位一同參與港區省級政協委員聯誼會成立二十周年慶典暨回顧圖片展。光影留存歲月，鏡頭定格時光。要點包括：《香港第一個五年規劃》；「十五五」；「一五」；「超級聯繫人」。",
-      "interview_angles": [
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "「​行政長官出席慶祝中華人民共和國成立七十七周年暨港區省級政協委員聯誼會成立二十周年慶典致辭」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「​行政長官出席慶祝中華人民共和國成立七十七周年暨港區省級政協委員聯誼會成立二十周年慶典致辭」反映相關政策推廣或區域合作取態，以下是行政長官李家超今日（十月二十日）出席慶祝中華人民共和國成立七十七周年暨港區省級政協委員聯誼會成立二十周年慶典的致辭： 尊敬的周霽主任（中央人民政府駐香港特別行政區聯絡辦公室主任）、劉賜貴主任（全國政協港澳台僑委員會主任）、林銳副會長（中華海外聯誼會副會長）、陳楓副署長（中央人民政府駐香港特別行政區維護國家安全公署副署長）、李永勝副特派員（中華人民共和國外交部駐香港特別行政區特派員公署副特派員）、蘇清棟主席（港區省級政協委員聯誼會主席）、霍啟山會長（港區省級政協委員聯誼會會長）、各位嘉賓、各位朋友： 很高興與各位一同參與港區省級政協委員聯誼會成立二十周年慶典暨回顧圖片展。光影留存歲月，鏡頭定格時光。要點包括：《香港第一個五年規劃》；「十五五」；「一五」；「超級聯繫人」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/20/P2026102000570.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2507,12 +2211,7 @@
         "national-development",
         "governance"
       ],
-      "summary": "「政務司副司長出席慶祝中華人民共和國成立七十七周年暨港區省級政協委員聯誼會成立二十周年圖片展覽啟動禮致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是政務司副司長卓永興今日（十月二十日）出席慶祝中華人民共和國成立七十七周年暨港區省級政協委員聯誼會成立二十周年圖片展覽啟動禮的致辭： 尊敬的羅永綱副主任（中央人民政府駐香港特別行政區聯絡辦公室副主任）、朱文部長（中央人民政府駐香港特別行政區聯絡辦公室協調部部長）、蘇清棟主席（港區省級政協委員聯誼會主席）、霍啟山會長（港區省級政協委員聯誼會會長）、各位永遠名譽主席和會長、各位委員、各位朋友： ​大家上午好！今天很高興出席港區省級政協委員聯誼會成立二十周年圖片展覽啟動禮。要點包括：「一國兩制」；「十五五」。",
-      "interview_angles": [
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "「政務司副司長出席慶祝中華人民共和國成立七十七周年暨港區省級政協委員聯誼會成立二十周年圖片展覽啟動禮致辭」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「政務司副司長出席慶祝中華人民共和國成立七十七周年暨港區省級政協委員聯誼會成立二十周年圖片展覽啟動禮致辭」反映相關政策推廣或區域合作取態，以下是政務司副司長卓永興今日（十月二十日）出席慶祝中華人民共和國成立七十七周年暨港區省級政協委員聯誼會成立二十周年圖片展覽啟動禮的致辭： 尊敬的羅永綱副主任（中央人民政府駐香港特別行政區聯絡辦公室副主任）、朱文部長（中央人民政府駐香港特別行政區聯絡辦公室協調部部長）、蘇清棟主席（港區省級政協委員聯誼會主席）、霍啟山會長（港區省級政協委員聯誼會會長）、各位永遠名譽主席和會長、各位委員、各位朋友： ​大家上午好！今天很高興出席港區省級政協委員聯誼會成立二十周年圖片展覽啟動禮。要點包括：「一國兩制」；「十五五」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/20/P2026102000350.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2528,12 +2227,7 @@
         "innovation",
         "governance"
       ],
-      "summary": "「創新科技及工業局局長出席首屆「新型工業菁英企業培育計劃」頒授典禮致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是創新科技及工業局局長孫東教授今日（十月二十日）在首屆「新型工業菁英企業培育計劃」頒授典禮的致辭： 莊主席（香港新型工業發展聯盟主席莊子雄博士）、蔡常秘（創新科技及工業局常任秘書長蔡傑銘）、各位嘉賓、各位朋友： 大家早上好！我十分高興出席首屆「新型工業菁英企業培育計劃」頒授典禮，與各位共同見證香港培育新型工業的重要里程碑。要點包括：《香港第一個五年規劃》；「推進新型工業化，加快創新科技產業發展」；「香港新型工業菁英企業」；「新型工業，香港製造」。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "如何避免「有政策、缺落地」？場景驗證、資助成效與人才留港應如何考核？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「創新科技及工業局局長出席首屆「新型工業菁英企業培育計劃」頒授典禮致辭」反映相關政策推廣或區域合作取態，以下是創新科技及工業局局長孫東教授今日（十月二十日）在首屆「新型工業菁英企業培育計劃」頒授典禮的致辭： 莊主席（香港新型工業發展聯盟主席莊子雄博士）、蔡常秘（創新科技及工業局常任秘書長蔡傑銘）、各位嘉賓、各位朋友： 大家早上好！我十分高興出席首屆「新型工業菁英企業培育計劃」頒授典禮，與各位共同見證香港培育新型工業的重要里程碑。要點包括：《香港第一個五年規劃》；「推進新型工業化，加快創新科技產業發展」；「香港新型工業菁英企業」；「新型工業，香港製造」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/20/P2026102000257.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2550,11 +2244,6 @@
         "transport-logistics"
       ],
       "summary": "政策相關公報：「各部門加強措施應對皇崗口岸入境人流高峰」。​保安局今日（十月十九日）表示，皇崗口岸在下午二時起，南下旅客人流開始增多。在下午二時至四時期間，約有9 401名旅客經皇崗口岸入境回港，較皇崗口岸／落馬洲管制站過往同期上升366%（上升超過三倍半）。要點包括：366%；「口岸通」；「合作查驗」。",
-      "interview_angles": [
-        "跨境／物流安排如何服務大灣區人流物流，同時控制本港社區與基建負荷？",
-        "「各部門加強措施應對皇崗口岸入境人流高峰」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/19/P2026101900500.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2571,12 +2260,7 @@
         "fintech-ai",
         "healthcare"
       ],
-      "summary": "「衞生署署長出席世衞西太平洋區域委員會會議」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。衞生署署長林文健醫生今日（十月十九日）率領衞生署代表團到菲律賓馬尼拉出席世界衞生組織（世衞）西太平洋區域委員會第七十七屆會議，與其他國家和地區的代表圍繞多個全球共同關心的重大健康議題進行深入交流，探討切實可行的應對策略及強化衞生系統韌性的有效途徑。會議今日揭幕，林文健醫生在會上匯報了香港特別行政區（特區）在公共衞生方面的最新情況和挑戰。要點包括：《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》；《香港第一個五年規劃》；《行政長官2026年施政報告》；《施政報告》。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "措施如何在加快服務／新藥准入與安全把關、公營系統負荷之間取平衡？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「衞生署署長出席世衞西太平洋區域委員會會議」反映相關政策推廣或區域合作取態，衞生署署長林文健醫生今日（十月十九日）率領衞生署代表團到菲律賓馬尼拉出席世界衞生組織（世衞）西太平洋區域委員會第七十七屆會議，與其他國家和地區的代表圍繞多個全球共同關心的重大健康議題進行深入交流，探討切實可行的應對策略及強化衞生系統韌性的有效途徑。會議今日揭幕，林文健醫生在會上匯報了香港特別行政區（特區）在公共衞生方面的最新情況和挑戰。要點包括：《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》；《香港第一個五年規劃》；《行政長官2026年施政報告》；《施政報告》。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/19/P2026101900343.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2593,12 +2277,7 @@
         "finance",
         "fintech-ai"
       ],
-      "summary": "「行政長官與亞洲基礎設施投資銀行行長會面」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。行政長官李家超今日（十月十九日）在禮賓府與亞洲基礎設施投資銀行（亞投行）行長鄒加怡會面，就進一步加強區域金融合作交流意見。財經事務及庫務局局長許正宇亦有出席。要點包括：二○二六年亞太區經濟合作組織財政部長會；《香港第一個五年規劃》；《施政報告》；《全球金融中心指數》。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "「行政長官與亞洲基礎設施投資銀行行長會面」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「行政長官與亞洲基礎設施投資銀行行長會面」反映相關政策推廣或區域合作取態，行政長官李家超今日（十月十九日）在禮賓府與亞洲基礎設施投資銀行（亞投行）行長鄒加怡會面，就進一步加強區域金融合作交流意見。財經事務及庫務局局長許正宇亦有出席。要點包括：二○二六年亞太區經濟合作組織財政部長會；《香港第一個五年規劃》；《施政報告》；《全球金融中心指數》。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/19/P2026101900136.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2612,12 +2291,7 @@
       "themes": [
         "transport-logistics"
       ],
-      "summary": "「運輸及物流局局長赴上海出席北外灘國際航運論壇」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。運輸及物流局局長陳美寶今日（十月十九日）晚上啓程前往上海，出席明日（十月二十日）舉行的2026北外灘國際航運論壇。2026北外灘國際航運論壇以「共同的挑戰，共同的使命—共促全球航運韌性發展」為主題。要點包括：「共同的挑戰，共同的使命—共促全球航運韌性發展」。",
-      "interview_angles": [
-        "跨境／物流安排如何服務大灣區人流物流，同時控制本港社區與基建負荷？",
-        "「運輸及物流局局長赴上海出席北外灘國際航運論壇」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「運輸及物流局局長赴上海出席北外灘國際航運論壇」反映相關政策推廣或區域合作取態，運輸及物流局局長陳美寶今日（十月十九日）晚上啓程前往上海，出席明日（十月二十日）舉行的2026北外灘國際航運論壇。2026北外灘國際航運論壇以「共同的挑戰，共同的使命—共促全球航運韌性發展」為主題。要點包括：「共同的挑戰，共同的使命—共促全球航運韌性發展」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/19/P2026101800610.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2632,12 +2306,7 @@
       "themes": [
         "transport-logistics"
       ],
-      "summary": "「律政司司長赴文萊出席中國—東盟成員國總檢察長會議」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。律政司司長林定國資深大律師今日（十月十九日）下午啓程前往文萊，出席第十六屆中國—東盟成員國總檢察長會議及相關活動。林定國將以中國代表團成員身分出席會議，並在討論環節上就有關在數碼時代保護兒童的主題發表演說，與東南亞國家聯盟（東盟）成員國探討加強國際合作，以保護兒童免受網絡罪行威脅。",
-      "interview_angles": [
-        "跨境／物流安排如何服務大灣區人流物流，同時控制本港社區與基建負荷？",
-        "「律政司司長赴文萊出席中國—東盟成員國總檢察長會議」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「律政司司長赴文萊出席中國—東盟成員國總檢察長會議」反映相關政策推廣或區域合作取態，律政司司長林定國資深大律師今日（十月十九日）下午啓程前往文萊，出席第十六屆中國—東盟成員國總檢察長會議及相關活動。林定國將以中國代表團成員身分出席會議，並在討論環節上就有關在數碼時代保護兒童的主題發表演說，與東南亞國家聯盟（東盟）成員國探討加強國際合作，以保護兒童免受網絡罪行威脅。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/19/P2026101800390.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2654,11 +2323,6 @@
         "transport-logistics"
       ],
       "summary": "政策相關公報：「皇崗口岸旅客出入境最新情況」。​保安局今日（十月十八日）表示，皇崗口岸上午約十一時起，北上旅客人流顯著增加。在中午十二時至下午二時期間，約有19 000名旅客經皇崗口岸離境前往內地，較皇崗口岸／落馬洲管制站過往同期上升835%（超過八倍）。要點包括：835%；899%；「口岸通」。",
-      "interview_angles": [
-        "跨境／物流安排如何服務大灣區人流物流，同時控制本港社區與基建負荷？",
-        "「皇崗口岸旅客出入境最新情況」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/18/P2026101800416.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2674,11 +2338,7 @@
         "national-development",
         "culture-tourism"
       ],
-      "summary": "「​文化體育及旅遊局局長出席「Chill．凡西九嘉年華」致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是文化體育及旅遊局局長羅淑佩今日（十月十八日）出席「Chill．凡西九嘉年華」的致辭： 梁唐青儀會長（香港女童軍總會會長）、何珮珊總監（香港女童軍總會香港總監）、各位嘉賓、各位副主席、各位副會長、各位嘉賓、各位女童軍領袖、各位朋友： 大家下午好。我很高興和大家一起出席香港女童軍總會「Chill・凡西九嘉年華」，與各位一同慶祝總會昂然邁進110周年。要點包括：《香港第一個五年規劃》；「Chill・凡西九嘉年華」；「Chill」；「歷奇區」。",
-      "interview_angles": [
-        "「​文化體育及旅遊局局長出席「Chill．凡西九嘉年華」致辭」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「​文化體育及旅遊局局長出席「Chill．凡西九嘉年華」致辭」反映相關政策推廣或區域合作取態，以下是文化體育及旅遊局局長羅淑佩今日（十月十八日）出席「Chill．凡西九嘉年華」的致辭： 梁唐青儀會長（香港女童軍總會會長）、何珮珊總監（香港女童軍總會香港總監）、各位嘉賓、各位副主席、各位副會長、各位嘉賓、各位女童軍領袖、各位朋友： 大家下午好。我很高興和大家一起出席香港女童軍總會「Chill・凡西九嘉年華」，與各位一同慶祝總會昂然邁進110周年。要點包括：《香港第一個五年規劃》；「Chill・凡西九嘉年華」；「Chill」；「歷奇區」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/18/P2026101800373.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2696,11 +2356,6 @@
         "national-development"
       ],
       "summary": "政策相關公報：「大灣區專員在倫敦推廣灣區機遇與香港優勢」。粵港澳大灣區發展專員林雅雯十月十七日（倫敦時間）結束四日英國倫敦訪問行程。訪問期間，林雅雯出席了以人才招攬、經貿推廣、文化產業以及青年發展等為主題的多場活動，推廣香港優勢和大灣區發展機遇，同時宣傳《香港第一個五年規劃》。要點包括：《香港第一個五年規劃》；「香港．全球人才機遇展」；「超級聯繫人」；「超級增值人」。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「大灣區專員在倫敦推廣灣區機遇與香港優勢」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/18/P2026101600488.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2714,12 +2369,7 @@
       "themes": [
         "finance"
       ],
-      "summary": "「財政司司長在曼谷與泰國副總理及跨國金融機構高層會面」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。財政司司長陳茂波今日（十月十七日）上午繼續在泰國曼谷的訪問行程。陳茂波上午與泰國副總理兼財政部長Ekniti Nitithanprapas會面，就進一步加強兩地經貿和金融合作交換意見。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "「財政司司長在曼谷與泰國副總理及跨國金融機構高層會面」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「財政司司長在曼谷與泰國副總理及跨國金融機構高層會面」反映相關政策推廣或區域合作取態，財政司司長陳茂波今日（十月十七日）上午繼續在泰國曼谷的訪問行程。陳茂波上午與泰國副總理兼財政部長Ekniti Nitithanprapas會面，就進一步加強兩地經貿和金融合作交換意見。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/17/P2026101700319.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2736,11 +2386,6 @@
         "poverty-welfare"
       ],
       "summary": "房屋局宣布簡約公屋（LPH）進入流轉新階段，全部13個項目即日起開放申請；餘下觀塘順利邨道及黃大仙竹園道由校舍改建的約210個單位預計明年首季陸續竣工，約三萬個單位可於明年三月底前完成，較2022年《施政報告》五年目標提早達標。截至九月底已收逾44,900宗申請；部分住戶已轉入傳統公屋帶出單位流轉。優先處理輪候公屋三年或以上的一般申請人（及長者一人申請），11月6日或前提交獲優先處理，其後繼續開放。租金約為同區新落成傳統公屋九成，並可申請關愛基金特別津貼。",
-      "interview_angles": [
-        "簡約公屋「流轉」如何與傳統公屋輪候、過渡房屋及「簡樸房」規管銜接？",
-        "逾四萬申請對約三萬單位，如何訂定分配優先次序並回應劏房住戶急切需要？",
-        "提前達標後，政府會否調整公營房屋供應結構或延長簡約公屋作為過渡政策？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/16/P2026101600455.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2758,12 +2403,7 @@
         "education",
         "national-development"
       ],
-      "summary": "「​財政司司長在曼谷出席國際貨幣基金組織及世界銀行集團年會」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。財政司司長陳茂波今日（十月十六日）繼續在泰國曼谷的訪問行程，以中國代表團成員身分出席國際貨幣基金組織（IMF）及世界銀行集團（世行）年會的全體會議。他亦參與財經媒體和智庫的對談活動，並與國際金融機構及企業高層會面，以及主持金融界交流晚宴，介紹香港的發展機遇，促進金融與投資合作。要點包括：《五年規劃》；「十五五」；「四中心、一高地」；「金融＋」。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「​財政司司長在曼谷出席國際貨幣基金組織及世界銀行集團年會」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「​財政司司長在曼谷出席國際貨幣基金組織及世界銀行集團年會」反映相關政策推廣或區域合作取態，財政司司長陳茂波今日（十月十六日）繼續在泰國曼谷的訪問行程，以中國代表團成員身分出席國際貨幣基金組織（IMF）及世界銀行集團（世行）年會的全體會議。他亦參與財經媒體和智庫的對談活動，並與國際金融機構及企業高層會面，以及主持金融界交流晚宴，介紹香港的發展機遇，促進金融與投資合作。要點包括：《五年規劃》；「十五五」；「四中心、一高地」；「金融＋」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/16/P2026101600656.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2780,11 +2420,6 @@
         "legislation"
       ],
       "summary": "政府就「在新土地實施業權註冊制度八條附屬法例今日刊憲」推出／推進立法或附屬法例安排。發展局今日（十月十六日）刊憲八條附屬法例，建議根據《土地業權條例》（第585章）（《業權條例》）訂立四條新附屬法例，以及修訂《土地註冊條例》（第128章）（《土註條例》）、《高等法院條例》（第4章）和《區域法院條例》（第336章）下四條附屬法例，旨在為明年上半年於新土地實施業權註冊制度訂立實施細節，並將現行契約註冊制度下一些做法與業權註冊制度看齊。發展局發言人表示：「《2025年業權及土地的註冊（雜項修訂）條例》去年九月獲立法會通過，以修訂二○○四年制定但尚未實施的《業權條例》，於新土地先行實施業權註冊制度。要點包括：二○二七年十月四日與電子遞交系統同步生效；二○二七年上半年內由發展局局長另行指定日期開始實施；《土地業權條例》；《業權條例》。",
-      "interview_angles": [
-        "條例／附屬法例的政策目標是什麼？與現行制度相比，簡化了哪些程序，又削弱了哪些制衡？",
-        "若立法會或業界反對關鍵條文，政府有何備選方案及時間表？",
-        "房屋／土地措施如何與公營房屋、私人市場及北部都會區供應銜接？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/16/P2026101600551.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2802,12 +2437,7 @@
         "finance",
         "governance"
       ],
-      "summary": "「​署理財政司司長在「粵艇南下」首航儀式致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是署理財政司司長黃偉綸今日（十月十六日）出席「粵艇南下」首航儀式致辭全文： 尊敬的中聯辦經濟部徐衛剛部長、尊敬的廣東省人民政府港澳事務辦公室范克勝副主任、鄭慕智主席（香港海運港口發展局主席）、各位立法會議員、陳美寶局長（運輸及物流局局長）、丘卓恒常任秘書長（運輸及物流局常任秘書長）、王世發處長（海事處處長）、郭俊峯處長（入境處處長）、劉凱旋署長（投資推廣署署長）、各位嘉賓、各位朋友、各位支持粵港遊艇自由行的朋友： 大家下午好！首先感謝大家到來，和我們一同見證「粵艇南下」的首航，我歡迎今日五艘廣東遊艇，我了解到三艘來自深圳 ，一艘來自珠海，一艘來自南沙，一共有30多位朋友來到香港。要點包括：二○二五年《施政報告》已有很清楚的論述；約3,500億；100個；000個。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「​署理財政司司長在「粵艇南下」首航儀式致辭」反映相關政策推廣或區域合作取態，以下是署理財政司司長黃偉綸今日（十月十六日）出席「粵艇南下」首航儀式致辭全文： 尊敬的中聯辦經濟部徐衛剛部長、尊敬的廣東省人民政府港澳事務辦公室范克勝副主任、鄭慕智主席（香港海運港口發展局主席）、各位立法會議員、陳美寶局長（運輸及物流局局長）、丘卓恒常任秘書長（運輸及物流局常任秘書長）、王世發處長（海事處處長）、郭俊峯處長（入境處處長）、劉凱旋署長（投資推廣署署長）、各位嘉賓、各位朋友、各位支持粵港遊艇自由行的朋友： 大家下午好！首先感謝大家到來，和我們一同見證「粵艇南下」的首航，我歡迎今日五艘廣東遊艇，我了解到三艘來自深圳 ，一艘來自珠海，一艘來自南沙，一共有30多位朋友來到香港。要點包括：二○二五年《施政報告》已有很清楚的論述；約3,500億；100個；000個。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/16/P2026101600495.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2821,11 +2451,7 @@
       "themes": [
         "national-development"
       ],
-      "summary": "「​律政司司長出席海南法律周深化瓊港法律服務合作」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。律政司司長林定國資深大律師今日（十月十六日）在海南出席2026海南自由貿易港法律周（海南法律周），推廣香港專業服務優勢，深化瓊港在法律及爭議解決服務方面的合作，助力兩地以「雙港聯通」之勢，貢獻國家高質量發展。今年海南法律周以「法治自貿港‧與世界聯通」為主題。要點包括：「雙港聯通」；「法治自貿港‧與世界聯通」；「十五五」；「優選地」。",
-      "interview_angles": [
-        "「​律政司司長出席海南法律周深化瓊港法律服務合作」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「​律政司司長出席海南法律周深化瓊港法律服務合作」反映相關政策推廣或區域合作取態，律政司司長林定國資深大律師今日（十月十六日）在海南出席2026海南自由貿易港法律周（海南法律周），推廣香港專業服務優勢，深化瓊港在法律及爭議解決服務方面的合作，助力兩地以「雙港聯通」之勢，貢獻國家高質量發展。今年海南法律周以「法治自貿港‧與世界聯通」為主題。要點包括：「雙港聯通」；「法治自貿港‧與世界聯通」；「十五五」；「優選地」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/16/P2026101600423.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2843,12 +2469,7 @@
         "healthcare",
         "governance"
       ],
-      "summary": "「醫務衞生局局長與北京市中醫藥管理局局長會面」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。醫務衞生局局長盧寵茂教授率領代表團今日（十月十六日）在北京與北京市中醫藥管理局局長羅增剛會面，向他介紹香港中醫藥發展的政策方向及最新措施，並探討深化京港兩地中醫藥多方面的合作。盧寵茂教授說︰「國家『十五五』規劃提出要推進中醫藥傳承創新，推動中醫藥走向世界。要點包括：二○二六年《施政報告》與之一脈相承；《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》；《施政報告》；《中醫藥發展藍圖》。",
-      "interview_angles": [
-        "措施如何在加快服務／新藥准入與安全把關、公營系統負荷之間取平衡？",
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「醫務衞生局局長與北京市中醫藥管理局局長會面」反映相關政策推廣或區域合作取態，醫務衞生局局長盧寵茂教授率領代表團今日（十月十六日）在北京與北京市中醫藥管理局局長羅增剛會面，向他介紹香港中醫藥發展的政策方向及最新措施，並探討深化京港兩地中醫藥多方面的合作。盧寵茂教授說︰「國家『十五五』規劃提出要推進中醫藥傳承創新，推動中醫藥走向世界。要點包括：二○二六年《施政報告》與之一脈相承；《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》；《施政報告》；《中醫藥發展藍圖》。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/16/P2026101600299.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2865,11 +2486,6 @@
         "transport-logistics"
       ],
       "summary": "政策相關公報：「運輸署呼籲重陽節假期前後市民和旅客應預早計劃跨境行程」。運輸署今日（十月十六日）表示，重陽節假期前後（十月十六至十九日），各陸路口岸的人流及車流將顯著增加，尤其星期一（十月十九日）下午至傍晚時段預期將是回港高峰，公共運輸服務的等候時間會較長。跨境出行人士應及早妥善計劃行程，預留充裕交通時間，盡量避免於繁忙時間出行，並注意各口岸的最新交通及公共運輸資訊。要點包括：「香港出行易」；「港珠澳大橋珠海口岸」；「珠海發布」；「大橋口岸實時通關」。",
-      "interview_angles": [
-        "跨境／物流安排如何服務大灣區人流物流，同時控制本港社區與基建負荷？",
-        "「運輸署呼籲重陽節假期前後市民和旅客應預早計劃跨境行程」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/16/P2026101600266.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2887,11 +2503,6 @@
         "legislation"
       ],
       "summary": "政府就「《2026年稅務（修訂）（知識產權開支的稅項扣除）條例草案》刊憲」推出／推進立法或附屬法例安排。當局在憲報刊登《2026年稅務（修訂）（知識產權開支的稅項扣除）條例草案》（《條例草案》），就企業購買知識產權或其使用權特許所招致的相關資本開支，適度放寬扣稅安排。商務及經濟發展局發言人說：「《條例草案》落實二○二五至二六年度及二○二六至二七年度《財政預算案》所宣布的措施，進一步優化本地知識產權的扣稅安排，降低知識產權交易的成本，以推動更多知識產權貿易活動，助力本港知識密集型產業的發展。要點包括：二○二六年四月一日或其後訂立用以購買合資格知識產權或其使用權的合約；《條例草案》；《財政預算案》。",
-      "interview_angles": [
-        "條例／附屬法例的政策目標是什麼？與現行制度相比，簡化了哪些程序，又削弱了哪些制衡？",
-        "若立法會或業界反對關鍵條文，政府有何備選方案及時間表？",
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/16/P2026101600238.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2908,11 +2519,6 @@
         "governance"
       ],
       "summary": "政府就「與落實民商事司法文書新送達安排相關的附屬法例刊憲」推出／推進立法或附屬法例安排。當局在憲報刊登與落實《關於內地與香港特別行政區相互送達民商事司法文書的安排》（《新安排》）相關的附屬法例，即《2026年高等法院規則（修訂）（第2號）規則》、《2026年區域法院規則（修訂）（第2號）規則》及《2026年婚姻訴訟（修訂）規則》。上述附屬法例將於二○二七年三月三十日實施。要點包括：二○二七年三月三十日實施；二○二七年三月三十日生效；二○二六年十月十二日訂立《2026年高等法院規則（修訂）（第2號）規則》；二○二六年十月十二日訂立《2026年區域法院規則（修訂）（第2號）規則》。",
-      "interview_angles": [
-        "條例／附屬法例的政策目標是什麼？與現行制度相比，簡化了哪些程序，又削弱了哪些制衡？",
-        "若立法會或業界反對關鍵條文，政府有何備選方案及時間表？",
-        "跨境／物流安排如何服務大灣區人流物流，同時控制本港社區與基建負荷？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/16/P2026101600197.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2931,11 +2537,6 @@
         "legislation"
       ],
       "summary": "政府就「《〈2025年強制性公積金計劃（一般）（修訂）規例〉（生效日期）公告》刊憲」推出／推進立法或附屬法例安排。當局在憲報刊登《〈2025年強制性公積金計劃（一般）（修訂）規例〉（生效日期）公告》（《生效日期公告》），指定十二月二十一日開始實施《2025年強制性公積金計劃（一般）（修訂）規例》（2025年第206號法律公告）（《修訂規例》）。立法會於二○二五年九月二十六日通過《修訂規例》，為落實強制性公積金（強積金）首階段「全自由行」提供法律基礎，實施日期則會透過在憲報刊登的公告公布。要點包括：二○二五年九月二十六日通過《修訂規例》；二○二五年五月一日或之後入職的僱員（新聘僱員）可選擇在每個公曆年內一次；二○二六年《施政報告》關於在二○二六年內落實首階段『全自由行』的承諾；二○二七年年中向立法會提交修訂條例草案。",
-      "interview_angles": [
-        "條例／附屬法例的政策目標是什麼？與現行制度相比，簡化了哪些程序，又削弱了哪些制衡？",
-        "若立法會或業界反對關鍵條文，政府有何備選方案及時間表？",
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/16/P2026101500569.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2953,11 +2554,6 @@
         "governance"
       ],
       "summary": "據《南華早報》10月16日報道，醫務衞生局向立法會提交文件，擬於年底前向立法會提交規例並訂立實務守則，分階段加強私營醫療收費透明度：最快明年8月先涵蓋全港14間私家醫院，2027年11月擴至日間醫療中心，2028年中擴至診所。所有機構須以指定格式提供中英文價目表，列明各項收費（固定價或價格範圍）及額外收費項目，並於接待處及收費處等公開查閱；私院亦須於入院前提供涵蓋醫院及醫生費的服務費用預算（不足12小時前確認預約除外）。若最終賬單較預算高出20%或以上，醫院須提供書面解釋。此外，私院須於每年3月31日前公布並向政府提交上一曆年標準病床單一治療或程序的收費統計，且須由執業會計師審計。仁安醫院、中大醫院及私營診所集團代表稱整體可行，其中仁安醫院料每年審計開支可達約10萬元。此為立法會文件及業界回應報道，規例尚未正式刊憲生效。",
-      "interview_angles": [
-        "利：中英文價目表、入院前預算及超預算20%須書面解釋，加上跨院標準病床統計，有助減少私營醫療資訊不對稱並配合自願醫保及公私營分流。",
-        "弊：門診與複合病症收費受病情影響大，訪問醫生與醫院之間的費用估算協作有摩擦，強制會計師審計亦可能推高私院合規成本。",
-        "建議：按醫院、日間中心及診所分階段訂立標準手術編碼及預算模板，設電子比價平台並定期檢討20%解釋門檻對急症及複雜個案的適用性。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/health-environment/article/3371134/hong-kong-private-healthcare-providers-face-new-rules-make-fees-more-transparent",
       "source_name": "South China Morning Post / news report"
     },
@@ -2974,11 +2570,6 @@
         "fintech-ai"
       ],
       "summary": "創新科技及工業局局長孫東於「未來科技·未來場景·未來人才」青年科學家與產業應用場景配對論壇致辭，強調科研須經場景驗證才能商品化。政府支持科技園探索設立創科應用場景推廣中心，撮合公私營需求與本地創科方案；新型工業化資助計劃已資助近150條智能生產線，另有100億元新型工業化加速計劃，微電子研發院先導線本年投入運作。發言亦提及InnoHK約三千名研究員、人才培育及大灣區製造與供應鏈優勢，呼應「場景驅動」創科政策。",
-      "interview_angles": [
-        "「場景配對」如何解決本地創科「有技術、缺落地」的瓶頸？",
-        "新型工業化資助與加速計劃的成效應如何衡量（就業、產值、留港生產）？",
-        "香港作為測試場、大灣區作為製造後盾的分工，對「新質生產力」有何啟示？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/15/P2026101500293.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -2996,11 +2587,6 @@
         "housing-land"
       ],
       "summary": "地政總署按《收回土地條例》及《土地徵用（管有業權）條例》張貼牛潭尾新發展區（首批）收地及徵用公告，將收回約62公頃共1,043幅私人地段，並徵用涉及墳墓、金塔及魚塘的政府土地；土地於公告張貼三個月後（2027年1月16日）歸還／歸屬政府。受影響住戶及業務最早約2027年第二季分批遷出。牛潭尾是北部都會區第五個展開的新發展區，將與新田科技城共同構建「新田大學城」概念，校園範圍約52公頃，其中約五公頃預留第三間醫學院；工地平整及基建預計明年上半年展開，「熟地」由2028年底起陸續供應。",
-      "interview_angles": [
-        "收地時間表、補償與安置如何平衡發展速度與受影響居民權益？",
-        "「新田大學城」與第三間醫學院用地，如何體現北部都會區「產學研」定位？",
-        "牛潭尾作為第五個已展開的新發展區，反映北部都會區由藍圖進入全面建設階段？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/15/P2026101500252.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3017,11 +2603,6 @@
         "housing-land"
       ],
       "summary": "發展局局長甯漢豪公布2026-27年度第三季（10至12月）賣地計劃，將推售沙田石門大涌橋路與安心街交界住宅用地，樓面約48,090平方米，可提供約960個單位，鄰近石門站，原為商業用途並已獲城規會批准改作住宅，須預留部分樓面作公眾停車場。連同市建局土瓜灣道項目（約1,050伙）及估計完成契約修訂／換地的私人項目（約1,835伙），本季私人房屋土地供應可支援約3,845伙；首三季合計約15,680伙，已超逾全年12,600伙目標。政府亦計劃本季招標沙田小瀝源學生宿舍用地（約600床位）。",
-      "interview_angles": [
-        "已超全年私人房屋供應目標仍繼續推地，如何平衡「穩市」與「政策需要」？",
-        "商業用地轉住宅及學生宿舍用地試驗，反映土地用途彈性政策有何啟示？",
-        "季度賣地機制如何因應市況調整，避免重蹈過往「硬推」或「過於保守」？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/15/P2026101500656.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3039,11 +2620,6 @@
         "innovation"
       ],
       "summary": "金管局公布「ART」框架（Accountability 問責、Resilience 韌性、Trust 信任），支援銀行業負責任採用人工智能。措施包括發出最新《負責任採用人工智能監管指引》、與數碼港及港大合作建立以數據質素為核心的AI訓練數據共享平台，以及透過 GenA.I. Sandbox++ 進一步測試智能體式（agentic）AI，並擬就智能體AI管治發表討論文件。框架屬「金融科技2030」一部分；金管局副總裁阮國恒指，由生成式邁向智能體式AI是銀行業創新新階段，須配以清晰問責、韌性營運模式及有效人工監督。",
-      "interview_angles": [
-        "「問責—韌性—信任」如何具體落實到銀行內部管治及對客戶的透明度？",
-        "智能體式 AI 可自動執行多步任務，監管應如何界定「人機協作」底線？",
-        "數據共享平台如何在促進創新同時處理私隱、競爭及跨境數據流動議題？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/15/P2026101500186.htm",
       "source_name": "info.gov.hk / HKMA"
     },
@@ -3061,11 +2637,6 @@
         "innovation"
       ],
       "summary": "政府公布再有一款用於治療轉移性激素敏感性前列腺癌的新藥經「1+」機制獲准註冊，累計達23款；其中七款已納入醫管局藥物名冊，六款屬「專用藥物」類別，合資格病人只需支付標準費用。機制自2023年11月推行，2024年11月起擴至所有新藥；申請人可提交一個參照藥監機構批准證據，並須有本地臨床數據及專家認可。衛生署正分階段實施「第一層評估」，目標2030年全面覆蓋，並將於2026年底成立香港醫療產品監管中心，配合發展國際醫療創新樞紐及《施政報告》／五年規劃方向。",
-      "interview_angles": [
-        "「1+」與邁向「第一層評估」如何在加快引入新藥與保障安全有效之間取平衡？",
-        "獲批藥物納入醫管局名冊的速度，如何影響「好藥用在香港」能否惠及基層病人？",
-        "醫療產品監管中心對吸引生物醫藥企業及粵港澳大灣區產業鏈有何策略意義？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/15/P2026101500399.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3082,12 +2653,7 @@
         "housing-land",
         "healthcare"
       ],
-      "summary": "房屋／土地政策動態：「發展局局長就二○二六年十月至十二月季度賣地計劃會見傳媒談話內容」。以下是發展局局長甯漢豪今日（十月十五日）就二○二六年十月至十二月季度賣地計劃會見傳媒的談話內容： 記者：首先One Stanley方面，初步調查出事原因是甚麼，為甚麼會違規少了一條鋼筋？屋宇署為甚麼會批「入伙紙」，同類單位有沒有問題，會否提出檢控？要點包括：二○二六年十月至十二月季度賣地計劃會見傳媒的談話內容：\n記者：首先One Stanley方；000個；《建築物條例》；「入伙紙」。",
-      "interview_angles": [
-        "房屋／土地措施如何與公營房屋、私人市場及北部都會區供應銜接？",
-        "若市場反應冷淡或申請遠超供應，政府會如何調整優先次序？",
-        "措施如何在加快服務／新藥准入與安全把關、公營系統負荷之間取平衡？"
-      ],
+      "summary": "發展局局長10月15日就2026年10月至12月季度賣地計劃會見傳媒，並回應赤柱住宅項目的樓宇安全及入伙紙審批事宜。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/15/P2026101500645.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3106,11 +2672,6 @@
         "national-development"
       ],
       "summary": "政策相關公報：「​立法會：運輸及物流局局長就「積極配合國家《十五五規劃綱要》，促進粵港澳大灣區港口、機場和軌道交通協同發展」議員議案總結發言」。以下是運輸及物流局局長陳美寶今日（十月十五日）在立法會會議上就林銘鋒議員動議的「積極配合國家《十五五規劃綱要》，促進粵港澳大灣區港口、機場和軌道交通協同發展」議案的總結發言： 首先感謝共42位議員就這項動議辯論發言，我一一細心聆聽。剛才有多位議員先後特別提到「協同發展」，我認同這是今日辯論的關鍵詞。要點包括：《香港第一個五年規劃》；《行政長官2026年施政報告》；「協同發展」。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "「​立法會：運輸及物流局局長就「積極配合國家《十五五規劃綱要》，促進粵港澳大灣區港口、機場和軌道交通協同發展」議員議案總結發言」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/15/P2026101500523.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3126,14 +2687,26 @@
         "fintech-ai",
         "innovation"
       ],
-      "summary": "「創新科技及工業局局長出席具身智能國際應用訓練場開幕典禮致辭」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是創新科技及工業局局長孫東教授今日（十月十五日）在具身智能國際應用訓練場開幕典禮的致辭： 陳主席（香港生產力促進局（生產力局）主席陳祖恒）、黎總監（生產力局首席數碼總監兼內地業務首席執行官黎少斌）、各位嘉賓、各位合作夥伴： 大家下午好！我非常高興出席具身智能國際應用訓練場的開幕典禮，見證香港推動具身智能技術應用和產業發展的里程碑。要點包括：二○二六年四月底已資助超過390個、總額約11億元的AI相關項目；10億；390個；約11億。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "如何避免「有政策、缺落地」？場景驗證、資助成效與人才留港應如何考核？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「創新科技及工業局局長出席具身智能國際應用訓練場開幕典禮致辭」反映相關政策推廣或區域合作取態，以下是創新科技及工業局局長孫東教授今日（十月十五日）在具身智能國際應用訓練場開幕典禮的致辭： 陳主席（香港生產力促進局（生產力局）主席陳祖恒）、黎總監（生產力局首席數碼總監兼內地業務首席執行官黎少斌）、各位嘉賓、各位合作夥伴： 大家下午好！我非常高興出席具身智能國際應用訓練場的開幕典禮，見證香港推動具身智能技術應用和產業發展的里程碑。要點包括：二○二六年四月底已資助超過390個、總額約11億元的AI相關項目；10億；390個；約11億。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/15/P2026101500429.htm",
       "source_name": "info.gov.hk 新聞公報"
+    },
+    {
+      "id": "20261014-stray-dog-management",
+      "date": "2026-10-14",
+      "title": "流浪狗管理：漁護署按風險巡查並支援領養",
+      "title_en": "Stray dog management: risk-based patrols and adoption support",
+      "departments": [
+        "eeb",
+        "legco"
+      ],
+      "themes": [
+        "environment-climate",
+        "governance"
+      ],
+      "summary": "約450隻動物可由3間已投入服務的領養中心合共收容。環境及生態局10月14日向立法會表示，漁護署捕獲無人看管狗隻後先聯絡飼主，無人認領而適合領養的狗隻會轉交動物福利機構。漁護署會優先加強高風險地點巡查，另有一間領養中心目標於2027年底完成。",
+      "source_url": "https://www.info.gov.hk/gia/general/202610/14/P2026101400275.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
     },
     {
       "id": "20261014-iamsmart-ai-assistant",
@@ -3149,11 +2722,6 @@
         "fintech-ai"
       ],
       "summary": "數字政策辦公室公布「智方便」推出「AI助手」，從官方渠道即時整理公共服務資訊，並可列出申請條件、步驟及服務連結，配合「填表通」完成申請。全新5.0版本流動應用程式於2026年10月中下旬推送；數字辦預計同年年底推出「AI助手」加強版，提供個人化服務。此舉把「一網通辦」由入口整合推進至智能導航。",
-      "interview_angles": [
-        "AI助手回覆若出錯，責任歸屬與人工覆核機制如何設計？",
-        "個人化服務加強版如何處理敏感個人資料與演算法歧視風險？",
-        "對1823及部門熱線工作量的替代效應，如何量度服務質素不降？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/14/P2026101400475.htm",
       "source_name": "info.gov.hk / Digital Policy Office"
     },
@@ -3168,11 +2736,6 @@
         "innovation"
       ],
       "summary": "創科／產業政策動態：創新科技署宣布「創科加速器先導計劃」評審委員會原則上支持九宗申請。獲選機構涵蓋人工智能、機械人、生物醫藥、新能源及新材料等領域，將提供共享空間、研發支援、投資對接及市場拓展等增值服務，協助創科企業在港成長，呼應完善創科生態及建設國際創科中心的政策方向。",
-      "interview_angles": [
-        "以「加速器」撮合網絡與資金，如何衡量對本地初創留港、融資及商品化的實際成效？",
-        "九宗獲支持項目的產業分布，是否對準本港優勢領域，抑或出現重複建設？",
-        "先導計劃之後，政府會否常規化資助門檻、退場機制與利益衝突管理？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/14/P2026100700327.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3190,11 +2753,6 @@
         "governance"
       ],
       "summary": "政府就「立法會：律政司司長動議二讀《2026年調解（修訂）條例草案》發言全文」推出／推進立法或附屬法例安排。以下是律政司司長林定國資深大律師今日（十月十四日）在立法會會議動議二讀《2026年調解（修訂）條例草案》的發言全文： 我謹動議二讀《2026年調解（修訂）條例草案》（《條例草案》）。《條例草案》旨在修訂《調解條例》（第620章）（《調解條例》），以賦予香港調解資歷評審協會有限公司（香港調評會）法定權力，在訂明情況下決定調解員的人數或委任調解員，從而有效打破調解程序中可能出現的僵局。要點包括：二○二四年十月成立調解監管制度工作小組（工作小組）；《條例草案》；《調解條例》。",
-      "interview_angles": [
-        "條例／附屬法例的政策目標是什麼？與現行制度相比，簡化了哪些程序，又削弱了哪些制衡？",
-        "若立法會或業界反對關鍵條文，政府有何備選方案及時間表？",
-        "目標群組是否夠精準？如何避免資源錯配，並確保商界／僱主參與可持續？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/14/P2026101400441.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3211,11 +2769,6 @@
         "legislation"
       ],
       "summary": "政府就「立法會：財經事務及庫務局局長動議二讀《2026年印花稅（修訂）（第3號）條例草案》發言全文」推出／推進立法或附屬法例安排。以下是財經事務及庫務局局長許正宇今日（十月十四日）在立法會會議上動議二讀《2026年印花稅（修訂）（第3號）條例草案》（《條例草案》）的發言全文： 我謹動議二讀《2026年印花稅（修訂）（第3號）條例草案》。《條例草案》旨在落實二零二六至二七年度《財政預算案》的建議，放寬相聯法人團體內部資產轉讓的印花稅寬免準則。要點包括：二○二六年二月二十五日（即本年度《財政預算案》公布日）或之後簽立的文書；《條例草案》；《財政預算案》；《印花稅條例》。",
-      "interview_angles": [
-        "條例／附屬法例的政策目標是什麼？與現行制度相比，簡化了哪些程序，又削弱了哪些制衡？",
-        "若立法會或業界反對關鍵條文，政府有何備選方案及時間表？",
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/14/P2026101400422.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3232,11 +2785,6 @@
         "legislation"
       ],
       "summary": "政府就「香港與六個國家有關全面性避免雙重課稅協定的命令刊憲」推出／推進立法或附屬法例安排。​行政長官會同行政會議於二○二六年十月六日根據《稅務條例》（第112章）作出六項命令，以分別實施香港與巴巴多斯、約旦、吉爾吉斯共和國、馬爾代夫、挪威及盧旺達簽署的全面性避免雙重課稅協定。命令將於十月十六日刊憲。要點包括：二○二六年十月六日根據《稅務條例》（第112章）作出六項命令；60個；《稅務條例》。",
-      "interview_angles": [
-        "條例／附屬法例的政策目標是什麼？與現行制度相比，簡化了哪些程序，又削弱了哪些制衡？",
-        "若立法會或業界反對關鍵條文，政府有何備選方案及時間表？",
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/14/P2026101400351.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3253,11 +2801,6 @@
         "governance"
       ],
       "summary": "創科／產業政策動態：「投資推廣署歡迎榮耀持續擴展香港業務 為香港創科生態增添動力」。​投資推廣署今日（十月十三日）歡迎榮耀於香港開設第七間體驗店，進一步擴展本地零售網絡，並朝着於二○二六年內在港開設十間分店的目標邁進。署理投資推廣署署長劉智元與榮耀終端香港澳門地區總經理鄧登基今日主持新店開幕剪綵儀式。要點包括：二○二六年內在港開設十間分店的目標邁進；二○二六年《施政報告》提出推動創新科技及人工智能發展的方向；二○二二年進入香港市場以來；《五年規劃》。",
-      "interview_angles": [
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "如何避免「有政策、缺落地」？場景驗證、資助成效與人才留港應如何考核？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/13/P2026101200551.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3274,11 +2817,6 @@
         "transport-logistics"
       ],
       "summary": "政府就「《2026年調解（修訂）條例草案》將提交立法會作首讀和二讀」推出／推進立法或附屬法例安排。下稿代立法會秘書處發出： 立法會將於星期三（十月十四日）上午十一時在立法會綜合大樓會議廳舉行會議。在會議上，《2026年調解（修訂）條例草案》、《2026年環境及自然保育基金（修訂）條例草案》和《2026年印花稅（修訂）（第3號）條例草案》將提交立法會作首讀和二讀。要點包括：《2026年環境及自然保育基金（修訂）條例草案》；《2026年印花稅（修訂）（第3號）條例草案》；《十五五規劃綱要》；「共建健康活力香港，貢獻『健康中國』建設」。",
-      "interview_angles": [
-        "條例／附屬法例的政策目標是什麼？與現行制度相比，簡化了哪些程序，又削弱了哪些制衡？",
-        "若立法會或業界反對關鍵條文，政府有何備選方案及時間表？",
-        "跨境／物流安排如何服務大灣區人流物流，同時控制本港社區與基建負荷？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/12/P2026101200430.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3296,11 +2834,6 @@
         "innovation"
       ],
       "summary": "創科／產業政策動態：「商經局向工業貿易諮詢委員會簡介《香港第一個五年規劃》和《施政報告》」。商務及經濟發展局局長丘應樺今日（十月十二日）在工業貿易諮詢委員會會議上，向委員介紹《香港特別行政區經濟和社會發展第一個五年規劃（ 2026-2030年）》（《五年規劃》）和《行政長官2026年施政報告》（《施政報告》）中有關經貿發展的主要措施。丘應樺表示，今年《施政報告》按《五年規劃》的整體部署和發展藍圖，推出一系列措施，強化香港作為國際貿易中心的地位和角色，並發揮香港國際化優勢，深化建設區域知識產權貿易中心，為工商界創造更多機遇。要點包括：二○二五年；53%；19個；98%。",
-      "interview_angles": [
-        "此舉如何具體加快北部都會區「熟地」供應或產業進駐？成效應以什麼指標衡量？",
-        "對鞏固香港國際金融／離岸人民幣／創科金融中心地位有何實質作用？潛在風險是什麼？",
-        "如何避免「有政策、缺落地」？場景驗證、資助成效與人才留港應如何考核？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/12/P2026101200423.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3314,12 +2847,7 @@
       "themes": [
         "labour"
       ],
-      "summary": "民生／勞工福利政策動態：當局公布兩名僱主因違反「補充勞工優化計劃」規定而被行政制裁。反映輸入勞工計劃在放寬行業用人彈性的同時，仍保留違規罰則與執行機制，面試宜討論保障本地勞工、打擊濫用與行政制裁力度是否足夠。",
-      "interview_angles": [
-        "行政制裁與刑事檢控如何分工，才能有效遏止濫用補充勞工安排？",
-        "優化計劃在紓緩人手短缺與保障本地工人就業之間如何取平衡？",
-        "罰則公開透明度是否足以產生阻嚇，並讓社會監察執行成效？"
-      ],
+      "summary": "民生／勞工福利政策動態：當局公布兩名僱主因違反「補充勞工優化計劃」規定而被行政制裁。反映輸入勞工計劃在放寬行業用人彈性的同時，仍保留違規罰則與執行機制。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/12/P2026101200245.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3336,11 +2864,6 @@
         "governance"
       ],
       "summary": "政策相關公報：「政府委任藥物及醫療器械監督管理總監」。當局宣布，已完成全球公開招聘程序，委任李自力為衞生署轄下藥物及醫療器械監督管理（藥械監管）總監，任期由二○二六年十月二十日起生效，為期三年。藥械監管中心將於二○二六年內成立，推動更主動的「第一層審批」，加快藥械臨床應用，讓病人能使用符合品質及安全要求的最先進醫療藥械產品。要點包括：二○二六年十月二十日起生效；二○二六年內成立；《香港特別行政區經濟和社會發展第一個五年規劃（2026—2030年）》；《行政長官2026年施政報告》。",
-      "interview_angles": [
-        "措施如何在加快服務／新藥准入與安全把關、公營系統負荷之間取平衡？",
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/12/P2026101200196.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3356,11 +2879,6 @@
         "governance"
       ],
       "summary": "政策相關公報：「律政司歡迎司法部發布《粵港澳大灣區律師執業考試和執業活動管理辦法》」。​律政司歡迎司法部發布並於十月五日起正式施行 《粵港澳大灣區律師執業考試和執業活動管理辦法》 隨着為期數年的大灣區律師試點工作於今年十月四日屆滿，全國人民代表大會常務委員會早前已通過修改《中華人民共和國律師法》（《律師法》），正式將大灣區律師制度恆常化，同時訂明相關細節均由國務院司法行政部門依法規定。司法部剛在十月五日發布了《管理辦法》明確規範大灣區考試報名條件，申請執業程序及執業範圍等事項，包括訂明相關考試每兩年舉辦一次。要點包括：《管理辦法》；《中華人民共和國律師法》；《律師法》。",
-      "interview_angles": [
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "「律政司歡迎司法部發布《粵港澳大灣區律師執業考試和執業活動管理辦法》」的短期執行挑戰是什麼？哪個局／署應負主責？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/11/P2026100800419.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3376,12 +2894,7 @@
         "governance",
         "transport-logistics"
       ],
-      "summary": "「行政長官出席皇崗口岸開通儀式致辭（附圖／短片）」反映相關政策推廣或區域合作取態，面試宜抓可驗證主張而非禮節性表述。以下是行政長官李家超今日（十月十一日）出席皇崗口岸開通儀式的致辭： 尊敬的黃楚平主任（廣東省人大常委會主任）、靳磊書記（廣東省委常委、深圳市委書記）、李運市長（深圳市委副書記、深圳市市長）、羅永綱副主任（中央人民政府駐香港特別行政區聯絡辦公室副主任）、各位嘉賓、各位市民： 大家早上好！很高興來到重建後的皇崗口岸，與各位一同見證這個港深兩地居民都熱切期待的口岸開通。要點包括：約20萬；約30萬；「一地兩檢」；「十五五」。",
-      "interview_angles": [
-        "活動或公布如何轉化為可量度的政策成果，而非一次性公關？",
-        "跨境／物流安排如何服務大灣區人流物流，同時控制本港社區與基建負荷？",
-        "若成效未如預期，應在下一份《施政報告》或五年規劃中如何調整？"
-      ],
+      "summary": "「行政長官出席皇崗口岸開通儀式致辭（附圖／短片）」反映相關政策推廣或區域合作取態，以下是行政長官李家超今日（十月十一日）出席皇崗口岸開通儀式的致辭： 尊敬的黃楚平主任（廣東省人大常委會主任）、靳磊書記（廣東省委常委、深圳市委書記）、李運市長（深圳市委副書記、深圳市市長）、羅永綱副主任（中央人民政府駐香港特別行政區聯絡辦公室副主任）、各位嘉賓、各位市民： 大家早上好！很高興來到重建後的皇崗口岸，與各位一同見證這個港深兩地居民都熱切期待的口岸開通。要點包括：約20萬；約30萬；「一地兩檢」；「十五五」。",
       "source_url": "https://www.info.gov.hk/gia/general/202610/11/P2026101100273.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3399,11 +2912,6 @@
         "governance"
       ],
       "summary": "特區政府強烈譴責並駁斥美國國務院《2026年人口販運報告》將香港列為第三級的說法，指人口販運並非本港普遍問題。政府強調採取多管齊下策略，2025年進行約12,100次初步篩查（按年升7%），識別15名受害人（均為在東南亞遭就業詐騙的港人）。公報詳述外傭權益保障、僱傭中介規管、「兩星期規定」及「留宿規定」理據、執法檢控及培訓（約2,400名人員受訓），並指現行逾50項法例條文已提供全面保障，毋須單一專門法例。",
-      "interview_angles": [
-        "面對外方報告，政府應如何以數據及國際比較回應，而非僅作政治定性？",
-        "外傭「兩星期規定」與「留宿規定」的政策目標與人權批評之間如何論證？",
-        "跨境就業詐騙個案上升，反映勞工、入境與警方協作有何改善空間？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/09/P2026100900068.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3422,13 +2930,28 @@
         "governance"
       ],
       "summary": "香港特區政府保安局與深圳市人民政府口岸辦公室聯合公布，皇崗口岸定於2026年10月12日上午6時30分正式開通運行，為旅客和客運車輛提供24小時通關服務，並暫停往來深圳皇崗口岸臨時旅檢樓與香港落馬洲管制站的旅檢服務。口岸實施「一地兩檢」及「合作查驗、一次放行」模式，標誌深港口岸融合與大灣區人流物流效率再進一步。",
-      "interview_angles": [
-        "24小時通關對北區交通、房屋需求及跨境上班族的結構性影響是什麼？",
-        "「一地兩檢」模式下，兩地執法銜接與旅客權益投訴渠道如何清晰？",
-        "落馬洲旅檢暫停後，替代路線容量是否足夠應對高峰？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202610/09/P2026100900280.htm",
       "source_name": "info.gov.hk / Security Bureau"
+    },
+    {
+      "id": "20260916-mental-health",
+      "date": "2026-10-07",
+      "title": "學童精神健康：中學三層應急機制恆常化，小四至小六試行",
+      "title_en": "School mental health: standing three-tier mechanism in secondary schools and pilot in Primary 4–6",
+      "departments": [
+        "edb",
+        "hhb",
+        "swd",
+        "ha"
+      ],
+      "themes": [
+        "education",
+        "healthcare",
+        "youth"
+      ],
+      "summary": "855宗是校外支援隊伍收到的轉介，醫管局精神科另接獲547宗校長轉介，統計期為2023年12月至2026年7月底。教育局10月7日向立法會確認，三層應急機制自2025年12月在全港中學恆常化，小四至小六於2025/26及2026/27學年試行。機制由校內團隊、校外支援及醫管局精神科分層跟進。",
+      "source_url": "https://www.info.gov.hk/gia/general/202610/07/P2026100700450.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
     },
     {
       "id": "20261002-helper-minimum-wage-5220",
@@ -3443,11 +2966,6 @@
         "governance"
       ],
       "summary": "據《南華早報》10月2日報道，政府宣布調高外籍家庭傭工規定最低工資2.35%，由每月5,100元增至5,220元（去年曾由4,990元上調2.2%至5,100元），適用於10月3日或之後簽訂的合約；而沒有提供免費膳食的膳食津貼則維持自2023年以來的每月1,236元不變。政府發言人指按既定機制綜合考慮過去一年經濟、勞工市場、僱主負擔能力及外傭基本生活需要後作出調整。勞資雙方均表不滿：工會聯會原促請把最低工資增至6,670元、膳食津貼增至2,770元，並要求政府公開釐定指標；僱主團體此前則要求凍薪，引述6,000名僱主調查稱高達70%受訪者指加薪後或考慮不聘用外傭，並促請增設聘請外傭開支稅項扣減及加強打擊「跳工」。",
-      "interview_angles": [
-        "利：微調2.35%反映經濟改善同時維持膳食津貼不變，在保障外傭基本購買力與顧及中產及雙職家庭負擔之間取折衷。",
-        "弊：勞工界認為追不上通脹且2023年起膳食津貼停滯，僱主界則指育兒及按揭開支高企下再加薪易推高家庭護理成本，且釐定公式透明度不足。",
-        "建議：公開最低工資與膳食津貼年度檢討的統計指標權重，同時配合社區託兒及日間長者照顧服務，減輕家庭對單一聘用外傭的剛性依賴。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3369569/hong-kong-raise-helpers-monthly-minimum-wage-hk5220",
       "source_name": "South China Morning Post / news report"
     },
@@ -3465,11 +2983,6 @@
         "governance"
       ],
       "summary": "文體旅局在立法會政策簡報會表示，港協暨奧委會將於明年初按各體育總會執行《機構管治守則》情況發出確認證書，日後政府資助與合規掛鈎。同時支持三年「體育行政人員培訓計劃」、優化全港運動會內容，並推動大灣區聯賽等交流。五年規劃目標包括文藝創意產業增加價值提升、全職精英運動員人數五年累計增加約20%。",
-      "interview_angles": [
-        "資助與管治合規掛鈎，小型體育總會會否因合規成本而被邊緣化？",
-        "大灣區聯賽對本地聯賽觀眾與商業贊助是增益還是分流？",
-        "精英運動員增20%的配套（退役出路、傷患保障）是否同步？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/30/P2026093000581.htm",
       "source_name": "info.gov.hk / Culture, Sports and Tourism Bureau"
     },
@@ -3487,11 +3000,6 @@
         "finance"
       ],
       "summary": "財經事務及庫務局局長許正宇率領本地金融界代表考察北部都會區，聽取北部都會區統籌辦事處及相關園區公司簡報最新發展與機遇，推動金融業與實體經濟融合。訪問呼應北部都會區進入全面建設與企業進駐階段，以及透過金融顧問、銀行參與及產業園融資安排，加速「產融結合」的政策方向。",
-      "interview_angles": [
-        "金融界如何具體參與北部都會區產業園及大型基建的融資與風險分擔？",
-        "「產融結合」與傳統賣地／PPP 模式相比，對納稅人及企業現金流各有何影響？",
-        "考察活動之外，有何制度化渠道讓中小企及創科企業獲得北部都會區金融支援？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/29/P2026092900318.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -3508,11 +3016,6 @@
         "sports"
       ],
       "summary": "康文署宣布油尖旺區海帆道公園（海帆道18號）由2026年9月30日起開放，佔地約16 000平方公尺。設施包括七人人造草足球場、籃球場暨排球場、健體設施、社區園圃、共融兒童遊樂場，並為寵物共享公園，屬區內新增公共休憩／康樂空間。",
-      "interview_angles": [
-        "新公園如何平衡體育設施、兒童遊樂、寵物共享與寧靜休憩需求？",
-        "高密度市區新增約1.6公頃休憩用地，對區內休憩空間標準有何意義？",
-        "啓用後管理（開放時間、寵物規管、場地預訂）如何減少鄰里衝突？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/29/P2026092800303.htm",
       "source_name": "info.gov.hk / Leisure and Cultural Services Department"
     },
@@ -3530,12 +3033,6 @@
         "governance"
       ],
       "summary": "環境及生態局局長就《香港第一個五年規劃》及2026年《施政報告》說明：力爭2035年前將零碳電力由約四分之一提升至六至七成，2050年前「淨零發電」；電動車逾18萬輛、充電系統可支援最少27萬輛；都市固體廢物棄置量連續四年下降、回收率由28%升至34%；I·PARK1年內全面運作，邁向2035年前「零廢堆填」。另透過4億元低碳綠色科研基金支援綠色科技，2027年啟動「綠色科技橋頭堡計劃」。",
-      "interview_angles": [
-        "2035年前零碳電力六至七成，對電價穩定與能源安全的取捨是什麼？",
-        "無需I·PARK3亦可「零廢堆填」的假設條件是什麼？若回收率停滯怎辦？",
-        "電動車充電以高速樁為骨幹，舊樓／劏房住戶如何受惠？",
-        "四年減廢成績如何轉化為可問責的年度KPI？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/21/P2026092100388.htm",
       "source_name": "info.gov.hk / Environment and Ecology Bureau"
     },
@@ -3552,11 +3049,6 @@
         "sports"
       ],
       "summary": "文化體育及旅遊局局長介紹：西九演藝中心將於2027年啟用，新增四個國際級表演場地；西九2027-28年度預計舉行逾1 000項節目、吸引約40萬名觀眾。政府建議向藝術及體育發展基金（藝術部分）注資2億元，並由2027-28年度起改革藝團資助制度，引入與表現掛鈎的撥款及進出機制。旅遊方面推動「盛事+旅遊」「電影+旅遊」等聯動，深化「一程多站」。",
-      "interview_angles": [
-        "藝團資助與表現掛鈎，如何避免「討好評審、壓抑實驗創作」？",
-        "西九硬件落成後，軟件人才與票價可負擔性如何並行？",
-        "「+旅遊」聯動如何把盛事人流轉化為社區商戶可持續收益？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/19/P2026091900376.htm",
       "source_name": "info.gov.hk / Culture, Sports and Tourism Bureau"
     },
@@ -3575,14 +3067,27 @@
         "national-development"
       ],
       "summary": "政府公布推出三幅合共約26公頃的洪水橋大學城校園區用地，供合資格專上院校申請，並提供貸款安排支持校舍建設。北都新田、洪水橋及打鼓嶺三個大學城以「一城五元素」（教育、科技、產業、人才、城市建設）布局，校園區總面積約300公頃，連同周邊科技與產業區總體規劃面積超過1 000公頃。申請截止日期為2026年12月31日，用地將以私人協約、象徵式地價批出。",
-      "interview_angles": [
-        "北都大學城「一城五元素」如何避免變成「只有校舍、缺少產業與生活配套」？",
-        "洪水橋約26公頃校園用地以象徵式地價批出，如何確保院校有足夠誘因及責任推進教研產業化？",
-        "三個大學城如何分工定位，避免院校申請重疊或資源浪費？",
-        "措施對香港「國際教育樞紐」定位與非本地生容納力有何可量化影響？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/17/P2026091700492.htm",
       "source_name": "info.gov.hk / Education Bureau"
+    },
+    {
+      "id": "20260916-gerontechnology",
+      "date": "2026-09-16",
+      "title": "樂齡科技：擬預留1億元推廣安老科技，公屋試用家居設備",
+      "title_en": "Gerontechnology: proposed HK$100 million promotion scheme and public housing pilot",
+      "departments": [
+        "lwb",
+        "hb",
+        "swd"
+      ],
+      "themes": [
+        "elderly-care",
+        "innovation",
+        "housing-land"
+      ],
+      "summary": "1億元是《施政報告》9月16日宣布擬預留給安老科技推廣計劃的金額。房委會計劃選定高齡長者比例較高的公共屋邨，向高齡獨居長者及全長者戶引入家用樂齡科技設備。現行樂齡及康復創科應用基金則資助社福單位購置或租用產品。",
+      "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600279.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
     },
     {
       "id": "20260916-youth-intl-it",
@@ -3600,11 +3105,6 @@
         "national-development"
       ],
       "summary": "民青局將成立「國際青年人才交流基地」，推出聯合國青年領袖實習，並開展金融專題內地實習、航天專題培訓、中國科學院高端科研實習及AI體驗活動。科技園「Talent Foundry」預計每年約500個AI+及新興科技培訓機會；教資會自2026/27學年起注資1億元，把境外交流計劃重點擴展至「一帶一路」沿線。房委會「共築‧創業家2.0」恆常化，提供15間商舖、逾70個創業機會（約為先導計劃七倍）。",
-      "interview_angles": [
-        "國際交流與內地實習如何轉化為本地就業競爭力？",
-        "Talent Foundry每年約500個名額相對需求是否足夠？篩選準則為何？",
-        "青年創業租金優惠與失敗風險之間，政府角色邊界在哪？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2026/tc/highlight.html",
       "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
     },
@@ -3621,11 +3121,6 @@
         "environment-climate"
       ],
       "summary": "政府自2026-27年度起推行五年減廢回收計劃：「綠在區區」升級為24小時智能自助設施，智能回收箱由約140套陸續增至約3 000套；目標2026年年底全港公屋「一座一桶」廚餘收集，2028年第一季智能廚餘回收桶增至約2 500個。都市固體廢物處置量連續四年下降，2024年回收率升至34%；I·PARK1每日處理3 000公噸都市固體廢物，朝2035年前「零廢堆填」推進。",
-      "interview_angles": [
-        "智能回收箱增至約3 000套後，維修與數據準確度如何監察？",
-        "「一座一桶」在舊式公屋的空間與衛生限制如何解決？",
-        "回收率34%距「零廢堆填」的主要缺口在哪一類廢物？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#waste",
       "source_name": "policyaddress.gov.hk / 2026 Policy Address Ch.VII"
     },
@@ -3643,11 +3138,6 @@
         "national-development"
       ],
       "summary": "2025年全年訪港旅客達4 990萬人次，按年增長12%；預計2026年入境旅遊相關總消費達2,381億元。經香港前往內地的海外旅客比例於2026年上半年已超過兩成。政府布局三大主題盛事季、推動票尾經濟與「一程多站」，並擴展導遊「專項專牌」至歷史文化深度遊；「港艇北上」已首航，同步推進「粵艇南下」。",
-      "interview_angles": [
-        "如何提升人均消費與過夜日數而非只追人次？",
-        "票尾經濟對基層零售餐飲滲透率如何評估？",
-        "過度依賴過境客會否削弱終點 dest. 品牌？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600273.htm#tourism",
       "source_name": "info.gov.hk / 2026 Policy Address (full text X)"
     },
@@ -3665,11 +3155,6 @@
         "national-development"
       ],
       "summary": "2025年全年訪港旅客達4 990萬人次，按年增長12%；預計2026年與入境旅遊相關總消費達2,381億元。經香港前往內地的海外旅客比例於2026年上半年已超過兩成。政府推動票尾經濟、三大主題盛事季布局，並深化「一程多站」；旅遊業監管局將擴展「專項專牌」至歷史文化深度遊。遊艇經濟方面，「港艇北上」已首航，並推進「粵艇南下」。",
-      "interview_angles": [
-        "旅客量回升後，如何提升人均消費與過夜日數而非只追人次？",
-        "票尾經濟對基層零售餐飲的實際滲透率如何評估？",
-        "過度依賴「一程多站」過境客，會否削弱香港作為終點 dest. 的品牌？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600273.htm",
       "source_name": "info.gov.hk / 2026 Policy Address (full text X)"
     },
@@ -3689,11 +3174,6 @@
         "national-development"
       ],
       "summary": "政府已帶領可持續航空燃料（SAF）生產基地落戶東莞，目標2030年前投產，並籌劃在港建設首個SAF混合設施；同時研究設立強制使用比例及綠色能源認證制度。航運方面公布以香港為中心構建「綠色能源走廊」，推動高增值海運服務及綠色船用燃料加注。措施串連航空樞紐、綠色燃料與大灣區產業布局。",
-      "interview_angles": [
-        "SAF強制使用比例若落實，票價與航線競爭力如何平衡？",
-        "跨境SAF產業鏈的監管與稅務如何協調？",
-        "綠色航運走廊對傳統燃油加注業務的轉型路徑是什麼？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2026/tc/highlight.html#saf",
       "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
     },
@@ -3710,11 +3190,6 @@
         "transport-logistics"
       ],
       "summary": "中九龍繞道（九龍灣段）工程將於2026年內完成，標誌六號幹線（含中九龍繞道及將軍澳—藍田隧道）全線開通。預計繁忙時段往來將軍澳及油麻地行車時間由約65分鐘減至約12分鐘。智慧綠色集體運輸系統目標年內批出啟德項目（2031年落成），翌年批出洪水橋／厦村及東九龍項目。",
-      "interview_angles": [
-        "車程縮短會否誘發更多私家車出行而抵消效益？",
-        "六號幹線與房屋／就業分布如何配套？",
-        "智慧綠色集體運輸與重鐵如何避免投資重疊？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600273.htm#route6",
       "source_name": "info.gov.hk / 2026 Policy Address (full text X)"
     },
@@ -3732,11 +3207,6 @@
         "labour"
       ],
       "summary": "網約車服務規管制度大部分法律條文於2026年8月3日生效，政府正公開邀請平台申請牌照，並於同年第四季開始向司機和車輛發出許可證。運輸署構建網約車數據管理系統監察合規與保障數據安全，並收集數據作日後供求動態評估，目標為市民提供合規安全的個人化點對點交通服務。",
-      "interview_angles": [
-        "牌照與車輛許可證上限如何平衡安全、司機生計與乘客選擇？",
-        "數據系統對平台機密與乘客私隱的保障標準是什麼？",
-        "傳統的士業界轉型支援是否足夠？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600273.htm#ridehail",
       "source_name": "info.gov.hk / 2026 Policy Address (full text X)"
     },
@@ -3753,11 +3223,6 @@
         "healthcare"
       ],
       "summary": "明年起提升灣仔和觀塘地區康健站為地區康健中心；年底起整合長者健康中心服務，評估服務量增逾一倍、最長輪候縮減三分之二。明年起醫管局家庭醫學門診每年約增22萬個名額（含約1萬個夜診）；年底開展社區藥房計劃（首階段四區）。醫健通登記逾650萬人（約佔人口87%）。公營醫療收費改革後，獲全額減免由全年少於1.4萬人增至逾25萬人。",
-      "interview_angles": [
-        "門診大幅增額後，醫生人手與轉介質素如何保證？",
-        "收費改革擴大減免面，長遠財政可持續性如何？",
-        "社區藥房與醫院配藥如何分工？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health",
       "source_name": "policyaddress.gov.hk / 2026 Policy Address Ch.VII"
     },
@@ -3777,59 +3242,8 @@
         "poverty-welfare"
       ],
       "summary": "行政長官李家超發表第五份《施政報告》，以《香港特區首個五年規劃（2026-2030）》為藍圖，提出人才、產業、營商投資、制度保障及國際合作五大發展機遇，以及青年就業、房屋、醫療、生育、安老、中小企及勞工保障等25項民生範疇措施。重點包括加快北部都會區大學城、增設五所國際人才學院、30,000青年就業實習計劃、公營房屋未來五年產量約增73%、加強基層醫療與精神健康、推出社區藥劑計劃，以及AI風險管治與「AI城市大腦」等。完整文本見 policyaddress.gov.hk。",
-      "interview_angles": [
-        "首個五年規劃與年度《施政報告》如何分工，避免「目標多、落地難」？",
-        "五大發展機遇中，你認為哪一兩項最能在五年內改變市民觀感？為何？",
-        "民生措施覆蓋面廣，如何訂立可量度指標及中期檢討機制？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600573.htm",
       "source_name": "info.gov.hk / Policy Address"
-    },
-    {
-      "id": "20260916-mental-health",
-      "date": "2026-09-16",
-      "title": "2026年《施政報告》：推行11項精神健康措施與分層護理模式",
-      "title_en": "2026 Policy Address: 11 mental health measures and stepped-care model",
-      "departments": [
-        "hhb",
-        "edb",
-        "lwb"
-      ],
-      "themes": [
-        "healthcare",
-        "youth",
-        "education"
-      ],
-      "summary": "政府以綜合模式推行11項精神健康措施，包括延續小學三層應急機制、北都增設精神健康綜合社區中心、將「健康心靈先導計劃」推展至所有現有地區康健中心，並接納「精神健康分層護理模式」框架。透過賽馬會「行政長官社會資助計劃」資助項目預計惠及超過3萬人，同時推廣《精神健康職場約章》。",
-      "interview_angles": [
-        "學校三層應急機制如何避免標籤化學生？",
-        "分層護理的跨專業人手標準與輪候指標如何訂？",
-        "職場約章屬自願，如何推動實質改變？"
-      ],
-      "source_url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#mental",
-      "source_name": "policyaddress.gov.hk / 2026 Policy Address Ch.VII"
-    },
-    {
-      "id": "20260916-kai-tak-sports",
-      "date": "2026-09-16",
-      "title": "啟德體育園累計逾170場盛事、260萬觀眾　研究重建維園網球主場",
-      "title_en": "Kai Tak Sports Park 170+ events; Victoria Park tennis redevelopment study",
-      "departments": [
-        "cstb",
-        "ceo"
-      ],
-      "themes": [
-        "sports",
-        "culture-tourism"
-      ],
-      "summary": "啟德體育園已舉辦逾170場國際及本地體育和文化娛樂盛事，累計吸引超過260萬觀眾人次；2025年主場館票務銷量與票房收入均為亞洲第一。政府研究把維多利亞公園網球主場重建為全天候多用途場館，以承接更高級別賽事；香港體育學院推出為期三年「體育行政人員培訓計劃」，推動「體育+盛事」與人才梯隊並行。",
-      "interview_angles": [
-        "啟德盛事經濟如何惠及鄰近社區商戶？",
-        "維園網球場重建對公眾康體空間的替代安排是什麼？",
-        "體育行政培訓如何與體育總會管治改革銜接？"
-      ],
-      "source_url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600273.htm#sports",
-      "source_name": "info.gov.hk / 2026 Policy Address (full text X)"
     },
     {
       "id": "20260916-gba-rules",
@@ -3845,11 +3259,6 @@
         "governance"
       ],
       "summary": "政府提出深化粵港澳大灣區建設，支持前海和南沙重大合作平台，並成立「加快粵港澳三地規則銜接和機制對接專組」。配套包括推動「轉數快」年內接通銀聯便利跨境零售支付、以國家標準建設「心血管疾病綜合醫療中心」，以及參與編寫國家氫能標準並目標推出綠氫認證計劃，強化香港對接國家發展大局的角色。",
-      "interview_angles": [
-        "規則銜接專組的優先清單應如何訂立？",
-        "支付互通與數據跨境的私隱／安全邊界如何拿捏？",
-        "前海、南沙平台發展對香港產業空心化風險如何回應？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2026/tc/highlight.html#gba",
       "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
     },
@@ -3867,11 +3276,6 @@
         "transport-logistics"
       ],
       "summary": "現時電動車超過18萬輛，每10輛新登記私家車逾七輛為電動車；公共充電樁約17 300支，整體可支援逾27萬輛，目標五年內高速充電樁增至5 000支。政府將於2035年停止新登記燃油私家車，並於2027年建成首個ChaoJi充電技術示範站。可持續航空燃料（SAF）生產基地落戶東莞，目標2030年前投產，並籌劃在港建設首個SAF混合設施。",
-      "interview_angles": [
-        "2035年停登記燃油私家車對基層車主與二手車市場如何緩衝？",
-        "充電「可支援27萬輛」與實際可用率／損壞率如何核實？",
-        "SAF東莞基地與本港航空減碳責任如何分工？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#ev",
       "source_name": "policyaddress.gov.hk / 2026 Policy Address Ch.VII"
     },
@@ -3889,11 +3293,6 @@
         "national-development"
       ],
       "summary": "政府延長本港大學大灣區校園畢業生納入「非本地畢業生留港／回港就業安排」試行安排兩年；本財政年度內推售首幅學生宿舍用地；明年內批出用地發展國際學校。教資會資助研究院研究課程學額增加約30%至9 600個（2030/31學年），「香港博士研究生獎學金計劃」名額亦逐步上調。措施把國際教育樞紐與大灣區人才環流綁定。",
-      "interview_angles": [
-        "延長大灣區校園畢業生留港安排，對本地畢業生就業觀感有何影響？",
-        "學額擴容與宿舍供應時序如何匹配？",
-        "國際學校用地如何平衡本地學位需求？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2026/tc/highlight.html#edu",
       "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
     },
@@ -3912,12 +3311,6 @@
         "innovation"
       ],
       "summary": "2026年《施政報告》提出按《中小學數字教育發展藍圖》推進數字教育及STEAM，包括推出包含AI大語言模型的免費數字教育學習資源大平台、逐步拓展「AI教學助理」、優化中小學資訊和創新科技課程銜接，以及預留優質教育基金撥款推動幼稚園教育行政數字化。措施對接國家「十五五」教育數字化戰略，並配合教師專業發展及應用科學大學推廣。",
-      "interview_angles": [
-        "免費AI學習資源平台如何處理數據私隱、學業公平及教師工作量？",
-        "數字教育投入如何量度成效（學習成果 vs 設備覆蓋）？",
-        "幼稚園行政數字化與中小學STEAM之間，資源優先次序應如何訂？",
-        "若城鄉／校際數碼落差擴大，政府有何補底措施？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html",
       "source_name": "policyaddress.gov.hk / 2026 Policy Address Ch.VII"
     },
@@ -3937,11 +3330,6 @@
         "governance"
       ],
       "summary": "政府將建設「AI城市大腦」綜合城市管理系統，連結工務、環境、交通、應急等大數據，提升日常管理及突發事件處理能力，並成立工作組推進；首階段保安局緊急事故監察及支援中心數碼基建將接入。同時以「轉介快、辦得成」優化1823，授權牽頭部門統籌跨部門個案，以AI識別重複問題，推動由「投訴後治理」轉向「未投訴已治理」。",
-      "interview_angles": [
-        "跨部門數據共享的最大障礙是權責還是技術標準？",
-        "「未投訴已治理」如何避免過度監控觀感？",
-        "AI城市大腦的成效指標應如何訂立？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2026/tc/highlight.html#aicity",
       "source_name": "policyaddress.gov.hk / 2026 Policy Address Highlights"
     },
@@ -3958,11 +3346,6 @@
         "governance"
       ],
       "summary": "據《南華早報》9月12日報道，商務及經濟發展局局長丘應樺表示，政府已於8月31日完成為期兩個月的公眾諮詢，擬於2027年上半年向立法會提交修訂《商品說明條例》的草案，為預繳式美容及健身服務合約設立法定7天冷靜期及14天退款期。當局建議豁免較低金額合約，門檻介乎3,000元至15,000元或以上，並指美容與健身兩行業門檻或有不同；同時擬禁止商戶分拆單一合約以規避規管、建議合約期上限為兩年，並賦權海關處理不當收款個案。若顧客於冷靜期取消合約，商戶可扣除最高相當於一次性信用卡付款2%或分期付款5%的行政費。2024年消委會接獲2,929宗美容服務投訴，涉款9,300萬元，近半源於舒適堡結業。此為立法時間表與諮詢方向報道，條例草案尚未提交。",
-      "interview_angles": [
-        "利：法定冷靜期與退款時限、禁止拆單及兩年合約上限，可針對性減低高壓推銷及預繳結業對消費者的損失。",
-        "弊：若豁免門檻過高或銀行退款流程耗時，消費者仍難受保障；門檻過低或行政費不足，則可能增加守法中小企合規及現金流壓力。",
-        "建議：按美容及健身業合約特徵訂立清晰門檻與標準取消表格，並聯同銀行與支付機構建立快速退款通道，實施後檢視投訴宗數及商戶適應情況。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/society/article/3367280/hong-kong-table-cooling-period-bill-beauty-fitness-deals-mid-2027",
       "source_name": "South China Morning Post / news report"
     },
@@ -3981,11 +3364,6 @@
         "youth"
       ],
       "summary": "據《南華早報》9月10日報道，衞生署公布就《吸煙（公眾衞生）條例》提交附屬法例，規定所有零售捲煙包、長支煙盒及指定雪茄須採用統一平裝棕色，移除品牌商標、色彩圖案及推廣字句，僅准以指定字體印上牌子及款式名稱，並刪除焦油及尼古丁含量標示以避免吸煙者誤以為低焦油較少危害。新規將於2027年3月1日生效，設九個月過渡期至2027年12月1日全面執法，違例者循簡易程序定罪最高可罰款5萬元。政府亦會更換自2018年沿用、覆蓋煙包面積至少85%的12款健康忠告圖像，並同步推行附有實體及數碼防偽特徵的完稅煙草標籤以區分私煙。控煙酒辦引述中大2023年調查指79.8%受訪吸煙者認為平裝減低煙草吸引力，澳洲實施後一年內嘗試戒煙比率由20.2%升至26.6%。去年香港吸煙率由2023年9.1%降至8.5%，但仍未達7.8%目標。",
-      "interview_angles": [
-        "利：平裝煙包配定期輪換的85%警示圖像，可削弱對青少年的包裝吸引力，並以數碼防偽完稅標籤同時堵截私煙。",
-        "弊：零售商與進口商須在九個月內消化及更換包裝，若私煙執法未能同步跟上，部分價格敏感吸煙者可能轉向非法渠道。",
-        "建議：同步公開完稅標籤掃描核驗指引與海關打擊私煙數據，並在2027年12月全面執法後追蹤青少年吸煙率、戒煙熱線求助量及私煙檢獲變化。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/health-environment/article/3367037/hong-kong-roll-out-plain-cigarette-packs-march-full-enforcement-december",
       "source_name": "South China Morning Post / news report"
     },
@@ -4003,11 +3381,6 @@
         "governance"
       ],
       "summary": "政府宣布「扶貧委員會」正名為「扶貧專責委員會」，突顯精準扶貧方向；政務司司長陳國基主持新一屆首次會議。過往兩屆聚焦劏房戶、單親戶及全老戶，透過政府、商界、社區三方協作推出針對措施。新一屆支持按社會需要適時檢視並引入新對象；政府正籌備社福項目配對平台，目標同年推出首輪配對（其後於十月以「共創香港」名義啟動）。會議亦聽取關愛基金及社創基金工作匯報。",
-      "interview_angles": [
-        "由「扶貧」改為「精準扶貧／專責」，政策敍事轉變如何影響資源分配？",
-        "選定目標群組的準則應是貧窮線數據、住屋質素，還是多維匱乏指標？",
-        "三方協作模式的成功關鍵是甚麼？如何避免商界「捐完就算」？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202609/02/P2026090200274p.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -4028,11 +3401,6 @@
         "legislation"
       ],
       "summary": "據《南華早報》8月31日報道，上訴庭駁回政府就粉嶺高爾夫球場建屋計劃環評報告司法覆核案的上訴，維持原審撤銷環保署署長有條件批准土拓署環評報告的裁決。該計劃擬在政府於2023年9月收回的32公頃土地（原172公頃球場部分）中發展約9.5公頃以興建12,000個公營房屋單位（原目標2029年落成）。上訴庭認同原審法官裁斷，指土拓署其後提交的生態及水文補充資料未重新展開公眾諮詢，令程序不公；署長附加的批准條件涉及重大改動佈局，令批准欠缺確定性；報告亦未妥善處理古樹名木及文化生態影響。上訴庭並駁回政府指《環境影響評估條例》於2023年6月把環評門檻由20公頃（或10萬人口）放寬至50公頃後案件已屬「學術性」的論點，指出修例不免除當局就已展開的環評依法審視的責任。裁決料令項目須重開公眾諮詢。",
-      "interview_angles": [
-        "利：司法覆核與上訴結果守住法定公眾諮詢的程序公義與生態古樹把關，避免政府在補充重大資料後繞過公眾檢視。",
-        "弊：12,000個原定2029年落成的公營房屋單位進一步延誤，反映大型用地開發若前期環評與法定諮詢瑕疵，反而拖慢整體房屋供應。",
-        "建議：在收回土地或大型發展前期即公開完整水文及古樹生態評估並設補充資料覆核諮詢機制，同時交代收回的32公頃土地在重做諮詢期間的過渡管理及房屋供應替代安排。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3365863/hong-kong-government-loses-appeal-over-fanling-golf-course-housing-plan",
       "source_name": "South China Morning Post / news report"
     },
@@ -4051,11 +3419,6 @@
         "finance"
       ],
       "summary": "北部都會區金融顧問小組召開第二次會議，探討銀行業如何促進北部都會區發展融資，包括產業園、基建及企業進駐所需的金融安排。小組由財庫局牽頭，連同金管局及銀行公會等持份者，屬推動北部都會區「產融結合」的制度化平台之一。",
-      "interview_angles": [
-        "顧問小組的建議如何轉化為可執行的銀行產品或政府擔保／配套？",
-        "北部都會區項目回報期長，商業銀行參與的主要風險與緩解工具是甚麼？",
-        "金融顧問機制能否複製到其他大型發展區或產業政策？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600304.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -4072,35 +3435,8 @@
         "innovation"
       ],
       "summary": "醫務衞生局與香港中醫醫院公布，醫院由2026年12月11日起分階段開展24小時住院服務，首階段設93張住院病床、20張臨床試驗及研究中心病床和兩張加護病床，預計2030年年底提供共400張病床。門診量目標由開院首年14萬人次增至翌年逾26萬人次；自願醫保計劃將由2027年3月起有序推出涵蓋中醫醫院住院的「認可產品（中醫）」。",
-      "interview_angles": [
-        "中醫住院納入自願醫保，如何確保保費可負擔與索償清晰？",
-        "93張病床起步相對需求是否過慎，還是質素優先的正確策略？",
-        "中西醫協作在急重症分流上的臨床路徑如何訂立？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202608/25/P2026082500318.htm",
       "source_name": "info.gov.hk / Health Bureau"
-    },
-    {
-      "id": "20260822-public-hospital-fee-waivers",
-      "date": "2026-08-22",
-      "title": "公營醫療收費改革後全額豁免增20倍至28萬人，急症室非緊急求診跌約兩成",
-      "title_en": "Full public hospital fee waivers jump 20-fold to 280,000 after fee reform",
-      "departments": [
-        "hhb",
-        "ha"
-      ],
-      "themes": [
-        "healthcare",
-        "poverty-welfare"
-      ],
-      "summary": "據《南華早報》8月22日報道，醫務衞生局局長盧寵茂表示，自2026年1月1日實施公營醫療收費改革以來，首八個月獲全額醫療費用豁免的病人由以往約14,000人增至約28萬人（增幅逾20倍）；經放寬入息及資產限額後，合資格獲資助或免費醫療人士由30萬人增至140萬人。改革下，公立醫院急症室非緊急個案收費由過往每次50至150元調升至400元，政府早前指上半年非緊急急症室求診人次減少約20%。盧寵茂指政府對公營醫療資助率由以往最高97.6%降至現時95%，目標五年內逐步降至90%，以推動「能者共付」並支援危重及弱勢病人。今年至今藥物名冊亦加快納入17種藥物（包括專科藥），例如有血癌標靶藥自費由2萬至4萬元降至每四星期20元。",
-      "interview_angles": [
-        "利：以較高非緊急收費分流輕症（求診跌約兩成），同時將豁免安全網擴大至28萬人及加快納入昂貴專科藥，有助集中資源救治危重病人並維持財政可持續。",
-        "弊：急症室收費升至400元及資助率擬逐步降至90%，可能令不屬豁免範圍的夾心或慢性病患者承受較大負擔；而豁免資格擴展至140萬人亦考驗醫管局審批與社工行政負荷。",
-        "建議：定期公布各聯網急症室不同分流類別的輪候時間及豁免審批時效，簡化低收入與長期病患的資產審查及電子申請，並強化地區康健中心及家庭醫學門診承接輕症。"
-      ],
-      "source_url": "https://www.scmp.com/news/hong-kong/health-environment/article/3364912/full-fee-waivers-rise-20-fold-280000-after-healthcare-reform-minister-says",
-      "source_name": "South China Morning Post / news report"
     },
     {
       "id": "20260813-hung-shui-kiu-logistics",
@@ -4116,11 +3452,6 @@
         "housing-land"
       ],
       "summary": "政府邀請市場就洪水橋／厦村新發展區現代物流叢集選定地段提交發展意向書，推動北部都會區產業用地供應及物流等高端產業集聚。相關園區與洪水橋產業園公司等安排一併構成北部都會區「產業落地」工具箱，預期首批用地或於2027年底至2028年初可供發展，視乎平整進度及市場回應。",
-      "interview_angles": [
-        "以意向書（EOI）先於招標，如何幫助政府優化用地條件與產業門檻？",
-        "現代物流叢集與粵港澳大灣區供應鏈整合有何協同？香港的增值角色是甚麼？",
-        "產業用地若市場反應冷淡，政府應堅持規劃用途還是調整為混合用途？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202608/13/P2026081300409.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -4139,11 +3470,6 @@
         "governance"
       ],
       "summary": "據《南華早報》7月31日報道，87個透過人才簽證計劃來港的內地家庭就資助大學學費居港規定提出司法覆核，遭高等法院法官高浩文駁回並須支付訟費。政府於2025年7月公布收緊資格，要求人才計劃受養子女須於2028年起在港居滿至少兩年方可享資助大學學費（2027/28學年設一年過渡期）。現時未成年來港受養人可按本地生身份報讀資助課程（下學年學費47,000元），非本地生則須付三倍學費；社會關注有家庭安排子女在內地就讀再以DSE報考（「考試移民」）。判詞指政策經當局充分考慮，制定政策屬行政機關權限，廣義分類難免對少數人較嚴苛，並不構成不合理或歧視，且政府已預留過渡時間讓家庭規劃。",
-      "interview_angles": [
-        "利：兩年居港門檻加上一年過渡期，可在保留吸引人才誘因的同時回應「考試移民」爭議，確保公帑資助大學學位主要用於實質在港生活及學習的學生。",
-        "弊：剛來港的人才家庭或其子女在過渡期內仍可能面對三倍非本地學費與升學不確定性，或削弱部分有中學適齡子女家庭來港意欲。",
-        "建議：及早向所有人才簽證申請人發出清晰的居港年數及豁免或證明清單，釐清短期離港計算準則，並與自資院校及大灣區校園銜接安排一併說明。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/education/article/3362597/mainland-chinese-families-lose-legal-challenge-over-public-university-fees",
       "source_name": "South China Morning Post / news report"
     },
@@ -4163,11 +3489,6 @@
         "digital-gov"
       ],
       "summary": "據《南華早報》7月22日報道，《維持生命治療的預作決定條例》於2026年7月31日生效，距離條例獲立法會通過逾20個月，為自2010年起依普通法推行的預設醫療指示及「不作心肺復甦術」（DNACPR）命令提供清晰法定保障，同時保障訂立人及急救救援人員。由7月31日起，市民已訂立的預設醫療指示可由註冊醫生上載影像至「醫健通」，當局日後亦擬容許在醫健通電子簽署（暫未定時間表）；惟DNACPR命令暫仍須保留紙本正本（醫管局去年起向病人派發標準化黃色文件袋以作緊急識別）。公立醫院過去十多年簽署數字顯著上升：預設醫療指示由2013年325份增至2025年2,070份（逾九成訂明臨終不作心肺復甦），DNACPR命令由325份增至5,084份；醫管局已把逾4,800名病人的DNACPR轉為法定表格，並要求相關醫護及非緊急救護人員每兩年培訓一次。智庫建議須同時確保醫院臨床管理及緊急救援系統能即時查閱，並鼓勵及早與家人溝通。",
-      "interview_angles": [
-        "利：把預設醫療指示納入法定框架並接駁醫健通，在人口老化下能尊重病人自主意願並減少前線急救員的法律不確定性。",
-        "弊：DNACPR仍須依賴實體紙本及黃色文件袋，院前急救（尤其獨居長者）仍可能因找不到正本或家屬意見分歧而執行困難。",
-        "建議：訂下醫健通電子簽署及DNACPR數碼互通的時間表，確保消防處救護車與醫管局急症室系統實時互通，並加強家庭醫護及院舍預設照顧計劃輔導。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/health-environment/article/3361489/end-life-directives-go-ehealth-new-law-takes-effect-hong-kong",
       "source_name": "South China Morning Post / news report"
     },
@@ -4185,19 +3506,14 @@
         "labour"
       ],
       "summary": "據《南華早報》7月14日報道，政府公布由關愛基金撥款、於2026年10月1日推行為期三年的就業獎勵試驗計劃，鼓勵綜援家庭透過持續就業實現自力更生。合資格家庭由綜援轉投在職家庭津貼（職津），首年可獲10,000元、次年15,000元、第三年20,000元，三年合共最高45,000元；申請戶須脫離綜援並在12個月內連續兩次獲批職津（且領取津貼至少10個月）。議員指單親家庭基本職津工時門檻僅每月36小時（一般申請人為144至192小時），料最受惠，但亦關注散工及就業斷層或令單親戶未能符合10個月要求，促請設寬限期並加強託兒及彈性工時配對。截至5月全港有194,367宗綜援個案（涉256,452人）；截至2月職津涵蓋約47,000戶（約16萬人）。",
-      "interview_angles": [
-        "利：以遞增式三年現金獎勵（1萬→1.5萬→2萬元）配合職津，可減低脫離綜援時的「福利懸崖」顧慮，鼓勵持續就業而非短期試工。",
-        "弊：12個月內須連續兩次獲批且領滿10個月的硬性門檻，對從事散工或兼顧照顧的單親家長門檻較高，若非自願失業或工時波動便可能失去資格。",
-        "建議：為非自願失業或短暫轉工設有限度寬限月數（須提供求職紀錄），同步由勞工處及社署加強彈性工時配對與課餘託管名額，並以兩年後重返綜援率檢視成效。"
-      ],
       "source_url": "https://www.scmp.com/news/hong-kong/society/article/3360468/new-hk45000-job-scheme-expected-benefit-single-parent-families-most",
       "source_name": "South China Morning Post / news report"
     },
     {
       "id": "20260711-platform-workers-comp-details",
       "date": "2026-07-11",
-      "title": "勞福局闡述數碼平台工作者工傷補償：多層次計算　年底冀交條例草案",
-      "title_en": "LWB outlines multi-tier platform workers' injury compensation; bill targeted by year-end",
+      "title": "數碼平台送遞員工傷補償擬立法，多層次計算仍待敲定",
+      "title_en": "Proposed multi-tier work injury compensation for platform delivery workers",
       "departments": [
         "lwb"
       ],
@@ -4205,14 +3521,26 @@
         "labour",
         "legislation"
       ],
-      "summary": "勞福局局長孫玉菡表示，政府已向立法會提交完善數碼平台工作者工傷補償機制文件，正草擬新法例，目標2026年底前交條例草案。因外送工作形態有別傳統僱傭，擬採多層次計算：視工作年期調整津貼與領取期；多平台收入可納入考量，但意外時所屬平台為主體；保障範圍涵蓋接單至送達及取消訂單期間，惡劣天氣送達後回家路程亦擬參考《僱員補償條例》延伸保障。死亡補償約51萬餘元參考現行條例；罰則亦擬參照該條例。",
-      "interview_angles": [
-        "多層次補償會否令短期／兼職外送員保障明顯弱於長工時者？",
-        "成本上升後平台會否轉嫁消費者，政府如何衡量「可負擔」？",
-        "只立法工傷、不釐清僱傭關係，其他勞工權益缺口如何處理？"
-      ],
+      "summary": "約51萬元的死亡補償是勞福局7月11日提出的參考水平，方案仍在草擬。政府已設政府、平台公司及勞工團體三方小組，先處理食物及貨物送遞員工傷。局方擬按從業時間分層計算，研究計入多平台收入，保障擬涵蓋接單至送達及取消訂單的指定期間。提交條例草案的目標為2026年底。",
       "source_url": "https://www.info.gov.hk/gia/general/202607/11/P2026071100610.htm",
-      "source_name": "info.gov.hk / Labour and Welfare Bureau"
+      "source_name": "info.gov.hk / 香港政府新聞公報"
+    },
+    {
+      "id": "20260708-public-museum-operation",
+      "date": "2026-07-08",
+      "title": "公共博物館營運：康文署就指定場地商業模式招標",
+      "title_en": "Public museums: LCSD tenders market-based uses for designated venues",
+      "departments": [
+        "cstb",
+        "legco"
+      ],
+      "themes": [
+        "culture-tourism",
+        "governance"
+      ],
+      "summary": "26個康文署指定設施納入招標，其中包括香港藝術館與香港科學館。文體旅局7月8日向立法會表示，康文署於4月招標，擬在休館日出租博物館作商業或私人用途。早前收到14份意向書，當時預計2026年底委任營運商。",
+      "source_url": "https://www.info.gov.hk/gia/general/202607/08/P2026070800366.htm",
+      "source_name": "info.gov.hk / 香港政府新聞公報"
     },
     {
       "id": "20260616-gd-rcs-29",
@@ -4229,11 +3557,6 @@
         "poverty-welfare"
       ],
       "summary": "社會福利署宣布由2026年7月1日起，「廣東院舍照顧服務計劃」新增三家位於深圳及東莞的認可安老院，另有一家現有機構擴大服務範圍。連同現有二十六家，參加計劃的安老院總數增至二十九家，為有意於大灣區養老的香港長者提供更多資助護理宿位選擇。中央輪候冊上的合資格長者可向跟進工作人員申請。",
-      "interview_angles": [
-        "跨境養老的醫療銜接、探訪交通與突發事故應變如何保障？",
-        "增至29家院舍後，質素監管與投訴機制是否足以建立長者及家屬信心？",
-        "計劃對本地院舍輪候壓力的實質紓緩幅度如何量度？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202606/16/P2026061600269.htm",
       "source_name": "info.gov.hk / Social Welfare Department"
     },
@@ -4252,33 +3575,41 @@
         "poverty-welfare"
       ],
       "summary": "二元乘車優惠於4月3日改為「兩蚊兩折」：成人車費不高於10元，合資格乘客仍付2元，超過10元則付成人票價兩折。勞福局局長6月6日指出，4月政府補貼比3月少6,900萬元，成人票價逾10元的車程平均補貼由4.9元降至4.5元。月份日數和公眾假期有別，這是初步月度比較。據《南華早報》6月5日報道，政府亦決定不推行原擬每月240程的上限。",
-      "interview_angles": [
-        "如何剔除假期及季節效應，評估新票價對補貼及乘車行為的實際影響？",
-        "應如何監察需跨區覆診或工作的受惠人士有否因車費上升而減少必要出行？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202606/06/P2026060600481p.htm",
       "source_name": "info.gov.hk / 勞工及福利局",
       "scmp_url": "https://www.scmp.com/news/hong-kong/society/article/3356116/no-cap-hk2-transport-scheme-trips-costs-outweigh-savings-hong-kong-minister"
     },
     {
+      "id": "20260511-pinball-licensing-review",
+      "date": "2026-05-11",
+      "title": "彈珠機店規管：有獎遊戲須領牌，牌照安排檢討",
+      "title_en": "Pinball venues: prize games require a licence, with the regime under review",
+      "departments": [
+        "hyab",
+        "legco"
+      ],
+      "themes": [
+        "legislation",
+        "governance"
+      ],
+      "summary": "政府四月二十九日向立法會確認，有獎彈珠機店一般須持有有獎娛樂遊戲牌照，申請前須先取得公眾娛樂場所牌照，個別店鋪是否適用視乎實際營運。立法會民政及文化體育事務委員會五月十一日議程列有牌照規管立法建議。現行牌照要求繼續適用。",
+      "source_url": "https://www.legco.gov.hk/yr2026/chinese/panels/ha/agenda/ha20260511.htm",
+      "source_name": "立法會民政及文化體育事務委員會"
+    },
+    {
       "id": "20260501-min-wage-43-1",
       "date": "2026-05-01",
       "title": "法定最低工資調升至每小時43.1元生效",
-      "title_en": "Statutory minimum wage rises to $43.1 per hour",
+      "title_en": "Statutory minimum wage rises to HK$43.10 per hour",
       "departments": [
         "lwb"
       ],
       "themes": [
         "labour"
       ],
-      "summary": "由2026年5月1日起，法定最低工資由每小時42.1元調升至43.1元，適用於絕大多數僱員（留宿家庭傭工及訂明學員等除外）。《僱傭條例》下僱主須記錄總工作時數的每月工資金額上限，同步由17,200元提高至17,600元。殘疾僱員可選擇生產能力評估安排。調薪反映每年檢討機制下對通脹與經濟表現的回應。",
-      "interview_angles": [
-        "每小時調升1元對基層實質購買力與中小企成本的淨效應如何？",
-        "工時紀錄門檻上調至17,600元，執法能否跟上？",
-        "最低工資與「再就業津貼」、輸入勞工政策如何協調避免訊號混亂？"
-      ],
+      "summary": "每小時43.1元的法定最低工資於2026年5月1日生效，原水平為42.1元。僱員工資低於每月17,600元時，僱主須備存該工資期的總工時紀錄。留宿家庭傭工、訂明實習學員及工作經驗學員等豁免。",
       "source_url": "https://www.info.gov.hk/gia/general/202605/01/P2026043000260.htm",
-      "source_name": "info.gov.hk / Labour Department"
+      "source_name": "info.gov.hk / 香港政府新聞公報"
     },
     {
       "id": "20260324-nm-consult",
@@ -4293,11 +3624,6 @@
         "legislation"
       ],
       "summary": "發展局展開為期兩個月的公眾諮詢，就以專屬法例加快北部都會區發展徵集意見（至5月22日）。建議以主體法例為框架，並賦權行政長官會同行政會議按需要就精簡城規、加快收地補償、創新建造技術、建築噪音許可、跨境要素流動及法定機構等六方面訂立附屬法例。目標2026年年中提交主體條例草案及首批附屬法例擬稿供預覽，爭取年內通過。詳情見立法會發展事務委員會文件及 nm.gov.hk。",
-      "interview_angles": [
-        "為何北部都會區需要「專法」而非只靠行政協調及現行《城市規劃條例》修訂？",
-        "六方面授權中，哪一項對業界「拆牆鬆綁」最關鍵？哪一項爭議最大？",
-        "諮詢結果其後如何反映在七月刊憲的草案條文之上？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202603/24/P2026032400383.htm",
       "source_name": "info.gov.hk 新聞公報"
     },
@@ -4314,34 +3640,8 @@
         "housing-land"
       ],
       "summary": "發展局公布將前紅磡鐵路貨運碼頭約1.8公頃用地，以約三年短期租約批予灣區傳媒有限公司作海濱活動空間；公開招標採雙信封制（技術70%／價格30%），中標租金約133萬元。碼頭部分超過一半面積劃為沿海公眾休憩空間；其餘設餐飲娛樂、演展、文創及寵物友善公園，並安排展覽、市集、夜間表演等。政府基本改善工程大致完成，目標分階段開放，長遠發展前先活化公共空間。",
-      "interview_angles": [
-        "短期私營營運公眾休憩空間，如何確保暢達、免費使用與管理透明度？",
-        "技術標重於價格是否有助公共空間質素，還是偏向商業活動？",
-        "長遠碼頭／海濱規劃未定前，三年租約如何避免「臨時變永久」爭議？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202602/23/P2026022300541.htm",
       "source_name": "info.gov.hk / Development Bureau"
-    },
-    {
-      "id": "20260121-platform-workers-comp",
-      "date": "2026-01-21",
-      "title": "政府推進數碼平台工作者工傷補償立法　今年內冀交立法會",
-      "title_en": "Government advancing legislation on platform workers' work injury compensation",
-      "departments": [
-        "lwb"
-      ],
-      "themes": [
-        "labour",
-        "legislation"
-      ],
-      "summary": "勞福局回覆立法會指出，政府按2025年《施政報告》以立法完善數碼平台工作者工傷補償，已成立政府、平台公司及勞工團體三方小組。立法建議先聚焦食物及貨物送遞平台工作者，參考《僱員補償條例》，目標提供明確法律基礎並顧及平台可持續營運，計劃於2026年內向立法會提交建議。政府暫未以立法統一界定平台僱傭關係，優先處理工傷保障。",
-      "interview_angles": [
-        "只立法工傷、不釐清僱傭關係，會否留下社會保障缺口？",
-        "補償水平若低於《僱員補償條例》，如何說服勞工團體接受？",
-        "平台商業模式快速變化，法例如何保持前瞻而不窒礙創新？"
-      ],
-      "source_url": "https://www.info.gov.hk/gia/general/202601/21/P2026012100223.htm",
-      "source_name": "info.gov.hk / Labour and Welfare Bureau"
     },
     {
       "id": "20251223-iamsmart-4m",
@@ -4357,11 +3657,6 @@
         "governance"
       ],
       "summary": "數字政策辦公室公布「智方便」登記用戶超過400萬，每日使用量逾18萬人次，接達超過1 300項政府及公私營網上服務與電子表格，實現「一網通辦」。平台已推出「小程序平台」整合部門流動應用程式，並提供個人碼、待辦事項及帳單繳付等功能；當時計劃於2026年年底推出「AI助手」。數字辦亦推動金融機構採用「多重身份認證」加強核實。",
-      "interview_angles": [
-        "400萬用戶中活躍度與長者／數碼弱勢群體覆蓋率如何？",
-        "部門App整併至小程序後，如何避免「入口統一但體驗分裂」？",
-        "身份認證強化與便利性之間，市民投訴最多的痛點是什麼？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202512/23/P2025122300271.htm",
       "source_name": "info.gov.hk / Digital Policy Office"
     },
@@ -4379,11 +3674,6 @@
         "national-development"
       ],
       "summary": "政務司司長主持青年發展委員會第二十次會議，聽取2025年《施政報告》青年措施，包括青年人才培養計劃（國際組織實習與會議、傳媒專題內地實習、青年理財教育、調解工作坊）。民青局介紹大灣區香港青年創新創業基地聯盟已匯聚70個成員，並推進粵港澳大灣區青年創業資助計劃及創新創業基地體驗資助計劃，為青年初創提供資本資助、孵化及內地考察支援。",
-      "interview_angles": [
-        "大灣區創業聯盟70個成員的「一站式」支援，青年實際使用率與存活率如何？",
-        "國際組織實習名額有限，如何確保基層青年有公平機會？",
-        "青年理財教育與創業資助如何避免「鼓勵冒險卻缺乏風險意識」？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202511/18/P2025111800622.htm",
       "source_name": "info.gov.hk / HYAB / CSSO"
     },
@@ -4401,11 +3691,6 @@
         "digital-gov"
       ],
       "summary": "2025年《施政報告》提出優質教育基金預留20億元支援中小學數字教育，並預計於2026年發表《中小學數字教育藍圖》。同時強調深化國際教育樞紐建設，增加非本地生自費學額及學生宿舍配套，並加大打擊違規提供文憑試課程或「借殼辦學」。數字教育撥款為後續藍圖及AI教學工具鋪路。",
-      "interview_angles": [
-        "20億元數字教育撥款應如何分配（基建、教師培訓、課程內容）才具可持續性？",
-        "打擊「借殼辦學」與吸引國際學生之間，如何平衡監管與開放？",
-        "與2026年數字教育藍圖如何銜接，避免「撥款先、策略後」？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2025/tc/highlight.html",
       "source_name": "policyaddress.gov.hk / 2025 Policy Address Highlights"
     },
@@ -4423,11 +3708,6 @@
         "poverty-welfare"
       ],
       "summary": "2025年《施政報告》提出新增700個新建資助安老宿位、4 000張長者社區照顧服務券及1 000張長者院舍照顧服務券；增加三間長者鄰舍中心；擴展「廣東院舍照顧服務計劃」網絡。政府預留每年5億元經常開支加強照顧者支援，並設立「社會高齡化對策工作組」，涵蓋安老、醫療、房屋、樂齡科技及銀髮經濟。",
-      "interview_angles": [
-        "每年5億元照顧者支援如何精準投放？",
-        "高齡化對策工作組如何避免跨局政策各自為政？",
-        "服務券與實物宿位並行下，市民應如何選擇？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2025/tc/highlight.html#elderly",
       "source_name": "policyaddress.gov.hk / 2025 Policy Address Highlights"
     },
@@ -4444,11 +3724,6 @@
         "culture-tourism"
       ],
       "summary": "2025年《施政報告》提出打造高端藝術品交易樞紐、年內啟用西九碼頭、成立「西九文化區學院」；推廣高端遊艇旅遊並優化訪港遊艇入境流程。獲得清真認證的餐廳可獲資助50%認證費（上限5,000元），促進穆斯林旅遊。措施把文化硬件、遊艇經濟與多元客源開發一併推進。",
-      "interview_angles": [
-        "清真認證資助上限5,000元是否足以改變供給？",
-        "遊艇泊位擴張與公眾親海權如何平衡？",
-        "西九碼頭如何把人流導向文化場館？"
-      ],
       "source_url": "https://www.policyaddress.gov.hk/2025/tc/highlight.html#culture",
       "source_name": "policyaddress.gov.hk / 2025 Policy Address Highlights"
     },
@@ -4466,11 +3741,6 @@
         "legislation"
       ],
       "summary": "取消強積金「對沖」安排於2025年5月1日（轉制日）生效：僱主不得再以強制性供款累算權益抵銷轉制日後僱用期所衍生的遣散費／長期服務金；轉制日前權益仍可對沖。勞工處同日推出為期25年的資助計劃，僱主先依法支付遣散費／長服金後可申請資助。安排同樣適用於職業退休計劃及相關學校公積金等。",
-      "interview_angles": [
-        "25年資助計劃的財政可持續性與道德風險（鼓勵遣散）如何防範？",
-        "取消對沖對中小企現金流與正式僱傭意願的短期衝擊有多大？",
-        "僱員實質退休保障改善幅度如何追蹤？"
-      ],
       "source_url": "https://www.info.gov.hk/gia/general/202505/01/P2025043000322.htm",
       "source_name": "info.gov.hk / Labour Department"
     }
