@@ -286,35 +286,57 @@
     </article>`;
   }
 
+  const CASE_STUDY_PRIORITY = new Map([
+    "housing-land-2026-11-09",
+    "basic-housing-registration-2026-11-18",
+    "hospital-fee-waivers-2026-11-18",
+    "elderly-care-2026-10-28",
+    "mental-health-2026-10-26",
+    "advance-directive-record-linkage-2026-11-18",
+    "minimum-wage-compliance-2026-11-25",
+    "foreign-domestic-helper-pay-2026-11-18",
+    "youth-employment-2026-11-09",
+    "family-support-2026-11-09",
+    "university-residence-rule-2026-11-18",
+    "fare-concession-review-2026-11-16",
+    "waste-recovery-2026-11-02",
+    "heat-island-2026-10-25",
+    "private-healthcare-fee-transparency-2026-11-18",
+    "cssa-work-incentive-2026-11-18",
+    "tourism-culture-2026-11-09",
+    "mega-event-economic-value-2026-11-25",
+    "border-resilience-2026-10-29",
+    "loop-link-resumption-2026-10-30",
+    "gba-services-2026-11-09",
+    "new-industrial-2026-10-29",
+    "sme-digital-2026-10-26",
+    "ai-public-services-2026-11-09",
+    "platform-work-2026-11-09",
+    "retirement-contributions-2026-11-16",
+    "maintenance-tender-support-2026-11-16",
+    "tobacco-plain-pack-transition-2026-11-18",
+    "paper-recovery-pricing-2026-11-17",
+    "prepaid-cooling-off-2026-11-18",
+    "personalised-ticketing-2026-11-25",
+    "talent-scheme-evidence-2026-11-17",
+    "public-space-2026-11-09",
+    "multilingual-app-access-2026-11-16",
+    "family-care-leave-2026-11-17",
+    "owners-proxy-pilot-2026-11-16",
+    "digital-finance-2026-11-09",
+    "smartview-surveillance-2026-11-17",
+    "public-museum-venue-hire-2026-11-25",
+    "stray-dog-management-2026-11-25",
+    "hospital-lift-oversight-2026-11-16",
+    "fanling-eia-procedure-2026-11-18",
+    "sugar-levy-options-2026-11-25",
+  ].map((id, index) => [id, index]));
+
   function getCasePacks() {
-    // Follow Q2 question-bank order (briefs.json n); unmatched Q1 topics stay last.
-    const q2Order = {
-      "housing-land-2026-11-09": 1,
-      "mental-health-2026-10-26": 2,
-      "elderly-care-2026-10-28": 3,
-      "youth-employment-2026-11-09": 4,
-      "tourism-culture-2026-11-09": 5,
-      "gba-services-2026-11-09": 6,
-      "waste-recovery-2026-11-02": 8,
-      "family-support-2026-11-09": 9,
-      "platform-work-2026-11-09": 10,
-      "public-space-2026-11-09": 11,
-      "new-industrial-2026-10-29": 12,
-      "border-resilience-2026-10-29": 13,
-      "loop-link-resumption-2026-10-30": 14,
-      "digital-finance-2026-11-09": 16,
-      "ai-public-services-2026-11-09": 17,
-      "owners-proxy-pilot-2026-11-16": 19,
-      "maintenance-tender-support-2026-11-16": 20,
-      "hospital-lift-oversight-2026-11-16": 21,
-      "fare-concession-review-2026-11-16": 22,
-      "family-care-leave-2026-11-17": 23,
-      "smartview-surveillance-2026-11-17": 24,
-      "paper-recovery-pricing-2026-11-17": 27,
-      "talent-scheme-evidence-2026-11-17": 29
-    };
     const packs = Array.isArray(window.Q1_CASE_PACKS) ? window.Q1_CASE_PACKS : [];
-    return packs.slice().sort((a, b) => (q2Order[a.id] ?? Infinity) - (q2Order[b.id] ?? Infinity));
+    return packs.slice().sort((a, b) =>
+      (CASE_STUDY_PRIORITY.get(a.id) ?? Infinity) - (CASE_STUDY_PRIORITY.get(b.id) ?? Infinity)
+    );
   }
 
   function getActivePack() {
@@ -393,7 +415,7 @@
     root.innerHTML = `
       <div class="card case-hero">
         <div class="toolbar" style="margin-bottom:8px">
-          <label class="select-wrap">題目
+          <label class="select-wrap">題目（按溫習優先次序）
             <select id="caseSelect">${packs.map((p) => `<option value="${escapeHtml(p.id)}" ${p.id === pack.id ? "selected" : ""}>${escapeHtml(p.titleZh || p.title)}</option>`).join("")}</select>
           </label>
         </div>

@@ -5,7 +5,7 @@ window.Q1_CASE_PACKS.push(...[
     "id": "minimum-wage-compliance-2026-11-25",
     "title": "Statutory Minimum Wage: Payroll and Hours Worked · City of Jade",
     "titleZh": "法定最低工資／出糧合規與工時紀錄",
-    "tip": "分清時薪底線、工時紀錄門檻，同投訴樣本的局限。",
+    "tip": "香港新一輪法定最低工資已生效，比較單靠指引、全面數碼申報同定向抽查時，要分清時薪底線同工時紀錄門檻。",
     "task": {
       "role": "You are an Administrative Officer in the Labour Bureau, City of Jade. Prepare an internal discussion paper for the Committee on Wage Compliance.",
       "bullets": [
@@ -106,7 +106,7 @@ window.Q1_CASE_PACKS.push(...[
     "id": "sugar-levy-options-2026-11-25",
     "title": "Sugary Drinks: Labelling, Reformulation and a Possible Levy · City of Jade",
     "titleZh": "含糖飲品／減糖標籤與擬議徵費",
-    "tip": "徵費只係虛構研究選項；比較標籤覆蓋、配方改動同轉買其他產品。",
+    "tip": "比較標籤、配方改良同徵費對價格及替代購買嘅影響，徵費只係 City of Jade 虛構選項，香港沒有已核實嘅稅率或生效日。",
     "task": {
       "role": "You are an Administrative Officer in the Health Bureau, City of Jade. Prepare an internal discussion paper for the Working Group on Sugary Drinks.",
       "bullets": [
@@ -207,7 +207,7 @@ window.Q1_CASE_PACKS.push(...[
     "id": "personalised-ticketing-2026-11-25",
     "title": "Personalised Ticketing: Fair Access to High-demand Shows · City of Jade",
     "titleZh": "實名制售票／熱門節目的公平購票",
-    "tip": "分清開售分配、黃牛轉售同入場核實。比較時處理轉讓同私隱。",
+    "tip": "香港政府仍在研究如何打擊炒賣，實名制按個別節目考慮，比較全面實名、高風險節目試點同登記抽籤對轉讓、私隱及入場輪候嘅影響。",
     "task": {
       "role": "You are an Administrative Officer in the Culture and Events Bureau, City of Jade. Prepare an internal discussion paper for the Public Venue Ticketing Panel.",
       "bullets": [
@@ -308,7 +308,7 @@ window.Q1_CASE_PACKS.push(...[
     "id": "public-museum-venue-hire-2026-11-25",
     "title": "Public Museums: Hiring Out Spaces on Closure Days · City of Jade",
     "titleZh": "公共博物館／休館日場地租用",
-    "tip": "用淨收入比較方案，並保留館藏護理和復館準備時間。",
+    "tip": "香港康文署已就指定設施嘅市場營運模式招標，比較維持現狀、指定空間試租同擴大出租時，扣除保安及復原成本，並預留館藏護理時間。",
     "task": {
       "role": "You are an Administrative Officer in the Museums and Heritage Bureau, City of Jade. Prepare an internal discussion paper for the Museum Services Committee.",
       "bullets": [
@@ -409,7 +409,7 @@ window.Q1_CASE_PACKS.push(...[
     "id": "stray-dog-management-2026-11-25",
     "title": "Stray Dogs: Risk-based Patrols and Rehoming · City of Jade",
     "titleZh": "流浪狗／風險巡查與領養銜接",
-    "tip": "用個案嚴重程度分流巡查，並分析收容容量點樣影響後段領養。",
+    "tip": "香港現行做法包括與動物福利機構合作領養，而捕捉、絕育、放回試驗已結束，比較平均加派巡查、加強領養宣傳同按風險巡查並協調轉送對安全及領養流轉嘅影響。",
     "task": {
       "role": "You are an Administrative Officer in the Animal Welfare and Control Bureau, City of Jade. Prepare an internal discussion paper for the District Animal Management Panel.",
       "bullets": [
@@ -510,7 +510,7 @@ window.Q1_CASE_PACKS.push(...[
     "id": "mega-event-economic-value-2026-11-25",
     "title": "Mega Events: Testing Incremental Economic Value · City of Jade",
     "titleZh": "盛事經濟／額外旅客消費與資助成效",
-    "tip": "分清全市訪客、活動入場同因盛事新增的消費。留意消費轉移。",
+    "tip": "香港已有盛事旅遊措施，比較按入場人次續批、附條件試點同押後續批時，一併衡量新增旅客消費、地區生意轉移同公共成本。",
     "task": {
       "role": "You are an Administrative Officer in the Tourism and Events Bureau, City of Jade. Prepare an internal discussion paper for the Public Events Funding Panel.",
       "bullets": [
