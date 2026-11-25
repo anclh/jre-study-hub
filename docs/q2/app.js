@@ -170,6 +170,7 @@
       ...(brief.stance_points || []),
       ...(brief.measures || []),
       factText,
+      brief.fact_status || "",
       ...(brief.theme_ids || []).map(themeLabel),
       brief.sample_answer || "",
       brief.sample_note || "",
@@ -264,6 +265,12 @@
     return `<ul class="facts-list">${items.join("")}</ul>`;
   }
 
+  function factStatusHtml(brief) {
+    const text = String((brief && brief.fact_status) || "").trim();
+    if (!text) return "";
+    return `<p class="fact-status"><span>狀態</span> ${escapeHtml(text)}</p>`;
+  }
+
   function stageSection(className, title, body) {
     if (!String(body || "").trim()) return "";
     return `<div class="brief-section ${className}"><h4>${escapeHtml(title)}</h4>${body}</div>`;
@@ -280,7 +287,7 @@
     const facts = factsListHtml(brief.facts);
     const argumentBody = [
       support ? `<p class="brief-sub">支持論點</p>${support}` : "",
-      facts ? `<p class="brief-sub">例子／硬數</p>${facts}` : "",
+      facts ? `<p class="brief-sub">例子／硬數</p>${factStatusHtml(brief)}${facts}` : "",
       nestBlock("大綱理據", outline.arguments?.length ? listHtml(outline.arguments, true) : ""),
     ].join("");
     const cons = listHtml(brief.cons, false);
@@ -358,10 +365,15 @@
           : "");
 
       const factPreview = scanFacts(brief.facts);
+      const statusLine = factStatusHtml(brief);
       const measurePreview = scanMeasures(brief.measures);
       const scanCols = [
-        factPreview.length
-          ? `<div><h4>例子</h4><ul>${factPreview.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul></div>`
+        factPreview.length || statusLine
+          ? `<div><h4>例子</h4>${statusLine}${
+              factPreview.length
+                ? `<ul>${factPreview.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>`
+                : ""
+            }</div>`
           : "",
         measurePreview.length
           ? `<div><h4>建議</h4><ul>${measurePreview.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul></div>`
@@ -488,7 +500,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261125b", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261125c", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -621,8 +633,8 @@
     }${pointsHtml}</section>`;
   }
 
-  function flashFactsBlock(facts) {
-    const items = (facts || [])
+  function flashFactsBlock(brief) {
+    const items = (brief.facts || [])
       .map((f) => {
         const text = String((f && f.text) || "").trim();
         if (!text) return "";
@@ -633,8 +645,11 @@
         return `<li>${escapeHtml(text)}${link}</li>`;
       })
       .filter(Boolean);
-    if (!items.length) return "";
-    return `<section class="flash-block"><h3>必記 <span>Facts</span></h3><ul>${items.join("")}</ul></section>`;
+    const status = factStatusHtml(brief);
+    if (!items.length && !status) return "";
+    return `<section class="flash-block"><h3>必記 <span>Facts</span></h3>${status}${
+      items.length ? `<ul>${items.join("")}</ul>` : ""
+    }</section>`;
   }
 
   function saveFlashMarks() {
@@ -689,7 +704,7 @@
       ${flashBlock("弊", "Cons", flashFullItems(brief.cons))}
       ${flashStanceBlock(brief, stanceShort)}
       ${flashBlock("措施", "Measures", flashFullItems(brief.measures))}
-      ${flashFactsBlock(brief.facts)}`;
+      ${flashFactsBlock(brief)}`;
     card.classList.toggle("is-flipped", flashFlipped);
     card.scrollTop = 0;
     card.setAttribute("aria-pressed", flashFlipped ? "true" : "false");
