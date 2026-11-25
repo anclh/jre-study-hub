@@ -15114,5 +15114,221 @@
     ],
     "example": "Staff should confirm which statutory form applies to the procedure.",
     "topic": "governance"
+  },
+  {
+    "term": "statutory minimum wage",
+    "zh": "法定最低工資",
+    "pos": "n.",
+    "related": [
+      "SMW"
+    ],
+    "note": "常配 comply with / raise the statutory minimum wage。香港由 2026 年 5 月 1 日起為每小時 HK$43.10。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Employers should review their payroll procedures when the statutory minimum wage changes.",
+        "zh": "法定最低工資調整時，僱主應檢視出糧程序。"
+      }
+    ],
+    "example": "Employers should review their payroll procedures when the statutory minimum wage changes.",
+    "topic": "labour"
+  },
+  {
+    "term": "hours-worked records",
+    "zh": "總工作時數紀錄",
+    "pos": "n.",
+    "related": [
+      "working time records"
+    ],
+    "note": "常配 keep / verify hours-worked records。香港每月 HK$17,600 是備存總工作時數紀錄的工資門檻，適用於低於該金額的工資。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Inspectors can compare hours-worked records with payroll entries to identify discrepancies.",
+        "zh": "督察可將總工作時數紀錄同工資紀錄對照，找出不符之處。"
+      }
+    ],
+    "example": "Inspectors can compare hours-worked records with payroll entries to identify discrepancies.",
+    "topic": "labour"
+  },
+  {
+    "term": "sugar-sweetened beverage levy",
+    "zh": "含糖飲品徵費",
+    "pos": "n.",
+    "related": [
+      "sugar tax"
+    ],
+    "note": "常配 assess / consult on a proposed sugar-sweetened beverage levy。香港官方資料確認有減糖標籤措施；提到徵費時應清楚標明討論或假設語境。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The consultation would examine who would bear the cost of a proposed sugar-sweetened beverage levy.",
+        "zh": "諮詢會研究誰將承擔擬議含糖飲品徵費的成本。"
+      }
+    ],
+    "example": "The consultation would examine who would bear the cost of a proposed sugar-sweetened beverage levy.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "product reformulation",
+    "zh": "調整產品配方",
+    "pos": "n.",
+    "related": [
+      "reformulate a product"
+    ],
+    "note": "常配 encourage product reformulation。可以用嚟講減糖措施點樣改變供應。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The review should measure whether product reformulation reduces the sugar sold per serving.",
+        "zh": "檢討應量度調整配方後，每份售出產品所含的糖分有沒有減少。"
+      }
+    ],
+    "example": "The review should measure whether product reformulation reduces the sugar sold per serving.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "personalised ticketing",
+    "zh": "實名制售票",
+    "pos": "n.",
+    "related": [
+      "personalized ticketing"
+    ],
+    "note": "常配 pilot / require personalised ticketing。交代適用節目、入場核實同合法轉讓安排。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Personalised ticketing can tie each admission to a named attendee.",
+        "zh": "實名制售票可以將每張入場券同指定入場人士連繫起來。"
+      }
+    ],
+    "example": "Personalised ticketing can tie each admission to a named attendee.",
+    "topic": "governance"
+  },
+  {
+    "term": "registration ballot",
+    "zh": "登記抽籤",
+    "pos": "n.",
+    "related": [],
+    "note": "常配 allocate tickets by registration ballot。登記抽籤決定購票機會，實名核對處理入場身分。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "A registration ballot gives applicants time to enter before tickets are allocated.",
+        "zh": "登記抽籤讓申請人在分配門票前有時間登記。"
+      }
+    ],
+    "example": "A registration ballot gives applicants time to enter before tickets are allocated.",
+    "topic": "governance"
+  },
+  {
+    "term": "venue hire",
+    "zh": "場地租用",
+    "pos": "n.",
+    "related": [],
+    "note": "常配 offer venues for hire / set venue-hire conditions。比較場租收入時一併計算額外人手及保安開支。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Venue hire on closure days should preserve the time needed for collection care.",
+        "zh": "休館日出租場地時，應保留足夠時間護理館藏。"
+      }
+    ],
+    "example": "Venue hire on closure days should preserve the time needed for collection care.",
+    "topic": "governance"
+  },
+  {
+    "term": "collection care",
+    "zh": "館藏護理",
+    "pos": "n.",
+    "related": [],
+    "note": "常配 safeguard collection care / set aside time for collection care。可涵蓋檢查、清潔及保護館藏。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The hire agreement should reserve closure-day hours for collection care.",
+        "zh": "場地租用協議應在休館日預留館藏護理時間。"
+      }
+    ],
+    "example": "The hire agreement should reserve closure-day hours for collection care.",
+    "topic": "governance"
+  },
+  {
+    "term": "risk-based patrol",
+    "zh": "按風險安排的巡查",
+    "pos": "n.",
+    "related": [],
+    "note": "常配 conduct risk-based patrols。可按事件嚴重程度、重複個案同地點排序巡查。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Risk-based patrols can focus on locations with repeated reports of aggressive behaviour.",
+        "zh": "按風險安排的巡查可集中於屢次接獲攻擊行為報告的地點。"
+      }
+    ],
+    "example": "Risk-based patrols can focus on locations with repeated reports of aggressive behaviour.",
+    "topic": "environment-climate"
+  },
+  {
+    "term": "animal rehoming",
+    "zh": "為動物另覓家園",
+    "pos": "n.",
+    "related": [],
+    "note": "常配 arrange / support animal rehoming。方案可跟進領養配對、交接及領養後支援。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Animal rehoming depends on suitable placements and support after adoption.",
+        "zh": "為動物另覓家園有賴合適的領養配對及領養後支援。"
+      }
+    ],
+    "example": "Animal rehoming depends on suitable placements and support after adoption.",
+    "topic": "environment-climate"
+  },
+  {
+    "term": "incremental visitor spending",
+    "zh": "額外旅客消費",
+    "pos": "n.",
+    "related": [
+      "additional visitor spending"
+    ],
+    "note": "常配 estimate incremental visitor spending。重點係估計如果沒有該盛事，哪些消費仍然會發生。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The evaluation should estimate incremental visitor spending against a comparable period.",
+        "zh": "評估應以一段可比期間為基準，估算額外旅客消費。"
+      }
+    ],
+    "example": "The evaluation should estimate incremental visitor spending against a comparable period.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "spending displacement",
+    "zh": "消費轉移",
+    "pos": "n.",
+    "related": [],
+    "note": "常配 account for spending displacement。例子係消費由同一城市的其他地區轉到活動場地附近。",
+    "synonyms": [],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The appraisal should check for spending displacement from businesses outside the event district.",
+        "zh": "評估應檢視活動區外商戶的消費有沒有轉移到活動區內。"
+      }
+    ],
+    "example": "The appraisal should check for spending displacement from businesses outside the event district.",
+    "topic": "fiscal-regulation"
   }
 ]
