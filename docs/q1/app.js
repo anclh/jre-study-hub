@@ -457,7 +457,7 @@
                   <li><span class="practice-step-time">4 min</span><span><strong>Compare the options</strong><small>Use common criteria: effectiveness, fiscal cost, feasibility/manpower and accessibility. Address objections inline.</small></span></li>
                   <li><span class="practice-step-time">2 min</span><span><strong>Choose and plan delivery</strong><small>Fix the lead, pilot and timing, resources, access measures, KPIs and review point.</small></span></li>
                   <li><span class="practice-step-time">53 / 73 min</span><span><strong>Draft the five-section memo</strong><small>Opening → two problem paragraphs → option comparison → recommendation bullets → closing.</small></span></li>
-                  <li><span class="practice-step-time">2 min</span><span><strong>Final check</strong><small>Check the recommendation answers both problems, fits the budget and names who, when and how success will be measured.</small></span></li>
+                  <li><span class="practice-step-time">2 min</span><span><strong>Final check</strong><small>Check logic first. Does the choice follow from the evidence and trade-offs? If it retains a drawback flagged earlier, address it or justify accepting it. Then check both problems are covered, the budget fits and delivery and review are clear.</small></span></li>
                 </ol>
                 <p class="practice-guide-foot">Use 53 minutes to draft in a 70-minute session, or 73 minutes in a 90-minute session. The planning and final-check slots stay the same.</p>
               </div>
@@ -703,14 +703,13 @@
           list.innerHTML = '<li class="muted">（暫無此段 Shared frames）</li>';
           return;
         }
+        const localFrames = new Map(
+          Array.from(list.querySelectorAll("[data-frame-id]"), (item) => [item.dataset.frameId, item.outerHTML])
+        );
         list.innerHTML = group
           .map(
-            (it) =>
-              "<li>" +
-              String(it.zh || "").trim() +
-              " / " +
-              String(it.en || "").trim() +
-              "</li>"
+            (it) => localFrames.get(it.id) ??
+              `<li>${escapeHtml(String(it.zh || "").trim())} / ${escapeHtml(String(it.en || "").trim())}</li>`
           )
           .join("");
       });

@@ -103,7 +103,7 @@ window.Q1_CASE_PACKS.push({
       },
       {
         h: "4. Recommendation",
-        html: `<p>We recommend approving Option 3 and implementing the governance framework in phased stages:</p>
+        html: `<p>The committee should approve Option 3 and phase in the governance framework:</p>
 <ul>
 <li><strong>Leadership and oversight:</strong> Security Bureau will chair the Surveillance Governance Board, with the Department of Justice issuing statutory search thresholds and the Privacy Commissioner conducting independent verification.</li>
 <li><strong>Access control:</strong> Restrict system access strictly to Inspector rank or above via a secure dual-authenticated digital portal, requiring an active criminal investigation case file and supervisory sign-off before queries can execute.</li>

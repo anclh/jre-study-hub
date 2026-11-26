@@ -102,7 +102,7 @@ window.Q1_CASE_PACKS.push({
       },
       {
         h: "4. Recommendation",
-        html: `<p>We recommend adopting Option 3, commencing formal departmental consultations immediately for a target rollout on 1 January 2027:</p>
+        html: `<p>The Government should adopt Option 3 and begin formal departmental consultations immediately, with a target rollout date of 1 January 2027:</p>
 <ul>
 <li><strong>Leadership:</strong> CSB will issue standardised civil-service-wide guidelines, while departmental heads, particularly in the disciplinary and health services, formulate tailored rostering buffers.</li>
 <li><strong>Operational protocols:</strong> Require 48 hours' advance notice for planned family appointments and school events. For sudden emergencies, allow same-day leave subject to supervisor acknowledgement and shift minimum manning protocols.</li>
