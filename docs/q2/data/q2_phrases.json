@@ -37,17 +37,17 @@
       "id": "pos-01",
       "category": "position",
       "paper": "q2",
-      "en": "I support / oppose… subject to…",
-      "zh": "本人贊成／反對……，惟以……為前提。",
-      "note": "開首釘立場",
-      "example": "本人贊成擴大公屋供應，惟以加快熟地供應為前提。"
+      "en": "The proposal merits support / should not be adopted, subject to…",
+      "zh": "有關建議值得支持／不宜採納，惟須以……為前提。",
+      "note": "開首釘立場（無第一人稱）",
+      "example": "擴大公屋供應值得支持，惟須以加快熟地供應為前提。"
     },
     {
       "id": "pos-02",
       "category": "position",
       "paper": "q2",
-      "en": "After weighing the pros and cons, I lean towards…",
-      "zh": "有關建議利弊並存；權衡後，本人傾向……",
+      "en": "After weighing the pros and cons, the balance favours supporting / opposing…",
+      "zh": "有關建議利弊並存；權衡後，整體仍宜支持／不宜採納……",
       "note": "",
       "example": ""
     },
@@ -154,10 +154,10 @@
       "id": "pos-03",
       "category": "position",
       "paper": "q2",
-      "en": "I support the policy aim, but oppose a one-size-fits-all approach; better to… first.",
-      "zh": "本人贊成……的政策目標，惟反對一刀切……，宜先……。",
-      "note": "有條件贊成／釘目標唔釘手段",
-      "example": "本人贊成加強平台送貨員保障的政策目標，惟反對一刀切強制全員僱員化，宜先立法設行業最低保障。"
+      "en": "The policy aim merits support, but a one-size-fits-all approach should be avoided; it is preferable to… first.",
+      "zh": "……的政策目標值得支持，惟不宜一刀切……，宜先……。",
+      "note": "有條件支持／釘目標唔釘手段",
+      "example": "加強平台送貨員保障的政策目標值得支持，惟不宜一刀切強制全員僱員化，宜先立法設行業最低保障。"
     },
     {
       "id": "reb-02",
@@ -235,19 +235,19 @@
       "id": "clo-03",
       "category": "close",
       "paper": "q2",
-      "en": "In sum, I maintain the stance of…; in delivery, prioritise… and keep reviewing effectiveness.",
-      "zh": "綜上，本人維持……立場；落實時以……為優先，並持續檢討成效。",
+      "en": "In sum, the proposal merits support / should not be adopted; in delivery, prioritise… and keep reviewing effectiveness.",
+      "zh": "綜上，有關方案仍值得支持／不宜採納；落實時宜以……為優先，並持續檢討成效。",
       "note": "短結重申立場＋優先措施（五步收束）",
-      "example": "綜上，本人維持高峰應變制度化的立場；落實時以清晰主責與暢順KPI為優先，並持續檢討成效。"
+      "example": "綜上，高峰應變制度化值得支持；落實時宜以清晰主責與暢順KPI為優先，並持續檢討成效。"
     },
     {
       "id": "pos-04",
       "category": "position",
       "paper": "q2",
-      "en": "I support the direction in principle, but implementation must be phased with clear ownership and review points.",
-      "zh": "本人原則上贊成有關方向，惟落實必須分階段進行，並訂明主責及檢討節點。",
-      "note": "原則贊成＋分階段／主責（有別於 pos-03 目標vs手段）",
-      "example": "本人原則上贊成加強口岸高峰暢順，惟落實必須分階段進行，並訂明保安局／運物局主責及高峰後72小時檢討節點。"
+      "en": "The direction merits support in principle, but implementation must be phased with clear ownership and review points.",
+      "zh": "有關方向原則上值得支持，惟落實必須分階段進行，並訂明主責及檢討節點。",
+      "note": "原則支持＋分階段／主責（有別於 pos-03 目標vs手段）",
+      "example": "加強口岸高峰暢順的方向原則上值得支持，惟落實必須分階段進行，並訂明保安局／運物局主責及高峰後72小時檢討節點。"
     },
     {
       "id": "arg-05",
@@ -298,10 +298,10 @@
       "id": "pos-05",
       "category": "position",
       "paper": "q2",
-      "en": "I support … provided that risks are mitigated through …; otherwise I would oppose a blanket rollout.",
-      "zh": "本人贊成……，惟須以……緩解風險；否則本人反對一刀切全面推開。",
-      "note": "贊成＋風險緩解門檻／否則反對全面推開",
-      "example": "本人贊成擴大社區藥房配對，惟須以藥師輔導與藥物依從監察緩解風險；否則本人反對一刀切全面推開。"
+      "en": "The proposal merits support provided that risks are mitigated through …; otherwise a blanket rollout should be avoided.",
+      "zh": "有關方案值得支持，惟須以……緩解風險；否則不宜一刀切全面推開。",
+      "note": "支持＋風險緩解門檻／否則不宜全面推開",
+      "example": "擴大社區藥房配對值得支持，惟須以藥師輔導與藥物依從監察緩解風險；否則不宜一刀切全面推開。"
     },
     {
       "id": "bal-06",
@@ -320,6 +320,33 @@
       "zh": "宜於六個月內公布……公開儀表板，訂明主責局署，並於首年後公開檢討。",
       "note": "公開儀表板＋主責＋首年檢討",
       "example": "宜於六個月內公布社區藥房配對成功率公開儀表板，訂明醫務衛生局主責，並於首年後公開檢討。"
+    },
+    {
+      "id": "pos-06",
+      "category": "position",
+      "paper": "q2",
+      "en": "Even if the affected group is small, the issue touches on core principles of …; government intervention is therefore warranted.",
+      "zh": "即使受影響人數有限，有關問題涉及［公共安全／公帑問責／制度公平］原則，當局仍有責任介入並設下底線，故有關方案值得支持／不宜採納。",
+      "note": "FPS 原則企硬（人數少仍須介入）",
+      "example": "即使受影響的持牌小販人數有限，有關問題涉及消防及食物安全原則，當局仍有責任設下安全底線，故加強規管方向值得支持。"
+    },
+    {
+      "id": "reb-05",
+      "category": "rebuttal",
+      "paper": "q2",
+      "en": "Admittedly, affected stakeholders face short-term impact; placed under the higher principle of …, the Government should persuade cooperation via transition support rather than shelving reform.",
+      "zh": "誠然，［受損群組］短期內須承受［具體衝擊］；惟置於［公共衞生／市民安全］的更高原則下，當局宜透過［過渡配套／隱性長遠效益］游說配合，而非擱置改革。",
+      "note": "遊說受損方：跳出框外轉移更高原則",
+      "example": "誠然，部分中小食肆短期內須承受排污及抽風改裝成本；惟置於公共衞生及社區消防的更高原則下，當局宜透過分階段資助游說配合，而非擱置規管。"
+    },
+    {
+      "id": "rec-08",
+      "category": "recommend",
+      "paper": "q2",
+      "en": "To address [bottleneck], [Bureau] may deploy [tech tool], leveraging its [specific capability] to close gaps, backed by human review.",
+      "zh": "針對［具體執行阻礙］，［主責部門］可引入［具體科技工具］，憑藉其［即時核對／自動化追蹤／風險預警特性］收窄漏洞，並輔以人工覆核。",
+      "note": "科技建議落地：阻礙 → 科技 → 特性如何克服",
+      "example": "針對跨區違規傾倒難以即時蒐證的阻礙，環保署可於黑點引入具備車牌識別與實時異常預警的流動監察系統，收窄執法漏洞，並輔以人員覆核。"
     }
   ]
 }
