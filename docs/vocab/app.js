@@ -799,7 +799,7 @@ function chipRow(label, items, cls) {
 
   async function loadLexicon() {
     try {
-      const data = await loadJson("/api/lexicon", "data/lexicon.json?v=20261118scmp2");
+      const data = await loadJson("/api/lexicon", "data/lexicon.json?v=20261126a");
       // API: { ok, items } ; static: bare array
       state.lexicon = Array.isArray(data) ? data : data.items || [];
     } catch (e) {

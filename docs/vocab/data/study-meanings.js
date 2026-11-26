@@ -466,5 +466,15 @@ globalThis.JRE_VOCAB_MEANINGS = {
   "environmental impact assessment": {"meaning": "a study of the likely environmental effects of a proposed project", "synonyms": ["environmental effects assessment"]},
   "judicial review": {"meaning": "court review of the lawfulness of a public authority’s decision"},
   "advance medical directive": {"meaning": "a written instruction about future medical treatment if a person loses decision-making capacity", "synonyms": ["advance healthcare directive"]},
-  "statutory form": {"meaning": "a form required or prescribed by legislation", "synonyms": ["legally prescribed form"]}
+  "statutory form": {"meaning": "a form required or prescribed by legislation", "synonyms": ["legally prescribed form"]},
+  "externality": {"meaning": "a side effect of an activity on third parties not reflected in its direct cost", "synonyms": ["spillover effect", "side effect"]},
+  "incidence": {"meaning": "the rate or frequency at which an event or condition occurs", "synonyms": ["occurrence rate", "frequency"]},
+  "bias": {"meaning": "systematic unfair distortion in data, sampling or judgement", "synonyms": ["distortion", "skew"], "antonyms": ["impartiality", "neutrality"]},
+  "uncertainty": {"meaning": "lack of complete certainty about future conditions, demand or outcomes", "synonyms": ["unpredictability", "ambiguity"], "antonyms": ["certainty", "predictability"]},
+  "viability": {"meaning": "the ability of a policy or scheme to work and last over the long term", "synonyms": ["workability", "sustainability"], "antonyms": ["infeasibility"]},
+  "coherence": {"meaning": "logical consistency and alignment across related policies or departments", "synonyms": ["consistency", "alignment"], "antonyms": ["fragmentation", "inconsistency"]},
+  "precedent": {"meaning": "an earlier decision or action that guides or constrains future cases", "synonyms": ["prior example"]},
+  "appropriation": {"meaning": "public funds formally authorised for a specific purpose", "synonyms": ["authorised funding", "budget allocation"]},
+  "beneficiary": {"meaning": "a person or group receiving benefits or support under a policy", "synonyms": ["recipient", "target user"]},
+  "metric": {"meaning": "a quantifiable measure used to assess performance or outcomes", "synonyms": ["measure", "indicator"]}
 };

@@ -15330,5 +15330,295 @@
     ],
     "example": "The appraisal should check for spending displacement from businesses outside the event district.",
     "topic": "fiscal-regulation"
+  },
+  {
+    "term": "externality",
+    "zh": "外部性；連帶影響",
+    "pos": "n.",
+    "related": [
+      "externalities",
+      "external cost"
+    ],
+    "note": "分析政策或市場行為對第三方造成的正面或負面溢出效應，常配 negative externalities。",
+    "synonyms": [
+      "spillover effect",
+      "side effect"
+    ],
+    "antonyms": [
+      "internalised cost"
+    ],
+    "examples": [
+      {
+        "en": "Without noise controls, night-time construction creates negative externalities for nearby residents.",
+        "zh": "若缺乏噪音管制，夜間工程會對鄰近居民造成負面外部影響。"
+      },
+      {
+        "en": "Pricing measures can help address congestion externalities during peak hours.",
+        "zh": "收費措施有助處理繁忙時段的擠塞外部成本。"
+      }
+    ],
+    "example": "Without noise controls, night-time construction creates negative externalities for nearby residents.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "incidence",
+    "zh": "發生率；出現頻率",
+    "pos": "n.",
+    "related": [
+      "incident",
+      "incidents"
+    ],
+    "note": "多用於公共衞生、安全或違規個案的發生率，常配 rising incidence of…。",
+    "synonyms": [
+      "occurrence rate",
+      "frequency"
+    ],
+    "antonyms": [
+      "absence"
+    ],
+    "examples": [
+      {
+        "en": "District data show a rising incidence of heat-related ambulance calls among elderly residents.",
+        "zh": "地區數據顯示，長者因酷熱召援救護車的發生率正在上升。"
+      },
+      {
+        "en": "Targeted inspections reduced the incidence of non-compliance across licensed premises.",
+        "zh": "針對性巡查降低了持牌處所的違規發生率。"
+      }
+    ],
+    "example": "District data show a rising incidence of heat-related ambulance calls among elderly residents.",
+    "topic": "governance"
+  },
+  {
+    "term": "bias",
+    "zh": "偏差；系統性偏頗",
+    "pos": "n.",
+    "related": [
+      "biased",
+      "selection bias",
+      "reporting bias"
+    ],
+    "note": "解讀 Data File 問卷、自願申報或演算法篩選結果時，用來指出樣本或評估偏差。",
+    "synonyms": [
+      "distortion",
+      "skew"
+    ],
+    "antonyms": [
+      "impartiality",
+      "neutrality"
+    ],
+    "examples": [
+      {
+        "en": "Voluntary online surveys may suffer from selection bias if older residents are under-represented.",
+        "zh": "若長者代表性不足，自願性質的網上問卷可能出現選擇偏差。"
+      },
+      {
+        "en": "Independent audits are needed to check automated screening tools for systematic bias.",
+        "zh": "當局須進行獨立審核，檢查自動化篩選工具有否系統性偏差。"
+      }
+    ],
+    "example": "Voluntary online surveys may suffer from selection bias if older residents are under-represented.",
+    "topic": "governance"
+  },
+  {
+    "term": "uncertainty",
+    "zh": "不確定性",
+    "pos": "n.",
+    "related": [
+      "uncertain",
+      "demand uncertainty"
+    ],
+    "note": "說明未來需求、成本或技術時間表未明，支持先推試點或分階段落實。",
+    "synonyms": [
+      "unpredictability",
+      "ambiguity"
+    ],
+    "antonyms": [
+      "certainty",
+      "predictability"
+    ],
+    "examples": [
+      {
+        "en": "Given demand uncertainty over the next five years, a phased pilot is more prudent than immediate full-scale expansion.",
+        "zh": "鑑於未來五年需求存在不確定性，分階段試行比即時全面擴展更審慎。"
+      },
+      {
+        "en": "Clear eligibility rules would reduce uncertainty for both service providers and applicants.",
+        "zh": "清晰的資格準則可減少服務提供者與申請人的不確定性。"
+      }
+    ],
+    "example": "Given demand uncertainty over the next five years, a phased pilot is more prudent than immediate full-scale expansion.",
+    "topic": "governance"
+  },
+  {
+    "term": "viability",
+    "zh": "長遠可行性；持續營運能力",
+    "pos": "n.",
+    "related": [
+      "viable",
+      "financial viability"
+    ],
+    "note": "常用於方案比較，衡量計劃長遠在財政或營運上能否站得住腳，常配 long-term financial viability。",
+    "synonyms": [
+      "workability",
+      "sustainability"
+    ],
+    "antonyms": [
+      "infeasibility",
+      "unworkability"
+    ],
+    "examples": [
+      {
+        "en": "The review should test the long-term financial viability of the scheme before expanding eligibility.",
+        "zh": "檢討應先測試計劃的長遠財政可行性，才考慮放寬資格。"
+      },
+      {
+        "en": "Without stable operator revenue, the commercial viability of rural routes remains weak.",
+        "zh": "若缺乏穩定的營運收入，偏遠路線的商業可行性仍然薄弱。"
+      }
+    ],
+    "example": "The review should test the long-term financial viability of the scheme before expanding eligibility.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "coherence",
+    "zh": "政策連貫性；一致性",
+    "pos": "n.",
+    "related": [
+      "coherent",
+      "policy coherence"
+    ],
+    "note": "跨部門協作題常用，指不同局署的措施目標一致、不會互相抵銷。",
+    "synonyms": [
+      "consistency",
+      "alignment"
+    ],
+    "antonyms": [
+      "fragmentation",
+      "inconsistency"
+    ],
+    "examples": [
+      {
+        "en": "An interdepartmental steering group would strengthen policy coherence across housing, transport and welfare services.",
+        "zh": "跨部門督導小組可加強房屋、交通及福利服務之間的政策連貫性。"
+      },
+      {
+        "en": "Overlapping subsidy rules have undermined the coherence of existing support schemes.",
+        "zh": "重疊的津貼規則削弱了現有支援計劃的一致性。"
+      }
+    ],
+    "example": "An interdepartmental steering group would strengthen policy coherence across housing, transport and welfare services.",
+    "topic": "governance"
+  },
+  {
+    "term": "precedent",
+    "zh": "先例",
+    "pos": "n.",
+    "related": [
+      "unprecedented",
+      "set a precedent"
+    ],
+    "note": "財政或規管取捨常用，常配 avoid setting a costly precedent（避免開創高昂先例）。",
+    "synonyms": [
+      "prior example",
+      "benchmark case"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Providing open-ended bailouts could set a costly fiscal precedent for other sectors.",
+        "zh": "提供無上限紓困可能為其他行業開創高昂的財政先例。"
+      },
+      {
+        "en": "Clear time-limited criteria help ensure that emergency relief does not become a permanent precedent.",
+        "zh": "清晰且有時限的準則有助確保緊急援助不會變成恆常先例。"
+      }
+    ],
+    "example": "Providing open-ended bailouts could set a costly fiscal precedent for other sectors.",
+    "topic": "governance"
+  },
+  {
+    "term": "appropriation",
+    "zh": "核准公帑撥款",
+    "pos": "n.",
+    "related": [
+      "appropriate",
+      "funding appropriation"
+    ],
+    "note": "指經法定或既定程序批核的公共開支撥款，常配 subject to funding appropriation。",
+    "synonyms": [
+      "authorised funding",
+      "budget allocation"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "Capital works under Option 2 would require a separate funding appropriation and a multi-year timetable.",
+        "zh": "方案二涉及的基建工程須另行申請公帑撥款，並需多年時間表。"
+      },
+      {
+        "en": "The Bureau should confirm whether the pilot can be funded within existing appropriations.",
+        "zh": "政策局應確認試點可否在現有核准撥款內支付。"
+      }
+    ],
+    "example": "Capital works under Option 2 would require a separate funding appropriation and a multi-year timetable.",
+    "topic": "fiscal-regulation"
+  },
+  {
+    "term": "beneficiary",
+    "zh": "受惠人；受助群體",
+    "pos": "n.",
+    "related": [
+      "beneficiaries",
+      "intended beneficiary"
+    ],
+    "note": "福利、資助及服務設計題高頻詞，常配 intended beneficiaries（目標受惠人）。",
+    "synonyms": [
+      "recipient",
+      "target user"
+    ],
+    "antonyms": [
+      "contributor"
+    ],
+    "examples": [
+      {
+        "en": "Complex application procedures have prevented some intended beneficiaries from taking up the allowance.",
+        "zh": "繁複的申請程序令部分目標受惠人未能領取津貼。"
+      },
+      {
+        "en": "The review should verify whether subsidies are reaching low-income beneficiaries as planned.",
+        "zh": "檢討應核實津貼有否按計劃惠及低收入受助人。"
+      }
+    ],
+    "example": "Complex application procedures have prevented some intended beneficiaries from taking up the allowance.",
+    "topic": "welfare-population"
+  },
+  {
+    "term": "metric",
+    "zh": "衡量指標",
+    "pos": "n.",
+    "related": [
+      "metrics",
+      "outcome metric",
+      "performance metric"
+    ],
+    "note": "結尾 KPI 及檢討段常用，指可量化的成效或服務指標，常配 outcome metrics。",
+    "synonyms": [
+      "measure",
+      "indicator"
+    ],
+    "antonyms": [],
+    "examples": [
+      {
+        "en": "The six-month review should track both service-uptake metrics and unit-cost figures against the baseline.",
+        "zh": "六個月檢討應按基線追蹤服務參與率指標及單位成本數據。"
+      },
+      {
+        "en": "Activity counts alone are an insufficient metric for judging whether service quality has improved.",
+        "zh": "單靠活動次數不足以作為判斷服務質素有否改善的衡量指標。"
+      }
+    ],
+    "example": "The six-month review should track both service-uptake metrics and unit-cost figures against the baseline.",
+    "topic": "governance"
   }
 ]
