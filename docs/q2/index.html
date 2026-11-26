@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0b6e4f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="description" content="JRE 中文 Q2 ， 議題思維、題庫、計時練習與自評" />
+  <meta name="description" content="JRE 中文 Q2 ， 議題思維、題庫與計時練習" />
   <title>中文 Q2 · JRE Study Hub</title>
   <link rel="stylesheet" href="../shell/tabbar.css?v=20261111" />
   <link rel="stylesheet" href="../shell/study-theme.css?v=20261111" />
   <link rel="stylesheet" href="../shared/exam-workspace.css?v=20261111" />
-  <link rel="stylesheet" href="styles.css?v=20261126a" />
+  <link rel="stylesheet" href="styles.css?v=20261126b" />
   <link rel="stylesheet" href="../shared/reference-lookup.css?v=20261123b" />
 </head>
 <body class="study-screen exam-screen">
@@ -30,7 +30,6 @@
       <button type="button" data-panel="tips">貼士</button>
       <button type="button" data-panel="bank">題庫</button>
       <button type="button" data-panel="drill">計時練習</button>
-      <button type="button" data-panel="mark">自評清單</button>
       <button type="button" data-panel="phrasebank">骨架句</button>
     </nav>
   </header>
@@ -375,7 +374,7 @@
               <button type="button" class="btn" id="btnCopyAnswer">複製答卷</button>
               <span class="count" id="wordCount">0 字</span>
             </div>
-            <p class="muted">答卷只存在呢部裝置（localStorage）。範文喺下面，<strong>自己寫完先開</strong>；交卷後可去「自評清單」打勾。</p>
+            <p class="muted">答卷只存在呢部裝置（localStorage）。範文喺下面，<strong>自己寫完先開</strong>。</p>
           </div>
         </div>
       </div>
@@ -388,33 +387,6 @@
         </div>
         <div class="model-wrap" id="drillSampleWrap" hidden>
           <pre class="brief-sample" id="drillSampleText"></pre>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel" id="panel-mark">
-      <div class="card">
-        <h2>自評清單</h2>
-        <p class="lede">批改重點：清晰立場、具體措施、用事實唔好口號。</p>
-        <ul class="checklist" id="checklist">
-          <li><label><input type="checkbox" data-k="stance" /> 開首已有<strong>明確立場</strong>（唔係「利弊各半」）</label></li>
-          <li><label><input type="checkbox" data-k="r1" /> 理據 1 + <strong>香港例子／數字</strong></label></li>
-          <li><label><input type="checkbox" data-k="r2" /> 理據 2 + <strong>香港例子／數字</strong></label></li>
-          <li><label><input type="checkbox" data-k="rebut" /> 有回應<strong>最強反方</strong>，並解釋為何仍較可取</label></li>
-          <li><label><input type="checkbox" data-k="measure" /> 建議／替代有<strong>可交付</strong>細節（誰做、階段、KPI）</label></li>
-          <li><label><input type="checkbox" data-k="close" /> 短結重申立場，無新論點</label></li>
-          <li><label><input type="checkbox" data-k="noslogan" /> 無空泛口號（例如淨係「大幅增加資源」）</label></li>
-        </ul>
-        <p class="score" id="markScore">0 / 7</p>
-        <button type="button" class="btn" id="btnClearMarks">清自評</button>
-        <div id="q2-backup" class="backup-tools">
-          <p>手動備份 / Manual backup：下載後自行保存；轉裝置須匯入檔案，並非自動同步。<br />JSON v1（完整還原 / full restore）或 CSV v1（七項自評 / seven checklist items）；上限 2 MB。匯入會合併，保留現有勾選。</p>
-          <div class="toolbar">
-            <button type="button" class="btn" data-backup-export="json">匯出 JSON v1</button>
-            <button type="button" class="btn" data-backup-export="csv">匯出 CSV v1</button>
-            <label class="btn">合併匯入 / Import JSON／CSV <input type="file" accept=".json,.csv,application/json,text/csv" aria-label="合併匯入 Q2 備份 / Import Q2 backup" /></label>
-          </div>
-          <p role="status" aria-live="polite" data-backup-status></p>
         </div>
       </div>
     </section>
@@ -454,10 +426,9 @@
     </div>
   </div>
   <div class="toast" id="toast" role="status"></div>
-  <script src="backup.js?v=20261117d"></script>
   <script src="../shared/reference-lookup.js?v=20261123b"></script>
   <script>JreReferenceLookup.mount({base: "../"});</script>
-  <script src="app.js?v=20261126a"></script>
+  <script src="app.js?v=20261126b"></script>
   <script src="../phrases/app.js?v=20261108b"></script>
   <script src="../shell/tabbar.js?v=20261109a"></script>
 </body>

@@ -1,6 +1,5 @@
 (() => {
   const STORAGE_ANSWER = "jre-q2-answer-v1";
-  const STORAGE_MARKS = "jre-q2-marks-v1";
   const STORAGE_DRILL = "jre-q2-drill-id-v1";
 
   const THEME_ZH = {
@@ -120,7 +119,6 @@
       "tips",
       "bank",
       "drill",
-      "mark",
       "phrasebank",
       "frame",
       ...Object.keys(STRUCTURE_SCROLL),
@@ -500,7 +498,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261126a", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261126b", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -849,7 +847,7 @@
       paintTimer();
       if (remain <= 0) {
         stopTick();
-        toast("時間到 — 去自評清單打勾");
+        toast("時間到");
       }
     }, 1000);
   }
@@ -912,64 +910,6 @@
   $("#btnCopyPrompt").onclick = () => copyText(current.prompt, "已複製題目");
   $("#btnCopyAnswer").onclick = () => copyText(answer.value, "已複製答卷");
 
-  const checks = [...document.querySelectorAll("#checklist input")];
-  const scoreEl = $("#markScore");
-  const MARK_KEYS = checks.map((c) => c.dataset.k);
-  function readStoredMarks() {
-    let parsed = {};
-    try {
-      parsed = JSON.parse(localStorage.getItem(STORAGE_MARKS) || "{}") || {};
-    } catch {
-      return {};
-    }
-    if (typeof parsed !== "object" || Array.isArray(parsed)) return {};
-    const out = {};
-    MARK_KEYS.forEach((k) => {
-      if (typeof parsed[k] === "boolean") out[k] = parsed[k];
-    });
-    return out;
-  }
-  function loadMarks() {
-    const saved = readStoredMarks();
-    checks.forEach((c) => {
-      c.checked = !!saved[c.dataset.k];
-    });
-    scoreEl.textContent = `${checks.filter((c) => c.checked).length} / ${checks.length}`;
-  }
-  function saveMarks() {
-    const o = {};
-    checks.forEach((c) => {
-      o[c.dataset.k] = c.checked;
-    });
-    try {
-      localStorage.setItem(STORAGE_MARKS, JSON.stringify(o));
-    } catch {
-      toast("自評未儲存；請匯出備份 / Checklist not saved; export a backup");
-    }
-    scoreEl.textContent = `${checks.filter((c) => c.checked).length} / ${checks.length}`;
-  }
-  checks.forEach((c) => c.addEventListener("change", saveMarks));
-  $("#btnClearMarks").onclick = () => {
-    checks.forEach((c) => {
-      c.checked = false;
-    });
-    saveMarks();
-  };
-  loadMarks();
-  if (window.JreQ2Backup) {
-    JreQ2Backup.mount({
-      root: "#q2-backup",
-      kind: "q2-checklist",
-      key: STORAGE_MARKS,
-      get: () =>
-        JreQ2Backup.merge(
-          "q2-checklist",
-          readStoredMarks(),
-          Object.fromEntries(checks.map((c) => [c.dataset.k, c.checked]))
-        ),
-      refresh: loadMarks,
-    });
-  }
   if (window.JreReferenceLookup) {
     JreReferenceLookup.mount({ base: "../" });
   }
