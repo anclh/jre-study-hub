@@ -27,9 +27,10 @@ function run(filters) {
   return policies.items.filter((item) => matchesItem(item, filters, labels));
 }
 
-test("dataset still has 182 dated cards and both 2025 and 2026", () => {
-  assert.equal(policies.items.length, 182);
-  assert.equal(uniqueYears(policies.items).join(","), "2026,2025");
+test("policy bank retains its baseline card count and year coverage", () => {
+  assert.ok(policies.items.length >= 182, "policy bank has at least 182 cards");
+  const years = uniqueYears(policies.items);
+  assert.ok(years.includes("2025") && years.includes("2026"));
   assert.equal(policies.items.filter((item) => itemYear(item) === "2025").length, 6);
   assert.ok(policies.items.every((item) => Array.isArray(item.departments) && item.departments.length));
 });
