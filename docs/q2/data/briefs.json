@@ -4,7 +4,7 @@
     "source": "Obsidian 04-Policy-Bank/Policy bank.md · + Policy Bank 2026-11-02 EnsembleTX / 華富邨 · + 2026-11-03 ai-governance · + Policy Bank 2026-11-17 SCMP Jun–Nov 7 themes & 北環綫／樓宇維修 · + Policy Bank 2026-11-18 SCMP Jul–Oct 5 themes（簡樸房寬限期／冷靜期／公院收費／大學居港規定／綜援轉職獎勵） · + Policy Bank 2026-11-18 SCMP Batch 2（私營醫療收費透明度／外傭最低工資／煙盒平裝／粉嶺高球環評上訴／預設醫療指示及醫健通） · + 2026-11-25 Q2：公營醫療改革／學童心理健康／送遞員工傷／彈珠機／樂齡科技／廚餘收集（只用指定政府事實） · + 2026-11-26 Q2：個人資料收集、保存期限與外判問責 · + 2026-11-26 Q2：AI 詐騙與網上內容監管／低空經濟與無人機物流",
     "title_zh": "JRE 中文題政策題庫",
     "title_en": "JRE Chinese Q2 policy briefs",
-    "count": 46
+    "count": 44
   },
   "briefs": [
     {
@@ -4254,214 +4254,8 @@
       }
     },
     {
-      "id": "gba-tax-gogba",
-      "memory": {
-        "benefit": "跨境投資稅務更可預期",
-        "risk": "協定談判需時、當地規則複雜",
-        "action": "稅務指引及企業對接"
-      },
-      "n": 42,
-      "title_zh": "港老稅務協定與 GoGBA『十五五』落地",
-      "title": "港老稅務協定與 GoGBA『十五五』落地",
-      "title_en": "HK–Laos tax treaty / GoGBA 15th FYP",
-      "heading": "GBA & going-out · 港老稅務協定與 GoGBA『十五五』落地",
-      "theme_ids": [
-        "national-development",
-        "innovation"
-      ],
-      "prompt": "有意見認為，香港應繼續擴張全面性避免雙重課稅協定網絡（如與老撾等），並強化 GoGBA 等一站式平台，協助港企在『十五五』下把握大灣區及「走出去」機遇，以免「有政策、缺落地」。請分析利弊，表明立場，並提出建議。",
-      "pros": [
-        "稅務協定網絡擴張可降低雙重課稅與不確定性，提升港企海外投資與承包的可預期性。",
-        "GoGBA 一站式資訊／對接有助中小企降低「走出去」與入灣區的資訊門檻。",
-        "對接『十五五』與大灣區機遇，可把宏觀政策轉成企業可執行的路徑，減少口號與實操脫節。"
-      ],
-      "cons": [
-        "協定談判耗時，短期難覆蓋所有目標市場；企業或高估「一簽即通」。",
-        "平台若只彙集資料、缺配對與跟進，仍會變成「有政策、缺落地」。",
-        "稅務與營商環境受當地法治、外匯與產業政策影響，單靠港方工具無法消除全部風險。"
-      ],
-      "stance": "贊成「擴張稅務網絡＋強化 GoGBA 落地服務」，惟須配對、跟進與成效指標",
-      "stance_points": [
-        "港老全面性避免雙重課稅協定（股息預扣稅上限 10%、特許權使用費 5%）屬稅務網絡擴張的具體一步，對「走出去」企業有降低雙重課稅不確定性的實利。",
-        "GoGBA 發展日對接國家「十五五」與《香港第一個五年規劃》；平台宜由資訊彙集走向場景對接與個案跟進。",
-        "衡量成效應用企業實際使用、配對成功與跟進完成率，而非只數簽訂協定宗數。"
-      ],
-      "measures": [
-        "持續擴張全面性避免雙重課稅協定網絡，並公布對重點行業（製造、專業服務、基建）的稅務影響說明（以當局最新文本為準）。",
-        "強化 GoGBA：由資訊門戶升級為「政策解讀＋對接＋跟進」；設灣區場景與「走出去」兩條清晰路徑。",
-        "訂落地 KPI：平台活躍企業數、成功配對／諮詢完成率、企業回訪滿意的可核實比例；年度公開簡報，避免只報協定簽署數。"
-      ],
-      "facts": [
-        {
-          "text": "港老全面性避免雙重課稅協定：股息預扣稅上限 10%、特許權使用費 5%。info.gov.hk 2026-10-29",
-          "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900532.htm"
-        },
-        {
-          "text": "GoGBA 發展日對接國家「十五五」與《香港第一個五年規劃》，協助港企把握大灣區及「走出去」機遇。info.gov.hk 2026-10-29",
-          "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900559.htm"
-        },
-        {
-          "text": "實利討論應聚焦：協定降預扣稅不確定性（如股息 10%／特許權 5%）、GoGBA 資訊與對接門檻，並以當局最新文本為準。"
-        }
-      ],
-      "sampleOutline": {
-        "stance": "贊成擴張避免雙重課稅協定網絡並強化 GoGBA 落地服務，反對只停留在簽署與宣傳。",
-        "arguments": [
-          "稅務協定降低雙重課稅的不確定性，令製造、專業服務與基建較易評估跨境項目。",
-          "十五五與大灣區機遇若只有資料彙集，中小企仍不知如何對接，平台須升級為解讀、配對與跟進。"
-        ],
-        "rebuttal": "協定覆蓋有限，亦消除不了當地法治與外匯風險，故應以活躍企業與跟進完成率衡量，而不是只數簽署宗數。",
-        "recommendations": [
-          "持續擴網並公布重點行業的稅務影響說明，同時提示企業自行盡職審查。",
-          "把 GoGBA 分成入灣區與走出去兩條路徑，並按年公開配對與跟進指標。"
-        ],
-        "closing": "贊成以稅務網絡加平台跟進把十五五機遇變成可執行路徑，成效必須可核實。"
-      },
-      "sample_answer": "本人支持擴展避免雙重課稅協定網絡，並同時加強企業使用這些安排的支援。協定有助企業規劃跨境投資；談判需時，企業亦未必知道如何使用，故須清楚交代適用條件，並以諮詢及對接成效衡量，不能只停留在簽署。\n\n首先，企業跨境經營時，需要評估不同地區的稅務責任和投資回報。香港與老撾簽署全面性避免雙重課稅協定，是擴展網絡的一個例子。協定可為合資格交易提供較清晰的稅務安排，但具體待遇仍取決於協定條文、適用條件及相關程序。若企業能在投資前了解規則，便較容易評估成本並尋求專業意見；簽署本身並不保證每宗交易都自動受惠。\n\n其次，中小企開拓大灣區或海外市場，除了稅務，亦可能需要了解當地規則、尋找合作對象及跟進項目。GoGBA 提供與大灣區營商相關的資訊及支援，顯示政府和相關機構可作為企業尋找服務的入口。若平台只提供資料而缺少清晰轉介，企業仍可能不知道下一步應聯絡誰。把政策解讀、合適的專業轉介及後續查詢連起來，較有機會協助企業把資訊轉為可執行計劃。企業規模和投資方式不同，可能需要不同程度的稅務及營商支援。簡明的初步資訊可以幫助企業辨識問題，但涉及個別交易的結論仍須按事實及適用法律評估。\n\n誠然，協定談判耗時，亦不能消除匯率、交易對手或當地法規變動等所有風險。政府不應把協定或平台描述成成功進入市場的保證。企業仍須按個別項目作盡職審查，必要時取得獨立專業意見。只要官方說明適用範圍，並讓企業知道如何進一步查詢，擴展協定與改善支援仍可降低資訊不確定性。\n\n為促進企業使用政策工具，本人建議三項措施。一、由財經事務及庫務局聯同稅務部門，按市場及企業需要推進協定工作，公布已生效安排及基本適用資訊。二、由相關企業支援機構改善 GoGBA 查詢、轉介及後續跟進，並說明服務範圍和企業應自行核實的事項。三、定期公布諮詢處理、企業回訪及服務使用情況；若企業反覆遇到相同資訊缺口，應改善指引及轉介，再檢討資源分配。服務成效亦不應只看活動出席或網頁瀏覽次數，可追蹤諮詢是否獲回覆及企業是否找到合適的下一步支援。協定生效日期和適用條件亦應分開說明，方便企業掌握。\n\n綜上，本人支持擴展稅務協定網絡及強化企業支援。政府應以資訊清晰度、跟進及企業實際使用情況檢討成效。\n",
-      "sample_answer_en": "I support expanding the network of double taxation agreements and improving support for businesses using them. Agreements can help firms plan cross-boundary investments. Negotiations take time and businesses may need help applying the rules. Explain eligibility and assess enquiries and referrals alongside progress on signatures.\n\nFirst, firms operating across borders need to estimate tax obligations and investment returns. Hong Kong's signature of a comprehensive double taxation agreement with Laos illustrates expansion of the network. Agreements can clarify tax treatment for eligible transactions subject to their provisions, conditions and procedures. Understanding the rules before investing helps firms assess costs and obtain professional advice. Signing alone does not confer benefits on every transaction.\n\nSecond, small and medium-sized firms entering Greater Bay Area or overseas markets may also need to understand local rules, find partners and follow up projects. GoGBA offers business information and support for the Greater Bay Area, giving firms a point of access. Information alone may leave people unsure whom to contact next. Link explanation, suitable professional referrals and follow-up so firms can act on it. Needs differ by firm size and type of investment. Plain introductory material helps identify issues, while individual transactions need assessment against the facts and applicable law.\n\nAdmittedly, negotiations take time and agreements cannot remove exchange-rate, counterparty or regulatory risks. Neither agreements nor a platform can guarantee successful market entry. Firms still need project-level due diligence and independent advice where necessary. Clear official information and enquiry routes can make the rules easier to navigate.\n\nI propose three measures. First, the Financial Services and the Treasury Bureau and tax authorities should pursue agreements in line with market and business needs and publish arrangements in force and basic eligibility. Second, support organisations should improve GoGBA enquiries, referrals and follow-up, explaining their remit and what firms need to check themselves. Third, report enquiry handling, follow-up and service use. Address recurring information gaps before reviewing resources. Track replies and whether firms found suitable next steps alongside attendance and website visits. Explain effective dates and eligibility separately.\n\nIn conclusion, expand the agreement network and strengthen business support. Use clarity, follow-up and actual use to review effectiveness.",
-      "sample_note": "五步範文：立場、兩段理據、反駁、建議、短結；例子截至 2026-11-16。",
-      "vocab_phrases": {
-        "terms": [
-          {
-            "zh": "全面性避免雙重課稅協定（CDTA）",
-            "en": "Comprehensive Avoidance of Double Taxation Agreement (CDTA)"
-          },
-          {
-            "zh": "股息及特許權使用費預扣稅上限",
-            "en": "withholding tax caps on dividends (10%) & royalties (5%)"
-          },
-          {
-            "zh": "GoGBA 一站式落地服務",
-            "en": "GoGBA one-stop landing & advisory platform"
-          },
-          {
-            "zh": "「走出去」與入灣區雙路徑",
-            "en": "dual-track 'going global' & GBA entry pathways"
-          },
-          {
-            "zh": "配對跟進成效指標",
-            "en": "matchmaking & follow-up conversion KPIs"
-          },
-          {
-            "zh": "企業資訊門檻",
-            "en": "SME cross-border information barrier"
-          }
-        ],
-        "phrases": [
-          {
-            "zh": "擴展避免雙重課稅協定網絡可降低港企跨境投資的不確定性，惟單靠簽署協定不足以自動轉化為商機，須配合行業稅務解讀。",
-            "en": "Expanding the CDTA network lowers cross-border tax uncertainty for Hong Kong firms, yet treaty signings must be paired with sector-specific guidance to unlock real deals."
-          },
-          {
-            "zh": "GoGBA 平台宜由資訊門戶升級為「解讀＋配對＋跟進」落地服務，並以成功配對率及回訪滿意度而非僅以協定數目量度成效。",
-            "en": "Upgrading GoGBA from an information portal into a matchmaking and follow-up platform—measured by conversion and satisfaction KPIs—prevents policies from stalling on paper."
-          }
-        ]
-      }
-    },
-    {
-      "id": "piraeus-green-shipping-corridor",
-      "n": 43,
-      "title_zh": "香港–比雷埃夫斯綠色航運走廊",
-      "title": "香港–比雷埃夫斯綠色航運走廊",
-      "title_en": "HK–Piraeus green shipping corridor",
-      "heading": "HK–Piraeus green shipping corridor · 香港–比雷埃夫斯綠色航運走廊",
-      "theme_ids": [
-        "transport-logistics",
-        "environment-climate"
-      ],
-      "prompt": "據《南華早報》報道，行政長官宣布香港與希臘比雷埃夫斯港建立綠色航運走廊，並成立專責小組研究航運綠色燃料交易平台，同時提出與洋浦及湛江合作；相關五年規劃目標包括於二○三○年前建立五條綠色能源走廊，以及百分之七的香港註冊船舶使用綠色航運燃料。有意見認為政府應積極投放政策資源推動綠色航運及燃料交易；亦有意見指出綠色燃料成本偏高、認證標準不一，且目標不等於實際成果。請分析利弊、表明立場，並提出具體建議，說明如何兼顧商業可行性、燃料核證及成效衡量。請用中文作答。",
-      "memory": {
-        "benefit": "結合港口合作與燃料交易研究，鞏固海運減碳地位",
-        "risk": "綠色燃料價高且標準不一，目標未等於實績",
-        "action": "先定認證標準與試點航線，公開加注及採用量"
-      },
-      "pros": [
-        "藉香港與比雷埃夫斯港的綠色航運走廊合作，加上擬議與洋浦、湛江港口對接及成立交易平台專責小組，有助連結燃料供應與國際航運需求。",
-        "訂立2030年前5條綠色能源走廊及7%香港註冊船舶使用綠色航運燃料等五年目標，可為航運及海事服務業提供清晰的低碳轉型方向。"
-      ],
-      "cons": [
-        "綠色船用燃料成本高、供應穩定性及各國全生命周期碳認證標準尚未完全統一，可能令船東觀望，減慢實際採用。",
-        "相關數字屬於規劃目標而非已達成成果；此外，「綠色航運走廊」與「綠色能源供應走廊」性質不同，若混為一談容易高估本地即時加注或減碳能力。"
-      ],
-      "stance": "支持在明確核證標準及商業試點基礎上推進綠色航運走廊與交易平台研究，並以實際加注量及船舶採用比例作為推進依據。",
-      "stance_points": [
-        "發展綠色燃料加注與交易有助提升香港國際航運中心競爭力，但必須把規劃目標與實際落地進度分開交代。",
-        "航運減碳涉及跨港協作與價格差問題，宜先在指定航線驗證合約、認證及供應鏈銜接。"
-      ],
-      "measures": [
-        "由運輸及物流局聯同海事處及綠色燃料交易平台專責小組，就比雷埃夫斯走廊及擬議洋浦、湛江合作訂明供應與交易分工，並在進度報告中區分「航運走廊」與「能源供應走廊」（研習建議，非政府承諾）。",
-        "對接國際海事減排規範，建立統一的綠色燃料碳足跡及認證核查準則，減少船公司及金融機構的合規風險。",
-        "按期公布綠色燃料實際加注量、與傳統燃料價格差距及香港註冊船舶使用率（對照7%目標），按市場反應調整港口配套安排。"
-      ],
-      "facts": [
-        {
-          "text": "據《南華早報》2026年11月16日報道，行政長官宣布香港與希臘比雷埃夫斯港（Piraeus）建立綠色航運走廊，並成立專責小組研究航運綠色燃料交易平台，同時提出與洋浦及湛江合作。",
-          "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374617/hong-kong-embarks-green-shipping-collaboration-greek-port"
-        },
-        {
-          "text": "報道載述相關五年目標為2030年前建立5條綠色能源走廊，以及7%香港註冊船舶使用綠色航運燃料；目標不等於已達成成果，且須區分「航運走廊」與「能源供應走廊」。",
-          "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374617/hong-kong-embarks-green-shipping-collaboration-greek-port"
-        }
-      ],
-      "sampleOutline": {
-        "stance": "本人支持穩步推進香港–比雷埃夫斯綠色航運走廊及燃料交易平台研究，但須以燃料碳核證標準及實際加注表現作為推進準繩。",
-        "arguments": [
-          "結合擬議的洋浦、湛江供應合作與綠色燃料交易平台研究，可把香港的角色從傳統貨櫃港延伸至海運減碳及燃料交易服務。",
-          "透過2030年前7%香港註冊船舶採用綠色航運燃料等五年目標，有助業界及早規劃船隊及港口配套。"
-        ],
-        "rebuttal": "綠色燃料高成本及認證分歧確實可能拖慢落實，而「目標」亦不等於「成果」；因此更應先在具體航線試點並公開加注數據，並嚴格區分航運走廊與能源供應走廊。",
-        "recommendations": [
-          "專責小組先確立國際認可的燃料碳核證標準，並釐清香港–比雷埃夫斯與洋浦、湛江擬議合作的供應分工。",
-          "定期公布實際綠色燃料加注量、價格差及香港註冊船舶採用進度，按實效決定下一步配套。"
-        ],
-        "closing": "本人支持以核證標準與可量度加注實績為本，務實推進綠色航運走廊及燃料交易發展。"
-      },
-      "sample_answer": "本人支持推進香港與比雷埃夫斯的綠色航運走廊，並研究綠色燃料交易平台，但須先訂核證標準及公布實際加注，不能把五年目標當成已經減碳。港口合作給船公司一個方向；燃料價高及標準不一，會令船東停在觀望。\n\n首先，據《南華早報》二○二六年十一月十六日報道，行政長官宣布香港與希臘比雷埃夫斯港建立綠色航運走廊，成立專責小組研究綠色燃料交易平台，並提出與洋浦及湛江合作。這是因為走廊改變的是指定港口之間的合作及交易研究，而不是本地已經具備穩定的綠色燃料供應。所以航運及海事服務業得到可討論的減碳方向。因此，支持推進合作，但必須把「綠色航運走廊」與「綠色能源供應走廊」分開交代，不能混成即時加注能力。\n\n其次，報道的五年目標是二○三○年前建立五條綠色能源走廊，以及百分之七的香港註冊船舶使用綠色航運燃料。這些是規劃目標，不是已達成成果。這是因為目標改變的是業界規劃的參照，而不是船舶已經轉用綠色燃料。所以船東仍可能因成本高、供應不穩及碳認證未統一而觀望。因此，應否加港口配套，要看實際加注量及註冊船舶採用比例，而不是重述五條走廊或百分之七這兩個目標。目標與成果必須分開。\n\n誠然，綠色船用燃料成本高、供應不穩，各國全生命周期碳認證尚未統一，船東觀望會令走廊停留在宣布，本地亦未有即時加注實績。若由運輸及物流局聯同海事處及專責小組訂明供應與交易分工，並對接國際規則建立碳足跡認證，走廊及交易平台研究的效益仍然值得爭取，故本人維持支持。未有加注數據前，不把宣布本身寫成減碳已經發生。\n\n為達到可核證、可量度的綠色航運合作，本人建議以標準及實績推進，並作以下研習安排，此並非政府承諾。一、由運輸及物流局聯同海事處及專責小組，訂明比雷埃夫斯走廊與擬議洋浦、湛江合作的供應和交易分工，進度報告分開標示航運走廊與能源供應走廊，以處理把目標當成成果。二、為避免船東因認證不一而停步，對接國際海事減排規則，建立綠色燃料碳足跡的核查準則。三、於檢討時同時公布實際加注量、與傳統燃料的價格差距，以及香港註冊船舶使用率對照百分之七目標。若加注不足或價差令採用停滯，先調整港口配套，再決定是否擴展。五條走廊與百分之七都只是目標。\n\n綜上，本人支持推進綠色航運走廊及交易平台研究。下一步先訂認證並分開公布走廊類別，並以加注量及註冊船舶採用率，決定是否加配套。",
-      "sample_answer_en": "I support advancing the Hong Kong–Piraeus green shipping corridor and studying a green fuel trading platform. Set verification standards and report actual bunkering first. Five-year targets cannot be counted as emissions reductions. Port partnerships give shipping companies a direction, but high fuel costs and divergent standards can keep owners on the sidelines.\n\nFirst, the South China Morning Post reported on 16 November 2026 that the Chief Executive announced a green shipping corridor with the Greek port of Piraeus, a task force to study a green fuel trading platform and proposed co-operation with Yangpu and Zhanjiang. The corridor advances co-operation between named ports and exploration of trading arrangements. Stable local green fuel supply has yet to be demonstrated. Shipping and maritime services have a direction for discussing emissions reductions. Report green shipping corridors and green energy supply corridors separately, without implying immediate bunkering capacity.\n\nSecond, the reported five-year targets are five green energy corridors by 2030 and use of green marine fuels by 7% of Hong Kong-registered vessels. The figures guide planning. They do not demonstrate fuel switching. Owners may hesitate while costs are high, supply is uncertain and carbon certification varies. Let actual bunkering and the proportion of registered ships using green fuel guide port investment.\n\nAdmittedly, green marine fuels are expensive, supply is uncertain and lifecycle carbon certification differs across countries. If owners hold back, the corridor may remain an announcement and local bunkering has yet to be demonstrated. Specify who handles supply and trading, and align carbon footprint verification with international rules. That would preserve the value of work on the corridor and platform. Report emissions gains only when supported by data.\n\nI propose three steps for this exercise. They are my recommendations, not government commitments. First, the Transport and Logistics Bureau, Marine Department and task force should assign responsibilities for supply and trading in the Piraeus corridor and proposed partnerships with Yangpu and Zhanjiang, distinguishing shipping and energy supply corridors in reporting. Second, align with international maritime emissions rules and set verification criteria for green fuel carbon footprints. Third, publish bunkered volumes, the price gap with conventional fuel and uptake by Hong Kong-registered vessels against 7%. If volumes fall short or prices stall adoption, adjust port facilities before expanding. The five corridors and 7% remain targets.\n\nIn conclusion, proceed with the corridor and platform study. Set verification standards and distinguish corridor types, then use bunkered volumes and uptake to guide further port support.",
-      "sample_note": "五步範文：立場、兩段理據、反駁、建議、短結。數字只取材自本題事實欄。建議標明為研習建議，不是政府承諾。",
-      "vocab_phrases": {
-        "terms": [
-          {
-            "zh": "綠色航運走廊 vs 綠色能源供應走廊",
-            "en": "green shipping corridor vs green energy supply corridor"
-          },
-          {
-            "zh": "全生命周期碳足跡核證",
-            "en": "lifecycle carbon-footprint certification"
-          },
-          {
-            "zh": "綠色船用燃料價差",
-            "en": "green-vs-conventional marine fuel price spread"
-          },
-          {
-            "zh": "實際加注量與船舶採用率",
-            "en": "actual bunkering volume & fleet adoption share"
-          },
-          {
-            "zh": "五年規劃目標（非已達成成果）",
-            "en": "5-year planning target (not achieved outcome)"
-          },
-          {
-            "zh": "交易平台專責小組",
-            "en": "green marine-fuel trading platform task force"
-          }
-        ],
-        "phrases": [
-          {
-            "zh": "推動香港與海外及內地港口共建綠色航運走廊有助搶佔低碳海運先機，惟進度報告須清晰區分「航運走廊」與「能源供應走廊」及「規劃目標」與「實際成果」。",
-            "en": "Building green shipping corridors positions Hong Kong in low-carbon maritime trade, provided reporting clearly separates shipping corridors from supply corridors and targets from achieved outcomes."
-          },
-          {
-            "zh": "為釋除船東因燃料價差及標準不一而觀望的顧慮，當局宜對接國際碳核證準則，並以實際加注量及本地註冊船使用率作為推進依據。",
-            "en": "Aligning with international carbon certification standards and pacing port rollout by actual bunkering volumes and fleet uptake help overcome shipowners' cost-and-standard hesitancy."
-          }
-        ]
-      }
-    },
-    {
       "id": "personal-data-retention-outsourcing",
-      "n": 44,
+      "n": 42,
       "title_zh": "個人資料收集、保存期限與外判問責",
       "title": "個人資料收集、保存期限與外判問責",
       "title_en": "Personal data minimisation, retention limits & outsourcing accountability",
@@ -4566,7 +4360,7 @@
     },
     {
       "id": "ai-scam-content-regulation",
-      "n": 45,
+      "n": 43,
       "title_zh": "AI 詐騙與網上內容監管",
       "title": "AI 詐騙與網上內容監管",
       "title_en": "AI scams & online content regulation",
@@ -4668,7 +4462,7 @@
     },
     {
       "id": "low-altitude-economy-drones",
-      "n": 46,
+      "n": 44,
       "title_zh": "低空經濟與無人機物流",
       "title": "低空經濟與無人機物流",
       "title_en": "Low-altitude economy & drone logistics",
@@ -4836,13 +4630,6 @@
       "example": "河套東連收回私人土地 112 幅、約 5.7 公頃。",
       "measure": "按基建節點公布分階段收地／熟地時間表＋主責；補償設協議達成率／遷置時限等指標。",
       "tie": "收地對齊基建節點，防有藍圖無交代。"
-    },
-    {
-      "id": "gba-tax",
-      "theme": "灣區稅務",
-      "example": "港老稅約股息預扣上限 10%、特許權 5%；GoGBA 對接十五五。",
-      "measure": "擴稅約＋行業說明；GoGBA 升為解讀＋對接＋跟進，訂活躍企業／配對完成率 KPI。",
-      "tie": "擴網絡＋強化落地，防只報簽署數。"
     },
     {
       "id": "fertility",
@@ -5071,16 +4858,6 @@
       "n": 41,
       "theme": "代幣化結算",
       "stance_one_liner": "24x7 有條件，先銜接 RTGS"
-    },
-    {
-      "n": 42,
-      "theme": "稅務／GoGBA",
-      "stance_one_liner": "擴稅網＋落地跟進，要成效"
-    },
-    {
-      "n": 43,
-      "theme": "香港–比雷埃夫斯綠色航運走廊",
-      "stance_one_liner": "先定碳核證與試點，按實際加注量推進"
     }
   ],
   "sources": [

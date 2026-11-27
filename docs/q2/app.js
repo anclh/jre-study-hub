@@ -544,7 +544,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261127c", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261127d", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -755,8 +755,9 @@
     card.setAttribute("aria-pressed", flashFlipped ? "true" : "false");
     const progress = $("#flashProgress");
     if (progress) progress.textContent = `${flashIndex + 1} / ${deck.length}`;
-    const knownN = Object.values(flashMarks).filter((v) => v === "known").length;
-    const unknownN = Object.values(flashMarks).filter((v) => v === "unknown").length;
+    const deckMarks = deck.map((entry) => flashMarks[entry.id]);
+    const knownN = deckMarks.filter((v) => v === "known").length;
+    const unknownN = deckMarks.filter((v) => v === "unknown").length;
     const score = $("#flashScore");
     if (score) score.textContent = `識 ${knownN} · 未識 ${unknownN}`;
     const hint = $("#flashHint");
