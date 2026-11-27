@@ -646,3 +646,55 @@ textarea {
   overflow-wrap: anywhere;
 }
 #panel-tips .tip-sentence:last-child { margin-bottom: 0; }
+
+/* Bilingual must-know vocab & phrases drawer inside Q2 brief cards. */
+.brief-vocab .brief-sub {
+  margin: var(--space-2) 0 var(--space-1);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+}
+.brief-vocab .brief-sub:first-child { margin-top: 0; }
+.vocab-terms-list,
+.vocab-phrases-list {
+  list-style: none;
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+.vocab-phrases-list { margin-bottom: 0; }
+.vocab-terms-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: var(--card2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.vocab-zh { font-weight: 700; color: var(--text); }
+.vocab-en { font-size: 12px; color: var(--muted); }
+.vocab-phrases-list li {
+  padding: var(--space-2) var(--space-3);
+  background: var(--accent-soft);
+  border-inline-start: 2px solid var(--accent);
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+.vocab-phrase-zh {
+  margin: 0 0 4px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text);
+}
+.vocab-phrase-en {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+}

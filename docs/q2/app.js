@@ -172,6 +172,8 @@
       ...(brief.theme_ids || []).map(themeLabel),
       brief.sample_answer || "",
       brief.sample_note || "",
+      ...(brief.vocab_phrases?.terms || []).flatMap((t) => [t.zh || "", t.en || ""]),
+      ...(brief.vocab_phrases?.phrases || []).flatMap((p) => [p.zh || "", p.en || ""]),
     ]
       .join(" ")
       .toLowerCase();
@@ -314,6 +316,37 @@
     ].join("");
   }
 
+  function vocabPhrasesHtml(brief) {
+    const vp = brief.vocab_phrases;
+    if (!vp) return "";
+    const terms = Array.isArray(vp.terms) ? vp.terms.filter((t) => t && (t.zh || t.en)) : [];
+    const phrases = Array.isArray(vp.phrases) ? vp.phrases.filter((p) => p && (p.zh || p.en)) : [];
+    if (!terms.length && !phrases.length) return "";
+    const termsHtml = terms.length
+      ? `<p class="brief-sub">核心詞彙 · Key Terms</p><ul class="vocab-terms-list">${terms
+          .map(
+            (t) =>
+              `<li><span class="vocab-zh">${escapeHtml(t.zh || "")}</span><span class="vocab-en">${escapeHtml(t.en || "")}</span></li>`
+          )
+          .join("")}</ul>`
+      : "";
+    const phrasesHtml = phrases.length
+      ? `<p class="brief-sub">高分句式 · Exam Phrases</p><ul class="vocab-phrases-list">${phrases
+          .map(
+            (p) =>
+              `<li><p class="vocab-phrase-zh">${escapeHtml(p.zh || "")}</p><p class="vocab-phrase-en">${escapeHtml(p.en || "")}</p></li>`
+          )
+          .join("")}</ul>`
+      : "";
+    return `<details class="brief-nest brief-vocab">
+      <summary>必識詞彙與句式（中英對照）</summary>
+      <div class="brief-nest-body">
+        ${termsHtml}
+        ${phrasesHtml}
+      </div>
+    </details>`;
+  }
+
   function sampleHtml(brief) {
     if (!brief.sample_answer) return "";
     return `<details class="brief-nest">
@@ -397,6 +430,7 @@
         </div>
         <div class="brief-body">
           ${briefStagesHtml(brief)}
+          ${vocabPhrasesHtml(brief)}
           ${sampleHtml(brief)}
           <div class="brief-actions">
             <button type="button" class="btn primary btn-use-drill" data-id="${escapeAttr(brief.id)}">用呢題計時</button>
@@ -498,7 +532,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261126e", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261127a", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
