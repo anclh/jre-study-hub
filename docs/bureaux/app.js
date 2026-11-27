@@ -1,10 +1,12 @@
-/* Bureaux browse + flashcards. Both modes read data/bureaux.json. No localStorage. */
+/* Bureaux browse and flashcards use the local portfolio data and the current Q2 bank. */
 (() => {
-  const DATA_URL = "data/bureaux.json?v=20261123a";
+  const DATA_URL = "data/bureaux.json?v=20261127q2sync";
+  const Q2_URL = "../q2/data/briefs.json";
   const AS_OF = "2026-11-23";
 
   const state = {
     pack: null,
+    q2Issues: [],
     mode: "browse",
     deck: [],
     index: 0,
@@ -21,9 +23,9 @@
       .replace(/"/g, "&quot;");
   }
 
-  function buildCards(bureaux) {
+  function buildCards() {
     const cards = [];
-    (bureaux || []).forEach((bureau) => {
+    state.pack.bureaux.forEach((bureau) => {
       cards.push({
         id: `${bureau.id}-remit`,
         bureauId: bureau.id,
@@ -33,7 +35,7 @@
         title: bureau.zh,
         titleEn: bureau.en,
         lines: bureau.responsibilities || [],
-        status: "職責（今次沒有改寫）",
+        status: "決策局職責",
         date: "",
         source: "",
         sourceName: "",
@@ -54,7 +56,17 @@
         });
       });
     });
-    return cards;
+    return cards.concat(state.q2Issues.map(({ issue, brief }) => ({
+      id: issue.id,
+      bureauIds: issue.bureauIds,
+      kind: "Q2 議題分工",
+      front: `哪一個決策局或機構負責「${brief.title_zh}」？`,
+      frontEn: brief.title_en,
+      title: issue.lead,
+      titleEn: brief.title_en,
+      lines: [issue.owner, issue.collaborate, issue.execute].filter(Boolean),
+      sources: [...sourceList(issue), { url: policyCardUrl(brief.id), name: "政策溫習卡" }],
+    })));
   }
 
   function shuffle(list) {
@@ -119,23 +131,21 @@
 
   function filterLookup() {
     const search = $("search");
-    const issueLookup = $("issue-lookup");
     const empty = $("lookup-empty");
     if (!search) return;
     const keywords = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
     const cards = [...document.querySelectorAll("#browse-view .bureau-card, #browse-view .issue-card")];
     let matches = 0;
-    let issues = 0;
     cards.forEach((card) => {
       const text = [card.dataset.kw, card.dataset.keywords, card.textContent].join(" ").toLowerCase();
       const hit = keywords.every((keyword) => text.includes(keyword));
       card.hidden = !hit;
-      if (hit) {
-        matches += 1;
-        if (card.matches(".issue-card")) issues += 1;
-      }
+      if (hit) matches += 1;
     });
-    if (issueLookup) issueLookup.hidden = issues === 0;
+    if ($("q2-issues").childElementCount) {
+      $("issue-lookup").hidden = !document.querySelector("#q2-issues .issue-card:not([hidden])");
+    }
+    $("other-issue-lookup").hidden = !document.querySelector("#other-issues .issue-card:not([hidden])");
     if (empty) empty.hidden = matches > 0;
   }
 
@@ -157,10 +167,54 @@
       .join(" ");
   }
 
+  function policyCardUrl(briefId) {
+    return `../policy/#q2-${encodeURIComponent(briefId)}`;
+  }
+
+  function renderIssue(issue, brief) {
+    const title = brief?.title_zh || issue.zh;
+    const titleEn = brief?.title_en || issue.en;
+    const keywords = [issue.keywords, issue.zh, issue.en, ...(issue.bureauIds || [])].join(" ");
+    return `<details class="issue-card" id="${escapeHtml(issue.id)}" data-keywords="${escapeHtml(keywords)}"${brief ? ` data-brief-id="${escapeHtml(brief.id)}"` : ""}>
+      <summary>
+        <span><strong>${escapeHtml(title)}</strong><span class="issue-en" lang="en">${escapeHtml(titleEn)}</span></span>
+        <span class="issue-lead">${escapeHtml(issue.lead)}</span>
+      </summary>
+      <div class="issue-body">
+        <dl>
+          <dt>主責／統籌</dt><dd>${escapeHtml(issue.owner)}</dd>
+          ${issue.collaborate ? `<dt>協作</dt><dd>${escapeHtml(issue.collaborate)}</dd>` : ""}
+          <dt>執行</dt><dd>${escapeHtml(issue.execute)}</dd>
+        </dl>
+        ${!brief && issue.example ? `<p class="issue-example"><strong>答題例句</strong> ${escapeHtml(issue.example)}</p>` : ""}
+        <p class="flash-sources">
+          ${sourceHtml(sourceList(issue))}
+          ${brief ? `<a href="${policyCardUrl(brief.id)}">政策溫習卡 →</a>` : ""}
+        </p>
+      </div>
+    </details>`;
+  }
+
+  function renderIssues(q2) {
+    const issues = state.pack.issues || [];
+    const byBrief = new Map([...issues, ...(state.pack.q2Issues || [])].filter((issue) => issue.briefId).map((issue) => [issue.briefId, issue]));
+    state.q2Issues = (q2?.briefs || []).flatMap((brief) => {
+      const issue = byBrief.get(brief.id);
+      return issue ? [{ issue, brief }] : [];
+    });
+    $("q2-issues").innerHTML = state.q2Issues.map(({ issue, brief }) => renderIssue(issue, brief)).join("");
+    $("other-issues").innerHTML = issues.filter((issue) => !issue.briefId).map((issue) => renderIssue(issue)).join("");
+    $("q2-issue-status").innerHTML = q2
+      ? `<a href="../q2/#bank">中文 Q2 題庫</a>的主責及執行分工 · ${state.q2Issues.length}／${q2.briefs.length} 題`
+      : "暫時無法核對中文 Q2 題庫。請重新整理。";
+    filterLookup();
+    openLinkedIssue();
+  }
+
   function currentPool() {
     const bureauId = $("flash-bureau") ? $("flash-bureau").value : "all";
-    const cards = buildCards(state.pack.bureaux || []);
-    return bureauId === "all" ? cards : cards.filter((card) => card.bureauId === bureauId);
+    const cards = buildCards();
+    return bureauId === "all" ? cards : cards.filter((card) => card.bureauId === bureauId || card.bureauIds?.includes(bureauId));
   }
 
   function showCard() {
@@ -316,26 +370,39 @@
     const id = location.hash.slice(1);
     if (!id || id === "flash") return;
     const linked = document.getElementById(id);
-    if (linked && linked.matches(".issue-card")) linked.open = true;
+    if (linked?.matches(".issue-card")) {
+      linked.open = true;
+      requestAnimationFrame(() => linked.scrollIntoView({ block: "start" }));
+    }
+  }
+
+  async function loadJson(url) {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    return response.json();
   }
 
   async function load() {
     const list = $("bureaux-list");
     const flashState = $("flash-state");
     try {
-      const response = await fetch(DATA_URL, { cache: "no-store" });
-      if (!response.ok) throw new Error("HTTP " + response.status);
-      state.pack = await response.json();
+      const [pack, q2] = await Promise.all([
+        loadJson(DATA_URL),
+        loadJson(Q2_URL).catch(() => null),
+      ]);
+      state.pack = pack;
       if (!Array.isArray(state.pack.bureaux) || state.pack.bureaux.length !== 15) {
         throw new Error("決策局數目不是 15");
       }
       renderBrowse();
+      renderIssues(Array.isArray(q2?.briefs) ? q2 : null);
       fillBureauFilter();
-      resetDeck(buildCards(state.pack.bureaux));
+      resetDeck(buildCards());
       if (location.hash === "#flash") setMode("flash");
     } catch (error) {
       const message = "決策局資料暫時載入不到。請再整理頁面。";
       if (list) list.innerHTML = `<p class="bureau-state">${message}</p>`;
+      $("q2-issue-status").textContent = message;
       if (flashState) {
         flashState.hidden = false;
         flashState.textContent = message;
@@ -345,6 +412,6 @@
 
   bind();
   filterLookup();
-  openLinkedIssue();
+  window.addEventListener("hashchange", openLinkedIssue);
   load();
 })();

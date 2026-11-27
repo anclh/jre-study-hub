@@ -1,0 +1,210 @@
+{
+  "housing-land": {
+    "prompt": "Should Hong Kong accelerate public housing and temporarily defer some private land tenders to cut waiting times?",
+    "stance": "Accelerate public housing alongside infrastructure and a clear path from temporary to permanent homes."
+  },
+  "public-hospital-fee-reform": {
+    "prompt": "What do the first-phase public healthcare fee reform figures show about access and demand?",
+    "stance": "Review fee waivers and changes in attendance separately before drawing conclusions about the reform."
+  },
+  "elderly-care": {
+    "prompt": "How far should Hong Kong prioritise ageing at home over residential care?",
+    "stance": "Prioritise home and community care, with respite for carers and residential care for people with higher needs."
+  },
+  "healthcare": {
+    "prompt": "Should Hong Kong prioritise primary care and mental health services?",
+    "stance": "Expand community care and referrals while retaining hospital capacity for serious cases."
+  },
+  "student-mental-health-tiers": {
+    "prompt": "Should the three-tier emergency response become permanent in upper primary schools?",
+    "stance": "Keep the permanent secondary-school arrangement and evaluate the upper-primary pilot separately before extending it."
+  },
+  "youth-education": {
+    "prompt": "Should government subsidise graduate jobs or placements to improve youth employment?",
+    "stance": "Tie subsidies to training quality, industry needs and retention."
+  },
+  "labour-platform": {
+    "prompt": "How should Hong Kong design compensation for platform delivery workers injured on the job?",
+    "stance": "Require insurance and tiered support, with a minimum for severely injured low-hours workers and a way to review recorded hours."
+  },
+  "transport-environment": {
+    "prompt": "Should Hong Kong restart municipal waste charging, and when?",
+    "stance": "Keep charging available as a policy option and phase it in once recycling and targeted support are ready."
+  },
+  "fertility-family": {
+    "prompt": "Should cash incentives be the main response to low fertility?",
+    "stance": "Use cash as a supplement to childcare, housing, fertility care and family-friendly work."
+  },
+  "two-dollar-fare-concession": {
+    "prompt": "How should the revised fare concession balance cost control with access to essential trips?",
+    "stance": "Track the impact on different passenger groups and target support where essential journeys become less affordable."
+  },
+  "basic-housing-grace-period": {
+    "prompt": "How should Hong Kong phase enforcement of basic housing unit standards after the grace period?",
+    "stance": "Prioritise serious safety risks and coordinate certification capacity and rehousing before broad enforcement."
+  },
+  "food-waste-collection": {
+    "prompt": "How should Hong Kong assess and expand food-waste collection in public housing?",
+    "stance": "Expand collection and distinguish recorded collection volumes from the target for a bin in every block."
+  },
+  "amd-ehealth-dnacpr": {
+    "prompt": "How should advance directives and resuscitation orders be verified during urgent care?",
+    "stance": "Practise checking uploaded directive images against the relevant paper records and clarify clinical responsibilities."
+  },
+  "private-fee-transparency": {
+    "prompt": "How should private healthcare providers disclose fees and explain deviations from estimates?",
+    "stance": "Require comparable prices and explanations for changes, with phased implementation and cost monitoring."
+  },
+  "fdh-minimum-wage": {
+    "prompt": "How should Hong Kong review the minimum wage and food allowance for foreign domestic helpers?",
+    "stance": "Support the recent gradual wage adjustment and review the food allowance and transparent benchmarks separately."
+  },
+  "talent-scheme-no-caps": {
+    "prompt": "Should Hong Kong cap talent schemes or entry by non-local graduates to ease job competition?",
+    "stance": "Keep entry flexible and publish sector employment outcomes alongside career support for local graduates."
+  },
+  "innovation-nmd": {
+    "prompt": "How should the Northern Metropolis anchor Hong Kong’s innovation strategy?",
+    "stance": "Build a strong northern cluster while linking it to research, testing and financing across Hong Kong."
+  },
+  "ai-governance": {
+    "prompt": "How quickly should the government expand AI in public services?",
+    "stance": "Start with low-risk pilots and require human review, appeal channels and privacy safeguards."
+  },
+  "cssa-wfa-job-incentive": {
+    "prompt": "How should the HK$45,000 incentive help recipients move from welfare into work?",
+    "stance": "Test the incentive while considering a limited grace period for involuntary reductions in hours and stronger childcare support."
+  },
+  "culture-tourism": {
+    "prompt": "Should Hong Kong prioritise higher-value tourism over visitor volume?",
+    "stance": "Raise spending and encourage overnight visits while retaining a diverse mix of visitors."
+  },
+  "newborn-screening": {
+    "prompt": "Should Hong Kong extend rare-disease newborn screening?",
+    "stance": "Expand in stages according to capacity for confirmatory tests, counselling and referral."
+  },
+  "gba-integration": {
+    "prompt": "How should Hong Kong expand cross-boundary options for older residents?",
+    "stance": "Keep participation voluntary and reversible, with clear quality checks, referral pathways and complaints support."
+  },
+  "gerontech-public-housing": {
+    "prompt": "Should assistive home technology be installed immediately across public housing for older tenants?",
+    "stance": "Start with the proposed trial for eligible older households in selected estates and evaluate it before widening coverage."
+  },
+  "pinball-arcade-regulation": {
+    "prompt": "Should Hong Kong tighten the regulation of prize-based pinball arcades?",
+    "stance": "Apply current licences and assess proposed tighter rules through the legislative process."
+  },
+  "prepaid-cooling-off-bill": {
+    "prompt": "How should a statutory cooling-off period protect buyers of prepaid beauty and fitness services?",
+    "stance": "Proceed with sector-specific thresholds, standard cancellation procedures and timely refunds."
+  },
+  "plain-cigarette-packs": {
+    "prompt": "How should Hong Kong implement plain cigarette packaging and duty-paid labels?",
+    "stance": "Use the transition to train retailers, enforce packaging and label requirements, and track smoking outcomes."
+  },
+  "uni-fee-residency-rule": {
+    "prompt": "How should a two-year residency rule for subsidised university fees be implemented?",
+    "stance": "Retain the transition period and publish clear residence-counting and eligibility rules."
+  },
+  "border-resilience": {
+    "prompt": "How should Hong Kong handle peak demand and disruptions at boundary crossings?",
+    "stance": "Clarify who leads and who can act on site, and monitor waiting times while retaining operational flexibility."
+  },
+  "nmd-loop-resumption": {
+    "prompt": "How should land resumption for the Hetao east link be aligned with Northern Metropolis delivery?",
+    "stance": "Link resumption to infrastructure milestones and publish measurable compensation and rehousing outcomes."
+  },
+  "new-industrialisation": {
+    "prompt": "Should industrial subsidies depend on delivery and measurable outcomes?",
+    "stance": "Tie payments to manageable milestones and practical trials while avoiding unnecessary approval delays."
+  },
+  "building-repair-procurement": {
+    "prompt": "How should Hong Kong make building repair procurement more independent and accountable?",
+    "stance": "Use vetted lists and tender support in stages while retaining owners' decisions and independent review."
+  },
+  "public-works-lift-acceptance": {
+    "prompt": "How should public works teams prevent defects from passing acceptance checks?",
+    "stance": "Require independent risk-based reinspection of critical equipment and clarify acceptance and reporting duties."
+  },
+  "building-proxy-votes": {
+    "prompt": "Should Hong Kong pilot electronic proxy appointments for owners' meetings?",
+    "stance": "Pilot electronic verification alongside paper channels and review results before expanding."
+  },
+  "civil-service-family-care-leave": {
+    "prompt": "How should the civil service introduce short periods of family care leave?",
+    "stance": "Use common approval guidance and plan staff cover so frontline services continue."
+  },
+  "public-open-space": {
+    "prompt": "How should Hong Kong manage public open space as it expands provision?",
+    "stance": "Design for different uses and monitor access, conflicts and complaints."
+  },
+  "tuen-mun-pulp-cardboard": {
+    "prompt": "How should Hong Kong develop local pulping without reducing frontline waste-paper collectors' incomes?",
+    "stance": "Support local processing and verify prices actually paid to collectors while providing transitional support."
+  },
+  "peak-lighting-consultation": {
+    "prompt": "What should the cancelled Peak lighting project change about future consultations?",
+    "stance": "Complete meaningful district consultation and ecological assessment before committing to sensitive sites."
+  },
+  "smartview-facial-recognition": {
+    "prompt": "Under what safeguards should police use SmartView facial recognition?",
+    "stance": "Limit purposes, require human checks and independent audit, and review matching errors and retention before expansion."
+  },
+  "fanling-golf-eia-appeal": {
+    "prompt": "How should housing plans at Fanling proceed after the environmental assessment ruling?",
+    "stance": "Update the assessment and consult as required before any renewed approval or construction."
+  },
+  "legco-nonbinding-motion-research": {
+    "prompt": "Should non-binding Legislative Council motions have to include research and recommendations?",
+    "stance": "Provide templates and shared research support, and track government responses publicly."
+  },
+  "fintech-ensemble": {
+    "prompt": "How should Hong Kong expand round-the-clock tokenised settlement?",
+    "stance": "Expand trials in stages, test liquidity and failure scenarios, and preserve links to existing settlement systems."
+  },
+  "personal-data-retention-outsourcing": {
+    "prompt": "How should Hong Kong tighten data minimisation, retention and oversight of outsourced processing?",
+    "stance": "Set risk-based retention limits with lawful exceptions, keep deletion evidence, and clarify contractors' and data users' responsibilities."
+  },
+  "ai-scam-content-regulation": {
+    "prompt": "Should all online platforms be required to screen content in advance to combat AI scams?",
+    "stance": "Target high-risk advertisements and rapid removals, with safeguards for ordinary content and a way to appeal errors."
+  },
+  "low-altitude-economy-drones": {
+    "prompt": "Should Hong Kong quickly open dense urban areas to commercial drone deliveries?",
+    "stance": "Expand from tested routes in lower-density areas, with safety, privacy and insurance safeguards before wider deployment."
+  },
+  "wang-fuk-court-building-safety": {
+    "prompt": "Should prior approval for major repairs be a priority after the Wang Fuk Court fire?",
+    "stance": "Use risk-based prior approval for major works, pair it with owner support and retain a fast route for urgent repairs.",
+    "stance_zh": "支持大型維修按風險實施事前審批；同時為緊急維修設快捷程序，為業主提供獨立招標支援。",
+    "pros_zh": [
+      "施工前可核查監督計劃及臨時消防保護措施。",
+      "分開驗樓和監工職責，有助減少利益衝突。"
+    ],
+    "cons_zh": [
+      "審批時間過長可能拖延急需維修。",
+      "人手或顧問不足會加重小型法團的負擔。"
+    ],
+    "measures_zh": [
+      "按風險分流審批並訂明處理時限，設緊急維修快速途徑。",
+      "提供獨立招標支援，並公布整改與審批時間。"
+    ]
+  },
+  "ride-hailing-licensing": {
+    "prompt": "Should Hong Kong retain its initial cap of 10,000 ride-hailing vehicle permits?",
+    "stance": "Keep the initial cap and review actual wait times, congestion and service availability before making adjustments.",
+    "stance_zh": "支持初期維持車輛許可證上限，按候車時間、擠塞和服務覆蓋的實際數據檢討。",
+    "pros_zh": [
+      "讓乘客有更多合規選擇，亦能控制初期新增車流。"
+    ],
+    "cons_zh": [
+      "配額過緊可能拖長偏遠地區或深夜候車時間。"
+    ],
+    "measures_zh": [
+      "按地區和時段公布候車時間、空車里數和道路車速。",
+      "定期檢查平台是否核實司機、車輛許可證及保險，再按數據檢討配額。"
+    ]
+  }
+}

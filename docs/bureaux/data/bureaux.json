@@ -2,8 +2,8 @@
   "meta": {
     "title": "Hong Kong Policy Bureaux lookup",
     "title_zh": "香港特區政府決策局速查",
-    "source": "docs/bureaux/index.html",
-    "updated": "2026-11-23",
+    "source": "Bureaux policy archive and current Q2 issue assignments",
+    "updated": "2026-11-27",
     "count": 15,
     "issueCount": 24,
     "note": "Extracted from the existing Study Hub bureaux page. Do not invent bureaux. Collocation Bank is not in this hub.",
@@ -1197,7 +1197,12 @@
       "collaborate": "勞福局管託兒，房屋局管住屋支援，醫務衞生局管生育醫療。涉及免稅額或印花稅時，加入財經事務及庫務局。",
       "execute": "各主管部門提供及更新各自的資格、申請和轉介資料。",
       "example": "建議由政務司副司長統籌，在保留適量新生嬰兒現金支援的同時，整合託兒、住屋及生育醫療的申請資訊，讓家庭可在同一入口查閱資格及轉介安排。",
-      "source": "https://www.info.gov.hk/gia/general/202609/30/P2026093000287.htm"
+      "source": "https://www.info.gov.hk/gia/general/202609/30/P2026093000287.htm",
+      "bureauIds": [
+        "lwb",
+        "hb",
+        "hhb"
+      ]
     },
     {
       "id": "issue-proxy-votes",
@@ -1210,7 +1215,10 @@
       "collaborate": "涉及電子身分核實時，可由數字政策辦公室提供技術支援。",
       "execute": "民政事務總署、物管公司及業主立案法團按各自職責提供支援或處理授權文書。",
       "example": "建議由民政及青年事務局先在有意參與的屋苑試行電子委任代表，設身份核實及異議渠道，並保留紙本途徑。",
-      "source": "https://www.info.gov.hk/gia/general/202611/09/P2026110900590.htm"
+      "source": "https://www.info.gov.hk/gia/general/202611/09/P2026110900590.htm",
+      "bureauIds": [
+        "hyab"
+      ]
     },
     {
       "id": "issue-building-works",
@@ -1223,7 +1231,10 @@
       "collaborate": "涉及房委會屋苑工程時，房屋局按適用監管安排協作。",
       "execute": "屋宇署負責法定規管。擬設的樓宇維修支援及服務局負責支援業主，兩者分工。",
       "example": "建議由發展局訂立預審及評標要求，公開利益申報與主要評標準則，讓業主比較合資格標書。",
-      "source": "https://www.devb.gov.hk/tc/publications_and_press_releases/press/index_id_15625.html"
+      "source": "https://www.devb.gov.hk/tc/publications_and_press_releases/press/index_id_15625.html",
+      "bureauIds": [
+        "devb"
+      ]
     },
     {
       "id": "issue-public-works",
@@ -1236,7 +1247,10 @@
       "collaborate": "涉及醫院啟用或服務安排時，與醫務衞生局及醫院管理局協調。",
       "execute": "建築署負責項目監督，機電工程署按其職能處理升降機安全規管。",
       "example": "建議由發展局要求項目團隊在安裝前覆核關鍵尺寸，設重大缺陷通報門檻，並向使用部門定期交代修復進度。",
-      "source": "https://www.info.gov.hk/gia/general/202611/13/P2026111300247.htm"
+      "source": "https://www.info.gov.hk/gia/general/202611/13/P2026111300247.htm",
+      "bureauIds": [
+        "devb"
+      ]
     },
     {
       "id": "issue-fare-concession",
@@ -1249,7 +1263,10 @@
       "collaborate": "運輸及物流局就交通安排協作。",
       "execute": "運輸署及公共交通營辦商配合實施，提供路線和票價資訊。",
       "example": "建議由勞工及福利局聯同運輸及物流局檢視補貼開支和乘客出行變化，並追蹤有跨區覆診或上班需要人士的負擔。",
-      "source": "https://www.info.gov.hk/gia/general/202603/23/P2026032300131.htm"
+      "source": "https://www.info.gov.hk/gia/general/202603/23/P2026032300131.htm",
+      "bureauIds": [
+        "lwb"
+      ]
     },
     {
       "id": "issue-housing-land",
@@ -1262,7 +1279,11 @@
       "collaborate": "發展局協調造地、規劃和基建，牽涉私宅供地時一併檢視土地時間表。",
       "execute": "房委會及房屋署推展相關建屋及編配，地政總署按安排處理土地。",
       "example": "建議由房屋局聯同發展局把熟地交付、建屋及入伙排成一張時間表，逐季核對實際入伙和綜合輪候時間。",
-      "source": "https://www.news.gov.hk/eng/2026/08/20260813/20260813_163217_854.html"
+      "source": "https://www.news.gov.hk/eng/2026/08/20260813/20260813_163217_854.html",
+      "bureauIds": [
+        "hb",
+        "devb"
+      ]
     },
     {
       "id": "issue-healthcare",
@@ -1275,7 +1296,10 @@
       "collaborate": "勞工及福利局和教育局按需要銜接社區及校園支援。",
       "execute": "基層醫療署及地區康健中心提供基層服務，醫管局負責公營診療與專科轉介，社署及營辦機構支援社區個案。",
       "example": "建議由醫務衞生局與勞福局先完善地區篩查和轉介，再按高風險個案輪候與急症容量決定擴充次序。",
-      "source": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health"
+      "source": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html#health",
+      "bureauIds": [
+        "hhb"
+      ]
     },
     {
       "id": "issue-elderly-care",
@@ -1288,7 +1312,10 @@
       "collaborate": "由醫務衞生局協助銜接出院、復康及基層醫療。",
       "execute": "社署及服務營辦者按照顧需要評估和提供服務，醫管局配合出院轉介。",
       "example": "建議由勞工及福利局按區補充日間護理與上門照顧，並為高照顧需要個案保留院舍配額。",
-      "source": "https://www.info.gov.hk/gia/general/202611/05/P2026110500265.htm"
+      "source": "https://www.info.gov.hk/gia/general/202611/05/P2026110500265.htm",
+      "bureauIds": [
+        "lwb"
+      ]
     },
     {
       "id": "issue-youth-education",
@@ -1301,7 +1328,10 @@
       "collaborate": "教育局協調院校及職涯輔導，民政及青年事務局可協助青年外展。",
       "execute": "參與僱主提供職位及培訓，院校及服務機構按計劃協助職位配對。",
       "example": "建議由勞工及福利局要求僱主證明職位屬新增，並追蹤培訓完成和補貼期後留任情況。",
-      "source": "https://www.info.gov.hk/gia/general/202611/11/P2026111100304.htm"
+      "source": "https://www.info.gov.hk/gia/general/202611/11/P2026111100304.htm",
+      "bureauIds": [
+        "lwb"
+      ]
     },
     {
       "id": "issue-culture-tourism",
@@ -1314,7 +1344,10 @@
       "collaborate": "需要增加跨區交通或處理食肆衞生時，分別聯同運輸及物流局和環境及生態局。",
       "execute": "旅發局推廣及開拓客源，主辦機構和商戶安排旅遊產品和活動。",
       "example": "建議由文化體育及旅遊局透過旅發局推出可帶動過夜的文化活動路線，並以留宿晚數、旅客消費及居民影響檢討。",
-      "source": "https://www.info.gov.hk/gia/general/202611/02/P2026110200588p.htm"
+      "source": "https://www.info.gov.hk/gia/general/202611/02/P2026110200588p.htm",
+      "bureauIds": [
+        "cstb"
+      ]
     },
     {
       "id": "issue-gba-integration",
@@ -1327,7 +1360,11 @@
       "collaborate": "醫務衞生局負責醫療券和醫療銜接，政制及內地事務局支援跨境政策聯繫。",
       "execute": "社署及參與院舍安排照顧支援，衞生署及參與醫療機構處理醫療券服務。若題目轉問青年跨境就業，按就業措施另分工。",
       "example": "建議由勞工及福利局聯同醫務衞生局，先向有意參與長者說明醫療、福利及回港支援，再按自願原則試行。",
-      "source": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html"
+      "source": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html",
+      "bureauIds": [
+        "lwb",
+        "hhb"
+      ]
     },
     {
       "id": "issue-innovation-nmd",
@@ -1340,7 +1377,11 @@
       "collaborate": "發展局負責北都土地與基建，產業園區發展需要對齊用地交付。",
       "execute": "創科署、科技園公司及港深創科園等按各自計劃向企業和研究團隊提供支援。",
       "example": "建議由創新科技及工業局把需共用設施的中試項目集中於北都，並保留全港可申請的試用及轉化資助。",
-      "source": "https://www.info.gov.hk/gia/general/202609/17/P2026091700623p.htm"
+      "source": "https://www.info.gov.hk/gia/general/202609/17/P2026091700623p.htm",
+      "bureauIds": [
+        "itib",
+        "devb"
+      ]
     },
     {
       "id": "issue-transport-environment",
@@ -1353,7 +1394,11 @@
       "collaborate": "涉及小區回收或公共地方收集時，協調物管及相關場地部門。若建議涉及公共交通服務，由運輸及物流局處理交通部分。",
       "execute": "環保署推進減廢及回收安排，食環署與收集服務承辦方按各自職能配合。",
       "example": "建議由環境及生態局按區先檢視回收及廚餘收集覆蓋，再以人均棄置量和住戶合規成本評估收費時間表。",
-      "source": "https://www.wastereduction.gov.hk/tc"
+      "source": "https://www.wastereduction.gov.hk/tc",
+      "bureauIds": [
+        "eeb",
+        "tlb"
+      ]
     },
     {
       "id": "issue-labour-platform",
@@ -1362,11 +1407,14 @@
       "zh": "平台經濟與送貨員保障",
       "en": "Platform work and courier protection",
       "lead": "勞工及福利局",
-      "owner": "勞工及福利局：就配送員的勞工保障、責任分配和制度設計制訂政策。",
-      "collaborate": "按措施徵詢配送員、平台及保險業界，確定不同工作安排所需保障。",
-      "execute": "勞工處負責勞工保障及執行安排，平台按其法定或合約責任落實。",
+      "owner": "勞工及福利局主責數碼平台送遞員法定工傷補償。",
+      "collaborate": "",
+      "execute": "勞工處負責制度執行；草案擬要求平台投保、通報意外及保存紀錄。",
       "example": "建議由勞工及福利局先明訂工傷保障及申訴機制，再按實際工作控制程度檢視僱傭身份。",
-      "source": "https://www.policyaddress.gov.hk/2026/tc/chapter7.html"
+      "source": "https://www.info.gov.hk/gia/general/202611/27/P2026112600362.htm",
+      "bureauIds": [
+        "lwb"
+      ]
     },
     {
       "id": "issue-public-open-space",
@@ -1379,7 +1427,11 @@
       "collaborate": "若措施關乎規劃、海濱或土地活化，則由發展局按項目負責，並與場地管理者協調。",
       "execute": "康文署管理轄下場地，其他場地按土地及營運安排由其管理機構落實。",
       "example": "建議先由康文署在轄下公園試行分時共用，再按使用率、投訴和無障礙使用情況調整。",
-      "source": "https://www.info.gov.hk/gia/general/202609/29/P2026092800303.htm"
+      "source": "https://www.info.gov.hk/gia/general/202609/29/P2026092800303.htm",
+      "bureauIds": [
+        "cstb",
+        "devb"
+      ]
     },
     {
       "id": "issue-new-industrialisation",
@@ -1392,7 +1444,10 @@
       "collaborate": "與產業及科研機構協商可查證的中試、量產及人才培訓指標。",
       "execute": "創新科技署執行計劃，受資助企業提交進度及驗收證據。",
       "example": "建議由創新科技及工業局把撥款與中試、量產及培訓里程碑連結，並容許有理據的延期申請。",
-      "source": "https://www.info.gov.hk/gia/general/202610/28/P2026102800363.htm"
+      "source": "https://www.info.gov.hk/gia/general/202610/28/P2026102800363.htm",
+      "bureauIds": [
+        "itib"
+      ]
     },
     {
       "id": "issue-border-resilience",
@@ -1405,7 +1460,11 @@
       "collaborate": "運輸及物流局處理口岸接駁，跨境延時或聯合安排需與內地當局協調。",
       "execute": "入境處處理旅客出入境，海關負責其查驗工作，警務處及運輸署按需要維持秩序及調度交通。",
       "example": "建議由保安局聯同運輸及物流局制定分級應變門檻，按候檢時間調配人手及加密接駁班次。",
-      "source": "https://www.info.gov.hk/gia/general/202611/11/P2026111100292p.htm"
+      "source": "https://www.info.gov.hk/gia/general/202611/11/P2026111100292p.htm",
+      "bureauIds": [
+        "sb",
+        "tlb"
+      ]
     },
     {
       "id": "issue-nmd-loop-resumption",
@@ -1418,11 +1477,14 @@
       "collaborate": "與創新科技及工業局及園區營運方對齊啟用需要。",
       "execute": "地政總署處理收地及補償，土木工程拓展署等工務部門按項目負責工程。",
       "example": "建議由發展局訂立收地、補償安置和道路交付里程碑，並定期公布完成情況及延誤原因。",
-      "source": "https://www.info.gov.hk/gia/general/202610/29/P2026102900313.htm"
+      "source": "https://www.info.gov.hk/gia/general/202610/29/P2026102900313.htm",
+      "bureauIds": [
+        "devb"
+      ]
     },
     {
       "id": "issue-gba-tax-gogba",
-      "briefId": "gba-tax-gogba",
+      "briefId": "",
       "keywords": "老撾 預扣稅 避免雙重課稅 十五五 GoGBA tax treaty",
       "zh": "港老稅務協定與 GoGBA『十五五』落地",
       "en": "Hong Kong–Laos tax treaty and GoGBA",
@@ -1439,12 +1501,15 @@
       "keywords": "代幣化 央行貨幣 24x7 EnsembleTX fintech HKMA",
       "zh": "代幣化結算與數碼金融",
       "en": "Tokenised settlement and digital finance",
-      "lead": "香港金融管理局（試行）",
-      "owner": "香港金融管理局（試行）：主導 EnsembleTX 的設計與試行安排。",
-      "collaborate": "財經事務及庫務局協調金融發展政策，參與銀行共同測試交易及風控。",
-      "execute": "金管局與參與銀行按試行框架處理測試、結算及事故通報。",
+      "lead": "財經事務及庫務局（金融政策）／金管局（試行）",
+      "owner": "財經事務及庫務局負責金融政策；金管局主導 EnsembleTX 試行。",
+      "collaborate": "",
+      "execute": "金管局聯同參與銀行和機構測試代幣化結算。",
       "example": "建議由金管局先按結算失敗率和備援演練結果擴大參與，再檢討全天候操作及流動性安排。",
-      "source": "https://www.info.gov.hk/gia/general/202611/02/P2026110200541.htm"
+      "source": "https://www.info.gov.hk/gia/general/202611/02/P2026110200541.htm",
+      "bureauIds": [
+        "fstb"
+      ]
     },
     {
       "id": "issue-ai-governance",
@@ -1457,7 +1522,10 @@
       "collaborate": "個別政策局保留對其審批的問責。涉及 AI 城市大腦時，按其政務司司長工作組的安排統籌。",
       "execute": "數字政策辦公室提供指引及技術支援，使用部門負責資料質素、覆核及申訴。",
       "example": "建議由數字政策辦公室協助部門先試行低風險查詢工具，審批個案保留人工覆核及決定紀錄。",
-      "source": "https://www.policyaddress.gov.hk/2026/tc/chapter8.html"
+      "source": "https://www.policyaddress.gov.hk/2026/tc/chapter8.html",
+      "bureauIds": [
+        "itib"
+      ]
     },
     {
       "id": "issue-newborn-screening",
@@ -1470,11 +1538,14 @@
       "collaborate": "邀請私家醫院參與，並與公營體系協定家長知情、異常結果轉介及跟進安排。",
       "execute": "醫管局、香港兒童醫院及參與醫院按計劃負責採樣、化驗或專科跟進。",
       "example": "建議由醫務衞生局按化驗和覆檢容量分批擴展，與參與醫院訂明通知家長及轉介時限。",
-      "source": "https://www.info.gov.hk/gia/general/202606/03/P2026060300509.htm"
+      "source": "https://www.info.gov.hk/gia/general/202606/03/P2026060300509.htm",
+      "bureauIds": [
+        "hhb"
+      ]
     },
     {
       "id": "issue-sample-daipaidong",
-      "briefId": "sample-daipaidong",
+      "briefId": "",
       "keywords": "大牌檔 流動小販 熟食 牌照 衞生 油煙 hawker dai pai dong",
       "zh": "大牌檔與小販規管（示範題）",
       "en": "Dai pai dong and hawker regulation",
@@ -1484,6 +1555,388 @@
       "execute": "食環署處理相關牌照及衞生執法，環保署按職能處理油煙滋擾。",
       "example": "建議由食環署在指定地點試行分時持牌經營，按衞生抽查、阻塞及投訴情況檢討。",
       "source": "https://www.info.gov.hk/gia/general/202605/07/P2026050700408p.htm"
+    }
+  ],
+  "q2Issues": [
+    {
+      "id": "issue-public-hospital-fee-reform",
+      "briefId": "public-hospital-fee-reform",
+      "keywords": "醫管局 急症室 醫療費用 減免",
+      "zh": "公營醫療改革首階段",
+      "en": "Public healthcare reform, phase one",
+      "lead": "醫務衞生局",
+      "owner": "醫務衞生局統籌公營醫療收費改革和豁免政策。",
+      "collaborate": "",
+      "execute": "醫院管理局執行收費及豁免，並公布使用情況。",
+      "source": "https://www.info.gov.hk/gia/general/202611/18/P2026111800418.htm",
+      "bureauIds": [
+        "hhb"
+      ]
+    },
+    {
+      "id": "issue-student-mental-health-tiers",
+      "briefId": "student-mental-health-tiers",
+      "keywords": "",
+      "zh": "學童心理健康三層應急機制",
+      "en": "Student mental health three-tier response",
+      "lead": "教育局（校本統籌）",
+      "owner": "教育局統籌以學校為本的三層應急機制；醫務衞生局參與醫療支援。",
+      "collaborate": "社會福利署協調社福支援。",
+      "execute": "學校跨專業團隊、校外支援隊及醫管局分層跟進。",
+      "source": "https://www.info.gov.hk/gia/general/202610/07/P2026100700450.htm",
+      "bureauIds": [
+        "edb",
+        "hhb"
+      ]
+    },
+    {
+      "id": "issue-basic-housing-grace-period",
+      "briefId": "basic-housing-grace-period",
+      "keywords": "劏房 分間單位 登記 認證",
+      "zh": "簡樸房寬限期登記與分階段執法",
+      "en": "Basic Housing Units grace period",
+      "lead": "房屋局",
+      "owner": "房屋局主責基本住房單位制度及分間單位規管。",
+      "collaborate": "",
+      "execute": "房屋局分間單位專責小組處理寬限期登記、認證及執法。",
+      "source": "https://www.scmp.com/news/hong-kong/society/article/3372442/kowloon-leads-70-hong-kongs-subdivided-flats-registered-grace-period",
+      "bureauIds": [
+        "hb"
+      ]
+    },
+    {
+      "id": "issue-food-waste-collection",
+      "briefId": "food-waste-collection",
+      "keywords": "",
+      "zh": "公屋廚餘收集",
+      "en": "Public housing food-waste collection",
+      "lead": "環境及生態局（回收政策）",
+      "owner": "環境及生態局主責廚餘回收；房屋局及房委會配合公屋設施。",
+      "collaborate": "",
+      "execute": "環境保護署聯同房屋署及屋邨管理方安排收集。",
+      "source": "https://www.info.gov.hk/gia/general/202610/21/P2026102100358.htm",
+      "bureauIds": [
+        "eeb",
+        "hb"
+      ]
+    },
+    {
+      "id": "issue-amd-ehealth-dnacpr",
+      "briefId": "amd-ehealth-dnacpr",
+      "keywords": "預作決定 不作心肺復甦 生前預囑",
+      "zh": "預設醫療指示與醫健通",
+      "en": "Advance directives and eHealth records",
+      "lead": "醫務衞生局",
+      "owner": "醫務衞生局主責預作決定條例及醫健通配套。",
+      "collaborate": "",
+      "execute": "醫護和救援人員按法例及指引核實預設醫療指示及不作心肺復甦術命令。",
+      "source": "https://www.info.gov.hk/gia/general/202607/31/P2026073100242.htm",
+      "bureauIds": [
+        "hhb"
+      ]
+    },
+    {
+      "id": "issue-private-fee-transparency",
+      "briefId": "private-fee-transparency",
+      "keywords": "",
+      "zh": "私營醫療收費透明度",
+      "en": "Private healthcare fee transparency",
+      "lead": "醫務衞生局",
+      "owner": "醫務衞生局主責私營醫療收費透明度的規例和實務守則。",
+      "collaborate": "",
+      "execute": "衞生署按私營醫療機構規管框架跟進，醫療機構提供收費及預算資料。",
+      "source": "https://www.info.gov.hk/gia/general/202610/07/P2026100700432p.htm",
+      "bureauIds": [
+        "hhb"
+      ]
+    },
+    {
+      "id": "issue-fdh-minimum-wage",
+      "briefId": "fdh-minimum-wage",
+      "keywords": "外傭 家傭 工資 膳食津貼",
+      "zh": "外傭最低工資",
+      "en": "Foreign domestic helper minimum wage",
+      "lead": "勞工及福利局",
+      "owner": "勞工及福利局主責外籍家庭傭工的規定最低工資及膳食津貼政策。",
+      "collaborate": "",
+      "execute": "勞工處負責僱傭權益及勞資事宜；入境處處理簽證及標準僱傭合約申請。",
+      "source": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3369569/hong-kong-raise-helpers-monthly-minimum-wage-hk5220",
+      "bureauIds": [
+        "lwb"
+      ]
+    },
+    {
+      "id": "issue-talent-scheme-no-caps",
+      "briefId": "talent-scheme-no-caps",
+      "keywords": "",
+      "zh": "人才計劃與非本地畢業生不設上限",
+      "en": "No cap on talent schemes / IANG",
+      "lead": "勞工及福利局",
+      "owner": "勞工及福利局就整體人才引進政策及就業銜接作統籌。",
+      "collaborate": "教育局及院校處理學額及本地畢業生銜接。",
+      "execute": "入境事務處負責包括非本地畢業生留港／回港就業安排在內的入境申請。",
+      "source": "https://www.info.gov.hk/gia/general/202611/11/P2026111100373.htm",
+      "bureauIds": [
+        "lwb"
+      ]
+    },
+    {
+      "id": "issue-cssa-wfa-job-incentive",
+      "briefId": "cssa-wfa-job-incentive",
+      "keywords": "",
+      "zh": "關愛基金 4.5 萬元綜援轉職獎勵計劃",
+      "en": "HK$45k CSSA-to-WFA job incentive",
+      "lead": "勞工及福利局",
+      "owner": "勞工及福利局負責綜援、職津及轉職支援的政策範疇。",
+      "collaborate": "",
+      "execute": "社會福利署處理綜援，職津處處理在職家庭津貼；獎勵屬關愛基金先導計劃。",
+      "source": "https://www.scmp.com/news/hong-kong/society/article/3360468/new-hk45000-job-scheme-expected-benefit-single-parent-families-most",
+      "bureauIds": [
+        "lwb"
+      ]
+    },
+    {
+      "id": "issue-gerontech-public-housing",
+      "briefId": "gerontech-public-housing",
+      "keywords": "",
+      "zh": "樂齡科技家居設備試用",
+      "en": "Gerontech home devices trial",
+      "lead": "房屋局（公屋試用）",
+      "owner": "房屋局及房委會負責選定公屋的家居設備試用。",
+      "collaborate": "勞福局負責較廣泛的安老和樂齡科技支援政策。",
+      "execute": "房屋署與屋邨按擬議安排落實試用。",
+      "source": "https://www.info.gov.hk/gia/general/202609/16/P2026091600279.htm",
+      "bureauIds": [
+        "hb",
+        "lwb"
+      ]
+    },
+    {
+      "id": "issue-pinball-arcade-regulation",
+      "briefId": "pinball-arcade-regulation",
+      "keywords": "牌照 彈珠 夾公仔 有獎娛樂",
+      "zh": "規管彈珠機店",
+      "en": "Regulation of pinball arcades",
+      "lead": "民政及青年事務局",
+      "owner": "民政及青年事務局主責有獎娛樂遊戲的規管檢討。",
+      "collaborate": "",
+      "execute": "民政事務總署牌照事務處處理相關牌照。",
+      "source": "https://www.info.gov.hk/gia/general/202605/11/P2026051100596.htm",
+      "bureauIds": [
+        "hyab"
+      ]
+    },
+    {
+      "id": "issue-prepaid-cooling-off-bill",
+      "briefId": "prepaid-cooling-off-bill",
+      "keywords": "",
+      "zh": "預繳美容健身合約冷靜期立法",
+      "en": "Prepaid beauty & fitness cooling-off bill",
+      "lead": "商務及經濟發展局",
+      "owner": "商務及經濟發展局主責預繳合約冷靜期立法。",
+      "collaborate": "",
+      "execute": "海關負責《商品說明條例》相關執法，消費者委員會提供消費者支援。",
+      "source": "https://www.scmp.com/news/hong-kong/society/article/3367280/hong-kong-table-cooling-period-bill-beauty-fitness-deals-mid-2027",
+      "bureauIds": [
+        "cedb"
+      ]
+    },
+    {
+      "id": "issue-plain-cigarette-packs",
+      "briefId": "plain-cigarette-packs",
+      "keywords": "",
+      "zh": "煙盒平裝與完稅標籤",
+      "en": "Plain cigarette packs and duty-paid labels",
+      "lead": "醫務衞生局（控煙）",
+      "owner": "醫務衞生局主責控煙及包裝要求；完稅標籤涉及財經事務及庫務局稅務範疇。",
+      "collaborate": "",
+      "execute": "衞生署負責控煙；香港海關處理完稅標籤和打擊私煙。",
+      "source": "https://www.scmp.com/news/hong-kong/health-environment/article/3367037/hong-kong-roll-out-plain-cigarette-packs-march-full-enforcement-december",
+      "bureauIds": [
+        "hhb",
+        "fstb"
+      ]
+    },
+    {
+      "id": "issue-uni-fee-residency-rule",
+      "briefId": "uni-fee-residency-rule",
+      "keywords": "",
+      "zh": "資助大學學費兩年居港規定與司法覆核",
+      "en": "2-year residency rule for subsidised uni fees",
+      "lead": "教育局",
+      "owner": "教育局訂定政府資助專上課程學額及學費資格。",
+      "collaborate": "",
+      "execute": "院校按教育局規定核實居港資格及過渡安排。",
+      "source": "https://www.info.gov.hk/gia/general/202507/31/P2025073100288.htm",
+      "bureauIds": [
+        "edb"
+      ]
+    },
+    {
+      "id": "issue-civil-service-family-care-leave",
+      "briefId": "civil-service-family-care-leave",
+      "keywords": "公務員 政府僱員 照顧家庭假",
+      "zh": "公務員家庭關顧假",
+      "en": "Civil service family care leave",
+      "lead": "公務員事務局",
+      "owner": "公務員事務局主責政府僱員家庭友善僱傭措施。",
+      "collaborate": "",
+      "execute": "政府部門按指引處理照顧家庭假及前線更替人手。",
+      "source": "https://www.info.gov.hk/gia/general/202611/16/P2026111600410.htm",
+      "bureauIds": [
+        "csb"
+      ]
+    },
+    {
+      "id": "issue-tuen-mun-pulp-cardboard",
+      "briefId": "tuen-mun-pulp-cardboard",
+      "keywords": "執紙皮 環保園 廢紙 紙漿",
+      "zh": "屯門紙漿廠與廢紙回收價格傳導",
+      "en": "Tuen Mun pulp mill & cardboard rates",
+      "lead": "環境及生態局",
+      "owner": "環境及生態局主責廢紙回收政策及環保園發展。",
+      "collaborate": "",
+      "execute": "環境保護署監察回收安排和承辦要求；回收商及紙漿廠負責收集與加工。",
+      "source": "https://www.scmp.com/news/hong-kong/health-environment/article/3372130/how-will-hong-kongs-cardboard-scavengers-survive-prices-drop-after-new-policy",
+      "bureauIds": [
+        "eeb"
+      ]
+    },
+    {
+      "id": "issue-peak-lighting-consultation",
+      "briefId": "peak-lighting-consultation",
+      "keywords": "",
+      "zh": "山頂燈光叫停與地區諮詢程序",
+      "en": "Peak lighting project scrapped",
+      "lead": "文化體育及旅遊局",
+      "owner": "文化體育及旅遊局負責旅遊項目政策。",
+      "collaborate": "",
+      "execute": "香港旅遊發展局與文體旅局檢視方案；按項目涉及的地點和影響諮詢相關部門及社區。",
+      "source": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3372608/hong-kong-scraps-lighting-attraction-peak-after-public-outcry",
+      "bureauIds": [
+        "cstb"
+      ]
+    },
+    {
+      "id": "issue-smartview-facial-recognition",
+      "briefId": "smartview-facial-recognition",
+      "keywords": "閉路電視 人面識別 警務處",
+      "zh": "銳眼 AI 人臉識別與私隱保障",
+      "en": "SmartView AI facial recognition",
+      "lead": "保安局",
+      "owner": "保安局負責警務政策和銳眼計劃的政策監督。",
+      "collaborate": "",
+      "execute": "警務處負責設備部署、使用及內部審批。",
+      "source": "https://www.info.gov.hk/gia/general/202609/17/P2026091700719.htm",
+      "bureauIds": [
+        "sb"
+      ]
+    },
+    {
+      "id": "issue-fanling-golf-eia-appeal",
+      "briefId": "fanling-golf-eia-appeal",
+      "keywords": "",
+      "zh": "粉嶺高球場環評上訴",
+      "en": "Fanling golf course EIA appeal",
+      "lead": "環境及生態局（環評）／發展局（發展項目）",
+      "owner": "環境及生態局範疇的環境保護署負責法定環評審批；發展局範疇的土木工程拓展署是項目倡議者。",
+      "collaborate": "",
+      "execute": "環保署按法院指引處理環評；土拓署按法定程序跟進工程方案。",
+      "source": "https://www.info.gov.hk/gia/general/202609/24/P2026092400323.htm",
+      "bureauIds": [
+        "eeb",
+        "devb"
+      ]
+    },
+    {
+      "id": "issue-legco-nonbinding-motion-research",
+      "briefId": "legco-nonbinding-motion-research",
+      "keywords": "",
+      "zh": "無立法效力議案須附研究及建議",
+      "en": "Research for non-binding LegCo motions",
+      "lead": "立法會（議事程序）",
+      "owner": "立法會自行規管議員議案及研究要求。",
+      "collaborate": "",
+      "execute": "立法會按議事程序處理；按議題涉及的政策範疇，由相關政府主管部門回應。",
+      "source": "https://www.legco.gov.hk/tc/legco-business/useful-information/legco-procedures/house-rules.html",
+      "bureauIds": []
+    },
+    {
+      "id": "issue-personal-data-retention-outsourcing",
+      "briefId": "personal-data-retention-outsourcing",
+      "keywords": "私隱 第486章 PCPD 外泄 刪除 外判",
+      "zh": "個人資料收集、保存期限與外判問責",
+      "en": "Personal data minimisation, retention limits & outsourcing accountability",
+      "lead": "政制及內地事務局",
+      "owner": "政制及內地事務局負責個人資料私隱政策及修例研究。",
+      "collaborate": "",
+      "execute": "個人資料私隱專員公署是獨立監管機構；各資料使用者須就外判和資料管治履責。",
+      "source": "https://www.info.gov.hk/gia/general/202501/22/P2025012200300.htm",
+      "bureauIds": [
+        "cmab"
+      ]
+    },
+    {
+      "id": "issue-ai-scam-content-regulation",
+      "briefId": "ai-scam-content-regulation",
+      "keywords": "",
+      "zh": "AI 詐騙與網上內容監管",
+      "en": "AI scams & online content regulation",
+      "lead": "財經事務及庫務局（金融詐騙下架）",
+      "owner": "財經事務及庫務局負責網上金融詐騙內容下架的政策諮詢；保安局範疇的警務處負責反詐騙執法。",
+      "collaborate": "",
+      "execute": "金融監管機構及平台按職能協作；涉及刑法改革另由法律改革委員會研究。",
+      "source": "https://www.info.gov.hk/gia/general/202609/16/P2026091600242p.htm",
+      "bureauIds": [
+        "fstb",
+        "sb"
+      ]
+    },
+    {
+      "id": "issue-low-altitude-economy-drones",
+      "briefId": "low-altitude-economy-drones",
+      "keywords": "無人機 民航處 航道 沙盒",
+      "zh": "低空經濟與無人機物流",
+      "en": "Low-altitude economy & drone logistics",
+      "lead": "運輸及物流局",
+      "owner": "運輸及物流局聯同發展低空經濟工作組推展監管沙盒。",
+      "collaborate": "",
+      "execute": "民航處負責飛行安全規管及智能低空交通管理系統的技術研究。",
+      "source": "https://www.info.gov.hk/gia/general/202610/28/P2026102800371.htm",
+      "bureauIds": [
+        "tlb"
+      ]
+    },
+    {
+      "id": "issue-wang-fuk-court-building-safety",
+      "briefId": "wang-fuk-court-building-safety",
+      "keywords": "宏福苑 大火 消防 大維修 圍標",
+      "zh": "宏福苑火災一周年與樓宇安全",
+      "en": "Building safety after the Wang Fuk Court fire",
+      "lead": "發展局（維修）／保安局（消防）",
+      "owner": "大型維修事前審批和業主支援由發展局主責；消防草案由保安局主責。",
+      "collaborate": "民政及青年事務局跟進建築物管理條例；商務及經濟發展局牽頭擬訂打擊圍標的修例。",
+      "execute": "屋宇署管工程規管，消防處管消防執法。政務司司長主持督導委員會統籌整體改革。",
+      "source": "https://www.info.gov.hk/gia/general/202611/23/P2026112300591.htm",
+      "bureauIds": [
+        "devb",
+        "sb"
+      ]
+    },
+    {
+      "id": "issue-ride-hailing-licensing",
+      "briefId": "ride-hailing-licensing",
+      "keywords": "網約車 Uber 的士 人牌 車牌 10000 抽籤",
+      "zh": "網約車發牌",
+      "en": "Ride-hailing licensing",
+      "lead": "運輸及物流局",
+      "owner": "運輸及物流局負責網約車規管及配額政策。",
+      "collaborate": "",
+      "execute": "運輸署發出平台、司機及車輛牌照或許可證，並按牌照條件監察營運。",
+      "source": "https://www.info.gov.hk/gia/general/202611/26/P2026112600455.htm",
+      "bureauIds": [
+        "tlb"
+      ]
     }
   ]
 }

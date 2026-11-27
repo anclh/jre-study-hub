@@ -1,13 +1,12 @@
 /**
- * Policy-tab 政策溫習卡. Same 17 bilingual cards as Q1
- * (docs/q1/data/policy-cards.json) and the shared Quizlet overlay.
+ * Policy-tab 政策溫習卡. The Chinese Q2 bank supplies the card list and content.
  * Deep links: #flash, #bank-study, #flashcards.
  */
 (() => {
   "use strict";
 
-  const STAMP = "20261103w";
-  const DATA_URL = "../q1/data/policy-cards.json?v=" + STAMP;
+  const Q2_URL = "../q2/data/briefs.json";
+  const ENGLISH_URL = "data/q2-english.json?v=20261127q2sync";
   const OPEN_HASHES = ["flash", "bank-study", "flashcards"];
 
   const $ = (s, el = document) => el.querySelector(s);
@@ -106,10 +105,16 @@
       const ef = e[i];
       const zhT = zf ? (typeof zf === "string" ? zf : zf.text || "") : "";
       const enT = ef ? (typeof ef === "string" ? ef : ef.text || "") : "";
-      const url = (ef && ef.url) || (zf && zf.url) || "";
-      const link = url
-        ? `<br><a href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer">來源 ↗</a>`
-        : "";
+      const references = new Map();
+      for (const fact of [zf, ef]) {
+        for (const source of fact?.urls || []) {
+          if (/^https:\/\//i.test(source.url)) references.set(source.url, source.label || "來源");
+        }
+        if (/^https:\/\//i.test(fact?.url) && !references.has(fact.url)) references.set(fact.url, "來源");
+      }
+      const link = [...references].map(([url, label]) =>
+        `<br><a href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`
+      ).join("");
       html += `<li><span class="zh">${escapeHtml(zhT || enT)}</span>${
         zhT && enT ? `<span class="en">${escapeHtml(enT)}</span>` : ""
       }${link}</li>`;
@@ -140,7 +145,7 @@
     if (!policyCardsData) {
       countEl.textContent = "溫習卡: —";
       list.innerHTML = `<div class="empty">${
-        loadSettled ? "無法載入政策溫習卡（q1/data/policy-cards.json）" : "載入政策溫習卡…"
+        loadSettled ? "無法載入政策溫習卡。請重新整理。" : "載入政策溫習卡…"
       }</div>`;
       if (quickRef) quickRef.hidden = true;
       if (sourcesEl) sourcesEl.hidden = true;
@@ -162,6 +167,7 @@
       const el = document.createElement("article");
       el.className = "brief-card" + (open ? " open" : "");
       el.dataset.id = card.id;
+      el.id = `q2-${card.id}`;
 
       const tags = (card.theme_ids || [])
         .map((th) => `<span class="chip">${escapeHtml(th)}</span>`)
@@ -308,11 +314,46 @@
     if (!ok) setStatus("沒有可溫習的卡");
   }
 
+  async function loadJson(url) {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    return response.json();
+  }
+
   async function loadPolicyCards() {
     try {
-      const res = await fetch(DATA_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      policyCardsData = await res.json();
+      const [q2, english] = await Promise.all([
+        loadJson(Q2_URL),
+        loadJson(ENGLISH_URL).catch(() => ({})),
+      ]);
+      if (!Array.isArray(q2.briefs)) throw new Error("Missing Q2 briefs");
+      const cards = q2.briefs.map((brief) => {
+        const notes = Object.hasOwn(english, brief.id) ? english[brief.id] : {};
+        return {
+          id: brief.id,
+          n: brief.n,
+          title_zh: brief.title_zh || brief.title,
+          title_en: brief.title_en,
+          theme_ids: brief.theme_ids,
+          prompt_zh: brief.prompt,
+          prompt_en: notes.prompt,
+          stance_zh: brief.stance || notes.stance_zh,
+          stance_en: notes.stance,
+          pros_zh: brief.pros || notes.pros_zh,
+          cons_zh: brief.cons || notes.cons_zh,
+          measures_zh: brief.measures || notes.measures_zh,
+          facts_zh: brief.facts,
+        };
+      });
+      const quick_ref = cards.map((card) => ({
+        n: card.n,
+        theme_zh: card.title_zh,
+        theme: card.title_en,
+        stance_one_liner_zh: card.stance_zh,
+        stance_one_liner: card.stance_en,
+      }));
+      const sources = (q2.sources || []).filter((source) => /^https:\/\//i.test(source.url));
+      policyCardsData = { cards, quick_ref, sources };
     } catch (err) {
       console.warn("policy-cards load failed", err);
       policyCardsData = null;
@@ -328,6 +369,15 @@
 
   function applyHash() {
     const h = hashName();
+    if (h.startsWith("q2-")) {
+      const card = document.getElementById(h);
+      if (!card) return;
+      card.closest(".policy-group")?.setAttribute("open", "");
+      const summary = card.querySelector(".brief-summary");
+      if (summary?.getAttribute("aria-expanded") === "false") summary.click();
+      requestAnimationFrame(() => card.scrollIntoView({ block: "center" }));
+      return;
+    }
     if (OPEN_HASHES.indexOf(h) === -1) return;
     const target = document.getElementById("flash");
     if (target) target.scrollIntoView({ block: "start" });
