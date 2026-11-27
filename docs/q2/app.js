@@ -347,6 +347,15 @@
     </details>`;
   }
 
+  function englishSampleHtml(essay) {
+    if (!essay) return "";
+    const paragraphs = essay.split("\n\n").map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("");
+    return `<details class="english-sample">
+      <summary>英文版 / <span lang="en-HK">English version</span></summary>
+      <div class="english-sample-text" lang="en-HK">${paragraphs}</div>
+    </details>`;
+  }
+
   function sampleHtml(brief) {
     if (!brief.sample_answer) return "";
     return `<details class="brief-nest">
@@ -354,6 +363,7 @@
       <div class="brief-nest-body">
         ${brief.sample_note ? `<p class="muted brief-sample-note">${escapeHtml(brief.sample_note)}</p>` : ""}
         <pre class="brief-sample">${escapeHtml(brief.sample_answer)}</pre>
+        ${englishSampleHtml(brief.sample_answer_en)}
         <button type="button" class="btn btn-copy-sample" data-id="${escapeAttr(brief.id)}">複製範文</button>
       </div>
     </details>`;
@@ -499,6 +509,8 @@
     const sampleWrap = $("#drillSampleWrap");
     const sampleText = $("#drillSampleText");
     const sampleNote = $("#drillSampleNote");
+    const sampleEnglish = $("#drillSampleEnglish");
+    if (sampleEnglish) sampleEnglish.innerHTML = englishSampleHtml(d.sample_answer_en);
     const btnToggle = $("#btnToggleSample");
     if (sampleCard && sampleText) {
       if (d.sample_answer) {
@@ -532,7 +544,7 @@
 
   async function loadBriefs() {
     try {
-      const res = await fetch("./data/briefs.json?v=20261127a", { cache: "no-store" });
+      const res = await fetch("./data/briefs.json?v=20261127c", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       briefsData = await res.json();
       const extras = (briefsData.briefs || []).map((b) => ({
@@ -543,6 +555,7 @@
         cons: b.cons || [],
         measures: b.measures || [],
         sample_answer: b.sample_answer || "",
+        sample_answer_en: b.sample_answer_en || "",
         sample_note: b.sample_note || "",
       }));
       drills = [DAI_PAI_DONG, ...extras.filter((b) => b.prompt)];
@@ -731,7 +744,7 @@
       <div class="flash-kicker">${brief.n} / ${deck.length} · 背面 ${markChip}</div>
       <h2>${escapeHtml(brief.title_zh || "")}</h2>
       ${brief.memory ? `<section class="flash-block"><h3>利 → 弊 → 做 · 記憶卡</h3>${memoryRows(brief)}</section>` : ""}
-      ${brief.sample_answer ? `<details class="flash-sample"><summary>閱讀範文</summary>${brief.sample_note ? `<p class="muted">${escapeHtml(brief.sample_note)}</p>` : ""}<div class="flash-sample-text">${escapeHtml(brief.sample_answer)}</div></details>` : ""}
+      ${brief.sample_answer ? `<details class="flash-sample"><summary>閱讀範文</summary>${brief.sample_note ? `<p class="muted">${escapeHtml(brief.sample_note)}</p>` : ""}<div class="flash-sample-text">${escapeHtml(brief.sample_answer)}</div>${englishSampleHtml(brief.sample_answer_en)}</details>` : ""}
       ${flashBlock("利", "Pros", flashFullItems(brief.pros))}
       ${flashBlock("弊", "Cons", flashFullItems(brief.cons))}
       ${flashStanceBlock(brief, stanceShort)}

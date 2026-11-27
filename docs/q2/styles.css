@@ -206,6 +206,32 @@ textarea {
 }
 .brief-nest-body { margin-top: var(--space-2); }
 .brief-nest-body p { margin: 0 0 var(--space-2); font-size: 1.0625rem; line-height: 1.65; overflow-wrap: anywhere; }
+.english-sample { margin: var(--space-2) 0 var(--space-3); }
+.english-sample summary {
+  min-height: 44px;
+  padding: 10px var(--space-3);
+  box-sizing: border-box;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--accent);
+  background: var(--card2);
+  cursor: pointer;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.english-sample summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.english-sample-text {
+  padding: var(--space-3) var(--space-3) 0;
+  color: var(--text);
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+.english-sample-text p {
+  margin: 0 0 var(--space-3);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
 .quick-ref { margin-bottom: var(--space-3); }
 .quick-ref table { font-size: 12px; }
 .quick-ref td:first-child { width: 2rem; font-variant-numeric: tabular-nums; color: var(--muted); }
