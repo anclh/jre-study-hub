@@ -28,7 +28,7 @@
   --v-2xl: 2rem;
   --v-3xl: 3rem;
   --v-touch: 2.75rem;
-  --v-text-small: .875rem;
+  --v-text-small: var(--text-small);
   --v-text-label: .8125rem;
   --v-rule: 1px solid var(--v-line);
 }
@@ -68,7 +68,7 @@ body.vocab-screen {
   min-height: 100dvh;
   background: var(--v-bg);
   color: var(--v-ink);
-  font: 1rem/1.55 var(--font-body);
+  font: var(--text-body)/1.55 var(--font-body);
 }
 
 .vocab-screen *,

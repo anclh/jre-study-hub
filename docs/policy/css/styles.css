@@ -175,7 +175,7 @@
   margin-bottom: var(--space-2);
 }
 
-.policy-study .lede { font-size: .9375rem; }
+.policy-study .lede { font-size: 1rem; }
 
 .policy-study .jre-pf-launcher {
   display: flex;
@@ -197,7 +197,7 @@
 
 .policy-study .jre-pf-launcher-copy p {
   color: var(--color-on-jade-muted);
-  font-size: .875rem;
+  font-size: var(--text-small);
 }
 
 .policy-study .jre-pf-launcher button.jre-pf-start {
@@ -419,7 +419,7 @@
 .policy-study .quick-ref .en {
   display: block;
   color: var(--color-muted);
-  font-size: .875rem;
+  font-size: var(--text-small);
   line-height: 1.5;
 }
 
@@ -560,7 +560,7 @@
   .policy-study .app-footer { padding-inline: var(--space-4); }
   .policy-study .header-inner { padding-top: var(--space-6); gap: var(--space-3) var(--space-2); }
   .policy-study .brand h1 { font-size: clamp(1.75rem, 7vw, 2.75rem); }
-  .policy-study .brand p { font-size: .875rem; }
+  .policy-study .brand p { font-size: var(--text-small); }
   .policy-study .wrap { padding-block: var(--space-5) var(--space-8); }
   .policy-study .policy-flash,
   .policy-study .policy-browse-layout { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }

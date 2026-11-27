@@ -24,8 +24,8 @@
   --space-10: 2.5rem;
   --space-12: 3rem;
   --space-16: 4rem;
-  --text-small: .875rem;
-  --text-body: 1rem;
+  --text-small: .9375rem;
+  --text-body: 1.0625rem;
   --text-section: 1.125rem;
   --radius: .625rem;
   --content-width: 72rem;
@@ -42,6 +42,7 @@ body {
   background: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-body);
+  font-size: var(--text-body);
 }
 
 .study-screen :where(h1, h2, h3) {
