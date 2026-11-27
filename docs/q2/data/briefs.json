@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated": "2026-11-26",
-    "source": "Obsidian 04-Policy-Bank/Policy bank.md · + Policy Bank 2026-11-02 EnsembleTX / 華富邨 · + 2026-11-03 ai-governance · + Policy Bank 2026-11-17 SCMP Jun–Nov 7 themes & 北環綫／樓宇維修 · + Policy Bank 2026-11-18 SCMP Jul–Oct 5 themes（簡樸房寬限期／冷靜期／公院收費／大學居港規定／綜援轉職獎勵） · + Policy Bank 2026-11-18 SCMP Batch 2（私營醫療收費透明度／外傭最低工資／煙盒平裝／粉嶺高球環評上訴／預設醫療指示及醫健通） · + 2026-11-25 Q2：公營醫療改革／學童心理健康／送遞員工傷／彈珠機／樂齡科技／廚餘收集（只用指定政府事實） · + 2026-11-26 Q2：個人資料收集、保存期限與外判問責 · + 2026-11-26 Q2：AI 詐騙與網上內容監管／低空經濟與無人機物流",
+    "updated": "2026-11-27",
+    "source": "Obsidian 04-Policy-Bank/Policy bank.md · + Policy Bank 2026-11-02 EnsembleTX / 華富邨 · + 2026-11-03 ai-governance · + Policy Bank 2026-11-17 SCMP Jun–Nov 7 themes & 北環綫／樓宇維修 · + Policy Bank 2026-11-18 SCMP Jul–Oct 5 themes（簡樸房寬限期／冷靜期／公院收費／大學居港規定／綜援轉職獎勵） · + Policy Bank 2026-11-18 SCMP Batch 2（私營醫療收費透明度／外傭最低工資／煙盒平裝／粉嶺高球環評上訴／預設醫療指示及醫健通） · + 2026-11-25 Q2：公營醫療改革／學童心理健康／送遞員工傷／彈珠機／樂齡科技／廚餘收集（只用指定政府事實） · + 2026-11-26 Q2：個人資料收集、保存期限與外判問責 · + 2026-11-26 Q2：AI 詐騙與網上內容監管／低空經濟與無人機物流 · + 2026-11-27 Q2：宏福苑火災後樓宇安全／送遞員工傷補償草案／網約車發牌",
     "title_zh": "JRE 中文題政策題庫",
     "title_en": "JRE Chinese Q2 policy briefs",
-    "count": 44
+    "count": 46
   },
   "briefs": [
     {
@@ -686,96 +686,86 @@
       "theme_ids": [
         "labour"
       ],
-      "prompt": "政府正研究為食物及貨物送遞員設立工傷補償。有意見認為這項保障已經生效，死亡補償約五十一萬港元亦已可發放；亦有意見指出，工傷補償仍是立法建議，年底提交草案只是目標。請分析利弊、表明立場，並提出具體建議。請用中文作答。",
+      "prompt": "政府提出立法，要求外賣及送貨平台為送遞員購買工傷補償保險。在強制投保的基礎上，你是否支持按送遞工時分級，釐定工傷病假期間可領取補償的最長期限？請結合香港送遞員兼職及跨平台接單的情況，分析分級安排的利弊，回應一項有力的反對意見，並提出核實工時及處理索償爭議的具體措施。請用中文作答。",
       "memory": {
-        "benefit": "比較立法建議：工傷補償已有公開討論方向",
-        "risk": "約五十一萬港元只是死亡補償參考額，年底交草案只是目標",
-        "action": "三項都標明為立法建議或目標，不可寫成已全面生效"
+        "benefit": "強制投保，按工作投入訂補償期限",
+        "risk": "跨平台工時難核實，兼職重傷者或保障不足",
+        "action": "統一工時紀錄，設補償下限及獨立覆核"
       },
       "pros": [
-        "食物及貨物送遞員的工作有交通和意外風險，專項工傷補償可以回應這個保障缺口。",
-        "約五十一萬港元提供了死亡補償的參考額，討論時有一個具體金額，而不是空泛口號。"
+        "強制投保讓平台在送遞員遇到工傷時有保險承擔補償責任。",
+        "按工時釐定補償期限，可為主要依靠送遞收入的人提供較長的收入保障，並讓平台較易估算成本。"
       ],
       "cons": [
-        "工傷補償仍是立法建議，不是已生效法例；把建議說成已經生效，不會產生實質申索權。",
-        "約五十一萬港元是死亡補償參考額，不是已經發放的金額；年底提交草案是目標，不是已經完成的程序。"
+        "兼職送遞員也可能重傷，所需休養時間與工時長短無必然關係。",
+        "跨平台紀錄格式不一，重疊時段與遺漏紀錄容易引起爭議。"
       ],
-      "stance": "本人支持為食物及貨物送遞員推進工傷補償的立法建議，但反對把尚未通過的安排寫成已生效法例。",
+      "stance": "支持強制投保及按工時分級，但須為短工時的重傷者保留基本保障，並容許覆核工時。",
       "stance_points": [
-        "現時仍是立法建議。約五十一萬港元只是死亡補償參考額，不能寫成已經發放。",
-        "年底提交草案是目標。目標未完成前，不應向送遞員表示法例已經生效。"
+        "工時可反映對送遞收入的依賴程度；傷勢和康復時間仍須獨立考慮。"
       ],
       "measures": [
-        "由勞工及福利局在公開資料註明：食物及貨物送遞員的工傷補償仍是立法建議，不是已生效法例。（研習建議，非政府承諾）",
-        "把約五十一萬港元標明為死亡補償參考額，不寫成已經支付的補償，亦不擴成其他福利的金額。（研習建議，非政府承諾）",
-        "年底提交草案只作目標跟進；未提交前不把目標寫成草案已經提交或已經通過。（研習建議，非政府承諾）"
+        "由勞工處訂立統一的接單及完成時間紀錄格式，讓送遞員下載自己的紀錄，用於核實跨平台工時。",
+        "建議為各級設基本補償期限，重傷個案可憑醫療證明申請延長，工時爭議則交獨立覆核。"
       ],
       "facts": [
         {
-          "text": "食物及貨物送遞員的工傷補償仍是立法建議，不是已生效法例。不得寫成送遞員現已享有該項法定補償。",
-          "url": "https://www.info.gov.hk/gia/general/202607/11/P2026071100610.htm"
+          "text": "《數碼平台工作者補償條例草案》於2026年11月27日刊憲，擬規定平台投購工傷補償保險、保存工作者紀錄及發出付款憑據。",
+          "url": "https://www.info.gov.hk/gia/general/202611/27/P2026112600354.htm"
         },
         {
-          "text": "約51萬港元是死亡補償參考額，不是已經發放的金額，也不是所有工傷的統一賠償。",
-          "url": "https://www.info.gov.hk/gia/general/202607/11/P2026071100610.htm"
-        },
-        {
-          "text": "年底提交草案是目標，不是草案已經提交，也不是法例已經通過。",
-          "url": "https://www.info.gov.hk/gia/general/202607/11/P2026071100610.htm"
+          "text": "政府宣布擬於2026年12月9日把草案提交立法會首讀及開始二讀。",
+          "url": "https://www.info.gov.hk/gia/general/202611/27/P2026112600354.htm"
         }
       ],
       "sampleOutline": {
-        "stance": "本人支持推進食物及貨物送遞員的工傷補償立法，但反對把立法建議寫成已生效法例。",
+        "stance": "支持強制投保和按工時分級，並為短工時重傷者設基本保障及覆核機制。",
         "arguments": [
-          "送遞工作有意外風險，而工傷補償至今仍是立法建議，保障缺口仍然存在。",
-          "約五十一萬港元只是死亡補償參考額；年底提交草案只是目標，兩者都不是已經完成的事實。"
+          "外賣員在道路上送遞時遇到意外，強制投保可為平台承擔補償責任提供財務保障。",
+          "靠多個平台維持生計的送遞員可能在單一平台只錄得少量工時，評估保障期限時須有可靠的工時證明。"
         ],
-        "rebuttal": "送遞員需要盡快得到保障，但把未通過的建議說成已生效，並不能產生申索權，參考額亦不會因此變成已發放的補償。",
+        "rebuttal": "工時短的送遞員同樣可能因重傷停工多月。基本補償期限及按醫療證明延長的安排可處理這類個案。",
         "recommendations": [
-          "公開資料註明仍是立法建議，並把約五十一萬港元標為死亡補償參考額。（研習建議，非政府承諾）",
-          "年底交草案只作目標跟進，未提交前不寫成已經通過。（研習建議，非政府承諾）"
+          "統一工作紀錄，讓送遞員取得自己的接單及完成紀錄。",
+          "設立工時覆核及重傷延長補償的程序。"
         ],
-        "closing": "本人支持立法，同時要求把建議、參考額和年底目標分開說明。"
+        "closing": "分級可保留，但須讓送遞員證明實際工作投入，並照顧重傷個案。"
       },
-      "sample_answer": "本人支持為食物及貨物送遞員推進工傷補償的立法建議，但反對把尚未通過的安排寫成已生效法例。約五十一萬港元是死亡補償參考額，年底提交草案是目標，兩者都不是已經完成的保障。\n\n首先，送遞員需要面對交通和意外風險，而相關工傷補償仍是立法建議。政府公布的位置很清楚：這不是已生效法例。這是因為法例未通過之前，工作者不能憑一項建議獲得法定申索權，平台亦未因此負上該項法定補償責任。所以現時的保障缺口仍然存在。因此，本人支持推進立法，而不是宣佈補償已經實施。\n\n其次，討論金額和時間表時必須用回原本的狀態。約五十一萬港元是死亡補償參考額，不是已經發放的金額，亦不是所有工傷的統一賠償。年底提交草案是目標，不是草案已經提交，更不是已經通過。這是因為參考額和目標只說明方案準備怎樣寫、準備何時交，不說明錢已經付出或程序已經完成。參考額亦不能改寫成傷殘、病假或其他項目的金額。所以這兩個事實只能支持「立法正在準備」。因此，本人反對把它們寫成送遞員現已可以按約五十一萬港元申索。\n\n誠然，送遞員的風險不會因為法例未通過而消失，越早有法定補償越好。這個反對意見說明立法不應拖延，卻不能改變法律狀態。把建議稱為已生效法例，不會自動產生申索渠道，亦不會把參考額變成已支付的補償。若年底目標未達到，更應如實說明草案尚未提交，而不是把目標說成已經完成。故本人維持支持立法，同時反對把建議寫成已經生效。\n\n為避免把建議說成已實施的保障，本人建議以下研習安排，此並非政府承諾。一、由勞工及福利局在公開資料註明，食物及貨物送遞員的工傷補償仍是立法建議，不是已生效法例。二、把約五十一萬港元標明為死亡補償參考額，不寫成已經支付的補償，亦不擴成其他福利的金額。三、年底提交草案只作目標跟進；未提交前，不把目標寫成草案已經提交或已經通過。若狀態有變，先改公開表述，再談下一步。這些都不是已經生效的新法例。送遞員現時可以知道的，只是立法建議、死亡補償參考額，以及一個尚未完成的年底目標。在草案提交並通過之前，公開資料不應出現「已經可以申索」的說法。\n\n綜上，本人支持推進送遞員工傷補償立法。下一步先向公眾說清它仍是立法建議、約五十一萬港元只是參考額，以及年底交草案仍是目標。",
-      "sample_answer_en": "I support taking forward legislation on work injury compensation for food and goods delivery workers. The proposal has yet to become law. About HK$510,000 is a reference amount for death compensation, and submitting a bill by year end is a target. Neither is protection already in place.\n\nFirst, delivery workers face road and accident risks, and work injury compensation is still at the proposal stage. Until legislation passes, the proposal gives workers no statutory right to claim and puts no corresponding statutory compensation liability on platforms. The protection gap therefore remains, which is precisely why the legislation should proceed.\n\nSecond, the amount and timetable must be reported with their original qualifications. The roughly HK$510,000 is a reference for death compensation, neither money already paid nor a uniform award for every work injury. Year-end submission is a target. It establishes neither that a bill has been introduced nor that it has passed. The figures indicate how the proposal is being prepared and when submission is intended. They say nothing about payments or completed procedures, and the reference amount cannot be extended to disability, sick leave or other benefits. These facts show only that legislative work is being prepared. Delivery workers cannot yet claim that sum under the proposal.\n\nAdmittedly, the risks persist while the bill is pending, and statutory compensation should come as soon as possible. That is an argument for avoiding delay. Calling the proposal law would neither create a claims channel nor turn a reference amount into payment. If the year-end target is missed, public information should say that submission is still pending. I support legislating while describing the proposal accurately.\n\nI propose three steps for this exercise. They are my recommendations, not government commitments. First, the Labour and Welfare Bureau should state that work injury compensation for food and goods delivery workers is a legislative proposal. Second, label about HK$510,000 as the death compensation reference amount, without implying payment or extending it to other benefits. Third, track year-end submission as a target and update the published status before discussing next steps if it changes. Workers currently have a proposal, a reference amount and a target. Public materials should avoid saying that claims can already be made before the bill is introduced and passed.\n\nIn conclusion, take the legislation forward and explain its current status, the purpose of the HK$510,000 reference amount and the year-end submission target.",
-      "sample_note": "比較立法建議與已生效安排：食物及貨物送遞員的工傷補償仍是立法建議，約五十一萬港元只是死亡補償參考額，年底提交草案是目標，不可寫成已經全面生效。",
-      "fact_status": "送遞員工傷補償仍是立法建議，約五十一萬港元只是死亡補償參考額，年底提交草案是目標。",
+      "sample_answer": "本人支持強制平台投保，也支持按送遞工時釐定工傷病假補償期限。制度應為工時較短的重傷者提供基本保障，並容許送遞員覆核工時。\n\n首先，外賣員在繁忙道路上送單，受傷後可能同時面對醫療開支與收入中斷。草案擬要求平台投購工傷補償保險，令平台履行補償責任時有保險作支援。按工時分級亦可讓主要依靠送遞維生的人在停工時獲較長的收入保障，並讓平台預計保險成本。\n\n其次，公平分級取決於紀錄是否完整。一名送遞員可能午市在一個平台送餐，晚市轉到另一個平台接單。若只看出事平台的紀錄，便可能低估其實際工作投入。但若直接把兩個程式的上線時數相加，又可能把重疊時段計算兩次。\n\n有人指出，同樣的骨折可能令兼職及長工時送遞員休養同樣久。這個疑慮有道理。可以為各級設基本補償期限，並讓重傷者憑醫療證明申請延長，以兼顧康復需要與成本。\n\n我建議勞工處訂立統一的接單、取件及完成紀錄格式，讓送遞員下載自己的紀錄。索償有爭議時，可由獨立人員核對多個平台的紀錄、剔除重疊時段，並以書面解釋工時及補償期限的計算。\n\n總括而言，應以強制投保建立保障，再配合可核實的工時、基本補償期限及重傷覆核，使分級制度可公平執行。",
+      "sample_answer_en": "I support compulsory insurance and using delivery hours to set the maximum period of injury-related sick pay. The scheme should provide a basic period of support and offer a review procedure for seriously injured workers with shorter recorded hours.\n\nFirst, riders working on busy roads may face medical costs and an interruption to earnings after an accident. Under the bill, insurance would help platforms meet compensation liabilities. A longer payment period for people who rely heavily on delivery work can cushion income loss, while clear tiers help operators estimate insurance costs.\n\nSecond, fair tiers depend on complete records. A worker may deliver food for one platform at lunch and switch to another at dinner. Using only the accident platform’s records may understate total work. Adding both apps’ online hours may double-count periods when both were active.\n\nA part-time rider with a fracture may need as long to recover as a full-time rider. Set a basic payment period for every tier and allow an extension for serious injuries supported by medical evidence.\n\nThe Labour Department should prescribe a common format for order acceptance, pickup and completion records that workers can download. An independent reviewer should reconcile records across platforms, remove overlaps and explain the resulting compensation period in writing.\n\nCompulsory insurance, verifiable hours and a review mechanism for serious injuries would make the tiers fairer to administer.",
+      "sample_note": "五步範文。補償下限、跨平台工時核實及獨立覆核屬作答建議。",
+      "fact_status": "草案已刊憲，等候立法會審議。",
       "vocab_phrases": {
         "terms": [
           {
-            "zh": "專項工傷補償",
-            "en": "dedicated work-injury compensation"
+            "zh": "強制工傷補償保險",
+            "en": "compulsory work injury compensation insurance"
           },
           {
-            "zh": "立法建議（未生效）",
-            "en": "legislative proposal (not yet enacted)"
+            "zh": "工傷病假補償期限",
+            "en": "injury-related sick pay period"
           },
           {
-            "zh": "死亡補償參考額",
-            "en": "fatal-injury compensation reference benchmark"
+            "zh": "按工時分級",
+            "en": "tiers based on hours worked"
           },
           {
-            "zh": "零工經濟保障缺口",
-            "en": "gig-economy social protection gap"
+            "zh": "跨平台接單",
+            "en": "accepting orders across platforms"
           },
           {
-            "zh": "草案提交目標",
-            "en": "target bill introduction timeline"
-          },
-          {
-            "zh": "靈活就業彈性",
-            "en": "flexible work autonomy"
+            "zh": "索償爭議",
+            "en": "claims dispute"
           }
         ],
         "phrases": [
           {
-            "zh": "為食物及貨物送遞員訂立專項工傷補償的立法方向值得支持，藉以回應高風險戶外工作的保障缺口，同時避免一刀切削弱平台靈活就業彈性。",
-            "en": "Advancing dedicated work-injury compensation for delivery riders closes an urgent occupational safety gap without imposing blanket reclassification that erodes flexible gig autonomy."
+            "zh": "工時可以反映送遞員對平台收入的依賴程度，補償安排亦須照顧重傷者的康復需要。",
+            "en": "Hours worked can reflect reliance on platform earnings, while compensation should also account for recovery needs after serious injuries."
           },
           {
-            "zh": "論述時須清楚區分「立法建議」與「已生效法例」，並把相關補償金額準確界定為死亡補償參考額。",
-            "en": "Policy analysis must clearly distinguish a legislative proposal from enacted law and accurately cite the benchmark figure as a fatal-injury reference amount."
+            "zh": "統一平台紀錄格式，讓送遞員在索償時證明實際工時。",
+            "en": "Standardised platform records would help delivery workers substantiate their hours when making a claim."
           }
         ]
       }
@@ -4558,6 +4548,54 @@
           }
         ]
       }
+    },
+    {
+      "id": "wang-fuk-court-building-safety",
+      "n": 45,
+      "title_zh": "宏福苑火災一周年與樓宇安全",
+      "title": "宏福苑火災一周年與樓宇安全",
+      "title_en": "Building safety after the Wang Fuk Court fire",
+      "heading": "Building safety after the Wang Fuk Court fire · 宏福苑火災一周年與樓宇安全",
+      "theme_ids": [
+        "housing-land"
+      ],
+      "prompt": "大埔宏福苑火災發生一周年，政府提出修訂消防法例，並計劃成立樓宇維修支援及服務局。你是否支持政府把大型樓宇維修工程的事前審批列為改革重點？請結合香港舊樓的情況，分析消防責任、工程審批與打擊圍標如何配合，回應審批可能延誤急需維修的疑慮，並提出支援業主的具體措施。請用中文作答。",
+      "facts": [
+        {
+          "text": "消防修例建議包括引入消防裝置責任人制度，以及就責任清晰、容易核實的消防安全違例事項引入定額罰款。",
+          "url": "https://www.info.gov.hk/gia/general/202611/24/P2026112400239.htm"
+        },
+        {
+          "text": "發展局建議把大型樓宇維修獨立列為新工程類別，並在開工前審批施工方案及臨時保護措施。",
+          "url": "https://www.devb.gov.hk/tc/publications_and_press_releases/press/index_id_15623.html"
+        },
+        {
+          "text": "擬設的樓宇維修支援及服務局將協助業主驗樓、招標、評標及監察施工服務。",
+          "url": "https://www.info.gov.hk/gia/general/202611/24/P2026112400508.htm"
+        }
+      ]
+    },
+    {
+      "id": "ride-hailing-licensing",
+      "n": 46,
+      "title_zh": "網約車發牌",
+      "title": "網約車發牌",
+      "title_en": "Ride-hailing licensing",
+      "heading": "Ride-hailing licensing · 網約車發牌",
+      "theme_ids": [
+        "transport-logistics"
+      ],
+      "prompt": "香港的網約車規管制度為車輛許可證設定一萬個上限。你是否支持在制度推行初期維持這個上限？請從乘客選擇、道路承載力及網約車與的士之間的公平競爭三方面分析，回應一項有力的反對意見，並提出日後檢討及調整許可證數目的具體準則。請用中文作答。",
+      "facts": [
+        {
+          "text": "網約車平台、司機及車輛須分別領有服務牌照、駕駛許可證及車輛許可證。",
+          "url": "https://www.info.gov.hk/gia/general/202611/26/P2026112600455.htm"
+        },
+        {
+          "text": "車輛許可證法定上限為一萬個，駕駛許可證不設上限。若有效車輛申請超額，運輸署將以抽籤分配。",
+          "url": "https://www.info.gov.hk/gia/general/202611/26/P2026112600455.htm"
+        }
+      ]
     }
   ],
   "pair_kits": [
@@ -4613,9 +4651,9 @@
     {
       "id": "platform-labour",
       "theme": "平台勞工",
-      "example": "食物及貨物送遞員工傷補償仍是立法建議；約51萬元是死亡補償參考額。",
-      "measure": "年底提交草案只是目標；公開資料不得把建議寫成已生效法例。",
-      "tie": "支持立法，但建議、參考額和年底目標都不是已生效保障。"
+      "example": "送遞員工傷補償草案已刊憲，擬要求平台購買工傷補償保險。",
+      "measure": "統一接單紀錄，設工時覆核及重傷延長補償程序。",
+      "tie": "支持按工時分級，並保障工時較短的重傷送遞員。"
     },
     {
       "id": "border",
@@ -4687,7 +4725,7 @@
     {
       "n": 7,
       "theme": "送遞員",
-      "stance_one_liner": "支持立法；約51萬是參考額，年底交草案只是目標"
+      "stance_one_liner": "支持強制投保及工時分級；設基本補償期限及覆核機制"
     },
     {
       "n": 8,
@@ -4956,6 +4994,22 @@
     {
       "label": "廚餘收集（2026-10-21）",
       "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100358.htm"
+    },
+    {
+      "label": "數碼平台工作者補償條例草案刊憲（2026-11-27）",
+      "url": "https://www.info.gov.hk/gia/general/202611/27/P2026112600354.htm"
+    },
+    {
+      "label": "消防修例及定額罰款草案（2026-11-24）",
+      "url": "https://www.info.gov.hk/gia/general/202611/24/P2026112400239.htm"
+    },
+    {
+      "label": "樓宇維修支援及服務局與修訂《建築物條例》（2026-11-24）",
+      "url": "https://www.info.gov.hk/gia/general/202611/24/P2026112400508.htm"
+    },
+    {
+      "label": "網約車車輛駕駛許可證申請安排（2026-11-26）",
+      "url": "https://www.info.gov.hk/gia/general/202611/26/P2026112600455.htm"
     }
   ]
 }
